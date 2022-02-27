@@ -1,6 +1,5 @@
-import java.util.Date;
 public class Conflicts{
-  Date date;
+  java.util.Date date;
  java.sql.Date sqlDate;
   // some more code
 }
