@@ -1,0 +1,1 @@
+javac -d classes packagea/ClassA.java packageb/ClassB.java
