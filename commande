@@ -4,3 +4,4 @@ java -classpath classes packageb.ClassB
 java --class-path classes packageb.ClassB
 java -cp ".;C:\temp\someOtherLocation;c:\temp\myJar.jar" myPackage.MyClass
 java -cp ".:/tmp/someOtherLocation:/tmp/myJar.jar" myPackage.MyClass
+java -cp "C:\temp\directoryWithJars\*" myPackage.MyClass
