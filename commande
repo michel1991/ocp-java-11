@@ -11,3 +11,7 @@ jar -cvf myNewFile.jar .
 jar --create --verbose --file myNewFile.jar .
 jar -cvf myNewJar.jar -C dir . # jar -cvf myNewJar.jar -C packagea .
 
+#sample running a program in one line with packages
+java Learning.java # from within the singleFile directory
+java singleFile/Learning.java #from the directory above singleFile
+
