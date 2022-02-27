@@ -9,5 +9,5 @@ java -cp "C:\temp\directoryWithJars\*" myPackage.MyClass
 #---- jar file
 jar -cvf myNewFile.jar . 
 jar --create --verbose --file myNewFile.jar .
-
+jar -cvf myNewJar.jar -C dir . # jar -cvf myNewJar.jar -C packagea .
 
