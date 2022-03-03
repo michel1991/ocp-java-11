@@ -12,4 +12,7 @@ public class Chick {
       Chick chick = new Chick();
      System.out.println(chick.name); 
     }
+    {
+     System.out.println("second bloc instance initializer to run before constructor");
+    }
 }
