@@ -15,6 +15,8 @@ public class TraditionalSearch{
     animals.add(new Animal("kangaroo", true, false));
     animals.add(new Animal("rabbit", true, false));
     animals.add(new Animal("turtle", false, true));
-    print(animals, new CheckIfHopper()); 
+    print(animals, new CheckIfHopper());
+    System.out.println("begin using lanbda expression canHop"); 
+    print(animals, a -> a.canHop());
   }
 }
