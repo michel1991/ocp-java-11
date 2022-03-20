@@ -21,5 +21,8 @@ public class TraditionalSearch{
 
     System.out.println("begin using lanbda expression canSwin");
     print(animals, a -> a.canSwim());
+
+    System.out.println("begin using lanbda expression cannot Swin");
+    print(animals, a -> !a.canSwim());
   }
 }
