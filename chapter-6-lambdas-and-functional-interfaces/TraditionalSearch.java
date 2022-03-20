@@ -18,5 +18,8 @@ public class TraditionalSearch{
     print(animals, new CheckIfHopper());
     System.out.println("begin using lanbda expression canHop"); 
     print(animals, a -> a.canHop());
+
+    System.out.println("begin using lanbda expression canSwin");
+    print(animals, a -> a.canSwim());
   }
 }
