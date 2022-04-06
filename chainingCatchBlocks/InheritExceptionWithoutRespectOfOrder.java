@@ -17,7 +17,6 @@ class InheritExceptionWithoutRespectOfOrder{
    }
 
    public static void main(String[] args){
-       BasicExample sample = new BasicExample();
-      sample.visitPorcupine();
+       
    }
 }
