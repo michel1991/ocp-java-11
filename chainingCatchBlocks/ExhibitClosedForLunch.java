@@ -1,5 +1,5 @@
 package chainingCatchBlocks;
 
-class ExhibitClosedForLunch extends RuntimeException{
+class ExhibitClosedForLunch extends ExhibitClosed{
 
 }
