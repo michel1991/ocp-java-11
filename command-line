@@ -27,3 +27,7 @@ java --module-path feeding --module zoo.animal.feeding/zoo.animal.feeding.Task
 java --module-path feeding
    --module zoo.animal.feeding/zoo.animal.feeding.Task
 ##### END #################################
+
+######### PACKAGING FIRST MODULE ###################
+jar -cvf mods/zoo.animal.feeding.jar -C feeding/ .
+########## END ##################################
