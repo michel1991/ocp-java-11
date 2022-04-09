@@ -26,6 +26,9 @@ java --module-path feeding --module zoo.animal.feeding/zoo.animal.feeding.Task
    OR
 java --module-path feeding
    --module zoo.animal.feeding/zoo.animal.feeding.Task
+
+java -p feeding -m zoo.animal.feeding/zoo.animal.feeding.Task
+
 ##### END #################################
 
 ######### PACKAGING FIRST MODULE ###################
