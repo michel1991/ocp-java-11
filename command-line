@@ -20,3 +20,10 @@ javac -p mods
    feeding/*.java
 
 ## COMPILTION FIRST MODULE ###################################
+
+##### SAMPLE RUN FIRST MODULE ####################
+java --module-path feeding --module zoo.animal.feeding/zoo.animal.feeding.Task
+   OR
+java --module-path feeding
+   --module zoo.animal.feeding/zoo.animal.feeding.Task
+##### END #################################
