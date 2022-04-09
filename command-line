@@ -63,7 +63,28 @@ javac -p mods
       javac -p mods -d talks talks/zoo/animal/talks/**/*.java talks/module-info.java
     # end using wildcard
    
-   ####  END TALKS MODULE ######################### 
+   ####  END TALKS MODULE #########################
+
+   ######  STAFF MODULE ###############
+    # For Comprehension
+      javac -p mods
+           -d staff
+           staff/zoo/staff/*.java
+           staff/module-info.java
+    # End for comprehension
+
+    # Multi line
+      javac -p mods \
+        -d staff \
+       staff/zoo/staff/*.java \
+       staff/module-info.java
+    # End Multi line
+
+   # Single line
+     javac -p mods -d staff staff/zoo/staff/*.java staff/module-info.java
+   # End Single Line
+
+  ###### END STAFF MODULE #############
 
 
 ## END COMPILTION OF MODULE ###################################
@@ -90,6 +111,10 @@ java -p feeding -m zoo.animal.feeding/zoo.animal.feeding.Task
  ########## TALKS MODULE ##############
   jar -cvf mods/zoo.animal.talks.jar -C talks/ .
  ######### END TALKS MODULE ###########
+
+ ######### STAFF MODULE ############
+   jar -cvf mods/zoo.staff.jar -C staff/ .
+ ######### END STAFF MODULE ########
 
 
 ########## END PACKAGING TO JAR ##################################
