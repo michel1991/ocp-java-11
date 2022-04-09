@@ -34,3 +34,7 @@ java -p feeding -m zoo.animal.feeding/zoo.animal.feeding.Task
 ######### PACKAGING FIRST MODULE ###################
 jar -cvf mods/zoo.animal.feeding.jar -C feeding/ .
 ########## END ##################################
+
+######### RUN USING ARTEFACT DIRECTORY ##########
+java -p mods -m zoo.animal.feeding/zoo.animal.feeding.Task
+######### END ############################
