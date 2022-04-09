@@ -1,4 +1,6 @@
-## SAMPLE COMPILATION FIRST MODULE ###############################
+## COMPILATION OF MODULE ###############################
+ 
+#### FEEDING MODULE ####### 
 javac -p mods 
    -d feeding
    feeding/zoo/animal/feeding/*.java
@@ -19,7 +21,22 @@ javac -p mods
    feeding/zoo/animal/feeding/Task.java
    feeding/*.java
 
-## COMPILTION FIRST MODULE ###################################
+#######      ##################################
+
+   ######### CARE MODULE ########
+
+   javac -p mods
+     -d care
+     care/zoo/animal/care/details/*.java
+     care/zoo/animal/care/medical/*.java
+     care/module-info.java#
+
+
+      javac -p mods -d care care/zoo/animal/care/details/*.java care/zoo/animal/care/medical/*.java care/module-info.java
+   #########             ########
+
+
+## END COMPILTION OF MODULE ###################################
 
 ##### SAMPLE RUN FIRST MODULE ####################
 java --module-path feeding --module zoo.animal.feeding/zoo.animal.feeding.Task
