@@ -48,9 +48,16 @@ java -p feeding -m zoo.animal.feeding/zoo.animal.feeding.Task
 
 ##### END #################################
 
-######### PACKAGING FIRST MODULE ###################
-jar -cvf mods/zoo.animal.feeding.jar -C feeding/ .
-########## END ##################################
+######### PACKAGING MODULE TO JAR ###################
+ ######## FEEDING MODULE ##############
+ jar -cvf mods/zoo.animal.feeding.jar -C feeding/ .
+ ######## END FEEDING ################
+
+ ########## CARE MODULE #############
+    jar -cvf mods/zoo.animal.care.jar -C care/ .
+ ########## END CARE MODULE #########
+
+########## END PACKAGING TO JAR ##################################
 
 ######### RUN USING ARTEFACT DIRECTORY ##########
 java -p mods -m zoo.animal.feeding/zoo.animal.feeding.Task
