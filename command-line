@@ -35,6 +35,36 @@ javac -p mods
       javac -p mods -d care care/zoo/animal/care/details/*.java care/zoo/animal/care/medical/*.java care/module-info.java
    #########             ########
 
+   ##### TALKS MODULE ##########################
+    # For Comprehension
+      javac -p mods
+            -d talks
+             talks/zoo/animal/talks/content/*.java
+             talks/zoo/animal/talks/media/*.java
+             talks/zoo/animal/talks/schedule/*.java
+              talks/module-info.java
+
+     # End For comprehension
+   
+    #using oblique line
+    javac -p mods \
+   -d talks \
+   talks/zoo/animal/talks/content/*.java \
+   talks/zoo/animal/talks/media/*.java \
+   talks/zoo/animal/talks/schedule/*.java \
+   talks/module-info.java
+  # end oblique line
+   
+   # single line
+    javac -p mods -d talks talks/zoo/animal/talks/content/*.java talks/zoo/animal/talks/media/*.java talks/zoo/animal/talks/schedule/*.java talks/module-info.java
+  # end  single line 
+
+    #using wildcard
+      javac -p mods -d talks talks/zoo/animal/talks/**/*.java talks/module-info.java
+    # end using wildcard
+   
+   ####  END TALKS MODULE ######################### 
+
 
 ## END COMPILTION OF MODULE ###################################
 
@@ -56,6 +86,11 @@ java -p feeding -m zoo.animal.feeding/zoo.animal.feeding.Task
  ########## CARE MODULE #############
     jar -cvf mods/zoo.animal.care.jar -C care/ .
  ########## END CARE MODULE #########
+
+ ########## TALKS MODULE ##############
+  jar -cvf mods/zoo.animal.talks.jar -C talks/ .
+ ######### END TALKS MODULE ###########
+
 
 ########## END PACKAGING TO JAR ##################################
 
