@@ -8,6 +8,9 @@ class ExampleUsingEnum{
     System.out.println();
 
     exampleValues();
+    
+    System.out.println();
+    retrieveEnumFromString();
   }
 
 
@@ -15,6 +18,12 @@ class ExampleUsingEnum{
      for(Season season : Season.values()){
         System.out.println(season.name() + " " + season.ordinal());
      }
+  }
+
+  
+  public static void retrieveEnumFromString(){
+     Season s = Season.valueOf("SUMMER");
+     System.out.println("retrieve enum value from  string " + s.name());
   }
 
 }
