@@ -1,5 +1,5 @@
 package creatingSimpleEnums;
 
 public enum Season{
- WINTER, SPRING, SUMMER, FALL
+ WINTER("Low"), SPRING("Medium"), SUMMER("High"), FALL("Medium");
 }
