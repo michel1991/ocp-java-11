@@ -1,7 +1,7 @@
 package declaringAnInnerClass;
 
 public class Fox{
-   private class Den(){
+   private class Den{
 
   }
 
