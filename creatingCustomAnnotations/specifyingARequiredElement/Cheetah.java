@@ -1,6 +1,6 @@
 package creatingCustomAnnotations.specifyingARequiredElement;
 
-@Exercise(hoursPerDay=3)
+@Exercise(startHour=5, hoursPerDay=3)
 public class Cheetah{
 
 }
