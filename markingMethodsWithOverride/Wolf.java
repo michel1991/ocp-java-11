@@ -1,0 +1,13 @@
+package markingMethodsWithOverride;
+
+public class Wolf extends Canine{
+   @Override
+   public int cunning(){
+     return Integer.MAX_VALUE;
+   }
+   
+  @Override
+  void howl(){
+     System.out.print("How!");
+  }
+}
