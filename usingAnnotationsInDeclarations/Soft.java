@@ -1,0 +1,5 @@
+package usingAnnotationsInDeclarations;
+
+@interface Soft{
+
+}
