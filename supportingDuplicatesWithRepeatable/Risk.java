@@ -1,7 +1,7 @@
 package supportingDuplicatesWithRepeatable;
 import java.lang.annotation.Repeatable;
 
-@Repeatable // does not compile
+@Repeatable(Risks.class)
 public @interface Risk{
    String danger();
    int level() default 1;
