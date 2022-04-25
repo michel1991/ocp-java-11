@@ -2,6 +2,8 @@ package protectingargumentsWithSafeVarargs;
 import java.util.*;
 
 public class NeverDoThis{
+
+   @SafeVarargs
    final int thisIsUnsafe(List<Integer> ...carrot){  // carrot in  bold
          Object[] stick = carrot;
          stick[0] = Arrays.asList("nope!");
