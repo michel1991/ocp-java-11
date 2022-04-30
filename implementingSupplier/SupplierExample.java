@@ -15,10 +15,20 @@ public class SupplierExample{
       System.out.println("Local date d2: " + d2);
    }
 
+    public static void exampleWithStringBuilder(){
+       Supplier<StringBuilder> s1 = StringBuilder::new;
+      Supplier<StringBuilder> s2  = () ->  new StringBuilder();
+
+       System.out.println("String builder s1 using reference method: " + s1);
+       System.out.println("String builder s2 using lambda: " + s2);
+    }
+
+
 
   public static void main(String[] args){
      exampleWithLocalDate();
     
+   exampleWithStringBuilder();
   }
 
 }
