@@ -1,6 +1,7 @@
 package implementingSupplier;
 import java.util.function.Supplier;
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class SupplierExample{
 
@@ -23,12 +24,22 @@ public class SupplierExample{
        System.out.println("String builder s2 using lambda: " + s2);
     }
 
+   public static void exampleWithList(){
+    Supplier<ArrayList<String>> s3 = ArrayList<String>::new;
+    ArrayList<String> list = s3.get();
+     System.out.println();
+     System.out.println("the list: " + list);
+     System.out.println("The supplier itself: " + s3);
+     
+   }
 
 
   public static void main(String[] args){
      exampleWithLocalDate();
     
-   exampleWithStringBuilder();
+    exampleWithStringBuilder();
+
+   exampleWithList();
   }
 
 }
