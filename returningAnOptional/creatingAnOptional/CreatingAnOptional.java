@@ -26,6 +26,12 @@ public class CreatingAnOptional{
    System.out.println(o);
   }
 
+  static void usingTernary(){
+   Integer value = null;
+   Optional o = (value == null) ? Optional.empty() : Optional.of(value);
+   System.out.println(o);
+  }
+
    public static void main(String[] args){
        var result = average(90, 100);
        System.out.println(result);
@@ -42,5 +48,10 @@ public class CreatingAnOptional{
        System.out.println();
        System.out.println("of Nullable");
        usingOfNullable();
+
+
+       System.out.println();
+       System.out.println("example with ternary and of method");
+       usingTernary();
    }
 }
