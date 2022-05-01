@@ -20,6 +20,12 @@ public class CreatingAnOptional{
        System.out.println("the value is " +  opt.get());
    }
 
+  static void usingOfNullable(){
+   Integer value = null;
+   Optional o = Optional.ofNullable(value);
+   System.out.println(o);
+  }
+
    public static void main(String[] args){
        var result = average(90, 100);
        System.out.println(result);
@@ -32,5 +38,9 @@ public class CreatingAnOptional{
         System.out.println();
         System.out.println("checking content and print value");
         checkingContentAndPrintValue();
+
+       System.out.println();
+       System.out.println("of Nullable");
+       usingOfNullable();
    }
 }
