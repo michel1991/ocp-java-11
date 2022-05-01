@@ -32,6 +32,11 @@ public class CreatingAnOptional{
    System.out.println(o);
   }
 
+  static void usingIfPresent(){
+    Optional<Double> opt = average(90, 100);
+    opt.ifPresent(System.out::println);
+  }
+
    public static void main(String[] args){
        var result = average(90, 100);
        System.out.println(result);
@@ -53,5 +58,9 @@ public class CreatingAnOptional{
        System.out.println();
        System.out.println("example with ternary and of method");
        usingTernary();
+
+       System.out.println();
+       System.out.println("example using ifPresent method");
+        usingIfPresent();
    }
 }
