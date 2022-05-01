@@ -37,6 +37,16 @@ public class CreatingAnOptional{
     opt.ifPresent(System.out::println);
   }
 
+
+  static void usingElse(){
+    Optional<Double> opt = average();
+    System.out.println(opt.orElse(Double.NaN));
+    var random = opt.orElseGet(() -> Math.random());
+    System.out.println(random);
+  }
+
+
+
    public static void main(String[] args){
        var result = average(90, 100);
        System.out.println(result);
@@ -62,5 +72,9 @@ public class CreatingAnOptional{
        System.out.println();
        System.out.println("example using ifPresent method");
         usingIfPresent();
+
+       System.out.println();
+       System.out.println("example using orElse and orElseGet");
+       usingElse();
    }
 }
