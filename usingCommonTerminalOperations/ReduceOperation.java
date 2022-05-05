@@ -33,11 +33,18 @@ public class ReduceOperation{
      threeElements.reduce(op).ifPresent(System.out::println); // 90
    }
 
+  static void withThirdParameter(){
+      Stream<String> stream = Stream.of("w", "o", "l", "f!");
+      int length =  stream.reduce(0, (i, s) -> i + s.length(), (a, b) -> a + b);
+      System.out.println("with third parameter " + length); // 5
+   } 
+
   public static void main(String[] args){
         withLambda();
         withReferenceMethod();
         multiply();
         omitIdentity();
+        withThirdParameter();
   }
 
 }
