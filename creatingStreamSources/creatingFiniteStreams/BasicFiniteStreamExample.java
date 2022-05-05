@@ -13,6 +13,11 @@ public class BasicFiniteStreamExample{
   static void collectionToStream(){
     var list = List.of("a", "b", "c");
     Stream<String> fromList = list.stream();
+  }
+
+ static void parallelStream(){
+        var list = List.of("a", "b", "c");
+       Stream<String> fromListParallel = list.parallelStream();
   }   
 
   public static void main(String[] args){
