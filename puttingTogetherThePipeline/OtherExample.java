@@ -20,8 +20,22 @@ class OtherExample{
                        .stream()                         // second pipeline (source)
                        .count()                          // second pipeline (terminal operation)
     ;
-    System.out.println("the result of count:  "+ count);
+    System.out.println("the result of chaining two pipeline  count:  "+ count);
   }
+
+  static void rewriteOfChainingTwoPipeline(){
+      List<String> helper = Stream.of("goldfish", "finch")
+                                  .filter( n -> n.length() >5 )
+                                  .collect(Collectors.toList())
+     ;
+
+
+     long  count = helper.stream()
+                         .count() 
+     ;
+
+    System.out.println("the result of chaining  two pipeline rewriter :  "+ count);
+   }
 
   public static void main(String[] args){
      System.out.println("Print Elsa Twice ");
@@ -29,6 +43,9 @@ class OtherExample{
      System.out.println();
       System.out.println("Chain two pipeline");
      chainTwoPipeline();
-    System.out.println();
+     System.out.println();
+
+    System.out.println("Chain two pipeline rewrite code ");
+    rewriteOfChainingTwoPipeline();
   }
 }
