@@ -33,6 +33,17 @@ class PeekBehindTheScenes{
 
    }
 
+   static void oddNumberFilterBeforePeek(){
+      var infinite = Stream.iterate(1, x -> x + 1);
+      infinite.filter(x -> x % 2 == 1)
+              .peek(System.out::print)
+              .limit(5)
+              .forEach(System.out::print)
+      ;
+
+   }
+
+
   public static void main(String[] args){
      System.out.println("odd number ");
       oddNumber();
@@ -44,7 +55,11 @@ class PeekBehindTheScenes{
         System.out.println();
         System.out.println();
         System.out.println("odd number reverse the order of the intermediate operation change the result ");
-        oddNumberReverseOrderTheIntermediateOperation(); 
+        oddNumberReverseOrderTheIntermediateOperation();
+
+       System.out.println();
+       System.out.println("odd number filter before peek "); 
+       oddNumberFilterBeforePeek();
    }
 
 }
