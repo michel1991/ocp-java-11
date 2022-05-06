@@ -16,6 +16,21 @@ class CreatingPrimitiveStreamsExample{
       varargs.forEach(System.out::println);
   }
 
+ static void infiniteDoubleStream(){
+   var random = DoubleStream.generate(Math::random);
+   var fractions = DoubleStream.iterate(.5, d -> d / 2);
+  
+   random.limit(3)
+         .forEach(System.out::println)
+
+   ;
+
+   fractions.limit(3)
+         .forEach(System.out::println)
+    ;
+  
+  }
+
 
  public static void main(String[] args){
      System.out.println("Empty DoubleStream ");
@@ -28,5 +43,11 @@ class CreatingPrimitiveStreamsExample{
 
      System.out.println("DoubleStream  with one varargs ");
      doubleStreamWithVarargs();
+      System.out.println();
+
+     
+     System.out.println("Infinite DoubleStream");
+     infiniteDoubleStream();
+     System.out.println();
   }
 }
