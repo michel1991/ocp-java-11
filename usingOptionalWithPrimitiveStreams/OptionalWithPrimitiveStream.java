@@ -11,8 +11,16 @@ class OptionalWithPrimitiveStream{
       System.out.println( optional.orElseGet( () -> Double.NaN) );
   }
 
+ static void sumWithLong(){
+     LongStream longs = LongStream.of(5, 10);
+     long sum = longs.sum();
+     System.out.println( "sum with long " + sum );
+  }
+
  public static void main(String[] args){
     System.out.println("average in one line with primitive ");
      avarage();
+    System.out.println();
+    sumWithLong();
  }
 }
