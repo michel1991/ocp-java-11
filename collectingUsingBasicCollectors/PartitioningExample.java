@@ -28,10 +28,25 @@ class PartitioningExample{
 
   }
 
+
+  static void partitioningByStringLengthSevenCharactersAllowAlsoChangingTypeThatHoldDataToSet(){
+      var ohMy = Stream.of("lions", "tigers", "bears");
+      Map<Boolean, Set<String>> map = ohMy.collect(
+                       Collectors.partitioningBy(
+                             s -> s.length() <= 7,
+                             Collectors.toSet()
+                      )
+     );
+
+    System.out.println("partitioning by string length less than or equals to five (7) and changing type that hold value to Set  : " + map + " hold data class "+ map.getClass());
+
+  }
+
    public static void main(String[] args){
 
      partitioningByStringLength();
      partitioningByStringLengthSevenCharactersAllow();
+     partitioningByStringLengthSevenCharactersAllowAlsoChangingTypeThatHoldDataToSet();
    }
 
 }
