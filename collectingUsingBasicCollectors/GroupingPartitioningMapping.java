@@ -50,12 +50,25 @@ class GroupingPartitioningMapping{
    System.out.println("group by length preserve type that  hold data: " + map + " class is " + map.getClass());
   }
 
+  static void usingAnyCollectors(){
+     var ohMy = Stream.of("lions", "tigers", "bears");
+    Map<Integer, Long> map = ohMy.collect(
+           Collectors.groupingBy(
+               String::length,
+               Collectors.counting()
+
+          )
+    );
+   System.out.println("group by length  using any collector: " + map + " class is " + map.getClass());
+  }
+
 
   public static void main(String[] args){
      groupByLength();
      groupByLengthUsingSetThatHoldValue();
      groupByLengthUsingTreeMapThatHoldValue();
      groupByLengthPreserveTypeThatHoldValue();
+     usingAnyCollectors();
   }
   
 }
