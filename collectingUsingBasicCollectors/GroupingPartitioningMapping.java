@@ -37,11 +37,25 @@ class GroupingPartitioningMapping{
    System.out.println("group by length  using TreeMap to hold data: " + map + " class is " + map.getClass());
   }
 
+  static void groupByLengthPreserveTypeThatHoldValue(){
+     var ohMy = Stream.of("lions", "tigers", "bears");
+    TreeMap<Integer, List<String>> map = ohMy.collect(
+           Collectors.groupingBy(
+               String::length,
+               TreeMap::new,
+               Collectors.toList()
+
+          )
+    );
+   System.out.println("group by length preserve type that  hold data: " + map + " class is " + map.getClass());
+  }
+
 
   public static void main(String[] args){
      groupByLength();
      groupByLengthUsingSetThatHoldValue();
      groupByLengthUsingTreeMapThatHoldValue();
+     groupByLengthPreserveTypeThatHoldValue();
   }
   
 }
