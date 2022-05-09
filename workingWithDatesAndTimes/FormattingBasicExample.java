@@ -1,6 +1,9 @@
 package workingWithDatesAndTimes;
 import java.time.*;
 import java.time.format.*;
+import java.util.Date;
+import java.text.SimpleDateFormat;
+import java.text.DateFormat;
 
 class FormattingBasicExample{
   static void basicExample(){
@@ -21,11 +24,21 @@ class FormattingBasicExample{
      System.out.println(dt.format(f));
    }
 
+ static void formatWithSimpleDateFormat(){
+     DateFormat s = new SimpleDateFormat("MMMM dd, yyyy 'at' hh:mm");
+     Date dt = new Date();
+     System.out.println(s.format(dt)); 
+ }
+
    public static void main(String[] args){
       System.out.println("Format using using predefined formats below "); 
       basicExample();
       System.out.println();
       System.out.println("Custom format MMMM dd, yyyy 'at' hh:mm below ");
       formatingUsingCustomFormat();
+      System.out.println();
+
+       System.out.println("Custom format MMMM dd, yyyy 'at' hh:mm with java.util.Date and SimplateDateFormat old version below ");
+      formatWithSimpleDateFormat();
    }
 }
