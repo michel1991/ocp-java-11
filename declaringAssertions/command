@@ -10,5 +10,11 @@ java -ea:com.demos… my.programs.Main
 #Only one class
 java -ea:com.demos.TestColors my.programs.Main
 
+#enable assertions  for the com.demos package but disables assertions for the TestColors class
+java -ea:com.demos… -da:com.demos.TestColors my.programs.Main
+
+
+
+
 
 
