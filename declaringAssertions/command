@@ -1,1 +1,14 @@
 java -ea Party.java
+
+----- enable assertion -----------
+java -enableassertions Rectangle
+java -ea Rectangle
+
+# enable assertion only for classes in com.demos package and any subpackages, The ellipsis ( …) means any class in the specified package or subpackages
+java -ea:com.demos… my.programs.Main
+
+#Only one class
+java -ea:com.demos.TestColors my.programs.Main
+
+
+
