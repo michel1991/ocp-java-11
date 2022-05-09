@@ -20,6 +20,14 @@ class BasicCreation{
      System.out.println(time3);
    }
 
+  static void combinaisonDateAndTimeToCreateLocalDateTime(){
+      var dt1 = LocalDateTime.of(2020, Month.OCTOBER, 20, 6, 15, 30);
+      LocalDate date = LocalDate.of(2020, Month.OCTOBER, 20);
+      LocalTime time = LocalTime.of(6, 15);
+      var dt2 = LocalDateTime.of(date, time);
+      System.out.println(dt1);
+      System.out.println(dt2); 
+   }
 
   public static void main(String[] args){
     System.out.println(LocalDate.now());
@@ -34,6 +42,10 @@ class BasicCreation{
   
    System.out.println("LocalTime: Creation Time using of method below");
    createTimeWithOf();
+   System.out.println();
+
+   System.out.println("LocalDateTime:  Creation LocalDateTime using date and time below");
+   combinaisonDateAndTimeToCreateLocalDateTime();
    System.out.println();
   }
 
