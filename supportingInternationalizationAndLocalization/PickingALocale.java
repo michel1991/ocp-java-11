@@ -18,6 +18,23 @@ class PickingALocale{
        System.out.println(new Locale( "language and code country Hindi(hi) In India(IN): " + "hi", "IN")); 
    }
 
+   static void createWithBuilderPattern(){
+       Locale l1 = new  Locale.Builder()
+                              .setLanguage("en")
+                              .setRegion("US")
+                              .build()
+      ;
+
+       Locale l2 = new  Locale.Builder()
+                              .setRegion("US")
+                              .setLanguage("en")
+                              .build() 
+      ;
+
+     System.out.println(l1);
+     System.out.println(l2);
+   }
+
  public static void main(String[] args){
      System.out.println("Current locale Below");
      currentLocal();
@@ -27,5 +44,8 @@ class PickingALocale{
      System.out.println();
      System.out.println("create locale with constructor Below ");
      createWithConstructor();
+     System.out.println();
+    System.out.println("create locale with builder design pattern ");
+    createWithBuilderPattern();
   }
 }
