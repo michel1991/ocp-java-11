@@ -15,15 +15,24 @@ class ForammtingNumbers{
      System.out.println( "GERMANY: " + gr.format(attendeesPerMonth));   
 
      var ca = NumberFormat.getInstance(Locale.CANADA_FRENCH);
-     System.out.println( "GERMANY: " + ca.format(attendeesPerMonth));
+     System.out.println( "CANADA FRENCH: " + ca.format(attendeesPerMonth));
+  }
+
+
+  static void formattingCurrency(){
+    double price = 48;
+    var myLocale = NumberFormat.getCurrencyInstance();
+     System.out.println("currency " + myLocale.format(price));
   }
 
   public static void main(String[] args){
-     System.out.println("Average monthly number of visitors  in different locale ");
+     System.out.println("Average monthly number of visitors  in different locale below ");
      formattingAverageMonthlyNumberOfVisitors();
      System.out.println();
-
-
+    
+     System.out.println("Formatting currency below ");
+     formattingCurrency();
+     System.out.println();
    }
 
 }
