@@ -35,6 +35,13 @@ class PickingALocale{
      System.out.println(l2);
    }
 
+ static void setTheLocale(){
+      System.out.println(Locale.getDefault());
+      Locale locale = new Locale("en", "US");
+      Locale.setDefault(locale);
+      System.out.println("New locale : " + Locale.getDefault() );
+  }
+
  public static void main(String[] args){
      System.out.println("Current locale Below");
      currentLocal();
@@ -45,7 +52,10 @@ class PickingALocale{
      System.out.println("create locale with constructor Below ");
      createWithConstructor();
      System.out.println();
-    System.out.println("create locale with builder design pattern ");
-    createWithBuilderPattern();
+     System.out.println("create locale with builder design pattern ");
+     createWithBuilderPattern();
+     System.out.println();
+     System.out.println("Change default locale for the program, from current to en_US below ");
+     setTheLocale();
   }
 }
