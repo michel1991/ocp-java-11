@@ -6,3 +6,6 @@ jar -cvf zoo.dino.jar .
 
 #inspect dependencies without options (the dependencies will to be requires  move when we will modularized the application)
 jdeps zoo.dino.jar
+
+# summarize the dependencies
+jdeps -s zoo.dino.jar
