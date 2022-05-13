@@ -12,3 +12,4 @@ jdeps -s zoo.dino.jar
 
 # jdeps command option to provide details about unsupported API
 jdeps --jdk-internals zoo.dino.jar
+jdeps -jdkinternals zoo.dino.jar
