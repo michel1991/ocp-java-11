@@ -1,0 +1,8 @@
+#compilation
+javac zoo/dinos/*.java
+
+#create jar (move to the folder zoo)
+jar -cvf zoo.dino.jar .
+
+#inspect dependencies without options (the dependencies will to be requires  move when we will modularized the application)
+jdeps zoo.dino.jar
