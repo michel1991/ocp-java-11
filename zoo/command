@@ -9,3 +9,6 @@ jdeps zoo.dino.jar
 
 # summarize the dependencies
 jdeps -s zoo.dino.jar
+
+# jdeps command option to provide details about unsupported API
+jdeps --jdk-internals zoo.dino.jar
