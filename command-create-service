@@ -5,3 +5,10 @@ jar -cvf mods/zoo.tours.api.jar -C serviceProviderInterfaceModule/ .
 # compilation and packaging of serviceLocatorModule 
 javac -p mods -d serviceLocatorModule serviceLocatorModule/zoo/tours/reservations/*.java serviceLocatorModule/module-info.java
 jar -cvf mods/zoo.tours.reservations.jar -C serviceLocatorModule/ .
+
+#compilation of packaging  of the  consumerModule 
+javac -p mods -d consumerModule consumerModule/zoo/visitor/*.java consumerModule/module-info.java
+jar -cvf mods/zoo.visitor.jar -C consumerModule/ .
+
+#execution of consumerModule
+java -p mods -m zoo.visitor/zoo.visitor.Tourist
