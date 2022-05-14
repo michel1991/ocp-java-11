@@ -1,0 +1,3 @@
+#compilation and packaging
+javac -d serviceProviderInterfaceModule serviceProviderInterfaceModule/zoo/tours/api/*.java serviceProviderInterfaceModule/module-info.java
+jar -cvf mods/zoo.tours.api.jar -C serviceProviderInterfaceModule/ .
