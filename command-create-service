@@ -1,3 +1,7 @@
 #compilation and packaging
 javac -d serviceProviderInterfaceModule serviceProviderInterfaceModule/zoo/tours/api/*.java serviceProviderInterfaceModule/module-info.java
 jar -cvf mods/zoo.tours.api.jar -C serviceProviderInterfaceModule/ .
+
+# compilation and packaging of serviceLocatorModule 
+javac -p mods -d serviceLocatorModule serviceLocatorModule/zoo/tours/reservations/*.java serviceLocatorModule/module-info.java
+jar -cvf mods/zoo.tours.reservations.jar -C serviceLocatorModule/ .
