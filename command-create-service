@@ -19,3 +19,10 @@ jar -cvf mods/zoo.tours.agency.jar -C serviceProviderModule/ .
 
 #execution of consumer against
 java -p mods -m zoo.visitor/zoo.visitor.Tourist
+
+#compilation and packaging of  multiPurposeModule
+javac -p mods -d multiPurposeModule multiPurposeModule/zoo/tours/hybrid/*.java multiPurposeModule/module-info.java
+jar -cvf mods/zoo.tours.hybrid.jar -C multiPurposeModule/ .
+
+#Execution of TourLengthCheck
+java -p mods -m zoo.tours.hybrid/zoo.tours.hybrid.TourLengthCheck
