@@ -12,3 +12,10 @@ jar -cvf mods/zoo.visitor.jar -C consumerModule/ .
 
 #execution of consumerModule
 java -p mods -m zoo.visitor/zoo.visitor.Tourist
+
+#compilation and packaging of  serviceProviderModule
+javac -p mods -d serviceProviderModule serviceProviderModule/zoo/tours/agency/*.java serviceProviderModule/module-info.java
+jar -cvf mods/zoo.tours.agency.jar -C serviceProviderModule/ .
+
+#execution of consumer against
+java -p mods -m zoo.visitor/zoo.visitor.Tourist
