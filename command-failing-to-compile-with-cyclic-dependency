@@ -1,0 +1,10 @@
+ #compilation (Pay attention to put module info at the end) without cyclic dependency
+ javac -d butterflyModule    butterflyModule/zoo/butterfly/Butterfly.java   butterflyModule/module-info.java
+ javac -p mods -d caterpillarModule  caterpillarModule/zoo/caterpillar/*.java caterpillarModule/module-info.java
+
+#genreate jar without cyclic dependency
+jar -cvf mods/zoo.butterfly.jar -C butterflyModule/ .
+jar -cvf mods/zoo.caterpillar.jar -C caterpillarModule/ .
+
+#cyclic dependency compilation
+javac -p mods -d butterflyModule    butterflyModule/zoo/butterfly/Butterfly.java    butterflyModule/module-info.java
