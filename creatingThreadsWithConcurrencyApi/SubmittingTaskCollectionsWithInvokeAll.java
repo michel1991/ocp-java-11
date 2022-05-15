@@ -1,0 +1,19 @@
+package creatingThreadsWithConcurrencyApi;
+import java.util.concurrent.*;
+import java.util.*;
+
+public class SubmittingTaskCollectionsWithInvokeAll{
+  static void example() throws InterruptedException, ExecutionException{
+     ExecutorService service = null;
+     System.out.println("begin");
+     Callable<String> task = () -> "result";
+     List<Future<String>> list = service.invokeAll(
+          List.of(task, task, task)
+      );
+      for(Future<String> future : list){
+          System.out.println(future.get());
+       }
+      System.out.println("end");
+  }
+
+}
