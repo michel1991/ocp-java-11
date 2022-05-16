@@ -1,4 +1,4 @@
-package writingThreadSafeCode.understandingThreadSafety;
+package writingThreadSafeCode.protectingDataWithAtomicClasses;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.*;
 
