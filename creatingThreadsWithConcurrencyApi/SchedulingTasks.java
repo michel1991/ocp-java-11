@@ -16,4 +16,10 @@ public class SchedulingTasks{
     service.scheduleAtFixedRate(task1, 5, 1, TimeUnit.MINUTES);
   }
 
+  static void repeatTaskWithScheduleWithFixedDelay(){
+   ScheduledExecutorService service = Executors.newSingleThreadScheduledExecutor();
+   Runnable task1 = () -> System.out.println("Hello Zoo schedule With fixed Delay");
+    service.scheduleWithFixedDelay(task1, 0, 2, TimeUnit.MINUTES);
+  }
+
 }
