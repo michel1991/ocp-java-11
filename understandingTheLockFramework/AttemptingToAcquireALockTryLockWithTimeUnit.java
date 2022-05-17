@@ -2,7 +2,7 @@ package understandingTheLockFramework;
 import java.util.concurrent.*;
 import java.util.concurrent.locks.*;
 
-public class AttemptingToAcquireALock{
+public class AttemptingToAcquireALockTryLockWithTimeUnit{
   public static void printMessage(Lock lock){
         try{
             lock.lock();
@@ -12,13 +12,13 @@ public class AttemptingToAcquireALock{
 
    }
   
-  public void tryLockExample(){
+  public void tryLockExample() throws InterruptedException{
      Lock lock = new ReentrantLock();
      new Thread( () -> printMessage(lock)).start();
-     if(lock.tryLock()){
+     if(lock.tryLock(10, TimeUnit.SECONDS)){
 
          try{
-              System.out.println("Lock obtained");
+              System.out.println("Lock obtained entering protected code");
           } finally{
             lock.unlock();
            }
@@ -31,8 +31,8 @@ public class AttemptingToAcquireALock{
      }
 
 
-     public static void main(String[] args){
-         var attenpting = new AttemptingToAcquireALock();
+     public static void main(String[] args) throws InterruptedException{
+         var attenpting = new AttemptingToAcquireALockTryLockWithTimeUnit();
          System.out.println("Try using tryLock ");
          attenpting.tryLockExample();
       }
