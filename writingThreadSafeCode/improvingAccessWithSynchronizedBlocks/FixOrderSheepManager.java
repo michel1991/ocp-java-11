@@ -14,6 +14,17 @@ public class FixOrderSheepManager{
 
   private synchronized  void incrementAndReportWithSynchronizedOnMethod(){
         System.out.print( (++sheepCount) + " ");
+  }
+
+  public static void printDay(){
+      synchronized(FixOrderSheepManager.class){
+        System.out.print(" Finished work");
+     }
+
+  }
+
+  public static synchronized  void printDaysWithSynchronizedOnMethod(){
+        System.out.print(" Finished work");
   } 
 
    public static void main(String[] args){
