@@ -10,6 +10,10 @@ public class FixOrderSheepManager{
         System.out.print( (++sheepCount) + " ");
      }
      
+  }
+
+  private synchronized  void incrementAndReportWithSynchronizedOnMethod(){
+        System.out.print( (++sheepCount) + " ");
   } 
 
    public static void main(String[] args){
