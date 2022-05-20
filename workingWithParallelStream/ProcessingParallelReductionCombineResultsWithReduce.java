@@ -2,7 +2,7 @@ package  workingWithParallelStream;
 import java.util.*;
 import java.util.stream.*;
 
-public class  ProcessingParallelReductionCombineResults{
+public class  ProcessingParallelReductionCombineResultsWithReduce{
     static void reduceListOfChar(){
       System.out.println(
           List.of('w', 'o', 'l', 'f')
