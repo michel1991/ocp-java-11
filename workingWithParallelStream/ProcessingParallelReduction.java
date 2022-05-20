@@ -12,7 +12,21 @@ public class ProcessingParallelReduction{
        );
    }
 
+  static void performingOrderBasedTasksOnParallelStream(){
+       System.out.print(
+           List.of(1, 2, 3, 4, 5, 6)
+               .parallelStream()
+              .findAny()
+              .get()
+       );
+   }
+
+
    public static void main(String[] args){
+       System.out.println("Using findAny with serial Stream below ");
        performingOrderBasedTasksOnSerialStream();
+       System.out.println();
+       System.out.println("Using findAny with parallel Stream below ");
+       performingOrderBasedTasksOnParallelStream();
     }
 }
