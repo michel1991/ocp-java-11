@@ -27,6 +27,20 @@ public class AvoidingStatefulOperations{
       System.out.println(list);
    }
 
+  public static List<Integer> fixAddValues(IntStream source){
+       return  source.filter( s -> s % 2 == 0)
+              .boxed()
+              .collect( Collectors.toList())
+        ;
+       
+   }
+
+   static void executeFixAddValues(){
+      var list  = fixAddValues(IntStream.range(1, 11));
+      System.out.println(list);
+   }
+
+
   public static void main(String[] args){
      System.out.println("execute with serial stream");
      executeWithSerialStream();
@@ -35,6 +49,9 @@ public class AvoidingStatefulOperations{
      System.out.println("execute with parallel stream");
      executeWithParallelStream();
      System.out.println();
+
+     System.out.println("fix state operation");
+     executeFixAddValues();
    }
 
 }
