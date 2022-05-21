@@ -29,12 +29,34 @@ class ProcessingParallelReductionCombineResultsWithCollect{
          
   }
 
+
+ static void usingGroupingByConcurrent(){
+      var ohMy =
+          Stream.of("lions", "tigers", "bears")
+                .parallel()
+        ;
+
+       ConcurrentMap<Integer, List<String>> map = ohMy.collect(
+                Collectors.groupingByConcurrent(
+                    String::length
+                   )
+            );
+
+        System.out.println(map);
+        System.out.println(map.getClass());
+
+  }
+
+
    public static void main(String[] args){
-     skipListSet();
+      System.out.println("using ConcurrentSkipListSet");
+      skipListSet();
      System.out.println();
      System.out.println("using Collectors.toConcurrentMap");
      usingToConcurrentMap(); 
      System.out.println();
+    System.out.println("using Collectors.groupingByConcurrent");
+     usingGroupingByConcurrent();
    }
 
 }
