@@ -18,9 +18,22 @@ public class AvoidingStatefulOperations{
       System.out.println(list);
    }
 
+
+   static void executeWithParallelStream(){
+      var sample = new AvoidingStatefulOperations();
+      var list  = sample.addValues(
+           IntStream.range(1, 11).parallel()
+       );
+      System.out.println(list);
+   }
+
   public static void main(String[] args){
      System.out.println("execute with serial stream");
      executeWithSerialStream();
+     System.out.println();
+
+     System.out.println("execute with parallel stream");
+     executeWithParallelStream();
      System.out.println();
    }
 
