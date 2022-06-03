@@ -13,4 +13,20 @@ class ClosingWrappedStreams{
      }
     
   }
+
+  static void relyOnObjectOutputStreamToCloseStream() throws IOException, FileNotFoundException {
+
+     try (
+            var ois = new ObjectOutputStream(
+                  new BufferedOutputStream(
+                      new FileOutputStream( "zoo-banner.txt" )
+                 )
+
+            )
+            
+      ) {
+          ois.writeObject("Hello");
+      }
+
+   }
 }
