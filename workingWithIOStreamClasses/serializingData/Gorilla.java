@@ -28,6 +28,14 @@ class Gorilla implements Serializable{
      this.age = age;
 
    }
+
+  public Boolean getFriendly(){
+      return friendly;
+   }
  
+
+   public void setFriendly(Boolean fiendly){
+      this.friendly = friendly;
+   }
 
 }
