@@ -38,4 +38,9 @@ class Gorilla implements Serializable{
       this.friendly = friendly;
    }
 
+  @Override
+  public String toString(){
+     return "{ name =" + name + " age=" + age + " friendly=" + friendly + "}";
+  }
+
 }
