@@ -9,4 +9,19 @@ class ListingDirectoryContent{
          s.forEach(System.out::println);
       }
   }
+
+   public void copyPath(Path source, Path target){
+       try{
+            Files.copy(source, target);
+            if(Files.isDirectory(source))
+               try(Stream<Path> s = Files.list(source) ){
+                   s.forEach( p -> copyPath(
+                                       p, target.resolve(p.getFileName())
+                                       ) 
+                            );
+                }
+       }catch(IOException e){
+             // Handle
+       }
+   }
 }
