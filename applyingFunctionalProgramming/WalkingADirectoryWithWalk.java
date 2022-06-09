@@ -16,7 +16,7 @@ class WalkingADirectoryWithWalk{
   }
 
     public long getPathSize(Path source ) throws IOException{
-        try (var s = Files.walk(source) ){
+        try (var s = Files.walk(source, FileVisitOption.FOLLOW_LINKS) ){
              return s.parallel()
                      .filter( p -> !Files.isDirectory(p) )
                      .mapToLong(this::getSize)
