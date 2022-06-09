@@ -25,6 +25,16 @@ class WalkingADirectoryWithWalk{
         }
     }
 
+    public long getPathSize(Path source, int depth ) throws IOException{
+        try (var s = Files.walk(source, depth) ){
+             return s.parallel()
+                     .filter( p -> !Files.isDirectory(p) )
+                     .mapToLong(this::getSize)
+                     .sum()
+                  ;
+        }
+    }
+
    void sampleOfCall() throws IOException{
        var myObject = new WalkingADirectoryWithWalk();
        var size = myObject.getPathSize(Path.of("/fox/data"));
