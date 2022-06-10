@@ -3,3 +3,6 @@ java -cp "<path_to_derby>/derby.jar" SetupDerbyDatabase.java
 
 #compilation and execution using module with mods directory. We do this because in folder of mods we have module
 java -cp "mods/derby.jar:/mods/derbyshared.jar" SetupDerbyDatabase.java
+
+#Testing Connection
+java -cp "mods/derby.jar:/mods/derbyshared.jar" gettingADatabaseConnection/TestConnect.java
