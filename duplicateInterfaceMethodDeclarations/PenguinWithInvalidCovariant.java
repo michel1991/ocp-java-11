@@ -1,0 +1,4 @@
+package duplicateInterfaceMethodDeclarations;
+public class PenguinWithInvalidCovariant implements DancesUseWithoutCovariant, EatsFishUseWithoutCovariant{
+
+}
