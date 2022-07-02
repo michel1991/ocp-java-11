@@ -1,6 +1,6 @@
 package polymorphism.castingInterfaces;
 import java.util.*;
-public class ErrorInstanceOfExample{
+public class ErrorInstanceOfWithFinalClassAtLeft{
    public static void main(String[] args){
      Number myNumber = 5;
      Double myDouble = Double.valueOf(6);
