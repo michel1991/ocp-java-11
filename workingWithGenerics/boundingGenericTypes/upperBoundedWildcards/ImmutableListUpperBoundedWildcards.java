@@ -1,7 +1,7 @@
 package workingWithGenerics.boundingGenericTypes.upperBoundedWildcards;
 import java.util.*;
 
-public class AddAnimalToList{
+public class ImmutableListUpperBoundedWildcards{
   
   static class Sparrow extends Bird{}
   static class Bird{}
