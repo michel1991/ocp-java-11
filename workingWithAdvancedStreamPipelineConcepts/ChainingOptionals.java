@@ -19,6 +19,16 @@ class ChainingOptionals{
               .ifPresent(System.out::println)
      ;
  }
+
+ static void withChainingUsingRefMethod(){
+	 String value = "jobs";
+	 Optional<String> stringOptional = Optional.of(value);
+    Optional<Integer> intOptional = stringOptional.map(String::length);
+    System.out.println();
+     System.out.print("Chaining using reference method, number of length of  " + value + " word is ");
+    intOptional.ifPresent(System.out::print);
+    System.out.println();
+ }
   
   public static void main(String[] args){
      
@@ -38,6 +48,7 @@ class ChainingOptionals{
 
      System.out.println("With value three digit functional programming with empty value");
       withChainingThreeDigit(Optional.empty());
+      withChainingUsingRefMethod();
    }
 
 }
