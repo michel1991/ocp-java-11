@@ -1,7 +1,7 @@
 package usingCommonTerminalOperations;
 import java.util.stream.*;
 import java.util.TreeSet;
-import java.util.Set;
+import java.util.*;
 
 public class CollectOperation{
 
@@ -36,7 +36,17 @@ public class CollectOperation{
  }
 
   public static void main(String[] args){
-         
+     Set<String> first = new HashSet<>();
+     first.add("w");
+     first.add("o");
+     
+     Set<String> second = new HashSet<>();
+     second.add("l");
+     second.add("f");
+
+     first.addAll(second);
+     System.out.println(first);
+
      basicExample();
      differentLogicBetweenAccumulatorAndCombiner();
      usingJavaCollectorSorted();
