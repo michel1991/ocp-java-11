@@ -10,10 +10,12 @@ public class AddData{
                  () -> 30 + 11
              );
            System.out.println(result.get()); // 41
-
+          System.out.println("call before get result");
       }finally{
-             if(service != null)
+             if(service != null){
               service.shutdown();
+	      System.out.println("call shutdown");
+	     }
        }
   }
 
