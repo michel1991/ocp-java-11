@@ -31,7 +31,7 @@ public class CheckResults{
             });
 
             result.get(10, TimeUnit.SECONDS);
-            System.out.println("Reached!");
+            System.out.println("Reached! " +  CheckResults.counter);
       }catch(TimeoutException e){
            System.out.println("Not reached in time");
       } finally{
