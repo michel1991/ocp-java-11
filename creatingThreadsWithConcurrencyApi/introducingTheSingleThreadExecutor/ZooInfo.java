@@ -18,8 +18,10 @@ class ZooInfo{
              service.execute(task1);
              System.out.println("end");
       } finally{
-          if(service != null)
+          if(service != null){
               service.shutdown();
+	      System.out.println("call finally");
+           }
       }
   }
   
