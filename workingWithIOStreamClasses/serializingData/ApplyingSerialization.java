@@ -14,5 +14,21 @@ class ApplyingSerialization{
 
       var gorillasFromDisk = handle.readFromFile(file);
       System.out.println(gorillasFromDisk);
+
+
+      var chimpanzees = new ArrayList<Chimpanzee>();
+      chimpanzees.add(new Chimpanzee( "Ham", 5, 'A') );
+      chimpanzees.add(new Chimpanzee( "Enos", 8, 'B') );
+
+
+       System.out.println(" Gorillas deserialization ");
+     String fullPathChimpanzee = System.getProperty("user.dir") + "/workingWithIOStreamClasses/serializingData"+ "/chimpanzee.txt";    
+     File fileChimpanzee = new File(fullPathChimpanzee);
+     handle.saveToFileChimpanzee(chimpanzees, fileChimpanzee);
+
+      System.out.println();
+      var chimpanzeesFromDisk = handle.readFromFileChimpanzee(fileChimpanzee);
+      System.out.println(" Chimpanzees deserialization ");
+      System.out.println(chimpanzeesFromDisk);
    }
 } 
