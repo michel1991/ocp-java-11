@@ -10,6 +10,15 @@ class Gorilla implements Serializable{
    private transient String favoriteFood;
 
   //constructors/getters/setters/toString() omitted
+   public Gorilla(){
+
+   }
+
+   public Gorilla(String theName, int theAge, Boolean friendly){
+      name = theName;
+      age = theAge;
+      this.friendly = friendly;
+   }
 
   public String getName(){
     return  name;
