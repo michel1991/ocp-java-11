@@ -3,8 +3,9 @@ import java.io.*;
 import workingWithIOStreamClasses.serializingData.Chimpanzee;
 
 class PrintMethodExample{
-  void sample() throws IOException{
-        try( PrintWriter out = new PrintWriter("zoo.log") ) {
+  static void saveToFile() throws IOException{
+	 String fullPath = System.getProperty("user.dir") + "/workingWithIOStreamClasses/printingData"+ "/print-method-example.txt";  
+        try( PrintWriter out = new PrintWriter(fullPath)  ) {
              out.write( String.valueOf(5) ); // Writer method
              out.print(5); // PrintWriter method
              var a = new Chimpanzee();
@@ -13,6 +14,10 @@ class PrintMethodExample{
                 
          }
    }
+
+  public static void main(String...args) throws IOException{
+      saveToFile();
+  }
 
 }
 
