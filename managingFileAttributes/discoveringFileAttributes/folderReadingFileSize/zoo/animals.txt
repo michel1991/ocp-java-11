@@ -1,0 +1,8 @@
+beard
+ears
+dolphin
+fox
+lion
+cat
+dog
+fish
