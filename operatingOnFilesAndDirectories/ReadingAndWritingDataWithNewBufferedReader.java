@@ -5,7 +5,10 @@ import java.util.*;
 
 class ReadingAndWritingDataWithNewBufferedReader{
   static void make() throws IOException{
-    var path = Path.of("/animals/gopher.txt");
+       String mainDirectory = "folderReadingAndWritingDataNewBuffered";	   
+    String fullPathSource = System.getProperty("user.dir") + "/operatingOnFilesAndDirectories" + "/" + mainDirectory ;
+
+    var path = Path.of(fullPathSource, "animals", "gopher.txt");
      try( var reader = Files.newBufferedReader(path)){
            String currentLine = null;
            while ( (currentLine = reader.readLine()) != null )
@@ -18,7 +21,9 @@ class ReadingAndWritingDataWithNewBufferedReader{
      list.add("Smokey");
      list.add("Yogi");
 
-      var path = Path.of("/animal/bear.txt");
+    String mainDirectory = "folderReadingAndWritingDataNewBuffered"; 
+    String fullPathSource = System.getProperty("user.dir") + "/operatingOnFilesAndDirectories" + "/" + mainDirectory ;
+      var path = Path.of( fullPathSource, "animals", "bear.txt");
       try( var writer = Files.newBufferedWriter(path) ){
          for ( var line : list ){
               writer.write(line);
@@ -27,5 +32,9 @@ class ReadingAndWritingDataWithNewBufferedReader{
      }
   } // end method
 
+ public static void main(String... args) throws IOException{
+     make();
+     writeToFile();
+  } 
 
 }
