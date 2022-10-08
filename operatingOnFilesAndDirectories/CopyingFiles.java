@@ -69,6 +69,9 @@ class CopyingFiles{
       copyWithInpuStream();
       System.out.println();
       copyWithOutPutStream() ;
+      System.out.println();
+      System.out.println("correctly copy file to directory below, food.txt to enclosure directory");
+      copyReplace("food.txt", "enclosure/food.txt");
   }
 
 
