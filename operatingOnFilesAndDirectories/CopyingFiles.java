@@ -59,6 +59,19 @@ class CopyingFiles{
        long result = Files.copy(source, System.out); 
    }
 
+  public static void copyDirectoryNotMandatoryToHaveExtension() throws IOException{
+     String mainDirectory = "folderCopy";          
+     String fullPathSource = System.getProperty("user.dir") + "/operatingOnFilesAndDirectories" + "/" + mainDirectory + "/source";
+     Path source = Path.of(fullPathSource, "food.txt");
+
+     String fullPathDest = System.getProperty("user.dir") + "/operatingOnFilesAndDirectories" + "/"+ mainDirectory + "/destination";
+     Path dest = Paths.get(fullPathDest, "/copyContentFileLikeDirectory");
+
+     Path result = Files.copy(source, dest, StandardCopyOption.REPLACE_EXISTING);
+     System.out.println("copy replace, file not mandatory to have extension,  content file copied like directory , file copy  done " + result);
+
+   }
+
   public static void main(String... args) throws IOException{
       simpleCopy("bamboo.txt", "bamboo.txt");
       System.out.println();
@@ -72,6 +85,8 @@ class CopyingFiles{
       System.out.println();
       System.out.println("correctly copy file to directory below, food.txt to enclosure directory");
       copyReplace("food.txt", "enclosure/food.txt");
+       System.out.println();
+      copyDirectoryNotMandatoryToHaveExtension();
   }
 
 
