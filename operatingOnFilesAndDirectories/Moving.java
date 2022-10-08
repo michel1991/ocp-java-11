@@ -15,8 +15,21 @@ class Moving{
 	 System.out.println("move file source "+ source + " destination " + result); 
       }
 
+     public static void atomicMove() throws IOException{ 
 
+         String mainDirectory = "folderMove";      
+         String fullPathSource = System.getProperty("user.dir") + "/operatingOnFilesAndDirectories" + "/" + mainDirectory + "/source";
+          Path source = Path.of(fullPathSource, "mouse.txt");
+
+         String fullPathDest = System.getProperty("user.dir") + "/operatingOnFilesAndDirectories" + "/"+ mainDirectory + "/destination";
+         Path dest = Paths.get(fullPathDest, "gerbil.txt");
+         var result =  Files.move(source, dest, StandardCopyOption.ATOMIC_MOVE, StandardCopyOption.REPLACE_EXISTING);
+         System.out.println("atomic move file,  source "+ source + " destination " + result); 
+      }
+
+  
    public static void main(String... args) throws IOException{
-      basicMove();
+       basicMove();
+       atomicMove();
    }
 }
