@@ -6,10 +6,10 @@ import java.io.*;
 class ModifyingAttributesWithGetFileAttributeView{
    static void modify() throws IOException{
        // read file attributes
-      var path = Paths.get("/turtles/sea.txt");
-      BasicFileAttributeView  view = Files.getFileAttributeView(
-        path, BasicFileAttributeView.class
-        );
+     String mainDirectory = "folderModifyingAttributes";
+     String fullPathSource = System.getProperty("user.dir") + "/improvingAttributeAccess"  + "/" + mainDirectory ;
+      var path = Paths.get(fullPathSource, "turtles", "sea.txt");
+      BasicFileAttributeView  view = Files.getFileAttributeView(path, BasicFileAttributeView.class);
 
         BasicFileAttributes attributes = view.readAttributes();
         
@@ -19,5 +19,10 @@ class ModifyingAttributesWithGetFileAttributeView{
        );
 
         view.setTimes(lastModifiedTime, null, null);
+	System.out.println("set modified last time of the file whose source is, " + path ); 
+   }
+
+   public static void main(String... args) throws IOException{
+      modify();
    }
 }
