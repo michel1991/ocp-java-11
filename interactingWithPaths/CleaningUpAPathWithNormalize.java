@@ -7,6 +7,7 @@ class CleaningUpAPathWithNormalize{
      var p1 =  Paths.get("/pony/../weather.txt");
      var p2 =  Paths.get("/weather.txt");
      System.out.println(p1.equals(p2));
+     System.out.println(p2.normalize());
      System.out.println(p1.normalize().equals(p2.normalize()));
    }
    public static void main(String... args){
