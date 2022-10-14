@@ -17,5 +17,8 @@ public class Squirrel{
   public String getSpecies(){
       return species;
    }
-
+  
+  public String toString(){
+     return "{ weight =  " + weight  + ", species = " + species + " } "; 
+  }
 }
