@@ -11,6 +11,11 @@ public class MaxNumber{
      System.out.println(o.get());
   }
 
+ /**
+ * Calling get() on an empty Optional causes an exception to be thrown, making options B and F correct.
+ * Option C is correct because the infinite stream is not made finite by the intermediate filter() operation.
+ * Therefore, the call to max() never terminates.   
+  */
  static void maxWithOnlyFilter( Stream<Integer> s ){
      // B. magic(Stream.empty()); throws an exception.
      // C. magic(Stream.iterate(1, x -> x++)); runs infinitely.
