@@ -1,4 +1,4 @@
-package advancedDesign;
+package operations;
 public class ArithmeticOperation {
 
     /**
