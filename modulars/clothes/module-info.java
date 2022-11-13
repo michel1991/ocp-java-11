@@ -1,3 +1,3 @@
-module mdulars.clothes{
+module modulars.clothes{
 
 }
