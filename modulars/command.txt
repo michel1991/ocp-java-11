@@ -1,0 +1,6 @@
+java -cp ".:./modulars/mods/modulars.church.jar" modulars/unamed/Testing.java
+javac -p modulars/mods -d modulars/church modulars/church/program/**/*.java modulars/church/module-info.java
+javac -p modulars/mods -d modulars/preparation modulars/preparation/**/*.java modulars/preparation/module-info.java
+
+ java -p modulars/mods -m modulars.preparation/choice.Applying
+ jar -cvf modulars/mods/modulars.preparation.jar -C modulars/preparation .
