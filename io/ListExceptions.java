@@ -1,7 +1,7 @@
 package io;
 import java.io.*;
 
-//---------------------- QUESTION/Response -------------------------------------------------------------------
+//---------------------- QUESTION/Response (1) -------------------------------------------------------------------
 
 /**
 * Question: Which of the following exceptions do not need to be handled or declared in the method in which they are thrown? (Choose all that apply.)
@@ -17,6 +17,16 @@ class Wally extends IllegalArgumentException {}
 class Prime extends IOException {}
 
 //---------------------- QUESTION -------------------------------------------------------------------
+
+//---------------------- QUESTION/Response (2) -------------------------------------------------------------------
+/**
+  *  Question: Which of the following exceptions need to be handled or declared in the method in which they are thrown? (Choose all that apply.)
+  *
+  *  Checked exceptions include any class that inherits Exception, but not RuntimeException, while unchecked exceptions include any class that inherits RuntimeException or (less commonly) Error.
+  *  Both ParseException and SQLException extend Exception, while FileNotFoundException extends IOException, which in turn extends Exception.
+ */
+
+//---------------------- QUESTION/Response (2) -------------------------------------------------------------------
 
 public class ListExceptions {
   public static void main(String... args){
