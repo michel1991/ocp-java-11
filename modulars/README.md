@@ -1,4 +1,4 @@
-#Which are true statements? (Choose all that apply.)
+# Which are true statements? (Choose all that apply.)
 * A. An automatic module exports all packages to named modules.
 * B. An automatic module exports only the specified packages to named modules
 * C. An automatic module exports no packages to named modules.
@@ -10,7 +10,7 @@ An automatic module exports all packages, making option A correct.
 An unnamed module is not available to any modules on the module path.
 Therefore, it doesn’t export any packages, and option F is correct.
 
-#Which of the following options does not have a one-character shortcut in any of the commands studied in this chapter? (Choose all that apply.)
+# Which of the following options does not have a one-character shortcut in any of the commands studied in this chapter? (Choose all that apply.)
 * A. describe-module
 * B. list-modules
 * C. module
@@ -23,7 +23,7 @@ Option C is incorrect because module has the m equivalent.
 Option D is incorrect because module-path has the p equivalent. Option F is incorrect because summary has the s equivalent.
 Options B and E are the correct answers because they do not have equivalents.
 
-#Which options are valid on the jar command without considering module options? (Choose all that apply.)
+# Which options are valid on the jar command without considering module options? (Choose all that apply.)
 * A. -c
 * B. -C
 * C. -cp
@@ -34,7 +34,7 @@ Options B and E are the correct answers because they do not have equivalents.
 When creating a jar file, you use the options -cf or -cvf, making options A and E correct. It also allows the specification of a directory using -C, making option B correct.
 Options D and E are incorrect because -d and -p are used for modules.
 
-#Suppose you have a module named com.vet. Where could you place the following module-info.java file to create a valid module?
+# Suppose you have a module named com.vet. Where could you place the following module-info.java file to create a valid module?
 
 ```java
 public module com.vet {
@@ -49,3 +49,15 @@ If this were a valid module-info.java file, it would need to be placed at the ro
 However, a module is not allowed to use the public access modifier. Option D is correct because the provided file does not compile regardless of placement in the project.
 For more information, see Chapter 11.
 
+# What is true about a service provider module? (Choose all that apply.)
+* A. It contains the interface that implementations must provide
+* B. It contains exactly one implementation of the interface.
+* C. It contains one or more implementations of the interface.
+* D. It can be changed without recompiling any other modules.
+* E. It must have a provides directive.
+* F. It must have a uses directive.
+
+A service provider interface declares the interface rather than a service provider, making option A incorrect.
+Each service provider is allowed to provide only one service provider implementation, making option B correct and option C incorrect.
+One of the benefits of services is being able to change the service provider dynamically, making option D correct.
+Finally, a service provider interface uses while a service provider provides, making option E correct and option F incorrect.
