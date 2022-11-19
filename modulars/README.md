@@ -61,3 +61,12 @@ A service provider interface declares the interface rather than a service provid
 Each service provider is allowed to provide only one service provider implementation, making option B correct and option C incorrect.
 One of the benefits of services is being able to change the service provider dynamically, making option D correct.
 Finally, a service provider interface uses while a service provider provides, making option E correct and option F incorrect.
+
+# Which of the following statements are correct? (Choose all that apply.)
+* A. The jar command allows adding exports as command-line options.
+* B. The java command allows adding exports as command-line options.
+* C. The jdeps command allows adding exports as command-line options.
+* D. Adding an export at the command line is discouraged.
+* E. Adding an export at the command line is recommended.
+
+The java command has an --add-exports option that allows exporting a package at runtime. However, it is not encouraged to use it, making options B and D the answer.
