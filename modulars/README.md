@@ -70,3 +70,17 @@ Finally, a service provider interface uses while a service provider provides, ma
 * E. Adding an export at the command line is recommended.
 
 The java command has an --add-exports option that allows exporting a package at runtime. However, it is not encouraged to use it, making options B and D the answer.
+
+# An automatic module name is generated if one is not supplied. Which of the following JAR filename and generated automatic module name pairs are correct? (Choose all that apply.)
+* A. emily-1.0.0.jar and emily
+* B. emily-1.0.0-SNAPSHOT.jar and emily
+* C. emily_the_cat-1.0.0.jar and emily_the_cat
+* D. emily_the_cat-1.0.0.jar and emily-the-cat
+* E. emily.$.jar and emily
+* F. emily.$.jar and emily.
+* G. emily.$.jar and emily..
+
+Any version information at the end of the JAR filename is removed, making options A and B correct.
+Underscores (_) are turned into dots (.), making options C and D incorrect.
+Other special characters like a dollar sign ($) are also turned into dots.
+However, adjacent dots are merged, and leading/trailing dots are removed. Therefore, option E is correct.
