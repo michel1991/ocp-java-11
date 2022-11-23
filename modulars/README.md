@@ -105,3 +105,16 @@ F. An unnamed module exports no packages to named modules.
 An automatic module exports all packages, making option A correct.
 An unnamed module is not available to any modules on the module path.
 Therefore, it doesn’t export any packages, and option F is correct.
+
+# Which of the following statements are true? (Choose all that apply.)
+A. Modules with cyclic dependencies will not compile.
+B. Packages with a cyclic dependency will not compile.
+C. A cyclic dependency always involves exactly two modules.
+D. A cyclic dependency always involves three or more modules.
+E. A cyclic dependency always involves at least two requires statements.
+F. An unnamed module can be involved in a cyclic dependency with an automatic module
+A cyclic dependency is when a module graph forms a circle.
+Option A is correct because the Java Platform Module System does not allow cyclic dependencies between modules.
+No such restriction exists for packages, making option B incorrect.
+A cyclic dependency can involve two or more modules that require each other, making option E correct, while options C and D are incorrect.
+Finally. Option F is incorrect because unnamed modules cannot be referenced from an automatic module.
