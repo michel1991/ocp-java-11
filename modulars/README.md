@@ -132,3 +132,33 @@ H. None of the above
 Option D is correct because it prints jdk.unsupported but does not print a table with a suggested alternative.
 Option C is incorrect because it does print a suggested alternative.
 Options A, B, E, F, and G are incorrect because those options do not exist.
+
+
+# What is true of a module containing a file named module-info.java with the following contents? (Choose all that apply.)
+```java
+module com.food.supplier {}
+```
+A. All packages inside the module are automatically exported.
+B. No packages inside the module are automatically exported.
+C. A main method inside the module can be run.
+D. A main method inside the module cannot be run since the class is not exposed.
+E. The module-info.java file contains a compiler error.
+F. The module-info.java filename is incorrect.
+
+Packages inside a module are not exported by default, making option B correct and option A incorrect.
+Exporting is necessary for other code to uses the packages;
+it is not necessary to call the main method at the command line, making option C correct and option D incorrect.
+The module-info.java file has the correct name and compiles, making options E and F incorrect.
+
+# Suppose you have separate modules for a service provider interface, service provider, service locator, and consumer. Which module(s) need to specify a requires directive on the service provider?
+A. Service locator
+B. Service provider interface
+C. Consumer
+D. Consumer and service locator
+E. Consumer and service provider
+F. Service locator and service provider interface
+G. Consumer, service locator, and service provider interface
+H. None of the above
+
+This question is tricky. The service provider must have a uses directive, but that is on the service provider interface.
+No modules need to specify requires on the service provider since that is the implementation.
