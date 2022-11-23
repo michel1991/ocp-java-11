@@ -162,3 +162,29 @@ H. None of the above
 
 This question is tricky. The service provider must have a uses directive, but that is on the service provider interface.
 No modules need to specify requires on the service provider since that is the implementation.
+
+# Suppose module puppy depends on module dog and module dog depends on module animal. Which two lines allow module puppy to access the animal.behavior package in module animal? (Choose two.)
+```java
+    module animal {
+       exports animal.behavior to dog;
+    }
+    module dog {
+        _______ animal;  // line S
+    }
+    module puppy {
+            _______ dog;     // line T
+   }
+```
+A. require on line S
+B. require on line T
+C. requires on line S
+D. requires on line T
+E. require transitive on line S
+F. require transitive on line T
+G. requires transitive on line S
+H. requires transitive on line T
+
+Options A, B, E, and F are incorrect because they refer to keywords that don’t exist.
+The requires transitive keyword is used when specifying a module to be used by the requesting module and any other modules that use the requesting module.
+Therefore, dog needs to specify the transitive relationship, and option G is correct.
+The module puppy just needs to require dog, and it gets the transitive dependencies, making option D correct.
