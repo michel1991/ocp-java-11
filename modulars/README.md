@@ -118,3 +118,17 @@ Option A is correct because the Java Platform Module System does not allow cycli
 No such restriction exists for packages, making option B incorrect.
 A cyclic dependency can involve two or more modules that require each other, making option E correct, while options C and D are incorrect.
 Finally. Option F is incorrect because unnamed modules cannot be referenced from an automatic module.
+
+# Which command can you run to determine whether you have any code in your JAR file that depends on unsupported internal APIs and does not suggest an alternative?
+A. jdeps -internal-jdk
+B. jdeps --internaljdk
+C. jdeps --internal-jdk
+D. jdeps -s
+E. jdeps -unsupported
+F. jdeps –unsupportedapi
+G. jdeps –unsupported-api
+H. None of the above
+
+Option D is correct because it prints jdk.unsupported but does not print a table with a suggested alternative.
+Option C is incorrect because it does print a suggested alternative.
+Options A, B, E, F, and G are incorrect because those options do not exist.
