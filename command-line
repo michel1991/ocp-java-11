@@ -122,3 +122,21 @@ java -p feeding -m zoo.animal.feeding/zoo.animal.feeding.Task
 ######### RUN USING ARTEFACT DIRECTORY ##########
 java -p mods -m zoo.animal.feeding/zoo.animal.feeding.Task
 ######### END ############################
+
+######### DESCRIBE MODULE ##########
+java -p mods -d zoo.animal.feeding
+java -p mods -d zoo.animal.talks 
+java -p talks -d zoo.animal.talks
+jar -p mods -f mods/zoo.animal.talks.jar -d
+jar -p mods -f mods/zoo.animal.talks.jar --describe-module
+######### END ############################
+
+######### List MODULE ##########
+java -p mods --list-modules -m zoo.animal.feeding
+java -p staff --list-modules
+######### END ############################
+
+######### List MODULE ##########
+ java --show-module-resolution -p mods -m zoo.animal.talks/zoo.animal.talks.media.Announcement 
+ java  --show-module-resolution -p mods -m zoo.animal.feeding/zoo.animal.feeding.Task
+######### END ############################
