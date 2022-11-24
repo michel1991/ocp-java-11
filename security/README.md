@@ -44,3 +44,14 @@ E. It uses private instance variables.
 Encapsulation allows using methods to get and set instance variables so other classes are not directly using them, making options A and B correct.
 Instance variables must be private for this to work, making option E correct and option D incorrect.
 While there are common naming conventions, they are not required, making option C incorrect.
+
+# Fill in the blanks: The Console readPassword() method returns a ______________ because it improves ________________.
+A. byte[], performance
+B. byte[], security
+C. char[], performance
+D. char[], security
+E. String, performance
+F. String, security
+
+The first step is to recognize that readPassword() is a method on Console. It returns a char[].
+This improves security because a String is more easily available in a memory dump than a char[].
