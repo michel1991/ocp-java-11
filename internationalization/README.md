@@ -1,4 +1,4 @@
-#Which of the following statements about resource bundles are correct? (Choose all that apply.)
+# Which of the following statements about resource bundles are correct? (Choose all that apply.)
 * A. All keys must be in the same resource bundle to be used.
 * B. A resource bundle is loaded by calling the new ResourceBundle() constructor.
 * C. Resource bundle values are always read using the Properties class.
@@ -13,3 +13,20 @@ Option C is incorrect, as resource bundle values are read from the ResourceBundl
 Option D is correct because the locale is changed only in memory.
 Option E is incorrect, as the resource bundle for the default locale may be used if there is no resource bundle for the specified locale (or its locale without a country code).
 Finally, option F is correct. The JVM will set a default locale automatically, making it possible to use a resource bundle for a locale, even if a locale was not explicitly set.
+
+# Assume that all of the files mentioned in the answer choices exist and define the same keys. Which one will be used to find the key in line 8?
+```java
+Locale.setDefault(new Locale("en", "US"));
+var b = ResourceBundle.getBundle("Dolphins");
+System.out.println(b.getString("name"));
+```
+A. Dolphins.properties
+B. Dolphins_US.properties
+C. Dolphins_en.properties
+D. Whales.properties
+E. Whales_en_US.properties
+F. The code does not compile.
+
+Java will first look for the most specific matches it can find, starting with Dolphins_en_ US.properties.
+Since that is not an answer choice, it drops the country and looks for Dolphins_en.properties, making option C correct.
+Option B is incorrect because a country without a language is not a valid locale.
