@@ -136,7 +136,13 @@ java -p mods --list-modules -m zoo.animal.feeding
 java -p staff --list-modules
 ######### END ############################
 
-######### List MODULE ##########
+######### MODULE Resolution ##########
  java --show-module-resolution -p mods -m zoo.animal.talks/zoo.animal.talks.media.Announcement 
  java  --show-module-resolution -p mods -m zoo.animal.feeding/zoo.animal.feeding.Task
 ######### END ############################
+
+######### JDEPS ##########
+jdeps -s --module-path mods  mods/zoo.animal.feeding.jar
+jdeps -s --module-path mods  mods/zoo.animal.care.jar 
+jdeps  --module-path mods  mods/zoo.animal.care.jar 
+######### END JDEPS ############################
