@@ -1,5 +1,5 @@
 
-package advancedDesign;
+package inheritance;
 
 /**
 * Question: Given the following class definition, which method declaration could appear in a subclass of Otter? (Choose all that apply.)

@@ -1,4 +1,4 @@
-package advancedDesign;
+package inheritance;
 abstract class Elephant {
     abstract static private class SleepsAlot {
         abstract int sleep();

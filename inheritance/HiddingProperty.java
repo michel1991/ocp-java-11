@@ -1,4 +1,4 @@
-package advancedDesign;
+package inheritance;
 
 /*
 * The code compiles, making option F incorrect. An instance variable with the same name as an inherited instance variable is hidden,
