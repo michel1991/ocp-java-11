@@ -1,3 +1,5 @@
+package inheritance.error;
+
 final class Cook {
     static class Vegetable {
         float vitamins() { return 8f; }

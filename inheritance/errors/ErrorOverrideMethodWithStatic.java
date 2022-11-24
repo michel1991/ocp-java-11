@@ -1,4 +1,4 @@
-package advancedDesign;
+package inheritance.error;
 
 /**
 * If a class inherits an instance method, then it can only declare a method with the same signature if that method is also an instance method,
