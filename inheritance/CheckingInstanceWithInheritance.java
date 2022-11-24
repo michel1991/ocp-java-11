@@ -1,28 +1,28 @@
-package advancedDesign;
+package inheritance;
 
-   interface Planet{ 
-    
+   interface Planet{
+
    }
 
   interface Moon{
-    
+
    }
 
   class Mars implements Planet{
-    
+
    }
 
-  class Titan implements Moon{     
-    
+  class Titan implements Moon{
+
    }
 
  final class Unknown extends Titan{
-    
+
    }
- 
+
 class CheckingInstanceWithInheritance{
- 
-	
+
+
    public static void main(String... args){
       var m1 = new Mars();
       Titan t1 = new Titan();
