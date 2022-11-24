@@ -1,4 +1,4 @@
-package advancedDesign;
+package inheritance;
 
 
  class Wizard {

@@ -1,4 +1,4 @@
-package advancedDesign;
+package inheritance;
 class Bird {
     int feathers = 0;
     Bird(int x) { this.feathers = x; }
