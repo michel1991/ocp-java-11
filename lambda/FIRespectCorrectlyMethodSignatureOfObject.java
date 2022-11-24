@@ -1,3 +1,4 @@
+package lambda;
 /*
 * The requirement for a functional interface is that it contains a single abstract method, excluding any that match the signature
 * of public methods in java.lang.Object. Meow is a valid functional interface, as is Whistle that extends it,
