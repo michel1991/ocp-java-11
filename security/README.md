@@ -22,3 +22,14 @@ If it were the opposite, it would be a blacklist. There is no such thing as a gr
 * C.Injection
 * D.None of the above
 The main purpose of validating a filename is to ensure it has only valid characters and is not a command injection attack. Therefore, option C is correct.
+
+# Which statements are correct? (Choose all that apply.)
+A. A blacklist lists what is allowed.
+B. A whitelist lists what is allowed.
+C. Obfuscation does not prevent decompilation.
+D. Obfuscation prevents decompilation.
+E. None of the above.
+
+A whitelist states what is allowed rather than what is banned.
+An obsfucator makes it harder to read the decompiled code but does not prevent it.
+Therefore, options B and C are correct.
