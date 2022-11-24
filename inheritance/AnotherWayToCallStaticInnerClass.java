@@ -1,4 +1,4 @@
-package advancedDesign;
+package inheritance;
 
  final class Cook {
     static class Vegetable {

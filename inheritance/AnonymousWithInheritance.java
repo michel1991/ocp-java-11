@@ -1,4 +1,4 @@
-package advancedDesign;
+package inheritance;
 
 /**
 * The MagicWand class is an inner class that requires an instance of the outer class Wizard to instantiate.
