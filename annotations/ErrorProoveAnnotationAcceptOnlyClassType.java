@@ -6,7 +6,7 @@ import java.lang.annotation.*;
 *  Line 5 also does not compile because an element type must be one of the predefined immutable types: a primitive, String,
 * Class, enum, another annotation, or an array of these types. The rest of the lines do not contain any compilation errors.
 */
-public class ErrorProoveAssertionAcceptOnlyClassType {
+public class ErrorProoveAnnotationAcceptOnlyClassType {
      static class Food {}
     @Inherited public @interface Unexpected {
          public String rsvp() default null;
