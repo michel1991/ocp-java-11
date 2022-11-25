@@ -188,3 +188,25 @@ Options A, B, E, and F are incorrect because they refer to keywords that don’t
 The requires transitive keyword is used when specifying a module to be used by the requesting module and any other modules that use the requesting module.
 Therefore, dog needs to specify the transitive relationship, and option G is correct.
 The module puppy just needs to require dog, and it gets the transitive dependencies, making option D correct.
+
+# Which statement is true about the jdeps command? (Choose all that apply.)
+A. It can provide information about dependencies on the class level only.
+B. It can provide information about dependencies on the package level only.
+C. It can provide information about dependencies on the class or package level.
+D. It can run only against a named module.
+E. It can run against a regular JAR.
+
+The jdeps command provides information about the class or package level depending on the options passed, making option C correct.
+It is frequently used to determine what dependencies you will need when converting to modules. This makes it useful to run against a regular JAR, making option E correct.
+
+# Which are true of the --module-path option? (Choose all that apply.)
+A. It is an option on the javac command.
+B. It is an option on the java command.
+C. It is an option on the jar command.
+D. It is an option on the jdeps command.
+E. It has a short form of -m.
+F. It has a short form of -p.
+
+Options A, B, and D are correct because the -module-path option is available on javac, java, and jdeps.
+Option F is correct because -p is equivalent for the javac and java commands. The jdeps command does not allow the short form.
+
