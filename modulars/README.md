@@ -233,3 +233,14 @@ When running a program using java, you specify the classpath with -cp, making op
 Options D and E are incorrect because -d and -p are used for modules.
 Options A and B are not valid options on the java command.
 
+Which of the following are true? (Choose all that apply.)
+A. javac compiles a .class file into a .java file.
+B. javac compiles a .java file into a .bytecode file.
+C. javac compiles a .java file into a .class file.
+D. java accepts the name of the class as a parameter.
+E. java accepts the filename of the .bytecode file as a parameter.
+F. java accepts the filename of the .class file as a parameter.
+
+Java puts source code in .java files and bytecode in .class files. It does not use a .bytecode file.
+When running a Java program, you pass just the name of the class without the .class extension.
+
