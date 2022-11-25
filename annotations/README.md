@@ -22,3 +22,29 @@ G. None of the above
 The @Retention annotation determines whether annotations are discarded when the code is compiled, at runtime, or not at all.
 The presence, or absence, of the @Documented annotation determines whether annotations are discarded within generated Javadoc.
 For these reasons, option D is correct.
+
+# What conditions must be true to declare a repeatable annotation along with its associated containing annotation type? (Choose all that apply.)
+A. The repeatable annotation must be declared with @Repeatable, which includes a value that points to the containing type annotation.
+B. The repeatable annotation must include an element called value().
+C. The repeatable annotation must include an element whose type is a primitive array.
+D. The containing annotation type must be declared with @Repeatable, which includes a value that points to the repeatable annotation.
+E. The containing annotation type must include an element called value().
+F. The containing annotation type must include an element whose type is an array.
+
+Creating a repeatable annotation requires declaring two annotations.
+The first, the repeatable annotation, needs to be declared with @Repeatable and include a value that refers to the containing annotation type.
+The second, the containing annotation type, must include an element named value() that includes an array of the repeatable annotation type.
+For these reasons, options A, E, and F are correct.
+
+Which annotation can cancel out a warning on a method using the @Deprecated API at compile time?
+
+A. @FunctionalInterface
+B. @Ignore
+C. @IgnoreDeprecated
+D. @Retention
+E. @SafeVarargs
+F. @SuppressWarnings
+
+If @SuppressWarnings("deprecation") is applied to a method that is using a deprecated API,
+then warnings related to the usage will not be shown at compile time, making option F correct.
+Note that there are no built-in annotations called @Ignore or @IgnoreDeprecated.
