@@ -210,3 +210,26 @@ F. It has a short form of -p.
 Options A, B, and D are correct because the -module-path option is available on javac, java, and jdeps.
 Option F is correct because -p is equivalent for the javac and java commands. The jdeps command does not allow the short form.
 
+# For a top-down migration, all modules other than named modules are ________________ modules and on the __________________.
+A. automatic, classpath
+B. automatic, module path
+C. unnamed, classpath
+D. unnamed, module path
+E. None of the above
+
+A top-down migration strategy first places all JARs on the module path.
+Then it migrates the top-level module to be a named module, leaving the other modules as automatic modules.
+Option B is correct as it matches both of those characteristics.
+
+# Which options are valid on the java command without considering module options? (Choose all that apply.)
+A. -c
+B. -C
+C. -cp
+D. -d
+E. -f
+F. -p
+
+When running a program using java, you specify the classpath with -cp, making option C correct.
+Options D and E are incorrect because -d and -p are used for modules.
+Options A and B are not valid options on the java command.
+
