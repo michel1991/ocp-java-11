@@ -9,3 +9,16 @@ Annotations should include metadata (data about data) that is relatively constan
 The number of animals in the zoo, their names, and the guests of the zoo can change throughout the day, so that information is best stored as part of the data.
 The number of animals that can fit in an enclosure defines a rule about the enclosure.
 It does not include how many animals are actually in each enclosure; therefore, it is appropriate metadata and best served using an annotation.
+
+# Fill in the blanks: The __________ annotation determines whether annotations are discarded at runtime, while the __________ annotation determines whether they are discarded in generated Javadoc.
+A. @Target, @Deprecated
+B. @Discard, @SuppressWarnings
+C. @Retention, @Generated
+D. @Retention, @Documented
+E. @Inherited, @Retention
+F. @Target, @Repeatable
+G. None of the above
+
+The @Retention annotation determines whether annotations are discarded when the code is compiled, at runtime, or not at all.
+The presence, or absence, of the @Documented annotation determines whether annotations are discarded within generated Javadoc.
+For these reasons, option D is correct.
