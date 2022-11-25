@@ -1,0 +1,5 @@
+Given the following method, which statements are correct? (Choose all that apply.)
+C. The code compiles and correctly copies the data between some files.
+D. The code compiles and correctly copies the data between all files.
+E. If we check file2 on line n1 within the file system after five iterations of the while loop, it may be empty.
+hello
