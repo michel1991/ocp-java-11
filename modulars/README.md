@@ -244,3 +244,16 @@ F. java accepts the filename of the .class file as a parameter.
 Java puts source code in .java files and bytecode in .class files. It does not use a .bytecode file.
 When running a Java program, you pass just the name of the class without the .class extension.
 
+# Which are valid modes for the jmod command? (Choose all that apply.)
+A. add
+B. create
+C. delete
+D. describe
+E. extract
+F. list
+G. show
+
+This is another question you just have to memorize.
+The jmod command has five modes you need to be able to list: create, extract, describe, list, and hash.
+The hash operation is not an answer choice. The other four are making options B, D, E, and F correct.
+
