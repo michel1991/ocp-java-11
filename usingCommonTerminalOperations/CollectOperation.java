@@ -1,8 +1,12 @@
 package usingCommonTerminalOperations;
 import java.util.stream.*;
+import java.util.function.*;
 import java.util.TreeSet;
 import java.util.*;
 
+/**
+*  If no intermediate accumulator the combine lambda is not call
+*/
 public class CollectOperation{
 
   static void basicExample(){
@@ -10,16 +14,49 @@ public class CollectOperation{
         StringBuilder word = stream.collect(StringBuilder::new, StringBuilder::append, StringBuilder::append);
         System.out.println("basic example " + word);
   }
+  static void basicExampleWithType(){
+      Stream<String> stream = Stream.of("w", "o", "l", "f");
+      BiConsumer<StringBuilder, String> accumulator = (mutableAccumulator, currentValue) -> {
+          mutableAccumulator.append(currentValue);
+      };
+      BiConsumer<StringBuilder, StringBuilder> combiner = (identityMutableCombiner, intermediateAccumulator) -> {
+          System.out.println(" basicExampleWithType identity mutable combiner" + identityMutableCombiner);
+          System.out.println(" basicExampleWithType intermediate accumulator" + intermediateAccumulator);
+      };
+      Supplier<StringBuilder> mutableIdentity = StringBuilder::new;
+      StringBuilder word = stream.collect(mutableIdentity, accumulator, combiner);
+
+      System.out.println("basic example (specified type ) " + word);
+  }
   
   static void differentLogicBetweenAccumulatorAndCombiner(){
-     Stream<String> stream = Stream.of("w", "o", "l", "f");
-     TreeSet<String> set = stream.collect(
-         TreeSet::new,
-         TreeSet::add,
-         TreeSet::addAll
-    ); 
-
+         Stream<String> stream = Stream.of("w", "o", "l", "f");
+         TreeSet<String> set = stream.collect(
+             TreeSet::new,
+             TreeSet::add,
+             TreeSet::addAll
+        );
      System.out.println("differnt logic between accumulator and combiner " + set);
+  }
+
+    static void differentLogicBetweenAccumulatorAndCombinerType()
+    {
+      Stream<String> stream = Stream.of("w", "o", "l", "f");
+      BiConsumer<TreeSet<String>, String> accumulator = (mutableAccumulator, currentValue) ->{
+          mutableAccumulator.add(currentValue);
+      };
+      BiConsumer<TreeSet<String>, TreeSet<String>> combiner = (identityMutableCombiner, intermediateAccumulator) ->{
+          System.out.println("differentLogicBetweenAccumulatorAndCombinerType: combiner identity " + identityMutableCombiner);
+          System.out.println("differentLogicBetweenAccumulatorAndCombinerType: combiner current value "+ intermediateAccumulator);
+          identityMutableCombiner.addAll(intermediateAccumulator);
+      };
+      Supplier<TreeSet<String>> mutableIdentity = TreeSet::new;
+      TreeSet<String> set = stream.collect(
+              mutableIdentity,
+              accumulator,
+              combiner
+      );
+      System.out.println("differnt logic between accumulator and combiner(specified type ) " + set);
   }
 
 
@@ -48,7 +85,9 @@ public class CollectOperation{
      System.out.println(first);
 
      basicExample();
+     basicExampleWithType();
      differentLogicBetweenAccumulatorAndCombiner();
+      differentLogicBetweenAccumulatorAndCombinerType();
      usingJavaCollectorSorted();
      usingJavaCollectorUnSortedShortVersion();
 
