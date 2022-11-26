@@ -59,3 +59,17 @@ The negation operator (-) is used only for numeric values, while the logical com
 For these reasons, option B is incorrect, and option E is correct.
 Finally, the pre-increment/pre-decrement operators return the new value of the variable, while the post-increment/post-decrement operators return the original variable.
 For these reasons, option C is incorrect, and option D is correct.
+
+# Which of the following are true statements? (Choose all that apply.)
+A. The JDK contains a compiler.
+B. The JVM contains a compiler.
+C. The javac command creates a file containing bytecode.
+D. The java command creates a file containing bytecode.
+E. The JDK is contained in the JVM.
+F. The JVM is contained in the JDK.
+
+The Java Development Kit (JDK) is used when creating Java programs.
+It contains a compiler since it is a development tool making option A correct and option B incorrect.
+The JDK contains a Java Virtual Machine (JVM) making option F correct and option E incorrect.
+The compiler creates bytecode making option C correct and option D incorrect. For more information, see Chapter 1.
+
