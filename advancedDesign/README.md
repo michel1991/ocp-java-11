@@ -73,3 +73,16 @@ It contains a compiler since it is a development tool making option A correct an
 The JDK contains a Java Virtual Machine (JVM) making option F correct and option E incorrect.
 The compiler creates bytecode making option C correct and option D incorrect. For more information, see Chapter 1.
 
+# Which of the following are correct statements about exception handling in Java? (Choose all that apply.)
+A. Unchecked exceptions are allowed, but not required, to be handled or declared.
+B. Error exceptions are required to be handled or declared.
+C. It is appropriate to catch Throwable in your program.
+D. The handle or declare rule means that a catch block should be put around all places a checked exception can be thrown.
+E. RuntimeException is the only unchecked exception in Java.
+F. RuntimeException inherits Exception and Throwable.
+Option A is correct, as unchecked exceptions can be handled or declared, but are not required to be.
+Options B and E are incorrect because Error is an unchecked exception, which is not required to be handled or declared.
+Option C is incorrect, as catching Throwable includes catching instances of Error, which should not be caught in most cases.
+Option D is incorrect, as exceptions can also be declared and thrown to the caller.
+Finally, option F is correct, as it describes the inheritance of RuntimeException.
+
