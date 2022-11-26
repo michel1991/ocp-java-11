@@ -45,3 +45,17 @@ This means that other classes can see the class.
 However, they cannot call any of the methods or read any of the fields.
 It is essentially a useless class. Option C is incorrect because package-private access applies to the whole package.
 Option E is incorrect because Java has no such wildcard access capability.
+
+# Which of the following statements about unary operators are true? (Choose all that apply.)
+A. Unary operators are always executed before any surrounding binary or ternary operators.
+B. The - operator can be used to flip a boolean value.
+C. The pre-increment operator (++) returns the value of the variable before the increment is applied.
+D. The post-decrement operator (--) returns the value of the variable before the decrement is applied.
+E. The ! operator cannot be used on numeric values.
+F. None of the above
+
+Unary operators have the highest order of precedence, making option A correct.
+The negation operator (-) is used only for numeric values, while the logical complement operator (!) is used exclusively for boolean values.
+For these reasons, option B is incorrect, and option E is correct.
+Finally, the pre-increment/pre-decrement operators return the new value of the variable, while the post-increment/post-decrement operators return the original variable.
+For these reasons, option C is incorrect, and option D is correct.
