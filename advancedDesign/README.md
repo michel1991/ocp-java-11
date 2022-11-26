@@ -86,3 +86,28 @@ Option C is incorrect, as catching Throwable includes catching instances of Erro
 Option D is incorrect, as exceptions can also be declared and thrown to the caller.
 Finally, option F is correct, as it describes the inheritance of RuntimeException.
 
+# Given the following classes, which of the following snippets can independently be inserted in place of INSERT IMPORTS HERE and have the code compile? (Choose all that apply.)
+
+```java
+    package aquarium;
+    public class Water {
+        boolean salty = false;
+        }
+
+    package aquarium.jellies;
+    public class Water {
+        boolean salty = true;
+        }
+
+    package employee;
+    INSERT IMPORTS HERE
+    public class WaterFiller {
+        Water water;
+        }
+```
+
+    Option A is correct because it imports all the classes in the aquarium package including aquarium.Water.
+    Options B and C are correct because they import Water by class name.
+    Since importing by class name takes precedence over wildcards, these compile.
+    Option D is incorrect because Java doesn't know which of the two wildcard Water classes to use.
+    Option E is incorrect because you cannot specify the same class name in two imports.
