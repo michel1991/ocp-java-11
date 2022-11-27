@@ -1,4 +1,4 @@
-package advancedDesign;
+package inheritance.errors;
 
  interface Apple {
 
@@ -30,7 +30,7 @@ final class Citrus extends Tangerine {
 * the compiler knows that there cannot be a subclass of Citrus that implements Apple, so it can enforce the unrelated type rule.
 * For this reason, option E is correct.
  */
-public class ErrorClassCastExceptionWithInterface {
+public class ClassCastExceptionWithInterface {
 
      public static void main(String... farm) {
          Gala g = new Gala();
