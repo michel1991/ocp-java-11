@@ -1,4 +1,4 @@
-package advancedDesign;
+package advancedDesign.errors;
 
 /*
 *  Popcorn is an inner class. Inner classes are only allowed to contain static variables that are marked final.
@@ -6,9 +6,9 @@ package advancedDesign;
 * If the final modifier was added on line 6, then the code would print 10 at runtime.
 * Note that private constructors can be used by any methods within the same class.
 */
-class ErrorInnerMemberClassDoesNotHoldStaticField {
+class InnerMemberClassDoesNotHoldStaticField {
     private int butter = 5;
-    private ErrorInnerMemberClassDoesNotHoldStaticField() {}
+    private InnerMemberClassDoesNotHoldStaticField() {}
     protected class Popcorn {
         private Popcorn() {}
     public  static int butter = 10;
@@ -18,8 +18,8 @@ class ErrorInnerMemberClassDoesNotHoldStaticField {
         }
     }
     public static void main(String[] args) {
-        var movie = new ErrorInnerMemberClassDoesNotHoldStaticField();
-        ErrorInnerMemberClassDoesNotHoldStaticField.Popcorn in = new ErrorInnerMemberClassDoesNotHoldStaticField().new Popcorn();
+        var movie = new InnerMemberClassDoesNotHoldStaticField();
+        InnerMemberClassDoesNotHoldStaticField.Popcorn in = new InnerMemberClassDoesNotHoldStaticField().new Popcorn();
         in.startMovie();
     }
 }
