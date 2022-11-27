@@ -1,4 +1,4 @@
-package advancedDesign;
+package advancedDesign.errors;
 /**
 * The code doesn’t compile, so option A is incorrect.
 * The first compilation error is on line 2, as var cannot be used as a constructor argument type.
@@ -22,7 +22,7 @@ class Rodent {
         }
 }
 
-public interface ErrorDeclareExplicitConstructorRemoveImplicit {
+public interface DeclareExplicitConstructorRemoveImplicit {
   public static void main(String... args){
 
   }
