@@ -1,4 +1,4 @@
-package inheritance.error;
+package inheritance.errors;
 
 /**
 * Trick question—the code does not compile! The Spirit class is marked final,
@@ -6,7 +6,7 @@ package inheritance.error;
 * which is not allowed. If Spirit was not marked final, then options C and F would be correct.
 * Option A would print Booo!!!, while options B, D, and E would not compile for various reasons.
  */
-public class ErrorAnnonymousClassWithInheritance {
+public class AnnonymousClassWithInheritance {
     static class Ghost {
         public static void boo() {
             System.out.println("Not scared");
