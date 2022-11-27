@@ -17,25 +17,48 @@ import java.util.*;
     Since the number 1 is not in the list, Java does not remove anything for the Queue.
  */
 public class  ListAndQueueRemoveItem {
+
+    static void addElements(Collection<Integer>  q){
+        q.add(10); //  4:
+        q.add(12); // 5:
+    }
+
+    /**
+    * remove by index, object are available, List add method remove by index
+    */
     static void removeItem(List<Integer>  q){
-       q.add(10); //  4:
-       q.add(12); // 5:
-       q.remove(1); //  6:
+        addElements(q);
+        q.remove(1); //  6:
        System.out.println(q); //  7:
    }
 
+    /**
+     * Only remove by object is available to Collection that Queue inherit. Java make autobox from int to object
+     */
     static void removeItemWithQueue(Queue<Integer>  q){
-       q.add(10); //  4:
-        q.add(12); // 5:
+        addElements(q);
         q.remove(1); //  6:
         System.out.println(q); //  7:
    }
 
+    /**
+    * Only remove by object is available to Collection. Java make autobox from int to object
+    */
+    static void prooveThatOnlyRemoveByObjectIsAvailableToCollection(Collection<Integer>  q){
+        addElements(q);
+        q.remove(1); //  6:
+        System.out.println(q); //  7:
+    }
+
+    static Queue<Integer> createQueue(){
+        Queue <Integer> queue = new LinkedList<>();
+        return queue;
+    }
+
     public static void main(String... args){
         List <Integer> list = new LinkedList<>();
-        Queue <Integer> queue = new LinkedList<>();
-       removeItem(list);
-       removeItemWithQueue(queue);
-       //removeItem(queue);
+        removeItem(list);
+        removeItemWithQueue(createQueue());
+        prooveThatOnlyRemoveByObjectIsAvailableToCollection(createQueue());
    }
 }
