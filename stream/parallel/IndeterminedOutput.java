@@ -1,4 +1,4 @@
-package stream;
+package stream.parallel;
 import java.util.stream.*;
 import java.util.concurrent.atomic.*;
 /**
@@ -17,7 +17,7 @@ While the first part of the output will always be 100, the second part is nondet
 It could output any value from 1 to 100, because the threads can overwrite each other’s work.
 Therefore, option C is the correct answer, and options A and B are incorrect.
  */
-public class ParallelIndeterminedOutput {
+public class IndeterminedOutput {
   static void print(){
       var value1 = new AtomicLong(0);
       final long[] value2 = {0};
