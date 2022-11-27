@@ -1,4 +1,4 @@
-package advancedDesign;
+package inheritance.errors;
 
 
 /**
@@ -29,7 +29,7 @@ class Screwdriver implements Tool {
     }
 }
 
-public class ErrorSuperWithInterface {
+public class SuperWithInterface {
    public static void main(String... args){
 
    }
