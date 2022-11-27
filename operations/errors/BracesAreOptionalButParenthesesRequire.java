@@ -1,4 +1,4 @@
-package operations;
+package operations.errors;
 
 /**
 *  What is the result of executing the following code snippet?
@@ -14,7 +14,7 @@ package operations;
    For this reason, line 7 does not compile, and option F is the correct answer.
    If line 7 were corrected to have parentheses around elephant < 5, the code snippet would print 5-14.
  */
-public class  ErrorBracesAreOptionalButParenthesesRequire {
+public class  BracesAreOptionalButParenthesesRequire {
   public static void main(String... args){
       int elephant = 1, crocodile = 15; //  3:
       if (elephant <= 10) // 4:
