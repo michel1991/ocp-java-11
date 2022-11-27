@@ -1,4 +1,4 @@
-package inheritance.error;
+package inheritance.errors;
 
 /**
 * If a class inherits an instance method, then it can only declare a method with the same signature if that method is also an instance method,
@@ -20,7 +20,7 @@ class Children extends Parent{
     }
 }
 
-public class ErrorOverrideMethodWithStatic {
+public class OverrideMethodWithStatic {
   public static void main(String... args){
 
   }
