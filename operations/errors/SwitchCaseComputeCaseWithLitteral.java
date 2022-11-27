@@ -1,5 +1,5 @@
-package operation;
-public class ErrorSwitchCaseComputeCaseWithLitteral {
+package operation.errors;
+public class SwitchCaseComputeCaseWithLitteral {
 
     /**
     * Of the eight lines of case statements in this switch statement, three of them compile, and five do not.
