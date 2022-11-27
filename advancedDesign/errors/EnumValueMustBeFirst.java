@@ -1,4 +1,4 @@
-package advancedDesign;
+package advancedDesign.errors;
 
 /**
 * The declaration of Fruit does not compile because enums are required to list their values first.
@@ -20,7 +20,7 @@ package advancedDesign;
      }
  }
 
-public class ErrorEnumValueMustBeFirst {
+public class EnumValueMustBeFirst {
      public static void main(String[] args) {
          var one = Fruit.PLUM;
          //var one = FruitStore.Fruit.PLUM;
