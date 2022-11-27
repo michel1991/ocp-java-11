@@ -1,4 +1,4 @@
-package inheritance.error;
+package inheritance.errors;
 
 /**
 * Question: Which of the following statements about overridden methods are true? (Choose all that apply.)
@@ -30,7 +30,7 @@ class Child extends Mother{
     }
 }
 
-public class ErrorInheritanceNotCovariantWithParameter {
+public class InheritanceNotCovariantWithParameter {
    public static void main(String... args){
 
    }
