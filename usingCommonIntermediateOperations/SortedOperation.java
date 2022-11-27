@@ -27,7 +27,6 @@ class SortedOperation{
       System.out.println("Below with commparator using reference method, data are: brown bear-,  grizzly-");
       Stream<String> s = Stream.of("brown bear-", "grizzly-");  
       
-      Comparator<String>  comparator = (a, b) -> b.compareTo(a);       
       s.sorted(Comparator.reverseOrder())                 
             .forEach(System.out::print);  
    }
@@ -38,7 +37,7 @@ class SortedOperation{
      Stream<String> s = Stream.of("michjobs-", "mvouma-", "stephane-", "mvouma-");  
       
       Comparator<String>  comparator = (a, b) -> {
-	System.out.println("a: " + a + " b: "+ b);
+	     System.out.println("a: " + a + " b: "+ b);
          return  b.compareTo(a);
       };       
 
@@ -48,7 +47,6 @@ class SortedOperation{
 
   public static void main(String[] args){	  
       basicExample();
-      System.out.println();
       System.out.println();
 
       System.out.println();
