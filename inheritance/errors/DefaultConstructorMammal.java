@@ -33,7 +33,7 @@ class Mammal {
     }
 
 }
-public class ErrorDefaultConstructorMammal {
+public class DefaultConstructorMammal {
     public static void main(String[] args) {
         new Mammal(5);
     }
