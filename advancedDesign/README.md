@@ -111,3 +111,18 @@ Finally, option F is correct, as it describes the inheritance of RuntimeExceptio
     Since importing by class name takes precedence over wildcards, these compile.
     Option D is incorrect because Java doesn't know which of the two wildcard Water classes to use.
     Option E is incorrect because you cannot specify the same class name in two imports.
+
+# Which of the following statements are true? (Choose all that apply.)
+A. You can declare a method with Exception as the return type.
+B. You can declare a method with RuntimeException as the return type.
+C. You can declare any subclass of Error in the throws part of a method declaration.
+D. You can declare any subclass of Exception in the throws part of a method declaration.
+E. You can declare any subclass of Object in the throws part of a method declaration.
+F. You can declare any subclass of RuntimeException in the throws part of a method declaration.
+
+Any Java type, including Exception and RuntimeException, can be declared as the return type.
+However, this will simply return the object rather than throw an exception.
+For this reason, options A and B are correct.
+Classes listed in the throws part of a method declaration must extend java.lang.Throwable.
+This includes Error, Exception, and RuntimeException, making options C, D, and F correct.
+Arbitrary classes such as String can’t be declared in a throws clause, making option E incorrect.

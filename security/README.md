@@ -55,3 +55,15 @@ F. String, security
 
 The first step is to recognize that readPassword() is a method on Console. It returns a char[].
 This improves security because a String is more easily available in a memory dump than a char[].
+
+# Which locations require you to be careful when working with sensitive data to ensure it doesn’t leak? (Choose all that apply.)
+A. Comments
+B. Exception stack traces
+C. Log files
+D. System.out
+E. Variable names
+F. None of the above
+
+Any information the user can see requires care. Options B, C, and D are correct for this reason.
+Comments and variable names are part of the program, not the data it handles, making options A and E incorrect.
+

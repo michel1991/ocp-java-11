@@ -257,3 +257,17 @@ This is another question you just have to memorize.
 The jmod command has five modes you need to be able to list: create, extract, describe, list, and hash.
 The hash operation is not an answer choice. The other four are making options B, D, E, and F correct.
 
+# Which of the following options does not have a one-character shortcut in any of the commands studied in this chapter? (Choose all that apply.)
+A. describe-module
+B. list-modules
+C. module
+D. module-path
+E. show-module-resolution
+F. summary
+
+Option A is incorrect because describe-module has the d equivalent.
+Option C is incorrect because module has the m equivalent.
+Option D is incorrect because module-path has the p equivalent.
+Option F is incorrect because summary has the s equivalent.
+Options B and E are the correct answers because they do not have equivalents.
+
