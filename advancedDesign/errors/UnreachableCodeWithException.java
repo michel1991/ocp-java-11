@@ -1,7 +1,7 @@
-package advancedDesign;
+package advancedDesign.errors;
 import java.io.*;
 
-public class ErrorUnreachableCodeWithException {
+public class UnreachableCodeWithException {
     public void ohNo(IOException ie)  throws Exception {
           throw new FileNotFoundException();
           System.out.println(ie);
