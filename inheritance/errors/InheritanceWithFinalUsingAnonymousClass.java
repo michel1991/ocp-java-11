@@ -1,4 +1,4 @@
-package inheritance.error;
+package inheritance.errors;
 
 final class Cook {
     static class Vegetable {
@@ -11,7 +11,7 @@ final class Cook {
 }
 
 
-public class ErrorInheritanceWithFinalUsingAnonymousClass {
+public class InheritanceWithFinalUsingAnonymousClass {
     public final static void main(String[] unused) {
         final Cook.Carrot c = new Cook().new Carrot() {};
         System.out.println(c.vitamins());
