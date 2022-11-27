@@ -1,6 +1,6 @@
-package operations;
+package operations.errors;
 
-public class ErrorPromotedToLong {
+public class PromotedToLong {
     /**
     * The first line contains a compilation error. The value 3 is cast to long.
     * The 1 * 2 value is evaluated as int but promoted to long when added to the 3.
