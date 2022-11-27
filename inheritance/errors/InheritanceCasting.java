@@ -1,5 +1,5 @@
 
-package inheritance.error;
+package inheritance.errors;
 interface WaterFowl {}
 class Bird {}
 class Duck extends Bird implements WaterFowl {
@@ -16,7 +16,7 @@ class Duck extends Bird implements WaterFowl {
 * and the compiler allows this without issue. The code fails at runtime, though,
 * because the object is an instance of Bird and cannot be cast to a subclass of type Duck, so option F is correct
  */
-public interface ErrorInheritanceCasting {
+public interface InheritanceCasting {
     public static void main(String[] args) {
         Object object = (Object)new Bird();
         Duck duck = (Duck)object;
