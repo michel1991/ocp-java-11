@@ -1,4 +1,4 @@
-package operations;
+package operations.errors;
 /**
 * The code does not compile because the assignment operator has the highest order of precedence in this expression.
 * Both sides of the ternary operator must have the same type. This expression is invalid, as the left side of the second
@@ -6,7 +6,7 @@ package operations;
 * Note that if the question had added explicit parentheses around the expression (Tiger = " is Bigger"),
 * option E would have the correct output.
  */
-public class ErrorTernaryWithAssignment {
+public class TernaryWithAssignment {
   public static void main(String... args){
       var tiger = "Tiger";
       var lion = "Lion";
