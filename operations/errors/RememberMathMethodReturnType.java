@@ -1,6 +1,6 @@
-package operations;
+package operations.errors;
 import java.util.*;
-public class ErrorRememberMathMethodReturnType {
+public class RememberMathMethodReturnType {
     /**
     * Remember to watch return types on math operations. One of the tricks is option B on line 24.
     * The round() method returns an int when called with a float. However, we are calling it with a double so it returns a long.
