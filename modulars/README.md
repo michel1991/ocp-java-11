@@ -271,3 +271,22 @@ Option D is incorrect because module-path has the p equivalent.
 Option F is incorrect because summary has the s equivalent.
 Options B and E are the correct answers because they do not have equivalents.
 
+# Fill in the blanks so this command to run the program is correct:
+java
+_______ zoo.animal.talks/zoo/animal/talks/Peacocks
+_______ modules
+
+A. -d and -m
+B. -d and -p
+C. -m and -d
+D. -m and -p
+E. -p and -d
+F. -p and -m
+G. None of the above
+
+The -m or --module option is used to specify the module and class name.
+The -p or -module-path option is used to specify the location of the modules.
+Option D would be correct if the rest of the command were correct.
+However, running a program requires specifying the package name with periods (.) instead of slashes.
+Since the command is incorrect, option G is correct.
+

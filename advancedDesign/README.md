@@ -126,3 +126,14 @@ For this reason, options A and B are correct.
 Classes listed in the throws part of a method declaration must extend java.lang.Throwable.
 This includes Error, Exception, and RuntimeException, making options C, D, and F correct.
 Arbitrary classes such as String can’t be declared in a throws clause, making option E incorrect.
+
+# What motivations would a developer have for applying the @FunctionalInterface annotation to an interface? (Choose all that apply.)
+A. To allow the interface to be used in a lambda expression
+B. To provide documentation to other developers
+C. To allow the interface to be used as a method reference
+D. There is no reason to use this annotation.
+E. To trigger a compiler error if the annotation is used incorrectly
+
+The @FunctionalInterface marker annotation is used to document that an interface is a valid functional interface that contains exactly one abstract method, making option B correct.
+It is also useful in determining whether an interface is a valid functional interface, as the compiler will report an error if used incorrectly, making option E correct.
+The compiler can detect whether an interface is a functional interface even without the annotation, making options A and C incorrect.
