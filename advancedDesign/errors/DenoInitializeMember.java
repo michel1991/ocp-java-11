@@ -1,4 +1,4 @@
-package advancedDesign;
+package advancedDesign.errors;
 
 /**
 * What is the result of this code? (Choose all that apply.)
@@ -26,7 +26,7 @@ class Dino { // 1:
 } // 11:
 
 
-public class ErrorDenoInitializeMember {
+public class DenoInitializeMember {
     public static void main(String[] args) { //  8:
         Dino dino = new Dino(500); // 9:
         System.out.println(dino.weight); // 10:
