@@ -1,4 +1,4 @@
-package advancedDesign;
+package inheritance.errors;
 
 /**
 * The HasWater and IsSalty interfaces compile, making options A and B correct.
@@ -23,6 +23,8 @@ interface IsSalty {
 interface IsSea extends HasWater, IsSalty {}
 abstract public final class Ocean implements IsSalty {}
 
-public class ErrorOverrideReturnTypeIsNotConvariant {
+public class OverrideReturnTypeIsNotConvariant {
+   public static void main(String... args){
 
+   }
 }
