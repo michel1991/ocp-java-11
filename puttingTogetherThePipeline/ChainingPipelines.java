@@ -23,6 +23,9 @@ class ChainingPipelines{
     System.out.println("the result of chaining two pipeline  count:  "+ count);
   }
 
+    /**
+     * rewriter pipelines to identify many source and many terminal operations
+     */
   static void rewriteOfChainingTwoPipeline(){
       List<String> helper = Stream.of("goldfish", "finch")
                                   .filter( n -> n.length() >5 )
