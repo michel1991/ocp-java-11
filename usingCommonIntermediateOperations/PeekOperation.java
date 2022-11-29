@@ -17,6 +17,20 @@ class PeekOperation{
       System.out.println("result basic example " + count);  
    }
 
+    static void basicExampleWithType(){
+       var stream = Stream.of("black bear", "brown bear", "grizzly");
+
+       System.out.println("begin  basic example with type  ");
+       Consumer<String> print = System.out::println;
+       long count =  stream
+                           .filter( s -> s.startsWith("g"))
+                           .peek(print)
+                           .count()
+                    ;
+
+       System.out.println("end result basic example with type  " + count);
+   }
+
    static void exampleWithoutPeek(){
       var numbers = new ArrayList<>();
       var letters = new ArrayList<>();
@@ -46,6 +60,8 @@ class PeekOperation{
 
   public static void main(String[] args){
       basicExample();
+      System.out.println();
+      basicExampleWithType();
       System.out.println();
       System.out.println("Below without peek");
       exampleWithoutPeek();
