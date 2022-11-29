@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.stream.*;
 
 
-class OtherExample{
+class ChainingPipelines{
  static void elsaTwice(){
      Stream.generate( () -> "Elsa")
            .filter( n -> n.length() == 4)
@@ -31,7 +31,7 @@ class OtherExample{
 
 
      long  count = helper.stream()
-                         .count() 
+                         .count()
      ;
 
     System.out.println("the result of chaining  two pipeline rewriter :  "+ count);
