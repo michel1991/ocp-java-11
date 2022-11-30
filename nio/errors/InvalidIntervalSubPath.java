@@ -1,4 +1,4 @@
-package nio;
+package nio.errors;
 import java.nio.file.*;
 
 /**
@@ -7,7 +7,7 @@ import java.nio.file.*;
 *  Calling getName(i) returns an equivalent path as subpath(i,i+1). Since subpath(i,i) was used, though, an IllegalArgumentException
 * will be thrown at runtime, making option B correct. With subpath(), the first parameter is inclusive, and the second parameter is exclusive.
  */
-public class ErrorInvalidIntervalSubPath {
+public class InvalidIntervalSubPath {
   static void displayPath(){
       Path p = Paths.get("/chocolate/./../sunday");
       p.normalize();

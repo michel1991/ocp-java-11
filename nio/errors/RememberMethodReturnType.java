@@ -1,4 +1,4 @@
-package java.nio;
+package nio.errors;
 import java.nio.file.*;
 import java.io.*;
 public class ErrorRememberMethodReturnType {
