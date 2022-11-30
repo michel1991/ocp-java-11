@@ -27,6 +27,19 @@ D. Whales.properties
 E. Whales_en_US.properties
 F. The code does not compile.
 
-Java will first look for the most specific matches it can find, starting with Dolphins_en_ US.properties.
+# Java will first look for the most specific matches it can find, starting with Dolphins_en_ US.properties.
 Since that is not an answer choice, it drops the country and looks for Dolphins_en.properties, making option C correct.
 Option B is incorrect because a country without a language is not a valid locale.
+
+Fill in the blanks: When formatting text data, the _________________ class supports parametrized String values, while the _________________ class has built-in support for missing values.
+A. TextFormat, Properties
+B. MessageFormat, Properties
+C. Properties, Formatter
+D. StringFormat, Properties
+E. Properties, TextFormat
+F. Properties, TextHandler
+G. None of the above
+
+The MessageFormat class supports parametrized String values that take input values, while the Properties class supports providing a default value if the property is not set.
+For this reason, option B is correct.
+
