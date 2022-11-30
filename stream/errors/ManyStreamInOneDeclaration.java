@@ -1,8 +1,8 @@
- package stream;
+package stream.errors;
  import java.util.stream.*;
  import jaba.util.*;
 
- class ErrorManyStreamInOneDeclaration{
+ class ManyStreamInOneDeclaration{
     static void makePartition(){
         var letters = Arrays.asList('a', 'b', 'c');
 	letters.stream()
@@ -22,5 +22,5 @@
  public static void amin(String... args){
      makePartition();
   }
-    
+
  }
