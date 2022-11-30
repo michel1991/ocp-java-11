@@ -1,4 +1,4 @@
-package nio;
+package io.errors;
 import java.io.*;
 import java.util.*;
 
@@ -33,7 +33,7 @@ class Zebra implements Serializable {
     }
 }
 
-public class ErrorSerializableMemberFieldObject {
+public class SerializableMemberFieldObject {
    public static void main(String... args){
 
    }

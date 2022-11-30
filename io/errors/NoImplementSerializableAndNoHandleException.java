@@ -1,3 +1,4 @@
+package io.errors;
 import java.io.*;
 
 /*
@@ -12,7 +13,7 @@ import java.io.*;
   * Finally, if the class did implement Serializable, then the program would print null at runtime,
   * as that is the default value for the transient field age. For more information, see Chapter 8.
 */
-public class ErrorNoImplementSerializableAndNoHandleException {
+public class NoImplementSerializableAndNoHandleException {
     private String name;
      private transient Integer age;
      // Getters/setters omitted
@@ -30,7 +31,7 @@ public class ErrorNoImplementSerializableAndNoHandleException {
                  new BufferedInputStream(
                          new FileInputStream("data-error-no-implement-serializable-and-no-handle-exception.txt")))
          ) {
-             ErrorNoImplementSerializableAndNoHandleException b =  is.readObject();
+             NoImplementSerializableAndNoHandleException b =  is.readObject();
             System.out.println(b.age);
          }
      }
