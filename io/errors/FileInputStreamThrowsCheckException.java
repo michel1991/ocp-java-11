@@ -1,4 +1,4 @@
-package io;
+package io.errors;
 import java.io.*;
 
 /**
@@ -40,7 +40,7 @@ class Bird {
     }
 }
 
-public class ErrorFileInputStreamThrowsCheckException {
+public class FileInputStreamThrowsCheckException {
 
     public static void main(String[] args) {
         Bird.readTheObject();
