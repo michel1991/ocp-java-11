@@ -26,3 +26,16 @@ Overridden instance methods and hidden static methods must have the same signatu
 making options B and C correct.
 Overloaded methods can have different return types, while overridden and hidden methods can have covariant return types.
 None of these methods are required to use the same return type, making options D, E, and F incorrect.
+
+# Which statements about top-level types and member inner classes are correct? (Choose all that apply.)
+A. A member inner class can be marked final.
+B. A top-level type can be marked protected.
+C. A member inner class cannot be marked public since that would make it a top-level class.
+D. A top-level type must be stored in a .java file with a name that matches the class name.
+E. If a member inner class is marked private, then it can be referenced only in the outer class for which it is defined.
+
+An inner class can be marked abstract or final, just like a regular class, making option A correct.
+A top-level type, such as a class, interface, or enum, can only be marked public or default (package-private), making option B incorrect.
+Option C is incorrect, as a member inner class can be marked public, and this would not make it a top-level class.
+A .java file may contain multiple top-level classes, making option D incorrect. The precise rule is that there is at most one public top-level type, and that type is used in the file name.
+Finally, option E is correct. When a member inner class is marked private, it behaves like any other private members and can be referenced only in the class in which it is defined.
