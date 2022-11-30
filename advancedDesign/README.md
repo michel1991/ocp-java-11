@@ -155,3 +155,31 @@ An abstract class must be declared with the abstract keyword, while the abstract
 Since both can be declared with the abstract keyword, option E is correct. Finally, interfaces do not extend java.lang.Object.
 If they did, then Java would support true multiple inheritance, with multiple possible parent constructors being called as part of initialization.
 Therefore, option F is incorrect.
+
+# Which of the following are true statements about exception handling in Java? (Choose all that apply.)
+A. A traditional try statement without a catch block requires a finally block.
+B. A traditional try statement without a finally block requires a catch block.
+C. A traditional try statement with only one statement can omit the {}.
+D. A try-with-resources statement without a catch block requires a finally block.
+E. A try-with-resources statement without a finally block requires a catch block.
+F. A try-with-resources statement with only one statement can omit the {}.
+
+A try-with-resources statement does not require a catch or finally block.
+A traditional try statement requires at least one of the two. Neither statement can be written without a body encased in braces, {}.
+
+# Which of the following data types cannot be used in a switch statement? (Choose all that apply.)
+A. float
+B. Character
+C. var
+D. byte
+E. Double
+F. Object
+G. Integer
+H. char[]
+
+A switch statement supports the primitives int, byte, short, and char, along with their associated wrapper classes Integer, Byte, Short, and Character, respectively.
+A switch statement also supports var if the type can be resolved to a supported switch data types.
+For these reasons, options B, C, D, and G are permitted in switch statements and, therefore, incorrect.
+Options A and E are correct as long, float, double, and their associated wrapped classes Long, Float, and Double, respectively, are not supported in switch statements.
+Option F is correct, as Object is not a supported data type in a switch statement. Finally, option H is incorrect.
+While switch statements support String, a char[] is not the same as a String.

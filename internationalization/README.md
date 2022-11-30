@@ -43,3 +43,17 @@ G. None of the above
 The MessageFormat class supports parametrized String values that take input values, while the Properties class supports providing a default value if the property is not set.
 For this reason, option B is correct.
 
+# Which of the following are true statements about internationalization and localization in Java?
+A. Internationalization requires that you create resource bundles for every possible language.
+B. Currencies are formatted as String values the same across all locales.
+C. Dates are formatted as String values the same across all locales.
+D. Integers are formatted as String values the same across all locales.
+E. Java supports adapting your application to different languages, but not countries as these may change over time.
+F. None of the above.
+
+Internationalization is the process of designing your program to be able to be adapted to multiple locales.
+It doesn’t mean you actually have support any of them. For this reason, option A is incorrect.
+Options B, C, and D are incorrect, as each of those can change depending on the locale.
+Java provides built-in formatters for each, such as getCurrencyInstance() and getNumberInstance() in the NumberFormat class, and numerous methods in the DateTimeFormatter class.
+Option E is also incorrect, as locale can include an optional country. If a country does change, though, your application may need to be updated.
+
