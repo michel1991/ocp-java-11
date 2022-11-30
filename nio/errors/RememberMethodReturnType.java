@@ -1,7 +1,7 @@
 package nio.errors;
 import java.nio.file.*;
 import java.io.*;
-public class ErrorRememberMethodReturnType {
+public class RememberMethodReturnType {
     /**
     * The return type of Files.delete() is void, which means this method will not compile regardless of what is placed in the blanks,
     * making option G correct. The Files.deleteIfExists() method does return a boolean value, but that is not the method used on line 7.
