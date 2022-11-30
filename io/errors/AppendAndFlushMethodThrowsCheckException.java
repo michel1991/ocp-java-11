@@ -1,6 +1,6 @@
-package io;
+package io.errors;
 import java.io.*;
-public class ErrorAppendAndFlushMethodThrowsCheckException {
+public class AppendAndFlushMethodThrowsCheckException {
     /**
     * The code does not compile, as the Writer methods append() and flush() both throw an IOException that must be handled or declared.
     * Even without those lines of code, the try-with-resources statement itself must be handled or declared,
