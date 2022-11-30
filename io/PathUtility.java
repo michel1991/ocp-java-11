@@ -1,6 +1,6 @@
 package io;
 public class PathUtility {
-   static StringBuilder getResourcePath(){
+   public static StringBuilder getResourcePath(){
        String rootPath = System.getProperty("user.dir");
        String fileSeparator = System.getProperty("file.separator");
        String resourceFolder = "resource";
