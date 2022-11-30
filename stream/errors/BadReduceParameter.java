@@ -1,8 +1,8 @@
-package stream;
+package stream.errors;
 import java.util.*;
 import java.util.function.*;
 
-public class ErrorBadReduceParameter {
+public class BadReduceParameter {
 
     /**
     * Question: What statements about the following code are true? (Choose all that apply.)

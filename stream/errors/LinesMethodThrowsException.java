@@ -1,8 +1,8 @@
-package stream;
+package stream.errors;
 import java.util.stream.*;
 import java.nio.file.*;
 
-public class ErrorLinesMethodThrowsException {
+public class LinesMethodThrowsException {
     /**
     * Assuming the file /giraffe/sleep.csv exists with the specified contents, what is the expected output of calling wakeUp() on it?
     *
