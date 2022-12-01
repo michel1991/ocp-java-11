@@ -1,4 +1,4 @@
-package list;
+package list.errors;
 import java.util.*;
 import java.util.concurrent.*;
 
@@ -7,7 +7,7 @@ import java.util.concurrent.*;
 * The code throws a ConcurrentModificationException at runtime on line f1, since list1 is a regular collection and not a concurrent one.
 * Therefore, option E is the correct answer. Note that if line f1 were removed, the rest of the code would run without throwing an exception, outputting 3 6 0.
  */
-public class ErrorConcurrentExceptionWhenAddToListDuringLoop {
+public class ConcurrentExceptionWhenAddToListDuringLoop {
    public static void main(String... args){
        var list1 = new ArrayList<>(List.of(1,2,3));
        var list2 = new CopyOnWriteArrayList<Integer>(list1);
