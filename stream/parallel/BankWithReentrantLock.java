@@ -32,8 +32,11 @@ public class BankWithReentrantLock {
     }
     public static void main(String[] unused) {
         var bank = new BankWithReentrantLock();
-        IntStream.range(1, 10).parallel()
-        .forEach(s -> bank.deposit(s));
-        System.out.println(bank.total);
+       IntStream.range(1, 10)
+                 .parallel()
+                 .forEach(s -> bank.deposit(s))
+        ;
+       System.out.println(bank.total);
+
     }
 }
