@@ -1,4 +1,4 @@
-package list;
+package list.errors;
 import java.util.*;
 
 
@@ -11,7 +11,7 @@ import java.util.*;
  * This means line 57 throws an UnsupportedOperationException since we attempt to modify the list.
  * Line 58 would work if we could get to it. Since there is one compiler error and one runtime error, options A and E are correct.
  */
-public class ErrorFollowTypeReturnType {
+public class FollowTypeReturnType {
   public static void main(String... args){
       var map = Map.of(1,2, 3, 6);
       var list = List.copyOf(map.entrySet());
