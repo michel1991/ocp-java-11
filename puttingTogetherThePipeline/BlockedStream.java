@@ -4,6 +4,9 @@ import java.util.*;
 
 class BlockedStream{
    
+    /**
+     * So sorted wait indefinitely all elemnt before java orchestractor ask to do his job
+     */
     static void sortedWaitSoLong(){
       
      Stream<String> list = Stream.generate( () -> "Elsa" );
@@ -15,6 +18,9 @@ class BlockedStream{
          ;
     }
 
+    /**
+    * So sorted wait indefinitely all elemnt before java orchestractor ask to do his job
+    */
     static void filterWaitSoLong(){
       
      Stream<String> list = Stream.generate( () -> "Olaf Lazisson" );
