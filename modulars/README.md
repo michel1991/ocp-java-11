@@ -290,3 +290,31 @@ Option D would be correct if the rest of the command were correct.
 However, running a program requires specifying the package name with periods (.) instead of slashes.
 Since the command is incorrect, option G is correct.
 
+# Suppose you are writing a class that calls ServiceLoader and is trying to look up the Dragon implementation. Which line of code needs to be in your module-info.java?
+
+``` java
+    package magic;
+    public interface Magic {
+        String getPower();
+    }
+
+    package dragon;
+    import magic.*;
+    
+    public class Dragon implements Magic {
+        public String getPower() {
+            return "breathe fire";
+            }
+    }
+
+```
+A. uses dragon;
+B. uses dragon.Dragon;
+C. uses magic.Magic;
+D. uses dragon.Dragon as magic.Magic;
+E. uses dragon.Dragon with magic.Magic;
+F. None of the above
+
+A service locator specifies the interface name, making option C correct.
+Note that options D and E are trying to trick you by mixing up the provides directive syntax with the uses directive syntax.
+
