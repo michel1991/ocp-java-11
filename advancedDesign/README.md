@@ -145,20 +145,3 @@ For these reasons, options B, C, D, and G are permitted in switch statements and
 Options A and E are correct as long, float, double, and their associated wrapped classes Long, Float, and Double, respectively, are not supported in switch statements.
 Option F is correct, as Object is not a supported data type in a switch statement. Finally, option H is incorrect.
 While switch statements support String, a char[] is not the same as a String.
-
-#  Which of the following statements about finally blocks are true? (Choose all that apply.)
-A. A finally block is never required with a regular try statement.
-B. A finally block is required when there are no catch blocks in a regular try statement.
-C. A finally block is required when the program code doesn’t terminate on its own.
-D. A finally block is never required with a try-with-resources statement.
-E. A finally block is required when there are no catch blocks in a try-with-resources statement.
-F. A finally block is required in order to make sure all resources are closed in a try-with-resources statement.
-G. A finally block is executed before the resources declared in a try-with-resources statement are closed.
-
-A regular try statement is required to have a catch clause and/or finally clause.
-If a regular try statement does not have any catch clauses, then it must have a finally block, making option B correct and option A incorrect.
-Alternatively, a try-with-resources block is not required to have a catch or finally block, making option D correct and option E incorrect.
-Option C is incorrect, as there is no requirement a program must terminate. Option F is also incorrect. A try-with-resources statement automatically closes all declared resources.
-While additional resources can be created or declared in a try-with-resources statement, none are required to be closed by a finally block.
-Option G is also incorrect.
-The implicit or hidden finally block created by the JVM when a try-with-resources statement is declared is executed first, followed by any programmer-defined finally block.
