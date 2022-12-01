@@ -73,18 +73,6 @@ It contains a compiler since it is a development tool making option A correct an
 The JDK contains a Java Virtual Machine (JVM) making option F correct and option E incorrect.
 The compiler creates bytecode making option C correct and option D incorrect. For more information, see Chapter 1.
 
-# Which of the following are correct statements about exception handling in Java? (Choose all that apply.)
-A. Unchecked exceptions are allowed, but not required, to be handled or declared.
-B. Error exceptions are required to be handled or declared.
-C. It is appropriate to catch Throwable in your program.
-D. The handle or declare rule means that a catch block should be put around all places a checked exception can be thrown.
-E. RuntimeException is the only unchecked exception in Java.
-F. RuntimeException inherits Exception and Throwable.
-Option A is correct, as unchecked exceptions can be handled or declared, but are not required to be.
-Options B and E are incorrect because Error is an unchecked exception, which is not required to be handled or declared.
-Option C is incorrect, as catching Throwable includes catching instances of Error, which should not be caught in most cases.
-Option D is incorrect, as exceptions can also be declared and thrown to the caller.
-Finally, option F is correct, as it describes the inheritance of RuntimeException.
 
 # Given the following classes, which of the following snippets can independently be inserted in place of INSERT IMPORTS HERE and have the code compile? (Choose all that apply.)
 
@@ -111,21 +99,6 @@ Finally, option F is correct, as it describes the inheritance of RuntimeExceptio
     Since importing by class name takes precedence over wildcards, these compile.
     Option D is incorrect because Java doesn't know which of the two wildcard Water classes to use.
     Option E is incorrect because you cannot specify the same class name in two imports.
-
-# Which of the following statements are true? (Choose all that apply.)
-A. You can declare a method with Exception as the return type.
-B. You can declare a method with RuntimeException as the return type.
-C. You can declare any subclass of Error in the throws part of a method declaration.
-D. You can declare any subclass of Exception in the throws part of a method declaration.
-E. You can declare any subclass of Object in the throws part of a method declaration.
-F. You can declare any subclass of RuntimeException in the throws part of a method declaration.
-
-Any Java type, including Exception and RuntimeException, can be declared as the return type.
-However, this will simply return the object rather than throw an exception.
-For this reason, options A and B are correct.
-Classes listed in the throws part of a method declaration must extend java.lang.Throwable.
-This includes Error, Exception, and RuntimeException, making options C, D, and F correct.
-Arbitrary classes such as String can’t be declared in a throws clause, making option E incorrect.
 
 # What motivations would a developer have for applying the @FunctionalInterface annotation to an interface? (Choose all that apply.)
 A. To allow the interface to be used in a lambda expression
@@ -155,17 +128,6 @@ An abstract class must be declared with the abstract keyword, while the abstract
 Since both can be declared with the abstract keyword, option E is correct. Finally, interfaces do not extend java.lang.Object.
 If they did, then Java would support true multiple inheritance, with multiple possible parent constructors being called as part of initialization.
 Therefore, option F is incorrect.
-
-# Which of the following are true statements about exception handling in Java? (Choose all that apply.)
-A. A traditional try statement without a catch block requires a finally block.
-B. A traditional try statement without a finally block requires a catch block.
-C. A traditional try statement with only one statement can omit the {}.
-D. A try-with-resources statement without a catch block requires a finally block.
-E. A try-with-resources statement without a finally block requires a catch block.
-F. A try-with-resources statement with only one statement can omit the {}.
-
-A try-with-resources statement does not require a catch or finally block.
-A traditional try statement requires at least one of the two. Neither statement can be written without a body encased in braces, {}.
 
 # Which of the following data types cannot be used in a switch statement? (Choose all that apply.)
 A. float
