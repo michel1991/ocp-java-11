@@ -1,4 +1,4 @@
-package nio;
+package nio.errors;
 import java.nio.file.*;
 import java.io.*;
 
@@ -13,7 +13,7 @@ import java.io.*;
 * so line n3 does not compile. Finally, the result of the operation on line n3 creates a Stream<String>, not Stream<Path>, so the lambda expression
 * on line n4 does not compile.
  */
-public interface ErrorInvalidFindDeclaration {
+public interface InvalidFindDeclaration {
     public static find(){
         var path = Paths.get("/storage","toys").resolve("bird"); // n1
         Files.find(path, (p,a) -> a.isDirectory())  // n2

@@ -1,8 +1,8 @@
-package nio;
+package nio.errors;
 import java.nio.file.*;
 import java.io.*;
 
-public class ErrorBeCarefulToFilterSignature {
+public class BeCarefulToFilterSignature {
 
     /**
     * Assume that the directory /animals exists and is empty. What is the result of executing the following code?
