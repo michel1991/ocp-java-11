@@ -74,32 +74,6 @@ The JDK contains a Java Virtual Machine (JVM) making option F correct and option
 The compiler creates bytecode making option C correct and option D incorrect. For more information, see Chapter 1.
 
 
-# Given the following classes, which of the following snippets can independently be inserted in place of INSERT IMPORTS HERE and have the code compile? (Choose all that apply.)
-
-```java
-    package aquarium;
-    public class Water {
-        boolean salty = false;
-        }
-
-    package aquarium.jellies;
-    public class Water {
-        boolean salty = true;
-        }
-
-    package employee;
-    INSERT IMPORTS HERE
-    public class WaterFiller {
-        Water water;
-        }
-```
-
-    Option A is correct because it imports all the classes in the aquarium package including aquarium.Water.
-    Options B and C are correct because they import Water by class name.
-    Since importing by class name takes precedence over wildcards, these compile.
-    Option D is incorrect because Java doesn't know which of the two wildcard Water classes to use.
-    Option E is incorrect because you cannot specify the same class name in two imports.
-
 # What motivations would a developer have for applying the @FunctionalInterface annotation to an interface? (Choose all that apply.)
 A. To allow the interface to be used in a lambda expression
 B. To provide documentation to other developers
