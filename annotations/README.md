@@ -48,3 +48,16 @@ F. @SuppressWarnings
 If @SuppressWarnings("deprecation") is applied to a method that is using a deprecated API,
 then warnings related to the usage will not be shown at compile time, making option F correct.
 Note that there are no built-in annotations called @Ignore or @IgnoreDeprecated.
+
+# What properties must be true to use an annotation with an element value, but no element name? (Choose all that apply.)
+A. The element must be named values().
+B. The element must be required.
+C. The annotation declaration must not contain any other elements.
+D. The annotation must not contain any other values.
+E. The element value must not be array.
+F. None of the above
+
+To use an annotation with a value but not element name, the element must be declared with the name value(), not values(), making option A incorrect.
+The value() annotation may be required or optional, making option B incorrect.
+The annotation declaration may contain other elements, provided none is required, making option C incorrect.
+Option D is correct, as the annotation must not include any other values. Finally, option E is incorrect, as this is not a property of using a value() shorthand.
