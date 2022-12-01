@@ -1,4 +1,4 @@
-package nio;
+package nio.runtime;
 import java.nio.file.*;
 import java.io.*;
 
@@ -17,7 +17,7 @@ import java.io.*;
    For this reason, option F is correct.
    Note that if the last line were changed to use the absolute path /zoo, the answer would be option A since the path from /zoo/elephant to /zoo is the .. path symbol.
  */
-public class ErrorRelativizeMethodRequireBothAbsolutePath {
+public class RelativizeMethodRequireBothAbsolutePath {
    public static void relativizeMixPath() throws IOException{
        var rootPath = System.getProperty("user.dir");
        Path elephanPath = Path.of(rootPath, "nio", "resources", "zoo", "elephant.txt");
