@@ -1,7 +1,7 @@
-package list;
+package list.errors;
 import java.util.*;
 
-public interface ErrorNotValidMethodOfHashMap {
+public interface NotValidMethodOfHashMap {
     /**
     * What is the result of the following code?
     *
