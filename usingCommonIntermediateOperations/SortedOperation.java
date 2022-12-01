@@ -3,6 +3,9 @@ import java.util.stream.*;
 import java.util.*;
 import java.util.function.*;
 
+/**
+ * Sorted need to wait all element before it start his job 
+ */
 class SortedOperation{
   
    static void basicExample(){
