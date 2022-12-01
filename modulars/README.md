@@ -250,3 +250,14 @@ Option D would be correct if the rest of the command were correct.
 However, running a program requires specifying the package name with periods (.) instead of slashes.
 Since the command is incorrect, option G is correct.
 
+# Which two are required in any module? (Choose two.)
+A. A file named module.java
+B. A file named moduleInfo.java
+C. A file named module-info.java
+D. A file named module_info.java
+E. Zero or more packages
+F. One or more packages
+
+All modules must contain a module-info.java file in the root directory, making option C correct.
+Additionally, a module is not allowed to be empty. There must be at least one package. making option F the second correct answer.
+
