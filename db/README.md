@@ -48,3 +48,16 @@ The exam allows us to assume code that we can’t see is correct.
 Option D is an incorrect answer because bind variables are being used properly with a PreparedStatement.
 Options A and B are incorrect because they are not related to the example.
 Since none of these attacks applies here, option F is correct.
+
+# Which are required parts of a JDBC URL? (Choose all that apply.)
+A. Connection parameters
+B. IP address of database
+C. jdbc
+D. Password
+E. Port
+F. Vendor-specific string
+
+A JDBC URL has three parts.
+The first part is the string jdbc, making option C correct.
+The second part is the subprotocol. This is the vendor/product name, which isn’t an answer choice.
+The subname is vendor-specific, making option F correct as well.
