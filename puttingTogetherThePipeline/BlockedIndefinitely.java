@@ -2,10 +2,10 @@ package puttingTogetherThePipeline;
 import java.util.stream.*;
 import java.util.*;
 
-class SortedBlockedIndefinitely{
+class BlockedIndefinitely{
 
     /**
-     * So sorted wait indefinitely all elemnt before java orchestractor ask to do his job
+     * So, sorted wait indefinitely all element before java orchestractor ask to do his job
      */
     static void sortedWaitSoLong(){
 
@@ -19,7 +19,7 @@ class SortedBlockedIndefinitely{
     }
 
     /**
-    * So sorted wait indefinitely all elemnt before java orchestractor ask to do his job
+    * So filter block the stream indefinitely
     */
     static void filterWaitSoLong(){
 
