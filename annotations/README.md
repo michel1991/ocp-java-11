@@ -61,3 +61,14 @@ To use an annotation with a value but not element name, the element must be decl
 The value() annotation may be required or optional, making option B incorrect.
 The annotation declaration may contain other elements, provided none is required, making option C incorrect.
 Option D is correct, as the annotation must not include any other values. Finally, option E is incorrect, as this is not a property of using a value() shorthand.
+
+# Which statements about an optional annotation are correct? (Choose all that apply.)
+A. The annotation declaration always includes a default value.
+B. The annotation declaration may include a default value.
+C. The annotation always includes a value.
+D. The annotation may include a value.
+E. The annotation must not include a value.
+F. None of the above
+
+An optional annotation element is one that is declared with a default value that may be optionally replaced when used in an annotation.
+For these reasons, options A and D are correct.

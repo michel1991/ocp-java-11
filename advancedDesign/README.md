@@ -119,3 +119,28 @@ For these reasons, options B, C, D, and G are permitted in switch statements and
 Options A and E are correct as long, float, double, and their associated wrapped classes Long, Float, and Double, respectively, are not supported in switch statements.
 Option F is correct, as Object is not a supported data type in a switch statement. Finally, option H is incorrect.
 While switch statements support String, a char[] is not the same as a String.
+
+# What statements about executing the following code snippet are correct? System.console().readPassword()
+A. It returns a String value.
+B. A NullPointException will never be thrown at runtime.
+C. It echoes each character to the screen as it is typed.
+D. It is not any safer than using readLine().
+E. It encrypts the bytes as they are entered.
+F. None of the above.
+
+The readPassword() method retrieves a text value from the user without echoing the values to screen and returns a char[] instance, making options A and C incorrect.
+A NullPointerException may be thrown if the Console is not available, making option B incorrect.
+The readPassword() method is considered safer than using readLine() for protected data, in part because it prevents passwords from entering the string pool, making option D incorrect.
+Option E is also incorrect, as the method does not perform any kind of encryption. For these reasons, option F is correct
+
+# What are some advantages of using private interface methods? (Choose all that apply.)
+A. Improve polymorphism
+B. Improve performance at runtime
+C. Reduce code duplication
+D. Backward compatibility
+E. Encapsulate interface implementation
+F. Portability
+
+You can reduce code duplication by moving shared code from default or static methods into a private or private static method.
+For this reason, option C is correct. Option E is also correct, as making interface methods private means users of the interface do not have access to them.
+The rest of the options are not related to private methods, although backward compatibility does apply to default methods.
