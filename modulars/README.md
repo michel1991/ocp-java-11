@@ -261,3 +261,14 @@ F. One or more packages
 All modules must contain a module-info.java file in the root directory, making option C correct.
 Additionally, a module is not allowed to be empty. There must be at least one package. making option F the second correct answer.
 
+# Suppose you have separate modules for a service provider interface, service provider, service locator, and consumer. If you add a second service provider module, how many of these modules do you need to recompile?
+A. Zero
+B. One
+C. Two
+D. Three
+E. Four
+
+Since this is a new module, you need to compile the new module.
+However, none of the existing modules needs to be recompiled, making option A correct.
+The service locator will see the new service provider simply by having the new service provider on the module path.
+

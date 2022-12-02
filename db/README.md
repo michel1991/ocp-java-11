@@ -99,3 +99,14 @@ D. JDBC
 E. String
 Any resource accessing things outside your program should be closed. Options C and D are correct because I/O and JDBC meet this criteria.
 
+# Which interfaces or classes are in a database-specific JAR file? (Choose all that apply.)
+A. Driver
+B. Driver’s implementation
+C. DriverManager
+D. DriverManager’s implementation
+E. PreparedStatement
+F. PreparedStatement’s implementation
+
+The Driver and PreparedStatement interfaces are part of the JDK, making options A and E incorrect.
+The concrete DriverManager class is also part of the JDK, making options C and D incorrect.
+Options B and F are correct since the implementation of these interfaces is part of the database-specific driver JAR file.

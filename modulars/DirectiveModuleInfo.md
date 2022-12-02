@@ -120,3 +120,23 @@ Options A, B, E, and F are incorrect because they refer to keywords that don’t
 The requires transitive keyword is used when specifying a module to be used by the requesting module and any other modules that use the requesting module.
 Therefore, dog needs to specify the transitive relationship, and option G is correct.
 The module puppy just needs to require dog, and it gets the transitive dependencies, making option D correct.
+
+# Which is the first line to contain a compiler error?
+```java
+    1: module snake {
+    2:    exports com.snake.tail;
+    3:    exports com.snake.fangs to bird;
+    4:    requires skin;
+    5:    requires transitive skin;
+    6: }
+```
+A. Line 1.
+B. Line 2.
+C. Line 3.
+D. Line 4.
+E. Line 5.
+F. The code does not contain any compiler errors.
+The module name is valid as are the exports statements.
+Lines 4 and 5 are tricky because each is valid independently.
+However, the same module name is not allowed to be used in two requires statements.
+The second one fails to compile on line 5, making option E the answer.
