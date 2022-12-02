@@ -41,6 +41,13 @@ throws SQLException {
       }
 }
  ```
+ A. Command injection
+ B. Confidential data exposure
+ C. Denial of service
+ D. SQL injection
+ E. SQL leak
+ F. None of the above
+
 This is a trick question—there is no attack. Option E is incorrect because SQL leak is not the name of an attack.
 Option C is incorrect because the PreparedStatement and ResultSet are closed in a try-with-resources block.
 While we do not see the Connection closed, we also don’t see it opened.
@@ -83,3 +90,12 @@ F. None of the above
 The prepareStatement() method requires SQL be passed in.
 Since this parameter is omitted, line 27 does not compile, and option B is correct.
 Line 30 also does not compile as the method should be getInt(). However, the question asked about the first compiler error.
+
+# Which types of resources do you need to close to help avoid a denial of service? (Choose all that apply.)
+A. Annotations
+B. Exceptions
+C. I/O
+D. JDBC
+E. String
+Any resource accessing things outside your program should be closed. Options C and D are correct because I/O and JDBC meet this criteria.
+

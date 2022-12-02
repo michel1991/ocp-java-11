@@ -74,17 +74,6 @@ The JDK contains a Java Virtual Machine (JVM) making option F correct and option
 The compiler creates bytecode making option C correct and option D incorrect. For more information, see Chapter 1.
 
 
-# What motivations would a developer have for applying the @FunctionalInterface annotation to an interface? (Choose all that apply.)
-A. To allow the interface to be used in a lambda expression
-B. To provide documentation to other developers
-C. To allow the interface to be used as a method reference
-D. There is no reason to use this annotation.
-E. To trigger a compiler error if the annotation is used incorrectly
-
-The @FunctionalInterface marker annotation is used to document that an interface is a valid functional interface that contains exactly one abstract method, making option B correct.
-It is also useful in determining whether an interface is a valid functional interface, as the compiler will report an error if used incorrectly, making option E correct.
-The compiler can detect whether an interface is a functional interface even without the annotation, making options A and C incorrect.
-
 # Which statements are true for both abstract classes and interfaces? (Choose all that apply.)
 A. Both can be extended using the extends keyword.
 B. All methods within them are assumed to be abstract.

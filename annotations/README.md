@@ -72,3 +72,13 @@ F. None of the above
 
 An optional annotation element is one that is declared with a default value that may be optionally replaced when used in an annotation.
 For these reasons, options A and D are correct.
+
+# What motivations would a developer have for applying the @FunctionalInterface annotation to an interface? (Choose all that apply.)
+A. To allow the interface to be used in a lambda expression
+B. To provide documentation to other developers
+C. To allow the interface to be used as a method reference
+D. There is no reason to use this annotation.
+E. To trigger a compiler error if the annotation is used incorrectly
+The @FunctionalInterface marker annotation is used to document that an interface is a valid functional interface that contains exactly one abstract method, making option B correct.
+It is also useful in determining whether an interface is a valid functional interface, as the compiler will report an error if used incorrectly, making option E correct.
+The compiler can detect whether an interface is a functional interface even without the annotation, making options A and C incorrect.
