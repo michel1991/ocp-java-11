@@ -78,8 +78,31 @@ C. Line 6
 D. Line 7
 E. Line 8
 F. Line 9
-
 The two classes are in different packages, which means private access and default (package-private) access will not compile.
 This causes compile errors in lines 5, 6, and 7, making options B, C, and D correct answers.
 Additionally, protected access will not compile since School does not inherit from Classroom.
 This causes the compiler error on line 9, making option F a correct answer as well.
+
+# Which of the following can fill in the blank in this code to make it compile? (Choose all that apply.)
+```java
+public class Ant {
+    _____ void method() {}
+    }
+```
+A. default
+B. final
+C. private
+D. Public
+E. String
+F. zzz:
+
+The keyword void is a return type.
+Only the access modifier or optional specifiers are allowed before the return type.
+Option C is correct, creating a method with private access.
+Option B is also correct, creating a method with default access and the optional specifier final.
+Since default access does not require a modifier, we get to jump right to final.
+Option A is incorrect because default access omits the access modifier rather than specifying default.
+Option D is incorrect because Java is case sensitive.
+It would have been correct if public were the choice.
+Option E is incorrect because the method already has a void return type.
+Option F is incorrect because labels are not allowed for methods.
