@@ -5,7 +5,10 @@ import java.util.function.*;
 
 class BadDeclarationCheckedException{
   
+    /**
+     * Supplier not allow checked exception more generally functional interface
+     */
   public void bad() throws IOException{
-       Supplier<List<String>> s = ExceptionCaseStudy::create; // does not compile
+      Supplier<List<String>> s =  CreateMethodExceptionCaseStudy::create; // does not compile
   }
 }
