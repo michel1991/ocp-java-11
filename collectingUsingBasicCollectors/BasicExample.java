@@ -30,10 +30,6 @@ class BasicExample{
   }  
  
   public static void main(String[] args){
-     joiningDataIntoStream();
-     System.out.println();
-     averageOfStringLength();
-      System.out.println();
      fromStreamToCollectionFilterAllStringStartsByT();
       System.out.println();
      basicCollectingIntoMap();
