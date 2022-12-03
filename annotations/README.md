@@ -36,7 +36,7 @@ The first, the repeatable annotation, needs to be declared with @Repeatable and 
 The second, the containing annotation type, must include an element named value() that includes an array of the repeatable annotation type.
 For these reasons, options A, E, and F are correct.
 
-Which annotation can cancel out a warning on a method using the @Deprecated API at compile time?
+# Which annotation can cancel out a warning on a method using the @Deprecated API at compile time?
 
 A. @FunctionalInterface
 B. @Ignore
@@ -44,7 +44,6 @@ C. @IgnoreDeprecated
 D. @Retention
 E. @SafeVarargs
 F. @SuppressWarnings
-
 If @SuppressWarnings("deprecation") is applied to a method that is using a deprecated API,
 then warnings related to the usage will not be shown at compile time, making option F correct.
 Note that there are no built-in annotations called @Ignore or @IgnoreDeprecated.
@@ -56,7 +55,6 @@ C. The annotation declaration must not contain any other elements.
 D. The annotation must not contain any other values.
 E. The element value must not be array.
 F. None of the above
-
 To use an annotation with a value but not element name, the element must be declared with the name value(), not values(), making option A incorrect.
 The value() annotation may be required or optional, making option B incorrect.
 The annotation declaration may contain other elements, provided none is required, making option C incorrect.
@@ -69,7 +67,6 @@ C. The annotation always includes a value.
 D. The annotation may include a value.
 E. The annotation must not include a value.
 F. None of the above
-
 An optional annotation element is one that is declared with a default value that may be optionally replaced when used in an annotation.
 For these reasons, options A and D are correct.
 
@@ -82,3 +79,16 @@ E. To trigger a compiler error if the annotation is used incorrectly
 The @FunctionalInterface marker annotation is used to document that an interface is a valid functional interface that contains exactly one abstract method, making option B correct.
 It is also useful in determining whether an interface is a valid functional interface, as the compiler will report an error if used incorrectly, making option E correct.
 The compiler can detect whether an interface is a functional interface even without the annotation, making options A and C incorrect.
+
+# Which annotations require a value to be applied to a declaration? (Choose all that apply.)
+A. @Retention
+B. @Documented
+C. @FunctionalInterface
+D. @SafeVarargs
+E. @Repeatable
+F. @Deprecated
+G. @SuppressWarnings
+@Documented, @FunctionalInterface, and @SafeVarargs are marker annotations and do not take any values.
+On the other hand, @Retention requires a RetentionPolicy value, making option A correct.
+Likewise, @Repeatable requires a containing annotation type, and @SuppressWarnings requires a String[] value, making options E and G correct, respectively.
+Finally, option F is incorrect. While @Deprecated may take a since() String value or forRemoval() boolean value, both are optional.

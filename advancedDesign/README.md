@@ -147,3 +147,31 @@ First, null and nonstatic are not valid method modifiers, making options A and D
 Options B and F are correct, as abstract methods cannot be marked private or static, since they then would not be able to be overridden.
 Option C is also correct, as you cannot declare two access modifiers on the same method.
 Finally, options E and G are two sets of valid modifiers that can be used together in a method declaration. Using private with final is allowed, albeit redundant.
+
+# Which modifiers are implicitly applied to all abstract class methods that do not declare a body? (Choose all that apply.)
+A. public
+B. final
+C. abstract
+D. violatile
+E. synchronized
+F. static
+G. None of the above
+
+If this question was about interfaces, then the correct answers would be options A and C, as public and abstract are implicitly applied to all interface methods that do not declare a body.
+The question is about abstract classes, though, which do not contain any implicit method modifiers, making option G correct.
+Even though an abstract method in an abstract class does not declare a body, it must still explicitly use the abstract modifier or it will not compile.
+
+# Suppose that you have a collection of products for sale in a database and you need to display those products. The products are not unique. Which of the following collections classes in the java.util package best suits your needs for this scenario?
+A. Arrays
+B. ArrayList
+C. HashMap
+D. HashSet
+E. LinkedList
+The answer needs to implement List because the scenario allows duplicates.
+Since you need a List, you can eliminate options C and D immediately because HashMap is a Map and HashSet is a Set.
+Option A, Arrays, is trying to distract you. It is a utility class rather than a Collection.
+An array is not a collection. This leaves you with options B and E.
+Option B is a better answer than option E because LinkedList is both a List and a Queue, and you just need a regular List.
+
+
+

@@ -18,7 +18,19 @@ C. Files.ls()
 D. Files.files()
 E. Files.list()
 F. Files.walk()
-
 The java.io.File method listFiles() retrieves the members of the current directory without traversing any subdirectories.
 Option E is correct, as Files.list() returns a Stream<Path> of a single directory.
 Files.walk() is close, but it iterates over the entire directory tree, not just a single directory. The rest of the methods do not exist.
+
+# What are some advantages of using NIO.2’s Files.readAttributes() method rather than reading attributes individually from a file? (Choose all that apply.)
+A. It can be used on both files and directories.
+B. For reading a single attribute, it is often more performant.
+C. It allows you to read symbolic links.
+D. It makes fewer round-trips to the file system.
+E. It can be used to access file system–dependent attributes.
+F. For reading multiple attributes, it is often more performant.
+
+Whether a path is a symbolic link, file, or directory is not relevant, so options A and C are incorrect.
+Using a view to read multiple attributes leads to fewer round-trips between the process and the file system and better performance, so options D and F are correct.
+For reading single attributes, there is little or no expected gain, so option B is incorrect.
+Finally, views can be used to access file system–specific attributes that are not available in Files methods; therefore, option E is correct.

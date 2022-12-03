@@ -110,3 +110,26 @@ F. PreparedStatement’s implementation
 The Driver and PreparedStatement interfaces are part of the JDK, making options A and E incorrect.
 The concrete DriverManager class is also part of the JDK, making options C and D incorrect.
 Options B and F are correct since the implementation of these interfaces is part of the database-specific driver JAR file.
+
+
+# Suppose we have a JDBC program that calls a stored procedure, which returns a set of results. Which is the correct order in which to close database resources for this call?
+A. Connection, ResultSet, CallableStatement
+B. Connection, CallableStatement, ResultSet
+C. ResultSet, Connection, CallableStatement
+D. ResultSet, CallableStatement, Connection
+E. CallableStatement, Connection, ResultSet
+F. CallableStatement, ResultSet, Connection
+
+JDBC resources should be closed in the reverse order from that in which they were opened.
+The order for opening is Connection, CallableStatement, and ResultSet. The order for closing is ResultSet, CallableStatement, and Connection.
+
+# Which of the following is a valid JDBC URL?
+A. jdbc:oracle:123.123.123.123
+B. jdbc:oracle:thin:123.123.123.123
+C. jdbc:oracle:thin:123.123.123.123//fun
+D. oracle:jdbc:123.123.123.123
+E. oracle:jdbc:thin:123.123.123.123
+F. oracle:jdbc:thin:123.123.123.123//fun
+
+A JDBC URL must begin with JDBC, making options D, E, and F incorrect.
+The database name is required, making options A and B incorrect. Therefore, the answer is option C.
