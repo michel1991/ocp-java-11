@@ -4,6 +4,9 @@ import java.util.stream.*;
 
 class ChainingOptionals{
  
+    /**
+     * find number with 3 length
+     */
   private static void withoutChainingThreeDigit(Optional<Integer> optional){
      if(optional.isPresent()){
             var num = optional.get();
@@ -13,6 +16,20 @@ class ChainingOptionals{
      }
   }
   
+    /**
+     * 1: Empty optional
+         La deuxième approche voit un Optional vide et fait en sorte que map() et filter() le laissent passer.
+         Ensuite, ifPresent() voit un Optional vide et n'appelle pas le paramètre Consumer.
+
+       2: with 4 as value
+       La deuxième approche fait correspondre le nombre 4 à "4".
+       Le filter() renvoie alors un Optional vide puisque le filtre ne correspond pas et ifPresent() n'appelle pas le paramètre Consumer.
+
+      3: with 123 as value
+      La deuxième approche fait correspondre le nombre 123 à "123". Le filter() renvoie alors le même Optional, et ifPresent() appelle maintenant le paramètre Consumer.
+
+
+     */
  private static void withChainingThreeDigit(Optional<Integer> optional){
       optional.map(n -> "" + n)
               .filter( s -> s.length() == 3)
