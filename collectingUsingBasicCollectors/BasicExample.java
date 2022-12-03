@@ -4,13 +4,7 @@ import java.util.*;
 import java.util.function.*;
 
 class BasicExample{
-   static void averageOfStringLength(){ 
-     var ohMy = Stream.of("lions", "tiggers", "bears");
- 
-     Double result = ohMy.collect(Collectors.averagingInt(String::length));
-    System.out.println("average of string length " + result);
    
-  }
 
   static void fromStreamToCollectionFilterAllStringStartsByT() {
     var ohMy = Stream.of("lions", "tiggers", "bears");
