@@ -5,8 +5,8 @@ import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.mapping;
 import static java.util.stream.Collectors.minBy;
 
-class MappingCollectors{
-  
+class GroupingByCollectors{
+
    static void firstLetterOfFirstAnimalGroupByLength(){
        var ohMy = Stream.of("lions", "tigers", "bears");
        Map<Integer, Optional<Character>> map = ohMy.collect(
@@ -18,7 +18,7 @@ class MappingCollectors{
                     )
 
               )
-   
+
        );
 
        System.out.println(map);
@@ -45,8 +45,8 @@ class MappingCollectors{
 
 
   public static void main(String[] args){
-     firstLetterOfFirstAnimalGroupByLength(); 
-     firstLetterOfFirstAnimalGroupByLengthWithStaticImport();     
+     firstLetterOfFirstAnimalGroupByLength();
+     firstLetterOfFirstAnimalGroupByLengthWithStaticImport();
    }
- 
+
 }
