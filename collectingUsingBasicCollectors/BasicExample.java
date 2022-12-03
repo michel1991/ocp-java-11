@@ -4,14 +4,6 @@ import java.util.*;
 import java.util.function.*;
 
 class BasicExample{
-   static void joiningDataIntoStream(){
-     var ohMy = Stream.of("lions", "tiggers", "bears");
-
-     String result = ohMy.collect(Collectors.joining(", "));
-    System.out.println( "joining string: " + result); // lions tiggers, beears
-
-  }
-
    static void averageOfStringLength(){ 
      var ohMy = Stream.of("lions", "tiggers", "bears");
  
