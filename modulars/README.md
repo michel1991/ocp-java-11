@@ -272,3 +272,13 @@ Since this is a new module, you need to compile the new module.
 However, none of the existing modules needs to be recompiled, making option A correct.
 The service locator will see the new service provider simply by having the new service provider on the module path.
 
+# Which of the following modules contains the java.sql package? (Choose all that apply.)
+A. java.base;
+B. java.database;
+C. java.jdbc;
+D. java.sql;
+E. None of the above
+
+Sorry. You just need to memorize this. The java.sql package is in the java.sql module, making option D correct. It just so happens to have the same name.
+
+
