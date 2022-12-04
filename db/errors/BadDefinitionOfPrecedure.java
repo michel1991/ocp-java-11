@@ -1,4 +1,4 @@
-package db;
+package db.errors;
 import java.sql.*;
 
 public class ErrorBadDefinitionOfPrecedure {
@@ -11,7 +11,7 @@ public class ErrorBadDefinitionOfPrecedure {
       E. Line 22 does not compile.
       F. Something else is wrong with the code.
       G. None of the above. This code is correct.
-      
+
       Lines 17 and 19 do not compile because they are not allowed in a try-with-resources declaration.
       Only declarations that implement AutoCloseable or Closeable are permitted.
       Line 20 does not compile because execute() returns a boolean rather than a ResultSet.
