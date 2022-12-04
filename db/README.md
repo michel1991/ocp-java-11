@@ -145,3 +145,14 @@ F. sybase::localhost::1234/db
 A JDBC URL has three main parts separated by single colons, making options B, C, E, and F incorrect.
 The first part is always jdbc, making option D incorrect. Therefore, the correct answer is option A.
 Notice that you can get this right even if you’ve never heard of the Sybase database before.
+
+Which of the following is a valid JDBC URL?
+A. jdbc-mysql-1234/db
+B. jdbc-mysql-localhost:1234/db
+C. jdbc-mysql-localhost-1234-db
+D. jdbc:mysql:
+E. jdbc:mysql:localhost:1234/db
+
+A JDBC URL has three main parts separated by colons (:), making options A, B, and C incorrect.
+Option D is tempting since there are two colons. However, there needs to be content after the colon as well.
+
