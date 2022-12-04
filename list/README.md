@@ -27,3 +27,15 @@ Option D is incorrect, as a default statement is not required in a switch statem
 In the case that no case statements match and there is no default statement, the application will exit the switch statement without executing any branches.
 Finally, each if statement has at most one matching else statement, making option F incorrect.
 You can chain multiple if and else statements together, but each else statement requires a new if statement.
+
+# Suppose that you have a collection of products for sale in a database and you need to display those products. The products are not unique. Which of the following collections classes in the java.util package best suits your needs for this scenario?
+A. Arrays
+B. ArrayList
+C. HashMap
+D. HashSet
+E. LinkedList
+The answer needs to implement List because the scenario allows duplicates.
+Since you need a List, you can eliminate options C and D immediately because HashMap is a Map and HashSet is a Set.
+Option A, Arrays, is trying to distract you. It is a utility class rather than a Collection.
+An array is not a collection. This leaves you with options B and E.
+Option B is a better answer than option E because LinkedList is both a List and a Queue, and you just need a regular List.
