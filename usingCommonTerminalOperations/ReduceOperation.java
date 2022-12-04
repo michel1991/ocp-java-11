@@ -12,19 +12,31 @@ import java.util.function.*;
 public class ReduceOperation{
    static void withLambda(){ 
     Stream<String> stream = Stream.of("w", "o", "l", "f");
-    String word = stream.reduce("", (s,c) -> s + c );
+    String word = stream
+                        .reduce(
+                                "",
+                                (s,c) -> s + c
+                        );
     System.out.println("result reduce with lambda " + word);
   }
 
     static void withReferenceMethod(){
     Stream<String> stream = Stream.of("w", "o", "l", "f");
-    String word = stream.reduce("", String::concat); 
+    String word = stream
+                        .reduce(
+                                "",
+                                String::concat
+                        );
     System.out.println("result reduce with reference method " + word);
   }
 
    static void multiply(){
      Stream<Integer> stream = Stream.of(3, 5, 6);
-      int result =  stream.reduce(1, (a, b) -> a * b );
+      int result =  stream
+                          .reduce(
+                                   1,
+                                   (a, b) -> a * b
+                          );
       System.out.println("multiply:  "+ result ); 
    }
 
@@ -39,9 +51,18 @@ public class ReduceOperation{
      Stream<Integer> oneElement = Stream.of(3);
      Stream<Integer> threeElements = Stream.of(3, 5, 6);
 
-     empty.reduce(accumulator).ifPresent(System.out::println); // no output
-     oneElement.reduce(accumulator).ifPresent(System.out::println); // 3
-     threeElements.reduce(accumulator).ifPresent(System.out::println); // 90
+     empty
+           .reduce(accumulator)
+           .ifPresent(System.out::println); // no output
+
+
+     oneElement
+               .reduce(accumulator)
+               .ifPresent(System.out::println); // 3
+
+     threeElements
+                   .reduce(accumulator)
+                   .ifPresent(System.out::println); // 90
    }
 
     /**
@@ -56,7 +77,12 @@ public class ReduceOperation{
      */
   static void withThirdParameter(){
       Stream<String> stream = Stream.of("w", "o", "l", "f!");
-      int length =  stream.reduce(0, (i, s) -> i + s.length(), (a, b) -> a + b);
+      int length =  stream
+                         .reduce(
+                                    0,
+                                    (i, s) -> i + s.length(),
+                                    (a, b) -> a + b
+                                );
       System.out.println("with third parameter " + length); // 5
    }
     static void withThirdParameterUsingTypeDefinitions(){
@@ -64,16 +90,25 @@ public class ReduceOperation{
        BiFunction<Integer, String, Integer>  accumulator = (previousValue, s) -> previousValue + s.length();
        BinaryOperator<Integer> combiner = (a, b) -> a + b;
        int theIdentity = 0;
-       int length =  stream.reduce( theIdentity, accumulator, combiner);
+       int length =  stream.reduce(
+                        theIdentity,
+                        accumulator,
+                        combiner
+       );
        System.out.println("with third parameter  using Type definition " + length); // 5
    }
 
   public static void main(String[] args){
         withLambda();
+        System.out.println();
         withReferenceMethod();
+        System.out.println();
         multiply();
+        System.out.println();
         omitIdentity();
+        System.out.println();
         withThirdParameter();
+        System.out.println();
         withThirdParameterUsingTypeDefinitions();
   }
 
