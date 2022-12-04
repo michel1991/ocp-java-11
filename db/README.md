@@ -133,3 +133,15 @@ F. oracle:jdbc:thin:123.123.123.123//fun
 
 A JDBC URL must begin with JDBC, making options D, E, and F incorrect.
 The database name is required, making options A and B incorrect. Therefore, the answer is option C.
+
+# Which of the following is a valid JDBC URL?
+A. jdbc:sybase:localhost:1234/db
+B. jdbc::sybase::localhost::/db
+C. jdbc::sybase:localhost::1234/db
+D. sybase:localhost:1234/db
+E. sybase::localhost::/db
+F. sybase::localhost::1234/db
+
+A JDBC URL has three main parts separated by single colons, making options B, C, E, and F incorrect.
+The first part is always jdbc, making option D incorrect. Therefore, the correct answer is option A.
+Notice that you can get this right even if you’ve never heard of the Sybase database before.
