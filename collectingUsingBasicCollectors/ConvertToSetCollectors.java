@@ -10,7 +10,10 @@ public class ConvertToSetCollectors {
         var ohMy = Stream.of("lions", "tiggers", "bears");
         TreeSet<String> result = ohMy
                                     .filter( s -> s.startsWith("t") )
-                                    .collect(Collectors.toCollection(TreeSet::new))
+                                    .collect(
+                                              Collectors
+                                                    .toCollection(TreeSet::new)
+                                           )
         ;
         System.out.println("\t from stream to Collection filter all string start by t " + result);
         System.out.println("End from stream to Collection filter all string start by t  without type" );
@@ -23,7 +26,10 @@ public class ConvertToSetCollectors {
         Supplier<TreeSet<String>> supplier = TreeSet::new;
         TreeSet<String> result = ohMy
                                     .filter(filterPredicate )
-                                    .collect(Collectors.toCollection(supplier))
+                                    .collect(
+                                               Collectors
+                                                        .toCollection(supplier)
+                                            )
         ;
         System.out.println("\t from stream to Collection filter all string start by t " + result);
         System.out.println("End from stream to Collection filter all string start by t  with type" );
