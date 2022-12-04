@@ -1,4 +1,4 @@
-package advancedDesign.errors;
+package enums.errors;
 
 /**
 * The declaration of Fruit does not compile because enums are required to list their values first.

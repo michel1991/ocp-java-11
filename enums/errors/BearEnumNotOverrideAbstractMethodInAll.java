@@ -1,4 +1,5 @@
-package advancedDesign.errors;
+package enums.errors;
+
 /**
 * Which of the following are printed by the Bear program? (Choose all that apply.)
     A. insects
