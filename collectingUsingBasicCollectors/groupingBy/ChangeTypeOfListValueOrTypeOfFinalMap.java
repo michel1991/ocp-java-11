@@ -6,11 +6,14 @@ import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.mapping;
 import static java.util.stream.Collectors.minBy;
 
+/**
+* By default default collections that hold value is List
+*/
 public class ChangeTypeOfListValueOrTypeOfFinalMap {
     /**
     * Le collecteur groupingBy() (The groupingBy() collector) indique à collect() qu'il doit regrouper tous les éléments du flux dans une Map.
     * La fonction détermine les clés de la Map. Chaque valeur de la Map est une liste de toutes les entrées qui correspondent à cette clé.
-    * By default It is List that hold value
+    * By default default collections that hold value is List
     */
     static void makeGroupingByChangeTypeOfListThatHoldValue(){
         var ohMy = Stream.of("lions", "tigers", "bears");
