@@ -71,6 +71,21 @@ public class ChangeTypeOfListValueOrTypeOfFinalMap {
         System.out.println("End from stream to Map the type of list that hold value to default and type of map to return " );
     }
 
+    static void usingAnyCollectorsValueIsSizeOfListThatHoldValue(){
+        var ohMy = Stream.of("lions", "tigers", "bears");
+        Map<Integer, Long> map = ohMy.collect(
+                Collectors.groupingBy(
+                        String::length,
+                        Collectors.counting()
+
+                )
+        );
+        System.out.println("Begin from stream to Map by specify any downstream collectors that hold value" );
+        System.out.println("\t group by length  using any collector: " + map);
+        System.out.println("\t class is " + map.getClass());
+        System.out.println("End from stream to Map by specify any downstream collectors that hold value" );
+    }
+
 
 
     public static void main(String... args){
@@ -79,6 +94,8 @@ public class ChangeTypeOfListValueOrTypeOfFinalMap {
         makeGroupingByChangeTypeOfListThatHoldValueAndTypeOfMapReturning();
         System.out.println();
         makeGroupingByChangeTypeOfListThatHoldValueToDefaultAndTypeOfMapReturning();
+        System.out.println();
+        usingAnyCollectorsValueIsSizeOfListThatHoldValue();
     }
 
 }
