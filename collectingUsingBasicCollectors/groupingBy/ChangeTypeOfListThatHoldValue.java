@@ -1,4 +1,4 @@
-package collectingUsingBasicCollectors;
+package collectingUsingBasicCollectors.groupingBy;
 import java.util.stream.*;
 import java.util.*;
 import java.util.function.*;
@@ -6,7 +6,7 @@ import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.mapping;
 import static java.util.stream.Collectors.minBy;
 
-public class GroupingByChangeTypeOfListThatHoldValue {
+public class ChangeTypeOfListThatHoldValue {
     /**
     * Le collecteur groupingBy() (The groupingBy() collector) indique à collect() qu'il doit regrouper tous les éléments du flux dans une Map.
     * La fonction détermine les clés de la Map. Chaque valeur de la Map est une liste de toutes les entrées qui correspondent à cette clé.
