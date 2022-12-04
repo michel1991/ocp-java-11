@@ -1,4 +1,4 @@
-package collectingUsingBasicCollectors;
+package collectingUsingBasicCollectors.runtime;
 import java.util.stream.*;
 import java.util.*;
 import java.util.function.*;
