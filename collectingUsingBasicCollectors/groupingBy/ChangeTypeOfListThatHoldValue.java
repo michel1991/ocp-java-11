@@ -49,12 +49,33 @@ public class ChangeTypeOfListThatHoldValue {
         System.out.println("End from stream to Map the type of list that hold value and type of map to return " );
     }
 
+    static void makeGroupingByChangeTypeOfListThatHoldValueToDefaultAndTypeOfMapReturning(){
+        var ohMy = Stream.of("lions", "tigers", "bears");
+        Function<String, Integer> howToDefineKey = String::length;
+        Supplier<TreeMap<Integer, List<String>>> supplierTypeOfMapToReturn =  TreeMap::new;
+
+        TreeMap<Integer, List<String>> map =  ohMy
+        .collect(
+                groupingBy(howToDefineKey,
+                           supplierTypeOfMapToReturn,
+                           Collectors.toList() // type of list that hold value
+                )
+
+        );
+        System.out.println("Begin from stream to Map by specify the type of list that hold value to default and type of map to return " );
+        System.out.println("\t create string  without specify which map " + map);
+        System.out.println("\t " + map.getClass());
+        System.out.println("End from stream to Map the type of list that hold value to default and type of map to return " );
+    }
+
 
 
     public static void main(String... args){
         makeGroupingByChangeTypeOfListThatHoldValue();
         System.out.println();
         makeGroupingByChangeTypeOfListThatHoldValueAndTypeOfMapReturning();
+        System.out.println();
+        makeGroupingByChangeTypeOfListThatHoldValueToDefaultAndTypeOfMapReturning();
     }
 
 }
