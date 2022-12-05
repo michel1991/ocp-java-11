@@ -34,3 +34,15 @@ Whether a path is a symbolic link, file, or directory is not relevant, so option
 Using a view to read multiple attributes leads to fewer round-trips between the process and the file system and better performance, so options D and F are correct.
 For reading single attributes, there is little or no expected gain, so option B is incorrect.
 Finally, views can be used to access file system–specific attributes that are not available in Files methods; therefore, option E is correct.
+
+# What are some advantages of NIO.2 over the legacy java.io.File class for working with files? (Choose three.)
+A. NIO.2 supports file system–dependent attributes.
+B. NIO.2 includes a method to list the contents of a directory.
+C. NIO.2 includes a method to traverse a directory tree.
+D. NIO.2 includes a method to delete an entire directory tree.
+E. NIO.2 includes methods that are aware of symbolic links.
+F. NIO.2 supports sending emails.
+Options A, C, and E are all properties of NIO.2 and are good reasons to use it over the java.io.File class.
+Option B is incorrect, as both java.io.File and NIO.2 include a method to list the contents of a directory.
+Option D is also incorrect as both APIs can delete only empty directories, not a directory tree.
+Finally, option F is incorrect, as sending email messages is not a feature of either API.
