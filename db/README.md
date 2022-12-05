@@ -146,7 +146,7 @@ A JDBC URL has three main parts separated by single colons, making options B, C,
 The first part is always jdbc, making option D incorrect. Therefore, the correct answer is option A.
 Notice that you can get this right even if you’ve never heard of the Sybase database before.
 
-Which of the following is a valid JDBC URL?
+# Which of the following is a valid JDBC URL?
 A. jdbc-mysql-1234/db
 B. jdbc-mysql-localhost:1234/db
 C. jdbc-mysql-localhost-1234-db
@@ -155,4 +155,16 @@ E. jdbc:mysql:localhost:1234/db
 
 A JDBC URL has three main parts separated by colons (:), making options A, B, and C incorrect.
 Option D is tempting since there are two colons. However, there needs to be content after the colon as well.
+
+# How do you obtain a connection through JDBC?
+A. new Connection(url)
+B. new ConnectionImpl(url)
+C. Driver.getConnection(url)
+D. new Driver().getConnection(url)
+E. DriverManager.getConnection(url)
+F. new DriverManager().getConnection(url)
+
+On the exam, a Connection is always obtained from a DriverManager using a static method. Therefore, option E is correct.
+
+
 
