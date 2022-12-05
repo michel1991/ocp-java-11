@@ -1,5 +1,33 @@
 package list;
 import java.util.*;
+import java.io.*;
+
+/**
+*  Which of these statements can fill in the blank so that the Wildcard class compiles successfully? (Choose all that apply.)
+    A. List<?> list = new HashSet <String>()
+    B. ArrayList<? super Date> list = new ArrayList<Date>()
+    C. List<?> list = new ArrayList<?>()
+    D. List<Exception> list = new LinkedList<java.io.IOException>()
+    E. ArrayList <? extends Number> list = new ArrayList <Integer>()
+    F. None of the above
+
+    The showSize() method can take any type of List since it uses an unbounded wildcard.
+    Option A is incorrect because it is a Set and not a List.
+    Option C is incorrect because the wildcard is not allowed to be on the right side of an assignment.
+    Option D is incorrect because the generic types are not compatible.
+    Option B is correct because a lower-bounded wildcard allows that same type to be the generic.
+    Option E is correct because Integer is a subclass of Number.
+ */
+class Wildcard { // 3:
+    public void showSize(List<?> list) { //   4:
+        System.out.println(list.size()); //   5:
+    } //  6:
+    public static void main() { //  7:
+        Wildcard card = new Wildcard(); //  8:
+        ArrayList<? super Date> list = new ArrayList<Date>() ; //      9: ____________________________________
+        card.showSize(list); //  10:
+    } } //   11:
+
 public class LimitContentWithGenerics {
     /**
     *  Which of these statements compile? (Choose all that apply.)
