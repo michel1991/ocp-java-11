@@ -281,4 +281,13 @@ E. None of the above
 
 Sorry. You just need to memorize this. The java.sql package is in the java.sql module, making option D correct. It just so happens to have the same name.
 
+# Which module is available to your named module without needing a requires directive?
+A. java.all
+B. java.base
+C. java.default
+D. java.lang
+E. None of the above
+
+Option B is correct because java.base is provided by default. It contains the java.lang package among others.
+
 

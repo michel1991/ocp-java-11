@@ -92,3 +92,15 @@ G. @SuppressWarnings
 On the other hand, @Retention requires a RetentionPolicy value, making option A correct.
 Likewise, @Repeatable requires a containing annotation type, and @SuppressWarnings requires a String[] value, making options E and G correct, respectively.
 Finally, option F is incorrect. While @Deprecated may take a since() String value or forRemoval() boolean value, both are optional.
+
+# Fill in the blanks: When using the @SuppressWarnings annotations, a value of _________________ causes it to ignore issues with generics, while a value of _________________, causes it to ignore code that is marked as outdated.
+A. generic, deprecation
+B. generic, ignore
+C. safetypes, deprecated
+D. safetypes, ignore
+E. unchecked, deprecation
+F. unchecked, deprecated
+G. None of the above
+
+The correct option to ignore issues with generic types is unchecked, while deprecation is used to ignore code that is marked deprecated, making option E correct.
+Most of the other options are not built-in types supported by the compiler.
