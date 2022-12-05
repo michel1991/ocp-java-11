@@ -104,3 +104,27 @@ G. None of the above
 
 The correct option to ignore issues with generic types is unchecked, while deprecation is used to ignore code that is marked deprecated, making option E correct.
 Most of the other options are not built-in types supported by the compiler.
+
+# Which annotations are marker annotations? (Choose all that apply.)
+A. @SafeVarargs
+B. @Override
+C. @Deprecated
+D. @Documented
+E. @SuppressWarnings
+F. @Target
+G. @FunctionalInterface
+
+A marker annotation is one that contains no elements, optional or required.
+For this reason, @SafeVarargs, @Override, @Documented, and @FunctionalInterface correct.
+The annotations @SuppressWarnings and @Target contain a required element, making options E and F incorrect.
+Option C is also incorrect, as @Deprecated can take optional values.
+
+# Suppose you have separate modules for a service provider interface, service provider, service locator, and consumer. Which statements are true about the directives you need to specify? (Choose all that apply.)
+A. The consumer must use the requires directive.
+B. The consumer must use the uses directive.
+C. The service locator must use the requires directive.
+D. The service locator must use the uses directive.
+
+Option A and C are correct because both the consumer and the service locator depend on the service provider interface.
+Additionally, option D is correct because the service locator must specify that it uses the service provider interface to look it up.
+
