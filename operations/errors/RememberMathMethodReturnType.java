@@ -2,10 +2,19 @@ package operations.errors;
 import java.util.*;
 public class RememberMathMethodReturnType {
     /**
-    * Remember to watch return types on math operations. One of the tricks is option B on line 24.
-    * The round() method returns an int when called with a float. However, we are calling it with a double so it returns a long.
-    * The other trick is option C on line 25. The random() method returns a double. Converting from an array to an ArrayList uses Arrays.asList(names).
-    * There is no asList() method on an array instance, and option E is correct.
+    *   Which of the lines contain a compiler error? (Choose all that apply.)
+        A. Line 23
+        B. Line 24
+        C. Line 25
+        D. Line 26
+        E. Line 29
+        F. Line 30
+        G. Line 31
+
+         Remember to watch return types on math operations. One of the tricks is option B on line 24.
+         The round() method returns an int when called with a float. However, we are calling it with a double so it returns a long.
+         The other trick is option C on line 25. The random() method returns a double. Converting from an array to an ArrayList uses Arrays.asList(names).
+         There is no asList() method on an array instance, and option E is correct.
      */
     public static void firstCase(){
       double one = Math.pow(1, 2);
