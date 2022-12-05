@@ -4,7 +4,7 @@ import java.util.function.*;
 import java.util.stream.*;
 
 
-public class CallStreamTwiceIterate {
+public class CallStreamTwice {
 
     /**
     * What could be the output of the following?
