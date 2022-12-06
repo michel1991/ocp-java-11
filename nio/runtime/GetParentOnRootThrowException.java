@@ -13,7 +13,7 @@ import java.nio.file.*;
     The root path has no parent path, so this snippet will return null, and the operation resolve() will throw a NullPointerException at runtime;
     therefore, option F is correct.
  */
-public interface ErrorGetParentOnRootThrowException {
+public interface GetParentOnRootThrowException {
    public static void main(String[] args){
        var u = Paths.get("/reef/../clown/fish").normalize();
        System.out.println(Paths.get("/reef/../clown/fish").normalize());
