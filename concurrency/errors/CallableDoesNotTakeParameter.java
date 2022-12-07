@@ -1,4 +1,4 @@
-package concurrency;
+package concurrency.errors;
 import java.util.concurrent.*;
 public class CallableDoesNotTakeParameter {
    public static void main(String... args) throws Exception{
