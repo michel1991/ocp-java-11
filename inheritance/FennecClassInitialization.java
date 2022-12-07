@@ -55,7 +55,7 @@ class Fennec extends Fox { // 18:
        } //  26:
    // 27:
  } // 30:
-public class ClassInitialisationFennec {
+public class FennecClassInitialization {
     public static void main(String... unused) { // 28:
         System.out.println(new Fennec(1).view()); // 29:
     }
