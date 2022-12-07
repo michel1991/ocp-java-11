@@ -46,3 +46,18 @@ Options A, C, and E are all properties of NIO.2 and are good reasons to use it o
 Option B is incorrect, as both java.io.File and NIO.2 include a method to list the contents of a directory.
 Option D is also incorrect as both APIs can delete only empty directories, not a directory tree.
 Finally, option F is incorrect, as sending email messages is not a feature of either API.
+
+# Which of the following correctly create Path instances? (Choose all that apply.)
+
+A. new Path("jaguar.txt")
+B. FileSystems.getDefault() .getPath("puma.txt")
+C. Path.get("cats","lynx.txt")
+D. new java.io.File("tiger.txt").toPath()
+E. new FileSystem().getPath("lion")
+F. Paths.getPath("ocelot.txt")
+G. Path.of(Path.of(".").toUri())
+
+Options A and E are incorrect because Path and FileSystem, respectively, are abstract types that should be instantiated using a factory method.
+Option C is incorrect because the static method in the Path interface is of(), not get().
+Option F is incorrect because the static method in the Paths class is get(), not getPath().
+Options B and D are correct ways to obtain a Path instance. Option G is also correct, as there is an overloaded static method in Path that takes a URI instead of a String.

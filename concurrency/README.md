@@ -35,3 +35,14 @@ Options B and C are also incorrect, as the correct method name to attempt to acq
 Option D is incorrect, as fairness is set to false by default and must be enabled by using an overloaded constructor.
 Finally, option E is incorrect because a thread that holds the lock may have called lock() or tryLock() multiple times.
 A thread needs to call unlock() once for each call to lock() and tryLock().
+
+# Fill in the blanks: ____________ occur(s) when two or more threads are blocked forever but both appear active. ____________ occur(s) when two or more threads try to complete a related task at the same time, resulting in invalid or unexpected data.
+A. Livelock, Deadlock
+B. Deadlock, Starvation
+C. Race conditions, Deadlock
+D. Livelock, Race conditions
+E. Starvation, Race conditions
+F. Deadlock, Livelock
+
+Livelock occurs when two or more threads are conceptually blocked forever, although they are each still active and trying to complete their task.
+A race condition is an undesirable result that occurs when two tasks are completed at the same time, which should have been completed sequentially.

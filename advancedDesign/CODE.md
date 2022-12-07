@@ -106,3 +106,24 @@ Option D is incorrect because Java is case sensitive.
 It would have been correct if public were the choice.
 Option E is incorrect because the method already has a void return type.
 Option F is incorrect because labels are not allowed for methods.
+
+# Which is true of the following code? (Choose all that apply.)
+```java
+    package abc; // 1:
+    import java.math.*; // 2:
+    public class W { // 3:
+        public void method() { } //  4:
+        int a; //  5:
+     } // 6:
+```
+A. The code will not compile if line 1 is removed.
+B. The code will not compile if line 2 is removed.
+C. The code will not compile if line 3 is removed.
+D. The code will not compile if line 4 is removed.
+E. The code will not compile if line 5 is removed.
+F. The code does not compile as currently written.
+
+The code compiles as is, making option F incorrect. The package statement is optional in a class, making option A incorrect.
+Since the import is unused, option B is also incorrect.
+A class will compile without any fields or methods, making options D and E incorrect.
+The only thing required is the actual class declaration on line 3. Therefore, option C is the answer.
