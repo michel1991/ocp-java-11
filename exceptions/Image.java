@@ -1,4 +1,4 @@
-package verifyCompilation;
+package exceptions;
 /**
 * What is the output of the following program?
     A. 124
