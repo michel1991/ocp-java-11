@@ -183,3 +183,14 @@ F. Object s = rs.getObject(1)
 In a ResultSet, columns are indexed starting with 1, not 0. Therefore, options A, C, and E are incorrect.
 There are methods to get the column as a String or Object.
 However, option D is incorrect because an Object cannot be assigned to a String without a cast.
+
+# Which of the following are words in the CRUD acronym? (Choose all that apply.)
+A. Create
+B. Delete
+C. Disable
+D. Relate
+E. Read
+F. Upgrade
+
+CRUD stands for Create, Read, Update, Delete, making options A, B, and E correct.
+

@@ -61,3 +61,18 @@ Options A and E are incorrect because Path and FileSystem, respectively, are abs
 Option C is incorrect because the static method in the Path interface is of(), not get().
 Option F is incorrect because the static method in the Paths class is get(), not getPath().
 Options B and D are correct ways to obtain a Path instance. Option G is also correct, as there is an overloaded static method in Path that takes a URI instead of a String.
+
+# Which of the following throw an exception when an Optional is empty? (Choose all that apply.)
+A. opt.orElse("");
+B. opt.orElseGet(() -> "");
+C. opt.orElseThrow();
+D. opt.orElseThrow(() -> throw new Exception());
+E. opt.orElseThrow(RuntimeException::new);
+F. opt.get();
+G. opt.get("");
+
+Options A and B compile and return an empty string without throwing an exception, using a String and Supplier parameter, respectively.
+Option G does not compile as the get() method does not take a parameter. Options C and F throw a NoSuchElementException.
+Option E throws a RuntimeException. Option D looks correct but will compile only if the throw is removed.
+Remember, the orElseThrow() should get a lambda expression or method reference that returns an exception, not one that throws an exception.
+
