@@ -2,20 +2,20 @@ package stream.parallel;
 import java.util.stream.*;
 import java.util.concurrent.atomic.*;
 /**
-* What statement about the following code is true?
-* A. It outputs 100 100.
-  B. It outputs 100 99.
-  C. The output cannot be determined ahead of time.
-  D. The code does not compile.
-  E. It compiles but throws an exception at runtime.
-  F. It compiles but enters an infinite loop at runtime.
-  G. None of the above
+*    What statement about the following code is true?
+      A. It outputs 100 100.
+      B. It outputs 100 99.
+      C. The output cannot be determined ahead of time.
+      D. The code does not compile.
+      E. It compiles but throws an exception at runtime.
+      F. It compiles but enters an infinite loop at runtime.
+      G. None of the above
 
-The code compiles and runs without throwing an exception or entering an infinite loop, so options D, E, and F are incorrect.
-The key here is that the increment operator ++ is not atomic.
-While the first part of the output will always be 100, the second part is nondeterministic.
-It could output any value from 1 to 100, because the threads can overwrite each other’s work.
-Therefore, option C is the correct answer, and options A and B are incorrect.
+    The code compiles and runs without throwing an exception or entering an infinite loop, so options D, E, and F are incorrect.
+    The key here is that the increment operator ++ is not atomic.
+    While the first part of the output will always be 100, the second part is nondeterministic.
+    It could output any value from 1 to 100, because the threads can overwrite each other’s work.
+    Therefore, option C is the correct answer, and options A and B are incorrect.
  */
 public class IndeterminedOutput {
   static void print(){
