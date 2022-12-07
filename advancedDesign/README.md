@@ -134,6 +134,22 @@ You can reduce code duplication by moving shared code from default or static met
 For this reason, option C is correct. Option E is also correct, as making interface methods private means users of the interface do not have access to them.
 The rest of the options are not related to private methods, although backward compatibility does apply to default methods.
 
+# Which of the following are valid method modifiers that cannot be used together in a method declaration? (Choose all that apply.)
+A. null and final
+B. abstract and private
+C. public and private
+D. nonstatic and abstract
+E. private and final
+F. abstract and static
+G. protected and abstract
+
+First, null and nonstatic are not valid method modifiers, making options A and D incorrect.
+Options B and F are correct, as abstract methods cannot be marked private or static, since they then would not be able to be overridden.
+Option C is also correct, as you cannot declare two access modifiers on the same method.
+Finally, options E and G are two sets of valid modifiers that can be used together in a method declaration.
+Using private with final is allowed, albeit redundant.
+
+
 
 
 
