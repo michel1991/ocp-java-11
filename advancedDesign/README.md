@@ -149,6 +149,22 @@ Option C is also correct, as you cannot declare two access modifiers on the same
 Finally, options E and G are two sets of valid modifiers that can be used together in a method declaration.
 Using private with final is allowed, albeit redundant.
 
+# Which of the following statements about primitive and reference types are correct? (Choose all that apply.)
+A. char and byte are the same size.
+B. Java allows some objects to be passed to methods that accept primitives.
+C. The new keyword creates a new object in memory.
+D. String is a primitive type.
+E. All primitive types define a callable toString() method.
+F. double is larger than float.
+G. An object can have only one reference, created when the object is created.
+
+A char is larger than a byte, whereas char and short are the same size, making option A incorrect.
+Java supports autoboxing and unboxing of primitives to their associated wrapped classes, making option B correct.
+Option C is also correct, as the new keyword allocates memory for a new object.
+Java includes support for String literals and operators, but a String value is an object, not a primitive, making option D incorrect.
+Primitive types do not define any methods, so option E is incorrect, although they can each be appended to a String value.
+Option F is correct as double is twice the size of float. Finally, option G is incorrect, since objects can have many references to them.
+They can even be created without an explicit reference variable, such as calling new Object(); on a line by itself.
 
 
 

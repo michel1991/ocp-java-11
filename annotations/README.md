@@ -150,9 +150,21 @@ D. @Retention
 E. @SafeVarargs
 F. @SuppressWarnings
 G. None of the above
-
 If @SuppressWarnings("deprecation") is applied to a method that is using a deprecated API,
 then warnings related to the usage will not be shown at compile time, making option F correct.
 Note that there are no built-in annotations called @Ignore or @IgnoreDeprecated.
+
+# Fill in the blanks: The __________ annotation determines what annotations from a superclass or interface are applied, while the __________ annotation determines what declarations an annotation can be applied to.
+A. @Target, @Retention
+B. @Inherited, @ElementType
+C. @Documented, @Deprecated
+D. @Target, @Generated
+E. @Repeatable, @Element
+F. @Inherited, @Retention
+G. None of the above
+The @Inherited annotation determines whether or not annotations defined in a super type are automatically inherited in a child type.
+The @Target annotation determines the location or locations an annotation can be applied to. Since this was not an answer choice, option G is correct.
+Note that ElementType is an enum used by @Target, but it is not an annotation.
+
 
 
