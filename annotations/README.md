@@ -166,5 +166,29 @@ The @Inherited annotation determines whether or not annotations defined in a sup
 The @Target annotation determines the location or locations an annotation can be applied to. Since this was not an answer choice, option G is correct.
 Note that ElementType is an enum used by @Target, but it is not an annotation.
 
+# Given an automobile sales system, which of the following information is best stored using an annotation?
+A. The price of the vehicle
+B. A list of people who purchased the vehicle
+C. The sales tax of the vehicle
+D. The number of passengers a vehicle is rated for
+E. The quantity of models in stock
+Annotations should include metadata (data about data) that is relatively constant, as opposed to attribute data, which is part of the object and can change frequently.
+The price, sales, inventory, and people who purchased a vehicle could fluctuate often, so using an annotation would be a poor choice.
+On the other hand, the number of passengers a vehicle is rated for is extra information about the vehicle and unlikely to change once established.
+Therefore, it is appropriate metadata and best served using an annotation.
+
+# What properties of applying @SafeVarargs are correct? (Choose all that apply.)
+A. By applying the annotation, the compiler verifies that all operations on parameters are safe.
+B. The annotation can be applied to abstract methods.
+C. The annotation can be applied to method and constructor declarations.
+D. When the annotation is applied to a method, the method must contain a varargs parameter.
+E. The annotation can be applied to method and constructor parameters.
+F. The annotation can be applied to static methods.
+The @SafeVarargs annotation can be applied to a constructor or private, static, or final method that includes a varargs parameter.
+For these reasons, options C, D, and F are correct. Option A is incorrect, as the compiler cannot actually enforce that the operations are safe.
+It is up to the developer writing the method to verify that.
+Option B is incorrect as the annotation can be applied only to methods that cannot be overridden and abstract methods can always be overridden.
+Finally, option E is incorrect, as it is applied to the declaration, not the parameters.
+
 
 

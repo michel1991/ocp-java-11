@@ -302,4 +302,24 @@ Since the JAR is on the classpath, it is a named module.
 The module-info file can use the exports directive to allow visibility into zero, one, or more packages to other modules, making options B, D, and F correct.
 Further, all unnamed modules on the classpath can access all packages in the module, making option A correct.
 
+# For a bottom-up migration, all modules other than named modules are ________________ modules and on the __________________.
+A. automatic, classpath
+B. automatic, module path
+C. unnamed, classpath
+D. unnamed, module path
+E. None of the above
+
+A bottom-up migration strategy leaves all JARs on the classpath until they are migrated.
+Then it migrates the lowest-level module to be a named module, leaving the other modules as unnamed modules.
+Option C is correct as it matches both of those characteristics.
+
+# Which commands take a --describe-module parameter? (Choose all that apply.)
+A. javac
+B. java
+C. jar
+D. jdeps
+E. jmod
+F. None of the above
+
+Options B and C are correct because the -d (--describe-module) option can be passed when to the java and jar commands.
 
