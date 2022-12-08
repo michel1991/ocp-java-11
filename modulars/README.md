@@ -41,6 +41,7 @@ Options D and E are incorrect because -d and -p are used for modules.
 * D. It can be changed without recompiling any other modules.
 * E. It must have a provides directive.
 * F. It must have a uses directive.
+
 A service provider interface declares the interface rather than a service provider, making option A incorrect.
 Each service provider is allowed to provide only one service provider implementation, making option B correct and option C incorrect.
 One of the benefits of services is being able to change the service provider dynamically, making option D correct.
@@ -63,6 +64,7 @@ The java command has an --add-exports option that allows exporting a package at 
 * E. emily.$.jar and emily
 * F. emily.$.jar and emily.
 * G. emily.$.jar and emily..
+
 Any version information at the end of the JAR filename is removed, making options A and B correct.
 Underscores (_) are turned into dots (.), making options C and D incorrect.
 Other special characters like a dollar sign ($) are also turned into dots.
@@ -76,6 +78,7 @@ However, adjacent dots are merged, and leading/trailing dots are removed. Theref
 *  E. The uses keyword allows the use of reflection.
 *  F. The uses keyword declares an API is called.
 *  G. The file can be empty (zero bytes).
+
 Options C and D are incorrect because there is no use keyword.
 Options A and F are correct because opens is for reflection and uses declares an API that consumes a service.
 Option G is also correct as the file can be completely empty. This is just something you have to memorize.
@@ -87,6 +90,7 @@ Option G is also correct as the file can be completely empty. This is just somet
 *  D. An unnamed module exports only the named packages to named modules.
 *  E. An unnamed module exports all packages to named modules.
 *  F. An unnamed module exports no packages to named modules.
+
 An automatic module exports all packages, making option A correct.
 An unnamed module is not available to any modules on the module path.
 Therefore, it doesn’t export any packages, and option F is correct.
@@ -98,6 +102,7 @@ Therefore, it doesn’t export any packages, and option F is correct.
 *  D. A cyclic dependency always involves three or more modules.
 *  E. A cyclic dependency always involves at least two requires statements.
 *  F. An unnamed module can be involved in a cyclic dependency with an automatic module
+
 A cyclic dependency is when a module graph forms a circle.
 Option A is correct because the Java Platform Module System does not allow cyclic dependencies between modules.
 No such restriction exists for packages, making option B incorrect.
@@ -144,6 +149,7 @@ The module-info.java file has the correct name and compiles, making options E an
 *  F. Service locator and service provider interface
 *  G. Consumer, service locator, and service provider interface
 *  H. None of the above
+
 This question is tricky. The service provider must have a uses directive, but that is on the service provider interface.
 No modules need to specify requires on the service provider since that is the implementation.
 
