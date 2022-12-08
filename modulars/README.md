@@ -69,35 +69,35 @@ Other special characters like a dollar sign ($) are also turned into dots.
 However, adjacent dots are merged, and leading/trailing dots are removed. Therefore, option E is correct.
 
 # Which of the following statements are true in a module-info.java file? (Choose all that apply.)
-A. The opens keyword allows the use of reflection.
-B. The opens keyword declares an API is called.
-C. The use keyword allows the use of reflection.
-D. The use keyword declares an API is called.
-E. The uses keyword allows the use of reflection.
-F. The uses keyword declares an API is called.
-G. The file can be empty (zero bytes).
+*  A. The opens keyword allows the use of reflection.
+*  B. The opens keyword declares an API is called.
+*  C. The use keyword allows the use of reflection.
+*  D. The use keyword declares an API is called.
+*  E. The uses keyword allows the use of reflection.
+*  F. The uses keyword declares an API is called.
+*  G. The file can be empty (zero bytes).
 Options C and D are incorrect because there is no use keyword.
 Options A and F are correct because opens is for reflection and uses declares an API that consumes a service.
 Option G is also correct as the file can be completely empty. This is just something you have to memorize.
 
 # Which are true statements? (Choose all that apply.)
-A. An automatic module exports all packages to named modules.
-B. An automatic module exports only the specified packages to named modules.
-C. An automatic module exports no packages to named modules.
-D. An unnamed module exports only the named packages to named modules.
-E. An unnamed module exports all packages to named modules.
-F. An unnamed module exports no packages to named modules.
+*  A. An automatic module exports all packages to named modules.
+*  B. An automatic module exports only the specified packages to named modules.
+*  C. An automatic module exports no packages to named modules.
+*  D. An unnamed module exports only the named packages to named modules.
+*  E. An unnamed module exports all packages to named modules.
+*  F. An unnamed module exports no packages to named modules.
 An automatic module exports all packages, making option A correct.
 An unnamed module is not available to any modules on the module path.
 Therefore, it doesn’t export any packages, and option F is correct.
 
 # Which of the following statements are true? (Choose all that apply.)
-A. Modules with cyclic dependencies will not compile.
-B. Packages with a cyclic dependency will not compile.
-C. A cyclic dependency always involves exactly two modules.
-D. A cyclic dependency always involves three or more modules.
-E. A cyclic dependency always involves at least two requires statements.
-F. An unnamed module can be involved in a cyclic dependency with an automatic module
+*  A. Modules with cyclic dependencies will not compile.
+*  B. Packages with a cyclic dependency will not compile.
+*  C. A cyclic dependency always involves exactly two modules.
+*  D. A cyclic dependency always involves three or more modules.
+*  E. A cyclic dependency always involves at least two requires statements.
+*  F. An unnamed module can be involved in a cyclic dependency with an automatic module
 A cyclic dependency is when a module graph forms a circle.
 Option A is correct because the Java Platform Module System does not allow cyclic dependencies between modules.
 No such restriction exists for packages, making option B incorrect.
@@ -105,14 +105,14 @@ A cyclic dependency can involve two or more modules that require each other, mak
 Finally. Option F is incorrect because unnamed modules cannot be referenced from an automatic module.
 
 # Which command can you run to determine whether you have any code in your JAR file that depends on unsupported internal APIs and does not suggest an alternative?
-A. jdeps -internal-jdk
-B. jdeps --internaljdk
-C. jdeps --internal-jdk
-D. jdeps -s
-E. jdeps -unsupported
-F. jdeps –unsupportedapi
-G. jdeps –unsupported-api
-H. None of the above
+*  A. jdeps -internal-jdk
+*  B. jdeps --internaljdk
+*  C. jdeps --internal-jdk
+*  D. jdeps -s
+*  E. jdeps -unsupported
+*  F. jdeps –unsupportedapi
+*  G. jdeps –unsupported-api
+*  H. None of the above
 
 Option D is correct because it prints jdk.unsupported but does not print a table with a suggested alternative.
 Option C is incorrect because it does print a suggested alternative.
@@ -123,12 +123,12 @@ Options A, B, E, F, and G are incorrect because those options do not exist.
 ```java
 module com.food.supplier {}
 ```
-A. All packages inside the module are automatically exported.
-B. No packages inside the module are automatically exported.
-C. A main method inside the module can be run.
-D. A main method inside the module cannot be run since the class is not exposed.
-E. The module-info.java file contains a compiler error.
-F. The module-info.java filename is incorrect.
+*  A. All packages inside the module are automatically exported.
+*  B. No packages inside the module are automatically exported.
+*  C. A main method inside the module can be run.
+*  D. A main method inside the module cannot be run since the class is not exposed.
+*  E. The module-info.java file contains a compiler error.
+*  F. The module-info.java filename is incorrect.
 
 Packages inside a module are not exported by default, making option B correct and option A incorrect.
 Exporting is necessary for other code to uses the packages;
@@ -136,94 +136,93 @@ it is not necessary to call the main method at the command line, making option C
 The module-info.java file has the correct name and compiles, making options E and F incorrect.
 
 # Suppose you have separate modules for a service provider interface, service provider, service locator, and consumer. Which module(s) need to specify a requires directive on the service provider?
-A. Service locator
-B. Service provider interface
-C. Consumer
-D. Consumer and service locator
-E. Consumer and service provider
-F. Service locator and service provider interface
-G. Consumer, service locator, and service provider interface
-H. None of the above
-
+*  A. Service locator
+*  B. Service provider interface
+*  C. Consumer
+*  D. Consumer and service locator
+*  E. Consumer and service provider
+*  F. Service locator and service provider interface
+*  G. Consumer, service locator, and service provider interface
+*  H. None of the above
 This question is tricky. The service provider must have a uses directive, but that is on the service provider interface.
 No modules need to specify requires on the service provider since that is the implementation.
 
 
 # Which statement is true about the jdeps command? (Choose all that apply.)
-A. It can provide information about dependencies on the class level only.
-B. It can provide information about dependencies on the package level only.
-C. It can provide information about dependencies on the class or package level.
-D. It can run only against a named module.
-E. It can run against a regular JAR.
+*  A. It can provide information about dependencies on the class level only.
+*  B. It can provide information about dependencies on the package level only.
+*  C. It can provide information about dependencies on the class or package level.
+*  D. It can run only against a named module.
+*  E. It can run against a regular JAR.
 
 The jdeps command provides information about the class or package level depending on the options passed, making option C correct.
 It is frequently used to determine what dependencies you will need when converting to modules. This makes it useful to run against a regular JAR, making option E correct.
 
 # Which are true of the --module-path option? (Choose all that apply.)
-A. It is an option on the javac command.
-B. It is an option on the java command.
-C. It is an option on the jar command.
-D. It is an option on the jdeps command.
-E. It has a short form of -m.
-F. It has a short form of -p.
+*  A. It is an option on the javac command.
+*  B. It is an option on the java command.
+*  C. It is an option on the jar command.
+*  D. It is an option on the jdeps command.
+*  E. It has a short form of -m.
+*  F. It has a short form of -p.
 
 Options A, B, and D are correct because the -module-path option is available on javac, java, and jdeps.
 Option F is correct because -p is equivalent for the javac and java commands. The jdeps command does not allow the short form.
 
 # For a top-down migration, all modules other than named modules are ________________ modules and on the __________________.
-A. automatic, classpath
-B. automatic, module path
-C. unnamed, classpath
-D. unnamed, module path
-E. None of the above
+* A. automatic, classpath
+*  B. automatic, module path
+*  C. unnamed, classpath
+*  D. unnamed, module path
+*  E. None of the above
 
 A top-down migration strategy first places all JARs on the module path.
 Then it migrates the top-level module to be a named module, leaving the other modules as automatic modules.
 Option B is correct as it matches both of those characteristics.
 
 # Which options are valid on the java command without considering module options? (Choose all that apply.)
-A. -c
-B. -C
-C. -cp
-D. -d
-E. -f
-F. -p
+*  A. -c
+*  B. -C
+*  C. -cp
+*  D. -d
+*  E. -f
+*  F. -p
 
 When running a program using java, you specify the classpath with -cp, making option C correct.
 Options D and E are incorrect because -d and -p are used for modules.
 Options A and B are not valid options on the java command.
 
-Which of the following are true? (Choose all that apply.)
-A. javac compiles a .class file into a .java file.
-B. javac compiles a .java file into a .bytecode file.
-C. javac compiles a .java file into a .class file.
-D. java accepts the name of the class as a parameter.
-E. java accepts the filename of the .bytecode file as a parameter.
-F. java accepts the filename of the .class file as a parameter.
+# Which of the following are true? (Choose all that apply.)
+*  A. javac compiles a .class file into a .java file.
+*  B. javac compiles a .java file into a .bytecode file.
+*  C. javac compiles a .java file into a .class file.
+*  D. java accepts the name of the class as a parameter.
+*  E. java accepts the filename of the .bytecode file as a parameter.
+*  F. java accepts the filename of the .class file as a parameter.
 
 Java puts source code in .java files and bytecode in .class files. It does not use a .bytecode file.
 When running a Java program, you pass just the name of the class without the .class extension.
 
 # Which are valid modes for the jmod command? (Choose all that apply.)
-A. add
-B. create
-C. delete
-D. describe
-E. extract
-F. list
-G. show
+*  A. add
+*  B. create
+*  C. delete
+*  D. describe
+*  E. extract
+*  F. list
+*  G. show
 
 This is another question you just have to memorize.
 The jmod command has five modes you need to be able to list: create, extract, describe, list, and hash.
 The hash operation is not an answer choice. The other four are making options B, D, E, and F correct.
 
 # Which of the following options does not have a one-character shortcut in any of the commands studied in this chapter? (Choose all that apply.)
-A. describe-module
-B. list-modules
-C. module
-D. module-path
-E. show-module-resolution
-F. summary
+*  A. describe-module
+*  B. list-modules
+*  C. module
+*  D. module-path
+*  E. show-module-resolution
+*  F. summary
 
 Option A is incorrect because describe-module has the d equivalent.
 Option C is incorrect because module has the m equivalent.
@@ -236,13 +235,13 @@ java
 _______ zoo.animal.talks/zoo/animal/talks/Peacocks
 _______ modules
 
-A. -d and -m
-B. -d and -p
-C. -m and -d
-D. -m and -p
-E. -p and -d
-F. -p and -m
-G. None of the above
+*  A. -d and -m
+*  B. -d and -p
+*  C. -m and -d
+*  D. -m and -p
+*  E. -p and -d
+*  F. -p and -m
+*  G. None of the above
 
 The -m or --module option is used to specify the module and class name.
 The -p or -module-path option is used to specify the location of the modules.
@@ -251,52 +250,52 @@ However, running a program requires specifying the package name with periods (.)
 Since the command is incorrect, option G is correct.
 
 # Which two are required in any module? (Choose two.)
-A. A file named module.java
-B. A file named moduleInfo.java
-C. A file named module-info.java
-D. A file named module_info.java
-E. Zero or more packages
-F. One or more packages
+*  A. A file named module.java
+*  B. A file named moduleInfo.java
+*  C. A file named module-info.java
+*  D. A file named module_info.java
+*  E. Zero or more packages
+*  F. One or more packages
 
 All modules must contain a module-info.java file in the root directory, making option C correct.
 Additionally, a module is not allowed to be empty. There must be at least one package. making option F the second correct answer.
 
 # Suppose you have separate modules for a service provider interface, service provider, service locator, and consumer. If you add a second service provider module, how many of these modules do you need to recompile?
-A. Zero
-B. One
-C. Two
-D. Three
-E. Four
+*  A. Zero
+*  B. One
+*  C. Two
+*  D. Three
+*  E. Four
 
 Since this is a new module, you need to compile the new module.
 However, none of the existing modules needs to be recompiled, making option A correct.
 The service locator will see the new service provider simply by having the new service provider on the module path.
 
 # Which of the following modules contains the java.sql package? (Choose all that apply.)
-A. java.base;
-B. java.database;
-C. java.jdbc;
-D. java.sql;
-E. None of the above
+*  A. java.base;
+*  B. java.database;
+*  C. java.jdbc;
+*  D. java.sql;
+*  E. None of the above
 
 Sorry. You just need to memorize this. The java.sql package is in the java.sql module, making option D correct. It just so happens to have the same name.
 
 # Which module is available to your named module without needing a requires directive?
-A. java.all
-B. java.base
-C. java.default
-D. java.lang
-E. None of the above
+* A. java.all
+*  B. java.base
+*  C. java.default
+*  D. java.lang
+*  E. None of the above
 
 Option B is correct because java.base is provided by default. It contains the java.lang package among others.
 
 # Which are true statements about a package in a JAR on the module path containing a module-info file? (Choose all that apply.)
-A. It is possible to make it available to all other modules on the classpath.
-B. It is possible to make it available to all other modules on the module path.
-C. It is possible to make it available to exactly one other specific module on the classpath.
-D. It is possible to make it available to exactly one other specific module on the module path.
-E. It is possible to make sure it is not available to any other modules on the classpath.
-F. It is possible to make sure it is not available to any other modules on the module path.
+*  A. It is possible to make it available to all other modules on the classpath.
+*  B. It is possible to make it available to all other modules on the module path.
+*  C. It is possible to make it available to exactly one other specific module on the classpath.
+*  D. It is possible to make it available to exactly one other specific module on the module path.
+*  E. It is possible to make sure it is not available to any other modules on the classpath.
+*  F. It is possible to make sure it is not available to any other modules on the module path.
 
 Since the JAR is on the classpath, it is a named module.
 The module-info file can use the exports directive to allow visibility into zero, one, or more packages to other modules, making options B, D, and F correct.
