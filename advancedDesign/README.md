@@ -1,10 +1,10 @@
 # Which of the following are true statements about a class Camel with a single instance variable List<String> species? (Choose all that apply.)
-    A. If Camel is well encapsulated, then it must have restricted extensibility.
-    B. If Camel is well encapsulated, then it must be immutable.
-    C. If Camel has restricted extensibility, then it must have good encapsulation.
-    D. If Camel has restricted extensibility, then it must be immutable.
-    E. If Camel is immutable, then it must have good encapsulation.
-    F. If Camel is immutable, then it must restrict extensibility.
+* A. If Camel is well encapsulated, then it must have restricted extensibility.
+*    B. If Camel is well encapsulated, then it must be immutable.
+*    C. If Camel has restricted extensibility, then it must have good encapsulation.
+*    D. If Camel has restricted extensibility, then it must be immutable.
+*    E. If Camel is immutable, then it must have good encapsulation.
+*    F. If Camel is immutable, then it must restrict extensibility.
 
     Option A is incorrect because good encapsulation requires private state rather than declaring the class final.
     Option B is incorrect because the well-encapsulated Camel class can have a getter that exposes the species variable to be modified.
@@ -13,13 +13,13 @@
     Option F is correct because you cannot enforce immutability in a subclass.
 
  # Which of the following statements are correct? (Choose all that apply.)
-    A. The return value of an assignment operation expression can be void.
-    B. The inequality operator (!=) can be used to compare objects.
-    C. The equality operator (==) can be used to compare a boolean value with a numeric value.
-    D. During runtime, the && and | operators may cause only the left side of the expression to be evaluated.
-    E. The return value of an assignment operation expression is the value of the newly assigned variable.
-    F. In Java, 0 and false may be used interchangeably.
-    G. The logical complement operator (!) cannot be used to flip numeric values.
+ *    A. The return value of an assignment operation expression can be void.
+ *    B. The inequality operator (!=) can be used to compare objects.
+ *    C. The equality operator (==) can be used to compare a boolean value with a numeric value.
+ *    D. During runtime, the && and | operators may cause only the left side of the expression to be evaluated.
+ *    E. The return value of an assignment operation expression is the value of the newly assigned variable.
+ *    F. In Java, 0 and false may be used interchangeably.
+ *    G. The logical complement operator (!) cannot be used to flip numeric values.
 
 The return value of an assignment operation in the expression is the same as the value of the newly assigned variable.
 For this reason, option A is incorrect, and option E is correct.
@@ -150,13 +150,13 @@ Finally, options E and G are two sets of valid modifiers that can be used togeth
 Using private with final is allowed, albeit redundant.
 
 # Which of the following statements about primitive and reference types are correct? (Choose all that apply.)
-A. char and byte are the same size.
-B. Java allows some objects to be passed to methods that accept primitives.
-C. The new keyword creates a new object in memory.
-D. String is a primitive type.
-E. All primitive types define a callable toString() method.
-F. double is larger than float.
-G. An object can have only one reference, created when the object is created.
+* A. char and byte are the same size.
+* B. Java allows some objects to be passed to methods that accept primitives.
+* C. The new keyword creates a new object in memory.
+* D. String is a primitive type.
+* E. All primitive types define a callable toString() method.
+* F. double is larger than float.
+* G. An object can have only one reference, created when the object is created.
 
 A char is larger than a byte, whereas char and short are the same size, making option A incorrect.
 Java supports autoboxing and unboxing of primitives to their associated wrapped classes, making option B correct.
@@ -165,6 +165,20 @@ Java includes support for String literals and operators, but a String value is a
 Primitive types do not define any methods, so option E is incorrect, although they can each be appended to a String value.
 Option F is correct as double is twice the size of float. Finally, option G is incorrect, since objects can have many references to them.
 They can even be created without an explicit reference variable, such as calling new Object(); on a line by itself.
+
+# Which modifier pairs can be used together in a method declaration? (Choose all that apply.)
+* A. static and final
+* B. private and static
+* C. static and abstract
+* D. private and abstract
+* E. abstract and final
+* F. private and final
+
+The final modifier can be used with private and static, making options A and F correct.
+Marking a private method final is redundant but allowed.
+A private method may also be marked static, making option B correct.
+Options C, D, and E are incorrect because methods marked static, private, or final cannot be overridden; therefore, they cannot be marked abstract.
+
 
 
 

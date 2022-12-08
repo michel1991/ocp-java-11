@@ -337,3 +337,12 @@ Options B and C are correct because the -d (--describe-module) option can be pas
 
 Since the service provider itself is changing, it needs to be re-compiled. However, none of the other modules does, making option B correct.
 
+# Suppose you have separate modules for a service provider interface, service provider, service locator, and consumer. Which statements are true about the directives you need to specify? (Choose all that apply.)
+* A. The consumer must use the requires directive.
+* B. The consumer must use the uses directive.
+* C. The service locator must use the requires directive.
+* D. The service locator must use the uses directive.
+
+Option A and C are correct because both the consumer and the service locator depend on the service provider interface.
+Additionally, option D is correct because the service locator must specify that it uses the service provider interface to look it up.
+

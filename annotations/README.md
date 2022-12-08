@@ -24,12 +24,12 @@ The presence, or absence, of the @Documented annotation determines whether annot
 For these reasons, option D is correct.
 
 # What conditions must be true to declare a repeatable annotation along with its associated containing annotation type? (Choose all that apply.)
-A. The repeatable annotation must be declared with @Repeatable, which includes a value that points to the containing type annotation.
-B. The repeatable annotation must include an element called value().
-C. The repeatable annotation must include an element whose type is a primitive array.
-D. The containing annotation type must be declared with @Repeatable, which includes a value that points to the repeatable annotation.
-E. The containing annotation type must include an element called value().
-F. The containing annotation type must include an element whose type is an array.
+* A. The repeatable annotation must be declared with @Repeatable, which includes a value that points to the containing type annotation.
+* B. The repeatable annotation must include an element called value().
+* C. The repeatable annotation must include an element whose type is a primitive array.
+* D. The containing annotation type must be declared with @Repeatable, which includes a value that points to the repeatable annotation.
+* E. The containing annotation type must include an element called value().
+* F. The containing annotation type must include an element whose type is an array.
 
 Creating a repeatable annotation requires declaring two annotations.
 The first, the repeatable annotation, needs to be declared with @Repeatable and include a value that refers to the containing annotation type.
@@ -38,12 +38,12 @@ For these reasons, options A, E, and F are correct.
 
 # Which annotation can cancel out a warning on a method using the @Deprecated API at compile time?
 
-A. @FunctionalInterface
-B. @Ignore
-C. @IgnoreDeprecated
-D. @Retention
-E. @SafeVarargs
-F. @SuppressWarnings
+* A. @FunctionalInterface
+* B. @Ignore
+* C. @IgnoreDeprecated
+* D. @Retention
+* E. @SafeVarargs
+* F. @SuppressWarnings
 If @SuppressWarnings("deprecation") is applied to a method that is using a deprecated API,
 then warnings related to the usage will not be shown at compile time, making option F correct.
 Note that there are no built-in annotations called @Ignore or @IgnoreDeprecated.
@@ -150,40 +150,44 @@ D. @Retention
 E. @SafeVarargs
 F. @SuppressWarnings
 G. None of the above
+
 If @SuppressWarnings("deprecation") is applied to a method that is using a deprecated API,
 then warnings related to the usage will not be shown at compile time, making option F correct.
 Note that there are no built-in annotations called @Ignore or @IgnoreDeprecated.
 
 # Fill in the blanks: The __________ annotation determines what annotations from a superclass or interface are applied, while the __________ annotation determines what declarations an annotation can be applied to.
-A. @Target, @Retention
-B. @Inherited, @ElementType
-C. @Documented, @Deprecated
-D. @Target, @Generated
-E. @Repeatable, @Element
-F. @Inherited, @Retention
-G. None of the above
+* A. @Target, @Retention
+* B. @Inherited, @ElementType
+* C. @Documented, @Deprecated
+* D. @Target, @Generated
+* E. @Repeatable, @Element
+* F. @Inherited, @Retention
+* G. None of the above
+
 The @Inherited annotation determines whether or not annotations defined in a super type are automatically inherited in a child type.
 The @Target annotation determines the location or locations an annotation can be applied to. Since this was not an answer choice, option G is correct.
 Note that ElementType is an enum used by @Target, but it is not an annotation.
 
 # Given an automobile sales system, which of the following information is best stored using an annotation?
-A. The price of the vehicle
-B. A list of people who purchased the vehicle
-C. The sales tax of the vehicle
-D. The number of passengers a vehicle is rated for
-E. The quantity of models in stock
+* A. The price of the vehicle
+* B. A list of people who purchased the vehicle
+* C. The sales tax of the vehicle
+* D. The number of passengers a vehicle is rated for
+* E. The quantity of models in stock
+
 Annotations should include metadata (data about data) that is relatively constant, as opposed to attribute data, which is part of the object and can change frequently.
 The price, sales, inventory, and people who purchased a vehicle could fluctuate often, so using an annotation would be a poor choice.
 On the other hand, the number of passengers a vehicle is rated for is extra information about the vehicle and unlikely to change once established.
 Therefore, it is appropriate metadata and best served using an annotation.
 
 # What properties of applying @SafeVarargs are correct? (Choose all that apply.)
-A. By applying the annotation, the compiler verifies that all operations on parameters are safe.
-B. The annotation can be applied to abstract methods.
-C. The annotation can be applied to method and constructor declarations.
-D. When the annotation is applied to a method, the method must contain a varargs parameter.
-E. The annotation can be applied to method and constructor parameters.
-F. The annotation can be applied to static methods.
+* A. By applying the annotation, the compiler verifies that all operations on parameters are safe.
+* B. The annotation can be applied to abstract methods.
+* C. The annotation can be applied to method and constructor declarations.
+* D. When the annotation is applied to a method, the method must contain a varargs parameter.
+* E. The annotation can be applied to method and constructor parameters.
+* F. The annotation can be applied to static methods.
+
 The @SafeVarargs annotation can be applied to a constructor or private, static, or final method that includes a varargs parameter.
 For these reasons, options C, D, and F are correct. Option A is incorrect, as the compiler cannot actually enforce that the operations are safe.
 It is up to the developer writing the method to verify that.
