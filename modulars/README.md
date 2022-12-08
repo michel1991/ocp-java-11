@@ -277,7 +277,7 @@ Since this is a new module, you need to compile the new module.
 However, none of the existing modules needs to be recompiled, making option A correct.
 The service locator will see the new service provider simply by having the new service provider on the module path.
 
-# Which of the following modules contains the java.sql package? (Choose all that apply.)
+### Which of the following modules contains the java.sql package? (Choose all that apply.)
 *  A. java.base;
 *  B. java.database;
 *  C. java.jdbc;
@@ -286,7 +286,7 @@ The service locator will see the new service provider simply by having the new s
 
 Sorry. You just need to memorize this. The java.sql package is in the java.sql module, making option D correct. It just so happens to have the same name.
 
-# Which module is available to your named module without needing a requires directive?
+### Which module is available to your named module without needing a requires directive?
 * A. java.all
 *  B. java.base
 *  C. java.default
@@ -295,7 +295,7 @@ Sorry. You just need to memorize this. The java.sql package is in the java.sql m
 
 Option B is correct because java.base is provided by default. It contains the java.lang package among others.
 
-# Which are true statements about a package in a JAR on the module path containing a module-info file? (Choose all that apply.)
+### Which are true statements about a package in a JAR on the module path containing a module-info file? (Choose all that apply.)
 *  A. It is possible to make it available to all other modules on the classpath.
 *  B. It is possible to make it available to all other modules on the module path.
 *  C. It is possible to make it available to exactly one other specific module on the classpath.
@@ -307,7 +307,7 @@ Since the JAR is on the classpath, it is a named module.
 The module-info file can use the exports directive to allow visibility into zero, one, or more packages to other modules, making options B, D, and F correct.
 Further, all unnamed modules on the classpath can access all packages in the module, making option A correct.
 
-# For a bottom-up migration, all modules other than named modules are ________________ modules and on the __________________.
+### For a bottom-up migration, all modules other than named modules are ________________ modules and on the __________________.
 * A. automatic, classpath
 * B. automatic, module path
 * C. unnamed, classpath
@@ -318,7 +318,7 @@ A bottom-up migration strategy leaves all JARs on the classpath until they are m
 Then it migrates the lowest-level module to be a named module, leaving the other modules as unnamed modules.
 Option C is correct as it matches both of those characteristics.
 
-# Which commands take a --describe-module parameter? (Choose all that apply.)
+### Which commands take a --describe-module parameter? (Choose all that apply.)
 * A. javac
 * B. java
 * C. jar
@@ -328,7 +328,7 @@ Option C is correct as it matches both of those characteristics.
 
 Options B and C are correct because the -d (--describe-module) option can be passed when to the java and jar commands.
 
-# Suppose you have separate modules for a service provider interface, service provider, service locator, and consumer. If you change the implementation of the service provider, how many of these modules do you need to re-compile?
+### Suppose you have separate modules for a service provider interface, service provider, service locator, and consumer. If you change the implementation of the service provider, how many of these modules do you need to re-compile?
 * A. Zero
 * B. One
 * C. Two
@@ -337,7 +337,7 @@ Options B and C are correct because the -d (--describe-module) option can be pas
 
 Since the service provider itself is changing, it needs to be re-compiled. However, none of the other modules does, making option B correct.
 
-# Suppose you have separate modules for a service provider interface, service provider, service locator, and consumer. Which statements are true about the directives you need to specify? (Choose all that apply.)
+### Suppose you have separate modules for a service provider interface, service provider, service locator, and consumer. Which statements are true about the directives you need to specify? (Choose all that apply.)
 * A. The consumer must use the requires directive.
 * B. The consumer must use the uses directive.
 * C. The service locator must use the requires directive.
@@ -345,4 +345,5 @@ Since the service provider itself is changing, it needs to be re-compiled. Howev
 
 Option A and C are correct because both the consumer and the service locator depend on the service provider interface.
 Additionally, option D is correct because the service locator must specify that it uses the service provider interface to look it up.
+
 

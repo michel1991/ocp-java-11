@@ -1,11 +1,11 @@
 # Which of the following operators are ranked in increasing or the same order of precedence? Assume the + operator is binary addition, not the unary form. (Choose all that apply.)
-A. +, *, %, --
-B. ++, (int), *
-C. =, ==, !
-D. (short), =, !, *
-E. *, /, %, +, ==
-F. !, ||, &
-G. ^, +, =, +=
+* A. +, *, %, --
+* B. ++, (int), *
+* C. =, ==, !
+* D. (short), =, !, *
+* E. *, /, %, +, ==
+* F. !, ||, &
+* G. ^, +, =, +=
 
 Options A and C show operators in increasing or the same order of precedence.
 Options B and E are in decreasing or the same order of precedence.
