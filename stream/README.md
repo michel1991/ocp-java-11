@@ -23,3 +23,16 @@ The limit(), skip(), forEachOrdered(), and findFirst() methods produce the same 
 There may be a performance cost with using them on a parallel stream, though, as the stream is forced into a single-threaded operation.
 While the findAny() operation often returns the first result on a serial stream, it is permitted to return any result in the stream even on serial streams.
 The forEach() and map() operations are executed concurrently in a parallel stream, possibly changing the expected results.
+
+# Given the generic type String, the partitioningBy() collector creates a Map<Boolean, List<String>> when passed to collect() by default. When a downstream collector is passed to partitioningBy(), which return types can be created? (Choose all that apply.)
+A. Map<boolean, List<String>>
+B. Map<Boolean, List<String>>
+C. Map<Boolean, Map<String>>
+D. Map<Boolean, Set<String>>
+E. Map<Long, TreeSet<String>>
+F. None of the above
+
+Options A and C do not compile, because they are invalid generic declarations.
+Primitives are not allowed as generics, and Map must have two generic type parameters.
+Option E is incorrect because partitioning only gives a Boolean key.
+Options B and D are correct because they return a Map with a Boolean key and a value type that can be customized to any Collection.
