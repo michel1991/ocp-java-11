@@ -28,7 +28,42 @@ public class StringComparison {
       if (t.intern() == s) System.out.println("three"); // 7:
       if ("Hello" == s) System.out.println("four"); // 8:
       if ("Hello".intern() == t) System.out.println("five"); //  9:
-  }
+    }
+
+    /**
+    *  How many times is the word true printed?
+        A. Once.
+        B. Twice.
+        C. Three times.
+        D. Four times.
+        E. Five times.
+        F. Six times.
+        G. The code does not compile.
+
+      String literals are used from the string pool. This means that s1 and s2 refer to the same object and are equal.
+      Therefore, the first two print statements print true.
+      The concat() method forces a new String to be created making the third print statement print false.
+      The intern() method reverts the String to the one from the string pool.
+      Therefore, the fourth print statement prints true.
+      The fifth print statement prints false because toString() uses a method to compute the value, and it is not from the string pool.
+      The final print statement again prints true because equals() looks at the values of String objects.
+      For more information, see Chapter 5.
+     */
+    static void poolOfStringJava(){
+        var s1 = "Java";
+        var s2 = "Java";
+        var s3 = "Ja".concat("va");
+        var s4 = s3.intern();
+        var sb1 = new StringBuilder();
+        sb1.append("Ja").append("va");
+
+        System.out.println(s1 == s2);
+        System.out.println(s1.equals(s2));
+        System.out.println(s1 == s3);
+        System.out.println(s1 == s4);
+        System.out.println(sb1.toString() == s1);
+        System.out.println(sb1.toString().equals(s1));
+    }
 
     public static void main(String... args){
         poolOfString();
