@@ -39,3 +39,18 @@ A top-level type, such as a class, interface, or enum, can only be marked public
 Option C is incorrect, as a member inner class can be marked public, and this would not make it a top-level class.
 A .java file may contain multiple top-level classes, making option D incorrect. The precise rule is that there is at most one public top-level type, and that type is used in the file name.
 Finally, option E is correct. When a member inner class is marked private, it behaves like any other private members and can be referenced only in the class in which it is defined.
+
+# Which of the following statements about inheritance are correct? (Choose all that apply.)
+A. A class can directly extend any number of classes.
+B. A class can implement any number of interfaces.
+C. All variables inherit java.lang.Object.
+D. If class A is extended by B, then B is a superclass of A.
+E. If class C implements interface D, then C is subtype of D.
+F. Multiple inheritance is the property of a class to have multiple direct superclasses.
+
+A class can only directly extend a single class, making option A incorrect.
+A class can implement any number of interfaces, though, making option B correct.
+Option C is incorrect because primitive types do not inherit java.lang.Object.
+If a class extends another class, then it is a subclass, not a superclass, making option D incorrect.
+A class that implements an interface is a subtype of that interface, making option E correct.
+Finally, option F is correct as it is an accurate description of multiple inheritance, which is not permitted in Java.
