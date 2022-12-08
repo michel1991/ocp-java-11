@@ -30,7 +30,7 @@ import java.util.stream.*;
     }
 }
 
-public class ThreadWithStreamFlavors {
+public class FlavorsThreadWithStream {
    public static void main(String... args){
        Flavors.countIceCreamFlavors();
    }
