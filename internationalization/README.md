@@ -57,3 +57,16 @@ Options B, C, and D are incorrect, as each of those can change depending on the 
 Java provides built-in formatters for each, such as getCurrencyInstance() and getNumberInstance() in the NumberFormat class, and numerous methods in the DateTimeFormatter class.
 Option E is also incorrect, as locale can include an optional country. If a country does change, though, your application may need to be updated.
 
+# Which of the following are properly formatted locale identifiers? (Choose all that apply.)
+A. ab_cd
+B. Ef
+C. gh
+D. IJ
+E. km_NO
+F. None of the above
+
+A locale consists of a required lowercase language code, followed by an optional uppercase country code.
+Option A is incorrect because the country code is lowercase. Options B and D are incorrect because the language code should not contain uppercase characters.
+Option C correctly defines a language code with no country, while option E defines both in the correct format.
+
+

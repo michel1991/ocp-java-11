@@ -323,3 +323,12 @@ F. None of the above
 
 Options B and C are correct because the -d (--describe-module) option can be passed when to the java and jar commands.
 
+# Suppose you have separate modules for a service provider interface, service provider, service locator, and consumer. If you change the implementation of the service provider, how many of these modules do you need to re-compile?
+A. Zero
+B. One
+C. Two
+D. Three
+E. Four
+
+Since the service provider itself is changing, it needs to be re-compiled. However, none of the other modules does, making option B correct.
+
