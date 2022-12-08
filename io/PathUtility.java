@@ -13,4 +13,8 @@ public class PathUtility {
        ;
        return  pathToResourceFile;
    }
+
+    public static String getFileSeparator(){
+       return System.getProperty("file.separator");
+   }
 }
