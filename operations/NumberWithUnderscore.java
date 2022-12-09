@@ -1,5 +1,5 @@
 package operations;
-public class NumberPretty {
+public class NumberWithUnderscore {
     /**
     *  Which of the following expressions, when inserted independently into the blank line, allow the code to compile? (Choose all that apply.)
     *   A. 3_1
@@ -20,5 +20,9 @@ public class NumberPretty {
     public void printMagicData() {
         double magic = 9___6 ; // ________________
         System.out.println(magic);
+    }
+
+    public static void main(String... args){
+
     }
 }
