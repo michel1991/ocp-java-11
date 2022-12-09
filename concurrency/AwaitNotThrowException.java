@@ -10,6 +10,14 @@ public class AwaitNotThrowException {
     * Question
     * Assuming takeNap() is a method that takes five seconds to execute without throwing an exception,
     * what is the expected result of executing the following code snippet?
+
+        A. It will immediately print DONE!.
+        B. It will pause for 2 seconds and then print DONE!.
+        C. It will pause for 5 seconds and then print DONE!.
+        D. It will pause for 15 seconds and then print DONE!.
+        E. It will throw an exception at runtime.
+        F. None of the above, as the code does not compile
+
     *
     * Reponse:  It will pause for 2 seconds and then print DONE!.
     *
