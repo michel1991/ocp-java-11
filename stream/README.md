@@ -55,3 +55,15 @@ Options B and D are correct because they return a Map with a Boolean key and a v
 Options A, B, and E are not valid methods and will not compile.
 On the other hand, the code will compile if option C or D is placed in the blank, making option F incorrect, but it will not be a concurrent reduction.
 To be a concurrent reduction, the stream itself must be parallel. For this reason, option G is correct.
+
+### Which are true statements about terminal operations in a stream that runs successfully? (Choose all that apply.)
+* A. At most, one terminal operation can exist in a stream pipeline.
+* B. Terminal operations are a required part of the stream pipeline in order to get a result.
+* C. Terminal operations have Stream as the return type.
+* D. The peek() method is an example of a terminal operation.
+* E. The referenced Stream may be used after calling a terminal operation.
+
+Terminal operations are the final step in a stream pipeline. Exactly one is required, because it triggers the execution of the entire stream pipeline.
+Therefore, options A and B are correct. Option C is true of intermediate operations, rather than terminal operations.
+Option D is incorrect because peek() is an intermediate operation.
+Finally, option E is incorrect because once a stream pipeline is run, the Stream is marked invalid.
