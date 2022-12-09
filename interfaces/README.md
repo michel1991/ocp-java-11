@@ -62,3 +62,17 @@ Finally, void is a return type, not a modifier, so option D is incorrect.
 * F. BinaryFunction
 
 BiFunction takes three generic types. Two are for the parameters, and one is for the return type. Options B, D, and F aren’t the names of functional interfaces in Java.
+
+### Which statements about default and private interface methods are correct? (Choose all that apply.)
+* A. A default interface method can be declared private.
+* B. A default interface method can be declared public.
+* C. A default interface method can be declared static.
+* D. A private interface method can be declared abstract.
+* E. A private interface method can be declared protected.
+* F. A private interface method can be declared static.
+
+A default interface method is always public, whether you include the identifier or not, making option B correct and option A incorrect.
+Interfaces cannot contain default static methods, making option C incorrect.
+Option D is incorrect, as private interface methods are not inherited and cannot be marked abstract.
+Option E is incorrect, as a method can’t be marked both protected and private. Finally, interfaces can include both private and private static methods, making option F correct.
+

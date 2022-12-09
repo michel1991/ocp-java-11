@@ -76,3 +76,17 @@ Option G does not compile as the get() method does not take a parameter. Options
 Option E throws a RuntimeException. Option D looks correct but will compile only if the throw is removed.
 Remember, the orElseThrow() should get a lambda expression or method reference that returns an exception, not one that throws an exception.
 
+### Which of the following correctly create NIO.2 Path instances? (Choose all that apply.)
+* A. Paths.get("rainforest").resolve(Paths.get("trees"))
+* B. new Path("aquarium")
+* C. Paths.get("rainforest").resolve("trees")
+* D. new java.io.File("/zoo").toURI().toPath()
+* E. Path.get("birdhouse")
+* F. FileSystems.getDefault().getPath("ocean")
+
+Options A and C are both correct, as there are two resolve() methods: one that takes a Path and one that takes a String.
+Option B is incorrect, as Path is an abstract type and cannot be instantiated directly.
+Option D is also incorrect. While java.io.File() does have a toUri() method, toPath() is not defined in the URI class.
+Instead, Path.of(URI) should be used. Option E is incorrect, as the correct static method in the Path interface is of(), not get().
+Finally, option F is correct and is the “long way” of creating a Path using the default file system.
+

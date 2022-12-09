@@ -359,4 +359,24 @@ Named modules can read only from the module path, making option C correct and op
 Unnamed modules can read only from the classpath, making options E and F incorrect.
 Automatic modules can read from either the classpath or the module path, making options A and B correct.
 
+### Which of the following pairs make up a service?
+* A. Consumer and service locator
+* B. Consumer and service provider interface
+* C. Service locator and service provider
+* D. Service locator and service provider interface
+* E. Service provider and service provider interface
+
+A service consists of the service provider interface and logic to look up implementations using a service locator.
+This makes option D correct. Make sure you know that the service provider itself is the implementation, which is not considered part of the service.
+
+### Which statements are true about migration? (Choose all that apply.)
+* A. Bottom-up migration involves automatic modules.
+* B. Bottom-up migration involves unnamed modules.
+* C. Bottom-up migration involves both the classpath and module path.
+* D. Top-down migration involves automatic modules.
+* E. Top-down migration involves unnamed modules.
+* F. Top-down migration involves both the classpath and module path.
+
+Top-down migration starts with putting all JARs on the module path as automatic modules, making option D correct.
+Bottom-up migration starts with leaving all JARs on the classpath as unnamed modules, making options B and C correct.
 
