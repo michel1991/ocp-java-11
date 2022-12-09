@@ -40,13 +40,13 @@ Option C is incorrect, as a member inner class can be marked public, and this wo
 A .java file may contain multiple top-level classes, making option D incorrect. The precise rule is that there is at most one public top-level type, and that type is used in the file name.
 Finally, option E is correct. When a member inner class is marked private, it behaves like any other private members and can be referenced only in the class in which it is defined.
 
-# Which of the following statements about inheritance are correct? (Choose all that apply.)
-A. A class can directly extend any number of classes.
-B. A class can implement any number of interfaces.
-C. All variables inherit java.lang.Object.
-D. If class A is extended by B, then B is a superclass of A.
-E. If class C implements interface D, then C is subtype of D.
-F. Multiple inheritance is the property of a class to have multiple direct superclasses.
+### Which of the following statements about inheritance are correct? (Choose all that apply.)
+* A. A class can directly extend any number of classes.
+* B. A class can implement any number of interfaces.
+* C. All variables inherit java.lang.Object.
+* D. If class A is extended by B, then B is a superclass of A.
+* E. If class C implements interface D, then C is subtype of D.
+* F. Multiple inheritance is the property of a class to have multiple direct superclasses.
 
 A class can only directly extend a single class, making option A incorrect.
 A class can implement any number of interfaces, though, making option B correct.
@@ -54,3 +54,35 @@ Option C is incorrect because primitive types do not inherit java.lang.Object.
 If a class extends another class, then it is a subclass, not a superclass, making option D incorrect.
 A class that implements an interface is a subtype of that interface, making option E correct.
 Finally, option F is correct as it is an accurate description of multiple inheritance, which is not permitted in Java.
+
+### Which statements about polymorphism and method inheritance are correct? (Choose all that apply.)
+* A. A subclass may implement a static method with the same method signature as an inherited instance method.
+* B. If a method in the parent class, sing(), calls a method it defines dance(), the behavior of dance() could change at runtime.
+* C. Marking a variable final prevents it from being overridden.
+* D. The reference type of a variable determines which overridden method will be called at runtime.
+* E. Marking an instance method abstract prevents it from being overridden or hidden.
+* F. Marking a method private prevents it from being overridden in a subclass.
+
+If a class inherits an instance method, then it can only declare a method with the same signature if that method is also an instance method, making option A incorrect.
+Option B is correct, as it defines the effect of overriding a method in a subclass via polymorphism.
+Option C is incorrect as variables cannot be overridden. Option D is also incorrect.
+Polymorphism dictates that the calls to an overridden method will be replaced everywhere, regardless of the reference type used.
+Option E is incorrect, as abstract methods are often overridden, commonly in the first concrete subclass. Finally, option F is correct.
+Methods marked private cannot be overridden.
+They can still be declared in a subclass, but since they are not inherited in a subclass, this is not considered an overridden method.
+
+### Which of the following statements about overridden methods are true? (Choose all that apply.)
+* A. An overridden method must use an access modifier that is the same or less restrictive than the method it overrides.
+* B. An overridden method can declare new unchecked exceptions that are not defined in the method it overrides.
+* C. An overridden method may refrain from declaring any or all of the exceptions as the method it overrides.
+* D. A method overriding another method cannot be marked final.
+* E. An overridden method must return the exact same type as the method it overrides.
+* F. A method that has a single vararg parameter may be overridden by a method that takes no arguments, as varargs can have zero-or-more parameters.
+
+An overridden method must use an access modifier that is the same or less (not more) restrictive than the method it inherits, making option A correct.
+An overridden method can swallow (refrain from declaring) or declare new unchecked exceptions as the method it inherits, making options B and C correct.
+It may not declare new checked exceptions, though. Option D is correct as there is no rule that an overridden method cannot be marked final.
+Option E is incorrect, as the return type has to be covariant.
+In other words, the return type of the overridden method can be the same or a subtype as the return type of the method it overrides.
+Finally, option F is incorrect.
+If an overridden method changes the signature (the name and list of parameters) in any way, then the method is overloaded, not overridden.

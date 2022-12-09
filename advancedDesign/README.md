@@ -31,13 +31,6 @@ The (|) operator will cause both sides to be evaluated.
 Option F is incorrect, as Java does not accept numbers for boolean values.
 Finally, option G is correct, as you need to use the negation operator (-) to flip or negate numeric values, not the logical complement operator (!).
 
-### Which of the following statements is true?
-* A. Package-private access is more lenient than protected access.
-* B. A public class that has private fields and package-private methods is not visible to classes outside the package.
-* C. You can use access modifiers so only some of the classes in a package see a particular package-private class.
-* D. You can use access modifiers to allow access to all methods and not any instance variables.
-* E. You can use access modifiers to restrict access to all classes that begin with the word Test.
-
 Option D is correct. This is the common implementation for encapsulation by setting all fields to be private and all methods to be public.
 Option A is incorrect because protected access allows everything that package-private access allows and additionally allows subclasses access.
 Option B is incorrect because the class is public.
