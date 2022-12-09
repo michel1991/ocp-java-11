@@ -380,3 +380,28 @@ This makes option D correct. Make sure you know that the service provider itself
 Top-down migration starts with putting all JARs on the module path as automatic modules, making option D correct.
 Bottom-up migration starts with leaving all JARs on the classpath as unnamed modules, making options B and C correct.
 
+### Suppose you have separate modules for a service provider interface, service provider, service locator, and consumer. Which modules need to specify a requires directive on the service provider interface?
+* A. Service locator
+* B. Service provider
+* C. Consumer
+* D. Consumer and service locator
+* E. Consumer and service provider
+* F. Service locator and service provider
+* G. Consumer, service locator, and service provider
+* H. None of the above
+
+The service provider interface needs to be available to all three, making option G correct.
+The service provider needs to implement the interface. The service locator needs it to look up the interface.
+The consumer needs it to call methods on the interface.
+
+#### Suppose you have a project with one package named magic.wand and another project with one package named magic.potion. These projects have a circular dependency, so you decide to create a third project named magic.helper. The magic.helper module has the common code containing a package named magic.util. For simplicity, let’s give each module the same name as the package. Which of the following need to appear in your module-info files? (Choose all that apply.)
+* A. exports magic.potion; in the potion project
+* B. exports magic.util; in the magic helper project
+* C. exports magic.wand; in the wand project
+* D. requires magic.util; in the magic helper project
+* E. requires magic.util; in the potion project
+* F. requires magic.util; in the wand project
+
+Since the new project extracts the common code, it must have an exports directive for that code, making option B correct.
+The other two modules do not have to expose anything. They must have a requires directive to be able to use the exported code, making options E and F correct.
+

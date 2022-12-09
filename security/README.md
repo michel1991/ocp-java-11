@@ -66,30 +66,30 @@ Comments and variable names are part of the program, not the data it handles, ma
 The policy compiles and uses correct syntax. However, it gives permissions that are too broad.
 The user needs to be able to read a book, so write permissions should not be granted.
 
-# Which of the following are considered inclusion attacks? (Choose all that apply.)
-A. Billion laughs attack
-B. Command injection
-C. CSRF
-D. SQL injection
-E. XSS
-F. Zip bomb
+### Which of the following are considered inclusion attacks? (Choose all that apply.)
+* A. Billion laughs attack
+* B. Command injection
+* C. CSRF
+* D. SQL injection
+* E. XSS
+* F. Zip bomb
 
 An inclusion attack needs to include something. Options A and F are correct because they are used with XML and ZIP file respectively.
 Options B and D are incorrect because injection is not an inclusion attack. Options C and E are not inclusion attacks either.
 In fact, you might not have heard of them. Both are attacks used against web applications.
 Don’t worry if you see something on the exam that you haven’t heard of; it isn’t a correct answer.
 
-# The following code prints false. What is true about the clone() method?
+### The following code prints false. What is true about the clone() method?
 ``` java
     Wombats original = new Wombats();
     original.names = new ArrayList<>();
     Wombats cloned = (Wombats) original.clone();
     System.out.println(original.getNames() == cloned.getNames());
 ```
-A. It creates a deep copy.
-B. It creates a narrow copy.
-C. It creates a shallow copy.
-D. It creates a wide copy.
+* A. It creates a deep copy.
+* B. It creates a narrow copy.
+* C. It creates a shallow copy.
+* D. It creates a wide copy.
 
 A shallow copy does not create copies of the nested objects, making option C incorrect.
 Options B and D are incorrect because narrow and wide copies are not terms.
