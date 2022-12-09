@@ -172,6 +172,19 @@ Marking a private method final is redundant but allowed.
 A private method may also be marked static, making option B correct.
 Options C, D, and E are incorrect because methods marked static, private, or final cannot be overridden; therefore, they cannot be marked abstract.
 
+### Which of the following statements about var are true? (Choose all that apply.)
+*  A. A var can be used as a constructor parameter.
+*  B. The type of var is known at compile time.
+*  C. A var cannot be used as an instance variable.
+*  D. A var can be used in a multiple variable assignment statement.
+*  E. The value of var cannot change at runtime.
+*  F. The type of var cannot change at runtime.
+*  G. The word var is a reserved word in Java.
+
+A var cannot be used for a constructor or method parameter or for an instance or class variable, making option A incorrect and option C correct.
+The type of var is known at compile time and the type cannot be changed at runtime, although its value can change at runtime.
+For these reasons, options B and F are correct, and option E is incorrect.
+Option D is incorrect, as var is not permitted in multiple-variable declarations. Finally, option G is incorrect, as var is not a reserved word in Java.
 
 
 
