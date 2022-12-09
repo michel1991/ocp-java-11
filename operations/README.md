@@ -1,4 +1,4 @@
-# Which of the following operators are ranked in increasing or the same order of precedence? Assume the + operator is binary addition, not the unary form. (Choose all that apply.)
+### Which of the following operators are ranked in increasing or the same order of precedence? Assume the + operator is binary addition, not the unary form. (Choose all that apply.)
 * A. +, *, %, --
 * B. ++, (int), *
 * C. =, ==, !

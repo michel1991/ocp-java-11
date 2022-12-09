@@ -1,4 +1,4 @@
-# Given a zoo management system, which of the following is best stored using an annotation?
+### Given a zoo management system, which of the following is best stored using an annotation?
 * A. The number of animals currently in the zoo
 * B. The names of each animal
 * C. The number of visitors to the zoo each year
@@ -10,7 +10,7 @@ The number of animals in the zoo, their names, and the guests of the zoo can cha
 The number of animals that can fit in an enclosure defines a rule about the enclosure.
 It does not include how many animals are actually in each enclosure; therefore, it is appropriate metadata and best served using an annotation.
 
-# Fill in the blanks: The __________ annotation determines whether annotations are discarded at runtime, while the __________ annotation determines whether they are discarded in generated Javadoc.
+### Fill in the blanks: The __________ annotation determines whether annotations are discarded at runtime, while the __________ annotation determines whether they are discarded in generated Javadoc.
 * A. @Target, @Deprecated
 * B. @Discard, @SuppressWarnings
 * C. @Retention, @Generated
@@ -23,7 +23,7 @@ The @Retention annotation determines whether annotations are discarded when the 
 The presence, or absence, of the @Documented annotation determines whether annotations are discarded within generated Javadoc.
 For these reasons, option D is correct.
 
-# What conditions must be true to declare a repeatable annotation along with its associated containing annotation type? (Choose all that apply.)
+### What conditions must be true to declare a repeatable annotation along with its associated containing annotation type? (Choose all that apply.)
 * A. The repeatable annotation must be declared with @Repeatable, which includes a value that points to the containing type annotation.
 * B. The repeatable annotation must include an element called value().
 * C. The repeatable annotation must include an element whose type is a primitive array.
@@ -36,7 +36,7 @@ The first, the repeatable annotation, needs to be declared with @Repeatable and 
 The second, the containing annotation type, must include an element named value() that includes an array of the repeatable annotation type.
 For these reasons, options A, E, and F are correct.
 
-# Which annotation can cancel out a warning on a method using the @Deprecated API at compile time?
+### Which annotation can cancel out a warning on a method using the @Deprecated API at compile time?
 
 * A. @FunctionalInterface
 * B. @Ignore
@@ -49,7 +49,7 @@ If @SuppressWarnings("deprecation") is applied to a method that is using a depre
 then warnings related to the usage will not be shown at compile time, making option F correct.
 Note that there are no built-in annotations called @Ignore or @IgnoreDeprecated.
 
-# What properties must be true to use an annotation with an element value, but no element name? (Choose all that apply.)
+### What properties must be true to use an annotation with an element value, but no element name? (Choose all that apply.)
 * A. The element must be named values().
 * B. The element must be required.
 * C. The annotation declaration must not contain any other elements.
@@ -62,7 +62,7 @@ The value() annotation may be required or optional, making option B incorrect.
 The annotation declaration may contain other elements, provided none is required, making option C incorrect.
 Option D is correct, as the annotation must not include any other values. Finally, option E is incorrect, as this is not a property of using a value() shorthand.
 
-# Which statements about an optional annotation are correct? (Choose all that apply.)
+### Which statements about an optional annotation are correct? (Choose all that apply.)
 * A. The annotation declaration always includes a default value.
 * B. The annotation declaration may include a default value.
 * C. The annotation always includes a value.
@@ -73,7 +73,7 @@ Option D is correct, as the annotation must not include any other values. Finall
 An optional annotation element is one that is declared with a default value that may be optionally replaced when used in an annotation.
 For these reasons, options A and D are correct.
 
-# What motivations would a developer have for applying the @FunctionalInterface annotation to an interface? (Choose all that apply.)
+### What motivations would a developer have for applying the @FunctionalInterface annotation to an interface? (Choose all that apply.)
 * A. To allow the interface to be used in a lambda expression
 * B. To provide documentation to other developers
 * C. To allow the interface to be used as a method reference
@@ -84,7 +84,7 @@ The @FunctionalInterface marker annotation is used to document that an interface
 It is also useful in determining whether an interface is a valid functional interface, as the compiler will report an error if used incorrectly, making option E correct.
 The compiler can detect whether an interface is a functional interface even without the annotation, making options A and C incorrect.
 
-# Which annotations require a value to be applied to a declaration? (Choose all that apply.)
+### Which annotations require a value to be applied to a declaration? (Choose all that apply.)
 * A. @Retention
 * B. @Documented
 * C. @FunctionalInterface
