@@ -1,6 +1,5 @@
-### My  Rule
-* Protected  in different package, in direct instance method = OK
-* In Differend package, Created object with reference, check type of reference if it is Same Type of Object that follow correct rule
+### My  Rule Protected in Different package
+* While Reference type is current Reference type of current child it is ok for method that hold accessibility protected
 
 ### Which lines in Tadpole give a compiler error? (Choose all that apply.)
 ```java
