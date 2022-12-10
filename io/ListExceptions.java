@@ -5,9 +5,17 @@ import java.io.*;
 
 /**
 * Question: Which of the following exceptions do not need to be handled or declared in the method in which they are thrown? (Choose all that apply.)
-* An exception that does not need to be handled or declared is an unchecked exception.
-* An unchecked exception inherits RuntimeException or Error. The entire hierarchy counts, so options A, B, and E are all correct.
-*  Even if you don’t know what OutOfMemoryError is, the fact that it ends with an Error is a strong indication that it is an unchecked exception.
+    A. Robot
+    B. Rosey
+    C. Six
+    D. Johnny
+    E. Wally
+    F. Prime
+    G. None of the above
+
+  An exception that does not need to be handled or declared is an unchecked exception.
+  An unchecked exception inherits RuntimeException or Error. The entire hierarchy counts, so options A, B, and E are all correct.
+  Even if you don’t know what OutOfMemoryError is, the fact that it ends with an Error is a strong indication that it is an unchecked exception.
  */
 class Robot extends NullPointerException {}
 class Rosey extends OutOfMemoryError {}
