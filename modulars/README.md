@@ -307,6 +307,18 @@ Since the JAR is on the classpath, it is a named module.
 The module-info file can use the exports directive to allow visibility into zero, one, or more packages to other modules, making options B, D, and F correct.
 Further, all unnamed modules on the classpath can access all packages in the module, making option A correct.
 
+### Which are true statements about a package in a JAR on the classpath containing a module-info file? (Choose all that apply.)
+*  A. It is possible to make it available to all other modules on the classpath.
+*  B. It is possible to make it available to all other modules on the module path.
+*  C. It is possible to make it available to exactly one other specific module on the classpath.
+*  D. It is possible to make it available to exactly one other specific module on the module path.
+*  E. It is possible to make sure it is not available to any other modules on the classpath.
+
+Since the JAR is on the classpath, it is treated as a regular unnamed module even though it has a module-info file inside.
+Remember from learning about top-down migration that modules on the module path are not allowed to refer to the classpath, making options B, and D incorrect.
+The classpath does not have a facility to restrict packages, making option A correct and options C and E incorrect.
+
+
 ### For a bottom-up migration, all modules other than named modules are ________________ modules and on the __________________.
 * A. automatic, classpath
 * B. automatic, module path
@@ -336,6 +348,16 @@ Options B and C are correct because the -d (--describe-module) option can be pas
 * E. Four
 
 Since the service provider itself is changing, it needs to be re-compiled. However, none of the other modules does, making option B correct.
+
+### Suppose you have separate modules for a service provider interface, service provider, service locator, and consumer. If you add a second service provider module, how many of these modules do you need to recompile?
+A. Zero
+B. One
+C. Two
+D. Three
+E. Four
+
+Since this is a new module, you need to compile the new module. However, none of the existing modules needs to be recompiled, making option A correct.
+The service locator will see the new service provider simply by having the new service provider on the module path.
 
 ### Suppose you have separate modules for a service provider interface, service provider, service locator, and consumer. Which statements are true about the directives you need to specify? (Choose all that apply.)
 * A. The consumer must use the requires directive.
