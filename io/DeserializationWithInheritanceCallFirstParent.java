@@ -3,12 +3,21 @@ import java.io.*;
 import java.nio.file.*;
 
 /**
-* The code compiles and runs without issue, so options F and G are incorrect.
-* The key here is that while Eagle is serializable, its parent class, Bird, is not. Therefore, none of the members of Bird will be serialized.
-* Even if you didn’t know that, you should know what happens on deserialization.
-* During deserialization, Java calls the constructor of the first nonserializable parent.
-* In this case, the Bird constructor is called, with name being set to Matt, making option B correct.
-* Note that none of the constructors or instance initializers in Eagle is executed as part of deserialization.
+   What is the value of name after the instance of Eagle created in the main() method is serialized and then deserialized?
+    A. Adeline
+    B. Matt
+    C. Olivia
+    D. Bridget
+    E. null
+    F. The code does not compile.
+    G. The code compiles but throws an exception at runtime.
+
+    The code compiles and runs without issue, so options F and G are incorrect.
+    The key here is that while Eagle is serializable, its parent class, Bird, is not. Therefore, none of the members of Bird will be serialized.
+    Even if you didn’t know that, you should know what happens on deserialization.
+    During deserialization, Java calls the constructor of the first nonserializable parent.
+    In this case, the Bird constructor is called, with name being set to Matt, making option B correct.
+    Note that none of the constructors or instance initializers in Eagle is executed as part of deserialization.
  */
 import java.io.Serializable;
 
