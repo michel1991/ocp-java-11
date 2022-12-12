@@ -1,4 +1,4 @@
-package  advancedDesign.errors;
+package io.errors;
 import java.io.*;
 /**
 * How many lines of the following program contain compiler errors?
