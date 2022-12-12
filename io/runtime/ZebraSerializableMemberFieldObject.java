@@ -1,4 +1,4 @@
-package io.errors;
+package io.runtime;
 import java.io.*;
 import java.util.*;
 
@@ -43,7 +43,7 @@ class Zebra implements Serializable { //3
     } // 19
 } // 19
 
-public class SerializableMemberFieldObject {
+public class ZebraSerializableMemberFieldObject {
    public static void main(String... args){
 
    }
