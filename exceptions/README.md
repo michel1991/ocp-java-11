@@ -30,3 +30,16 @@ While a programmer could throw or catch an Error, this would be a horrible pract
 
 You can create custom checked, unchecked exceptions, and even errors.
 The default constructor is used if one is not supplied. There is no requirement to implement any specific methods.
+
+# Which of the following exceptions need to be handled or declared in the method in which they are thrown? (Choose all that apply.)
+* A. FileNotFoundException
+* B. MissingResourceException
+* C. NumberFormatException
+* D. ParseException
+* E. AssertionError
+* F. SQLException
+* G. None of the above
+
+Checked exceptions include any class that inherits Exception, but not RuntimeException, while unchecked exceptions include any class
+that inherits RuntimeException or (less commonly) Error.
+Both ParseException and SQLException extend Exception, while FileNotFoundException extends IOException, which in turn extends Exception.
