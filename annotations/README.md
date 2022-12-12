@@ -191,5 +191,15 @@ It is up to the developer writing the method to verify that.
 Option B is incorrect as the annotation can be applied only to methods that cannot be overridden and abstract methods can always be overridden.
 Finally, option E is incorrect, as it is applied to the declaration, not the parameters.
 
+### Annotations can be applied to which of the following? (Choose all that apply.)
+* A. Class declarations
+* B. Constructor parameters
+* C. Local variable declarations
+* D. Cast operations
+* E. Lambda expression parameters
+* F. Interface declarations
+* G. None of the above
+
+Annotations can be applied to all of the declarations listed. If there is a type name used, an annotation can be applied.
 
 

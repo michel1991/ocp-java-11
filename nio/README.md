@@ -92,3 +92,17 @@ Option D is also incorrect. While java.io.File() does have a toUri() method, toP
 Instead, Path.of(URI) should be used. Option E is incorrect, as the correct static method in the Path interface is of(), not get().
 Finally, option F is correct and is the “long way” of creating a Path using the default file system.
 
+### Assuming / is the root directory within the file system, which of the following are true statements? (Choose all that apply.)
+* A. /home/parrot is an absolute path.
+* B. /home/parrot is a directory.
+*  C. /home/parrot is a relative path.
+*  D. new File("/home") will throw an exception if /home does not exist.
+*  E. new File("/home").delete() throws an exception if /home does not exist.
+
+Paths that begin with the root directory are absolute paths, so option A is correct, and option C is incorrect.
+Option B is incorrect because the path could be a file or directory within the file system.
+There is no rule that files have to end with a file extension.
+Option D is incorrect, as it is possible to create a File reference to files and directories that do not exist.
+Option E is also incorrect. The delete() method returns false if the file or directory cannot be deleted.
+
+

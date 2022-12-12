@@ -222,19 +222,14 @@ This is another question you just have to memorize.
 The jmod command has five modes you need to be able to list: create, extract, describe, list, and hash.
 The hash operation is not an answer choice. The other four are making options B, D, E, and F correct.
 
-### Which of the following options does not have a one-character shortcut in any of the commands studied in this chapter? (Choose all that apply.)
-*  A. describe-module
-*  B. list-modules
-*  C. module
-*  D. module-path
-*  E. show-module-resolution
-*  F. summary
+### Suppose you have the commands javac, java, and jar. How many of them support a --show-module-resolution option?
+* A. 0
+* B. 1
+* C. 2
+* D. 3
 
-Option A is incorrect because describe-module has the d equivalent.
-Option C is incorrect because module has the m equivalent.
-Option D is incorrect because module-path has the p equivalent.
-Option F is incorrect because summary has the s equivalent.
-Options B and E are the correct answers because they do not have equivalents.
+The java command uses this option to print information when the program loads.
+You might think jar does the same thing since it runs a program too. Alas, this parameter does not exist on jar.
 
 ### Fill in the blanks so this command to run the program is correct:
 java
@@ -427,3 +422,16 @@ The consumer needs it to call methods on the interface.
 Since the new project extracts the common code, it must have an exports directive for that code, making option B correct.
 The other two modules do not have to expose anything. They must have a requires directive to be able to use the exported code, making options E and F correct.
 
+### A(n) ________________ module always contains a module-info file, while a(n) _______________ module always exports all its packages to other modules.
+* A. automatic, named
+* B. automatic, unnamed
+* C. named, automatic
+* D. named, unnamed
+* E. unnamed, automatic
+* F. unnamed, named
+* G. None of the above
+
+Only named modules are required to have a module-info file, ruling out options A, B, E, and F.
+Unnamed modules are not readable by any other types of modules, ruling out option D.
+Automatic modules always export all packages to other modules, making the answer option C.
+For more information, see Chapter 6.

@@ -185,6 +185,21 @@ In a ResultSet, columns are indexed starting with 1, not 0. Therefore, options A
 There are methods to get the column as a String or Object.
 However, option D is incorrect because an Object cannot be assigned to a String without a cast.
 
+### Which of the following can fill in the blank correctly assuming the first column is name? (Choose all that apply.)
+```java
+    var rs = ps.executeQuery();
+    if (rs.next()) {
+        _______________________________
+        }
+```
+
+*  A. rs.getString(0);
+*  B. rs.getString(1);
+*  C. rs.getString("name");
+*  D. None of the above. The code does not compile.
+
+In a ResultSet, columns are indexed starting with 1, not 0. Getting the column-by-column number or name is allowed.
+
 ### Which of the following are words in the CRUD acronym? (Choose all that apply.)
 * A. Create
 * B. Delete
@@ -219,3 +234,5 @@ Only declarations that implement AutoCloseable or Closeable are permitted.
 Line 20 does not compile because execute() returns a boolean rather than a ResultSet.
 Finally, line 22 does not compile because the ResultSet method should be next(), not hasNext().
 Since there are four errors, option E is correct
+
+
