@@ -36,11 +36,13 @@ public class ArithmeticOperation {
       the output is false. For these reasons, option F is the correct answer.
      */
     static void complexBoolean(){
+        System.out.println("begin complexBoolean");
         boolean sunny = true, raining = false, sunday = true;
         boolean goingToTheStore = sunny & raining ^ sunday;
         boolean goingToTheZoo = sunday && !raining;
         boolean stayingHome = !(goingToTheStore && goingToTheZoo);
-        System.out.println(goingToTheStore + "-" + goingToTheZoo + "-" +stayingHome);
+        System.out.println("\t" + goingToTheStore + "-" + goingToTheZoo + "-" +stayingHome);
+        System.out.println("end complexBoolean");
     }
 
     /**
@@ -52,13 +54,15 @@ public class ArithmeticOperation {
     * Note the last line does not trigger a compilation error as the compound operator automatically casts the right-hand operand.
     */
     public static void sumAndCompound(){
+        System.out.println("begin sumAndCompound");
         int ticketsTaken = 1;
         int ticketsSold = 3;
         ticketsSold += 1 + ticketsTaken++;
         System.out.println();
         ticketsTaken *= 2;
         ticketsSold += (long)1;
-        System.out.println("ticketsTaken: " + ticketsTaken + " ticketsSold: " + ticketsSold);
+        System.out.println("\t ticketsTaken: " + ticketsTaken + " ticketsSold: " + ticketsSold);
+        System.out.println("end sumAndCompound");
     }
 
     /**
@@ -130,6 +134,8 @@ public class ArithmeticOperation {
         complexTernary();
         System.out.println();
         addOperator();
+        System.out.println();
+        complexBoolean();
     }
 
 }
