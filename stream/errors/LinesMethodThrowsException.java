@@ -4,8 +4,10 @@ import java.nio.file.*;
 
 public class LinesMethodThrowsException {
     /**
-    * Assuming the file /giraffe/sleep.csv exists with the specified contents, what is the expected output of calling wakeUp() on it?
-    *
+        Assuming the file /giraffe/sleep.csv exists with the specified contents, what is the expected output of calling wakeUp() on it?
+        /giraffe/sleep.csv
+        2,5,9
+    
          A. It prints 2,5,9.
         B. It prints 259.
         C. It prints 111.
