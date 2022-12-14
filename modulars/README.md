@@ -450,3 +450,17 @@ Since identifiers are not allowed to begin with numbers, options E and F are inc
 Dashes (-) are not allowed either, ruling out options B and D.
 That leaves options A and C as the correct answers.
 
+### What can be created using the Java Platform Module System that could not be created without it? (Choose all that apply.)
+*  A. JAR file
+*  B. JMOD file
+*  C. Smaller runtime images for distribution
+*  D. Operating system specific bytecode
+*  E. TAR file
+*  F. None of the above
+
+Option A is incorrect because JAR files have always been available regardless of the JPMS.
+Option D is incorrect because bytecode runs on the JVM and is not operating system specific by definition.
+While it is possible to run the tar command, this has nothing to do with Java, making option E incorrect.
+Option B is one of the correct answers as the jmod command creates a JMOD file.
+Option C is the other correct answer because specifying dependencies is one of the benefits of the JPMS.
+

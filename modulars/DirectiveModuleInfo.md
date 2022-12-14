@@ -197,3 +197,23 @@ Since this is a cyclic dependency, neither can compile.
 While the snow module is not involved in the cycle, it cannot compile since the rain module cannot compile.
 Since only one module can compile, option B is correct.
 
+### What is true of a module containing a file named module-info.java with the following contents? (Choose all that apply.)
+
+```java
+    module com.food.supplier {
+        }
+```
+
+
+*  A. All packages inside the module are automatically exported.
+*  B. No packages inside the module are automatically exported.
+*  C. A main method inside the module can be run.
+*  D. A main method inside the module cannot be run since the class is not exposed.
+*  E. The module-info.java file contains a compiler error.
+*  F. The module-info.java filename is incorrect.
+
+Packages inside a module are not exported by default, making option B correct and option A incorrect.
+Exporting is necessary for other code to uses the packages;
+it is not necessary to call the main method at the command line, making option C correct and option D incorrect.
+The module-info.java file has the correct name and compiles, making options E and F incorrect.
+

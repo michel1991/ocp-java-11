@@ -58,3 +58,19 @@ This is the trickiest question you can get on this topic on the exam. For more i
 
 If the two classes are in the same package, they will compile if ribbit() has public, protected, or default access.
 If the two classes are not in the same package, they will compile if ribbit() has public or protected access.
+
+##### Suppose we have the following class in the file /my/directory/named/A/Bird.java. Which of the answer options replaces INSERT CODE HERE when added independently if we compile from /my/directory? (Choose all that apply.)
+```java
+ //INSERT CODE HERE
+  public class Bird {
+  }
+```
+* A. package my.directory.named.a;
+* B. package my.directory.named.A;
+* C. package named.a;
+* D. package named.A;
+* E. package a;
+* F. package A;
+
+The package name represents any folders underneath the current path, which is named.Ain this case.
+Option B is incorrect because package names are case sensitive, just like variable names and other identifiers.

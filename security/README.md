@@ -95,3 +95,32 @@ A shallow copy does not create copies of the nested objects, making option C inc
 Options B and D are incorrect because narrow and wide copies are not terms.
 Option A is the answer because a deep copy does copy the nested objects.
 In this case, a new List is created in cloned, containing the same contents and making it a different object than the List in original.
+
+### What should your code do when input validation fails? (Choose all that apply.)
+* A. Call System.exit() immediately.
+* B. Continue execution.
+* C. Log a message.
+* D. Throw an exception.
+* E. None of the above
+
+The application should log a message or throw an exception, making options C and D correct.
+It should not immediately terminate the program with System.exit() as that does not execute gracefully, making option A incorrect.
+It also should not ignore the issue, making option B incorrect.
+
+### Which of the following expressions compile without error? (Choose all that apply.)
+* A. int monday = 3 + 2.0;
+* B. double tuesday = 5_6L;
+* C. boolean wednesday = 1 > 2 ? !true;
+* D. short thursday = (short)Integer.MAX_VALUE;
+* E. long friday = 8.0L;
+* F. var saturday = 2_.0;
+* G. None of the above
+
+Option A does not compile, as the expression 3 + 2.0 is evaluated as a double, and a double requires an explicit cast to be assigned to an int.
+Option B compiles without issue, as a long value can be implicitly cast to a double.
+Option C does not compile because the ternary operator (? :) is missing a colon (:), followed by a second expression.
+Option D is correct.
+Even though the int value is larger than a short, it is implicitly cast to a short, which means the value will wrap around to fit in a short.
+Option E is incorrect, as you cannot use a decimal (.) with the long (L) postfix.
+Finally, option F is incorrect, as an underscore cannot be used next to a decimal point. For more information, see Chapter 3.
+
