@@ -216,5 +216,20 @@ The first part is the module name. It is separated by periods (.) rather than da
 The second part is the package and class name, again separated by periods. The package and class names must be legal Java identifiers.
 Dashes (-) are not allowed, ruling out option D. This leaves options A and B as the correct answers.
 
+### Which of the following is true about a concrete class? (Choose all that apply.)
+* A. A concrete class can be declared as abstract.
+* B. A concrete class must implement all inherited abstract methods.
+* C. A concrete class can be marked as final.
+* D. If a concrete class inherits an interface from one of its superclasses, then it must declare an implementation for all methods defined in that interface.
+* E. A concrete method that implements an abstract method must match the method declaration of the abstract method exactly.
+
+Concrete classes are, by definition, not abstract, so option A is incorrect.
+A concrete class must implement all inherited abstract methods, so option B is correct.
+Concrete classes can be optionally marked final, so option C is correct.
+Option D is incorrect; a superclass may have already implemented an inherited interface method.
+The concrete class only needs to implement the inherited abstract methods.
+Finally, a method in concrete class that implements an inherited abstract method overrides the method.
+While the method signature must match, the method declaration does not need to match, such as using a covariant return type or changing the throws declaration.
+For these reasons, option E is incorrect.
 
 

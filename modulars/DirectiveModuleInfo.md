@@ -12,8 +12,8 @@ import magic.*;
 public class Dragon implements Magic {
     public String getPower() {
         return "breathe fire";
-        }
-        }
+    }
+}
 
 ```
 * A. uses dragon;
@@ -28,15 +28,15 @@ Note that options D and E are trying to trick you by mixing up the provides dire
 
 ### Suppose module puppy depends on module dog and module dog depends on module animal. Which two lines allow module puppy to access the animal.behavior package in module animal? (Choose two.)
 ```java
-module animal {
-    exports animal.behavior to dog;
+    module animal {
+        exports animal.behavior to dog;
     }
     module dog {
         _______ animal;  // line S
-        }
-        module puppy {
+    }
+    module puppy {
             _______ dog;     // line T
-            }
+    }
 ```
 * A. require on line S
 * B. require on line T
@@ -55,8 +55,8 @@ The module puppy just needs to require dog, and it gets the transitive dependenc
 ### Suppose you have a module named com.vet. Where could you place the following module-info.java file to create a valid module?
 
 ```java
-public module com.vet {
-    exports com.vet;
+    public module com.vet {
+        exports com.vet;
     }
 ```
 * A. At the same level as the com folder
@@ -124,12 +124,12 @@ The module puppy just needs to require dog, and it gets the transitive dependenc
 
 ### Which is the first line to contain a compiler error?
 ```java
-    1: module snake {
-    2:    exports com.snake.tail;
-    3:    exports com.snake.fangs to bird;
-    4:    requires skin;
-    5:    requires transitive skin;
-    6: }
+    module snake { //  1:
+        exports com.snake.tail; // 2:
+        exports com.snake.fangs to bird; //   3:
+        requires skin; //    4:
+        requires transitive skin; // 5:
+    } //  6:
 ```
 * A. Line 1.
 * B. Line 2.
@@ -142,3 +142,25 @@ The module name is valid as are the exports statements.
 Lines 4 and 5 are tricky because each is valid independently.
 However, the same module name is not allowed to be used in two requires statements.
 The second one fails to compile on line 5, making option E the answer.
+
+### Which would best fill in the blank to complete the following code?
+
+```java
+    module __________ {
+        exports com.unicorn.horn;
+        exports com.unicorn.magic;
+    }
+```
+* A. com
+* B. com.unicorn
+* C. com.unicorn.horn
+* D. com.unicorn.magic
+* E. The code does not compile.
+* F. The code compiles, but none of these would be a good choice.
+
+A module claims the packages underneath it.
+Therefore, options C and D are not good module names.
+Either would exclude the other package name.
+Options A and B both meet the criteria of being a higher-level package.
+However, option A would claim many other packages including com.sybex.
+This is not a good choice, making option B the correct answer.
