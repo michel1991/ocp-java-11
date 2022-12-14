@@ -47,3 +47,19 @@ and automatically serialized with the ObjectOutputStream class, so options B, C,
 PrintStream is an OutputStream, so it could be used to format the data.
 Unfortunately, since everything is converted to a String, the underlying data type information would be lost.
 For this reason, option G is incorrect.
+
+### Which of the following are true statements about working with instances of the OutputStream class? (Choose all that apply.)
+* A. They must be buffered.
+* B. They can be used to read input from the user.
+* C. They can be used to write character data to a file.
+* D. They can be written forward and backward.
+* E. They should be closed after use.
+* F. They must be periodically flushed.
+
+An OutputStream may be buffered but is not required to be buffered, so option A is incorrect.
+The OutputStream class is not used to read data from the user, so option B is incorrect.
+While the Writer class is more convenient for writing character data,
+the OutputStream class is capable of writing both byte and character data,
+so option C is correct. Java writes OutputStream data in a single direction, so option D is incorrect.
+All streams, including instances of OutputStream, should be closed after use, making option E correct.
+Finally, an OutputStream may be periodically flushed, but it is not required, so option F is incorrect.

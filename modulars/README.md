@@ -435,3 +435,18 @@ Only named modules are required to have a module-info file, ruling out options A
 Unnamed modules are not readable by any other types of modules, ruling out option D.
 Automatic modules always export all packages to other modules, making the answer option C.
 For more information, see Chapter 6.
+
+### Which of the following would be a legal module name? (Choose all that apply.)
+* A. com.book
+* B. com-book
+* C. com.book$
+* D. com-book$
+* E. 4com.book
+* F. 4com-book
+
+Module names look a lot like package names. Each segment is separated by a period (.)
+and uses characters valid in Java identifiers.
+Since identifiers are not allowed to begin with numbers, options E and F are incorrect.
+Dashes (-) are not allowed either, ruling out options B and D.
+That leaves options A and C as the correct answers.
+
