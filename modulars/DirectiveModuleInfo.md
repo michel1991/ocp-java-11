@@ -164,3 +164,36 @@ Either would exclude the other package name.
 Options A and B both meet the criteria of being a higher-level package.
 However, option A would claim many other packages including com.sybex.
 This is not a good choice, making option B the correct answer.
+
+### Suppose we have the following modules and that each contains code. If you can compile them in any order you would like, how many of these modules can you compile?
+
+```java
+    module cloud {
+        exports cloud;
+    }
+    module water {
+        exports water;
+        requires rain;
+        requires cloud;
+    }
+    module rain {
+        exports rain;
+        requires water;
+    }
+    module snow {
+        exports snow;
+        requires rain;
+    }
+```
+* A. Zero
+* B. One
+* C. Two
+* D. Three
+* E. Four
+
+The cloud module does not have any dependencies, so it can compile.
+The water and rain modules depend on each other.
+Since this is a cyclic dependency, neither can compile.
+While the snow module is not involved in the cycle, it cannot compile since the rain module cannot compile.
+Since only one module can compile, option B is correct.
+
