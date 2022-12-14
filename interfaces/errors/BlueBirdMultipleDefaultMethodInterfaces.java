@@ -1,4 +1,4 @@
-package advancedDesign.errors;
+package interfaces.errors;
 /**
 * Given the following program, what can be inserted into the blank line that would allow it to print Sing! at runtime?
 *   A. super.chirp();
