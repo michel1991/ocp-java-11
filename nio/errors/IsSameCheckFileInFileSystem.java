@@ -4,6 +4,14 @@ import java.io.*;
 
 /**
 *
+  If the current working directory is /zoo and the path /zoo/turkey does not exist, then what is the result of executing the following code? (Choose all that apply.)
+    A. The code compiles and runs without issue, but it does not create any directories.
+    B. The directory /zoo/turkey is created.
+    C. The directory /zoo/turkey/info is created.
+    D. The code will not compile because of line z1.
+    E. The code will not compile because of line z2.
+    F. It compiles but throws an exception at runtime.
+
     The code compiles without issue, so options D and E are incorrect.
     The method Files.isSameFile() first checks to see whether the Path values are the same in terms of equals().
     Since the first path is relative and the second path is absolute, this comparison will return false, forcing isSameFile()
