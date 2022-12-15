@@ -71,3 +71,16 @@ Since the import is unused, option B is also incorrect.
 A class will compile without any fields or methods, making options D and E incorrect.
 The only thing required is the actual class declaration on line 3. Therefore, option C is the answer.
 
+### Which of the following are true statements? (Choose all that apply.)
+*  A. Java allows operator overloading.
+*  B. Java code compiled on Windows can run on Linux.
+*  C. Java has pointers to specific locations in memory.
+*  D. Java is a procedural language.
+*  E. Java is an object-oriented language.
+*  F. Java is a functional programming language
+
+C++ has operator overloading and pointers. Java made a point of not having either.
+Java does have references to objects, but these are pointing to an object that can move around in memory.
+Option B is correct because Java is platform independent.
+Option E is correct because Java is object oriented.
+While it does support some parts of functional programming, these occur within a class.

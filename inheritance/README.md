@@ -86,3 +86,19 @@ Option E is incorrect, as the return type has to be covariant.
 In other words, the return type of the overridden method can be the same or a subtype as the return type of the method it overrides.
 Finally, option F is incorrect.
 If an overridden method changes the signature (the name and list of parameters) in any way, then the method is overloaded, not overridden.
+
+### Which of the following statements about polymorphism are true? (Choose all that apply.)
+* A. An object may be cast to a subtype without an explicit cast.
+* B. If the type of a method argument is an interface, then a reference variable that implements the interface may be passed to the method.
+* C. A method that takes a parameter with type java.lang.Object can be passed any variable.
+* D. All cast exceptions can be detected at compile-time.
+* E. By defining a final instance method in the superclass, you guarantee that the specific method will be called in the parent class at runtime.
+* F. Polymorphism applies only to classes, not interfaces.
+
+An object may be cast to a supertype without an explicit cast but requires an explicit cast to be cast to a subtype, making option A incorrect.
+Option B is correct, as an interface method argument may take any reference type that implements the interface.
+Option C is also correct, as a method that accepts java.lang.Object can accept any variable since all objects inherit java.lang.Object.
+This also includes primitives, which can be autoboxed to their wrapper classes.
+Some cast exceptions can be detected as errors at compile time, but others can only be detected at runtime, so option D is incorrect.
+Due to the nature of polymorphism, a final instance method cannot be overridden in a subclass, so calls in the parent class will not be replaced, making option E correct.
+Finally, polymorphism applies to classes and interfaces alike, making option F incorrect.

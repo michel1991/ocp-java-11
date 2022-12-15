@@ -123,6 +123,20 @@ Option D is correct because it prints jdk.unsupported but does not print a table
 Option C is incorrect because it does print a suggested alternative.
 Options A, B, E, F, and G are incorrect because those options do not exist.
 
+### Which command can you run to determine whether you have any code in your JAR file that depends on unsupported internal APIs and suggests an alternative?
+* A. jdeps -internal-jdk
+* B. jdeps --internaljdk
+* C. jdeps --internal-jdk
+* D. jdeps -s
+* E. jdeps -unsupported
+* F. jdeps –unsupportedapi
+* G. jdeps –unsupported-api
+* H. None of the above
+
+The jdeps command has an option --internal-jdk that lists any code using unsupported/internal APIs and prints a table with suggested alternatives.
+Option D is incorrect because it does not print out the table with a suggested alternative.
+Options A, B, C, E, F, and G are incorrect because those options do not exist.
+For options A,B, and C, the options are reversed and should be “jdk-internals”.
 
 ### What is true of a module containing a file named module-info.java with the following contents? (Choose all that apply.)
 ```java
@@ -463,4 +477,15 @@ Option D is incorrect because bytecode runs on the JVM and is not operating syst
 While it is possible to run the tar command, this has nothing to do with Java, making option E incorrect.
 Option B is one of the correct answers as the jmod command creates a JMOD file.
 Option C is the other correct answer because specifying dependencies is one of the benefits of the JPMS.
+
+### Which of the following is an advantage of the Java Platform Module System?
+A. A central repository of all modules
+B. Encapsulating packages
+C. Encapsulating objects
+D. No defined types
+E. Platform independence
+
+Option B is correct since modules allow you to specify which packages can be called by external code.
+Options C and E are incorrect because they are provided by Java without the module system.
+Option A is incorrect because there is not a central repository of modules. Option D is incorrect because Java defines types.
 

@@ -202,4 +202,18 @@ Finally, option E is incorrect, as it is applied to the declaration, not the par
 
 Annotations can be applied to all of the declarations listed. If there is a type name used, an annotation can be applied.
 
+### Which annotations can be added to an existing method declaration but could cause a compiler error depending on the method signature? (Choose all that apply.)
+*  A. @Override
+*  B. @Deprecated
+*  C. @FunctionalInterface
+*  D. @Repeatable
+*  E. @Retention
+*  F. @SafeVarargs
+
+The @Override annotation can be applied to a method but will trigger a compiler error if the method signature does not match an inherited method, making option A correct.
+The annotation @Deprecated can be applied to a method but will not trigger any compiler errors based on the method signature.
+The annotations @FunctionalInterface, @Repeatable, and @Retention cannot be applied to methods, making these options incorrect.
+Finally, @SafeVarargs can be applied to a method but will trigger a compiler error if the method does not contain a varargs parameter or is able to be overridden
+(not marked private, static, or final).
+
 
