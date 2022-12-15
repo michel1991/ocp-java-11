@@ -1,7 +1,7 @@
 package annotations;
 import java.lang.annotation.*;
 
-/*$
+/*
    Which annotations, when applied independently, allow the following program to compile? (Choose all that apply.)
     A. @CurrencyAmount
     B. @CurrencyAmount(Unit.Dollar) @CurrencyAmount(Unit.Yen)
