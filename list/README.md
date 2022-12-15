@@ -57,3 +57,16 @@ An array does not override equals(), so it uses object equality, making option E
 ArrayList does override equals() and defines it as the same elements in the same order, making option F correct.
 The compiler does not know when an index is out of bounds and thus can’t give you a compiler error, making option G correct.
 The code will throw an exception at runtime, though, making option H the final incorrect answer.
+
+#### Suppose that you need to work with a collection of elements that need to be sorted in their natural order, and each element has a unique text id that you want to use to store and retrieve the record. Which of the following collections classes in the java.util package best suits your needs for this scenario?
+*  A. ArrayList
+*  B. HashMap
+*  C. HashSet
+*  D. TreeMap
+*  E. TreeSet
+*  F. None of the above
+
+The answer needs to implement Map because you are dealing with key/value pairs per the unique id field.
+You can eliminate options A, C, and E immediately since they are not a Map. ArrayList is a List.
+HashSet and TreeSet are Sets. Now it is between HashMap and TreeMap. Since the question talks about ordering, you need the TreeMap.
+Therefore, the answer is option D.
