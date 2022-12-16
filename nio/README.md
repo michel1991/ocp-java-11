@@ -105,4 +105,22 @@ There is no rule that files have to end with a file extension.
 Option D is incorrect, as it is possible to create a File reference to files and directories that do not exist.
 Option E is also incorrect. The delete() method returns false if the file or directory cannot be deleted.
 
+### Which statements about the Files.walk() method are correct? (Choose all that apply.)
+*  A. It traverses a directory tree.
+*  B. It traverses exactly one directory.
+*  C. It searches in a breadth-first manner.
+*  D. It searches in a depth-first manner.
+*  E. It follows symbolic links by default.
+*  F. It does not have a depth limit.
+*  G. It will throw an exception if a cycle is encountered.
+
+The Files.list() method traverses a single directory, while Files.walk() traverses a directory tree.
+For this reason, option A is correct, and option B is incorrect.
+All NIO.2 search methods are depth-first, making option C incorrect and option D correct.
+Option E is incorrect as Files.walk()follows symbolic links only if the FOLLOW_LINKS option is provided.
+Option F is incorrect. If a depth limit is not provided, then a default one is used.
+Finally, option G is correct. If FOLLOW_LINKS is provided and a cycle is encountered,
+then an exception will be thrown, as Files.walk() maintains a list of all of the paths it has visited.
+
+
 
