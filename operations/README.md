@@ -27,3 +27,15 @@ The question is primarily about variable scope. A variable defined in a statemen
 For this reason, options A and E are correct. Option B is incorrect because variables can be defined inside initializer blocks.
 Option C is incorrect, as a constructor argument is accessible only in the constructor itself, not for the life of the instance of the class.
 Constructors and instance methods can access any instance variable, even ones defined after their declaration, making option D incorrect and options F and G correct.
+
+### Which of the following are true statements? (Choose all that apply.)
+* A. do while loops can execute the loop body exactly zero times.
+* B. do while loops contain an increment clause.
+* C. Traditional for loops can execute the loop body exactly zero times.
+* D. Traditional for loops contain an increment clause.
+* E. while loops can execute the loop body exactly zero times.
+* F. while loops contain an increment clause.
+
+Options B and F are incorrect because only traditional for loops have an increment clause.
+Other loops can increment a variable inside the loop, but this is not a clause that is part of the loop construct.
+Option A is incorrect because do while loops check the condition after the first loop execution.

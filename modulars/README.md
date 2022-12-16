@@ -494,10 +494,30 @@ Option A is incorrect because there is not a central repository of modules. Opti
 *  B. java
 *  C. jar
 *  D. jdeps
-* E. jmod
+*  E. jmod
 *  F. None of the above
 
 Options A and B are correct because the -p (--module-path) option can be passed when compiling or running a program.
 Option D is also correct because jdeps can use the --module-path option when listing dependency information.
+
+### Which are true of the --module option? (Choose all that apply.)
+*  A. It is an option on the javac command.
+*  B. It is an option on the java command.
+*  C. It is an option on the jar command.
+*  D. It is an option on the jdeps command.
+*  E. It has a short form of -m.
+*  F. It has a short form of -p.
+
+Option B is correct because the only command that has a --module option is java. Option E is correct because -m is equivalent.
+
+### Which commands can list dependencies? (Choose all that apply.)
+* A. jdeps flea.jar
+* B. jdeps -d flea.jar
+* C. jdeps -detail flea.jar
+* D. jdeps --detail flea.jar
+
+Option A is correct because it prints the details of the dependencies.
+Options B, C, and D try to fool you with an invalid option.
+The jdeps command uses command-line options to restrict the output to the summary level.
 
 
