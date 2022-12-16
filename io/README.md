@@ -63,3 +63,15 @@ the OutputStream class is capable of writing both byte and character data,
 so option C is correct. Java writes OutputStream data in a single direction, so option D is incorrect.
 All streams, including instances of OutputStream, should be closed after use, making option E correct.
 Finally, an OutputStream may be periodically flushed, but it is not required, so option F is incorrect.
+
+### What are some reasons to use a character stream, such as Reader/Writer, over a byte stream, such as InputStream/OutputStream? (Choose all that apply.)
+* A. More convenient code syntax when working with String data
+* B. Improved performance
+* C. Automatic character encoding
+* D. Built-in serialization and deserialization
+* E. Character streams are high-level streams
+* F. Multithreading support
+
+Character stream classes often include built-in convenience methods for working with String data, so option A is correct.
+They also handle character encoding automatically, so option C is also correct.
+The rest of the statements are irrelevant or incorrect and are not properties of all character streams.

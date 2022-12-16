@@ -76,3 +76,31 @@ Interfaces cannot contain default static methods, making option C incorrect.
 Option D is incorrect, as private interface methods are not inherited and cannot be marked abstract.
 Option E is incorrect, as a method can’t be marked both protected and private. Finally, interfaces can include both private and private static methods, making option F correct.
 
+### What are some advantages of using default interface methods? (Choose all that apply.)
+*  A. Automatic resource management
+*  B. Improve performance at runtime
+*  C. Better exception handling
+*  D. Backward compatibility
+*  E. Highly concurrent execution
+*  F. Convenience in classes implementing the interface
+
+Java added default methods primarily for backward compatibility.
+Using a default method allows you to add a new method to an interface without having to recompile a class that used an older version of the interface.
+For this reason, option D is correct.
+Option F is also correct, as default methods in some APIs offer a number of convenient methods to classes that implement the interface.
+The rest of the options are not related to default methods.
+
+### Which of the following functional interfaces contain an abstract method that returns a primitive value? (Choose all that apply.)
+*  A. BooleanSupplier
+*  B. CharSupplier
+*  C. DoubleSupplier
+*  D. FloatSupplier
+*  E. IntSupplier
+*  F. StringSupplier
+
+Java includes support for three primitive streams, along with numerous functional interfaces to go with them: int, double, and long.
+For this reason, options C and E are correct.
+There is one exception to this rule. While there is no BooleanStream class, there is a BooleanSupplier functional interface, making option A correct.
+Java does not include primitive streams or related functional interfaces for other numeric data types, making options B and D incorrect.
+Option F is incorrect because String is not a primitive, but an object. Only primitives have custom suppliers.
+
