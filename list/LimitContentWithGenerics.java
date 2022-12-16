@@ -31,12 +31,13 @@ class Wildcard { // 3:
 public class LimitContentWithGenerics {
     /**
     *  Which of these statements compile? (Choose all that apply.)
-    *   A. HashSet<Number> hs = new HashSet<Integer>();
+        A. HashSet<Number> hs = new HashSet<Integer>();
         B. HashSet<? super ClassCastException> set = new HashSet<Exception>();
         C. List<> list = new ArrayList<String>();
         D. List<Object> values = new HashSet<Object>();
         E. List<Object> objects = new ArrayList<? extends Object>();
         F. Map<String, ? extends Number> hm = new HashMap<String, Integer>();
+
         Option A does not compile because the generic types are not compatible.
         We could say HashSet<? extends Number> hs2 = new HashSet<Integer>();.
         Option B uses a lower bound, so it allows superclass generic types.
@@ -47,6 +48,29 @@ public class LimitContentWithGenerics {
      */
     static void choiceCorrectFirst(HashSet<? super ClassCastException> set, Map<String, ? extends Number> hm){
       }
+
+    /**
+        Which of the following statements can fill in the blank to make the code compile successfully? (Choose all that apply.)
+         Set<? extends RuntimeException> mySet = new _________();
+
+            A. HashSet<? extends RuntimeException>
+            B. HashSet<Exception>
+            C. TreeSet<RuntimeException>
+            D. TreeSet<NullPointerException>
+            E. None of the above
+
+          The mySet declaration defines an upper bound of type RuntimeException.
+          This means that classes may specify RuntimeException or any subclass of RuntimeException as the type parameter.
+          Option B is incorrect because Exception is a superclass, not a subclass, of RuntimeException.
+          Option A is incorrect because the wildcard cannot occur on the right side of the assignment.
+          Options C and D compile and are the answers. For more information, see Chapter 3.
+
+     */
+    static void maxRuntimeException(){
+        // TreeSet<NullPointerException>
+        Set<? extends RuntimeException> mySet = new TreeSet<RuntimeException>(); //  _________
+
+    }
 
     public static void main(String... args){
         HashSet<? super ClassCastException> set = new HashSet<Exception>();
