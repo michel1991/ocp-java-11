@@ -479,13 +479,25 @@ Option B is one of the correct answers as the jmod command creates a JMOD file.
 Option C is the other correct answer because specifying dependencies is one of the benefits of the JPMS.
 
 ### Which of the following is an advantage of the Java Platform Module System?
-A. A central repository of all modules
-B. Encapsulating packages
-C. Encapsulating objects
-D. No defined types
-E. Platform independence
+*  A. A central repository of all modules
+*  B. Encapsulating packages
+*  C. Encapsulating objects
+*  D. No defined types
+*  E. Platform independence
 
 Option B is correct since modules allow you to specify which packages can be called by external code.
 Options C and E are incorrect because they are provided by Java without the module system.
 Option A is incorrect because there is not a central repository of modules. Option D is incorrect because Java defines types.
+
+### Which commands take a --module-path parameter? (Choose all that apply.)
+*  A. javac
+*  B. java
+*  C. jar
+*  D. jdeps
+* E. jmod
+*  F. None of the above
+
+Options A and B are correct because the -p (--module-path) option can be passed when compiling or running a program.
+Option D is also correct because jdeps can use the --module-path option when listing dependency information.
+
 

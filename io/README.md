@@ -75,3 +75,17 @@ Finally, an OutputStream may be periodically flushed, but it is not required, so
 Character stream classes often include built-in convenience methods for working with String data, so option A is correct.
 They also handle character encoding automatically, so option C is also correct.
 The rest of the statements are irrelevant or incorrect and are not properties of all character streams.
+
+### Which of the following are true statements about serialization in Java? (Choose all that apply.)
+* A. Deserialization involves converting data into Java objects.
+* B. Serialization involves converting data into Java objects.
+* C. All nonthread classes should be marked Serializable.
+* D. The Serializable interface requires implementing serialize() and deserialize() methods.
+* E. Serializable is a functional interface.
+* F. The readObject() method of ObjectInputStream may throw a ClassNotFoundException even if the return object is not cast to a specific type.
+
+In Java, serialization is the process of turning an object to a stream, while deserialization is the process of turning that stream back into an object.
+For this reason, option A is correct, and option B is incorrect.
+Option C is incorrect, because many nonthread classes are not marked Serializable for various reasons.
+The Serializable interface is a marker interface that does not contain any abstract methods, making options D and E incorrect.
+Finally, option F is correct, because readObject() declares the ClassNotFoundException even if the class is not cast to a specific type.
