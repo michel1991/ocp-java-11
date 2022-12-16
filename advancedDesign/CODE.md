@@ -84,3 +84,18 @@ Java does have references to objects, but these are pointing to an object that c
 Option B is correct because Java is platform independent.
 Option E is correct because Java is object oriented.
 While it does support some parts of functional programming, these occur within a class.
+
+### Which of the following can fill in the blank? (Choose all that apply.)
+```sh
+  java ______ library.jar MainClass
+```
+
+*  A. -cp
+*   B. -classpath
+*  C. -class-path
+*  D. --classpath
+*  E. --class-path
+*  F. None of the above
+
+There are three valid flags for the classpath parameter. The short form is -cp, making option A correct.
+The longer forms are -classpath and --class-path, making options B and E correct.
