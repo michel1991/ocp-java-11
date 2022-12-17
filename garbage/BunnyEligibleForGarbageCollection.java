@@ -1,4 +1,4 @@
-package advancedDesign;
+package garbage;
 interface Hops {} // 1:
 /**
 * Which statements about the following class are correct? (Choose all that apply.)

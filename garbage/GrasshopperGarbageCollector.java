@@ -7,7 +7,7 @@
    * in the class, you don’t have to. For more information, see Chapter 2.
    *
  */
-package advancedDesign;
+package garbage;
 public class GrasshopperGarbageCollector {
     public GrasshopperGarbageCollector(String n) {
          name = n;
