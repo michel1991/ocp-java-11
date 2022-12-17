@@ -89,3 +89,21 @@ For this reason, option A is correct, and option B is incorrect.
 Option C is incorrect, because many nonthread classes are not marked Serializable for various reasons.
 The Serializable interface is a marker interface that does not contain any abstract methods, making options D and E incorrect.
 Finally, option F is correct, because readObject() declares the ClassNotFoundException even if the class is not cast to a specific type.
+
+### Fill in the blank with the proper method to serialize an object.
+```java
+    public Object ___________() throws ObjectStreamException {
+        // return an object
+    }
+```
+* A. readObject()
+* B. readReplace()
+* C. readResolve()
+* D. writeObject()
+* E. writeReplace()
+* F. writeResolve()
+
+Options B and F are incorrect because these method names are not defined.
+Serializing is the act of persisting an object, ruling out options A and C.
+Option D is incorrect because the writeObject() method returns void and serializes the current object.
+Option E is the correct answer.
