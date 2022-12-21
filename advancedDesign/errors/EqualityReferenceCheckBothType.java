@@ -1,3 +1,4 @@
+package advancedDesign.errors;
 public class EqualityReferenceCheckBothType {
     /**
     *  What is the result of the following code?
