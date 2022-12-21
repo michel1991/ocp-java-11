@@ -249,5 +249,17 @@ For this reason, option C is incorrect, and options D and H are correct.
 Options B, E, and G are incorrect, as they do not implement java.lang.Iterable.
 Although a String is a list of ordered characters, the class does not implement the required interface for a for-each loop.
 
+### java ______ library.jar MainClass.class
+*  A. -cp
+*  B. -classpath
+*  C. -class-path
+*  D. --classpath
+*  E. --class-path
+*  F. None of the above
+
+When running the java command, you pass the name of the class rather than the name of the class file.
+If you are using the single-file source-code feature, you use the name of the Java file.
+Since none of the options accepts the class filename, option F is correct.
+
 
 
