@@ -520,4 +520,18 @@ Option A is correct because it prints the details of the dependencies.
 Options B, C, and D try to fool you with an invalid option.
 The jdeps command uses command-line options to restrict the output to the summary level.
 
+### Which option best fills in the blanks in the following statements: In the module-info file, a module that wants to use code in another module specifies the directive ________. By contrast, the module that wants to allow other modules to use its code specifies the directive ___________.
+* A. exports and requires
+* B. exports and uses
+* C. exposes and requires
+* D. exposes and uses
+* E. requires and exports
+* F. requires and exposes
+* G. None of the above
+
+The two most common directives are exports and requires.
+The module that wants to expose one or more packages uses the exports directive.
+The requires directive is used by the module that wants to use code in another one.
+
+
 
