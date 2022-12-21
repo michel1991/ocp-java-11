@@ -104,3 +104,15 @@ There is one exception to this rule. While there is no BooleanStream class, ther
 Java does not include primitive streams or related functional interfaces for other numeric data types, making options B and D incorrect.
 Option F is incorrect because String is not a primitive, but an object. Only primitives have custom suppliers.
 
+### Which modifiers are implicitly applied to all interface variables? (Choose all that apply.)
+* A. protected
+* B. final
+* C. transient
+* D. default
+* E. const
+* F. static
+* G. None of the above
+
+All interface variables are assumed to be public, static, and final, making options B and F correct.
+The other modifiers, while all Java keywords, cannot be applied to interface variables. Note that const is an unused keyword in Java.
+
