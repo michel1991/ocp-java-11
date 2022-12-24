@@ -1,12 +1,17 @@
 
-package inheritance.errors;
-interface WaterFowl {}
-class Bird {}
-class Duck extends Bird implements WaterFowl {
-    public void quack() {
+package inheritance.runtime;
+interface WaterFowl {} //1
+class Bird {} //2
+class Duck extends Bird implements WaterFowl { //3
+    public void quack() { // 4
         System.out.println("quack!");
     }
-}
+    public static void main() { //5
+        Object object = (Object)new Bird();  //6
+        Duck duck = (Duck)object;  //7
+        duck.quack();  //8
+    } // 9
+} // 10
 
 /**
  *
@@ -27,8 +32,6 @@ class Duck extends Bird implements WaterFowl {
  */
 public interface InheritanceCasting {
     public static void main(String[] args) {
-        Object object = (Object)new Bird();
-        Duck duck = (Duck)object;
-        duck.quack();
+        Duck.main();
     }
 }
