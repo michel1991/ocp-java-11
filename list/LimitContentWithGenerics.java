@@ -1,6 +1,8 @@
 package list;
 import java.util.*;
 import java.io.*;
+import java.sql.*;
+import java.time.*;
 
 /**
 *  Which of these statements can fill in the blank so that the Wildcard class compiles successfully? (Choose all that apply.)
@@ -24,7 +26,7 @@ class Wildcard { // 3:
     } //  6:
     public static void main() { //  7:
         Wildcard card = new Wildcard(); //  8:
-        ArrayList<? super Date> list = new ArrayList<Date>() ; //      9: ____________________________________
+        ArrayList<? super java.util.Date> list = new ArrayList<java.util.Date>() ; //      9: ____________________________________
         card.showSize(list); //  10:
     } } //   11:
 
@@ -70,6 +72,28 @@ public class LimitContentWithGenerics {
         // TreeSet<NullPointerException>
         Set<? extends RuntimeException> mySet = new TreeSet<RuntimeException>(); //  _________
 
+    }
+
+    /**
+     * Which of the following statements compile about the java.util and java.sql packages? (Choose all that apply.)
+
+        A. List<? extends Statement> list1 = new ArrayList<>();
+        B. List<? implements Statement> list2 = new ArrayList<>();
+        C. List<? extends Statement> list3 = new ArrayList()<>;
+        D. List<? implements Statement> list4 = new ArrayList()<>;
+        E. List<? extends Statement> list5 = new ArrayList();
+        F. List<? extends Statement> list6 = new List();
+
+        Option A creates a List that can contain any implementation of the Statement interface.
+        Option E does the same without specifying the generic type.
+        Option B is incorrect because generic declarations use extends rather than implements regardless
+        of whether classes or interfaces are specified. Option C is incorrect because the
+        diamond operator must come before the parentheses. Option D is incorrect for both of these reasons.
+         Option F is incorrect because List is an interface and cannot be instantiated.
+     */
+    public static void limitWithStatement(){
+        List<? extends Statement> list1 = new ArrayList<>();
+        List<? extends Statement> list5 = new ArrayList();
     }
 
     public static void main(String... args){
