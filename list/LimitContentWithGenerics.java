@@ -96,6 +96,29 @@ public class LimitContentWithGenerics {
         List<? extends Statement> list5 = new ArrayList();
     }
 
+
+
+   /**
+    * Which of following can fill in the blank to make the method successfully compile? (Choose all that apply.)
+    *   A. List list
+        B. List<?> list
+        C. List<Number> list
+        D. List<? extends Object> list
+        E. List<? super Number> list
+        F. List<? implements Number> list
+
+        Option A doesn’t use generics, so adding anything is fine.
+        Option C uses generics and specifies the type. The value 123 autoboxes to Integer,
+        which is a Number. Option E allows Number and a superclass of Number.
+        The tricky part is that Integer is a subclass of Number so it matches on the Number class.
+        Option B is an unbounded wildcard and option D is an upper-bounded wildcard,
+        neither of which allows adding to the list. Option F doesn’t compile because implements
+        is not a valid keyword in describing generic bounds.
+    */
+    public static void add(List<? super Number> list) { // _________
+        list.add(123);
+    }
+
     public static void main(String... args){
         HashSet<? super ClassCastException> set = new HashSet<Exception>();
         Map<String, ? extends Number> hm = new HashMap<String, Integer>();
