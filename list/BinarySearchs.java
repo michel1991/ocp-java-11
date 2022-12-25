@@ -27,6 +27,31 @@ public class BinarySearchs {
        System.out.println(x + " " + y + " " + z);
    }
 
+    /**
+     * What does the following output?
+        A. -2
+        B. -1
+        C. 0
+        D. 1
+        E. 2
+        F. An exception is thrown.
+        G. The code doesn’t compile.
+
+        The list is sorted as [-10, -5, 5, 10]. The index of 5 is 2. Since 4 isn’t found,
+        we consider the index where it would go, which is 2. Per the rule,
+        we negate that and subtract 1, giving us -2-1, or -3.
+        Adding the two results of 2 and -3, we get -1 as the answer.
+
+     */
+    static void search2(){
+        List numberList = Arrays.asList(5, 10, -5, -10);
+        Collections.sort(numberList);
+        int five = Collections.binarySearch(numberList, 5);
+        int four = Collections.binarySearch(numberList, 4);
+        System.out.println(five + four);
+
+    }
+
     public static void main(String... args){
         makeSearch();
    }
