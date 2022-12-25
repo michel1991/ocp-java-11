@@ -34,6 +34,19 @@ Options B and E are the correct answers because they do not have equivalents.
 When creating a jar file, you use the options -cf or -cvf, making options A and E correct. It also allows the specification of a directory using -C, making option B correct.
 Options D and E are incorrect because -d and -p are used for modules.
 
+### Fill in the blanks to complete this sentence: The show-module-resolution option is on the _______ command, and the summary option is on the _______ command.
+* A. jar and java
+* B. javac and java
+* C. java and java
+* D. jar and jdeps
+* E. javac and jdeps
+* F. java and jdeps
+* G. None of the above
+
+The only command that has a show-module-resolution option is java, and the only command that has a summary option is jdeps.
+Therefore, option F is correct.
+
+
 ### What is true about a service provider module? (Choose all that apply.)
 * A. It contains the interface that implementations must provide
 * B. It contains exactly one implementation of the interface.
