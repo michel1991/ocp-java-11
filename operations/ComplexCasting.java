@@ -63,6 +63,25 @@ public class ComplexCasting {
         System.out.println(two[two.length]);
     }
 
+    /**
+     * Which exception will the following throw?
+        A. ArrayIndexOutOfBoundsException
+        B. ClassCastException
+        C. IllegalArgumentException
+        D. NumberFormatException
+        E. None of the above
+
+        There is nothing wrong with this code. It outputs 5.
+        We’ve included this question as a reminder that just because you
+        are asked about exceptions doesn’t mean one is thrown.
+     */
+    static void castingArrayOfIntUsingObjectWithoutException(){
+        int[] nums = new int[] { 1, 0, 2 };
+        Object p = nums;
+        int[] two = (int[]) p;
+        System.out.println(10 / two[2]);
+    }
+
     public static void main(String... args){
       firstCasting();
     }
