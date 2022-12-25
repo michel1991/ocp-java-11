@@ -107,3 +107,21 @@ Options B and F are incorrect because these method names are not defined.
 Serializing is the act of persisting an object, ruling out options A and C.
 Option D is incorrect because the writeObject() method returns void and serializes the current object.
 Option E is the correct answer.
+
+### Which statements about the following code snippet are correct? (Choose all that apply.)
+```java
+var m = new java.io.File("myfile.txt")
+```
+
+*  A. If myfile.txt does not exist within the file system, an exception will be thrown.
+*  B. myfile.txt is a relative path.
+*  C. myfile.txt is an absolute path.
+*  D. myfile.txt may refer to a file.
+*  E. myfile.txt may refer to a directory.
+*  F. None of the above.
+
+The path myfile.txt is a relative path since it does not contain any path separators,
+making option B correct and option C incorrect. It can refer to either a file or a directory within the file system,
+as directories can have extensions. For this reason, options D and E are correct.
+Finally, if the path does not exist, an exception is not thrown, so option A is incorrect.
+Note that calling m.exists() will tell you whether or not the paths exist in the file system.
