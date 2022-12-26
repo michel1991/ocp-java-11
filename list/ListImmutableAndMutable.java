@@ -45,12 +45,13 @@ public class ListImmutableAndMutable {
 
         Set<String> set = new HashSet<>();
         set.add("coats");
+        set.add("rain");
 
         Map<String, Integer> counts = new HashMap<>();
         counts.put("coats", 2);
         counts.put("rain", 1);  // __________________________
 
-        for (var x : ____________) {
+        for (var x : set) { // ____________
             String s = (String) x;
             System.out.println(s);
         }
