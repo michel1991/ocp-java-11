@@ -1,4 +1,4 @@
-package inheritance;
+package advancedDesign;
 
 /**
 * What is the result of this code?
