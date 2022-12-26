@@ -82,6 +82,24 @@ public class ComplexCasting {
         System.out.println(10 / two[2]);
     }
 
+    /**
+       Which of the following can fill in the blank to have the code compile and run without error? (Choose all that apply.)
+        A. double
+        B. int
+        C. long
+        D. String
+        E. Object
+        F. None of the above
+
+        Since the number 9 is small, it can successfully fit into any of the numeric types, making options A, B, and C correct.
+        Additionally, an int can be autoboxed into an Integer. Since this is an Object, option E is also correct.
+
+     */
+    static void simple(){
+        int numberReindeer = 9;
+        System.out.println( (int) numberReindeer); // _____________
+    }
+
     public static void main(String... args){
       firstCasting();
     }
