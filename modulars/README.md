@@ -546,5 +546,33 @@ The two most common directives are exports and requires.
 The module that wants to expose one or more packages uses the exports directive.
 The requires directive is used by the module that wants to use code in another one.
 
+### Suppose we have a JAR file named cat-1.2.3-RC1.jar and that Automatic-Module-Name in the MANIFEST.MF is set to dog. What should a named module referencing this automatic module include in the module-info.java?
+*  A. requires cat;
+*  B. requires cat.RC;
+*  C. requires cat-RC;
+*  D. requires dog;
+*  E. None of the above
+
+Option D is correct because the Automatic-Module-Name is used when supplied.
+If it were not supplied, option A would be the answer because version information
+is excluded when determining the module name.
+
+### You have a project that has two packages named jellyfish.sting and jellyfish.swim. Suppose you were tasked with modularizing the project with the requirement that both packages be available for other Java projects. Which statements are true about your module-info file? (Choose all that apply.)
+* A. You can write a combined statement: exports jellyfish.
+* B. You must have two separate exports directives.
+* C. Since you intend both packages to be available, you don’t need to specify an exports directive.
+* D. Since you intend both packages to be available, you don’t need to write a module-info file.
+* E. The name jellyfish is good for the module.
+* F. The name jellyfish-module is good for the module.
+* G. None of the above
+
+Each package being made available needs to have a separate exports directive, making option B correct.
+Omitting the module-info file entirely or having one with exports directives means calling modules are not
+allowed to reference any of the packages. Therefore, options C and D are correct.
+Option A will not compile since there is not matching package name.
+Option E is correct as the module name matches the common prefix.
+Option F is incorrect because identifiers are not allowed to have a dash.
+
+
 
 
