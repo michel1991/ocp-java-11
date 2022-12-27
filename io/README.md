@@ -140,3 +140,15 @@ Marking a class final does not impact its ability to be serialized,
 so option A is incorrect. Option B is incorrect, as Serializable is an interface, not a class.
 Option C is incorrect. While it is a good practice for a serializable class to include a static serialVersionUID variable,
 it is not required. Finally, option D is incorrect as static members of the class are ignored on serialization already.
+
+### Which statements about closing I/O streams are correct? (Choose all that apply.)
+*  A. InputStream and Reader instances are the only I/O streams that should be closed after use.
+*  B. OutputStream and Writer instances are the only I/O streams that should be closed after use.
+*  C. InputStream/OutputStream and Reader/Writer all should be closed after use.
+*  D. A traditional try statement can be used to close an I/O stream.
+*  E. A try-with-resources can be used to close an I/O stream.
+*  F. None of the above.
+
+All I/O streams should be closed after use or a resource leak might ensue, making option C correct.
+While a try-with-resources statement is the preferred way to close an I/O stream, it can be closed with
+a traditional try statement that uses a finally block. For this reason, both options D and E are correct.

@@ -102,3 +102,19 @@ This also includes primitives, which can be autoboxed to their wrapper classes.
 Some cast exceptions can be detected as errors at compile time, but others can only be detected at runtime, so option D is incorrect.
 Due to the nature of polymorphism, a final instance method cannot be overridden in a subclass, so calls in the parent class will not be replaced, making option E correct.
 Finally, polymorphism applies to classes and interfaces alike, making option F incorrect.
+
+### Which statements about polymorphism and method inheritance are correct? (Choose all that apply.)
+* A. It cannot be determined until runtime which overridden method will be executed in a parent class.
+* B. It cannot be determined until runtime which hidden method will be executed in a parent class.
+* C. Marking a method static prevents it from being overridden or hidden.
+* D. Marking a method final prevents it from being overridden or hidden.
+* E. The reference type of the variable determines which overridden method will be called at runtime.
+* F. The reference type of the variable determines which hidden method will be called at runtime.
+
+Polymorphism is the property of an object to take on many forms.
+Part of polymorphism is that methods are replaced through overriding wherever they are called,
+regardless of whether they’re in a parent or child class.
+For this reason, option A is correct, and option E incorrect.
+With hidden static methods, Java relies on the location and reference type to determine which method is called,
+making option B incorrect and F correct. Finally, making a method final, not static,
+prevents it from being overridden, making option D correct and option C incorrect.

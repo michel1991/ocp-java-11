@@ -261,5 +261,16 @@ When running the java command, you pass the name of the class rather than the na
 If you are using the single-file source-code feature, you use the name of the Java file.
 Since none of the options accepts the class filename, option F is correct.
 
+### Which of the following are true? (Choose all that apply.)
+*  A. A class variable of type boolean defaults to 0.
+*  B. A class variable of type boolean defaults to false.
+*  C. A class variable of type boolean defaults to null.
+*  D. A class variable of type long defaults to null.
+*  E. A class variable of type long defaults to 0L.
+*  F. A class variable of type long defaults to 0.
+*  G. None of the above
+
+Option B is correct because boolean primitives default to false. Option E is correct because long values default to 0L.
+
 
 
