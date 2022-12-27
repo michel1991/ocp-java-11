@@ -43,3 +43,16 @@ The default constructor is used if one is not supplied. There is no requirement 
 Checked exceptions include any class that inherits Exception, but not RuntimeException, while unchecked exceptions include any class
 that inherits RuntimeException or (less commonly) Error.
 Both ParseException and SQLException extend Exception, while FileNotFoundException extends IOException, which in turn extends Exception.
+
+### Which scenario is the best use of an exception?
+*  A. An element is not found when searching a list.
+*  B. An unexpected parameter is passed into a method.
+*  C. The computer caught fire.
+*  D. You want to loop through a list.
+*  E. You don’t know how to code a method.
+
+An IllegalArgumentException is used when an unexpected parameter is passed into a method.
+Option A is incorrect because returning null or -1 is a common return value for searching for data.
+Option D is incorrect because a for loop is typically used for this scenario.
+Option E is incorrect because you should find out how to code the method and not leave
+it for the unsuspecting programmer who calls your method. Option C is incorrect because you should run!
