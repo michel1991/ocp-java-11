@@ -573,6 +573,20 @@ Option A will not compile since there is not matching package name.
 Option E is correct as the module name matches the common prefix.
 Option F is incorrect because identifiers are not allowed to have a dash.
 
+### Which would you expect to see when describing any module?
+* A. requires java.base mandated
+* B. requires java.core mandated
+* C. requires java.lang mandated
+* D. requires mandated java.base
+* E. requires mandated java.core
+* F. requires mandated java.lang
+* G. None of the above
+
+When running java with the -d option, all the required modules are listed.
+Additionally, the java.base module is listed since it is included automatically.
+The line ends with mandated, making option A correct.
+The java.lang is a trick since that is a package that is imported by default in a class rather than a module.
+
 
 
 

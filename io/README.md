@@ -125,3 +125,18 @@ making option B correct and option C incorrect. It can refer to either a file or
 as directories can have extensions. For this reason, options D and E are correct.
 Finally, if the path does not exist, an exception is not thrown, so option A is incorrect.
 Note that calling m.exists() will tell you whether or not the paths exist in the file system.
+
+### What are the requirements for a class that you want to serialize to a stream? (Choose all that apply.)
+*  A. The class must be marked final.
+*  B. The class must extend the Serializable class.
+*  C. The class must declare a static serialVersionUID variable.
+*  D. All static members of the class must be marked transient.
+*  E. The class must implement the Serializable interface.
+*  F. All instance members of the class must be serializable or marked transient.
+
+For a class to be serialized, it must implement the Serializable interface and contain instance members
+that are serializable or marked transient. For these reasons, options E and F are correct.
+Marking a class final does not impact its ability to be serialized,
+so option A is incorrect. Option B is incorrect, as Serializable is an interface, not a class.
+Option C is incorrect. While it is a good practice for a serializable class to include a static serialVersionUID variable,
+it is not required. Finally, option D is incorrect as static members of the class are ignored on serialization already.
