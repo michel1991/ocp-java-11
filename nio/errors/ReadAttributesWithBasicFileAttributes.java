@@ -14,7 +14,8 @@ public class ReadAttributesWithBasicFileAttributes {
 
         The method to create a directory in the Files class is createDirectory(), not mkdir().
         For this reason, line 6 does not compile, and option C is correct.
-        In addition, the setTimes() method is available only on BasicFileAttributeView, not the read-only BasicFileAttributes, so line 8 will also not compile, making option E correct.
+        In addition, the setTimes() method is available only on BasicFileAttributeView,
+        not the read-only BasicFileAttributes, so line 8 will also not compile, making option E correct.
      */
    public static void readAttributes(){
        var p = Paths.get("sloth.schedule"); // 4:
