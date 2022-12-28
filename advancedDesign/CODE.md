@@ -99,3 +99,18 @@ While it does support some parts of functional programming, these occur within a
 
 There are three valid flags for the classpath parameter. The short form is -cp, making option A correct.
 The longer forms are -classpath and --class-path, making options B and E correct.
+
+### Which of the following are true if this command completes successfully assuming the CLASSPATH is not set? (Choose all that apply.)
+```java
+java MyProgram.java
+```
+*  A. A .class file is created.
+*  B. MyProgram can reference classes in the package com.sybex.book.
+*  C. MyProgram can reference classes in the package java.lang.
+*  D. MyProgram can reference classes in the package java.util.
+*  E. None of the above. The program needs to be run as java MyProgram.
+
+This example is using the single-file source-code launcher.
+It compiles in memory rather than creating a .class file, making option A incorrect.
+To use this launcher, programs can only reference classes built into the JDK or on the classpath.
+Therefore, option B is incorrect, and options C and D are incorrect.
