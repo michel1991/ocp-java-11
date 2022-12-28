@@ -216,4 +216,16 @@ The annotations @FunctionalInterface, @Repeatable, and @Retention cannot be appl
 Finally, @SafeVarargs can be applied to a method but will trigger a compiler error if the method does not contain a varargs parameter or is able to be overridden
 (not marked private, static, or final).
 
+### When using the @Deprecated annotation, what other annotation should be used and why?
+*  A. @repeatable, along with a containing type annotation
+*  B. @retention, along with a location where the value should be discarded
+*  C. @deprecated, along with a reason why and a suggested alternative
+*  D. @SuppressWarnings, along with a cause
+*  E. @Override, along with an inherited reference
+
+The Javadoc @deprecated annotation should be used, which provides a reason
+for the deprecation and suggests an alternative. All of the other answers are incorrect,
+with options A and B having the wrong case too. Those annotations should be written
+@Repeatable and @Retention since they are Java annotations.
+
 

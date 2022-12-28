@@ -587,6 +587,16 @@ Additionally, the java.base module is listed since it is included automatically.
 The line ends with mandated, making option A correct.
 The java.lang is a trick since that is a package that is imported by default in a class rather than a module.
 
+### Which are valid calls to list a summary of the dependencies? (Choose all that apply.)
+* A. jdeps flea.jar
+* B. jdeps -s flea.jar
+* C. jdeps -summary flea.jar
+* D. jdeps --summary flea.jar
+* E. None of the above
+
+Option A will run, but it will print details rather than a summary.
+Options B and C are both valid options for the jdeps command.
+Remember that -summary uses a single dash (-).
 
 
 

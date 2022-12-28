@@ -72,7 +72,7 @@ If the two classes are not in the same package, they will compile if ribbit() ha
 * E. package a;
 * F. package A;
 
-The package name represents any folders underneath the current path, which is named.Ain this case.
+The package name represents any folders underneath the current path, which is named.A in this case.
 Option B is incorrect because package names are case sensitive, just like variable names and other identifiers.
 
 ### Given the following my.school.Classroom and my.city.School class definitions, which line numbers in main() generate a compiler error? (Choose all that apply.)
