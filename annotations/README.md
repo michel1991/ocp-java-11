@@ -228,4 +228,15 @@ for the deprecation and suggests an alternative. All of the other answers are in
 with options A and B having the wrong case too. Those annotations should be written
 @Repeatable and @Retention since they are Java annotations.
 
+### What modifier is used to mark that an annotation element is required?
+*  A. optional
+*  B. default
+*  C. required
+*  D. *
+*  E. None of the above
+
+In an annotation, an optional element is specified with the default modifier, followed by a constant value.
+Required elements are specified by not providing a default value.
+Therefore, the lack of the default term indicates the element is required. For this reason, option E is correct.
+
 

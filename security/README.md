@@ -124,3 +124,17 @@ Even though the int value is larger than a short, it is implicitly cast to a sho
 Option E is incorrect, as you cannot use a decimal (.) with the long (L) postfix.
 Finally, option F is incorrect, as an underscore cannot be used next to a decimal point. For more information, see Chapter 3.
 
+
+### Which are true about securing confidential information? (Choose all that apply.)
+* A. It is OK to access it in your program.
+* B. It is OK to have it in an exception message.
+* C. It is OK to put it in a char[].
+* D. It is OK to share it with other users.
+* E. None of the above
+
+Many programs use confidential information securely, making option A correct.
+After all, you wouldn’t be able to bank online if programs couldn’t work with confidential information.
+It is also OK to put it in certain data structures.
+A built-in Java API puts a password in a char[], making option C correct.
+Exposing the information unintentionally is not OK, making option B incorrect.
+Sharing confidential information with others is definitely not OK, making option D incorrect.

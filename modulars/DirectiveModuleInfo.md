@@ -217,3 +217,23 @@ Exporting is necessary for other code to uses the packages;
 it is not necessary to call the main method at the command line, making option C correct and option D incorrect.
 The module-info.java file has the correct name and compiles, making options E and F incorrect.
 
+### Which are true statements about the following module? (Choose all that apply.)
+```java
+    class dragon {
+        exports com.dragon.fire;
+        exports com.dragon.scales to castle;
+
+    }
+```
+
+
+* A. All modules can reference the com.dragon.fire package.
+*  B. All modules can reference the com.dragon.scales package.
+*  C. Only the castle module can reference the com.dragon.fire package.
+*  D. Only the castle module can reference the com.dragon.scales package.
+*  E. None of the above
+
+There is a trick here. A module definition uses the keyword module rather than class.
+Since the code does not compile, option E is correct. If the code did compile,
+options A and D would be correct.
+
