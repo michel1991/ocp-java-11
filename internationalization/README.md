@@ -69,4 +69,16 @@ A locale consists of a required lowercase language code, followed by an optional
 Option A is incorrect because the country code is lowercase. Options B and D are incorrect because the language code should not contain uppercase characters.
 Option C correctly defines a language code with no country, while option E defines both in the correct format.
 
+### Which of the following are common types to localize? (Choose all that apply.)
+* A. Dates
+* B. Lambda expressions
+* C. Class names
+* D. Currency
+* E. Numbers
+* F. Variable names
+
+Localization refers to user-facing elements. Dates, currency, and numbers are commonly
+used in different formats for different countries. Class and variable names,
+along with lambda expressions, are internal to the application, so there is no need to translate them for users.
+
 

@@ -598,5 +598,19 @@ Option A will run, but it will print details rather than a summary.
 Options B and C are both valid options for the jdeps command.
 Remember that -summary uses a single dash (-).
 
+### Which of the following are legal commands to run a modular program where n is the package name and c is the class name? (Choose all that apply.)
+* A. java –module-path x -m n.c
+* B. java --module-path x -p n.c
+* C. java --module-path x -m n/c
+* D. java --module-path x -p n/c
+* E. java --module-path x -m n c
+* F. java --module-path x -p n c
+* G. None of the above
+
+The -p option is a shorter form of --module-path. Since the same option cannot be specified
+twice, options B, D, and F are incorrect. The module name and class name are separated with a slash (/).
+However, the question supplies a package name, not a module name, making option G the answer.
+
+
 
 
