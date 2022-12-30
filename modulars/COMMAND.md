@@ -72,3 +72,19 @@ The jdeps command uses command-line options to restrict the output to the summar
 
 Options A and B are correct because the -p (--module-path) option can be passed when compiling or running a program.
 Option D is also correct because jdeps can use the --module-path option when listing dependency information.
+
+### Given the following command, which of the following classes would be included for compilation? (Choose all that apply.)
+```sh
+ javac *.java
+```
+
+* A. Hyena.java
+* B. Warthog.java
+* C. land/Hyena.java
+* D. land/Warthog.java
+* E. Hyena.groovy
+* F. Warthog.groovy
+
+The wildcard is configured for files ending in .java, making options E and F incorrect.
+Additionally, wildcards aren’t recursive, making options C and D incorrect.
+Therefore, options A and B are correct.
