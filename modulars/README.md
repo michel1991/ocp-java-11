@@ -502,36 +502,6 @@ Option B is correct since modules allow you to specify which packages can be cal
 Options C and E are incorrect because they are provided by Java without the module system.
 Option A is incorrect because there is not a central repository of modules. Option D is incorrect because Java defines types.
 
-### Which commands take a --module-path parameter? (Choose all that apply.)
-*  A. javac
-*  B. java
-*  C. jar
-*  D. jdeps
-*  E. jmod
-*  F. None of the above
-
-Options A and B are correct because the -p (--module-path) option can be passed when compiling or running a program.
-Option D is also correct because jdeps can use the --module-path option when listing dependency information.
-
-### Which are true of the --module option? (Choose all that apply.)
-*  A. It is an option on the javac command.
-*  B. It is an option on the java command.
-*  C. It is an option on the jar command.
-*  D. It is an option on the jdeps command.
-*  E. It has a short form of -m.
-*  F. It has a short form of -p.
-
-Option B is correct because the only command that has a --module option is java. Option E is correct because -m is equivalent.
-
-### Which commands can list dependencies? (Choose all that apply.)
-* A. jdeps flea.jar
-* B. jdeps -d flea.jar
-* C. jdeps -detail flea.jar
-* D. jdeps --detail flea.jar
-
-Option A is correct because it prints the details of the dependencies.
-Options B, C, and D try to fool you with an invalid option.
-The jdeps command uses command-line options to restrict the output to the summary level.
 
 ### Which option best fills in the blanks in the following statements: In the module-info file, a module that wants to use code in another module specifies the directive ________. By contrast, the module that wants to allow other modules to use its code specifies the directive ___________.
 * A. exports and requires
@@ -586,30 +556,6 @@ When running java with the -d option, all the required modules are listed.
 Additionally, the java.base module is listed since it is included automatically.
 The line ends with mandated, making option A correct.
 The java.lang is a trick since that is a package that is imported by default in a class rather than a module.
-
-### Which are valid calls to list a summary of the dependencies? (Choose all that apply.)
-* A. jdeps flea.jar
-* B. jdeps -s flea.jar
-* C. jdeps -summary flea.jar
-* D. jdeps --summary flea.jar
-* E. None of the above
-
-Option A will run, but it will print details rather than a summary.
-Options B and C are both valid options for the jdeps command.
-Remember that -summary uses a single dash (-).
-
-### Which of the following are legal commands to run a modular program where n is the package name and c is the class name? (Choose all that apply.)
-* A. java –module-path x -m n.c
-* B. java --module-path x -p n.c
-* C. java --module-path x -m n/c
-* D. java --module-path x -p n/c
-* E. java --module-path x -m n c
-* F. java --module-path x -p n c
-* G. None of the above
-
-The -p option is a shorter form of --module-path. Since the same option cannot be specified
-twice, options B, D, and F are incorrect. The module name and class name are separated with a slash (/).
-However, the question supplies a package name, not a module name, making option G the answer.
 
 
 

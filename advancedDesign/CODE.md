@@ -43,6 +43,21 @@ Options D and E are incorrect because static imports must import members and not
         Water water;
     }
 ```
+
+``` txt
+    A. import aquarium.*;
+    B. import aquarium.Water; import aquarium.jellies.*;
+
+    C. import aquarium.*; import aquarium.jellies.Water;
+
+    D. import aquarium.*; import aquarium.jellies.*;
+
+    E. import aquarium.Water; import aquarium.jellies.Water;
+
+    F. None of these imports can make the code compile.
+
+```
+
 Option A is correct because it imports all the classes in the aquarium package including aquarium.Water.
 Options B and C are correct because they import Water by class name.
 Since importing by class name takes precedence over wildcards, these compile.
