@@ -4,7 +4,7 @@ import java.util.*;
 
 class MyComparator implements Comparator<String> {
     /**
-    *  What is the result of the following program?
+       What is the result of the following program?
         A. Abb aab 123
         B. aab Abb 123
         C. 123 Abb aab
@@ -12,8 +12,8 @@ class MyComparator implements Comparator<String> {
         E. The code does not compile.
         F. A runtime exception is thrown.
 
-    * The array is sorted using MyComparator, which sorts the elements in reverse alphabetical order in a case-insensitive fashion.
-    * Normally, numbers sort before letters. This code reverses that by calling the compareTo() method on b instead of a.
+       The array is sorted using MyComparator, which sorts the elements in reverse alphabetical order in a case-insensitive fashion.
+       Normally, numbers sort before letters. This code reverses that by calling the compareTo() method on b instead of a.
      */
     public int compare(String a, String b) {
         return a.toLowerCase().compareTo(a.toLowerCase());
@@ -28,7 +28,8 @@ class MyComparator implements Comparator<String> {
 
 class ListComparison{
     /**
-    * What is the output of the following code?
+      What is the output of the following code?
+      
         A. [leo, Olivia]
         B. [Olivia, leo]
         C. The code does not compile because of line X.
