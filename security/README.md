@@ -138,3 +138,14 @@ It is also OK to put it in certain data structures.
 A built-in Java API puts a password in a char[], making option C correct.
 Exposing the information unintentionally is not OK, making option B incorrect.
 Sharing confidential information with others is definitely not OK, making option D incorrect.
+
+### How many requests does it take to have a DDoS attack?
+* A. None
+* B. One
+* C. Two
+* D. Many
+
+A distributed denial of service (DDoS) attack requires multiple requests by definition.
+Even a regular denial of service attack often requires multiple requests.
+For example, if you forget to close resources, it will take a number of tries for your application to run out resources.
+Therefore, option D is correct.
