@@ -152,3 +152,20 @@ it is not required. Finally, option D is incorrect as static members of the clas
 All I/O streams should be closed after use or a resource leak might ensue, making option C correct.
 While a try-with-resources statement is the preferred way to close an I/O stream, it can be closed with
 a traditional try statement that uses a finally block. For this reason, both options D and E are correct.
+
+### What are some advantages of using Files.lines() over Files.readAllLines()? (Choose all that apply.)
+* A. It is often faster.
+* B. It can be run with little memory available.
+* C. It can be chained with functional programming methods like filter() and map() directly.
+* D. It does not modify the contents of the file.
+* E. It ensures the file is not read-locked by the file system.
+* F. There are no differences, because one method is a pointer to the other.
+
+The methods are not the same, because Files.lines() returns a Stream<String> and Files.readAllLines()
+returns a List<String>, so option F is incorrect. Option A is incorrect, because performance is not often
+the reason to prefer one to the other. Files.lines() processes each line via lazy evaluation, while Files.readAllLines()
+reads the entire file into memory all at once.
+For this reason, Files.lines() works better on large files with limited memory available, and option B is correct.
+Although a List can be converted to a stream, this requires an extra step; therefore,
+option C is correct since the resulting object can be chained directly to a stream.
+Finally, options D and E are incorrect because they are true for both methods.

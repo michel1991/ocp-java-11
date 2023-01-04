@@ -149,3 +149,16 @@ A distributed denial of service (DDoS) attack requires multiple requests by defi
 Even a regular denial of service attack often requires multiple requests.
 For example, if you forget to close resources, it will take a number of tries for your application to run out resources.
 Therefore, option D is correct.
+
+### Which statements are true about the clone() method? (Choose all that apply.)
+* A. Calling clone() on any object will compile.
+* B. Calling clone() will compile only if the class implements Cloneable.
+* C. If clone() runs without exception, it will always create a deep copy.
+* D. If clone() runs without exception, it will always create a shallow copy.
+* E. If clone() is not overridden and runs without exception, it will create a deep copy.
+* F. If clone()is not overridden and runs without exception, it will create a shallow copy.
+
+The clone() method is declared on the Object class. Option A is correct because it will always compile.
+However, the call will throw an exception if the class that is being cloned does not implement Cloneable.
+Assuming this interface is implemented, the default implementation creates a shallow copy, making option F correct.
+If the class wants to implement a deep copy, it must override the clone() method with a custom implementation.
