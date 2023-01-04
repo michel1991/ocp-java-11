@@ -2,7 +2,7 @@ package internationalization;
 import java.util.stream.*;
 import java.text.*;
 
-public class ForamtNumber {
+public class FormatNumbers {
     /**
     * QUESTION:  For what value of pattern will the following print <005.21> <008.49> <1,234.0>?
     * A. ##.#
