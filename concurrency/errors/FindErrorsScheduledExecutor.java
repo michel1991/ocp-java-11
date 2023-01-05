@@ -13,9 +13,12 @@ public class FindErrorsScheduledExecutor {
         G. None of the above
 
        The code does not compile, so options A and F are incorrect.
-       The first problem is that although a ScheduledExecutorService is created, it is assigned to an ExecutorService.
-        The type of the variable on line w1 would have to be updated to ScheduledExecutorService for the code to compile, making option B correct.
-        The second problem is that scheduleWithFixedDelay() supports only Runnable, not Callable, and any attempt to return a value is invalid in a Runnable lambda expression;
+       The first problem is that although a ScheduledExecutorService is created,
+       it is assigned to an ExecutorService.The type of the variable on line w1
+       would have to be updated to ScheduledExecutorService for the code to compile,
+       making option B correct. The second problem is that scheduleWithFixedDelay()
+       supports only Runnable, not Callable, and any attempt to return a value is invalid
+       in a Runnable lambda expression;
         therefore, line w2 will also not compile, and option C is correct. The rest of the lines compile without issue, so options D and E are incorrect.
      */
    public static void findErrors(){
