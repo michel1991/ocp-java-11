@@ -17,6 +17,7 @@ public class ComplexUncheckedException {
         Line 18 prints c, and then line 19 throws another exception.
         Regardless, the finally block runs, printing e.
         Since the finally block also throws an exception, that’s the one printed.
+        Correct are A and E.
      */
     public static void main(String[] args) { //   12:
         System.out.print("a"); //   13:
