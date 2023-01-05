@@ -169,3 +169,45 @@ For this reason, Files.lines() works better on large files with limited memory a
 Although a List can be converted to a stream, this requires an extra step; therefore,
 option C is correct since the resulting object can be chained directly to a stream.
 Finally, options D and E are incorrect because they are true for both methods.
+
+### An object has validation code in the constructor. When deserializing an object, the constructor is called with which of the following?
+* A. readObject()
+* B. readResolve()
+* C. Both
+* D. Neither
+
+When deserializing an object, Java does not call the constructor. Therefore, option D is correct.
+
+### Which of the following are true? (Choose all that apply.)
+*  A. System.console() will throw an IOException if a Console is not available.
+*  B. System.console() will return null if a Console is not available.
+*  C. A new Console object is created every time System.console() is called.
+*  D. Console can be used only for writing output, not reading input.
+*  E. Console includes a format() method to write data to the console’s output stream.
+*  F. Console includes a println() method to write data to the console’s output stream.
+
+The JVM creates one instance of the Console object as a singleton, making option C incorrect.
+If the console is unavailable, System.console() will return null, making option B correct.
+The method cannot throw an IOException because it is not declared as a checked exception.
+Therefore, option A is incorrect. Option D is incorrect,
+as a Console can be used for both reading and writing data.
+The Console class includes a format() method to write data to the output stream,
+making option E correct. Since there is no println() method,
+as writer() must be called first, option F is incorrect.
+
+### Which of the following are methods available on instances of the java.io.File class? (Choose all that apply.)
+*  A. mv()
+*  B. createDirectory()
+*  C. mkdirs()
+*  D. move()
+*  E. renameTo()
+*  F. copy()
+*  G. mkdir()
+
+The command to move a file or directory using a File is renameTo(), not mv() or move(),
+making options A and D incorrect, and option E correct. The commands to create a
+directory using a File are mkdir() and mkdirs(),not createDirectory(),
+making option B incorrect, and options C and G correct.
+The mkdirs() differs from mkdir() by creating any missing directories along the path.
+Finally, option F is incorrect as there is no command to copy a file in the File class.
+You would need to use an I/O stream to copy the file along with its contents.

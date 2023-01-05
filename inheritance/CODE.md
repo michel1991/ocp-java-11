@@ -74,3 +74,36 @@ One of these must differ to be an overload. Option F is incorrect because the me
 It is a perfectly fine method, but it isn’t an overload.
 Options A, D, and E are correct overloads because the method name is the same and the method parameter list is different.
 Anything else is allowed to vary. Remember that Java is case sensitive.
+
+### Subdomain: Create and extend abstract classes Which of the following classes and interfaces are correct and compile? (Choose all that apply.)
+
+```java
+    abstract class Camel {
+        void travel();
+    }
+    interface EatsGrass {
+        protected int chew();
+    }
+    abstract class Elephant {
+        abstract private class SleepsAlot {
+            abstract int sleep();
+        }
+    }
+    class Eagle {
+        abstract soar();
+    }
+```
+
+* A. SleepsAlot
+* B. Eagle
+* C. Camel
+* D. Elephant
+* E. EatsGrass
+* F. None of the classes or interfaces compile.
+
+The implementation of Elephant and its member inner class SleepsAlot are valid, making options A and D correct.
+Option B is incorrect, as Eagle must be marked abstract to contain an abstract method.
+Option C is also incorrect.
+Since the travel() method does not declare a body, it must be marked abstract in an abstract class.
+Finally, option E is incorrect, as interface methods are implicitly public.
+Marking them protected results in a compiler error.

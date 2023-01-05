@@ -116,3 +116,15 @@ Option F is incorrect because String is not a primitive, but an object. Only pri
 All interface variables are assumed to be public, static, and final, making options B and F correct.
 The other modifiers, while all Java keywords, cannot be applied to interface variables. Note that const is an unused keyword in Java.
 
+### What are some advantages of using private interface methods? (Choose all that apply.)
+* A. Improve polymorphism
+* B. Improve performance at runtime
+* C. Reduce code duplication
+* D. Backward compatibility
+* E. Encapsulate interface implementation
+* F. Portability
+
+You can reduce code duplication by moving shared code from default or static methods into a private or private static method.
+For this reason, option C is correct. Option E is also correct, as making interface methods private means users of the interface do not have access to them.
+The rest of the options are not related to private methods, although backward compatibility does apply to default methods.
+
