@@ -31,7 +31,8 @@ Options B and E are the correct answers because they do not have equivalents.
 * E. -f
 * F. -p
 
-When creating a jar file, you use the options -cf or -cvf, making options A and E correct. It also allows the specification of a directory using -C, making option B correct.
+When creating a jar file, you use the options -cf or -cvf, making options A and E correct.
+It also allows the specification of a directory using -C, making option B correct.
 Options D and E are incorrect because -d and -p are used for modules.
 
 ### Fill in the blanks to complete this sentence: The show-module-resolution option is on the _______ command, and the summary option is on the _______ command.
@@ -188,8 +189,10 @@ No modules need to specify requires on the service provider since that is the im
 *  D. It can run only against a named module.
 *  E. It can run against a regular JAR.
 
-The jdeps command provides information about the class or package level depending on the options passed, making option C correct.
-It is frequently used to determine what dependencies you will need when converting to modules. This makes it useful to run against a regular JAR, making option E correct.
+The jdeps command provides information about the class or package level
+depending on the options passed, making option C correct.
+It is frequently used to determine what dependencies you will need when converting to modules.
+This makes it useful to run against a regular JAR, making option E correct.
 
 ### Which are true of the --module-path option? (Choose all that apply.)
 *  A. It is an option on the javac command.

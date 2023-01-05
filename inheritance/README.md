@@ -52,8 +52,10 @@ None of these methods are required to use the same return type, making options D
 An inner class can be marked abstract or final, just like a regular class, making option A correct.
 A top-level type, such as a class, interface, or enum, can only be marked public or default (package-private), making option B incorrect.
 Option C is incorrect, as a member inner class can be marked public, and this would not make it a top-level class.
-A .java file may contain multiple top-level classes, making option D incorrect. The precise rule is that there is at most one public top-level type, and that type is used in the file name.
-Finally, option E is correct. When a member inner class is marked private, it behaves like any other private members and can be referenced only in the class in which it is defined.
+A .java file may contain multiple top-level classes, making option D incorrect.
+The precise rule is that there is at most one public top-level type, and that type is used in the file name.
+Finally, option E is correct. When a member inner class is marked private,
+it behaves like any other private members and can be referenced only in the class in which it is defined.
 
 ### Which statements about polymorphism and method inheritance are correct? (Choose all that apply.)
 * A. A subclass may implement a static method with the same method signature as an inherited instance method.
@@ -118,3 +120,15 @@ For this reason, option A is correct, and option E incorrect.
 With hidden static methods, Java relies on the location and reference type to determine which method is called,
 making option B incorrect and F correct. Finally, making a method final, not static,
 prevents it from being overridden, making option D correct and option C incorrect.
+
+### Which techniques can prevent an attacker from creating a top-level subclass that overrides a method called from the constructor? (Choose all that apply.)
+* A. Adding final to the class
+* B. Adding final to the method
+* C. Adding transient to the class
+* D. Adding transient to the method
+* E. Making the constructor private
+* F. None of the above
+
+Options A and E are correct because they prevent subclasses from being created outside the class definition.
+Option B is also correct because it prevents overriding the method.
+Options C and D are incorrect because transient is a modifier for variables, not classes or methods.
