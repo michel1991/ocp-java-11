@@ -129,3 +129,30 @@ This example is using the single-file source-code launcher.
 It compiles in memory rather than creating a .class file, making option A incorrect.
 To use this launcher, programs can only reference classes built into the JDK or on the classpath.
 Therefore, option B is incorrect, and options C and D are incorrect.
+
+### Given the following classes, what is the maximum number of imports that can be removed and have the code still compile?
+```java
+    package aquarium;
+    public class Water { }
+
+    package aquarium;
+    import java.lang.*;
+    import java.lang.System;
+    import aquarium.Water;
+    import aquarium.*;
+    public class Tank {
+        public void print(Water water) {
+            System.out.println(water); } }
+```
+* A. 0
+* B. 1
+* C. 2
+* D. 3
+* E. 4
+* F. Does not compile
+
+The first two imports can be removed because java.lang is automatically imported.
+The following two imports can be removed because Tank and Water are in the same package,
+making the correct option E.
+If Tank and Water were in different packages, exactly one of these two imports could be removed.
+In that case, the answer would be option D.
