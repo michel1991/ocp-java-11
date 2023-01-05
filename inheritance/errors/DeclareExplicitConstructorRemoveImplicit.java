@@ -1,4 +1,4 @@
-package advancedDesign.errors;
+package inheritance.errors;
 /**
     How many lines of the following program contain a compilation error?
     A. None
