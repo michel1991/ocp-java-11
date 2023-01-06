@@ -17,3 +17,6 @@ an object is eligible for garbage collection.
 Finally, option G is incorrect as marking a variable final means it is constant within its own scope.
 For example, a local variable marked final will be eligible for garbage collection after the method ends,
 assuming there are no other references to the object that exist outside the method
+
+### Response Grasshopper
+* C, D

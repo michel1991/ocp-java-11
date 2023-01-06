@@ -579,6 +579,20 @@ The java.lang is a trick since that is a package that is imported by default in 
 
 Modules are required to have a module-info.java file at the root directory of the module. Option D matches this requirement.
 
+### Suppose you have separate modules for a service provider interface, service provider, service locator, and consumer. If you add a new abstract method to the service provider interface and call it from the consumer module, how many of these modules do you need to re-compile?
+* A. Zero
+* B. One
+* C. Two
+* D. Three
+* E. Four
+
+Since you are changing the service provider interface,
+you have to re-compile it. Similarly, you need to re-compile the service provider
+because it now needs to implement the new method.
+The consumer module needs to be re-compiled as well since the code has changed to call the new method.
+Therefore, three modules need to be re-compiled, and option D is correct.
+The service locator does not need to be re-compiled since it simply looks up the interface.
+For more information, see Chapter 6.
 
 
 
