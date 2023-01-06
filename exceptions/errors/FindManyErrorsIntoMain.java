@@ -1,4 +1,4 @@
-package advancedDesign.errors;
+package exceptions.errors;
 import java.io.*;
 
 /**
