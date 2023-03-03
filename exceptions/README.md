@@ -111,7 +111,7 @@ Both runtime and checked exceptions can be declared, although only checked excep
 Legally, you can handle java.lang.Error subclasses, which are not subclasses of Exception, but it’s not a good idea, so option E is incorrect.
 Finally, it is true that all exceptions are subclasses of Throwable, making option F correct.
 
-#  Which of the following statements about finally blocks are true? (Choose all that apply.)
+###  Which of the following statements about finally blocks are true? (Choose all that apply.)
 * A. A finally block is never required with a regular try statement.
 * B. A finally block is required when there are no catch blocks in a regular try statement.
 * C. A finally block is required when the program code doesn’t terminate on its own.
@@ -127,4 +127,19 @@ Option C is incorrect, as there is no requirement a program must terminate. Opti
 While additional resources can be created or declared in a try-with-resources statement, none are required to be closed by a finally block.
 Option G is also incorrect.
 The implicit or hidden finally block created by the JVM when a try-with-resources statement is declared is executed first, followed by any programmer-defined finally block.
+
+### Which of the following statements about finally blocks are true? (Choose two.)
+* A. Every line of the finally block is guaranteed to be executed.
+* B. The finally block is executed only if the related catch block is also executed.
+* C. The finally statement requires curly braces, {}.
+* D. A finally block cannot throw an exception.
+* E. The first line of a finally block is guaranteed to be executed.
+* F. A finally block can only throw unchecked exceptions.
+
+A finally block requires curly braces, making option C correct.
+A finally block can throw an exception in which case not every line of the finally block will be executed.
+For this reason, option E is correct, and options A and D are incorrect.
+Option B is incorrect because a finally block is called regardless of whether the related catch block is executed.
+A finally block can throw both checked and unchecked exceptions, making option F incorrect.
+If the exception is checked, then it must be handled or declared in the method in which the finally block is used.
 

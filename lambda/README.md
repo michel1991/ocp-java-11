@@ -64,3 +64,14 @@ Option E is incorrect because the name used in the parameter list does not match
 Option A is correct because it is the simplest lambda syntax. Options B and D are incorrect because the final modifier must precede a type.
 While var can replace the type, option C is invalid because the parentheses around the type and variable are missing.
 Options E, F, and G are valid because they specify a type and an optional final modifier.
+
+### Which statement is true?
+* A. All lambdas can be converted to method references, and vice versa.
+* B. All lambdas can be converted to method references, but not vice versa.
+* C. All method references can be converted to lambdas, but not vice versa.
+* D. None of the above.
+
+Method references are a shorter way of writing lambdas, and all method references can be expanded to lambdas.
+However, this does not apply in reverse. Consider the lambda: () -˃ s.charAt(n).
+The n variable can only be an effectively final variable in lambdas, but not in method references.
+Since only method references can always be converted, option C is correct.

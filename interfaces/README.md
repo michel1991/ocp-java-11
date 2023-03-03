@@ -128,3 +128,14 @@ You can reduce code duplication by moving shared code from default or static met
 For this reason, option C is correct. Option E is also correct, as making interface methods private means users of the interface do not have access to them.
 The rest of the options are not related to private methods, although backward compatibility does apply to default methods.
 
+### Which statement about functional interfaces is incorrect?
+* A. A functional interface can have any number of static methods.
+* B. A functional interface can have any number of default methods.
+* C. A functional interface can have any number of private static methods.
+* D. A functional interface can have any number of abstract methods.
+* E. A functional interface can have any number of private methods.
+* F. All of the above are correct.
+
+A functional interface may have any number of static, default, private static, or private methods.
+It can have only one qualified abstract method, though, making option D correct.
+

@@ -19,7 +19,7 @@ Options D and F are incorrect because they are not interfaces in the JDK. For mo
 * D. Read
 * E. Reading.
 * F. Select.
-*G. None of the above. All operations are allowed.
+* G. None of the above. All operations are allowed.
 
 CRUD stands for Create Read Update Delete, making options B, C, E, and F incorrect.
 The executeUpdate() method is not allowed to make read operations.
@@ -254,5 +254,19 @@ Since there are four errors, option E is correct
 A Connection is created using a static method on DriverManager.
 It does not use a constructor. Therefore, option C is correct.
 If the Connection was created properly, the answer would be option B.
+
+### Which is a benefit of PreparedStatement over Statement? (Choose two.)
+* A. Language independence
+* B. NoSQL support
+* C. Readability
+* D. Security
+* E. Supports stored procedures
+
+JDBC uses Java and SQL, so it is not language independent, making option A incorrect. It is used with relational databases, ruling out option B.
+A CallableStatement supports stored procedures, not a PreparedStatement, making option E incorrect.
+Options C and D are correct.
+Using bind variables with a PreparedStatement produces code that is easier to read than one with a lot of String concatenation.
+Further, when used properly, a PreparedStatement prevents SQL injection.
+
 
 

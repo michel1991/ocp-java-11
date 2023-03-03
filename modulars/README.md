@@ -594,5 +594,18 @@ Therefore, three modules need to be re-compiled, and option D is correct.
 The service locator does not need to be re-compiled since it simply looks up the interface.
 For more information, see Chapter 6.
 
+### What is true about the following module-info.java file?
+``` java
+ module Book {
+ }
+```
+* A. It does not compile because it is empty.
+* B. It does not compile because the module name is uppercase.
+* C. It does not compile because the module name has only one component.
+* D. It does not compile for another reason.
+
+Option E is correct as this code does compile. While it is uncommon, a module is not required to have any directives in the body.
+Similarly, module names are lowercase and have more than one component by convention.
+None of these problems prevents the file from compiling, though.
 
 
