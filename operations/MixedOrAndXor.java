@@ -25,6 +25,32 @@ public class MixedOrAndXor {
           System.out.println(hawk);
       }
 
+    /**
+     *  What is the output of the following code snippet?
+        A. true,false,true
+        B. true,true,true
+        C. false,false,false
+        D. false,true,true
+        E. false,false,true
+        F. The code does not compile.
+
+       The code compiles, so option F is incorrect.
+       The first expression evaluates to true & false, which sets carrot to false.
+       The next expression resolves to true ? true : false, which results in broccoli being set to true.
+       The last expression reduces to false ^ false, which sets potato to false.
+       Therefore, option E is the correct output.
+
+     */
+    static void secondSample(){
+        boolean carrot = true;
+        Boolean potato = false;
+        var broccoli = true;
+        carrot = carrot & potato;
+        broccoli = broccoli ? !carrot : potato;
+        potato = !broccoli ^ carrot;
+        System.out.println(carrot + "," + potato + "," + broccoli);
+    }
+
     public static void main(String... args){
         firstExample();
     }
