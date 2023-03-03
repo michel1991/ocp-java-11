@@ -36,4 +36,19 @@ public class MouseLoadApiProvider {
                                    .findFirst()
                                    .orElse("");
   }
+    /**
+       Which line of code belongs in a service locator?
+            A. ServiceLoader loader = ServiceLoader.load();
+            B. ServiceLoader loader = ServiceLoader.load(Mouse.class);
+            C. ServiceLoader˂Mouse˃ loader = ServiceLoader.load();
+            D. ServiceLoader˂Mouse˃ loader = ServiceLoader.load(Mouse.class);
+            E. Mouse loader = ServiceLoader.load();
+            F. Mouse loader = ServiceLoader.load(Mouse .class)
+
+           The service locator contains a ServiceLoader call to look up the service loader.
+           It takes the type of class it looked up as a parameter and returns a generic, making option D the correct answer.
+     */
+    static void loadWithOutStream(){
+      ServiceLoader<Mouse> loader = ServiceLoader.load(Mouse.class);
+    }
 }
