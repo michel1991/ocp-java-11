@@ -1,4 +1,4 @@
-package advancedDesign;
+package encapsulation;
 
 import java.util.*;
 
