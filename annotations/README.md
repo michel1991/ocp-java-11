@@ -36,19 +36,6 @@ The first, the repeatable annotation, needs to be declared with @Repeatable and 
 The second, the containing annotation type, must include an element named value() that includes an array of the repeatable annotation type.
 For these reasons, options A, E, and F are correct.
 
-### Which annotation can cancel out a warning on a method using the @Deprecated API at compile time?
-
-* A. @FunctionalInterface
-* B. @Ignore
-* C. @IgnoreDeprecated
-* D. @Retention
-* E. @SafeVarargs
-* F. @SuppressWarnings
-
-If @SuppressWarnings("deprecation") is applied to a method that is using a deprecated API,
-then warnings related to the usage will not be shown at compile time, making option F correct.
-Note that there are no built-in annotations called @Ignore or @IgnoreDeprecated.
-
 ### What properties must be true to use an annotation with an element value, but no element name? (Choose all that apply.)
 * A. The element must be named values().
 * B. The element must be required.
@@ -78,7 +65,7 @@ For these reasons, options A and D are correct.
 * B. To provide documentation to other developers
 * C. To allow the interface to be used as a method reference
 * D. There is no reason to use this annotation.
-*  E. To trigger a compiler error if the annotation is used incorrectly
+* E. To trigger a compiler error if the annotation is used incorrectly
 
 The @FunctionalInterface marker annotation is used to document that an interface is a valid functional interface that contains exactly one abstract method, making option B correct.
 It is also useful in determining whether an interface is a valid functional interface, as the compiler will report an error if used incorrectly, making option E correct.
@@ -123,21 +110,6 @@ A marker annotation is one that contains no elements, optional or required.
 For this reason, @SafeVarargs, @Override, @Documented, and @FunctionalInterface correct.
 The annotations @SuppressWarnings and @Target contain a required element, making options E and F incorrect.
 Option C is also incorrect, as @Deprecated can take optional values.
-
-
-### Which annotations require a value to be applied to a declaration? (Choose all that apply.)
-* A. @Retention
-* B. @Documented
-* C. @FunctionalInterface
-* D. @SafeVarargs
-* E. @Repeatable
-* F. @Deprecated
-* G. @SuppressWarnings
-
-@Documented, @FunctionalInterface, and @SafeVarargs are marker annotations and do not take any values.
-On the other hand, @Retention requires a RetentionPolicy value, making option A correct.
-Likewise, @Repeatable requires a containing annotation type, and @SuppressWarnings requires a String[] value, making options E and G correct, respectively.
-Finally, option F is incorrect. While @Deprecated may take a since() String value or forRemoval() boolean value, both are optional.
 
 ### Which annotation can cancel out a warning on a method using the @Deprecated API at compile time?
 * A. @FunctionalInterface
@@ -249,6 +221,3 @@ Therefore, the lack of the default term indicates the element is required. For t
 A marker annotation is an annotation with no elements.
 It may or may not have constant variables, making option B correct.
 Option E is incorrect as no annotation can be extended.
-
-
-
