@@ -1,3 +1,4 @@
+package annotations.errors;
 import java.lang.annotation.*; // 1:
 
 /**
