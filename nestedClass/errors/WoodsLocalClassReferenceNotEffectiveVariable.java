@@ -1,4 +1,4 @@
-package inheritance.errors;
+package nestedClass.errors;
 
 /**
  *  What is the output of the following application?
