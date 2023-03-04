@@ -132,3 +132,16 @@ prevents it from being overridden, making option D correct and option C incorrec
 Options A and E are correct because they prevent subclasses from being created outside the class definition.
 Option B is also correct because it prevents overriding the method.
 Options C and D are incorrect because transient is a modifier for variables, not classes or methods.
+
+### Which statements about the @Overrideannotation are correct? (Choose three.)
+* A. It can be optionally specified when a class implements an abstract interface method.
+*  B. Adding it to a method may trigger a compiler error.
+*  C. It is required whenever a class implements an abstract interface method.
+*  D. It can be added to an interface declaration type.
+*  E. It can be optionally specified when a method is overridden in a subclass.
+*  F. It is required whenever a method is overridden in a subclass.
+
+The @Override annotation is always optional for methods and never required.
+For this reason, options A and E are correct, and options C and F are incorrect.
+Option B is correct because adding it to a method that is not actually overriding an inherited method will cause a compiler error.
+Option D is incorrect because it can be appliedonly to method declarations.

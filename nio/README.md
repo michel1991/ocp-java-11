@@ -135,5 +135,22 @@ The isSameFile() method will throw an IOException if one of the Path values does
 The size() and readAttrributes() methods will also throw an IOException if they reference paths that do not exist.
 The rest of the methods return false without throwing an exception if the path does not exist
 
+### When reading file information, what is an advantage of using an NIO.2 attribute interface rather than reading the values individually using Files methods? (Choose two.)
+* A. Costs fewer round-trips to the file system
+* B. Guarantees performance improvement
+* C. Has support for symbolic links
+* D. Reduces memory leaks
+* E. Supports file-system dependent attributes
+* F. Reduces resource leaks
+
+An attribute view has the advantage of reading all of the file information on a single trip,
+rather than multiple trips to the file system making option A correct.
+Option B is incorrect because nothing guarantees it will perform faster,
+especially if the Files method is only being used to read a single attribute.
+Option C is also incorrect because both sets of methods have built-in support for symbolic links.
+Options D and F are incorrect because memory and resource leaks are not related to reading file attribute views.
+Finally, option E is correct, as NIO.2 supports file-system dependent attribute view classes.
+
+
 
 

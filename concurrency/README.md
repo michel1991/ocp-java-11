@@ -59,3 +59,17 @@ A race condition is an undesirable result that occurs when two tasks are complet
 If a task is submitted to a thread executor, and the thread executor does not have any available threads,
 the call to the task will return immediately with the task being queued internally by the thread executor.
 For this reason, option C is the correct answer.
+
+### Which of the following methods is not available on an ExecutorService instance? (Choose two.)
+* A. execute(Callable)
+* B. shutdownNow()
+* C. submit(Runnable)
+* D. exit()
+* E. submit(Callable)
+* F. execute(Runnable)
+
+Option A is correct, as ExecutorService does not define nor inherit an overloaded method execute() that takes a Callable parameter.
+ExecutorService defines two shutdown methods, shutdown() and shutdownNow(), one of which is shown in option B.
+Option D is correct, as exit() does not exist and is not one of shutdown methods.
+The ExecutorService interface defines the two submit() methods shown in options C and E.
+Because ExecutorService extends Executor, it also inherits the execute(Runnable) method presented in option F.

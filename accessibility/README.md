@@ -62,3 +62,20 @@ Options A, B, C, and D are incorrect because the first term is a more restrictiv
 The display()  method has protected access. [image](./accessibility.jpg)
 This means it can be accessed by instance methods in the same package and any subclasses.
 There are no subclasses in this example, so we only need to count the classes in the same package. Option C is correct because Flashlight and Phone are in the package.
+
+## Which of the following modifiers can be applied to an abstract method? (Choose two.)
+*  A. final
+*  B. private
+*  C. public
+*  D. default
+*  E. protected
+*  F. concrete
+
+An abstract method cannot include the final or private modifier.
+If a method contained either of these modifiers,
+then no concrete subclass would ever be able to override it with an implementation.
+For these reasons, options A and B are incorrect.
+Option D is also incorrect because the default keyword applies to concrete interface methods,
+not abstract methods. Option F is incorrect because there is no concrete modifier.
+That leaves options C and E as the correct answer.
+The protected, package-private, and public access modifiers can each be applied to abstract methods.

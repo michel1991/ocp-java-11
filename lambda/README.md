@@ -75,3 +75,56 @@ Method references are a shorter way of writing lambdas, and all method reference
 However, this does not apply in reverse. Consider the lambda: () -˃ s.charAt(n).
 The n variable can only be an effectively final variable in lambdas, but not in method references.
 Since only method references can always be converted, option C is correct.
+
+### Starting with DoubleConsumer and going downward, fill in the missing values for the table.
+
+Functional            Interface	# Parameters in Method Signature
+DoubleConsumer
+IntFunction
+LongSupplier
+ObjDoubleConsumer
+
+*  A. 0, 1, 1, 1
+*  B. 0, 1, 0, 2
+*  C. 0, 2, 1, 2
+*  D. 1, 1, 0, 2
+*  E. 1, 1, 1, 1
+*  F. None of the above
+
+Remember that all Supplier interfaces take zero parameters.
+For this reason, the third value in the table is 0, making options A, C, and E incorrect.
+Next, DoubleConsumer and IntFunction each take one value, double and int, respectively.
+On the other hand, ObjDoubleConsumer takes two values, a generic value and a double, and returns void.
+For this reason, option D is correct, and option B is incorrect.
+
+### Which functional interface returns a primitive value?
+* A. BiPredicate
+* B. CharSupplier
+* C. LongFunction
+* D. UnaryOperator
+* E. TriDoublePredicate
+* F. None of the above
+
+Option A is the correct answer because BiPredicate takes two generic
+types and returns a primitive boolean value. Option B is incorrect,
+since CharSupplier does not exist in java.util.function.
+Option C is also incorrect, since LongFunction takes a
+primitive long value and returns a generic type.
+Remember, Java only includes primitive functional interfaces that operate on double, int, or long.
+Option D is incorrect because UnaryOperator takes a generic type and returns a generic value.
+Finally, option E is incorrect because TriDoublePredicate is not a built-in functional interface.
+
+### Which statement about functional interfaces and lambda expressions is not true?
+* A. A lambda expression may be compatible with multiple functional interfaces.
+* B. A lambda expression must be assigned to a functional interface when it is declared.
+* C. A method can return a lambda expression in the form of a functional interface instance.
+* D. The compiler uses deferred execution to skip determining whether a lambda expression compiles or not.
+* E. All of these are true.
+
+Options A, B, and C are true statements about functional interfaces.
+A lambda may be compatible with multiple functional interfaces,
+but it must be assigned to a functional interface when it is declared or passed as a method argument.
+Also, a method can be created with the return type that matches a functional interface,
+allowing a lambda expression to be returned. Option D is the correct answer.
+Deferred execution means the lambda expression is not evaluated until runtime,
+but it is compiled. Compiler errors in the lambda expression will still prevent the code from compiling.

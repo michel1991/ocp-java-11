@@ -139,3 +139,17 @@ The rest of the options are not related to private methods, although backward co
 A functional interface may have any number of static, default, private static, or private methods.
 It can have only one qualified abstract method, though, making option D correct.
 
+### Which can implement a functional interface?
+* A. An anonymous class
+* B. A top-level class
+* C. A lambda expression
+* D. An anonymous class or a top-level class
+* E. A top-level class or a lambda expression
+* F. An anonymous class, a top-level class, or a lambda expression
+
+An anonymous class can implement a single interface, and a top-level class can implement any number of interfaces.
+Since a functional interface is an interface with additional rules,
+both anonymous class and top-level class are correct.
+Additionally, a lambda expression can also implement a functional interface.
+Since all three are correct, the answer is option F.
+
