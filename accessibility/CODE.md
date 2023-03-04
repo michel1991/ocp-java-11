@@ -160,3 +160,22 @@ Instance variables must the private access modifier,
 making option D incorrect. While it is common for methods to be public, this is not required.
 Options A, B, and C are all correct, although some are more useful than others.
 Since the class can be written to be encapsulated, options E and F are incorrect.
+
+### What can fill in the blank so the play() method can be called from all classes in the com.mammal and com.mammal.eland package, but not the com.mammal.gopher package?
+```java
+    package com.mammal;
+
+    public class Enrichment {
+        _____  void play() {}
+    }
+
+```
+*  A. Leave it blank.
+*  B. private
+*  C. protected
+*  D. public
+*  E. None of the above.
+
+If only the com.mammal class needed access, option A would be correct.
+Access modifiers cannot be used to grant access to a list of packages.
+The Java Platform Module Framework can do this, but it is not an option in this question. Therefore, option E is correct.

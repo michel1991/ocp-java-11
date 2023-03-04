@@ -95,3 +95,9 @@ The book lookup by ISBN is a lookup by key.
 We need a map for this.
 A HashMap is probably better here, but it isn’t a choice.
 So the answer is option E, which does include both a Queue and a Map.
+
+### Which is not a true statement about an array?
+*  A. An array expands automatically when it is full.
+*  B. An array is allowed to contain duplicate values.
+*  C. An array understands the concept of ordered elements.
+*  D. An array uses a zero index to reference the first element.
