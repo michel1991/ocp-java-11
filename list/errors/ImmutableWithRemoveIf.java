@@ -1,7 +1,7 @@
 package list;
 import java.util.*;
 
-public class ImuutableWithRemoveIf {
+public class ImmutableWithRemoveIf {
     /**
      * Which of the following are true? (Choose all that apply.)
         A. This code compiles and runs without error.
