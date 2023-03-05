@@ -528,4 +528,17 @@ An unnamed module must be on the classpath.
 It is rare to have a module-info file in an unnamed module, but it is allowed.
 Therefore, both dog.fluffy and dog.husky meet this criterion, making option C correct.
 
+### Using the diagram, which boxes represent the consumer and service locator, respectively?
+[image](./find_consumer_service_locator.jpg)
+* A. W and X
+* B. W and Z
+* C. X and Y
+* D. X and Z
+* E. Y and Z
+* F. None of the above
 
+The consumer depends on the service provider interface and service locator, but not the service provider.
+Only W has two arrows starting from it so it must be the consumer.
+This rules out options C, D, and E.
+The service locator references the service provider interface directly and the service provider indirectly,
+making the service locator Z and option B the answer.
