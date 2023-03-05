@@ -29,4 +29,29 @@ public class BadFormatDateClock {
        // System.out.println(f.format_(________________.now())); // ________________
         System.out.println(f.format(LocalDateTime.now())); // ________________
    }
+
+    /**
+     * Fill in the blank with the option that allows the code snippet to compile and print a message without throwing an exception at runtime.
+        A. f.formatDate(x)
+        B. f.formatDate(y)
+        C. f.format(x)
+        D. f.format(y)
+        E. The code does not compile regardless of what is placed in the blank.
+        F. None of the above.
+
+        Options A and B are incorrect because formatDate() is not a valid method name in DateTimeFormatter.
+        Option E is incorrect because the code compiles if either option C or D is used.
+        Both options C and D will produce an exception at runtime, though, as the date pattern is invalid.
+         In particular, the apostrophe in o'clock should be escaped.
+         Option C is also incorrect because there is no hour value h for a LocalDate.
+         If the pattern string was corrected with o''clock, then option D would be correct and print March at 5 o'clock at runtime.
+
+     */
+    static void secondExample(){
+        var x = LocalDate.of(2022, 3, 1);
+        var y = LocalDateTime.of(2022, 3, 1, 5, 55);
+        var f = DateTimeFormatter.ofPattern("MMMM' at 'h' o'clock'");
+        System.out.print("_______________"); // "_______________"
+
+    }
 }
