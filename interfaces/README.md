@@ -175,3 +175,19 @@ The public modifier is optional, though, as the static method is implicitly publ
 The last row is incorrect as the abstract modifier can be implied if the method does not declare a body.
 Since three rows contain an error, option D is correct.
 
+### Which of the following are the best reasons for creating a default interface method? (Choose two.)
+*  A. Allow interface methods to be overloaded.
+*  B. Add backward compatibility to existing interfaces.
+*  C. Give an interface the ability to create final methods.
+*  D. Allow an interface to define a method at the class level.
+*  E. Improve code reuse among classes that implement the interface.
+*  F. Improve encapsulation of the interface.
+
+One of the motivations for adding default interface methods to Java was for backward compatibility.
+These methods allow developers to update older classes with a newer version of an interface without breaking functionality in the existing classes,
+making option B correct. Option E is also correct, as classes implementing the interface can share common methods.
+Option A is incorrect, as interface methods can already be overloaded.
+Option C is incorrect because methods in interfaces cannot be marked final.
+Option D sounds plausible, but could be accomplished with static interface methods alone.
+Option F is incorrect as that statement only applies to private interface methods.
+
