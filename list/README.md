@@ -101,3 +101,14 @@ So the answer is option E, which does include both a Queue and a Map.
 *  B. An array is allowed to contain duplicate values.
 *  C. An array understands the concept of ordered elements.
 *  D. An array uses a zero index to reference the first element.
+
+### Suppose we have list of type List˂Integer˃. Which method allows you to pass a List and returns an immutable Set containing the same elements?
+*  A. List.copyOf(list)
+*  B. List.of(list)
+*  C. Set.copyOf(list);
+*  D. Set.of(list);
+*  E. None of the above
+
+All four of these return immutable collections.
+Options B and D take a varargs rather than a List. Option A returns a List, not a Set. Option C meets both our requirements.
+

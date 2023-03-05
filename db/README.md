@@ -94,7 +94,7 @@ Line 30 also does not compile as the method should be getInt(). However, the que
 ### Which types of resources do you need to close to help avoid a denial of service? (Choose all that apply.)
 * A. Annotations
 * B. Exceptions
-*  C. I/O
+* C. I/O
 * D. JDBC
 * E. String
 
@@ -212,15 +212,15 @@ CRUD stands for Create, Read, Update, Delete, making options A, B, and E correct
 
 ### How many lines in this code fail to compile?
 ```java
-    17: try (var sql = "{call learn (?)}";
-    18:    var cs = conn.prepareCall(sql);
-    19:    cs.setInt(1, 8);
-    20:    var rs = cs.execute()) {
-        21:
-        22:    while (rs.hasNext()) {
-            23:       System.out.println( rs.getString(3));
-            24:    }
-            25: }
+   try (var sql = "{call learn (?)}"; // 17:
+   var cs = conn.prepareCall(sql); //  18:
+   cs.setInt(1, 8); //  19:
+   var rs = cs.execute()) { //  20:
+    // 21:
+    while (rs.hasNext()) { //  22:
+        System.out.println( rs.getString(3)); //  23:
+    } //  24:
+} //   25:
 
 ```
 * A. Zero
@@ -267,6 +267,4 @@ A CallableStatement supports stored procedures, not a PreparedStatement, making 
 Options C and D are correct.
 Using bind variables with a PreparedStatement produces code that is easier to read than one with a lot of String concatenation.
 Further, when used properly, a PreparedStatement prevents SQL injection.
-
-
 

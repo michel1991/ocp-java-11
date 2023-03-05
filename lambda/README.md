@@ -128,3 +128,16 @@ Also, a method can be created with the return type that matches a functional int
 allowing a lambda expression to be returned. Option D is the correct answer.
 Deferred execution means the lambda expression is not evaluated until runtime,
 but it is compiled. Compiler errors in the lambda expression will still prevent the code from compiling.
+
+### Fill in the blanks: The ______________ functional interface does not take any inputs, while the ______________ functional interface does not return any data.
+* A. IntConsumer, LongSupplier
+* B. IntSupplier, Function
+* C. Supplier, DoubleConsumer
+* D. UnaryOperator, Consumer
+* E. None of the above
+
+The Supplier functional interface does not take any inputs,
+while the Consumer functional interface does not return any data.
+This behavior extends to the primitive versions of the functional interfaces, making option C the correct answer.
+Option A is incorrect because IntConsumer takes a value, while LongSupplier returns a value.
+Options B and D are incorrect because Function and UnaryOperator both take an input and produce a value.

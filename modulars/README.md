@@ -10,30 +10,6 @@ An automatic module exports all packages, making option A correct.
 An unnamed module is not available to any modules on the module path.
 Therefore, it doesn’t export any packages, and option F is correct.
 
-### Which of the following options does not have a one-character shortcut in any of the commands studied in this chapter? (Choose all that apply.)
-* A. describe-module
-* B. list-modules
-* C. module
-* D. module-path
-* E. show-module-resolution
-* F. summary
-
-Option A is incorrect because describe-module has the d equivalent.
-Option C is incorrect because module has the m equivalent.
-Option D is incorrect because module-path has the p equivalent. Option F is incorrect because summary has the s equivalent.
-Options B and E are the correct answers because they do not have equivalents.
-
-### Which options are valid on the jar command without considering module options? (Choose all that apply.)
-* A. -c
-* B. -C
-* C. -cp
-* D. -d
-* E. -f
-* F. -p
-
-When creating a jar file, you use the options -cf or -cvf, making options A and E correct.
-It also allows the specification of a directory using -C, making option B correct.
-Options D and E are incorrect because -d and -p are used for modules.
 
 ### Fill in the blanks to complete this sentence: The show-module-resolution option is on the _______ command, and the summary option is on the _______ command.
 * A. jar and java
@@ -123,34 +99,7 @@ No such restriction exists for packages, making option B incorrect.
 A cyclic dependency can involve two or more modules that require each other, making option E correct, while options C and D are incorrect.
 Finally. Option F is incorrect because unnamed modules cannot be referenced from an automatic module.
 
-### Which command can you run to determine whether you have any code in your JAR file that depends on unsupported internal APIs and does not suggest an alternative?
-*  A. jdeps -internal-jdk
-*  B. jdeps --internaljdk
-*  C. jdeps --internal-jdk
-*  D. jdeps -s
-*  E. jdeps -unsupported
-*  F. jdeps –unsupportedapi
-*  G. jdeps –unsupported-api
-*  H. None of the above
 
-Option D is correct because it prints jdk.unsupported but does not print a table with a suggested alternative.
-Option C is incorrect because it does print a suggested alternative.
-Options A, B, E, F, and G are incorrect because those options do not exist.
-
-### Which command can you run to determine whether you have any code in your JAR file that depends on unsupported internal APIs and suggests an alternative?
-* A. jdeps -internal-jdk
-* B. jdeps --internaljdk
-* C. jdeps --internal-jdk
-* D. jdeps -s
-* E. jdeps -unsupported
-* F. jdeps –unsupportedapi
-* G. jdeps –unsupported-api
-* H. None of the above
-
-The jdeps command has an option --internal-jdk that lists any code using unsupported/internal APIs and prints a table with suggested alternatives.
-Option D is incorrect because it does not print out the table with a suggested alternative.
-Options A, B, C, E, F, and G are incorrect because those options do not exist.
-For options A,B, and C, the options are reversed and should be “jdk-internals”.
 
 ### What is true of a module containing a file named module-info.java with the following contents? (Choose all that apply.)
 ```java
@@ -194,17 +143,6 @@ depending on the options passed, making option C correct.
 It is frequently used to determine what dependencies you will need when converting to modules.
 This makes it useful to run against a regular JAR, making option E correct.
 
-### Which are true of the --module-path option? (Choose all that apply.)
-*  A. It is an option on the javac command.
-*  B. It is an option on the java command.
-*  C. It is an option on the jar command.
-*  D. It is an option on the jdeps command.
-*  E. It has a short form of -m.
-*  F. It has a short form of -p.
-
-Options A, B, and D are correct because the -module-path option is available on javac, java, and jdeps.
-Option F is correct because -p is equivalent for the javac and java commands. The jdeps command does not allow the short form.
-
 ### For a top-down migration, all modules other than named modules are ________________ modules and on the __________________.
 * A. automatic, classpath
 *  B. automatic, module path
@@ -216,17 +154,6 @@ A top-down migration strategy first places all JARs on the module path.
 Then it migrates the top-level module to be a named module, leaving the other modules as automatic modules.
 Option B is correct as it matches both of those characteristics.
 
-### Which options are valid on the java command without considering module options? (Choose all that apply.)
-*  A. -c
-*  B. -C
-*  C. -cp
-*  D. -d
-*  E. -f
-*  F. -p
-
-When running a program using java, you specify the classpath with -cp, making option C correct.
-Options D and E are incorrect because -d and -p are used for modules.
-Options A and B are not valid options on the java command.
 
 ### Which of the following are true? (Choose all that apply.)
 *  A. javac compiles a .class file into a .java file.
@@ -261,24 +188,6 @@ The hash operation is not an answer choice. The other four are making options B,
 The java command uses this option to print information when the program loads.
 You might think jar does the same thing since it runs a program too. Alas, this parameter does not exist on jar.
 
-### Fill in the blanks so this command to run the program is correct:
-java
-_______ zoo.animal.talks/zoo/animal/talks/Peacocks
-_______ modules
-
-*  A. -d and -m
-*  B. -d and -p
-*  C. -m and -d
-*  D. -m and -p
-*  E. -p and -d
-*  F. -p and -m
-*  G. None of the above
-
-The -m or --module option is used to specify the module and class name.
-The -p or -module-path option is used to specify the location of the modules.
-Option D would be correct if the rest of the command were correct.
-However, running a program requires specifying the package name with periods (.) instead of slashes.
-Since the command is incorrect, option G is correct.
 
 ### Which two are required in any module? (Choose two.)
 *  A. A file named module.java
@@ -607,5 +516,16 @@ For more information, see Chapter 6.
 Option E is correct as this code does compile. While it is uncommon, a module is not required to have any directives in the body.
 Similarly, module names are lowercase and have more than one component by convention.
 None of these problems prevents the file from compiling, though.
+
+### Given the diagram, how many are unnamed modules?
+[image](./how_many_are_unamed_modules.jpg.jpg)
+* A. 0
+* B. 1
+* C. 2
+* D. 3
+* E. 4
+An unnamed module must be on the classpath.
+It is rare to have a module-info file in an unnamed module, but it is allowed.
+Therefore, both dog.fluffy and dog.husky meet this criterion, making option C correct.
 
 

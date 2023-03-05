@@ -153,3 +153,25 @@ both anonymous class and top-level class are correct.
 Additionally, a lambda expression can also implement a functional interface.
 Since all three are correct, the answer is option F.
 
+### What does the following print? How many rows of the following table contain an error?
+
+Interface member	Optional modifier(s)	   Required modifier(s)
+Private method	     private	              -
+Default method	     public	                 default
+Static method	     public static	          -
+Abstract method	      public	               abstract
+
+* A. Zero
+* B. One
+* C. Two
+* D. Three
+* E. Four
+
+The first row is incorrect as the private modifier is required for private interface methods.
+The second row is correct.
+The third row is also incorrect because the static modifier is required,
+not optional, for static interface methods.
+The public modifier is optional, though, as the static method is implicitly public without it.
+The last row is incorrect as the abstract modifier can be implied if the method does not declare a body.
+Since three rows contain an error, option D is correct.
+
