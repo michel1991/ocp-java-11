@@ -1,4 +1,4 @@
-package advancedDesign;
+package charSequence;
 
 public class CharSequenceChoiceCorrectAnswer {
     /**
