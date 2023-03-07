@@ -79,3 +79,16 @@ Option D is also incorrect because the default keyword applies to concrete inter
 not abstract methods. Option F is incorrect because there is no concrete modifier.
 That leaves options C and E as the correct answer.
 The protected, package-private, and public access modifiers can each be applied to abstract methods.
+
+### Which of the following statements is not true?
+* A. An instance of one class may access an instance of another class’s attributes if it has a reference to the instance and the attributes are declared public.
+* B. An instance of one class may access package-private attributes in a parent class, provided the parent class is not in the same package.
+* C. An instance of one class may access an instance of another class’s attributes if both classes are located in the same package and marked protected.
+* D. Two instances of the same class may access each other’s private attributes.
+* E. All of the above are true.
+
+Options A, C, and D are true statements. Option A is correct because public allows any class to access it.
+Option C is true because protected access also provides package-private access.
+Option D allows us to write the equals() methods between two objects that compare private attributes of the class.
+Option B is false. Package-private attributes are visible only if the two classes are in the same package,
+regardless of whether one extends the other.

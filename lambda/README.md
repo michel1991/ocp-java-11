@@ -141,3 +141,18 @@ while the Consumer functional interface does not return any data.
 This behavior extends to the primitive versions of the functional interfaces, making option C the correct answer.
 Option A is incorrect because IntConsumer takes a value, while LongSupplier returns a value.
 Options B and D are incorrect because Function and UnaryOperator both take an input and produce a value.
+
+### Which statements about stateful lambda expressions are correct? (Choose two.)
+*  A. Stateful lambda expressions should be avoided on both serial and parallel streams.
+*  B. Stateful lambda expressions should be avoided on only serial streams.
+*  C. Stateful lambda expressions should be avoided on only parallel streams.
+*  D. One way to avoid modifying a List with a stateful lambda expression is to use a concurrent collection.
+*  E. One way to avoid modifying a List with a stateful lambda expression is to use a collector that outputs a List.
+*  F. One way to avoid modifying a List with a stateful lambda expression is to use a synchronized list.
+
+Stateful lambda expressions should be avoided with both serial and parallel streams because they can lead to unintended side effects,
+making option A correct.
+A common way to remove a stateful lambda expression that modifies a List is to have the stream operation output a new List.
+For this reason, option E is correct.
+Options D and F are incorrect because while a concurrent or synchronized list may make the stream operation thread-safe,
+they are still stateful lambda expressions.
