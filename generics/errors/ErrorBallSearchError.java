@@ -1,4 +1,4 @@
-package generics;
+package generics.errors;
 public class ErrorBallSearchError<X> {
 
     /**
