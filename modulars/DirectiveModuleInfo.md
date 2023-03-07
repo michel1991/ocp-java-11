@@ -254,14 +254,20 @@ module nature.tree{
 
 Option C is correct because a service provider requires the interface. It also provides the implementation.
 
-### Suppose you have a module that contains a class with a call to exports(ChocolateLab.class). Which part of the module service contains this class?
-* A. Consumer
-* B. Service locator
-* C. Service provider
-* D. Service provider interface
-* E. None of the above
 
-The service locator contains a load() method, not an exports() method, making option E the answer.
+
+### Which of the following statements are true in a module-info.java file? (Choose all that apply.)
+*  A. The opens keyword allows the use of reflection.
+*  B. The opens keyword declares an API is called.
+*  C. The use keyword allows the use of reflection.
+*  D. The use keyword declares an API is called.
+*  E. The uses keyword allows the use of reflection.
+*  F. The uses keyword declares an API is called.
+*  G. The file can be empty (zero bytes).
+
+Options C and D are incorrect because there is no use keyword.
+Options A and F are correct because opens is for reflection and uses declares an API that consumes a service.
+Option G is also correct as the file can be completely empty. This is just something you have to memorize.
 
 
 

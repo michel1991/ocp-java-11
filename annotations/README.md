@@ -211,6 +211,16 @@ In an annotation, an optional element is specified with the default modifier, fo
 Required elements are specified by not providing a default value.
 Therefore, the lack of the default term indicates the element is required. For this reason, option E is correct.
 
+### What modifier is used to mark an annotation element as optional?
+*  A. optional
+*  B. default
+*  C. required
+*  D. value
+*  E. case
+*  F. None of the above
+
+The default modifier along with a value is used to mark an annotation element as optional, as opposed to required.
+
 ### What statement about marker annotations is correct?
 * A. A marker annotation does not contain any elements or constant variables.
 * B. A marker annotation does not contain any elements but may contain constant variables.

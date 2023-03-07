@@ -46,32 +46,6 @@ Finally, a service provider interface uses while a service provider provides, ma
 
 The java command has an --add-exports option that allows exporting a package at runtime. However, it is not encouraged to use it, making options B and D the answer.
 
-# An automatic module name is generated if one is not supplied. Which of the following JAR filename and generated automatic module name pairs are correct? (Choose all that apply.)
-* A. emily-1.0.0.jar and emily
-* B. emily-1.0.0-SNAPSHOT.jar and emily
-* C. emily_the_cat-1.0.0.jar and emily_the_cat
-* D. emily_the_cat-1.0.0.jar and emily-the-cat
-* E. emily.$.jar and emily
-* F. emily.$.jar and emily.
-* G. emily.$.jar and emily..
-
-Any version information at the end of the JAR filename is removed, making options A and B correct.
-Underscores (_) are turned into dots (.), making options C and D incorrect.
-Other special characters like a dollar sign ($) are also turned into dots.
-However, adjacent dots are merged, and leading/trailing dots are removed. Therefore, option E is correct.
-
-### Which of the following statements are true in a module-info.java file? (Choose all that apply.)
-*  A. The opens keyword allows the use of reflection.
-*  B. The opens keyword declares an API is called.
-*  C. The use keyword allows the use of reflection.
-*  D. The use keyword declares an API is called.
-*  E. The uses keyword allows the use of reflection.
-*  F. The uses keyword declares an API is called.
-*  G. The file can be empty (zero bytes).
-
-Options C and D are incorrect because there is no use keyword.
-Options A and F are correct because opens is for reflection and uses declares an API that consumes a service.
-Option G is also correct as the file can be completely empty. This is just something you have to memorize.
 
 ### Which are true statements? (Choose all that apply.)
 *  A. An automatic module exports all packages to named modules.
@@ -98,21 +72,6 @@ Option A is correct because the Java Platform Module System does not allow cycli
 No such restriction exists for packages, making option B incorrect.
 A cyclic dependency can involve two or more modules that require each other, making option E correct, while options C and D are incorrect.
 Finally. Option F is incorrect because unnamed modules cannot be referenced from an automatic module.
-
-
-
-### Suppose you have separate modules for a service provider interface, service provider, service locator, and consumer. Which module(s) need to specify a requires directive on the service provider?
-*  A. Service locator
-*  B. Service provider interface
-*  C. Consumer
-*  D. Consumer and service locator
-*  E. Consumer and service provider
-*  F. Service locator and service provider interface
-*  G. Consumer, service locator, and service provider interface
-*  H. None of the above
-
-This question is tricky. The service provider must have a uses directive, but that is on the service provider interface.
-No modules need to specify requires on the service provider since that is the implementation.
 
 
 ### Which statement is true about the jdeps command? (Choose all that apply.)
@@ -162,17 +121,6 @@ The java command uses this option to print information when the program loads.
 You might think jar does the same thing since it runs a program too. Alas, this parameter does not exist on jar.
 
 
-### Suppose you have separate modules for a service provider interface, service provider, service locator, and consumer. If you add a second service provider module, how many of these modules do you need to recompile?
-*  A. Zero
-*  B. One
-*  C. Two
-*  D. Three
-*  E. Four
-
-Since this is a new module, you need to compile the new module.
-However, none of the existing modules needs to be recompiled, making option A correct.
-The service locator will see the new service provider simply by having the new service provider on the module path.
-
 ### Which commands take a --describe-module parameter? (Choose all that apply.)
 * A. javac
 * B. java
@@ -183,33 +131,6 @@ The service locator will see the new service provider simply by having the new s
 
 Options B and C are correct because the -d (--describe-module) option can be passed when to the java and jar commands.
 
-### Suppose you have separate modules for a service provider interface, service provider, service locator, and consumer. If you change the implementation of the service provider, how many of these modules do you need to re-compile?
-* A. Zero
-* B. One
-* C. Two
-* D. Three
-* E. Four
-
-Since the service provider itself is changing, it needs to be re-compiled. However, none of the other modules does, making option B correct.
-
-### Suppose you have separate modules for a service provider interface, service provider, service locator, and consumer. If you add a second service provider module, how many of these modules do you need to recompile?
-A. Zero
-B. One
-C. Two
-D. Three
-E. Four
-
-Since this is a new module, you need to compile the new module. However, none of the existing modules needs to be recompiled, making option A correct.
-The service locator will see the new service provider simply by having the new service provider on the module path.
-
-### Suppose you have separate modules for a service provider interface, service provider, service locator, and consumer. Which statements are true about the directives you need to specify? (Choose all that apply.)
-* A. The consumer must use the requires directive.
-* B. The consumer must use the uses directive.
-* C. The service locator must use the requires directive.
-* D. The service locator must use the uses directive.
-
-Option A and C are correct because both the consumer and the service locator depend on the service provider interface.
-Additionally, option D is correct because the service locator must specify that it uses the service provider interface to look it up.
 
 ### A(n) ________________ module can reference classes in a(n) _______________ module. Assume the package is exported as needed. (Choose all that apply.)
 * A. automatic, named
@@ -234,19 +155,6 @@ Automatic modules can read from either the classpath or the module path, making 
 A service consists of the service provider interface and logic to look up implementations using a service locator.
 This makes option D correct. Make sure you know that the service provider itself is the implementation, which is not considered part of the service.
 
-### Suppose you have separate modules for a service provider interface, service provider, service locator, and consumer. Which modules need to specify a requires directive on the service provider interface?
-* A. Service locator
-* B. Service provider
-* C. Consumer
-* D. Consumer and service locator
-* E. Consumer and service provider
-* F. Service locator and service provider
-* G. Consumer, service locator, and service provider
-* H. None of the above
-
-The service provider interface needs to be available to all three, making option G correct.
-The service provider needs to implement the interface. The service locator needs it to look up the interface.
-The consumer needs it to call methods on the interface.
 
 #### Suppose you have a project with one package named magic.wand and another project with one package named magic.potion. These projects have a circular dependency, so you decide to create a third project named magic.helper. The magic.helper module has the common code containing a package named magic.util. For simplicity, let’s give each module the same name as the package. Which of the following need to appear in your module-info files? (Choose all that apply.)
 * A. exports magic.potion; in the potion project
@@ -273,19 +181,6 @@ Unnamed modules are not readable by any other types of modules, ruling out optio
 Automatic modules always export all packages to other modules, making the answer option C.
 For more information, see Chapter 6.
 
-### Which of the following would be a legal module name? (Choose all that apply.)
-* A. com.book
-* B. com-book
-* C. com.book$
-* D. com-book$
-* E. 4com.book
-* F. 4com-book
-
-Module names look a lot like package names. Each segment is separated by a period (.)
-and uses characters valid in Java identifiers.
-Since identifiers are not allowed to begin with numbers, options E and F are incorrect.
-Dashes (-) are not allowed either, ruling out options B and D.
-That leaves options A and C as the correct answers.
 
 ### What can be created using the Java Platform Module System that could not be created without it? (Choose all that apply.)
 *  A. JAR file
@@ -326,16 +221,6 @@ The two most common directives are exports and requires.
 The module that wants to expose one or more packages uses the exports directive.
 The requires directive is used by the module that wants to use code in another one.
 
-### Suppose we have a JAR file named cat-1.2.3-RC1.jar and that Automatic-Module-Name in the MANIFEST.MF is set to dog. What should a named module referencing this automatic module include in the module-info.java?
-*  A. requires cat;
-*  B. requires cat.RC;
-*  C. requires cat-RC;
-*  D. requires dog;
-*  E. None of the above
-
-Option D is correct because the Automatic-Module-Name is used when supplied.
-If it were not supplied, option A would be the answer because version information
-is excluded when determining the module name.
 
 ### You have a project that has two packages named jellyfish.sting and jellyfish.swim. Suppose you were tasked with modularizing the project with the requirement that both packages be available for other Java projects. Which statements are true about your module-info file? (Choose all that apply.)
 * A. You can write a combined statement: exports jellyfish.
@@ -367,21 +252,6 @@ Additionally, the java.base module is listed since it is included automatically.
 The line ends with mandated, making option A correct.
 The java.lang is a trick since that is a package that is imported by default in a class rather than a module.
 
-
-### Suppose you have separate modules for a service provider interface, service provider, service locator, and consumer. If you add a new abstract method to the service provider interface and call it from the consumer module, how many of these modules do you need to re-compile?
-* A. Zero
-* B. One
-* C. Two
-* D. Three
-* E. Four
-
-Since you are changing the service provider interface,
-you have to re-compile it. Similarly, you need to re-compile the service provider
-because it now needs to implement the new method.
-The consumer module needs to be re-compiled as well since the code has changed to call the new method.
-Therefore, three modules need to be re-compiled, and option D is correct.
-The service locator does not need to be re-compiled since it simply looks up the interface.
-For more information, see Chapter 6.
 
 
 ### Given the diagram, how many are unnamed modules?
