@@ -8,17 +8,6 @@
 
 PrintStream and PrintWriter are the only I/O classes that you need to know that don’t have a complementary InputStream or Reader class, so option E is correct.
 
-### What modifiers must be used with the serialPersistentFields field in a class? (Choose all that apply.)
-* A. final
-* B. private
-* C. protected
-* D. public
-* E. transient
-* F. static
-
-The serialPersistentFields field is used to specify which fields should be used in serialization.
-It must be declared private static final, or it will be ignored. Therefore, options A, B, and F are correct.
-
 ### Fill in the blank: A class that implements _________________ may be in a try-with-resources statement. (Choose all that apply.)
 * A. AutoCloseable
 * B. Resource
@@ -75,20 +64,6 @@ Finally, an OutputStream may be periodically flushed, but it is not required, so
 Character stream classes often include built-in convenience methods for working with String data, so option A is correct.
 They also handle character encoding automatically, so option C is also correct.
 The rest of the statements are irrelevant or incorrect and are not properties of all character streams.
-
-### Which of the following are true statements about serialization in Java? (Choose all that apply.)
-* A. Deserialization involves converting data into Java objects.
-* B. Serialization involves converting data into Java objects.
-* C. All nonthread classes should be marked Serializable.
-* D. The Serializable interface requires implementing serialize() and deserialize() methods.
-* E. Serializable is a functional interface.
-* F. The readObject() method of ObjectInputStream may throw a ClassNotFoundException even if the return object is not cast to a specific type.
-
-In Java, serialization is the process of turning an object to a stream, while deserialization is the process of turning that stream back into an object.
-For this reason, option A is correct, and option B is incorrect.
-Option C is incorrect, because many nonthread classes are not marked Serializable for various reasons.
-The Serializable interface is a marker interface that does not contain any abstract methods, making options D and E incorrect.
-Finally, option F is correct, because readObject() declares the ClassNotFoundException even if the class is not cast to a specific type.
 
 ### Fill in the blank with the proper method to serialize an object.
 ```java
@@ -170,13 +145,7 @@ Although a List can be converted to a stream, this requires an extra step; there
 option C is correct since the resulting object can be chained directly to a stream.
 Finally, options D and E are incorrect because they are true for both methods.
 
-### An object has validation code in the constructor. When deserializing an object, the constructor is called with which of the following?
-* A. readObject()
-* B. readResolve()
-* C. Both
-* D. Neither
 
-When deserializing an object, Java does not call the constructor. Therefore, option D is correct.
 
 ### Which of the following are true? (Choose all that apply.)
 *  A. System.console() will throw an IOException if a Console is not available.

@@ -98,3 +98,16 @@ The word reduction is used with streams for a terminal operation,
 so options A, B, and C are incorrect.
 Option E describes a valid terminal operation like anyMatch(), but is not a reduction.
 Option D is correct because a reduction has to look at each element in the stream to determine the result.
+
+### What is the best example of lazy evaluation?
+*  A. The pipeline can execute before seeing all the data.
+*  B. The pipeline does not begin until the terminal operation is executed.
+*  C. The pipeline executes all operations as quickly as possible.
+*  D. The pipeline loses data.
+*  E. The pipeline takes a nap.
+
+Lazy evaluation delays execution until it is needed.
+Option B is the only one that matches this requirement.
+While option A is true, this can be done without lazy evaluation.
+Option C requires parallelization rather than deferred execution.
+Option D is incorrect as data loss is bad. Finally, pipelines are run by the computer, which does not get tired.

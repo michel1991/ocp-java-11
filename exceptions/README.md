@@ -89,5 +89,14 @@ Both runtime and checked exceptions can be declared, although only checked excep
 Legally, you can handle java.lang.Error subclasses, which are not subclasses of Exception, but it’s not a good idea, so option E is incorrect.
 Finally, it is true that all exceptions are subclasses of Throwable, making option F correct.
 
+### What constructors are capable of being called on a custom exception class that directly extends theException class?
+* A. One that takes a single Exception
+* B. One that takes a single String
+* C. Both of these
+* D. Neither of these
+
+Custom exception classes may simply use the default constructor.
+It is also common to override the constructors that take a singleException or a single String, making option C correct.
+
 
 
