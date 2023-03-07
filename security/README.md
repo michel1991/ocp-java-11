@@ -146,3 +146,20 @@ The clone() method is declared on the Object class. Option A is correct because 
 However, the call will throw an exception if the class that is being cloned does not implement Cloneable.
 Assuming this interface is implemented, the default implementation creates a shallow copy, making option F correct.
 If the class wants to implement a deep copy, it must override the clone() method with a custom implementation.
+
+### Which statements about securing confidential information are correct? (Choose three.)
+* A. When writing to System.out, you should not include sensitive information.
+* B. When reading sensitive data from a Console, you should use readLine().
+* C. When throwing an exception, it is acceptable to include sensitive information in the message.
+* D. A String is not a good object type for sensitive data.
+* E. A Java policy should only grant the permission lock to prevent a user from modifying the file.
+* F. A Java policy should only grant the permission read to prevent a user from modifying the file.
+
+Sensitive information should not be written to System.out, System.err, or a stack trace.
+For this reason, option A is correct, and option C is incorrect.
+It is preferable to use char[] instead of String for sensitive data so that
+it does not enter the String pool and become available as part of a memory dump.
+For this reason, option D is correct, and option B is incorrect.
+Note that Console does have a readPassword() method that returns char[].
+Finally, the correct Java policy permission to prevent write access is to only grant read access,
+making option F correct and option E incorrect.

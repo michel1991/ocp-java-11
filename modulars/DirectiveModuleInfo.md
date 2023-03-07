@@ -254,4 +254,14 @@ module nature.tree{
 
 Option C is correct because a service provider requires the interface. It also provides the implementation.
 
+### Suppose you have a module that contains a class with a call to exports(ChocolateLab.class). Which part of the module service contains this class?
+* A. Consumer
+* B. Service locator
+* C. Service provider
+* D. Service provider interface
+* E. None of the above
+
+The service locator contains a load() method, not an exports() method, making option E the answer.
+
+
 

@@ -191,3 +191,15 @@ Option C is incorrect because methods in interfaces cannot be marked final.
 Option D sounds plausible, but could be accomplished with static interface methods alone.
 Option F is incorrect as that statement only applies to private interface methods.
 
+### Which of the following can include a static method in its definition? (Choose three.)
+*  A. Interface
+*  B. Anonymous class
+*  C. Abstract class
+*  D. Member inner class
+*  E. Local class
+*  F. static nested class
+
+Both abstract classes and interfaces can include static methods, so options A and C are correct.
+Of all the nested class types, only static nested classes can include static methods, making option F correct,
+and options B, D, and E incorrect.
+

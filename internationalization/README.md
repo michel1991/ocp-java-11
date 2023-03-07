@@ -81,4 +81,14 @@ Localization refers to user-facing elements. Dates, currency, and numbers are co
 used in different formats for different countries. Class and variable names,
 along with lambda expressions, are internal to the application, so there is no need to translate them for users.
 
+### How long will the effects of calling Locale.setDefault() be active assuming no other calls to that method are made?
+* A. Until the end of the method.
+*  B. Until the program exits.
+*  C. Until the next reboot of the computer.
+*  D. It persists after reboot.
+*  E. None of the above.
+
+Calling Locale.setDefault() changes the default locale within the program.
+It does not change any settings on the computer.
+The next time you run a Java program, it will have the original default locale rather than the one you changed it to.
 
