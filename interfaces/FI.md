@@ -61,3 +61,20 @@ For this reason, option A is correct, and option D is incorrect. Option B is inc
 A functional interface contains exactly one abstract method, although methods that have matching signatures as public methods in java.lang.Object do not count toward the single method test.
 For these reasons, option C is correct, and option E is incorrect. Finally, option F is incorrect.
 While a functional interface can be marked with the @FunctionalInterface annotation, it is not required.
+
+### Fill in the blanks: A functional interface must contain or inherit ______________ and may optionally include ______________.
+* A. at least one abstract method, the @Override annotation
+* B. exactly one method, static methods
+* C. exactly one abstract method, the @FunctionalInterface annotation
+* D. at least one static method, at most one default method
+* E. None of the above
+
+A functional interface must include exactly one abstract method, either by inheritance or declared directly.
+It may also have any number, including zero, of default or static methods.
+For this reason, both parts of option D are incorrect.
+The first part of option A is incorrect because more than one abstract method disqualifies it as a functional interface.
+The first part of option B is incorrect because the method must be abstract; that is to say, any method will not suffice.
+Finally, option C is the correct answer. The first part of the sentence defines what it means to be a functional interface.
+The second part refers to the optional @FunctionalInterface annotation.
+It is considered a good practice to add this annotation to any functional interfaces you define because
+the compiler will report a problem if you define an invalid interface that does not have exactly one abstract method.

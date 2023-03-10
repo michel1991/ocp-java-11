@@ -10,19 +10,6 @@ To be a valid accumulator in a parallel reduction, the lambda expression must be
 For these reasons, options A and E are correct, while options B and C are not correct.
 Options D and F are incorrect because the lambda expression must also be stateless.
 
-### Which stream operations produce consistent results when operated on an ordered stream, regardless of whether it is serial or parallel? (Choose all that apply.)
-*  A. limit()
-*  B. skip()
-*  C. findAny()
-*  D. forEachOrdered()
-*  E. forEach()
-*  F. map()
-*  G. findFirst()
-
-The limit(), skip(), forEachOrdered(), and findFirst() methods produce the same results, regardless of whether the stream is serial or parallel.
-There may be a performance cost with using them on a parallel stream, though, as the stream is forced into a single-threaded operation.
-While the findAny() operation often returns the first result on a serial stream, it is permitted to return any result in the stream even on serial streams.
-The forEach() and map() operations are executed concurrently in a parallel stream, possibly changing the expected results.
 
 ### Given the generic type String, the partitioningBy() collector creates a Map<Boolean, List<String>> when passed to collect() by default. When a downstream collector is passed to partitioningBy(), which return types can be created? (Choose all that apply.)
 *  A. Map<boolean, List<String>>
@@ -99,15 +86,4 @@ so options A, B, and C are incorrect.
 Option E describes a valid terminal operation like anyMatch(), but is not a reduction.
 Option D is correct because a reduction has to look at each element in the stream to determine the result.
 
-### What is the best example of lazy evaluation?
-*  A. The pipeline can execute before seeing all the data.
-*  B. The pipeline does not begin until the terminal operation is executed.
-*  C. The pipeline executes all operations as quickly as possible.
-*  D. The pipeline loses data.
-*  E. The pipeline takes a nap.
 
-Lazy evaluation delays execution until it is needed.
-Option B is the only one that matches this requirement.
-While option A is true, this can be done without lazy evaluation.
-Option C requires parallelization rather than deferred execution.
-Option D is incorrect as data loss is bad. Finally, pipelines are run by the computer, which does not get tired.

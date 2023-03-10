@@ -26,3 +26,17 @@ Options C, D, and E are incorrect because the lowercase language must be before 
 Option F is incorrect because the language is missing.
 Remember, the exam won’t expect you to know which language and country codes exist,
 but it will expect you to know how to use them.
+
+## Fill in the blank so the code correctly compiles and creates a Locale reference. Locale loc = Locale.____________________;
+
+*  A. get("Italian")
+*  B. of(Locale.ITALIAN)
+*  C. get(Locale.ITALIAN)
+*  D. getLocale("Italian")
+*  E. of("Italian")
+*  F. None of the above
+
+There are no get()or of()methodsin Locale.
+You need to use a constructor or a predefined Locale constant to obtain a Localereference.
+Therefore, option F is the correct answer. Options B and C are close in that Locale.ITALIAN does reference a Locale object.
+However, it should not be passed to the nonexistent get() method.

@@ -34,7 +34,9 @@ That leaves options A and C as the correct answers.
 * D. dog.arthur2
 * E. None of the above
 
-The rules for determining the name include removing the extension, removing numbers, and changing special characters to periods (.). This leaves us with dog.arthur, which is option C.
+The rules for determining the name include removing the extension,
+removing numbers, and changing special characters to periods (.).
+This leaves us with dog.arthur, which is option C.
 
 ### Suppose we have a JAR file named cat-1.2.3-RC1.jar and that Automatic-Module-Name in the MANIFEST.MF is set to dog. What should a named module referencing this automatic module include in the module-info.java?
 *  A. requires cat;
