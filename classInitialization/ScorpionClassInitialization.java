@@ -1,4 +1,5 @@
-package inheritance;
+package classInitialization;
+
 /**
 * What is the result of the following?
     A. qu qu qumrcrc

@@ -1,4 +1,4 @@
-package inheritance;
+package classInitialization;
 
 /**
 * What is the output of the following program?
