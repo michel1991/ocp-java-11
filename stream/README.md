@@ -86,4 +86,20 @@ so options A, B, and C are incorrect.
 Option E describes a valid terminal operation like anyMatch(), but is not a reduction.
 Option D is correct because a reduction has to look at each element in the stream to determine the result.
 
+### Which method can be applied to an existing Stream˂T˃ to return a stream with a different generic type?
+* A. distinct()
+* B. iterate()
+* C. peek()
+* D. sorted()
+* E. filter()
+* F. None of the above
+
+The distinct() and filter() methods can reduce the number of elements in a stream but do not change the generic type,
+making options A and E incorrect.
+The iterate() method creates a new stream and cannot be applied to an existing stream,
+making option B incorrect.
+The peek() and sorted() methods do not alter the generic type of the stream,
+making options C and D incorrect. For these reasons, option F is correct.
+
+
 

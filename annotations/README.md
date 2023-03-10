@@ -1,15 +1,3 @@
-### Given a zoo management system, which of the following is best stored using an annotation?
-* A. The number of animals currently in the zoo
-* B. The names of each animal
-* C. The number of visitors to the zoo each year
-* D. The number of people who bought tickets to the zoo on a given day
-* E. The number of animals that can fit in an enclosure
-
-Annotations should include metadata (data about data) that is relatively constant, as opposed to attribute data, which is part of the object and can change frequently.
-The number of animals in the zoo, their names, and the guests of the zoo can change throughout the day, so that information is best stored as part of the data.
-The number of animals that can fit in an enclosure defines a rule about the enclosure.
-It does not include how many animals are actually in each enclosure; therefore, it is appropriate metadata and best served using an annotation.
-
 ### Fill in the blanks: The __________ annotation determines whether annotations are discarded at runtime, while the __________ annotation determines whether they are discarded in generated Javadoc.
 * A. @Target, @Deprecated
 * B. @Discard, @SuppressWarnings
@@ -36,29 +24,6 @@ The first, the repeatable annotation, needs to be declared with @Repeatable and 
 The second, the containing annotation type, must include an element named value() that includes an array of the repeatable annotation type.
 For these reasons, options A, E, and F are correct.
 
-### What properties must be true to use an annotation with an element value, but no element name? (Choose all that apply.)
-* A. The element must be named values().
-* B. The element must be required.
-* C. The annotation declaration must not contain any other elements.
-* D. The annotation must not contain any other values.
-* E. The element value must not be array.
-* F. None of the above
-
-To use an annotation with a value but not element name, the element must be declared with the name value(), not values(), making option A incorrect.
-The value() annotation may be required or optional, making option B incorrect.
-The annotation declaration may contain other elements, provided none is required, making option C incorrect.
-Option D is correct, as the annotation must not include any other values. Finally, option E is incorrect, as this is not a property of using a value() shorthand.
-
-### Which statements about an optional annotation are correct? (Choose all that apply.)
-* A. The annotation declaration always includes a default value.
-* B. The annotation declaration may include a default value.
-* C. The annotation always includes a value.
-* D. The annotation may include a value.
-* E. The annotation must not include a value.
-* F. None of the above
-
-An optional annotation element is one that is declared with a default value that may be optionally replaced when used in an annotation.
-For these reasons, options A and D are correct.
 
 ### What motivations would a developer have for applying the @FunctionalInterface annotation to an interface? (Choose all that apply.)
 * A. To allow the interface to be used in a lambda expression
@@ -137,17 +102,7 @@ The @Inherited annotation determines whether or not annotations defined in a sup
 The @Target annotation determines the location or locations an annotation can be applied to. Since this was not an answer choice, option G is correct.
 Note that ElementType is an enum used by @Target, but it is not an annotation.
 
-### Given an automobile sales system, which of the following information is best stored using an annotation?
-* A. The price of the vehicle
-* B. A list of people who purchased the vehicle
-* C. The sales tax of the vehicle
-* D. The number of passengers a vehicle is rated for
-* E. The quantity of models in stock
 
-Annotations should include metadata (data about data) that is relatively constant, as opposed to attribute data, which is part of the object and can change frequently.
-The price, sales, inventory, and people who purchased a vehicle could fluctuate often, so using an annotation would be a poor choice.
-On the other hand, the number of passengers a vehicle is rated for is extra information about the vehicle and unlikely to change once established.
-Therefore, it is appropriate metadata and best served using an annotation.
 
 ### What properties of applying @SafeVarargs are correct? (Choose all that apply.)
 * A. By applying the annotation, the compiler verifies that all operations on parameters are safe.
@@ -190,27 +145,6 @@ The Javadoc @deprecated annotation should be used, which provides a reason
 for the deprecation and suggests an alternative. All of the other answers are incorrect,
 with options A and B having the wrong case too. Those annotations should be written
 @Repeatable and @Retention since they are Java annotations.
-
-### What modifier is used to mark that an annotation element is required?
-*  A. optional
-*  B. default
-*  C. required
-*  D. *
-*  E. None of the above
-
-In an annotation, an optional element is specified with the default modifier, followed by a constant value.
-Required elements are specified by not providing a default value.
-Therefore, the lack of the default term indicates the element is required. For this reason, option E is correct.
-
-### What modifier is used to mark an annotation element as optional?
-*  A. optional
-*  B. default
-*  C. required
-*  D. value
-*  E. case
-*  F. None of the above
-
-The default modifier along with a value is used to mark an annotation element as optional, as opposed to required.
 
 ### What statement about marker annotations is correct?
 * A. A marker annotation does not contain any elements or constant variables.

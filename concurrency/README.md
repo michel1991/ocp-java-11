@@ -73,3 +73,15 @@ ExecutorService defines two shutdown methods, shutdown() and shutdownNow(), one 
 Option D is correct, as exit() does not exist and is not one of shutdown methods.
 The ExecutorService interface defines the two submit() methods shown in options C and E.
 Because ExecutorService extends Executor, it also inherits the execute(Runnable) method presented in option F.
+
+### Which of the following is a recommended way to define an asynchronous task?
+*  A. Create a Callable expression and pass it to an instance of an Executor.
+*  B. Create a class that extends Thread and override the start() method.
+*  C. Create a Runnable lambda expression and pass it to a Thread constructor.
+*  D. Create an anonymous Runnable class that overrides the begin() method.
+*  E. All of the above.
+
+Option A is incorrect, although it would be correct if Executor were replaced with ExecutorService.
+Option B is also incorrect, but it would be correct if start() were replaced with run().
+Option C is correct and is a common way to define an asynchronous task using a lambda expression.
+Option D is incorrect, as Runnable does not inherit a begin() method.
