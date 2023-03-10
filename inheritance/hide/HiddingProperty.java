@@ -1,4 +1,4 @@
-package inheritance;
+package inheritance.hide;
 
 /*
    Which of the following complete the constructor so that this code prints out 50? (Choose all that apply.)
@@ -9,7 +9,7 @@ package inheritance;
     E. super.numSpots = numSpots;
     F. The code does not compile, regardless of the code inserted into the constructor.
     G. None of the above
-    
+
     The code compiles, making option F incorrect. An instance variable with the same name as an inherited instance variable is hidden,
     not overridden. This means that both variables exist, and the one that is used depends on the location and reference type.
     Because the main() method uses a reference type of Speedster to access the numSpots variable, the variable in
