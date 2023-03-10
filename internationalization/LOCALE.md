@@ -40,3 +40,19 @@ There are no get()or of()methodsin Locale.
 You need to use a constructor or a predefined Locale constant to obtain a Localereference.
 Therefore, option F is the correct answer. Options B and C are close in that Locale.ITALIAN does reference a Locale object.
 However, it should not be passed to the nonexistent get() method.
+
+### Which of the following are not valid Locale formats? (Choose two.)
+*  A. nl_BE
+*  B. fr_CA
+*  C. uk_ua
+*  D. CR
+*  E. no
+*  F. ro_RO
+
+In Java, a locale can be represented by a language code in lowercase,
+or a language and country code, with language in lowercase and country in uppercase.
+Option C is invalid because both values are lowercase.
+Option D is invalid because the value is in uppercase.
+The rest of the options are valid locale formats.
+Remember, the exam won’t expect you to know which language
+and country codes exist, but it will expect you to know how to use them.

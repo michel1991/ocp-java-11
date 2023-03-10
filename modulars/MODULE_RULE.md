@@ -58,3 +58,31 @@ None of these problems prevents the file from compiling, though.
 * F. None of these changes would make this directory structure a valid module.
 
 Modules are required to have a module-info.java file at the root directory of the module. Option D matches this requirement.
+
+### How many of the following are legal module-info.java files?
+``` java
+    module com.koala {
+        exports cute;
+    }
+    module com-koala {
+        exports cute;
+    }
+    public module com.koala {
+        exports cute;
+    }
+    public module com-koala {
+        exports cute;
+    }
+```
+
+*  A. None
+*  B. One
+*  C. Two
+*  D. Three
+*  E. Four
+
+Since Java does not allow dashes in identifier names,
+the second and fourth declarations are invalid. Additionally,
+access modifiers are not permitted in module declarations,
+making the third and fourth declarations invalid.
+The only one that is legal is the first declaration, so option B is correct.

@@ -92,3 +92,13 @@ Option C is true because protected access also provides package-private access.
 Option D allows us to write the equals() methods between two objects that compare private attributes of the class.
 Option B is false. Package-private attributes are visible only if the two classes are in the same package,
 regardless of whether one extends the other.
+
+### Assume there is a class Bouncer with a protected variable. Methods in which class can access this variable?
+*  A. Any subclass of Bouncer or any class in the same package as Bouncer
+*  B. Any superclass of Bouncer
+*  C. Only subclasses of Bouncer
+*  D. Only classes in the same package as Bouncer
+*  E. None of the above
+
+The protected modifier allows access by any subclass or class that is in the same package;
+therefore, option A is the correct answer.

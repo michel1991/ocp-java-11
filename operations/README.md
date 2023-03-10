@@ -51,3 +51,20 @@ Option A is incorrect because do while loops check the condition after the first
 A while loop and do/while loop both require a boolean expression, making options A and D correct and options B and E incorrect.
 Option C is incorrect because a for-each statement requires an assignment type and an object to iterate on.
 Option F is correct and shows a traditional for loop with no arguments.
+
+### Variables declared as which of the following are never permitted in a switch statement? (Choose two.)
+*  A. var
+*  B. double
+*  C. int
+*  D. String
+*  E. char
+*  F. Object
+
+A switch statement supports the primitive types byte, short, char,
+and int and the wrapper classes Character, Byte, Short, and Integer.
+It also supports String and enumerated types.
+Finally, it permits var if it can be resolved to one of the previous types.
+Floating-point types like float and double are not supported;
+therefore, option B is correct.
+Object is also not supported since it could include any class,
+making option F correct as well.
