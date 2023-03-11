@@ -13,6 +13,9 @@ java -ea:com.demos.TestColors my.programs.Main
 #enable assertions  for the com.demos package but disables assertions for the TestColors class
 java -ea:com.demos… -da:com.demos.TestColors my.programs.Main
 
+## for Main class
+java -ea:declaringAssertions... declaringAssertions/my/Main
+
 
 
 
