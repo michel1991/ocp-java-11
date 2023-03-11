@@ -1,4 +1,4 @@
-package eclaringAssertions;
+package declaringAssertions;
 
 public class Party{
   public static void main(String[] args){
