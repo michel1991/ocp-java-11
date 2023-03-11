@@ -28,6 +28,6 @@ public class SetDefaultLocalFindErrors {
         System.out.println(Locale.getDefault()); // 8:
     }
   public static void main(String... args){
-
+        firstExample();
   }
 }
