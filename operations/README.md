@@ -68,3 +68,20 @@ Floating-point types like float and double are not supported;
 therefore, option B is correct.
 Object is also not supported since it could include any class,
 making option F correct as well.
+
+### Which of the following best describes the flow of execution in this for loop if beta always returns false?
+```Java
+    for (alpha; beta; gamma) {
+        delta;
+    }
+```
+*  A. alpha
+*  B. alpha, beta
+*  C. alpha, beta, gamma
+*  D. alpha, gamma
+*  E. alpha, gamma, beta
+*  F. None of the above
+
+The initializer, which is alpha, runs first. Then Java checks the condition,
+which is beta, to see whether loop execution should start.
+Since beta returns false, the loop is never entered, and option B is correct.
