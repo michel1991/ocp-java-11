@@ -1,3 +1,4 @@
+
 java -ea Party.java
 
 ----- enable assertion -----------
@@ -15,6 +16,11 @@ java -ea:com.demos… -da:com.demos.TestColors my.programs.Main
 
 ## for Main class
 java -ea:declaringAssertions... declaringAssertions/my/Main
+
+### diable
+java -ea:declaringAssertions... -da:declaringAssertions.demos... declaringAssertions/my/MainDisable
+java -ea:declaringAssertions... -da:declaringAssertions.demos.TestColors declaringAssertions/my/MainDisable (only one class)
+
 
 
 
