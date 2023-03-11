@@ -14,3 +14,14 @@ This makes the com.magic.unicorn package accessible, but not the com.magic.drago
 Both packages in com.science are accessible because it is an automatic module.
 When a module on the module path does not contain a module-info file,
 all packages are exported. This gives us three packages that are accessible and a correct answer of option D.
+
+### Given the diagram, which is an automatic module?
+[image](./dog.hair_automatic_module.jpg)
+* A. dog.bark
+* B. dog.fluffy
+* C. dog.hair
+* D. dog.husky
+* E. None of the above
+
+An automatic module must be on the module path but does not contain a module-info file.
+Option C is correct because dog.hair matches this description.
