@@ -253,20 +253,8 @@ The line ends with mandated, making option A correct.
 The java.lang is a trick since that is a package that is imported by default in a class rather than a module.
 
 
-
-### Given the diagram, how many are unnamed modules?
-[image](./how_many_are_unamed_modules.jpg.jpg)
-* A. 0
-* B. 1
-* C. 2
-* D. 3
-* E. 4
-An unnamed module must be on the classpath.
-It is rare to have a module-info file in an unnamed module, but it is allowed.
-Therefore, both dog.fluffy and dog.husky meet this criterion, making option C correct.
-
 ### Using the diagram, which boxes represent the consumer and service locator, respectively?
-[image](./find_consumer_service_locator.jpg)
+[image](images/find_consumer_service_locator.jpg)
 * A. W and X
 * B. W and Z
 * C. X and Y
@@ -284,7 +272,7 @@ making the service locator Z and option B the answer.
 ##### What could we add to the module-info.java in com.duck
 ##### to allow the com.park module to reference the Duckling class but not allow the com.bread module to do the same?
 
-[image](./com.duck_com.park.jpg)
+[image](images/com.duck_com.park.jpg)
 *  A. exports com.duckling;
 *  B. exports com.duckling from com.park;
 *  C. exports com.duckling to com.park;
