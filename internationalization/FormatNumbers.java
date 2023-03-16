@@ -51,6 +51,31 @@ public class FormatNumbers {
 
     }
 
+    /**
+       For currency, the US uses the $ symbol, the UK uses the £ symbol, and Germany uses the € symbol.
+       Given this information, what is the expected output of the following code snippet?
+
+        A. $6.95
+        B. 6,95€
+        C. £6.95
+        D. The code does not compile.
+        E. An exception is thrown at runtime.
+        F. The output cannot be determined without knowing the locale of the system where it will be run.
+
+        The code compiles, so option D is incorrect.
+        While three distinct locale values are set, the one that is used for formatting text is Category.FORMAT.
+        For this reason, the GERMANY locale is used to formatting the data with the € symbol, making option B correct.
+       *
+     */
+    static void formatToGermany(){
+        Locale.setDefault(Locale.US);
+        Locale.setDefault(Category.FORMAT, Locale.GERMANY);
+        Locale.setDefault(Category.DISPLAY, Locale.UK);
+        System.out.print(NumberFormat.getCurrencyInstance()
+                .format(6.95));
+
+    }
+
     public static void main(String... args){
         formatDoubleWithStream();
     }
