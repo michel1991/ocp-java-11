@@ -20,3 +20,14 @@ assuming there are no other references to the object that exist outside the meth
 
 ### Response Grasshopper
 * C, D
+
+#### How do you force garbage collection to occur at a certain point?
+*  A. Calling System.forceGc()
+*  B. Calling System.gc()
+*  C. Calling System.requireGc()
+*  D. Calling GarbageCollection.clean()
+*  E. None of the above
+
+While you can suggest to the JVM that it might want to run a garbage collection cycle,
+the JVM is free to ignore your suggestion. Option B is how to make this suggestion.
+Since garbage collection is not guaranteed to run, option E is correct.

@@ -3,19 +3,19 @@
 
 ```
     A.DoubleBinaryOperator
-    ToDoubleBiFunction˂Integer,Double˃
-    UnaryOperator˂Integer˃
+    ToDoubleBiFunction<Integer,Double>
+    UnaryOperator<Integer>
 
-    B. BinaryOperator˂Double˃
-    BiFunction˂Integer,Integer,Double˃
-    UnaryOperator˂Integer˃
+    B. BinaryOperator<Double>
+    BiFunction<Integer,Integer,Double>
+    UnaryOperator<Integer>
 
-    C.Function˂Double,Integer˃
-    BiFunction˂Integer,Integer,Double˃
+    C.Function<Double,Integer>
+    BiFunction<Integer,Integer,Double>
     DoubleToIntFunction
 
-    D.BiFunction˂Integer,Double,Integer˃
-    BinaryOperator˂Integer˃
+    D.BiFunction<Integer,Double,Integer>
+    BinaryOperator<Integer>
     IntUnaryOperator
 
     E. None of the above

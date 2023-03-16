@@ -163,3 +163,20 @@ For this reason, option D is correct, and option B is incorrect.
 Note that Console does have a readPassword() method that returns char[].
 Finally, the correct Java policy permission to prevent write access is to only grant read access,
 making option F correct and option E incorrect.
+
+### What are two motivations for marking a class final? (Choose two.)
+*  A. Guarantee behavior of a class
+*  B. Allow the class to be extended
+*  C. Improve security
+*  D. Support polymorphism
+*  E. Improve performance
+*  F. Ensure the contents of the class are immutable
+
+Marking a class final tends to improve security by guaranteeing
+the behavior of a class is not replaced by overridden methods at runtime.
+For this reason, options A and C are correct.
+Option B is incorrect and is the opposite of what marking a class final does.
+Options D and E are incorrect and have nothing to do with marking a class final.
+Option F is incorrect as the contents of the class can still be changed,
+even if the class is marked final.
+

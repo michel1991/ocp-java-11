@@ -11,17 +11,7 @@ The isSameFile() method will throw an IOException if one of the Path values does
 The size() and readAttrributes() methods will also throw an IOException if they reference paths that do not exist.
 The rest of the methods return false without throwing an exception if the path does not exist.
 
-### Which NIO.2 method is most similar to the legacy java.io.File method listFiles?
-* A. Path.listFiles()
-* B. Files.dir()
-* C. Files.ls()
-* D. Files.files()
-* E. Files.list()
-* F. Files.walk()
 
-The java.io.File method listFiles() retrieves the members of the current directory without traversing any subdirectories.
-Option E is correct, as Files.list() returns a Stream<Path> of a single directory.
-Files.walk() is close, but it iterates over the entire directory tree, not just a single directory. The rest of the methods do not exist.
 
 ### What are some advantages of using NIO.2’s Files.readAttributes() method rather than reading attributes individually from a file? (Choose all that apply.)
 * A. It can be used on both files and directories.

@@ -29,3 +29,17 @@ Therefore, the lack of the default term indicates the element is required. For t
 *  F. None of the above
 
 The default modifier along with a value is used to mark an annotation element as optional, as opposed to required.
+
+### Which of the following are permitted for an annotation elementdefault value? (Choose three.)
+*  A. ""
+*  B. (int)1_000.0
+*  C. new String()
+*  D. Integer.valueOf(3).intValue()
+*  E. null
+*  F. Integer.MAX_VALUE
+
+An annotation element can include a default value if it is a non-null constant expression.
+Options A, B, and F fulfill this criteria.
+Option C is incorrect because it creates a new object.
+Option D is incorrect because it uses method calls.
+Option E is incorrect because null is not permitted.
