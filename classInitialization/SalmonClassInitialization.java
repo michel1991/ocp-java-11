@@ -1,4 +1,4 @@
-package advancedDesign;
+package classInitialization;
 
 /**
   What is the output of executing the following class?
