@@ -54,4 +54,28 @@ public class BadFormatDateClock {
         System.out.print("_______________"); // "_______________"
 
     }
+
+    /**
+     * What is the output of the following code snippet?
+        A. 2022APRIL1
+        B. 2022MAY0
+        C. 2022MAY1
+        D. 2022APRIL0
+        E. The code does not compile.
+        F. An exception is thrown at runtime.
+
+        The parse() method properly reads the date as April 1, 2022.
+        The format() tries to use a date/time formatter on a date,
+        which produces an exception at runtime since the time element is missing.
+        For this reason, option F is correct.
+
+     */
+    static void formatWithoutDateTimeInDate(){
+        var d = LocalDate.parse("2022-04-01",DateTimeFormatter.ISO_LOCAL_DATE);
+        System.out.print(d.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
+    }
+
+    public static void main(String... args){
+        
+    }
 }
