@@ -14,8 +14,35 @@ public class SortedWithStream {
        .collect(Collectors.toList());
    }
 
+
+    /**
+       What is the output of this code?
+
+        A. bloat
+        B. BLOAT
+        C. one
+        D. ONE
+        E. The code does not compile due to line x.
+        F. None of the above.
+
+        This is a correct stream pipeline.
+        The source creates a stream of three elements.
+        The first operation makes a stream of one element, one.
+        Then that single element is made uppercase and sorted to complete the intermediate operations.
+        Finally, the terminal operation prints ONE, which corresponds to option D.
+     */
+    static void sortedByNaturalOrder(){
+        Stream.of("one", "two", "bloat")
+               .limit(1)
+               .map(String::toUpperCase)       // line x
+               .sorted()
+               .forEach(System.out::println);
+    }
+
     public static void main(String... args){
       var surnames = List.of("pierre", "hawking", "michel", "jobs", "yava");
       System.out.println(sortByDesc(surnames));
     }
+
+
 }
