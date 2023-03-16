@@ -1,4 +1,4 @@
-package advancedDesign.errors;
+package nestedClass.errors;
 
 /**
 * The following code appears in a file named Ostrich.java. What is the result of compiling the source file?

@@ -1,4 +1,4 @@
-package advancedDesign.errors;
+package classInitialization.errors;
 
 /**
 *  How many lines in the following code have compiler errors?

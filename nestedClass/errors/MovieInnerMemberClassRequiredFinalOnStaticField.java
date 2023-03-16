@@ -1,9 +1,9 @@
-package advancedDesign.errors;
+package nestedClass.errors;
 
 /*
 
    What is the result of the following code? (Choose all that apply.)
-   
+
     A. The output is 5.
     B. The output is 10.
     C. Line 6 generates a compiler error.

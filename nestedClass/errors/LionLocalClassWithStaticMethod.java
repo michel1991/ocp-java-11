@@ -1,4 +1,4 @@
-package advancedDesign.errors;
+package nestedClass.errors;
 
 /**
 * Which of the following are true statements about the following program? (Choose all that apply.)

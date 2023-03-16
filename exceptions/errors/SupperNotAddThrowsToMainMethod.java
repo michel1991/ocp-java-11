@@ -1,4 +1,4 @@
-package advancedDesign.errors;
+package exceptions.errors;
 import java.io.*;
 /**
 *  What is the output of the following program?
