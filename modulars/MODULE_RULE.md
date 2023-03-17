@@ -86,3 +86,19 @@ the second and fourth declarations are invalid. Additionally,
 access modifiers are not permitted in module declarations,
 making the third and fourth declarations invalid.
 The only one that is legal is the first declaration, so option B is correct.
+
+#### Given the diagram in question 78 and the following module-info.java for the panda module, what is the result of including line m1?
+
+``` java
+    module panda {
+        requires mammal;
+        requires transitive mammal; // line m1
+    }
+```
+*  A. Any modules that require mammal will automatically get panda as well.
+*  B. Any modules that require panda will automatically get mammal as well.
+*  C. There is no change in behavior.
+*  D. The code does not compile.
+
+Any requires directives must reference unique modules.
+Using the transitive keyword does not change this requirement, making option D the correct answer.

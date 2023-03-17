@@ -1,16 +1,3 @@
-### Which are true statements? (Choose all that apply.)
-* A. An automatic module exports all packages to named modules.
-* B. An automatic module exports only the specified packages to named modules
-* C. An automatic module exports no packages to named modules.
-* D. An unnamed module exports only the named packages to named modules.
-* E. An unnamed module exports all packages to named modules.
-* F. An unnamed module exports no packages to named modules.
-
-An automatic module exports all packages, making option A correct.
-An unnamed module is not available to any modules on the module path.
-Therefore, it doesn’t export any packages, and option F is correct.
-
-
 ### Fill in the blanks to complete this sentence: The show-module-resolution option is on the _______ command, and the summary option is on the _______ command.
 * A. jar and java
 * B. javac and java
@@ -132,19 +119,6 @@ You might think jar does the same thing since it runs a program too. Alas, this 
 Options B and C are correct because the -d (--describe-module) option can be passed when to the java and jar commands.
 
 
-### A(n) ________________ module can reference classes in a(n) _______________ module. Assume the package is exported as needed. (Choose all that apply.)
-* A. automatic, named
-* B. automatic, unnamed
-* C. named, automatic
-* D. named, unnamed
-* E. unnamed, automatic
-* F. unnamed, named
-* G. None of the above
-
-Named modules can read only from the module path, making option C correct and option D incorrect.
-Unnamed modules can read only from the classpath, making options E and F incorrect.
-Automatic modules can read from either the classpath or the module path, making options A and B correct.
-
 ### Which of the following pairs make up a service?
 * A. Consumer and service locator
 * B. Consumer and service provider interface
@@ -156,7 +130,11 @@ A service consists of the service provider interface and logic to look up implem
 This makes option D correct. Make sure you know that the service provider itself is the implementation, which is not considered part of the service.
 
 
-#### Suppose you have a project with one package named magic.wand and another project with one package named magic.potion. These projects have a circular dependency, so you decide to create a third project named magic.helper. The magic.helper module has the common code containing a package named magic.util. For simplicity, let’s give each module the same name as the package. Which of the following need to appear in your module-info files? (Choose all that apply.)
+#### Suppose you have a project with one package named magic.wand and another project with one package named magic.potion.
+#### These projects have a circular dependency, so you decide to create a third project named magic.helper.
+#### The magic.helper module has the common code containing a package named magic.util. For simplicity,
+#### let’s give each module the same name as the package.
+#### Which of the following need to appear in your module-info files? (Choose all that apply.)
 * A. exports magic.potion; in the potion project
 * B. exports magic.util; in the magic helper project
 * C. exports magic.wand; in the wand project
@@ -208,7 +186,9 @@ Options C and E are incorrect because they are provided by Java without the modu
 Option A is incorrect because there is not a central repository of modules. Option D is incorrect because Java defines types.
 
 
-### Which option best fills in the blanks in the following statements: In the module-info file, a module that wants to use code in another module specifies the directive ________. By contrast, the module that wants to allow other modules to use its code specifies the directive ___________.
+##### Which option best fills in the blanks in the following statements:
+##### In the module-info file, a module that wants to use code in another module specifies
+##### the directive ________. By contrast, the module that wants to allow other modules to use its code specifies the directive ___________.
 * A. exports and requires
 * B. exports and uses
 * C. exposes and requires
@@ -222,7 +202,10 @@ The module that wants to expose one or more packages uses the exports directive.
 The requires directive is used by the module that wants to use code in another one.
 
 
-### You have a project that has two packages named jellyfish.sting and jellyfish.swim. Suppose you were tasked with modularizing the project with the requirement that both packages be available for other Java projects. Which statements are true about your module-info file? (Choose all that apply.)
+###### You have a project that has two packages named jellyfish.sting and jellyfish.swim.
+###### Suppose you were tasked with modularizing the project with the requirement
+###### that both packages be available for other Java projects.
+###### Which statements are true about your module-info file? (Choose all that apply.)
 * A. You can write a combined statement: exports jellyfish.
 * B. You must have two separate exports directives.
 * C. Since you intend both packages to be available, you don’t need to specify an exports directive.
@@ -284,4 +267,46 @@ Option A is incorrect because it exports the package to all modules.
 Option C is correct because it limits package sharing to the com.park module.
 Option E is incorrect because a package must be exported from the module that contains it.
 Options B and D are incorrect because from is not valid syntax.
+
+#### What is a benefit of using modules? (Choose two.)
+*  A. Better access control
+*  B. Custom Java builds
+*  C. Elimination of JAR files
+*  D. Fewer .java files needed in your application
+*  E. Not necessary to specify types of local variables
+*  F. Write once, run anywhere
+
+Option A is correct because modules provide a mechanism to export specific packages.
+This creates module-level access since some packages can be used only in a module.
+Option B is correct because jlink allows creating a distribution
+with just the parts of the JDK that are needed.
+Option C is not correct because modules are usually distributed as a JAR file.
+Option D is incorrect because modules actually require one extra file: module-info.java.
+Option E is incorrect because var can be used with or without modules.
+Finally, option F is incorrect because “write once,
+run anywhere” is a core benefit of Java independent of modules.
+
+#### Which types of modules are required to contain a module-info file?
+*  A. Automatic only
+*  B. Named only
+*  C. Unnamed only
+*  D. Automatic and named
+*  E. Automatic and unnamed
+*  F. Named and unnamed
+
+An unnamed module is on the classpath. While it is permitted to have a module-info file,
+the file is ignored if present. An automatic module is on the module path and does not have a module-info file.
+A named module is required to have a module-info file, making option B the correct answer.
+
+#### Which is a benefit of ServiceLoader?
+*  A. It allows you to add functionality without recompiling the application.
+*  B. It allows you to load a service written in C++.
+*  C. It is an interface.
+*  D. When implementing a service, it references the ServiceLoader.
+
+Option A is correct because ServiceLoader allows you to make your application extensible.
+A service can be added without recompiling the entire application.
+It is a class, but the service provider implementation does not reference it,
+making options C and D incorrect. Option B is not a feature of Java.
+
 

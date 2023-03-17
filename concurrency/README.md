@@ -85,3 +85,18 @@ Option A is incorrect, although it would be correct if Executor were replaced wi
 Option B is also incorrect, but it would be correct if start() were replaced with run().
 Option C is correct and is a common way to define an asynchronous task using a lambda expression.
 Option D is incorrect, as Runnable does not inherit a begin() method.
+
+### Which ExecutorService method guarantees all running tasks are stopped in an orderly fashion?
+* A. shutdown()
+* B. shutdownNow()
+* C. halt()
+* D. shutdownAndTerminate()
+* E. None of the above
+
+The shutdown() method prevents new tasks from being added but allows existing tasks to finish.
+In addition to preventing new tasks from being added,
+the shutdownNow() method also attempts to stop all running tasks.
+Neither of these methods guarantees any task will be stopped,
+making option E the correct answer.
+Options C and D are incorrect because
+they name methods that do not exist in ExecutorService.
