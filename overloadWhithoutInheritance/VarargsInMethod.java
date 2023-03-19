@@ -1,4 +1,4 @@
-package advancedDesign;
+package overloadWhithoutInheritance;
 public class VarargsInMethod {
 
     /**
