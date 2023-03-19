@@ -1,4 +1,4 @@
-package advancedDesign;
+package compare;
 
 public class StringComparison {
     /**
