@@ -21,7 +21,7 @@
     E. None of the above
 ```
 
-[image](./int_double_int.jpg). 
+[image](./images/int_double_int.jpg). 
  First, options A and B are incorrect because the second functions
  for both return a double or Double value, respectively.
  Neither of these values can be sent to a UnaryOperator˂Integer˃ without an explicit cast.

@@ -37,3 +37,14 @@ For the exam, pay attention to methods that have a different name for primitives
 Predicate is an interface with one method.
 The method signature is boolean test(T t).
 Option C is the answer because the method accepts one parameter rather than two.
+
+### Which functional interface has three generic types and an apply() method?
+* A. BiConsumer
+* B. BinaryConsumer
+* C. BiPredicate
+* D. BinaryPredicate
+* E. BiFunction
+* F. BinaryFunction
+
+BiFunction takes three generic types. Two are for the parameters, and one is for the return type.
+Options B, D, and F aren’t the names of functional interfaces in Java.

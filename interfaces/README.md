@@ -26,43 +26,6 @@ Option E is incorrect, as final refers only to the reference to an object, not i
 Finally, option F is incorrect, as var and final can be used together.
 
 
-### What modifiers are implicitly applied to all interface methods that do not declare a body? (Choose all that apply.)
-* A. protected
-* B. public
-* C. static
-* D. void
-* E. abstract
-* F. default
-
-A method that does not declare a body is by definition abstract, making option E correct.
-All abstract interface methods are assumed to be public, making option B correct.
-Interface methods cannot be marked protected, so option A is incorrect.
-Interface methods can be marked static or default, although if they are, they must provide a body, making options C and F incorrect.
-Finally, void is a return type, not a modifier, so option D is incorrect.
-
-### Which functional interface has three generic types and an apply() method?
-* A. BiConsumer
-* B. BinaryConsumer
-* C. BiPredicate
-* D. BinaryPredicate
-* E. BiFunction
-* F. BinaryFunction
-
-BiFunction takes three generic types. Two are for the parameters, and one is for the return type. Options B, D, and F aren’t the names of functional interfaces in Java.
-
-### Which statements about default and private interface methods are correct? (Choose all that apply.)
-* A. A default interface method can be declared private.
-* B. A default interface method can be declared public.
-* C. A default interface method can be declared static.
-* D. A private interface method can be declared abstract.
-* E. A private interface method can be declared protected.
-* F. A private interface method can be declared static.
-
-A default interface method is always public, whether you include the identifier or not, making option B correct and option A incorrect.
-Interfaces cannot contain default static methods, making option C incorrect.
-Option D is incorrect, as private interface methods are not inherited and cannot be marked abstract.
-Option E is incorrect, as a method can’t be marked both protected and private. Finally, interfaces can include both private and private static methods, making option F correct.
-
 ### What are some advantages of using default interface methods? (Choose all that apply.)
 *  A. Automatic resource management
 *  B. Improve performance at runtime
@@ -78,18 +41,6 @@ Option F is also correct, as default methods in some APIs offer a number of conv
 The rest of the options are not related to default methods.
 
 
-### Which modifiers are implicitly applied to all interface variables? (Choose all that apply.)
-* A. protected
-* B. final
-* C. transient
-* D. default
-* E. const
-* F. static
-* G. None of the above
-
-All interface variables are assumed to be public, static, and final, making options B and F correct.
-The other modifiers, while all Java keywords, cannot be applied to interface variables. Note that const is an unused keyword in Java.
-
 ### What are some advantages of using private interface methods? (Choose all that apply.)
 * A. Improve polymorphism
 * B. Improve performance at runtime
@@ -101,28 +52,6 @@ The other modifiers, while all Java keywords, cannot be applied to interface var
 You can reduce code duplication by moving shared code from default or static methods into a private or private static method.
 For this reason, option C is correct. Option E is also correct, as making interface methods private means users of the interface do not have access to them.
 The rest of the options are not related to private methods, although backward compatibility does apply to default methods.
-
-### What does the following print? How many rows of the following table contain an error?
-
-Interface member	Optional modifier(s)	   Required modifier(s)
-Private method	     private	              -
-Default method	     public	                 default
-Static method	     public static	          -
-Abstract method	      public	               abstract
-
-* A. Zero
-* B. One
-* C. Two
-* D. Three
-* E. Four
-
-The first row is incorrect as the private modifier is required for private interface methods.
-The second row is correct.
-The third row is also incorrect because the static modifier is required,
-not optional, for static interface methods.
-The public modifier is optional, though, as the static method is implicitly public without it.
-The last row is incorrect as the abstract modifier can be implied if the method does not declare a body.
-Since three rows contain an error, option D is correct.
 
 ### Which of the following are the best reasons for creating a default interface method? (Choose two.)
 *  A. Allow interface methods to be overloaded.
