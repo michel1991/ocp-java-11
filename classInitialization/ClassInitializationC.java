@@ -1,4 +1,4 @@
-package advancedDesign;
+package classInitialization;
 
 /**
 * What is the result of this code?
