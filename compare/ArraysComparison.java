@@ -1,4 +1,4 @@
-package advancedDesign;
+package compare;
 import java.util.*;
 
 public class ArraysComparison {
@@ -34,7 +34,7 @@ public class ArraysComparison {
        System.out.println( "Arrays.mismatch(s3, s4) returns a positive integer " + Arrays.mismatch(s3, s4) );
 
    }
-    
+
     public static void main(String... args){
        compare();
    }
