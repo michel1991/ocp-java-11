@@ -34,7 +34,8 @@ Since all three are correct, the answer is option F.
 A functional interface may have any number of static, default, private static, or private methods.
 It can have only one qualified abstract method, though, making option D correct.
 
-### Which of the following functional interfaces contain an abstract method that returns a primitive value? (Choose all that apply.)
+##### Which of the following functional interfaces contain an abstract method
+##### that returns a primitive value? (Choose all that apply.)
 *  A. BooleanSupplier
 *  B. CharSupplier
 *  C. DoubleSupplier
@@ -42,24 +43,34 @@ It can have only one qualified abstract method, though, making option D correct.
 *  E. IntSupplier
 *  F. StringSupplier
 
-Java includes support for three primitive streams, along with numerous functional interfaces to go with them: int, double, and long.
+Java includes support for three primitive streams, along with numerous
+functional interfaces to go with them: int, double, and long.
 For this reason, options C and E are correct.
-There is one exception to this rule. While there is no BooleanStream class, there is a BooleanSupplier functional interface, making option A correct.
-Java does not include primitive streams or related functional interfaces for other numeric data types, making options B and D incorrect.
-Option F is incorrect because String is not a primitive, but an object. Only primitives have custom suppliers.
+There is one exception to this rule. While there is no BooleanStream class,
+there is a BooleanSupplier functional interface, making option A correct.
+Java does not include primitive streams or related functional
+interfaces for other numeric data types, making options B and D incorrect.
+Option F is incorrect because String is not a primitive,
+but an object. Only primitives have custom suppliers.
 
 ### Which statements about functional interfaces are true? (Choose all that apply.)
 * A. A functional interface can contain default and private methods.
 * B. A functional interface can be defined by a class or interface.
-* C. Abstract methods with signatures that are contained in public methods of java.lang.Object do not count toward the abstract method count for a functional interface.
+* C. Abstract methods with signatures that are contained in public methods
+of java.lang.Object do not count toward the abstract method count for a functional interface.
 * D. A functional interface cannot contain static or private static methods.
 * E. A functional interface contains at least one abstract method.
 * F. A functional interface must be marked with the @FunctionalInterface annotation.
 
-A functional interface can contain any number of nonabstract methods including default, private, static, and private static.
-For this reason, option A is correct, and option D is incorrect. Option B is incorrect, as classes are never considered functional interfaces.
-A functional interface contains exactly one abstract method, although methods that have matching signatures as public methods in java.lang.Object do not count toward the single method test.
-For these reasons, option C is correct, and option E is incorrect. Finally, option F is incorrect.
+A functional interface can contain any number of nonabstract
+methods including default, private, static, and private static.
+For this reason, option A is correct, and option D is incorrect.
+Option B is incorrect, as classes are never considered functional interfaces.
+A functional interface contains exactly one abstract method,
+although methods that have matching signatures as
+public methods in java.lang.Object do not count toward the single method test.
+For these reasons, option C is correct, and option E is incorrect.
+Finally, option F is incorrect.
 While a functional interface can be marked with the @FunctionalInterface annotation, it is not required.
 
 ### Fill in the blanks: A functional interface must contain or inherit ______________ and may optionally include ______________.
@@ -69,12 +80,36 @@ While a functional interface can be marked with the @FunctionalInterface annotat
 * D. at least one static method, at most one default method
 * E. None of the above
 
-A functional interface must include exactly one abstract method, either by inheritance or declared directly.
+A functional interface must include exactly one abstract method,
+either by inheritance or declared directly.
 It may also have any number, including zero, of default or static methods.
 For this reason, both parts of option D are incorrect.
-The first part of option A is incorrect because more than one abstract method disqualifies it as a functional interface.
-The first part of option B is incorrect because the method must be abstract; that is to say, any method will not suffice.
-Finally, option C is the correct answer. The first part of the sentence defines what it means to be a functional interface.
+The first part of option A is incorrect because
+more than one abstract method disqualifies it as a functional interface.
+The first part of option B is incorrect because the method must be abstract;
+that is to say, any method will not suffice.
+Finally, option C is the correct answer. T
+he first part of the sentence defines what it means to be a functional interface.
 The second part refers to the optional @FunctionalInterface annotation.
-It is considered a good practice to add this annotation to any functional interfaces you define because
-the compiler will report a problem if you define an invalid interface that does not have exactly one abstract method.
+It is considered a good practice to add
+this annotation to any functional interfaces you define because
+the compiler will report a problem if you
+define an invalid interface that does not have exactly one abstract method.
+
+#### Which of the following statements about functional interfaces is true?
+* A. It is possible to define a functional interface that returns two data types.
+* B. It is possible to define a primitive functional interface that uses float, char, or short.
+* C. All functional interfaces must take arguments or return a value.
+* D. None of the primitive functional interfaces includes generic arguments.
+* E. None of these statements is true.
+
+Java supports only a single return data type or void.
+Therefore, it is not possible to define a functional interface that
+returns two data types, making option A incorrect.
+Although Java does not include built-in support for primitive functional interfaces
+that include float, char, or short, there is nothing to prevent a developer
+from creating them in their own project,
+making option B the true statement and the correct answer.
+Option C is incorrect because a functional interface that takes no values and returns void is possible.
+In fact, Runnable is one such example. Option D is also incorrect,
+since IntFunction˂R˃ takes a primitive argument as input and a generic argument for the return type.
