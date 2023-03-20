@@ -81,3 +81,16 @@ Both abstract classes and interfaces can include static methods, so options A an
 Of all the nested class types, only static nested classes can include static methods, making option F correct,
 and options B, D, and E incorrect.
 
+#### Which of the following statements are correct? (Choose two.)
+*  A. Java allows multiple inheritance using two abstract classes.
+*  B. Java allows multiple inheritance using two interfaces.
+*  C. Java does not allow multiple inheritance.
+*  D. An interface can extend another interface.
+*  E. An interface can implement another interface.
+
+While Java does not allow a class to extend more than one class,
+it does allow a class to implement any number of interfaces.
+Multiple inheritance is, therefore, only allowed via interfaces,
+making option B correct. Interfaces can extend other interfaces,
+making option D the other answer.
+

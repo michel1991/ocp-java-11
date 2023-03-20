@@ -45,3 +45,15 @@ the result of the stream may change, making option F correct and option E incorr
 Option C is correct, as a parallel stream may improve performance.
 Option D is also correct, though, as a parallel stream may add extra overhead
 to a stream that is forced into a serial operation, such as when the findFirst() method is called.
+
+#### Given an IntStream, which method would you use to obtain an equivalent parallel IntStream?
+* A. parallelStream()
+* B. parallels()
+* C. getParallelStream()
+* D. parallel()
+* E. getParallel()
+* F. None of the above
+
+The correct method to obtain an equivalent parallel stream of an existing stream is parallel(),
+which is inherited by any class that implements BaseStream<T>
+including the primitive streams. For this reason, option D is correct.
