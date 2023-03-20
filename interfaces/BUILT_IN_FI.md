@@ -48,3 +48,19 @@ Option C is the answer because the method accepts one parameter rather than two.
 
 BiFunction takes three generic types. Two are for the parameters, and one is for the return type.
 Options B, D, and F aren’t the names of functional interfaces in Java.
+
+#### Identify the correct functional interfaces to fill in this table correctly. (Choose three.)
+*  A. Interface X is Predicate.
+*  B. Interface X is Supplier.
+*  C. Interface Y is Comparator.
+*  D. Interface Y is Supplier.
+*  E. Interface Z is Consumer.
+*  F. Interface Z is Supplier.
+
+[image](./images/fi-return_type.png).
+Interface X is tricky. If it returned a boolean primitive,
+option A would be correct as Predicate returns a boolean.
+However, it returns a wrapper object,
+so it has to be a Supplier, making option B the answer instead.
+Interface Y and Z are more straightforward as a Comparator and Consumer, respectively.
+This makes options C and E the final two answers.
