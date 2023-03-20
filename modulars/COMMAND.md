@@ -29,7 +29,8 @@ Option A will run, but it will print details rather than a summary.
 Options B and C are both valid options for the jdeps command.
 Remember that -summary uses a single dash (-).
 
-### Which of the following are legal commands to run a modular program where n is the package name and c is the class name? (Choose all that apply.)
+##### Which of the following are legal commands to run a modular
+##### program where n is the package name and c is the class name? (Choose all that apply.)
 * A. java –module-path x -m n.c
 * B. java --module-path x -p n.c
 * C. java --module-path x -m n/c
@@ -50,7 +51,8 @@ However, the question supplies a package name, not a module name, making option 
 *  E. It has a short form of -m.
 *  F. It has a short form of -p.
 
-Option B is correct because the only command that has a --module option is java. Option E is correct because -m is equivalent.
+Option B is correct because the only command that has a --module option is java.
+Option E is correct because -m is equivalent.
 
 ### Which commands can list dependencies? (Choose all that apply.)
 * A. jdeps flea.jar
@@ -70,10 +72,13 @@ The jdeps command uses command-line options to restrict the output to the summar
 *  E. jmod
 *  F. None of the above
 
-Options A and B are correct because the -p (--module-path) option can be passed when compiling or running a program.
-Option D is also correct because jdeps can use the --module-path option when listing dependency information.
+Options A and B are correct because the -p (--module-path)
+option can be passed when compiling or running a program.
+Option D is also correct because jdeps
+can use the --module-path option when listing dependency information.
 
-### Given the following command, which of the following classes would be included for compilation? (Choose all that apply.)
+##### Given the following command, which of the following
+##### classes would be included for compilation? (Choose all that apply.)
 ```sh
  javac *.java
 ```
@@ -121,7 +126,9 @@ When running a program using java, you specify the classpath with -cp, making op
 Options D and E are incorrect because -d and -p are used for modules.
 Options A and B are not valid options on the java command.
 
-### Which command can you run to determine whether you have any code in your JAR file that depends on unsupported internal APIs and does not suggest an alternative?
+##### Which command can you run to determine whether you have
+##### any code in your JAR file that depends on unsupported internal
+##### APIs and does not suggest an alternative?
 *  A. jdeps -internal-jdk
 *  B. jdeps --internaljdk
 *  C. jdeps --internal-jdk
@@ -135,7 +142,8 @@ Option D is correct because it prints jdk.unsupported but does not print a table
 Option C is incorrect because it does print a suggested alternative.
 Options A, B, E, F, and G are incorrect because those options do not exist.
 
-### Which command can you run to determine whether you have any code in your JAR file that depends on unsupported internal APIs and suggests an alternative?
+###### Which command can you run to determine whether you have any code
+###### in your JAR file that depends on unsupported internal APIs and suggests an alternative?
 * A. jdeps -internal-jdk
 * B. jdeps --internaljdk
 * C. jdeps --internal-jdk
@@ -145,12 +153,14 @@ Options A, B, E, F, and G are incorrect because those options do not exist.
 * G. jdeps –unsupported-api
 * H. None of the above
 
-The jdeps command has an option --internal-jdk that lists any code using unsupported/internal APIs and prints a table with suggested alternatives.
+The jdeps command has an option --internal-jdk that lists any
+code using unsupported/internal APIs and prints a table with suggested alternatives.
 Option D is incorrect because it does not print out the table with a suggested alternative.
 Options A, B, C, E, F, and G are incorrect because those options do not exist.
 For options A,B, and C, the options are reversed and should be “jdk-internals”.
 
-### Which of the following options does not have a one-character shortcut in any of the commands studied in this chapter? (Choose all that apply.)
+###### Which of the following options does not have a one-character shortcut
+###### in any of the commands studied in this chapter? (Choose all that apply.)
 * A. describe-module
 * B. list-modules
 * C. module
@@ -160,7 +170,8 @@ For options A,B, and C, the options are reversed and should be “jdk-internals�
 
 Option A is incorrect because describe-module has the d equivalent.
 Option C is incorrect because module has the m equivalent.
-Option D is incorrect because module-path has the p equivalent. Option F is incorrect because summary has the s equivalent.
+Option D is incorrect because module-path has the p equivalent.
+Option F is incorrect because summary has the s equivalent.
 Options B and E are the correct answers because they do not have equivalents.
 
 ### Which options are valid on the jar command without considering module options? (Choose all that apply.)
@@ -203,7 +214,8 @@ Since the command is incorrect, option G is correct.
 *  F. It has a short form of -p.
 
 Options A, B, and D are correct because the -module-path option is available on javac, java, and jdeps.
-Option F is correct because -p is equivalent for the javac and java commands. The jdeps command does not allow the short form.
+Option F is correct because -p is equivalent for the javac and java commands.
+The jdeps command does not allow the short form.
 
 #### What statements are true about requires mandated java.base? (Choose two.)
 *  A. This output is expected when running the java --list-modules command.
@@ -230,4 +242,25 @@ It is recommended to specify all exports directives in the module-info file.
 While it is legal to use the --add-exports option, it is not recommended, making option B correct.
 You do not need to know how to use it for the exam, just that it is not a good idea.
 There is no equivalent option for requires, making option F correct.
+
+##### Suppose we have module com.bird that contains package
+##### com.bird.tweet and class Tweety with a main() method.
+##### Which of the following can fill in the blank to run this program?
+
+``` ssh
+  java --module-path mods –module _____________
+```
+
+
+
+*  A. com.bird.Tweety
+*  B. com.bird.tweety.Tweety
+*  C. com.bird/Tweety
+*  D. com.bird.tweet/Tweety
+*  E. com.bird/com.bird.tweet.Tweety
+*  F. com.bird.tweet/com.bird.Tweety
+
+When running a module, the module name is listed before the slash,
+and the fully qualified class name is after the slash.
+Option E is the only one that meets this criterion.
 

@@ -64,3 +64,25 @@ However, it returns a wrapper object,
 so it has to be a Supplier, making option B the answer instead.
 Interface Y and Z are more straightforward as a Comparator and Consumer, respectively.
 This makes options C and E the final two answers.
+
+##### Starting with DoubleConsumer and going downward, fill in the missing values for the table.
+Functional Interface	         # Parameters in Method Signature
+    DoubleConsumer
+    IntFunction
+    LongSupplier
+    ObjDoubleConsumer
+
+*  A. 0, 1, 1, 1
+*  B. 0, 1, 0, 2
+*  C. 0, 2, 1, 2
+*  D. 1, 1, 0, 2
+*  E. 1, 1, 1, 1
+*  F. None of the above
+
+Remember that all Supplier interfaces take zero parameters.
+For this reason, the third value in the table is 0, making options A, C, and E incorrect.
+Next, DoubleConsumer and IntFunction each take one value, double and int, respectively.
+On the other hand, ObjDoubleConsumer takes two values,
+a generic value and a double, and returns void.
+For this reason, option D is correct, and option B is incorrect.
+
