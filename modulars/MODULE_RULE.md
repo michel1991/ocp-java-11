@@ -22,8 +22,10 @@ The module-info.java file has the correct name and compiles, making options E an
 *  E. Zero or more packages
 *  F. One or more packages
 
-All modules must contain a module-info.java file in the root directory, making option C correct.
-Additionally, a module is not allowed to be empty. There must be at least one package. making option F the second correct answer.
+All modules must contain a module-info.java file in the root directory,
+making option C correct.
+Additionally, a module is not allowed to be empty.
+There must be at least one package. making option F the second correct answer.
 
 ### What is true about the following module-info.java file?
 ``` java
@@ -35,7 +37,8 @@ module Book {
 * C. It does not compile because the module name has only one component.
 * D. It does not compile for another reason.
 
-Option E is correct as this code does compile. While it is uncommon, a module is not required to have any directives in the body.
+Option E is correct as this code does compile. While it is uncommon,
+a module is not required to have any directives in the body.
 Similarly, module names are lowercase and have more than one component by convention.
 None of these problems prevents the file from compiling, though.
 
@@ -87,7 +90,8 @@ access modifiers are not permitted in module declarations,
 making the third and fourth declarations invalid.
 The only one that is legal is the first declaration, so option B is correct.
 
-#### Given the diagram in question 78 and the following module-info.java for the panda module, what is the result of including line m1?
+###### Given the diagram in question 78 and the following module-info.java for the panda module,
+###### what is the result of including line m1?
 
 ``` java
     module panda {
@@ -102,3 +106,18 @@ The only one that is legal is the first declaration, so option B is correct.
 
 Any requires directives must reference unique modules.
 Using the transitive keyword does not change this requirement, making option D the correct answer.
+
+##### Suppose we want to have two modules: com.ny and com.sf.
+##### Which is true about the placement of the module-info.java file(s)?
+[image](images/com.ny_com.sf.jpg)
+* A. One module-info.java file is required in position Z.
+* B. Two module-info.java files are required, in positions V and X.
+* C. Two module-info.java files are required, in positions W and Y.
+* D. Three module-info.java files are required, in positions V, X, and Z.
+* E. Three module-info.java files are required, in positions W, Y, and Z.
+* F. None of the above.
+
+Each module is required to have its own module-info.java file in the root directory of the module.
+For module com.ny, that is location W, and for module com.sf, that is location Y. Therefore, option B is correct.
+
+

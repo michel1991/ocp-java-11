@@ -1,5 +1,5 @@
 ### Given the diagram, how many are unnamed modules?
-[image](images/how_many_are_unamed_modules.jpg.jpg)
+[image](images/how_many_are_unamed_modules.jpg)
 * A. 0
 * B. 1
 * C. 2
