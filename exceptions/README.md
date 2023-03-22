@@ -96,7 +96,24 @@ Finally, it is true that all exceptions are subclasses of Throwable, making opti
 * D. Neither of these
 
 Custom exception classes may simply use the default constructor.
-It is also common to override the constructors that take a singleException or a single String, making option C correct.
+It is also common to override the constructors that take a
+singleException or a single String, making option C correct.
+
+##### Which of the following statements about java.lang.Error are most accurate? (Choose two.)
+* A. An Error should be thrown if a file system resource becomes temporarily unavailable.
+* B. An application should never catch an Error.
+* C. Error is a subclass of Exception, making it a checked exception.
+* D. It is possible to catch and handle an Error thrown in an application.
+* E. An Error should be thrown if a user enters invalid input.
+* F. Error is a subclass of RuntimeException, making it an unchecked exception.
+
+An Error indicates an unrecoverable problem.
+Options A and E are incorrect because the application could possibly recover.
+While it is possible to catch an Error,
+it is strongly recommended that an application never do so,
+making options B and D correct. Finally, options C and F
+are incorrect because Error extends from Throwable,
+not Exception or RuntimeException, although it is an unchecked exception.
 
 
 

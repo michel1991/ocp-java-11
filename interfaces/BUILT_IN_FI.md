@@ -1,4 +1,5 @@
-### A lambda expression for which of the following functional interfaces could be used to return a Double value? (Choose two.)
+##### A lambda expression for which of the following functional
+##### interfaces could be used to return a Double value? (Choose two.)
 * A. UnaryOperator
 * B. BiPredicate
 * C. BiOperator
@@ -15,7 +16,8 @@ Option D is incorrect because all consumer functions return void.
 Finally, option F is incorrect because BiSupplier does not exist in the java.util.function package.
 Supplier functions return values, and Java does not support methods with more than one return type
 
-#### The ______________ functional interface has an apply() method while the ______________ functional interface has an applyAsDouble() method. (Choose two.)
+##### The ______________ functional interface has an apply() method
+##### while the ______________ functional interface has an applyAsDouble() method. (Choose two.)
 * A. BiConsumer
 * B. BiFunction
 * C. BiPredicate
@@ -85,4 +87,38 @@ Next, DoubleConsumer and IntFunction each take one value, double and int, respec
 On the other hand, ObjDoubleConsumer takes two values,
 a generic value and a double, and returns void.
 For this reason, option D is correct, and option B is incorrect.
+
+###### Fill in the blank: ______________ is the only functional
+###### interface that does not involve double, int, or long.
+* A. BooleanSupplier
+* B. CharPredicate
+* C. FloatUnaryOperator
+* D. ShortConsumer
+* E. None of the above
+
+BooleanSupplier is the only functional interface that does not involve double, int, or long,
+making option A the correct answer.
+The rest of the functional interfaces are not found in java.util.function.
+Java does not have built-in support for primitive
+functional interfaces that include char, float, or short.
+
+##### Which of the following are valid functional interfaces in the java.util.function package? (Choose three.)
+* A. BooleanSupplier
+* B. CharSupplier
+* C. DoubleUnaryOperator
+* D. ObjectIntConsumer
+* E. ToLongBiFunction
+* F. TriPredicate
+
+BooleanSupplier, DoubleUnaryOperator, and ToLongBiFunction are
+all valid functional interfaces in java.util.function,
+making options A, C, and E correct.
+Remember that BooleanSupplier is the only primitive functional interface in the API
+that does not use double, int, or long. For this reason,
+option B is incorrect, since char is not a supported primitive.
+Option D is incorrect because the functional interfaces
+that use Object are abbreviated to Obj. The correct name
+for this functional interface is ObjIntConsumer.
+That leaves option F, which is incorrect.
+There is no built-in Predicate interface that takes three values.
 
