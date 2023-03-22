@@ -1,4 +1,6 @@
-### Fill in the blanks to complete this sentence: The show-module-resolution option is on the _______ command, and the summary option is on the _______ command.
+###### Fill in the blanks to complete this sentence:
+###### The show-module-resolution option is on the _______ command,
+###### and the summary option is on the _______ command.
 * A. jar and java
 * B. javac and java
 * C. java and java
@@ -7,7 +9,8 @@
 * F. java and jdeps
 * G. None of the above
 
-The only command that has a show-module-resolution option is java, and the only command that has a summary option is jdeps.
+The only command that has a show-module-resolution option is java,
+and the only command that has a summary option is jdeps.
 Therefore, option F is correct.
 
 
@@ -19,10 +22,14 @@ Therefore, option F is correct.
 * E. It must have a provides directive.
 * F. It must have a uses directive.
 
-A service provider interface declares the interface rather than a service provider, making option A incorrect.
-Each service provider is allowed to provide only one service provider implementation, making option B correct and option C incorrect.
-One of the benefits of services is being able to change the service provider dynamically, making option D correct.
-Finally, a service provider interface uses while a service provider provides, making option E correct and option F incorrect.
+A service provider interface declares the interface rather than a service provider,
+making option A incorrect.
+Each service provider is allowed to provide only one service provider implementation,
+making option B correct and option C incorrect.
+One of the benefits of services is being able to change
+the service provider dynamically, making option D correct.
+Finally, a service provider interface uses while a service provider provides,
+making option E correct and option F incorrect.
 
 ### Which of the following statements are correct? (Choose all that apply.)
 * A. The jar command allows adding exports as command-line options.
@@ -31,7 +38,8 @@ Finally, a service provider interface uses while a service provider provides, ma
 * D. Adding an export at the command line is discouraged.
 * E. Adding an export at the command line is recommended.
 
-The java command has an --add-exports option that allows exporting a package at runtime. However, it is not encouraged to use it, making options B and D the answer.
+The java command has an --add-exports option that allows exporting a package at runtime.
+However, it is not encouraged to use it, making options B and D the answer.
 
 
 ### Which are true statements? (Choose all that apply.)
@@ -55,10 +63,13 @@ Therefore, it doesn’t export any packages, and option F is correct.
 *  F. An unnamed module can be involved in a cyclic dependency with an automatic module
 
 A cyclic dependency is when a module graph forms a circle.
-Option A is correct because the Java Platform Module System does not allow cyclic dependencies between modules.
+Option A is correct because the Java Platform Module System
+does not allow cyclic dependencies between modules.
 No such restriction exists for packages, making option B incorrect.
-A cyclic dependency can involve two or more modules that require each other, making option E correct, while options C and D are incorrect.
-Finally. Option F is incorrect because unnamed modules cannot be referenced from an automatic module.
+A cyclic dependency can involve two or more modules that require each other,
+making option E correct, while options C and D are incorrect.
+Finally. Option F is incorrect because unnamed modules cannot
+be referenced from an automatic module.
 
 
 ### Which statement is true about the jdeps command? (Choose all that apply.)
@@ -82,7 +93,8 @@ This makes it useful to run against a regular JAR, making option E correct.
 *  E. java accepts the filename of the .bytecode file as a parameter.
 *  F. java accepts the filename of the .class file as a parameter.
 
-Java puts source code in .java files and bytecode in .class files. It does not use a .bytecode file.
+Java puts source code in .java files and bytecode in .class files.
+It does not use a .bytecode file.
 When running a Java program, you pass just the name of the class without the .class extension.
 
 ### Which are valid modes for the jmod command? (Choose all that apply.)
@@ -98,14 +110,16 @@ This is another question you just have to memorize.
 The jmod command has five modes you need to be able to list: create, extract, describe, list, and hash.
 The hash operation is not an answer choice. The other four are making options B, D, E, and F correct.
 
-### Suppose you have the commands javac, java, and jar. How many of them support a --show-module-resolution option?
+##### Suppose you have the commands javac, java, and jar.
+##### How many of them support a --show-module-resolution option?
 * A. 0
 * B. 1
 * C. 2
 * D. 3
 
 The java command uses this option to print information when the program loads.
-You might think jar does the same thing since it runs a program too. Alas, this parameter does not exist on jar.
+You might think jar does the same thing since it runs a program too.
+Alas, this parameter does not exist on jar.
 
 
 ### Which commands take a --describe-module parameter? (Choose all that apply.)
@@ -116,7 +130,8 @@ You might think jar does the same thing since it runs a program too. Alas, this 
 * E. jmod
 * F. None of the above
 
-Options B and C are correct because the -d (--describe-module) option can be passed when to the java and jar commands.
+Options B and C are correct because the -d (--describe-module)
+option can be passed when to the java and jar commands.
 
 
 ### Which of the following pairs make up a service?
@@ -126,8 +141,11 @@ Options B and C are correct because the -d (--describe-module) option can be pas
 * D. Service locator and service provider interface
 * E. Service provider and service provider interface
 
-A service consists of the service provider interface and logic to look up implementations using a service locator.
-This makes option D correct. Make sure you know that the service provider itself is the implementation, which is not considered part of the service.
+A service consists of the service provider interface
+and logic to look up implementations using a service locator.
+This makes option D correct.
+Make sure you know that the service provider itself is the implementation,
+which is not considered part of the service.
 
 
 #### Suppose you have a project with one package named magic.wand and another project with one package named magic.potion.
@@ -142,10 +160,14 @@ This makes option D correct. Make sure you know that the service provider itself
 * E. requires magic.util; in the potion project
 * F. requires magic.util; in the wand project
 
-Since the new project extracts the common code, it must have an exports directive for that code, making option B correct.
-The other two modules do not have to expose anything. They must have a requires directive to be able to use the exported code, making options E and F correct.
+Since the new project extracts the common code,
+it must have an exports directive for that code, making option B correct.
+The other two modules do not have to expose anything.
+They must have a requires directive to be able to use the exported code,
+making options E and F correct.
 
-### A(n) ________________ module always contains a module-info file, while a(n) _______________ module always exports all its packages to other modules.
+###### A(n) ________________ module always contains a module-info file,
+###### while a(n) _______________ module always exports all its packages to other modules.
 * A. automatic, named
 * B. automatic, unnamed
 * C. named, automatic
@@ -160,7 +182,8 @@ Automatic modules always export all packages to other modules, making the answer
 For more information, see Chapter 6.
 
 
-### What can be created using the Java Platform Module System that could not be created without it? (Choose all that apply.)
+##### What can be created using the Java Platform Module System
+##### that could not be created without it? (Choose all that apply.)
 *  A. JAR file
 *  B. JMOD file
 *  C. Smaller runtime images for distribution
@@ -188,7 +211,8 @@ Option A is incorrect because there is not a central repository of modules. Opti
 
 ##### Which option best fills in the blanks in the following statements:
 ##### In the module-info file, a module that wants to use code in another module specifies
-##### the directive ________. By contrast, the module that wants to allow other modules to use its code specifies the directive ___________.
+##### the directive ________. By contrast, the module that wants
+##### to allow other modules to use its code specifies the directive ___________.
 * A. exports and requires
 * B. exports and uses
 * C. exposes and requires
@@ -245,15 +269,18 @@ The java.lang is a trick since that is a package that is imported by default in 
 * E. Y and Z
 * F. None of the above
 
-The consumer depends on the service provider interface and service locator, but not the service provider.
+The consumer depends on the service provider interface and service locator,
+but not the service provider.
 Only W has two arrows starting from it so it must be the consumer.
 This rules out options C, D, and E.
-The service locator references the service provider interface directly and the service provider indirectly,
+The service locator references the service provider interface directly
+and the service provider indirectly,
 making the service locator Z and option B the answer.
 
 ##### Suppose we have the packages in the diagram.
 ##### What could we add to the module-info.java in com.duck
-##### to allow the com.park module to reference the Duckling class but not allow the com.bread module to do the same?
+##### to allow the com.park module to reference the Duckling
+##### class but not allow the com.bread module to do the same?
 
 [image](images/com.duck_com.park.jpg)
 *  A. exports com.duckling;
@@ -285,18 +312,6 @@ Option D is incorrect because modules actually require one extra file: module-in
 Option E is incorrect because var can be used with or without modules.
 Finally, option F is incorrect because “write once,
 run anywhere” is a core benefit of Java independent of modules.
-
-#### Which types of modules are required to contain a module-info file?
-*  A. Automatic only
-*  B. Named only
-*  C. Unnamed only
-*  D. Automatic and named
-*  E. Automatic and unnamed
-*  F. Named and unnamed
-
-An unnamed module is on the classpath. While it is permitted to have a module-info file,
-the file is ignored if present. An automatic module is on the module path and does not have a module-info file.
-A named module is required to have a module-info file, making option B the correct answer.
 
 #### Which is a benefit of ServiceLoader?
 *  A. It allows you to add functionality without recompiling the application.

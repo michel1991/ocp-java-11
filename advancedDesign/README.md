@@ -1,4 +1,5 @@
-### Which of the following are true statements about a class Camel with a single instance variable List<String> species? (Choose all that apply.)
+##### Which of the following are true statements about a class Camel
+##### with a single instance variable List<String> species? (Choose all that apply.)
 * A. If Camel is well encapsulated, then it must have restricted extensibility.
 *    B. If Camel is well encapsulated, then it must be immutable.
 *    C. If Camel has restricted extensibility, then it must have good encapsulation.
@@ -6,11 +7,15 @@
 *    E. If Camel is immutable, then it must have good encapsulation.
 *    F. If Camel is immutable, then it must restrict extensibility.
 
-    Option A is incorrect because good encapsulation requires private state rather than declaring the class final.
-    Option B is incorrect because the well-encapsulated Camel class can have a getter that exposes the species variable to be modified.
-    Options C and D are incorrect because a class can be final while having public variables and be mutable.
-    Option E is correct because methods that expose species could change it, which would prevent immutability.
-    Option F is correct because you cannot enforce immutability in a subclass.
+Option A is incorrect because good encapsulation requires
+private state rather than declaring the class final.
+Option B is incorrect because the well-encapsulated Camel class can have
+a getter that exposes the species variable to be modified.
+Options C and D are incorrect because a class can be final
+while having public variables and be mutable.
+Option E is correct because methods that expose species could change it,
+which would prevent immutability.
+Option F is correct because you cannot enforce immutability in a subclass.
 
  ### Which of the following statements are correct? (Choose all that apply.)
  *    A. The return value of an assignment operation expression can be void.
@@ -48,9 +53,11 @@ Option E is incorrect because Java has no such wildcard access capability.
 * F. None of the above
 
 Unary operators have the highest order of precedence, making option A correct.
-The negation operator (-) is used only for numeric values, while the logical complement operator (!) is used exclusively for boolean values.
+The negation operator (-) is used only for numeric values, while the
+logical complement operator (!) is used exclusively for boolean values.
 For these reasons, option B is incorrect, and option E is correct.
-Finally, the pre-increment/pre-decrement operators return the new value of the variable, while the post-increment/post-decrement operators return the original variable.
+Finally, the pre-increment/pre-decrement operators return the new value
+of the variable, while the post-increment/post-decrement operators return the original variable.
 For these reasons, option C is incorrect, and option D is correct.
 
 ### Which of the following are true statements? (Choose all that apply.)
@@ -78,11 +85,15 @@ The compiler creates bytecode making option C correct and option D incorrect. Fo
 A class may extend another class, and an interface may extend another interface, making option A correct.
 Option B is incorrect. An abstract class can contain concrete instance or static methods.
 Interfaces can also contain nonabstract methods, although knowing this is not required for the 1Z0-815 exam.
-Option C is correct, as both can contain static constants. Option D is incorrect. The compiler only inserts implicit modifiers for interfaces.
+Option C is correct, as both can contain static constants. Option D is incorrect.
+The compiler only inserts implicit modifiers for interfaces.
 For abstract classes, the abstract keyword must be used on any method that does not define a body.
-An abstract class must be declared with the abstract keyword, while the abstract keyword is optional for interfaces.
-Since both can be declared with the abstract keyword, option E is correct. Finally, interfaces do not extend java.lang.Object.
-If they did, then Java would support true multiple inheritance, with multiple possible parent constructors being called as part of initialization.
+An abstract class must be declared with the abstract keyword,
+while the abstract keyword is optional for interfaces.
+Since both can be declared with the abstract keyword,
+option E is correct. Finally, interfaces do not extend java.lang.Object.
+If they did, then Java would support true multiple inheritance,
+with multiple possible parent constructors being called as part of initialization.
 Therefore, option F is incorrect.
 
 ### Which of the following data types cannot be used in a switch statement? (Choose all that apply.)
@@ -95,11 +106,14 @@ Therefore, option F is incorrect.
 * G. Integer
 * H. char[]
 
-A switch statement supports the primitives int, byte, short, and char, along with their associated wrapper classes Integer, Byte, Short, and Character, respectively.
+A switch statement supports the primitives int, byte, short, and char, along with their
+associated wrapper classes Integer, Byte, Short, and Character, respectively.
 A switch statement also supports var if the type can be resolved to a supported switch data types.
 For these reasons, options B, C, D, and G are permitted in switch statements and, therefore, incorrect.
-Options A and E are correct as long, float, double, and their associated wrapped classes Long, Float, and Double, respectively, are not supported in switch statements.
-Option F is correct, as Object is not a supported data type in a switch statement. Finally, option H is incorrect.
+Options A and E are correct as long, float, double, and their associated wrapped
+classes Long, Float, and Double, respectively, are not supported in switch statements.
+Option F is correct, as Object is not a supported data type in a switch statement.
+Finally, option H is incorrect.
 While switch statements support String, a char[] is not the same as a String.
 
 ### What statements about executing the following code snippet are correct? System.console().readPassword()
@@ -110,12 +124,16 @@ While switch statements support String, a char[] is not the same as a String.
 * E. It encrypts the bytes as they are entered.
 * F. None of the above.
 
-The readPassword() method retrieves a text value from the user without echoing the values to screen and returns a char[] instance, making options A and C incorrect.
+The readPassword() method retrieves a text value from the user without echoing the values
+to screen and returns a char[] instance, making options A and C incorrect.
 A NullPointerException may be thrown if the Console is not available, making option B incorrect.
-The readPassword() method is considered safer than using readLine() for protected data, in part because it prevents passwords from entering the string pool, making option D incorrect.
-Option E is also incorrect, as the method does not perform any kind of encryption. For these reasons, option F is correct
+The readPassword() method is considered safer than using readLine() for protected data,
+in part because it prevents passwords from entering the string pool, making option D incorrect.
+Option E is also incorrect, as the method does not perform any kind of encryption.
+For these reasons, option F is correct
 
-### Which of the following are valid method modifiers that cannot be used together in a method declaration? (Choose all that apply.)
+##### Which of the following are valid method modifiers that cannot
+##### be used together in a method declaration? (Choose all that apply.)
 * A. null and final
 * B. abstract and private
 * C. public and private
@@ -258,7 +276,8 @@ Since none of the options accepts the class filename, option F is correct.
 *  F. A class variable of type long defaults to 0.
 *  G. None of the above
 
-Option B is correct because boolean primitives default to false. Option E is correct because long values default to 0L.
+Option B is correct because boolean primitives default to false.
+Option E is correct because long values default to 0L.
 
 
 
@@ -268,7 +287,23 @@ Option B is correct because boolean primitives default to false. Option E is cor
 * C. If s.startsWith("abc") is true, then s.equals("abc") is also true.
 * D. If s.startsWith("abc") is true, then s.contains("abc") is also true.
 
-Options A and B are not true if the String is "deabc". Option C is not true if the String is "abcde". Option D is true in all cases.
+Options A and B are not true if the String is "deabc".
+Option C is not true if the String is "abcde". Option D is true in all cases.
+
+#### Which best describes what the new keyword does?
+* A. Creates a copy of an existing object and treats it as a new one.
+* B. Creates a new primitive.
+* C. Instantiates a new object.
+* D. Switches an object reference to a new one.
+* E. The behavior depends on the class implementation.
+
+The new keyword is used to call the constructor for a class and instantiate
+an instance of the class, making option C correct.
+A primitive cannot be created using the new keyword, so option B is incorrect.
+Dealing with references happens after the object created by new is returned.
+The other options are invalid.
+
+
 
 
 
