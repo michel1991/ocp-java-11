@@ -60,3 +60,18 @@ Since three rows contain an error, option D is correct.
 The second row is incorrect, as private methods belong to an instance, not the class.
 The fourth row is also incorrect, as default methods require a method body.
 The rest of the rows are correct, making option C correct.
+
+#### Which of the following are the best reasons for creating a public static interface method? (Choose two.)
+* A. Allow static methods to access instance methods.
+* B. Allow an interface to define a method at the class level.
+* C. Provide an implementation that a class implementing the interface can override.
+* D. Improve code reuse within the interface.
+* E. Add backward compatibility to existing interfaces.
+* F. Improve encapsulation of the interface.
+
+Option A is incorrect because static methods cannot
+call instance methods directly.
+Options B and D are correct and are the primary
+reasons to create a static interface method.
+Options C and E are incorrect and describe attributes of a default method.
+Option F applies only to private static interface methods, not public ones.

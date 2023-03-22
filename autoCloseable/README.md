@@ -14,3 +14,19 @@ making option C the first answer. Options D and E are both true,
 since Closeable extends AutoCloseable and the requirement
 for try-with-resources is that they must be of type AutoCloseable.
 A try-with-resources statement can be used with a finally block, making option F the other answer.
+
+#### Which statements about try-with-resources are false? (Choose two.)
+* A. If more than one resource is used, the resources are closed in the order they were created.
+* B. Parentheses are used for the resource declaration section, even if more than one resource is used.
+* C. If the try block and close() method both throw an exception, then the one thrown by the close() method is suppressed.
+* D. A resource may be declared before it is used in a try-with-resources statement.
+* E. Resources declarations are separated by commas.
+* F. A catch block is not required.
+
+When more than one resource is used in a try-with-resources statement,
+they are closed in the reverse order in which they are declared,
+making option A the first false statement.
+In addition, resources are separated by semicolons, not commas,
+making option E the other false statement. The rest of the statements are true.
+Note that ability to declare resources before they are used
+in a try-with-resources statement is new since Java 9.

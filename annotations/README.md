@@ -192,3 +192,23 @@ The @Override annotation is always optional for methods and never required.
 For this reason, options A and E are correct, and options C and F are incorrect.
 Option B is correct because adding it to a method that is not actually overriding an inherited method will cause a compiler error.
 Option D is incorrect because it can be appliedonly to method declarations.
+
+#### Which statements about annotations are correct? (Choose three.)
+* A. Annotations contain data that changes throughout the program execution.
+* B. Adding an annotation to a class that already compiles may trigger a compiler error and cause it to fail to compile.
+* C. Annotations contain metadata about a Java type.
+* D. Annotations cannot be applied to lambda expression variables.
+* E. Annotations cannot be applied to other annotations.
+* F. Removing all annotations from a class that already compiles will not introduce a compiler error.
+
+Option A is incorrect, as annotations generally contain information
+that is constant throughout the program execution.
+Option B is correct.
+For example, adding an @Override annotation to a method
+that is not a valid override will trigger a compiler error.
+Option C is also correct and is the primary purpose of annotations.
+Options D and E are incorrect, as annotations can be
+applied to a variety of types including lambda expression
+variables and other annotations. Finally, option F is correct.
+Annotations are optional metadata, and removing all of
+them from a class does not cause a compiler error.
