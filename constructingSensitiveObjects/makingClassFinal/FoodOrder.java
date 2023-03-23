@@ -11,19 +11,19 @@ public final  class FoodOrder {
        setCount(count);
    }
 
-   final public String getItem() {
+   public String getItem() {
        return item;
    }
 
-    final public void setItem(String item) {
+  public void setItem(String item) {
        this.item = item;
    }
 
-    final public int getCount() {
+   public int getCount() {
        return count;
    }
 
-    final public void setCount(int count) {
+    public void setCount(int count) {
        this.count = count;
    }
 
