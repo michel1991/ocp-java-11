@@ -264,3 +264,21 @@ When running a module, the module name is listed before the slash,
 and the fully qualified class name is after the slash.
 Option E is the only one that meets this criterion.
 
+### Which of the following are legal commands to run a modular program? (Choose all that apply.)
+*  A. java -p x -m x/x
+*  B. java -p x-x -m x/x
+*  C. java -p x -m x-x/x
+*  D. java -p x -m x/x-x
+*  E. java -p x -m x.x
+*  F. java -p x.x -m x.x
+*  G. None of the above
+
+The -p specifies the module path. This is just a directory, so all of the options have a legal module path.
+The -m specifies the module, which has two parts separated by a slash.
+Options E and F are incorrect since there is no slash.
+The first part is the module name. It is separated by periods (.)
+rather than dashes (-), making option C incorrect.
+The second part is the package and class name, again separated by periods.
+The package and class names must be legal Java identifiers.
+Dashes (-) are not allowed, ruling out option D.
+This leaves options A and B as the correct answers.

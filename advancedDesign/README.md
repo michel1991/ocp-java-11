@@ -1,6 +1,6 @@
 ##### Which of the following are true statements about a class Camel
 ##### with a single instance variable List<String> species? (Choose all that apply.)
-* A. If Camel is well encapsulated, then it must have restricted extensibility.
+*    A. If Camel is well encapsulated, then it must have restricted extensibility.
 *    B. If Camel is well encapsulated, then it must be immutable.
 *    C. If Camel has restricted extensibility, then it must have good encapsulation.
 *    D. If Camel has restricted extensibility, then it must be immutable.
@@ -26,23 +26,20 @@ Option F is correct because you cannot enforce immutability in a subclass.
  *    F. In Java, 0 and false may be used interchangeably.
  *    G. The logical complement operator (!) cannot be used to flip numeric values.
 
-The return value of an assignment operation in the expression is the same as the value of the newly assigned variable.
+The return value of an assignment operation in the expression
+is the same as the value of the newly assigned variable.
 For this reason, option A is incorrect, and option E is correct.
-Option B is correct, and the equality (==) and inequality (!=) operators can both be used with objects.
+Option B is correct, and the equality (==) and inequality (!=) operators
+can both be used with objects.
 Option C is incorrect, as boolean and numeric types are not comparable with each other.
 For example, you can’t say true == 3 without a compilation error.
-Option D is incorrect, as only the short-circuit operator (&&) may cause only the left side of the expression to be evaluated.
+Option D is incorrect, as only the short-circuit operator
+(&&) may cause only the left side of the expression to be evaluated.
 The (|) operator will cause both sides to be evaluated.
 Option F is incorrect, as Java does not accept numbers for boolean values.
-Finally, option G is correct, as you need to use the negation operator (-) to flip or negate numeric values, not the logical complement operator (!).
+Finally, option G is correct, as you need to use the negation operator (-)
+to flip or negate numeric values, not the logical complement operator (!).
 
-Option D is correct. This is the common implementation for encapsulation by setting all fields to be private and all methods to be public.
-Option A is incorrect because protected access allows everything that package-private access allows and additionally allows subclasses access.
-Option B is incorrect because the class is public.
-This means that other classes can see the class.
-However, they cannot call any of the methods or read any of the fields.
-It is essentially a useless class. Option C is incorrect because package-private access applies to the whole package.
-Option E is incorrect because Java has no such wildcard access capability.
 
 ### Which of the following statements about unary operators are true? (Choose all that apply.)
 * A. Unary operators are always executed before any surrounding binary or ternary operators.
@@ -73,28 +70,6 @@ It contains a compiler since it is a development tool making option A correct an
 The JDK contains a Java Virtual Machine (JVM) making option F correct and option E incorrect.
 The compiler creates bytecode making option C correct and option D incorrect. For more information, see Chapter 1.
 
-
-### Which statements are true for both abstract classes and interfaces? (Choose all that apply.)
-* A. Both can be extended using the extends keyword.
-* B. All methods within them are assumed to be abstract.
-* C. Both can contain public static final variables.
-* D. The compiler will insert the implicit abstract modifier automatically on methods declared without a body, if they are not marked as such.
-* E. Both interfaces and abstract classes can be declared with the abstract modifier.
-* F. Both inherit java.lang.Object.
-
-A class may extend another class, and an interface may extend another interface, making option A correct.
-Option B is incorrect. An abstract class can contain concrete instance or static methods.
-Interfaces can also contain nonabstract methods, although knowing this is not required for the 1Z0-815 exam.
-Option C is correct, as both can contain static constants. Option D is incorrect.
-The compiler only inserts implicit modifiers for interfaces.
-For abstract classes, the abstract keyword must be used on any method that does not define a body.
-An abstract class must be declared with the abstract keyword,
-while the abstract keyword is optional for interfaces.
-Since both can be declared with the abstract keyword,
-option E is correct. Finally, interfaces do not extend java.lang.Object.
-If they did, then Java would support true multiple inheritance,
-with multiple possible parent constructors being called as part of initialization.
-Therefore, option F is incorrect.
 
 ### Which of the following data types cannot be used in a switch statement? (Choose all that apply.)
 * A. float
@@ -143,9 +118,11 @@ For these reasons, option F is correct
 * G. protected and abstract
 
 First, null and nonstatic are not valid method modifiers, making options A and D incorrect.
-Options B and F are correct, as abstract methods cannot be marked private or static, since they then would not be able to be overridden.
+Options B and F are correct, as abstract methods cannot be marked private or static,
+since they then would not be able to be overridden.
 Option C is also correct, as you cannot declare two access modifiers on the same method.
-Finally, options E and G are two sets of valid modifiers that can be used together in a method declaration.
+Finally, options E and G are two sets of valid modifiers that can be used together
+in a method declaration.
 Using private with final is allowed, albeit redundant.
 
 ### Which of the following statements about primitive and reference types are correct? (Choose all that apply.)
@@ -158,12 +135,17 @@ Using private with final is allowed, albeit redundant.
 * G. An object can have only one reference, created when the object is created.
 
 A char is larger than a byte, whereas char and short are the same size, making option A incorrect.
-Java supports autoboxing and unboxing of primitives to their associated wrapped classes, making option B correct.
+Java supports autoboxing and unboxing of primitives to their associated wrapped classes,
+making option B correct.
 Option C is also correct, as the new keyword allocates memory for a new object.
-Java includes support for String literals and operators, but a String value is an object, not a primitive, making option D incorrect.
-Primitive types do not define any methods, so option E is incorrect, although they can each be appended to a String value.
-Option F is correct as double is twice the size of float. Finally, option G is incorrect, since objects can have many references to them.
-They can even be created without an explicit reference variable, such as calling new Object(); on a line by itself.
+Java includes support for String literals and operators,
+but a String value is an object, not a primitive, making option D incorrect.
+Primitive types do not define any methods, so option E is incorrect,
+although they can each be appended to a String value.
+Option F is correct as double is twice the size of float.
+Finally, option G is incorrect, since objects can have many references to them.
+They can even be created without an explicit reference variable,
+such as calling new Object(); on a line by itself.
 
 ### Which modifier pairs can be used together in a method declaration? (Choose all that apply.)
 * A. static and final
@@ -176,7 +158,8 @@ They can even be created without an explicit reference variable, such as calling
 The final modifier can be used with private and static, making options A and F correct.
 Marking a private method final is redundant but allowed.
 A private method may also be marked static, making option B correct.
-Options C, D, and E are incorrect because methods marked static, private, or final cannot be overridden; therefore, they cannot be marked abstract.
+Options C, D, and E are incorrect because methods marked static, private,
+or final cannot be overridden; therefore, they cannot be marked abstract.
 
 ### Which of the following statements about var are true? (Choose all that apply.)
 *  A. A var can be used as a constructor parameter.
@@ -187,10 +170,13 @@ Options C, D, and E are incorrect because methods marked static, private, or fin
 *  F. The type of var cannot change at runtime.
 *  G. The word var is a reserved word in Java.
 
-A var cannot be used for a constructor or method parameter or for an instance or class variable, making option A incorrect and option C correct.
-The type of var is known at compile time and the type cannot be changed at runtime, although its value can change at runtime.
+A var cannot be used for a constructor or method parameter or for an instance or class variable,
+making option A incorrect and option C correct.
+The type of var is known at compile time and the type cannot be changed at runtime,
+although its value can change at runtime.
 For these reasons, options B and F are correct, and option E is incorrect.
-Option D is incorrect, as var is not permitted in multiple-variable declarations. Finally, option G is incorrect, as var is not a reserved word in Java.
+Option D is incorrect, as var is not permitted in multiple-variable declarations.
+Finally, option G is incorrect, as var is not a reserved word in Java.
 
 ## Which of the following statements about the Callable call() and Runnable run() methods are correct? (Choose all that apply.)
 *  A. Both can throw unchecked exceptions.
@@ -204,23 +190,11 @@ Option D is incorrect, as var is not permitted in multiple-variable declarations
 All methods are capable of throwing unchecked exceptions, so option A is correct.
 Runnable and Callable statements both do not take any arguments, so option B is incorrect.
 Only Callable is capable of throwing checked exceptions, so option C is also correct.
-Both Runnable and Callable are functional interfaces that can be implemented with a lambda expression, so option D is also correct.
-Finally, Runnable returns void and Callable returns a generic type, making option F correct and making options E and G incorrect.
+Both Runnable and Callable are functional interfaces
+that can be implemented with a lambda expression, so option D is also correct.
+Finally, Runnable returns void and Callable returns a generic type,
+making option F correct and making options E and G incorrect.
 
-### Which of the following are legal commands to run a modular program? (Choose all that apply.)
-*  A. java -p x -m x/x
-*  B. java -p x-x -m x/x
-*  C. java -p x -m x-x/x
-*  D. java -p x -m x/x-x
-*  E. java -p x -m x.x
-*  F. java -p x.x -m x.x
-*  G. None of the above
-
-The -p specifies the module path. This is just a directory, so all of the options have a legal module path.
-The -m specifies the module, which has two parts separated by a slash. Options E and F are incorrect since there is no slash.
-The first part is the module name. It is separated by periods (.) rather than dashes (-), making option C incorrect.
-The second part is the package and class name, again separated by periods. The package and class names must be legal Java identifiers.
-Dashes (-) are not allowed, ruling out option D. This leaves options A and B as the correct answers.
 
 ### Which of the following is true about a concrete class? (Choose all that apply.)
 * A. A concrete class can be declared as abstract.
@@ -235,7 +209,8 @@ Concrete classes can be optionally marked final, so option C is correct.
 Option D is incorrect; a superclass may have already implemented an inherited interface method.
 The concrete class only needs to implement the inherited abstract methods.
 Finally, a method in concrete class that implements an inherited abstract method overrides the method.
-While the method signature must match, the method declaration does not need to match, such as using a covariant return type or changing the throws declaration.
+While the method signature must match, the method declaration does not need to match,
+such as using a covariant return type or changing the throws declaration.
 For these reasons, option E is incorrect.
 
 ### Which of the following data types are permitted on the right side of a for-each expression? (Choose all that apply.)
@@ -248,12 +223,15 @@ For these reasons, option E is incorrect.
 * G. Exception
 * H. Set
 
-A for-each loop supports arrays, making options A and F correct. For Double[][], each element of the for-each loop would be a Double[].
+A for-each loop supports arrays, making options A and F correct. For Double[][],
+each element of the for-each loop would be a Double[].
 A for-each also supports classes that implement java.lang.Iterable.
-Although this includes many of the Collection Framework classes, not all of them implement java.lang.Iterable.
+Although this includes many of the Collection Framework classes,
+not all of them implement java.lang.Iterable.
 For this reason, option C is incorrect, and options D and H are correct.
 Options B, E, and G are incorrect, as they do not implement java.lang.Iterable.
-Although a String is a list of ordered characters, the class does not implement the required interface for a for-each loop.
+Although a String is a list of ordered characters,
+the class does not implement the required interface for a for-each loop.
 
 ### java ______ library.jar MainClass.class
 *  A. -cp
@@ -278,7 +256,6 @@ Since none of the options accepts the class filename, option F is correct.
 
 Option B is correct because boolean primitives default to false.
 Option E is correct because long values default to 0L.
-
 
 
 ### Which is a true statement?
