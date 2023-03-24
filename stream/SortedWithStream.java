@@ -67,6 +67,34 @@ public class SortedWithStream {
 
     }
 
+    /**
+     *  What is the expected output of the following code snippet?
+
+        A. It does not compile.
+        B. It throws an exception at runtime.
+        C. It does not print any output at runtime.
+        D. It prints four numbers twice each.
+        E. It can print up to eight distinct numbers.
+        F. The behavior of the code snippet cannot be determined until runtime.
+
+        The code compiles and does not throw any exception at runtime,
+        so options A and B are incorrect.
+        As an element goes through the pipeline, it is printed once by the peek() method,
+        then once by the forEach() method. For example, 0.1 0.1 0.54 0.54 0.6 0.6 0.3 0.3 is a
+        possible output from this code. For this reason, option D is correct.
+
+     */
+    public static void randomDouble(){
+        Random r = new Random();
+        Stream.generate(r::nextDouble)
+               .skip(2)
+               .limit(4)
+               .sorted()
+               .peek(System.out::println)
+               .forEach(System.out::println);
+
+    }
+
     public static void main(String... args){
       var surnames = List.of("pierre", "hawking", "michel", "jobs", "yava");
       System.out.println(sortByDesc(surnames));
