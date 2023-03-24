@@ -39,10 +39,40 @@ public class SortedWithStream {
                .forEach(System.out::println);
     }
 
+    /**
+      Which of the following can fill in the blank to have the code print out *?
+
+        A. (s,t) -˃ s.length() - t.length()
+        B. String::isEmpty
+        C. Both of these will produce the desired output.
+        D. Neither of these will allow the code to compile.
+        E. The code does not complete regardless of what goes in the blank.
+
+        The sorted() method takes an optional Comparator as the parameter,
+        which takes two String parameters and returns an int.
+        Option A is correct because the lambda implements this interface.
+        Option B is incorrect because the method reference doesn’t take any parameters,
+        nor does it return an int. While generate() starts with an infinite stream,
+        the limit() intermediate operation immediately makes it finite.
+        Finally, the distinct() intermediate operation gives us one star instead of three.
+
+     *
+     */
+    public static void printOneStairs(){
+        Stream.generate(() -> "*")
+           .limit(3)
+           .sorted( (s,t) -> s.length() - t.length() ) // .sorted(_________________)
+           .distinct()
+           .forEach(System.out::println);
+
+    }
+
     public static void main(String... args){
       var surnames = List.of("pierre", "hawking", "michel", "jobs", "yava");
       System.out.println(sortByDesc(surnames));
     }
+
+
 
 
 }
