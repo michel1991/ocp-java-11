@@ -3,7 +3,9 @@
 * B. Inclusion
 * C.Injection
 * D.None of the above
-The main purpose of validating a filename is to ensure it has only valid characters and is not a command injection attack. Therefore, option C is correct.
+
+The main purpose of validating a filename is to ensure
+it has only valid characters and is not a command injection attack. Therefore, option C is correct.
 
 ### Which statements are correct? (Choose all that apply.)
 * A. A blacklist lists what is allowed.
@@ -23,11 +25,14 @@ Therefore, options B and C are correct.
 * D. It uses package-private instance variables.
 * E. It uses private instance variables.
 
-Encapsulation allows using methods to get and set instance variables so other classes are not directly using them, making options A and B correct.
-Instance variables must be private for this to work, making option E correct and option D incorrect.
+Encapsulation allows using methods to get and set instance variables
+so other classes are not directly using them, making options A and B correct.
+Instance variables must be private for this to work, making option
+E correct and option D incorrect.
 While there are common naming conventions, they are not required, making option C incorrect.
 
-### Fill in the blanks: The Console readPassword() method returns a ______________ because it improves ________________.
+###### Fill in the blanks: The Console readPassword()
+###### method returns a ______________ because it improves ________________.
 * A. byte[], performance
 * B. byte[], security
 * C. char[], performance
@@ -38,7 +43,8 @@ While there are common naming conventions, they are not required, making option 
 The first step is to recognize that readPassword() is a method on Console. It returns a char[].
 This improves security because a String is more easily available in a memory dump than a char[].
 
-### Which locations require you to be careful when working with sensitive data to ensure it doesn’t leak? (Choose all that apply.)
+###### Which locations require you to be careful when working
+##### with sensitive data to ensure it doesn’t leak? (Choose all that apply.)
 * A. Comments
 * B. Exception stack traces
 * C. Log files
@@ -46,8 +52,10 @@ This improves security because a String is more easily available in a memory dum
 * E. Variable names
 * F. None of the above
 
-Any information the user can see requires care. Options B, C, and D are correct for this reason.
-Comments and variable names are part of the program, not the data it handles, making options A and E incorrect.
+Any information the user can see requires care. Options B, C,
+and D are correct for this reason.
+Comments and variable names are part of the program,
+not the data it handles, making options A and E incorrect.
 
 ### You go to the library and want to read a book. Which is true?
 ``` java
@@ -74,10 +82,14 @@ The user needs to be able to read a book, so write permissions should not be gra
 * E. XSS
 * F. Zip bomb
 
-An inclusion attack needs to include something. Options A and F are correct because they are used with XML and ZIP file respectively.
-Options B and D are incorrect because injection is not an inclusion attack. Options C and E are not inclusion attacks either.
-In fact, you might not have heard of them. Both are attacks used against web applications.
-Don’t worry if you see something on the exam that you haven’t heard of; it isn’t a correct answer.
+An inclusion attack needs to include something.
+Options A and F are correct because they are used with XML and ZIP file respectively.
+Options B and D are incorrect because injection is not an inclusion attack.
+Options C and E are not inclusion attacks either.
+In fact, you might not have heard of them.
+Both are attacks used against web applications.
+Don’t worry if you see something on the exam
+that you haven’t heard of; it isn’t a correct answer.
 
 
 ### What should your code do when input validation fails? (Choose all that apply.)
@@ -87,8 +99,10 @@ Don’t worry if you see something on the exam that you haven’t heard of; it i
 * D. Throw an exception.
 * E. None of the above
 
-The application should log a message or throw an exception, making options C and D correct.
-It should not immediately terminate the program with System.exit() as that does not execute gracefully, making option A incorrect.
+The application should log a message or throw an exception,
+making options C and D correct.
+It should not immediately terminate the program with System.exit()
+as that does not execute gracefully, making option A incorrect.
 It also should not ignore the issue, making option B incorrect.
 
 ### Which of the following expressions compile without error? (Choose all that apply.)
@@ -100,13 +114,17 @@ It also should not ignore the issue, making option B incorrect.
 * F. var saturday = 2_.0;
 * G. None of the above
 
-Option A does not compile, as the expression 3 + 2.0 is evaluated as a double, and a double requires an explicit cast to be assigned to an int.
+Option A does not compile, as the expression 3 + 2.0
+is evaluated as a double, and a double requires an explicit cast to be assigned to an int.
 Option B compiles without issue, as a long value can be implicitly cast to a double.
-Option C does not compile because the ternary operator (? :) is missing a colon (:), followed by a second expression.
+Option C does not compile because the ternary operator (? :)
+is missing a colon (:), followed by a second expression.
 Option D is correct.
-Even though the int value is larger than a short, it is implicitly cast to a short, which means the value will wrap around to fit in a short.
+Even though the int value is larger than a short,
+it is implicitly cast to a short, which means the value will wrap around to fit in a short.
 Option E is incorrect, as you cannot use a decimal (.) with the long (L) postfix.
-Finally, option F is incorrect, as an underscore cannot be used next to a decimal point. For more information, see Chapter 3.
+Finally, option F is incorrect, as an underscore
+cannot be used next to a decimal point. For more information, see Chapter 3.
 
 
 ### Which are true about securing confidential information? (Choose all that apply.)
@@ -131,7 +149,8 @@ Sharing confidential information with others is definitely not OK, making option
 
 A distributed denial of service (DDoS) attack requires multiple requests by definition.
 Even a regular denial of service attack often requires multiple requests.
-For example, if you forget to close resources, it will take a number of tries for your application to run out resources.
+For example, if you forget to close resources,
+it will take a number of tries for your application to run out resources.
 Therefore, option D is correct.
 
 ### Which statements are true about the clone() method? (Choose all that apply.)
@@ -179,4 +198,18 @@ Option B is incorrect and is the opposite of what marking a class final does.
 Options D and E are incorrect and have nothing to do with marking a class final.
 Option F is incorrect as the contents of the class can still be changed,
 even if the class is marked final.
+
+#### Which of the following best protect against inclusion attacks? (Choose two.)
+* A. Encrypt user passwords.
+* B. Use immutable objects.
+* C. Limit the recursive depth of ZIP files.
+* D. Apply a blacklist to the input data.
+* E. Turn the computer off when not in use.
+* F. Restrict the number of parse levels of XML files.
+
+Inclusion attacks occur when multiple files or components are embedded
+within a single entity, such as a zip bomb or the billion laughs attack.
+Both can be thwarted with depth limits, making option C and F correct.
+The rest of the options are not related to inclusion attacks.
+
 

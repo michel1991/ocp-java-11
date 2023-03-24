@@ -1,4 +1,5 @@
-### Suppose you are writing a class that calls ServiceLoader and is trying to look up the Dragon implementation. Which line of code needs to be in your module-info.java?
+###### Suppose you are writing a class that calls ServiceLoader and is trying
+###### to look up the Dragon implementation. Which line of code needs to be in your module-info.java?
 
 ``` java
 package magic;
@@ -24,9 +25,11 @@ public class Dragon implements Magic {
 * F. None of the above
 
 A service locator specifies the interface name, making option C correct.
-Note that options D and E are trying to trick you by mixing up the provides directive syntax with the uses directive syntax.
+Note that options D and E are trying to trick you by mixing
+up the provides directive syntax with the uses directive syntax.
 
-### Suppose module puppy depends on module dog and module dog depends on module animal. Which two lines allow module puppy to access the animal.behavior package in module animal? (Choose two.)
+###### Suppose module puppy depends on module dog and module dog depends on module animal.
+###### Which two lines allow module puppy to access the animal.behavior package in module animal? (Choose two.)
 ```java
     module animal {
         exports animal.behavior to dog;
@@ -48,11 +51,13 @@ Note that options D and E are trying to trick you by mixing up the provides dire
 * H. requires transitive on line T
 
 Options A, B, E, and F are incorrect because they refer to keywords that don’t exist.
-The requires transitive keyword is used when specifying a module to be used by the requesting module and any other modules that use the requesting module.
+The requires transitive keyword is used when specifying a module to be used
+by the requesting module and any other modules that use the requesting module.
 Therefore, dog needs to specify the transitive relationship, and option G is correct.
 The module puppy just needs to require dog, and it gets the transitive dependencies, making option D correct.
 
-### Suppose you have a module named com.vet. Where could you place the following module-info.java file to create a valid module?
+###### Suppose you have a module named com.vet.
+###### Where could you place the following module-info.java file to create a valid module?
 
 ```java
     public module com.vet {
@@ -63,11 +68,14 @@ The module puppy just needs to require dog, and it gets the transitive dependenc
 * B. At the same level as the vet folder
 * C. Inside the vet folder
 
-If this were a valid module-info.java file, it would need to be placed at the root directory of the module, which is option A.
-However, a module is not allowed to use the public access modifier. Option D is correct because the provided file does not compile regardless of placement in the project.
+If this were a valid module-info.java file,
+it would need to be placed at the root directory of the module, which is option A.
+However, a module is not allowed to use the public access modifier.
+Option D is correct because the provided file does not compile regardless of placement in the project.
 For more information, see Chapter 11.
 
-# Suppose module puppy depends on module dog and module dog depends on module animal. Which fills in the blank to allow module puppy to access the animal.behavior package in module animal?
+###### Suppose module puppy depends on module dog and module dog depends on module animal.
+###### Which fills in the blank to allow module puppy to access the animal.behavior package in module animal?
 
 ```java
    module animal {
@@ -93,9 +101,11 @@ For more information, see Chapter 11.
 Options A, B, C, and D are incorrect because the keyword is exports, not export.
 Options E and F are incorrect because you export a package to a module.
 Options G and H both are syntactically correct.
-However, option H would require the puppy module to require the animal module. Since it does not, option G is correct.
+However, option H would require the puppy module to require the animal module.
+Since it does not, option G is correct.
 
-### Suppose module puppy depends on module dog and module dog depends on module animal. Which two lines allow module puppy to access the animal.behavior package in module animal? (Choose two.)
+###### Suppose module puppy depends on module dog and module dog depends on module animal.
+###### Which two lines allow module puppy to access the animal.behavior package in module animal? (Choose two.)
 ```java
     module animal {
         exports animal.behavior to dog;
@@ -118,7 +128,8 @@ However, option H would require the puppy module to require the animal module. S
 * H. requires transitive on line T
 
 Options A, B, E, and F are incorrect because they refer to keywords that don’t exist.
-The requires transitive keyword is used when specifying a module to be used by the requesting module and any other modules that use the requesting module.
+The requires transitive keyword is used when specifying a module to be used by
+the requesting module and any other modules that use the requesting module.
 Therefore, dog needs to specify the transitive relationship, and option G is correct.
 The module puppy just needs to require dog, and it gets the transitive dependencies, making option D correct.
 
@@ -165,7 +176,8 @@ Options A and B both meet the criteria of being a higher-level package.
 However, option A would claim many other packages including com.sybex.
 This is not a good choice, making option B the correct answer.
 
-### Suppose we have the following modules and that each contains code. If you can compile them in any order you would like, how many of these modules can you compile?
+##### Suppose we have the following modules and that each contains code.
+##### If you can compile them in any order you would like, how many of these modules can you compile?
 
 ```java
     module cloud {
@@ -194,7 +206,8 @@ This is not a good choice, making option B the correct answer.
 The cloud module does not have any dependencies, so it can compile.
 The water and rain modules depend on each other.
 Since this is a cyclic dependency, neither can compile.
-While the snow module is not involved in the cycle, it cannot compile since the rain module cannot compile.
+While the snow module is not involved in the cycle,
+it cannot compile since the rain module cannot compile.
 Since only one module can compile, option B is correct.
 
 ### What is true of a module containing a file named module-info.java with the following contents? (Choose all that apply.)
@@ -237,7 +250,9 @@ There is a trick here. A module definition uses the keyword module rather than c
 Since the code does not compile, option E is correct. If the code did compile,
 options A and D would be correct.
 
-### Suppose the consumer, service locator, service provider, and service provider interface are each in separate modules. Which of the following best describes the following module-info file?
+###### Suppose the consumer, service locator, service provider,
+###### and service provider interface are each in separate modules.
+###### Which of the following best describes the following module-info file?
 
 ```java
 module nature.tree{
@@ -266,8 +281,31 @@ Option C is correct because a service provider requires the interface. It also p
 *  G. The file can be empty (zero bytes).
 
 Options C and D are incorrect because there is no use keyword.
-Options A and F are correct because opens is for reflection and uses declares an API that consumes a service.
-Option G is also correct as the file can be completely empty. This is just something you have to memorize.
+Options A and F are correct because opens is for reflection
+and uses declares an API that consumes a service.
+Option G is also correct as the file can be completely empty.
+This is just something you have to memorize.
+
+##### Given the previous diagram and the following module-info.java
+##### for the panda module, what change can be made to the requires statement?
+
+``` java
+    module panda {
+        requires mammal;
+    }
+
+```
+
+* A. exports transitive mammal;
+* B. exports transitive mammal.eat;
+* C. requires transitive animal;
+* D. requires transitive animal.util;
+* E. transitive requires animal;
+* F. transitive requires animal.util;
+
+The transitive keyword goes after requires,
+ruling out all but options C and D. Just like requires,
+requires transitive references a module name, narrowing it down to option C.
 
 
 

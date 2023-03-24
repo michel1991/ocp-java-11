@@ -115,5 +115,24 @@ making options B and D correct. Finally, options C and F
 are incorrect because Error extends from Throwable,
 not Exception or RuntimeException, although it is an unchecked exception.
 
+#### Select a goodstrategy for handling input validation failures?
+* A. Use the assert statement.
+* B. Throw an Error.
+* C. Log an error but allow the user to continue.
+* D. Throw an Exception.
+* E. Shutdown the computer.
+* F. None of the above.
+
+A good solution when input validation fails is to stop processing
+a request and throw an Exception to the calling method to deal with the problem,
+making option D correct.
+Options A and B are incorrect because throwing Error should be avoided
+for situations where the application can recover.
+Also, assertions are often disabled at runtime.
+Option C is incorrectas the user should not be allowed to
+continue if they have provided invalid input.
+Finally, option E is incorrect for obvious reasons.
+
+
 
 
