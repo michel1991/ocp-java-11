@@ -130,10 +130,13 @@ Note that ElementType is an enum used by @Target, but it is not an annotation.
 * E. The annotation can be applied to method and constructor parameters.
 * F. The annotation can be applied to static methods.
 
-The @SafeVarargs annotation can be applied to a constructor or private, static, or final method that includes a varargs parameter.
-For these reasons, options C, D, and F are correct. Option A is incorrect, as the compiler cannot actually enforce that the operations are safe.
+The @SafeVarargs annotation can be applied to a constructor or private,
+static, or final method that includes a varargs parameter.
+For these reasons, options C, D, and F are correct.
+Option A is incorrect, as the compiler cannot actuallyenforce that the operations are safe.
 It is up to the developer writing the method to verify that.
-Option B is incorrect as the annotation can be applied only to methods that cannot be overridden and abstract methods can always be overridden.
+Option B is incorrect as the annotation can be applied only
+to methods that cannot be overridden and abstract methods can always be overridden.
 Finally, option E is incorrect, as it is applied to the declaration, not the parameters.
 
 
@@ -190,7 +193,8 @@ Option E is incorrect as no annotation can be extended.
 
 The @Override annotation is always optional for methods and never required.
 For this reason, options A and E are correct, and options C and F are incorrect.
-Option B is correct because adding it to a method that is not actually overriding an inherited method will cause a compiler error.
+Option B is correct because adding it to a method
+that is not actually overriding an inherited method will cause a compiler error.
 Option D is incorrect because it can be appliedonly to method declarations.
 
 #### Which statements about annotations are correct? (Choose three.)
@@ -212,3 +216,34 @@ applied to a variety of types including lambda expression
 variables and other annotations. Finally, option F is correct.
 Annotations are optional metadata, and removing all of
 them from a class does not cause a compiler error.
+
+#### Which annotationcan be applied to an existing annotation
+#### X and ensures a class that uses X shows the annotationin itsgenerated Javadoc?
+* A. @Documented
+* B. @Generated
+* C. @JavaDoc
+* D. @PreserveAnnotations
+* E. @Retention
+* F. None of the above
+
+The correct annotation that preserves information about annotations
+in generated Javadoc files is @Documented. The rest are incorrect.
+
+##### Which properties of the Clean annotation must be true for the following to compile? (Choose three.)
+
+``` java
+ @Clean("Basement") public class House {}
+```
+* A. The annotation must contain exactly one element.
+* B. The annotation must contain an element namedvalue.
+* C. The element must not have a default value.
+* D. The element may have a default value.
+* E. The annotation may contain more than one element.
+* F. The annotation must contain an element namedvalues.
+
+An annotation may omit the element name if it contains an element named value,
+declared as value(), making option B correct and option F incorrect.
+Additionally, it may contain any number of additional elements, provided none of them is required,
+making option E correct.
+Finally, the element may optionally have a default value, making option D correct.
+The other options are incorrect statements that contradict the correct answers.

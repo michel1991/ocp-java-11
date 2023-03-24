@@ -121,7 +121,8 @@ With hidden static methods, Java relies on the location and reference type to de
 making option B incorrect and F correct. Finally, making a method final, not static,
 prevents it from being overridden, making option D correct and option C incorrect.
 
-### Which techniques can prevent an attacker from creating a top-level subclass that overrides a method called from the constructor? (Choose all that apply.)
+##### Which techniques can prevent an attacker from creating a top-level subclass
+##### that overrides a method called from the constructor? (Choose all that apply.)
 * A. Adding final to the class
 * B. Adding final to the method
 * C. Adding transient to the class
@@ -132,3 +133,20 @@ prevents it from being overridden, making option D correct and option C incorrec
 Options A and E are correct because they prevent subclasses from being created outside the class definition.
 Option B is also correct because it prevents overriding the method.
 Options C and D are incorrect because transient is a modifier for variables, not classes or methods.
+
+##### Which of the following statements about overriding a method are correct? (Choose three.)
+* A. The return types must be covariant.
+* B. The access modifier of the method in the child class must be the same or narrower than the method in the superclass.
+* C. The return types must be the same.
+* D. A checked exception thrown by the method in the parent class must be thrown by the method in the child class.
+* E. A checked exception thrown by a method in the child class must be the same or narrower than the exception thrown by the method in the parent class.
+* F. The access modifier of the method in the child class must be the same or broader than the method in the superclass.
+
+First, the return types of an overridden method must be covariant, making option A correct.
+They can be the same, but it is not required, making option C incorrect.
+Next, the access modifier must be the same or broader in the child method,
+making option B incorrect and option F correct. Option D is
+incorrect as an overridden method is not required
+to throw a checked exception declared in the parent version of the method.
+If it does declare a checked exception,
+it cannot be new or broader than the ones declared in the superclass, making option E correct.

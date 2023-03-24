@@ -280,6 +280,19 @@ A primitive cannot be created using the new keyword, so option B is incorrect.
 Dealing with references happens after the object created by new is returned.
 The other options are invalid.
 
+##### Which statements about a variable with a type of var are true? (Choose two.)
+* A. The variable can be assigned null at any point in the program.
+* B. The variable can be assigned null only after initial initialization.
+* C. The variable can never be assigned null.
+* D. Only primitives can be used with the variable.
+* E. Only objects can be used with the variable.
+* F. Either a primitive or an object can be used with the variable.
+
+The type is determined based on the value at initialization.
+It cannot be null at that point, but the variable can be assigned as null later,
+making option B correct. Both primitives and objects can be used with var,
+making option F correct.
+
 
 
 
