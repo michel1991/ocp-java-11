@@ -41,3 +41,17 @@ Option B is correct as it matches both of those characteristics.
 
 Option A is correct because a top-down migration starts by moving all the modules to the module path as automatic modules.
 Then, the migration changes each module from an automatic module to a named module, making option C the other correct answer
+
+#### Which are true statements about the diagram and scenario in the previous question? (Choose two.)
+* A. butterfly is an automatic module.
+* B. butterfly is a named module.
+* C. butterfly is an unnamed module.
+* D. caterpillar is an automatic module.
+* E. caterpillar is a named module.
+* F. caterpillar is an unnamed module.
+
+[image](images/butterfly_caterpillar.jpg)
+In a bottom-up migration, the lowest-level modules are migrated
+to named modules on the module path first.
+This makes option E one of the answers.
+The modules that remain on the classpath are unnamed modules, making option C the other answer.

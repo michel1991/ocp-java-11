@@ -282,3 +282,13 @@ The second part is the package and class name, again separated by periods.
 The package and class names must be legal Java identifiers.
 Dashes (-) are not allowed, ruling out option D.
 This leaves options A and B as the correct answers.
+
+#### Which are valid modes on the jmod command? (Choose three.)
+*  A. create
+*  B. list
+*  C. hash
+*  D. show
+*  E. verbose
+*  F. version
+
+The jmod command has five possible modes: create, extract, describe, list, and hash.
