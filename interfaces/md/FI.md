@@ -54,7 +54,8 @@ For these reasons, option C is correct, and option E is incorrect.
 Finally, option F is incorrect.
 While a functional interface can be marked with the @FunctionalInterface annotation, it is not required.
 
-### Fill in the blanks: A functional interface must contain or inherit ______________ and may optionally include ______________.
+##### Fill in the blanks: A functional interface must contain
+##### or inherit ______________ and may optionally include ______________.
 * A. at least one abstract method, the @Override annotation
 * B. exactly one method, static methods
 * C. exactly one abstract method, the @FunctionalInterface annotation
@@ -94,3 +95,21 @@ making option B the true statement and the correct answer.
 Option C is incorrect because a functional interface that takes no values and returns void is possible.
 In fact, Runnable is one such example. Option D is also incorrect,
 since IntFunction˂R˃ takes a primitive argument as input and a generic argument for the return type.
+
+##### Suppose Panther and Cub are interfaces and neither contains any default methods.
+##### Which statements are true? (Choose two.)
+[image](./images/panther_cub.jpg)
+
+* A. If Panther has a single abstract method, Cub is guaranteed to be a functional interface.
+* B. If Panther has a single abstract method, Cub may be a functional interface.
+* C. If Panther has a single abstract method, Cub cannot be a functional interface.
+* D. If Panther has two abstract methods, Cub is guaranteed to be a functional interface.
+* E. If Panther has two abstract methods, Cub may be a functional interface.
+* F. If Panther has two abstract methods, Cub cannot be a functional interface.
+
+A functional interface has exactly one abstract method. This includes inherited methods.
+If Panther has a single abstract method, Cub is a functional interface
+if it does not add any more abstract methods. This matches option B. However,
+if Panther has two abstract methods, there is no code in Cub that
+can make it a functional interface, and option F is the other answer.
+
