@@ -2,10 +2,10 @@ package advancedDesign.errors;
 
 /**
   What is the result of the following code?
-     A. radicarobots
-    B. radicalrobots
-    C. The code does not compile.
-    D. The code compiles but throws an exception at runtime.
+      A. radicarobots
+      B. radicalrobots
+      C. The code does not compile.
+      D. The code compiles but throws an exception at runtime.
 
     Calling the constructor and then insert() is an example of method chaining.
     However, the sb.length() call is a problem.

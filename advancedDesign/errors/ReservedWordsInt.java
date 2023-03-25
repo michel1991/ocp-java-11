@@ -1,7 +1,7 @@
 package advancedDesign.errors;
 public class ReservedWordsInt {
     /**
-     * Given the following method, what is the first line that does not compile?
+     Given the following method, what is the first line that does not compile?
         A. k1
         B. k2
         C. k3
