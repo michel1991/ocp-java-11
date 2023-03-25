@@ -1,4 +1,7 @@
-### Given the generic type String, the partitioningBy() collector creates a Map<Boolean, List<String>> when passed to collect() by default. When a downstream collector is passed to partitioningBy(), which return types can be created? (Choose all that apply.)
+###### Given the generic type String, the partitioningBy() collector
+###### creates a Map<Boolean, List<String>> when passed to collect() by default.
+###### When a downstream collector is passed to partitioningBy(),
+##### which return types can be created? (Choose all that apply.)
 *  A. Map<boolean, List<String>>
 * B. Map<Boolean, List<String>>
 * C. Map<Boolean, Map<String>>
@@ -9,9 +12,11 @@
 Options A and C do not compile, because they are invalid generic declarations.
 Primitives are not allowed as generics, and Map must have two generic type parameters.
 Option E is incorrect because partitioning only gives a Boolean key.
-Options B and D are correct because they return a Map with a Boolean key and a value type that can be customized to any Collection.
+Options B and D are correct because they return a Map with
+a Boolean key and a value type that can be customized to any Collection.
 
-### Given the following code snippet, what can be inserted into the blank to ensure the stream operation is a concurrent reduction?
+##### Given the following code snippet, what can be inserted
+##### into the blank to ensure the stream operation is a concurrent reduction?
 ```java
     var zooFriends = Stream.of("lemur","ferret","monkey");
     var byNameLength = zooFriends.collect(
@@ -27,18 +32,23 @@ Options B and D are correct because they return a Map with a Boolean key and a v
 *  G. None of the above.
 
 Options A, B, and E are not valid methods and will not compile.
-On the other hand, the code will compile if option C or D is placed in the blank, making option F incorrect, but it will not be a concurrent reduction.
-To be a concurrent reduction, the stream itself must be parallel. For this reason, option G is correct.
+On the other hand, the code will compile if option C or D is placed in the blank,
+making option F incorrect, but it will not be a concurrent reduction.
+To be a concurrent reduction, the stream itself must be parallel.
+For this reason, option G is correct.
 
-### Which are true statements about terminal operations in a stream that runs successfully? (Choose all that apply.)
+###### Which are true statements about terminal operations
+###### in a stream that runs successfully? (Choose all that apply.)
 * A. At most, one terminal operation can exist in a stream pipeline.
 * B. Terminal operations are a required part of the stream pipeline in order to get a result.
 * C. Terminal operations have Stream as the return type.
 * D. The peek() method is an example of a terminal operation.
 * E. The referenced Stream may be used after calling a terminal operation.
 
-Terminal operations are the final step in a stream pipeline. Exactly one is required, because it triggers the execution of the entire stream pipeline.
-Therefore, options A and B are correct. Option C is true of intermediate operations, rather than terminal operations.
+Terminal operations are the final step in a stream pipeline.
+Exactly one is required, because it triggers the execution of the entire stream pipeline.
+Therefore, options A and B are correct.
+Option C is true of intermediate operations, rather than terminal operations.
 Option D is incorrect because peek() is an intermediate operation.
 Finally, option E is incorrect because once a stream pipeline is run, the Stream is marked invalid.
 
@@ -70,8 +80,10 @@ Therefore, option E is correct.
 
 The word reduction is used with streams for a terminal operation,
 so options A, B, and C are incorrect.
-Option E describes a valid terminal operation like anyMatch(), but is not a reduction.
-Option D is correct because a reduction has to look at each element in the stream to determine the result.
+Option E describes a valid terminal operation
+like anyMatch(), but is not a reduction.
+Option D is correct because a reduction has
+to look at each element in the stream to determine the result.
 
 ### Which method can be applied to an existing Stream˂T˃ to return a stream with a different generic type?
 * A. distinct()
@@ -81,12 +93,28 @@ Option D is correct because a reduction has to look at each element in the strea
 * E. filter()
 * F. None of the above
 
-The distinct() and filter() methods can reduce the number of elements in a stream but do not change the generic type,
+The distinct() and filter() methods can reduce the number
+of elements in a stream but do not change the generic type,
 making options A and E incorrect.
 The iterate() method creates a new stream and cannot be applied to an existing stream,
 making option B incorrect.
 The peek() and sorted() methods do not alter the generic type of the stream,
 making options C and D incorrect. For these reasons, option F is correct.
+
+###### What collector can turn the stream at left to the Map at right?
+* A. Only grouping()
+* B. Only groupingBy()
+* C. Only partitioning()
+* D. Only partitioningBy()
+* E. Both grouping() and partitioning()
+* F. Both groupingBy() and partitioningBy()
+
+[image](images/map_collectors.jpg)
+Both Collectors.groupingBy() and Collectors.partitioningBy()
+are useful for turning a stream into a Map. The other two methods do not exist.
+The partitioningBy() method automatically groups using a Boolean key.
+However, we can also have a Boolean key with groupingBy().
+For example, we could write s -˃ s.length() ˃ 3. Therefore, option F is correct.
 
 
 
