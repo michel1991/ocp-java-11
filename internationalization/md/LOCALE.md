@@ -56,3 +56,28 @@ Option D is invalid because the value is in uppercase.
 The rest of the options are valid locale formats.
 Remember, the exam won’t expect you to know which language
 and country codes exist, but it will expect you to know how to use them.
+
+### How long will the effects of calling Locale.setDefault()
+#### be active assuming no other calls to that method are made?
+* A. Until the end of the method.
+*  B. Until the program exits.
+*  C. Until the next reboot of the computer.
+*  D. It persists after reboot.
+*  E. None of the above.
+
+Calling Locale.setDefault() changes the default locale within the program.
+It does not change any settings on the computer.
+The next time you run a Java program, it will have the original
+default locale rather than the one you changed it to.
+
+##### How do you find out the locale of the running program?
+* A. Locale.get("default")
+* B. Locale.get(Locale.DEFAULT)
+* C. Locale.of()
+* D. Locale.now()
+* E. Locale.getDefault()
+* F. None of the above
+
+The Locale object provides getDefault() and setDefault()
+methods for working with the default locale, so option E is correct.
+The rest of the methods do not exist in the Locale class.
