@@ -1,7 +1,7 @@
-package advancedDesign;
+package nestedClass;
 
 /**
- * What does the following program print?
+   What does the following program print?
     A. x is 0
     B. x is 24
     C. Line 6 generates a compiler error.
