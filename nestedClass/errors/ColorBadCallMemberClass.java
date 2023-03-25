@@ -1,13 +1,13 @@
-package advancedDesign.errors;
+package nestedClass.errors;
 /**
-    * What is the output of the following program?
-    A. 0
-    B. 10
-    C. There is a compiler error on line 3.
-    D. There is a compiler error on line 4.
-    E. There is a compiler error on line 5.
-    F. There is a compiler error on line 8.
-    G. None of the above.
+    What is the output of the following program?
+        A. 0
+        B. 10
+        C. There is a compiler error on line 3.
+        D. There is a compiler error on line 4.
+        E. There is a compiler error on line 5.
+        F. There is a compiler error on line 8.
+        G. None of the above.
 
    Shade is an inner class. It may be accessed from an instance of Color.
    Since the constructor is called from a static method, line 8 does not compile.
