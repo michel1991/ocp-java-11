@@ -1,9 +1,9 @@
-package advancedDesign.errors;
+package nestedClass.errors;
 
 
 /**
-*   What is printed by the following program?
-*   A. b
+  What is printed by the following program?
+    A. b
     B. bc
     C. abc
     D. The code declaration of the Diet class does not compile.
