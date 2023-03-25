@@ -133,6 +133,14 @@ Option C is incorrectas the user should not be allowed to
 continue if they have provided invalid input.
 Finally, option E is incorrect for obvious reasons.
 
+##### Which of the following diagrams of java.lang classes shows the inheritance model properly?
+[image](images/inheritance_exceptions.jpg)
+
+Option D is the correct model. The class RuntimeException extends Exception,
+and both Exception and Error extend Throwable. Finally, like all Java classes,
+they all inherit from Object. Notice that Error does not extend Exception,
+even though we often refer to these generally as exceptions
+
 
 
 

@@ -39,7 +39,8 @@ Option D is also incorrect, as this applies to all private members of a class.
 Option E is incorrect, as that restriction applies to top-level classes, not member inner classes.
 Finally, option F is incorrect, as member classes can be abstract or concrete.
 
-### Fill in the blanks: The ___________________ access modifier allows access to everything the ___________________ access modifier does and more.
+##### Fill in the blanks: The ___________________ access modifier allows access
+##### to everything the ___________________ access modifier does and more.
 * A. package-private, protected
 * B. private, package-private
 * C. private, protected
@@ -47,10 +48,27 @@ Finally, option F is incorrect, as member classes can be abstract or concrete.
 * E. public, private
 * F. None of the above
 
-The public access modifier allows access to members in the same class, package, subclass, or even classes in other packages,
+The public access modifier allows access to members in the same class,
+package, subclass, or even classes in other packages,
 while the private modifier allows access only to members in the same class.
-Therefore, the public access modifier allows access to everything the private access modifier does, and more, making option E the correct answer.
-Options A, B, C, and D are incorrect because the first term is a more restrictive access modifier than the second term.
+Therefore, the public access modifier allows access to everything
+the private access modifier does, and more, making option E the correct answer.
+Options A, B, C, and D are incorrect because
+the first term is a more restrictive access modifier than the second term.
+
+##### Fill in the blanks: The ___________________ access modifier allows access to everything
+##### the ___________________ access modifier does and more.
+* A. package-private, private
+* B. private, protected
+* C. protected, public
+* D. private, package-private
+* E. None of the above
+
+Package-private allows access by code within the same package,
+while the private modifier allows access only to members in the same class.
+This makes option A the correct answer.
+Options B, C, and D are incorrect because
+the first term is a more restrictive access modifier than the second term.
 
 ### Given the diagram, how many of the classes shown in the diagram can call the display()  method?
 * A. Zero
@@ -61,7 +79,8 @@ Options A, B, C, and D are incorrect because the first term is a more restrictiv
 
 The display()  method has protected access. [image](./accessibility.jpg)
 This means it can be accessed by instance methods in the same package and any subclasses.
-There are no subclasses in this example, so we only need to count the classes in the same package. Option C is correct because Flashlight and Phone are in the package.
+There are no subclasses in this example, so we only need to count
+the classes in the same package. Option C is correct because Flashlight and Phone are in the package.
 
 ## Which of the following modifiers can be applied to an abstract method? (Choose two.)
 *  A. final

@@ -6,9 +6,12 @@
 * E. PrintReader
 * F. PrintWriter
 
-PrintStream and PrintWriter are the only I/O classes that you need to know that don’t have a complementary InputStream or Reader class, so option E is correct.
+PrintStream and PrintWriter are the only I/O classes that
+you need to know that don’t have a complementary InputStream
+or Reader class, so option E is correct.
 
-### Fill in the blank: A class that implements _________________ may be in a try-with-resources statement. (Choose all that apply.)
+##### Fill in the blank: A class that implements _________________ may be
+##### in a try-with-resources statement. (Choose all that apply.)
 * A. AutoCloseable
 * B. Resource
 * C. Exception
@@ -17,9 +20,13 @@ PrintStream and PrintWriter are the only I/O classes that you need to know that 
 * F. RuntimeException
 * G. Serializable
 
-Resources must inherit AutoCloseable to be used in a try-with-resources block. Since Closeable, which is used for I/O classes, extends AutoCloseable, both may be used.
+Resources must inherit AutoCloseable to be used in a try-with-resources block.
+Since Closeable, which is used for I/O classes, extends AutoCloseable, both may be used.
 
-### Suppose that you need to write data that consists of int, double, boolean, and String values to a file that maintains the data types of the original data. You also want the data to be performant on large files. Which three java.io stream classes can be chained together to best achieve this result? (Choose three.)
+##### Suppose that you need to write data that consists of int, double, boolean,
+##### and String values to a file that maintains the data types of the original data.
+##### You also want the data to be performant on large files.
+##### Which three java.io stream classes can be chained together to best achieve this result? (Choose three.)
 * A. FileWriter
 * B. FileOutputStream
 * C. BufferedOutputStream
@@ -31,13 +38,15 @@ Resources must inherit AutoCloseable to be used in a try-with-resources block. S
 Since you need to write primitives and String values, the OutputStream classes are appropriate.
 Therefore, you can eliminate options A and F since they use Writer classes.
 Next, DirectoryOutputStream is not a java.io class, so option E is incorrect.
-The data should be written to the file directly using the FileOutputStream class, buffered with the BufferedOutputStream class,
+The data should be written to the file directly using the FileOutputStream class,
+buffered with the BufferedOutputStream class,
 and automatically serialized with the ObjectOutputStream class, so options B, C, and D are correct.
 PrintStream is an OutputStream, so it could be used to format the data.
 Unfortunately, since everything is converted to a String, the underlying data type information would be lost.
 For this reason, option G is incorrect.
 
-### Which of the following are true statements about working with instances of the OutputStream class? (Choose all that apply.)
+##### Which of the following are true statements about working
+##### with instances of the OutputStream class? (Choose all that apply.)
 * A. They must be buffered.
 * B. They can be used to read input from the user.
 * C. They can be used to write character data to a file.
@@ -53,7 +62,8 @@ so option C is correct. Java writes OutputStream data in a single direction, so 
 All streams, including instances of OutputStream, should be closed after use, making option E correct.
 Finally, an OutputStream may be periodically flushed, but it is not required, so option F is incorrect.
 
-### What are some reasons to use a character stream, such as Reader/Writer, over a byte stream, such as InputStream/OutputStream? (Choose all that apply.)
+###### What are some reasons to use a character stream, such as Reader/Writer,
+###### over a byte stream, such as InputStream/OutputStream? (Choose all that apply.)
 * A. More convenient code syntax when working with String data
 * B. Improved performance
 * C. Automatic character encoding
@@ -61,7 +71,8 @@ Finally, an OutputStream may be periodically flushed, but it is not required, so
 * E. Character streams are high-level streams
 * F. Multithreading support
 
-Character stream classes often include built-in convenience methods for working with String data, so option A is correct.
+Character stream classes often include built-in convenience
+methods for working with String data, so option A is correct.
 They also handle character encoding automatically, so option C is also correct.
 The rest of the statements are irrelevant or incorrect and are not properties of all character streams.
 
@@ -84,6 +95,7 @@ Option D is incorrect because the writeObject() method returns void and serializ
 Option E is the correct answer.
 
 ### Which statements about the following code snippet are correct? (Choose all that apply.)
+
 ```java
 var m = new java.io.File("myfile.txt")
 ```
@@ -96,25 +108,12 @@ var m = new java.io.File("myfile.txt")
 *  F. None of the above.
 
 The path myfile.txt is a relative path since it does not contain any path separators,
-making option B correct and option C incorrect. It can refer to either a file or a directory within the file system,
+making option B correct and option C incorrect. It can refer to either
+a file or a directory within the file system,
 as directories can have extensions. For this reason, options D and E are correct.
 Finally, if the path does not exist, an exception is not thrown, so option A is incorrect.
 Note that calling m.exists() will tell you whether or not the paths exist in the file system.
 
-### What are the requirements for a class that you want to serialize to a stream? (Choose all that apply.)
-*  A. The class must be marked final.
-*  B. The class must extend the Serializable class.
-*  C. The class must declare a static serialVersionUID variable.
-*  D. All static members of the class must be marked transient.
-*  E. The class must implement the Serializable interface.
-*  F. All instance members of the class must be serializable or marked transient.
-
-For a class to be serialized, it must implement the Serializable interface and contain instance members
-that are serializable or marked transient. For these reasons, options E and F are correct.
-Marking a class final does not impact its ability to be serialized,
-so option A is incorrect. Option B is incorrect, as Serializable is an interface, not a class.
-Option C is incorrect. While it is a good practice for a serializable class to include a static serialVersionUID variable,
-it is not required. Finally, option D is incorrect as static members of the class are ignored on serialization already.
 
 ### Which statements about closing I/O streams are correct? (Choose all that apply.)
 *  A. InputStream and Reader instances are the only I/O streams that should be closed after use.
@@ -137,10 +136,13 @@ a traditional try statement that uses a finally block. For this reason, both opt
 * F. There are no differences, because one method is a pointer to the other.
 
 The methods are not the same, because Files.lines() returns a Stream<String> and Files.readAllLines()
-returns a List<String>, so option F is incorrect. Option A is incorrect, because performance is not often
-the reason to prefer one to the other. Files.lines() processes each line via lazy evaluation, while Files.readAllLines()
+returns a List<String>, so option F is incorrect.
+Option A is incorrect, because performance is not often
+the reason to prefer one to the other. Files.lines()
+processes each line via lazy evaluation, while Files.readAllLines()
 reads the entire file into memory all at once.
-For this reason, Files.lines() works better on large files with limited memory available, and option B is correct.
+For this reason, Files.lines() works better on
+large files with limited memory available, and option B is correct.
 Although a List can be converted to a stream, this requires an extra step; therefore,
 option C is correct since the resulting object can be chained directly to a stream.
 Finally, options D and E are incorrect because they are true for both methods.
@@ -164,7 +166,8 @@ The Console class includes a format() method to write data to the output stream,
 making option E correct. Since there is no println() method,
 as writer() must be called first, option F is incorrect.
 
-### Which of the following are methods available on instances of the java.io.File class? (Choose all that apply.)
+##### Which of the following are methods available
+##### on instances of the java.io.File class? (Choose all that apply.)
 *  A. mv()
 *  B. createDirectory()
 *  C. mkdirs()

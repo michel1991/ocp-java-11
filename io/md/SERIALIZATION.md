@@ -1,4 +1,6 @@
-### An object has validation code in the constructor. When deserializing an object, the constructor is called with which of the following?
+###### An object has validation code in the constructor.
+##### When deserializing an object, the constructor
+##### is called with which of the following?
 * A. readObject()
 * B. readResolve()
 * C. Both
@@ -14,13 +16,18 @@ When deserializing an object, Java does not call the constructor. Therefore, opt
 * E. Serializable is a functional interface.
 * F. The readObject() method of ObjectInputStream may throw a ClassNotFoundException even if the return object is not cast to a specific type.
 
-In Java, serialization is the process of turning an object to a stream, while deserialization is the process of turning that stream back into an object.
+In Java, serialization is the process of turning an object to a stream,
+while deserialization is the process of turning that stream back into an object.
 For this reason, option A is correct, and option B is incorrect.
-Option C is incorrect, because many nonthread classes are not marked Serializable for various reasons.
-The Serializable interface is a marker interface that does not contain any abstract methods, making options D and E incorrect.
-Finally, option F is correct, because readObject() declares the ClassNotFoundException even if the class is not cast to a specific type.
+Option C is incorrect, because many nonthread classes
+are not marked Serializable for various reasons.
+The Serializable interface is a marker interface
+that does not contain any abstract methods, making options D and E incorrect.
+Finally, option F is correct, because readObject()
+declares the ClassNotFoundException even if the class is not cast to a specific type.
 
-### What modifiers must be used with the serialPersistentFields field in a class? (Choose all that apply.)
+##### What modifiers must be used with
+##### the serialPersistentFields field in a class? (Choose all that apply.)
 * A. final
 * B. private
 * C. protected
@@ -28,8 +35,10 @@ Finally, option F is correct, because readObject() declares the ClassNotFoundExc
 * E. transient
 * F. static
 
-The serialPersistentFields field is used to specify which fields should be used in serialization.
-It must be declared private static final, or it will be ignored. Therefore, options A, B, and F are correct.
+The serialPersistentFields field is used to specify
+which fields should be used in serialization.
+It must be declared private static final, or it will be ignored.
+Therefore, options A, B, and F are correct.
 
 
 ### What are the bestscenarios for customizing the serialization process? (Choose two.)
@@ -40,7 +49,27 @@ It must be declared private static final, or it will be ignored. Therefore, opti
 *  E. To encrypt a password before it is saved to disk.
 *  F. To customize the handling of certain user sensitive data like a Social Security number.
 
-Encrypting or customizing the handling of certain sensitive fields are good reasons to customize the serialization process via methods,
-making options E and F correct. Options A, B, and D are invalid and are not reasons to customize the process.
+Encrypting or customizing the handling of certain sensitive fields
+are good reasons to customize the serialization process via methods,
+making options E and F correct. Options A, B, and D
+are invalid and are not reasons to customize the process.
 Option C is incorrect as the transient modifier or serialPersistentFields
-can be used to exclude fields from serialization without the need to add any serialization methods.
+can be used to exclude fields from serialization
+without the need to add any serialization methods.
+
+### What are the requirements for a class that you want to serialize to a stream? (Choose all that apply.)
+*  A. The class must be marked final.
+*  B. The class must extend the Serializable class.
+*  C. The class must declare a static serialVersionUID variable.
+*  D. All static members of the class must be marked transient.
+*  E. The class must implement the Serializable interface.
+*  F. All instance members of the class must be serializable or marked transient.
+
+For a class to be serialized, it must implement the Serializable interface and contain instance members
+that are serializable or marked transient. For these reasons, options E and F are correct.
+Marking a class final does not impact its ability to be serialized,
+so option A is incorrect. Option B is incorrect, as Serializable is an interface, not a class.
+Option C is incorrect. While it is a good practice
+for a serializable class to include a static serialVersionUID variable,
+it is not required. Finally, option D is incorrect
+as static members of the class are ignored on serialization already.
