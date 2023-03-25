@@ -10,7 +10,8 @@ package advancedDesign;
     F. A compiler error occurs on another line.
 
     The code does not contain any compiler errors.
-    It is valid to define multiple top-level classes in a single file as long as only one of them is public and the others have the default access.
+    It is valid to define multiple top-level classes in a single file
+    as long as only one of them is public and the others have the default access.
     Each class becomes a separate .class file, making option A is correct.
  */
 class Plant { // 1:
