@@ -57,3 +57,18 @@ to a stream that is forced into a serial operation, such as when the findFirst()
 The correct method to obtain an equivalent parallel stream of an existing stream is parallel(),
 which is inherited by any class that implements BaseStream<T>
 including the primitive streams. For this reason, option D is correct.
+
+##### Which statements about applying forEachOrdered()
+##### to a parallel ordered stream instead of using forEach() are correct? (Choose two.)
+*  A. The operation will likely be faster.
+*  B. The operation will likely be slower.
+*  C. There is no expected change in performance.
+*  D. It forces some stream operations in the pipeline to be performed in a serial manner.
+*  E. It forces all stream operations in the pipeline to be performed in a serial manner.
+*  F. All stream operations will continue to be performed in a parallel manner.
+
+Applying forEachOrdered() to a parallel stream forces
+the terminal operation to be performed in a single-threaded, rather than parallel, manner.
+For this reason, it is likely that it will be slower, making option B correct.
+Intermediate operations can still take advantage of parallel processing,
+since forEachOrdered() is only applied at the end of the pipeline. For this reason, option D is correct.

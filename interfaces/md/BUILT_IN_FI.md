@@ -122,3 +122,42 @@ for this functional interface is ObjIntConsumer.
 That leaves option F, which is incorrect.
 There is no built-in Predicate interface that takes three values.
 
+##### Which of the following functional interfaces contain an abstract method
+##### that returns a primitive value? (Choose all that apply.)
+*  A. BooleanSupplier
+*  B. CharSupplier
+*  C. DoubleSupplier
+*  D. FloatSupplier
+*  E. IntSupplier
+*  F. StringSupplier
+
+Java includes support for three primitive streams, along with numerous
+functional interfaces to go with them: int, double, and long.
+For this reason, options C and E are correct.
+There is one exception to this rule. While there is no BooleanStream class,
+there is a BooleanSupplier functional interface, making option A correct.
+Java does not include primitive streams or related functional
+interfaces for other numeric data types, making options B and D incorrect.
+Option F is incorrect because String is not a primitive,
+but an object. Only primitives have custom suppliers.
+
+#### Which of the following statements about DoubleSupplier and Supplier˂Double˃ is not true?
+* A. Both are functional interfaces.
+* B. Both take zero parameters.
+* C. Lambdas for both can return a double value.
+* D. Lambdas for both cannot return a null value.
+* E. One supports a generic type; the other does not.
+* F. All of these are true.
+
+Both are functional interfaces in the java.util.function package,
+making option A true. Additionally, both lack parameters, making option B true.
+The major difference between the two is that Supplier˂Double˃ takes
+the generic type Double, while the other does not take any generic
+type and instead uses the primitive double.
+For this reason, options C and E are true statements.
+For Supplier<Double> in option C, remember that the returned
+double value can be implicitly autoboxed to Double.
+Option D is the correct answer. Lambdas for Supplier<Double>
+can return a null value since Double is an object type,
+while lambdas for DoubleSupplier cannot; they can only return primitive double values.
+

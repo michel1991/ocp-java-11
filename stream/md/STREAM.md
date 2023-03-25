@@ -55,3 +55,29 @@ of a stream pipeline and must occur exactly once.
 The intermediate operation is optional.
 It can appear zero or more times. Since more
 than once falls within zero or more, option D is correct.
+
+#### In a stream pipeline, which can return a value other than a Stream?
+* A. Source
+* B. Intermediate operation
+* C. Terminal operation
+* D. None of the above
+
+The result of the source and any intermediate operations
+are chained and eventually passed to the terminal operation.
+The terminal operation is where a nonstream result is generated,
+making option C correct.
+
+##### What is a common reason for a stream pipeline not to run?
+* A. The source doesn’t generate any items.
+* B. There are no intermediate operations.
+* C. The terminal operation is missing.
+* D. The version of Java is too old.
+* E. None of the above.
+
+Option A is incorrect because a pipeline still runs if
+the source doesn’t generate any items and the rest of the pipeline is correct.
+Granted, some of the operations have nothing to do,
+but control still passes to the terminal operation.
+Option B is incorrect because intermediate operations are optional.
+Option C is the answer. The terminal operation triggers the pipeline to run.
+Option D is incorrect because the code would not compile at all if the version of Java were too old.
