@@ -1,8 +1,8 @@
 package advancedDesign.errors;
 
 /**
-* What is the result of this code? (Choose all that apply.)
-*
+  What is the result of this code? (Choose all that apply.)
+
    A. Compiler error on line 2
    B. Compiler error on line 4
    C. Compiler error on line 9
