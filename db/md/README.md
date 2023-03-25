@@ -108,12 +108,16 @@ Any resource accessing things outside your program should be closed. Options C a
 * E. PreparedStatement
 * F. PreparedStatement’s implementation
 
-The Driver and PreparedStatement interfaces are part of the JDK, making options A and E incorrect.
+The Driver and PreparedStatement interfaces are part of the JDK,
+making options A and E incorrect.
 The concrete DriverManager class is also part of the JDK, making options C and D incorrect.
-Options B and F are correct since the implementation of these interfaces is part of the database-specific driver JAR file.
+Options B and F are correct since the implementation of these interfaces
+is part of the database-specific driver JAR file.
 
 
-### Suppose we have a JDBC program that calls a stored procedure, which returns a set of results. Which is the correct order in which to close database resources for this call?
+##### Suppose we have a JDBC program that calls a stored procedure,
+##### which returns a set of results.
+##### Which is the correct order in which to close database resources for this call?
 * A. Connection, ResultSet, CallableStatement
 * B. Connection, CallableStatement, ResultSet
 * C. ResultSet, Connection, CallableStatement
@@ -122,40 +126,10 @@ Options B and F are correct since the implementation of these interfaces is part
 * F. CallableStatement, ResultSet, Connection
 
 JDBC resources should be closed in the reverse order from that in which they were opened.
-The order for opening is Connection, CallableStatement, and ResultSet. The order for closing is ResultSet, CallableStatement, and Connection.
+The order for opening is Connection, CallableStatement, and ResultSet.
+The order for closing is ResultSet, CallableStatement, and Connection.
 
-### Which of the following is a valid JDBC URL?
-* A. jdbc:oracle:123.123.123.123
-* B. jdbc:oracle:thin:123.123.123.123
-* C. jdbc:oracle:thin:123.123.123.123//fun
-* D. oracle:jdbc:123.123.123.123
-* E. oracle:jdbc:thin:123.123.123.123
-* F. oracle:jdbc:thin:123.123.123.123//fun
 
-A JDBC URL must begin with JDBC, making options D, E, and F incorrect.
-The database name is required, making options A and B incorrect. Therefore, the answer is option C.
-
-### Which of the following is a valid JDBC URL?
-* A. jdbc:sybase:localhost:1234/db
-* B. jdbc::sybase::localhost::/db
-* C. jdbc::sybase:localhost::1234/db
-* D. sybase:localhost:1234/db
-* E. sybase::localhost::/db
-* F. sybase::localhost::1234/db
-
-A JDBC URL has three main parts separated by single colons, making options B, C, E, and F incorrect.
-The first part is always jdbc, making option D incorrect. Therefore, the correct answer is option A.
-Notice that you can get this right even if you’ve never heard of the Sybase database before.
-
-### Which of the following is a valid JDBC URL?
-* A. jdbc-mysql-1234/db
-* B. jdbc-mysql-localhost:1234/db
-* C. jdbc-mysql-localhost-1234-db
-* D. jdbc:mysql:
-* E. jdbc:mysql:localhost:1234/db
-
-A JDBC URL has three main parts separated by colons (:), making options A, B, and C incorrect.
-Option D is tempting since there are two colons. However, there needs to be content after the colon as well.
 
 ### How do you obtain a connection through JDBC?
 * A. new Connection(url)
@@ -165,7 +139,8 @@ Option D is tempting since there are two colons. However, there needs to be cont
 * E. DriverManager.getConnection(url)
 * F. new DriverManager().getConnection(url)
 
-On the exam, a Connection is always obtained from a DriverManager using a static method. Therefore, option E is correct.
+On the exam, a Connection is always obtained from a DriverManager
+using a static method. Therefore, option E is correct.
 
 # Which of the following can fill in the blank correctly? (Choose all that apply.)
 ```java
@@ -181,9 +156,11 @@ On the exam, a Connection is always obtained from a DriverManager using a static
 * E. Object s = rs.getObject(0)
 * F. Object s = rs.getObject(1)
 
-In a ResultSet, columns are indexed starting with 1, not 0. Therefore, options A, C, and E are incorrect.
+In a ResultSet, columns are indexed starting with 1, not 0.
+Therefore, options A, C, and E are incorrect.
 There are methods to get the column as a String or Object.
-However, option D is incorrect because an Object cannot be assigned to a String without a cast.
+However, option D is incorrect because
+an Object cannot be assigned to a String without a cast.
 
 ### Which of the following can fill in the blank correctly assuming the first column is name? (Choose all that apply.)
 ```java
@@ -198,7 +175,8 @@ However, option D is incorrect because an Object cannot be assigned to a String 
 *  C. rs.getString("name");
 *  D. None of the above. The code does not compile.
 
-In a ResultSet, columns are indexed starting with 1, not 0. Getting the column-by-column number or name is allowed.
+In a ResultSet, columns are indexed starting with 1, not 0.
+Getting the column-by-column number or name is allowed.
 
 ### Which of the following are words in the CRUD acronym? (Choose all that apply.)
 * A. Create
@@ -262,9 +240,12 @@ If the Connection was created properly, the answer would be option B.
 * D. Security
 * E. Supports stored procedures
 
-JDBC uses Java and SQL, so it is not language independent, making option A incorrect. It is used with relational databases, ruling out option B.
-A CallableStatement supports stored procedures, not a PreparedStatement, making option E incorrect.
+JDBC uses Java and SQL, so it is not language independent, making option A incorrect.
+It is used with relational databases, ruling out option B.
+A CallableStatement supports stored procedures, not a PreparedStatement,
+making option E incorrect.
 Options C and D are correct.
-Using bind variables with a PreparedStatement produces code that is easier to read than one with a lot of String concatenation.
+Using bind variables with a PreparedStatement produces
+code that is easier to read than one with a lot of String concatenation.
 Further, when used properly, a PreparedStatement prevents SQL injection.
 

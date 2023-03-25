@@ -262,6 +262,22 @@ It cannot be null at that point, but the variable can be assigned as null later,
 making option B correct. Both primitives and objects can be used with var,
 making option F correct.
 
+##### Fill in the blanks: A class may be assigned to a(n)
+##### ___________________ reference variable automatically
+##### but requires an explicit cast when assigned
+##### to a(n) ___________________ reference variable.
+
+* A. subclass, outer class
+* B. superclass, subclass
+* C. concrete class, subclass
+* D. subclass, superclass
+* E. abstract class, concrete class
+
+A class can trivially be assigned to a superclass reference
+variable but requires an explicit cast to be assigned
+to a subclass reference variable. For these reasons, option B is correct.
+
+
 
 
 
