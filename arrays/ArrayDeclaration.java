@@ -1,4 +1,4 @@
-package advancedDesign;
+package arrays;
 public class ArrayDeclaration {
     /**
     *   Which of these array declarations is not legal? (Choose all that apply.)
