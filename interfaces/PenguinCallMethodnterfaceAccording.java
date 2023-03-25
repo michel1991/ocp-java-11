@@ -1,4 +1,4 @@
-package advancedDesign;
+package interfaces;
 
 /**
   Given the following program, what can be inserted into the blank line that would allow it to print Swim! at runtime?
