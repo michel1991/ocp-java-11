@@ -107,24 +107,6 @@ in part because it prevents passwords from entering the string pool, making opti
 Option E is also incorrect, as the method does not perform any kind of encryption.
 For these reasons, option F is correct
 
-##### Which of the following are valid method modifiers that cannot
-##### be used together in a method declaration? (Choose all that apply.)
-* A. null and final
-* B. abstract and private
-* C. public and private
-* D. nonstatic and abstract
-* E. private and final
-* F. abstract and static
-* G. protected and abstract
-
-First, null and nonstatic are not valid method modifiers, making options A and D incorrect.
-Options B and F are correct, as abstract methods cannot be marked private or static,
-since they then would not be able to be overridden.
-Option C is also correct, as you cannot declare two access modifiers on the same method.
-Finally, options E and G are two sets of valid modifiers that can be used together
-in a method declaration.
-Using private with final is allowed, albeit redundant.
-
 ### Which of the following statements about primitive and reference types are correct? (Choose all that apply.)
 * A. char and byte are the same size.
 * B. Java allows some objects to be passed to methods that accept primitives.
@@ -147,19 +129,6 @@ Finally, option G is incorrect, since objects can have many references to them.
 They can even be created without an explicit reference variable,
 such as calling new Object(); on a line by itself.
 
-### Which modifier pairs can be used together in a method declaration? (Choose all that apply.)
-* A. static and final
-* B. private and static
-* C. static and abstract
-* D. private and abstract
-* E. abstract and final
-* F. private and final
-
-The final modifier can be used with private and static, making options A and F correct.
-Marking a private method final is redundant but allowed.
-A private method may also be marked static, making option B correct.
-Options C, D, and E are incorrect because methods marked static, private,
-or final cannot be overridden; therefore, they cannot be marked abstract.
 
 ### Which of the following statements about var are true? (Choose all that apply.)
 *  A. A var can be used as a constructor parameter.
