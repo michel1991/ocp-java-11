@@ -1,19 +1,3 @@
-###### Fill in the blanks to complete this sentence:
-###### The show-module-resolution option is on the _______ command,
-###### and the summary option is on the _______ command.
-* A. jar and java
-* B. javac and java
-* C. java and java
-* D. jar and jdeps
-* E. javac and jdeps
-* F. java and jdeps
-* G. None of the above
-
-The only command that has a show-module-resolution option is java,
-and the only command that has a summary option is jdeps.
-Therefore, option F is correct.
-
-
 ### What is true about a service provider module? (Choose all that apply.)
 * A. It contains the interface that implementations must provide
 * B. It contains exactly one implementation of the interface.
@@ -30,17 +14,6 @@ One of the benefits of services is being able to change
 the service provider dynamically, making option D correct.
 Finally, a service provider interface uses while a service provider provides,
 making option E correct and option F incorrect.
-
-### Which of the following statements are correct? (Choose all that apply.)
-* A. The jar command allows adding exports as command-line options.
-* B. The java command allows adding exports as command-line options.
-* C. The jdeps command allows adding exports as command-line options.
-* D. Adding an export at the command line is discouraged.
-* E. Adding an export at the command line is recommended.
-
-The java command has an --add-exports option that allows exporting a package at runtime.
-However, it is not encouraged to use it, making options B and D the answer.
-
 
 ### Which are true statements? (Choose all that apply.)
 *  A. An automatic module exports all packages to named modules.
@@ -72,19 +45,6 @@ Finally. Option F is incorrect because unnamed modules cannot
 be referenced from an automatic module.
 
 
-### Which statement is true about the jdeps command? (Choose all that apply.)
-*  A. It can provide information about dependencies on the class level only.
-*  B. It can provide information about dependencies on the package level only.
-*  C. It can provide information about dependencies on the class or package level.
-*  D. It can run only against a named module.
-*  E. It can run against a regular JAR.
-
-The jdeps command provides information about the class or package level
-depending on the options passed, making option C correct.
-It is frequently used to determine what dependencies you will need when converting to modules.
-This makes it useful to run against a regular JAR, making option E correct.
-
-
 ### Which of the following are true? (Choose all that apply.)
 *  A. javac compiles a .class file into a .java file.
 *  B. javac compiles a .java file into a .bytecode file.
@@ -97,18 +57,6 @@ Java puts source code in .java files and bytecode in .class files.
 It does not use a .bytecode file.
 When running a Java program, you pass just the name of the class without the .class extension.
 
-### Which are valid modes for the jmod command? (Choose all that apply.)
-*  A. add
-*  B. create
-*  C. delete
-*  D. describe
-*  E. extract
-*  F. list
-*  G. show
-
-This is another question you just have to memorize.
-The jmod command has five modes you need to be able to list: create, extract, describe, list, and hash.
-The hash operation is not an answer choice. The other four are making options B, D, E, and F correct.
 
 ##### Suppose you have the commands javac, java, and jar.
 ##### How many of them support a --show-module-resolution option?
@@ -181,21 +129,6 @@ Unnamed modules are not readable by any other types of modules, ruling out optio
 Automatic modules always export all packages to other modules, making the answer option C.
 For more information, see Chapter 6.
 
-
-##### What can be created using the Java Platform Module System
-##### that could not be created without it? (Choose all that apply.)
-*  A. JAR file
-*  B. JMOD file
-*  C. Smaller runtime images for distribution
-*  D. Operating system specific bytecode
-*  E. TAR file
-*  F. None of the above
-
-Option A is incorrect because JAR files have always been available regardless of the JPMS.
-Option D is incorrect because bytecode runs on the JVM and is not operating system specific by definition.
-While it is possible to run the tar command, this has nothing to do with Java, making option E incorrect.
-Option B is one of the correct answers as the jmod command creates a JMOD file.
-Option C is the other correct answer because specifying dependencies is one of the benefits of the JPMS.
 
 ### Which of the following is an advantage of the Java Platform Module System?
 *  A. A central repository of all modules
@@ -323,5 +256,27 @@ Option A is correct because ServiceLoader allows you to make your application ex
 A service can be added without recompiling the entire application.
 It is a class, but the service provider implementation does not reference it,
 making options C and D incorrect. Option B is not a feature of Java.
+
+##### Imagine you are working with another team to build an application.
+##### You are developing code that uses a class that the other team has not finished writing yet.
+##### You want to allow easy integration once the other team’s code is complete.
+##### Which statements would meet this requirement? (Choose two.)
+
+* A. An abstract class is best.
+* B. An interface is best.
+* C. Either of an abstract class or interface would meet the requirement.
+* D. The methods should be protected.
+* E. The methods should be public.
+* F. The methods should be static.
+
+The key here is understanding which of these features of
+Java allow one developer to build their application around another developer’s code,
+even if that code is not ready yet. For this problem, an interface is the best choice.
+If the two teams agree on a common interface, one developer can write code that uses the interface,
+while another developer writes code that implements the interface.
+Assuming neither team changes the interface, the code can
+be easily integrated once both teams are done. For these reasons,
+option B is correct. Interfaces expose methods using the public keyword,
+making option E the other answer.
 
 

@@ -77,6 +77,43 @@ option can be passed when compiling or running a program.
 Option D is also correct because jdeps
 can use the --module-path option when listing dependency information.
 
+###### Fill in the blanks to complete this sentence:
+###### The show-module-resolution option is on the _______ command,
+###### and the summary option is on the _______ command.
+* A. jar and java
+* B. javac and java
+* C. java and java
+* D. jar and jdeps
+* E. javac and jdeps
+* F. java and jdeps
+* G. None of the above
+
+The only command that has a show-module-resolution option is java,
+and the only command that has a summary option is jdeps.
+Therefore, option F is correct.
+
+### Which of the following statements are correct? (Choose all that apply.)
+* A. The jar command allows adding exports as command-line options.
+* B. The java command allows adding exports as command-line options.
+* C. The jdeps command allows adding exports as command-line options.
+* D. Adding an export at the command line is discouraged.
+* E. Adding an export at the command line is recommended.
+
+The java command has an --add-exports option that allows exporting a package at runtime.
+However, it is not encouraged to use it, making options B and D the answer.
+
+### Which statement is true about the jdeps command? (Choose all that apply.)
+*  A. It can provide information about dependencies on the class level only.
+*  B. It can provide information about dependencies on the package level only.
+*  C. It can provide information about dependencies on the class or package level.
+*  D. It can run only against a named module.
+*  E. It can run against a regular JAR.
+
+The jdeps command provides information about the class or package level
+depending on the options passed, making option C correct.
+It is frequently used to determine what dependencies you will need when converting to modules.
+This makes it useful to run against a regular JAR, making option E correct.
+
 ##### Given the following command, which of the following
 ##### classes would be included for compilation? (Choose all that apply.)
 ```sh
@@ -101,18 +138,10 @@ Therefore, options A and B are correct.
 * D. It can be used with the jar and java commands, but means “directory” for the former and “describe module” for the later.
 * E. None of the above.
 
-The -d option is a shorthand for --describe-module on both the jar and java commands. Therefore, option C is correct.
+The -d option is a shorthand for --describe-module on both the jar and java commands.
+Therefore, option C is correct.
 
-### What command is the simplest way to list what modules a JAR depends on without listing package names?
-*  A. jdeps cookie.jar
-*  B. jdeps –s cookie.jar
-*  C. jdeps –jdkinternals cookie.jar
-*  D. jdeps --jdkinternals cookie.jar
-*  E. jdeps -jdk-unsupported cookie.jar
-*  F. jdeps --jdk-unsupported cookie.jar
 
-Without any command line flags, jdeps lists packages and module dependencies.
-The -s flag provides a summary omitting the package name, which means option B is the correct answer.
 
 ### Which options are valid on the java command without considering module options? (Choose all that apply.)
 *  A. -c
@@ -126,38 +155,6 @@ When running a program using java, you specify the classpath with -cp, making op
 Options D and E are incorrect because -d and -p are used for modules.
 Options A and B are not valid options on the java command.
 
-##### Which command can you run to determine whether you have
-##### any code in your JAR file that depends on unsupported internal
-##### APIs and does not suggest an alternative?
-*  A. jdeps -internal-jdk
-*  B. jdeps --internaljdk
-*  C. jdeps --internal-jdk
-*  D. jdeps -s
-*  E. jdeps -unsupported
-*  F. jdeps –unsupportedapi
-*  G. jdeps –unsupported-api
-*  H. None of the above
-
-Option D is correct because it prints jdk.unsupported but does not print a table with a suggested alternative.
-Option C is incorrect because it does print a suggested alternative.
-Options A, B, E, F, and G are incorrect because those options do not exist.
-
-###### Which command can you run to determine whether you have any code
-###### in your JAR file that depends on unsupported internal APIs and suggests an alternative?
-* A. jdeps -internal-jdk
-* B. jdeps --internaljdk
-* C. jdeps --internal-jdk
-* D. jdeps -s
-* E. jdeps -unsupported
-* F. jdeps –unsupportedapi
-* G. jdeps –unsupported-api
-* H. None of the above
-
-The jdeps command has an option --internal-jdk that lists any
-code using unsupported/internal APIs and prints a table with suggested alternatives.
-Option D is incorrect because it does not print out the table with a suggested alternative.
-Options A, B, C, E, F, and G are incorrect because those options do not exist.
-For options A,B, and C, the options are reversed and should be “jdk-internals”.
 
 ###### Which of the following options does not have a one-character shortcut
 ###### in any of the commands studied in this chapter? (Choose all that apply.)
@@ -283,12 +280,3 @@ The package and class names must be legal Java identifiers.
 Dashes (-) are not allowed, ruling out option D.
 This leaves options A and B as the correct answers.
 
-#### Which are valid modes on the jmod command? (Choose three.)
-*  A. create
-*  B. list
-*  C. hash
-*  D. show
-*  E. verbose
-*  F. version
-
-The jmod command has five possible modes: create, extract, describe, list, and hash.
