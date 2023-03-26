@@ -1,4 +1,4 @@
-package stream;
+package stream.mapping;
 import java.util.stream.*;
 import java.util.*;
 public class ChoiceMethodToApply {
@@ -26,7 +26,7 @@ public class ChoiceMethodToApply {
     }
 
     public static void main(String... args){
-        
+
     }
 
 }

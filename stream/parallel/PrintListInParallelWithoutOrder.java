@@ -1,4 +1,4 @@
-package stream;
+package stream.parallel;
 import java.util.stream.*;
 import java.util.*;
 
@@ -51,7 +51,7 @@ class PrintListInParallelWithoutOrder{
        //
         return recipe;
      }
-     
+
 
      public static void answerOne(List<Integer> m){
         System.out.println(
@@ -76,13 +76,13 @@ class PrintListInParallelWithoutOrder{
      }
 
      public static void main(String... args){
-        /* 
-	  Given a List<Integer> of values, m, and the following getLunch() method that takes a lot of time to complete, 
-	  which stream operation concurrently processes the data, 
+        /*
+	  Given a List<Integer> of values, m, and the following getLunch() method that takes a lot of time to complete,
+	  which stream operation concurrently processes the data,
 	  while printing the results in the order they are stored in the original List? (Choose all that apply.)
        */
-       List list = List.of(1, 3, 6, 8);	     
+       List list = List.of(1, 3, 6, 8);
      }
 
-     
+
 }

@@ -1,4 +1,4 @@
-package stream;
+package stream.mapping;
 import java.util.stream.*;
 
 public class StreamConversion {

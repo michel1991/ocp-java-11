@@ -1,4 +1,4 @@
-package stream;
+package stream.parallel;
 import java.util.*;
 import java.util.stream.*;
 import java.util.concurrent.*;

@@ -1,4 +1,4 @@
-package stream;
+package stream.infinite;
 import java.util.stream.*;
 import java.util.*;
 

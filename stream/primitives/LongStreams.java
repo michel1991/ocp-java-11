@@ -1,4 +1,4 @@
-package stream;
+package stream.primitives;
 import java.util.*;
 import java.util.stream.*;
 

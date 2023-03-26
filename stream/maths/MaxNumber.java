@@ -1,4 +1,4 @@
-package stream;
+package stream.maths;
 import java.util.stream.*;
 import java.util.*;
 
