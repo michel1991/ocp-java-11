@@ -11,8 +11,10 @@ public interface ExecuteQueryOfStatementNotAllowBind {
         E. A SQLException is thrown.
         F. A different exception is thrown.
 
-        The code compiles because PreparedStatement extends Statement and Statement allows passing a String in the executeQuery() call.
-        While PreparedStatement can have bind variables, Statement cannot. Since this code uses executeQuery(sql) in Statement, it fails at runtime.
+        The code compiles because PreparedStatement extends Statement
+        and Statement allows passing a String in the executeQuery() call.
+        While PreparedStatement can have bind variables, Statement cannot.
+        Since this code uses executeQuery(sql) in Statement, it fails at runtime.
         A SQLException is thrown, making option E correct.
      */
    public static void noBindParameterWithExecuteQueryFromStatementInterface() throws SQLException{

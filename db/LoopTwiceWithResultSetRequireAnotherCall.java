@@ -2,11 +2,14 @@ package db;
 import java.sql.*;
 
 /**
-*  Question: Suppose that the table counts has five rows with the numbers 1 to 5. How many lines does this code print?
-*
-* This code is tricky. While it does have two loops for the ResultSet, there is no call to the database in between.
-* Therefore, the second call to setInt() is unused, and the second while loop does not iterate through any data.
-* Only two lines are printed, making option C correct.
+  Question: Suppose that the table counts has five rows with the numbers 1 to 5.
+   How many lines does this code print?
+
+  This code is tricky. While it does have two loops for the ResultSet,
+  there is no call to the database in between.
+  Therefore, the second call to setInt() is unused,
+  and the second while loop does not iterate through any data.
+  Only two lines are printed, making option C correct.
  */
 public class LoopTwiceWithResultSetRequireAnotherCall {
   public static void loop() throws SQLException{

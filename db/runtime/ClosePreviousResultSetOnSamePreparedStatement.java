@@ -12,7 +12,8 @@ import java.sql.*;
     When running a query on a PreparedStatement,
     Java closes any already open ResultSet objects associated with the statement.
     This means that rs1 is closed on line 8.
-    Therefore, it throws a SQLException on line 9 because we are trying to call next() on a closed ResultSet,
+    Therefore, it throws a SQLException
+   on line 9 because we are trying to call next() on a closed ResultSet,
     and option D is correct.
  */
 public class ClosePreviousResultSetOnSamePreparedStatement {
