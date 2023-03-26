@@ -65,13 +65,17 @@ it behaves like any other private members and can be referenced only in the clas
 * E. Marking an instance method abstract prevents it from being overridden or hidden.
 * F. Marking a method private prevents it from being overridden in a subclass.
 
-If a class inherits an instance method, then it can only declare a method with the same signature if that method is also an instance method, making option A incorrect.
+If a class inherits an instance method, then it can only declare a method with
+the same signature if that method is also an instance method, making option A incorrect.
 Option B is correct, as it defines the effect of overriding a method in a subclass via polymorphism.
 Option C is incorrect as variables cannot be overridden. Option D is also incorrect.
-Polymorphism dictates that the calls to an overridden method will be replaced everywhere, regardless of the reference type used.
-Option E is incorrect, as abstract methods are often overridden, commonly in the first concrete subclass. Finally, option F is correct.
+Polymorphism dictates that the calls to an overridden method will be replaced everywhere,
+regardless of the reference type used.
+Option E is incorrect, as abstract methods are often overridden,
+commonly in the first concrete subclass. Finally, option F is correct.
 Methods marked private cannot be overridden.
-They can still be declared in a subclass, but since they are not inherited in a subclass, this is not considered an overridden method.
+They can still be declared in a subclass,
+but since they are not inherited in a subclass, this is not considered an overridden method.
 
 ### Which of the following statements about overridden methods are true? (Choose all that apply.)
 * A. An overridden method must use an access modifier that is the same or less restrictive than the method it overrides.
@@ -81,13 +85,18 @@ They can still be declared in a subclass, but since they are not inherited in a 
 * E. An overridden method must return the exact same type as the method it overrides.
 * F. A method that has a single vararg parameter may be overridden by a method that takes no arguments, as varargs can have zero-or-more parameters.
 
-An overridden method must use an access modifier that is the same or less (not more) restrictive than the method it inherits, making option A correct.
-An overridden method can swallow (refrain from declaring) or declare new unchecked exceptions as the method it inherits, making options B and C correct.
-It may not declare new checked exceptions, though. Option D is correct as there is no rule that an overridden method cannot be marked final.
+An overridden method must use an access modifier that is the same
+or less (not more) restrictive than the method it inherits, making option A correct.
+An overridden method can swallow (refrain from declaring)
+or declare new unchecked exceptions as the method it inherits, making options B and C correct.
+It may not declare new checked exceptions, though.
+Option D is correct as there is no rule that an overridden method cannot be marked final.
 Option E is incorrect, as the return type has to be covariant.
-In other words, the return type of the overridden method can be the same or a subtype as the return type of the method it overrides.
+In other words, the return type of the overridden method
+can be the same or a subtype as the return type of the method it overrides.
 Finally, option F is incorrect.
-If an overridden method changes the signature (the name and list of parameters) in any way, then the method is overloaded, not overridden.
+If an overridden method changes the signature (the name and list of parameters) in any way,
+then the method is overloaded, not overridden.
 
 ### Which of the following statements about polymorphism are true? (Choose all that apply.)
 * A. An object may be cast to a subtype without an explicit cast.
@@ -97,12 +106,18 @@ If an overridden method changes the signature (the name and list of parameters) 
 * E. By defining a final instance method in the superclass, you guarantee that the specific method will be called in the parent class at runtime.
 * F. Polymorphism applies only to classes, not interfaces.
 
-An object may be cast to a supertype without an explicit cast but requires an explicit cast to be cast to a subtype, making option A incorrect.
-Option B is correct, as an interface method argument may take any reference type that implements the interface.
-Option C is also correct, as a method that accepts java.lang.Object can accept any variable since all objects inherit java.lang.Object.
+An object may be cast to a supertype without an explicit cast but requires
+an explicit cast to be cast to a subtype, making option A incorrect.
+Option B is correct, as an interface method argument
+may take any reference type that implements the interface.
+Option C is also correct, as a method that accepts java.lang.Object can accept
+any variable since all objects inherit java.lang.Object.
 This also includes primitives, which can be autoboxed to their wrapper classes.
-Some cast exceptions can be detected as errors at compile time, but others can only be detected at runtime, so option D is incorrect.
-Due to the nature of polymorphism, a final instance method cannot be overridden in a subclass, so calls in the parent class will not be replaced, making option E correct.
+Some cast exceptions can be detected as errors at compile time,
+but others can only be detected at runtime, so option D is incorrect.
+Due to the nature of polymorphism, a final instance
+method cannot be overridden in a subclass, so calls in the parent class will not be replaced,
+making option E correct.
 Finally, polymorphism applies to classes and interfaces alike, making option F incorrect.
 
 ### Which statements about polymorphism and method inheritance are correct? (Choose all that apply.)

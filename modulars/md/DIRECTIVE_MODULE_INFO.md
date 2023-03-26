@@ -210,7 +210,8 @@ While the snow module is not involved in the cycle,
 it cannot compile since the rain module cannot compile.
 Since only one module can compile, option B is correct.
 
-### What is true of a module containing a file named module-info.java with the following contents? (Choose all that apply.)
+##### What is true of a module containing a file named
+#### module-info.java with the following contents? (Choose all that apply.)
 
 ```java
     module com.food.supplier {
@@ -306,6 +307,24 @@ This is just something you have to memorize.
 The transitive keyword goes after requires,
 ruling out all but options C and D. Just like requires,
 requires transitive references a module name, narrowing it down to option C.
+
+###### Given the diagram in question 43 and the correct
+###### export statement to share only com.duckling,
+###### which of the following should be included in the module-info.java
+###### file of com.park to specify that com.park
+###### should have access to the com.duckling and com.bread packages,
+###### but not the com.egg package?
+
+* A. require com.duck, com.bread;
+* B. requires com.duck; com.bread;
+* C. require com.duckling, com.bread;
+* D. requires com.duckling; com.bread;
+* E. None of the above
+
+The correct way to specify this is requires com.duck; requires com.bread;.
+There is no way to combine two module requires statements into one.
+Additionally, note that the requires statement works with a module name, not a package name.
+
 
 
 

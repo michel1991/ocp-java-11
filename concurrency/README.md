@@ -13,7 +13,9 @@ Keep in mind that there is a cost associated with allocating additional memory a
 Option C is incorrect because single-processor CPUs have been benefiting from concurrency for decades.
 Finally, option E is incorrect; there are numerous examples in this chapter of concurrent tasks sharing memory.
 
-### Fill in the blanks: ____________ occur(s) when two or more threads are frozen and blocked forever. ____________ occur(s) when one or more threads are perpetually denied access to a resource.
+##### Fill in the blanks: ____________ occur(s) when two or more threads
+##### are frozen and blocked forever. ____________ occur(s)
+##### when one or more threads are perpetually denied access to a resource.
 * A. Race conditions, Livelock
 * B. Deadlock, Starvation
 * C. Starvation, Deadlock
@@ -21,7 +23,9 @@ Finally, option E is incorrect; there are numerous examples in this chapter of c
 * E. Starvation, Race conditions
 * F. Deadlock, Livelock
 
-Deadlock occurs when two or more threads are frozen and not making any progress, while starvation occurs when one or more threads is perpetually denied access to a resource.
+Deadlock occurs when two or more threads are frozen and
+not making any progress, while starvation occurs when one
+or more threads is perpetually denied access to a resource.
 For these reasons, option B is correct.
 
 ### Which statements about methods in ReentrantLock are correct? (Choose all that apply.)
@@ -38,7 +42,10 @@ Option D is incorrect, as fairness is set to false by default and must be enable
 Finally, option E is incorrect because a thread that holds the lock may have called lock() or tryLock() multiple times.
 A thread needs to call unlock() once for each call to lock() and tryLock().
 
-### Fill in the blanks: ____________ occur(s) when two or more threads are blocked forever but both appear active. ____________ occur(s) when two or more threads try to complete a related task at the same time, resulting in invalid or unexpected data.
+###### Fill in the blanks: ____________ occur(s) when two or more threads
+###### are blocked forever but both appear active. ____________ occur(s)
+###### when two or more threads try to complete a related task at the same time,
+###### resulting in invalid or unexpected data.
 * A. Livelock, Deadlock
 * B. Deadlock, Starvation
 * C. Race conditions, Deadlock
@@ -46,10 +53,13 @@ A thread needs to call unlock() once for each call to lock() and tryLock().
 * E. Starvation, Race conditions
 * F. Deadlock, Livelock
 
-Livelock occurs when two or more threads are conceptually blocked forever, although they are each still active and trying to complete their task.
-A race condition is an undesirable result that occurs when two tasks are completed at the same time, which should have been completed sequentially.
+Livelock occurs when two or more threads are conceptually blocked forever,
+although they are each still active and trying to complete their task.
+A race condition is an undesirable result that occurs
+when two tasks are completed at the same time, which should have been completed sequentially.
 
-### Which happens when a new task is submitted to an ExecutorService, in which there are no threads available?
+##### Which happens when a new task is submitted
+##### to an ExecutorService, in which there are no threads available?
 * A. The executor throws an exception when the task is submitted.
 * B. The executor discards the task without completing it.
 * C. The executor adds the task to an internal queue and completes when there is an available thread.

@@ -277,6 +277,21 @@ A class can trivially be assigned to a superclass reference
 variable but requires an explicit cast to be assigned
 to a subclass reference variable. For these reasons, option B is correct.
 
+###### Which statements about Java classes are true? (Choose three.)
+* A. A Java class file may include more than one package statement.
+* B. A Java class file may include more than one import statement.
+* C. A Java class file may contain more than one comment.
+* D. Any instance fields within a class must be defined after the class name.
+* E. Any instance fields within a class must be defined before the class name.
+* F. Java supports macros, in which fragments of code within a class may be defined inside a Java file, separate from any top-level type declaration.
+
+A Java class file may have at most one package statement and any number
+of import statements and comments.
+For this reason, option A is incorrect, and options B and C are correct.
+When declaring a class, the name comes first, before instance declarations,
+making option D correct and option E incorrect.
+Finally, Java does not support fragments of code outside of a top-level type, such as a class or interface, making option F incorrect.
+
 
 
 
