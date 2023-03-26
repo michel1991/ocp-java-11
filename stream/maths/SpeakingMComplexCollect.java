@@ -1,5 +1,5 @@
 
-package stream;
+package stream.maths;
 
 import static java.util.stream.Collectors.*;
 import java.util.stream.Stream;

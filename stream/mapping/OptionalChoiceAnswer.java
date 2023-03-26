@@ -1,4 +1,4 @@
-package stream;
+package stream.mapping;
 import java.util.*;
 import java.util.function.*;
 
@@ -30,7 +30,7 @@ public class OptionalChoiceAnswer {
     //-------------------------------- same question  longer   shorter --------------------------
 
     public static void main(String... args){
-        
+
     }
 
 }

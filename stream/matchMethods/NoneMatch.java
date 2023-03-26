@@ -1,4 +1,4 @@
-package stream;
+package stream.matchMethods;
 import java.util.*;
 import java.util.stream.*;
 

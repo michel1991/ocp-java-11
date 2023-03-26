@@ -1,4 +1,4 @@
-package stream;
+package stream.findMethods;
 import java.util.stream.*;
 import java.util.*;
 import java.util.function.*;

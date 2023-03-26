@@ -1,4 +1,4 @@
-package stream;
+package stream.flatMap;
 import java.util.stream.*;
 import java.util.*;
 /**
