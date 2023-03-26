@@ -1,3 +1,17 @@
+### Which are required parts of a JDBC URL? (Choose all that apply.)
+* A. Connection parameters
+* B. IP address of database
+* C. jdbc
+* D. Password
+* E. Port
+* F. Vendor-specific string
+
+A JDBC URL has three parts.
+The first part is the string jdbc, making option C correct.
+The second part is the subprotocol. This is the vendor/product name, which isn’t an answer choice.
+The subname is vendor-specific, making option F correct as well.
+
+
 ### Which of the following is a valid JDBC URL?
 * A. jdbc:oracle:123.123.123.123
 * B. jdbc:oracle:thin:123.123.123.123
