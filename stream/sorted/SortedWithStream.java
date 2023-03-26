@@ -1,4 +1,4 @@
-package stream;
+package stream.sorted;
 import java.util.stream.*;
 import java.util.*;
 public class SortedWithStream {
