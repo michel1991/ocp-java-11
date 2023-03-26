@@ -73,3 +73,19 @@ Option C is incorrect. While it is a good practice
 for a serializable class to include a static serialVersionUID variable,
 it is not required. Finally, option D is incorrect
 as static members of the class are ignored on serialization already.
+
+#### Which classes are least likely to be marked Serializable. (Choose two.)
+* A. A class that monitors the state of every thread in the application
+* B. A class that holds data about the amount of rain that has fallen in a given year
+* C. A class that manages the memory of running processes in an application
+* D. A class that stores information about apples in an orchard
+* E. A class that tracks the amount of candy in a gumball machine
+* F. A class that tracks which users have logged in
+
+Generally speaking, classes should be marked with the Serializable
+interface if they contain data that we might want to save and retrieve later.
+Options B, D, E, and F describe the type of data that we would want
+to store over a long period of time. Options A and C, though,
+define classes that manage transient or short-lived data.
+Application processes change quite frequently,
+and trying to reconstruct a process is often considered a bad idea.
