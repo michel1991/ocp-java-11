@@ -75,3 +75,17 @@ Options B and D are correct and are the primary
 reasons to create a static interface method.
 Options C and E are incorrect and describe attributes of a default method.
 Option F applies only to private static interface methods, not public ones.
+
+##### Which set of modifiers, when added to a default method within an interface,
+##### prevents it from being overridden by a class implementing the interface?
+
+* A. const
+* B. final
+* C. static
+* D. private
+* E. private static
+* F. None of the above
+
+There is no modifier that can prevent a default method
+from being overridden in a class implementing an interface, making option F correct.
+

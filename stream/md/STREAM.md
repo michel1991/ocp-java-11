@@ -81,3 +81,26 @@ but control still passes to the terminal operation.
 Option B is incorrect because intermediate operations are optional.
 Option C is the answer. The terminal operation triggers the pipeline to run.
 Option D is incorrect because the code would not compile at all if the version of Java were too old.
+
+##### Given an IntStream, which method would you use to obtain an equivalent parallel Stream˂T˃?
+* A. parallel()
+* B. parallelStream()
+* C. parallels()
+* D. getParallel()
+* E. getParallelStream()
+*F. None of the above
+
+Trick question! The correct method to obtain an equivalent parallel stream
+of an existing IntStream is parallel(),
+but for an IntStream this returns another IntStream, not a generic Stream˂T˃. For this reason, option F is correct.
+
+#### Given a Stream<T>, which method would you use to obtain an equivalent parallel Stream<T>?
+* A. getParallelStream()
+* B. parallelStream()
+* C. parallel()
+* D. getParallel()
+* E. parallels()
+* F. None of the above
+
+The correct method to obtain an equivalent parallel stream of an existing stream is parallel(),
+which is inherited by any class that implements BaseStream<T>. For this reason, option C is correct.

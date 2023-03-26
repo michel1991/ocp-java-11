@@ -76,19 +76,6 @@ The correct option to ignore issues with generic types is unchecked,
 while deprecation is used to ignore code that is marked deprecated, making option E correct.
 Most of the other options are not built-in types supported by the compiler.
 
-### Which annotations are marker annotations? (Choose all that apply.)
-* A. @SafeVarargs
-* B. @Override
-* C. @Deprecated
-* D. @Documented
-* E. @SuppressWarnings
-* F. @Target
-* G. @FunctionalInterface
-
-A marker annotation is one that contains no elements, optional or required.
-For this reason, @SafeVarargs, @Override, @Documented, and @FunctionalInterface correct.
-The annotations @SuppressWarnings and @Target contain a required element, making options E and F incorrect.
-Option C is also incorrect, as @Deprecated can take optional values.
 
 ### Which annotation can cancel out a warning on a method using the @Deprecated API at compile time?
 * A. @FunctionalInterface
