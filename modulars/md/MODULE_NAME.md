@@ -20,8 +20,24 @@ F. jdk.net
 The java.base module is automatically available to any module without specifying it.
 However, this question tries to trick you with option A by specifying jdk.base instead.
 Similarly, java.desktop exists, but not jdk.deskop, making option C wrong.
-Options D, E, and F are correct because jdk.javadoc , jdk.jdeps, and jdk.net are modules supplied with the JDK.
+Options D, E, and F are correct because jdk.javadoc , jdk.jdeps,
+and jdk.net are modules supplied with the JDK.
 You do need to be able to recognize the names of built-in modules.
+
+#### Which of the following are modules supplied by the JDK? (Choose three.)
+* A. java.base
+* B. java.basic
+* C. java.desktop
+* D. java.sdk
+* E. java.sql
+* F. java.swing
+
+The java.base module is automatically available
+to any module without specifying it, making option A correct.
+Options C and E are also correct because java.desktop and java.sql
+are modules supplied with the JDK.
+You do need to be able to identify built-in modules for the exam.
+
 
 ### Which module is available to your named module without needing a requires directive?
 * A. java.all
@@ -30,7 +46,8 @@ You do need to be able to recognize the names of built-in modules.
 *  D. java.lang
 *  E. None of the above
 
-Option B is correct because java.base is provided by default. It contains the java.lang package among others.
+Option B is correct because java.base is provided by default.
+It contains the java.lang package among others.
 
 ### Which of the following modules contains the java.sql package? (Choose all that apply.)
 *  A. java.base;
@@ -39,5 +56,7 @@ Option B is correct because java.base is provided by default. It contains the ja
 *  D. java.sql;
 *  E. None of the above
 
-Sorry. You just need to memorize this. The java.sql package is in the java.sql module, making option D correct. It just so happens to have the same name.
+Sorry. You just need to memorize this.
+The java.sql package is in the java.sql module,
+making option D correct. It just so happens to have the same name.
 

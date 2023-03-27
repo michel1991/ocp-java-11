@@ -82,20 +82,6 @@ Options B and C are correct because the -d (--describe-module)
 option can be passed when to the java and jar commands.
 
 
-### Which of the following pairs make up a service?
-* A. Consumer and service locator
-* B. Consumer and service provider interface
-* C. Service locator and service provider
-* D. Service locator and service provider interface
-* E. Service provider and service provider interface
-
-A service consists of the service provider interface
-and logic to look up implementations using a service locator.
-This makes option D correct.
-Make sure you know that the service provider itself is the implementation,
-which is not considered part of the service.
-
-
 #### Suppose you have a project with one package named magic.wand and another project with one package named magic.potion.
 #### These projects have a circular dependency, so you decide to create a third project named magic.helper.
 #### The magic.helper module has the common code containing a package named magic.util. For simplicity,
