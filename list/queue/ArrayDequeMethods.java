@@ -1,4 +1,4 @@
-package list;
+package list.queue;
 import java.util.*;
 
 public class ArrayDequeMethods {

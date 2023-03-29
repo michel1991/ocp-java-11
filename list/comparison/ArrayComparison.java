@@ -1,4 +1,4 @@
-package list;
+package list.comparison;
 import java.util.*;
 
 public class ArrayComparison {
