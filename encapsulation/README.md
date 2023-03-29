@@ -24,3 +24,22 @@ Having private methods doesn’t allow the callers to use the data,
 making option A an undesirable answer.
 Option B is correct and the classic definition
 of encapsulation where the data is not exposed directly.
+
+#### Which of the following is not a reason to use encapsulation when designing a class? (Choose two.)
+* A. Improve security.
+* B. Increase concurrency and improve performance.
+* C. Maintain class data integrity of data elements.
+* D. Prevent users from modifying the internal attributes of a class.
+* E. Prevent variable state from changing.
+* F. Promote usability by other developers.
+
+Option A is true because encapsulation improves security because instance
+variables cannot be accessed directly. Implementing encapsulation
+prevents internal attributes of a class from being modified directly,
+so option D is a true statement.
+By preventing access to internal attributes,
+we can also maintain class data integrity between elements,
+making option C a true statement. Option F is also a true statement about encapsulation,
+since well-encapsulated classes are often easier to use. Option B is an incorrect statement.
+Encapsulation makes no guarantees about performance and concurrency.
+Option E is also an incorrect statement because it describes immutability.

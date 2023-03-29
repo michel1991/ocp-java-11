@@ -116,3 +116,18 @@ If they did, then Java would support true multiple inheritance,
 with multiple possible parent constructors being called as part of initialization.
 Therefore, option F is incorrect.
 
+#### In what ways are annotations similar to interfaces? (Choose two.)
+* A. They can both declare methods with bodies.
+* B. They can both declare constructors.
+* C. They can both declare constants.
+* D. They can both be extended with the extends keyword.
+* E. They can both be used in a class declaration.
+* F. They both are declared with the interface type.
+
+Options A and D are incorrect. An interface can define a method and be extended,
+but an annotation cannot. Neither type can declare constructors, making option B incorrect.
+Annotations and interfaces can both declare constants and be applied to a class declaration,
+making options C and E correct.
+Interfaces use the interface type,
+while annotations use the @interface type, making option F incorrect.
+

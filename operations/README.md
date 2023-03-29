@@ -1,4 +1,6 @@
-### Which of the following operators are ranked in increasing or the same order of precedence? Assume the + operator is binary addition, not the unary form. (Choose all that apply.)
+##### Which of the following operators are ranked in increasing
+##### or the same order of precedence? Assume the + operator
+##### is binary addition, not the unary form. (Choose all that apply.)
 * A. +, *, %, --
 * B. ++, (int), *
 * C. =, ==, !
@@ -10,9 +12,11 @@
 Options A and C show operators in increasing or the same order of precedence.
 Options B and E are in decreasing or the same order of precedence.
 Options D, F, and G are in neither increasing or decreasing order of precedence.
-In option D, the assignment operator (=) is between two unary operators, with the multiplication operator (*) incorrectly having the highest order or precedence.
+In option D, the assignment operator (=) is between two unary operators,
+with the multiplication operator (*) incorrectly having the highest order or precedence.
 In option F, the logical complement operator (&) has the highest order of precedence, so it should be last.
-In option G, the assignment operators have the lowest order of precedence, not the highest, so the last two operators should be first.
+In option G, the assignment operators have the lowest order of precedence, not the highest,
+so the last two operators should be first.
 
 ### Which statements about classes and its members are correct? (Choose all that apply.)
 * A. A variable declared in a loop cannot be referenced outside the loop.
@@ -23,10 +27,16 @@ In option G, the assignment operators have the lowest order of precedence, not t
 * F. A constructor can access all instance variables.
 * G. An instance method can access all instance variables.
 
-The question is primarily about variable scope. A variable defined in a statement such as a loop or initializer block is accessible only inside that statement.
-For this reason, options A and E are correct. Option B is incorrect because variables can be defined inside initializer blocks.
-Option C is incorrect, as a constructor argument is accessible only in the constructor itself, not for the life of the instance of the class.
-Constructors and instance methods can access any instance variable, even ones defined after their declaration, making option D incorrect and options F and G correct.
+The question is primarily about variable scope.
+A variable defined in a statement such as a loop or initializer
+block is accessible only inside that statement.
+For this reason, options A and E are correct.
+Option B is incorrect because variables
+can be defined inside initializer blocks.
+Option C is incorrect, as a constructor argument is accessible
+only in the constructor itself, not for the life of the instance of the class.
+Constructors and instance methods can access any instance variable,
+even ones defined after their declaration, making option D incorrect and options F and G correct.
 
 ### Which of the following are true statements? (Choose all that apply.)
 * A. do while loops can execute the loop body exactly zero times.
@@ -48,8 +58,10 @@ Option A is incorrect because do while loops check the condition after the first
 *  E. while {}
 *  F. for( ; ; ) {}
 
-A while loop and do/while loop both require a boolean expression, making options A and D correct and options B and E incorrect.
-Option C is incorrect because a for-each statement requires an assignment type and an object to iterate on.
+A while loop and do/while loop both require a boolean expression,
+making options A and D correct and options B and E incorrect.
+Option C is incorrect because
+a for-each statement requires an assignment type and an object to iterate on.
 Option F is correct and shows a traditional for loop with no arguments.
 
 ### Variables declared as which of the following are never permitted in a switch statement? (Choose two.)
@@ -85,3 +97,20 @@ making option F correct as well.
 The initializer, which is alpha, runs first. Then Java checks the condition,
 which is beta, to see whether loop execution should start.
 Since beta returns false, the loop is never entered, and option B is correct.
+
+##### Which statements about loops are correct? (Choose three.)
+* A. A do/while loop requires a body.
+* B. A while loop cannot be exited early with a return statement.
+* C. A while loop requires a conditional expression.
+* D. A do/while loop executes the body (if present) at least once.
+* E. A do/while loop cannot be exited early with a return statement.
+* F. A while loop executes the body (if present) at least once.
+
+A do/while loop requires a body, making option A correct.
+Options B and E are incorrect, as both types of
+while loops can be exited early with a return statement.
+Both also require a conditional expression, making option C correct.
+What distinguishes a do/while loop
+from a while loop is that it executes
+its body at least once, making option D correct and option F incorrect.
+

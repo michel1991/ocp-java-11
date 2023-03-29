@@ -104,3 +104,17 @@ but for an IntStream this returns another IntStream, not a generic Stream˂T˃. 
 
 The correct method to obtain an equivalent parallel stream of an existing stream is parallel(),
 which is inherited by any class that implements BaseStream<T>. For this reason, option C is correct.
+
+##### Which statements about the findFirst() method applied to a stream are correct? (Choose three.)
+* A. It always returns the first element on an ordered serial stream.
+* B. It may return any element on an ordered serial stream.
+* C. It always returns the first element on an unordered stream.
+* D. It may return any element on an unordered stream.
+* E. It always returns the first element on an ordered parallel stream.
+* F. It may return any element on an ordered parallel stream.
+
+The findFirst() method always returns the first element on an ordered stream,
+regardless if it is serial or parallel, making options A and E correct.
+Option D is also correct, as it is free to return any element if the stream is unordered.
+Option C is actually invalid, as an unordered stream does not have a first element.
+See https://stackoverflow.com/questions/21350195/stream-ordered-unordered-problems 

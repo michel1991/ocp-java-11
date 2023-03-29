@@ -55,3 +55,16 @@ In a bottom-up migration, the lowest-level modules are migrated
 to named modules on the module path first.
 This makes option E one of the answers.
 The modules that remain on the classpath are unnamed modules, making option C the other answer.
+
+##### This diagram shows the second step of a migration to modules. What type of migration is this?
+* A. Bottom-up.
+* B. Side-to-side.
+* C. Top-down.
+* D. There is not enough information to determine which type it is.
+
+[image](images/butterfly_caterpillar.jpg)
+There is no such thing as a side-to-side migration, ruling out option B.
+In a top-down migration, all modules are moved to the module path first,
+making option C incorrect. In a bottom-up migration,
+modules are moved, starting with those without dependencies.
+Therefore, option A is correct.

@@ -42,3 +42,18 @@ For options A,B, and C, the options are reversed and should be “jdk-internals�
 Option D is correct because it prints jdk.unsupported but does not print a table with a suggested alternative.
 Option C is incorrect because it does print a suggested alternative.
 Options A, B, E, F, and G are incorrect because those options do not exist.
+
+#### What command is the simplest way to list suggestions for classes in jdk.unsupported?
+* A. jdeps cookie.jar
+* B. jdeps –s cookie.jar
+* C. jdeps –jdkinternals cookie.jar
+* D. jdeps --jdkinternals cookie.jar
+* E. jdeps -jdkunsupported cookie.jar
+* F. jdeps --jdkunsupported cookie.jar
+(Faux je pense)
+
+Both options A and B note that the JAR depends on the jdk.unsupported module.
+However, they do not list suggested replacements.
+Options C and E are invalid because flags of this format need two dashes.
+Option D is correct and option F is incorrect because the desired flag is --jdkinternals.
+Note that --jdk-internals is also acceptable.

@@ -279,4 +279,17 @@ be easily integrated once both teams are done. For these reasons,
 option B is correct. Interfaces expose methods using the public keyword,
 making option E the other answer.
 
+##### Which types of modules are allowed to contain a module-info file?
+* A. Automatic only
+* B. Named only
+* C. Unnamed only
+* D. Automatic and named
+* E. Automatic and unnamed
+* F. Named and unnamed
+
+An unnamed module is permitted to have a module-info file, but the file is ignored if present.
+An automatic module does not have a module-info file.
+A named module is required to have a module-info file.
+Therefore, option F is correct.
+
 

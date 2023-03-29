@@ -30,3 +30,21 @@ In addition, resources are separated by semicolons, not commas,
 making option E the other false statement. The rest of the statements are true.
 Note that ability to declare resources before they are used
 in a try-with-resources statement is new since Java 9.
+
+###### Which statements about Closeable and AutoCloseable are true? (Choose two.)
+* A. AutoCloseable extends Closeable.
+* B. Closeable extends AutoCloseable.
+* C. The close() method in a class that implements AutoCloseable cannot throw an IOException.
+* D. The close() method in a class that implements Closeable cannot throw an Exception.
+* E. There is no difference; one was added for backward compatibility.
+* F. Both have a generic return type.
+
+Closeable extends AutoCloseable, making option B correct and option A incorrect.
+The close() method in AutoCloseable throws Exception, while the close()
+method in Closeable throws IOException, making option E incorrect.
+Since IOException is a subclass of Exception, both close() methods can throw an IOException,
+making option C incorrect. On the other hand, Exception is not a subclass of IOException.
+For this reason, the close() method in a class that implements
+Closeable cannot throw an instance of the Exception class,
+because it is an invalid override using a broader exception type,
+making option D the correct answer. Finally, the return type for both is void, making option F incorrect.

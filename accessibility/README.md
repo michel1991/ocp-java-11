@@ -70,6 +70,19 @@ This makes option A the correct answer.
 Options B, C, and D are incorrect because
 the first term is a more restrictive access modifier than the second term.
 
+##### Fill in the blanks: The ___________________ access modifier
+###### allows access to everything the ___________________ access modifier does and more. (Choose three.)
+* A. package-private, protected
+* B. package-private, public
+* C. protected, package-private
+* D. protected, public
+* E. public, package-private
+* F. public, protected
+
+The public access modifier is the broadest, making options E and F correct.
+Package-private access limits references to those in the same package.
+The protected access modifier adds on subclass access, making option C correct.
+
 ### Given the diagram, how many of the classes shown in the diagram can call the display()  method?
 * A. Zero
 * B. One

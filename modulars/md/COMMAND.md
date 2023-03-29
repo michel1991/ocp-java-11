@@ -183,10 +183,24 @@ When creating a jar file, you use the options -cf or -cvf, making options A and 
 It also allows the specification of a directory using -C, making option B correct.
 Options D and E are incorrect because -d and -p are used for modules.
 
+
+##### Which commands have the options -m and –s to represent modules and summary, respectively?
+* A. javac and jar
+* B. javac and jdeps
+* C. javac and jmod
+* D. java and jar
+* E. java and jdeps
+* F. java and jmod
+
+Option E is correct because both java and jdeps meet the criteria.
+The jar command does as well although the options mean different things than working with modules.
+
 ### Fill in the blanks so this command to run the program is correct:
-java
-_______ zoo.animal.talks/zoo/animal/talks/Peacocks
-_______ modules
+``` txt
+ java
+ _______ zoo.animal.talks/zoo/animal/talks/Peacocks
+ _______ modules
+```
 
 *  A. -d and -m
 *  B. -d and -p
