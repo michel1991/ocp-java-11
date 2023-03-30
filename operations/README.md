@@ -114,3 +114,19 @@ What distinguishes a do/while loop
 from a while loop is that it executes
 its body at least once, making option D correct and option F incorrect.
 
+#### Which expressions about enums used in switch statements are correct? (Choose two.)
+* A. The name of the enum type must not be used in each case statement.
+* B. A switch statement that takes a enum value may not use ordinal() numbers as case statement matching values.
+* C. The name of the enum type must be used in each case statement.
+* D. Every value of the enum must be present in a case statement.
+* E. A switch statement that takes a enum value can use ordinal() numbers as case statement matching values.
+* F. Every value of the enum must be present in a case statement unless a default branch is provided.
+
+A switch statement that uses an enum must include case statements
+that reference the value of the enum, without the enum type.
+For this reason, option A is correct and option C is incorrect.
+The ordinal() value or position cannot be used in case statements
+when the switch statement takes an enum value, making option B correct and option E incorrect.
+Finally, not every value in enum must be present in the case statement,
+regardless of whether a default branch is present, making options D and F incorrect.
+

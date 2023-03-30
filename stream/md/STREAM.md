@@ -88,7 +88,7 @@ Option D is incorrect because the code would not compile at all if the version o
 * C. parallels()
 * D. getParallel()
 * E. getParallelStream()
-*F. None of the above
+* F. None of the above
 
 Trick question! The correct method to obtain an equivalent parallel stream
 of an existing IntStream is parallel(),

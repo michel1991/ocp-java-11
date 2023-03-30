@@ -72,3 +72,21 @@ the terminal operation to be performed in a single-threaded, rather than paralle
 For this reason, it is likely that it will be slower, making option B correct.
 Intermediate operations can still take advantage of parallel processing,
 since forEachOrdered() is only applied at the end of the pipeline. For this reason, option D is correct.
+
+##### Given a parallel Stream<T>, which method
+##### would you use to obtain an equivalent serial Stream<T>?
+
+* A. unordered()
+* B. reduce()
+* C. concat()
+* D. stream()
+* E. boxed()
+* F. None of the above
+
+The correct method to obtain an equivalent sequential stream of an existing
+stream is sequential(), which is inherited by any class
+that implements BaseStream<T>.
+Since this isn’t an option, option F is correct.
+Note that unordered() creates a stream
+that can be evaluated in any order,
+but it can still be processed in a sequential or parallel stream.
