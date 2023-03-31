@@ -3,11 +3,11 @@
    @Clean("Basement") public class House {}
 ```
 * A. The annotation must contain exactly one element.
-* B. The annotation must contain an element namedvalue.
+* B. The annotation must contain an element named value.
 * C. The element must not have a default value.
 * D. The element may have a default value.
 * E. The annotation may contain more than one element.
-* F. The annotation must contain an element namedvalues
+* F. The annotation must contain an element named values
 
 An annotation may omit the element name if it contains an element named value,
 declared as value(), making option B correct and option F incorrect.
@@ -24,7 +24,10 @@ The other options are incorrect statements that contradict the correct answers.
 * E. The element value must not be array.
 * F. None of the above
 
-To use an annotation with a value but not element name, the element must be declared with the name value(), not values(), making option A incorrect.
+To use an annotation with a value but not element name,
+the element must be declared with the name value(), not values(), making option A incorrect.
 The value() annotation may be required or optional, making option B incorrect.
-The annotation declaration may contain other elements, provided none is required, making option C incorrect.
-Option D is correct, as the annotation must not include any other values. Finally, option E is incorrect, as this is not a property of using a value() shorthand.
+The annotation declaration may contain other elements,
+provided none is required, making option C incorrect.
+Option D is correct, as the annotation must not include any other values.
+Finally, option E is incorrect, as this is not a property of using a value() shorthand.

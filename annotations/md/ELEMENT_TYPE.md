@@ -11,5 +11,5 @@ another annotation, or an array of any of these types.
 For this reason, options B, C, and D are correct.
 Option A is incorrect because Object is not supported.
 While primitives are supported, wrappers are not, making option E incorrect.
-Option F is also incorrect as local variable type inference with varis not permitted,
+Option F is also incorrect as local variable type inference with var is not permitted,
 even if a default value is provided.
