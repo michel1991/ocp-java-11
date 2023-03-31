@@ -76,3 +76,14 @@ A traditional try statement must have a finally clause and/or one or more catch 
 Unlike a try-with-resources statement, in which the catch and finally blocks are optional,
 a traditional try statement requires a catch or finally block to be used, or both.
 For this reason, option C is correct.
+
+###### If a try statement has catch blocks for both ClassCastExceptionand
+###### RuntimeException, then which of the following statements is correct?
+*  A. The catch blocks for these two exception types can be declared in any order.
+*  B. A try statement cannot be declared with these two catch block types because they are incompatible.
+*  C. The catch block for ClassCastException must appear before the catch block for RuntimeException.
+*  D. The catch block for RuntimeException must appear before the catch block for ClassCastException.
+*  E. None of the above.
+
+ClassCastException is a subclass of RuntimeException,
+so it must appear first in any related catch blocks. For this reason, option C is correct.

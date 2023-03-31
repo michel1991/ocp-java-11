@@ -57,3 +57,37 @@ However, they do not list suggested replacements.
 Options C and E are invalid because flags of this format need two dashes.
 Option D is correct and option F is incorrect because the desired flag is --jdkinternals.
 Note that --jdk-internals is also acceptable.
+
+### Which commands can list dependencies? (Choose all that apply.)
+* A. jdeps flea.jar
+* B. jdeps -d flea.jar
+* C. jdeps -detail flea.jar
+* D. jdeps --detail flea.jar
+
+Option A is correct because it prints the details of the dependencies.
+Options B, C, and D try to fool you with an invalid option.
+The jdeps command uses command-line options to restrict the output to the summary level.
+
+### Which are valid calls to list a summary of the dependencies? (Choose all that apply.)
+* A. jdeps flea.jar
+* B. jdeps -s flea.jar
+* C. jdeps -summary flea.jar
+* D. jdeps --summary flea.jar
+* E. None of the above
+
+Option A will run, but it will print details rather than a summary.
+Options B and C are both valid options for the jdeps command.
+Remember that -summary uses a single dash (-).
+
+#### What module is always in the jdeps output?
+* A. java.base
+* B. java.lang
+* C. java.self
+* D. jdk.base
+* E. jdk.lang
+* F. jdk.self
+
+Option B is tempting because the java.lang package is available to all classes.
+However, the question asks about modules.
+Option A is the correct answer because the java.base module
+is available to all modules. The other options are incorrect because those modules do not exist.

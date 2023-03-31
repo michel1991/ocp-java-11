@@ -48,3 +48,22 @@ For this reason, the close() method in a class that implements
 Closeable cannot throw an instance of the Exception class,
 because it is an invalid override using a broader exception type,
 making option D the correct answer. Finally, the return type for both is void, making option F incorrect.
+
+##### Which statement best describes how a class that implements
+##### the AutoCloseable interface should be written? (Choose two.)
+* A. The close() method is optional since the AutoCloseable interface defines a default implementation.
+* B. The close() method should avoid modifying data after it has been run once.
+* C. The close() method should not throw any exceptions.
+* D. The close() method should throw an exception if there is a problem closing the resource.
+* E. The close() method should return a status code.
+
+First, option A is an incorrect statement,
+because the AutoCloseable interface does not define a default implementation of close().
+Next, the close() method should be idempotent,
+which means it is able to be run multiple times without triggering any side effects.
+For this reason, option B is correct. After being run once,
+future calls to close() should not change any data. Option D is correct,
+and option C is incorrect because the close() method is
+fully capable of throwing exceptions if there is a problem. In fact,
+the signature of the method in AutoCloseable throws a checked Exception.
+Option E is incorrect because the return type of close() is void, which means no return value can be returned.

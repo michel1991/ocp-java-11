@@ -161,3 +161,18 @@ Option D is the correct answer. Lambdas for Supplier<Double>
 can return a null value since Double is an object type,
 while lambdas for DoubleSupplier cannot; they can only return primitive double values.
 
+###### Which of the following is not a functional interface
+###### in the java.util.function package? (Choose two.)
+* A. DoublePredicate
+* B. LongUnaryOperator
+* C. ShortSupplier
+* D. ToIntBiFunction
+* E. ToStringOperator
+
+The DoublePredicate interface takes a double value and returns a boolean value.
+LongUnaryOperator takes a long value and returns a long value.
+ToIntBiFunction takes two generic values and returns an int value.
+ShortSupplier and ToStringOperator are not built-in functional interfaces.
+Recall that Java only includes primitive functional interfaces
+that operate on double, int, or long. For this reason, Options C and E are correct.
+

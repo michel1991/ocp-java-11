@@ -90,3 +90,17 @@ Since this isn’t an option, option F is correct.
 Note that unordered() creates a stream
 that can be evaluated in any order,
 but it can still be processed in a sequential or parallel stream.
+
+##### Given an instance of Stream s and Collection c,
+##### which of the following are valid ways of creating a parallel stream? (Choose three.)
+* A. c.parallel()
+* B. c.parallel().parallelStream()
+* C. c.parallelStream()
+* D. s.parallelStream()
+* E. c.parallelStream().parallel()
+* F. s.parallel()
+
+The correct method to obtain a parallel stream of an arbitrary stream is parallel(),
+while the correct method to obtain a parallel stream that operates on a Collection is parallelStream().
+For this reason, options C, E, and F are correct.
+Note that option E retrieves a parallel stream of an already parallel stream, which is allowed.
