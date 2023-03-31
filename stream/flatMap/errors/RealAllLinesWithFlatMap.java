@@ -1,4 +1,4 @@
-package stream.errors;
+package stream.flatMap.errors;
 import java.io.*;
 import java.util.stream.*;
 import java.nio.file.*;
