@@ -1,7 +1,7 @@
 package enums.errors;
 
 /**
- * Given the following enum declaration, how many lines contain compilation errors?
+   Given the following enum declaration, how many lines contain compilation errors?
     A. Zero
     B. One
     C. Two
@@ -14,7 +14,8 @@ package enums.errors;
      but the abstract method signature has a protected modifier.
      Since package-private is a more restrictive access than protected, the override is invalid,
      and the code does not compile. For these two reasons, option C is the correct answer.
-     Note that the value variable is not final nor properly encapsulated and can therefore be modified by callers outside the enum.
+     Note that the value variable is not final
+     nor properly encapsulated and can therefore be modified by callers outside the enum.
      This is permitted but considered a poor practice.
 
  */
