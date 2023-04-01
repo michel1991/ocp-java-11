@@ -1,4 +1,4 @@
-package inheritance.errors;
+package inheritance.casting.errors;
 
  interface Apple {
 

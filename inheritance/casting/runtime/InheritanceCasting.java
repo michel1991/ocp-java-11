@@ -1,5 +1,5 @@
 
-package inheritance.runtime;
+package inheritance.casting.runtime;
 interface WaterFowl {} //1
 class Bird {} //2
 class Duck extends Bird implements WaterFowl { //3
