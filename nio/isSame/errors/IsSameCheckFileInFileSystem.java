@@ -1,4 +1,4 @@
-package nio.errors;
+package nio.isSame.errors;
 import java.nio.file.*;
 import java.io.*;
 

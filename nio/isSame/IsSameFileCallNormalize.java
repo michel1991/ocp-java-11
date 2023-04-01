@@ -1,4 +1,4 @@
-package nio;
+package nio.isSame;
 import java.nio.file.*;
 import java.io.*;
 
