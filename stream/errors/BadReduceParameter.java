@@ -25,6 +25,31 @@ public class BadReduceParameter {
                (s1, s2) -> s1 + s2));   // q3
    }
 
+    /**
+     * What is the output of the following program?
+        A. 0
+        B. 12
+        C. 14
+        D. One line does not compile.
+        E. Two lines do not compile.
+        F. None of the above.
+
+     Based on the reduction operation, the data types of w, y, and z are Integer,
+     while the data type of x is StringBuilder. Since Integer does not define a length() method,
+     both the accumulator and combiner lambda expressions are invalid, making option E correct.
+
+     */
+    static void reduceHello(){
+        var p = List.of(new StringBuilder("hello"),
+                        new StringBuilder("goodbye"));
+        var q = p.parallelStream()
+                 .reduce(0,
+                         (w,x) -> w.length() + x.length(),
+                       (y,z) -> y.length() + z.length());
+        System.out.print(q);
+
+    }
+
     public static void main(String... args){
 
    }
