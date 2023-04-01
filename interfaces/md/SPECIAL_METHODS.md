@@ -89,3 +89,19 @@ Option F applies only to private static interface methods, not public ones.
 There is no modifier that can prevent a default method
 from being overridden in a class implementing an interface, making option F correct.
 
+##### Which statements about static interface methods are correct? (Choose three.)
+* A. A static interface method can be final.
+* B. A static interface method can be declared private.
+* C. A static interface method can be package-private.
+* D. A static interface method can be declared public.
+* E. A static interface method can be declared protected.
+* F. A static interface method can be declared without an access modifier.
+
+Option A is incorrect as methods cannot be marked final within an interface.
+Interfaces support static methods that are marked public or private,
+making options B and D correct and option E incorrect.
+Option F is correct and lack of access modifier
+makes the method implicitly public,
+not package-private, making option C incorrect.
+
+

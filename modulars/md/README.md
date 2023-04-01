@@ -246,16 +246,7 @@ Option E is incorrect because var can be used with or without modules.
 Finally, option F is incorrect because “write once,
 run anywhere” is a core benefit of Java independent of modules.
 
-#### Which is a benefit of ServiceLoader?
-*  A. It allows you to add functionality without recompiling the application.
-*  B. It allows you to load a service written in C++.
-*  C. It is an interface.
-*  D. When implementing a service, it references the ServiceLoader.
 
-Option A is correct because ServiceLoader allows you to make your application extensible.
-A service can be added without recompiling the entire application.
-It is a class, but the service provider implementation does not reference it,
-making options C and D incorrect. Option B is not a feature of Java.
 
 ##### Imagine you are working with another team to build an application.
 ##### You are developing code that uses a class that the other team has not finished writing yet.
