@@ -115,3 +115,20 @@ However, none of the existing modules needs to be recompiled,
 making option A correct.
 The service locator will see the new service
 provider simply by having the new service provider on the module path.
+
+##### Suppose you have a consumer that calls the lion() method within a Lion service.
+##### You have four distinct modules: consumer, service locator, service provider,
+##### and service provider interface. If you add a parameter to the lion() method,
+##### how many of the modules require recompilation?
+* A. Zero.
+* B. One.
+* C. Two.
+* D. Three.
+* E. Four.
+
+The service provider interface clearly needs to be recompiled, since that’s where the change occurs.
+The service provider also needs to be recompiled because it implements the interface.
+Finally, the consumer needs to be recompiled because it calls the interface.
+The service locator does not need to be recompiled as it only knows the service
+provider interface name rather than its method signature.
+Since three require recompilation, option D is correct.
