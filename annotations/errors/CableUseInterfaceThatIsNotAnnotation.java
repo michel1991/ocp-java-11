@@ -11,11 +11,14 @@ import java.lang.annotation.*;
     D. @Cable(Technology.USB)
     E. @Cable({Technology.USB})
 
-   An annotation element type must be one of the predefined immutable types: a primitive, String, Class, enum, another annotation, or an array of these types.
-   Since Technology is an interface, the declaration of Cable does not compile regardless of what is placed in the blank, making option F correct.
+   An annotation element type must be one of the predefined immutable types:
+   a primitive, String, Class, enum, another annotation, or an array of these types.
+   Since Technology is an interface, the declaration
+   of Cable does not compile regardless of what is placed in the blank, making option F correct.
    If Technology were re-implemented as an enum, then options B, C, D, and E would be correct.
    Option A would still not be correct, as value() is required.
-Note that option C uses the long form of the annotation, with the others using various short-hand notations.
+   Note that option C uses the long form of the annotation,
+   with the others using various short-hand notations.
  */
 
 interface Technology {

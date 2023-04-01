@@ -11,7 +11,8 @@ import java.lang.annotation.*;
     F. Line 7.
     G. All of the lines compile.
 
-  If Metal was declared as annotation with the type @interface, then all of the lines of this program would compile, and option G would be correct.
+  If Metal was declared as annotation with the type @interface,
+  then all of the lines of this program would compile, and option G would be correct.
   Since it is instead declared as an interface, the code does not compile.
   Line 3 does not compile because you cannot define an element in an interface.
   If default 0 were removed, it would be interpreted as an abstract method.
