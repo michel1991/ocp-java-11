@@ -1,4 +1,4 @@
-package nio;
+package nio.cleanPathAndNotCleanPath;
 import java.nio.file.*;
 
 public class NormalizeRelativePath {

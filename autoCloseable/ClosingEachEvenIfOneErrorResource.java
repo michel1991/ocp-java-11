@@ -1,4 +1,4 @@
-package nio;
+package autoCloseable;
 import java.io.*;
 /**
 *  What is the output of the following code?

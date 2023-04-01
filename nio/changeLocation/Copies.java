@@ -1,4 +1,4 @@
-package nio;
+package nio.changeLocation;
 import java.nio.file.*;
 import java.io.*;
 

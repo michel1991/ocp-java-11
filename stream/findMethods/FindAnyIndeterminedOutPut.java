@@ -1,4 +1,4 @@
-package nio;
+package stream.findMethods;
 import java.nio.file.*;
 import java.util.stream.*;
 import java.util.*;

@@ -1,4 +1,4 @@
-package nio;
+package nio.paths;
 import java.nio.file.*;
 import java.net.*;
 

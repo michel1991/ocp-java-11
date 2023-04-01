@@ -1,4 +1,4 @@
-package nio;
+package nio.paths;
 import java.nio.file.*;
 
 public class RetrievePath {

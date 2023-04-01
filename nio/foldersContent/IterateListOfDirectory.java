@@ -1,4 +1,4 @@
-package nio;
+package nio.foldersContent;
 import java.util.stream.*;
 import java.nio.file.*;
 import java.io.*;
