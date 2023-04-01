@@ -1,5 +1,5 @@
 
-package inheritance.errors.constructors;
+package inheritance.errors.constructor;
 
 /**
  *  What is the output of the following code?
