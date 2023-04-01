@@ -27,3 +27,31 @@ This is true whether that code is in automatic, named, or unnamed modules, match
 Code on the module path operates in a stricter
 world and cannot reference code on the classpath.
 Since unnamed modules cannot be accessed in this situation, option F is the second answer.
+
+###### A(n) ________________ module always contains a module-info file,
+###### while a(n) _______________ module always exports all its packages to other modules.
+* A. automatic, named
+* B. automatic, unnamed
+* C. named, automatic
+* D. named, unnamed
+* E. unnamed, automatic
+* F. unnamed, named
+* G. None of the above
+
+Only named modules are required to have a module-info file, ruling out options A, B, E, and F.
+Unnamed modules are not readable by any other types of modules, ruling out option D.
+Automatic modules always export all packages to other modules, making the answer option C.
+For more information, see Chapter 6.
+
+##### Which types of modules are allowed to contain a module-info file?
+* A. Automatic only
+* B. Named only
+* C. Unnamed only
+* D. Automatic and named
+* E. Automatic and unnamed
+* F. Named and unnamed
+
+An unnamed module is permitted to have a module-info file, but the file is ignored if present.
+An automatic module does not have a module-info file.
+A named module is required to have a module-info file.
+Therefore, option F is correct.

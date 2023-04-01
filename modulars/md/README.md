@@ -100,20 +100,6 @@ The other two modules do not have to expose anything.
 They must have a requires directive to be able to use the exported code,
 making options E and F correct.
 
-###### A(n) ________________ module always contains a module-info file,
-###### while a(n) _______________ module always exports all its packages to other modules.
-* A. automatic, named
-* B. automatic, unnamed
-* C. named, automatic
-* D. named, unnamed
-* E. unnamed, automatic
-* F. unnamed, named
-* G. None of the above
-
-Only named modules are required to have a module-info file, ruling out options A, B, E, and F.
-Unnamed modules are not readable by any other types of modules, ruling out option D.
-Automatic modules always export all packages to other modules, making the answer option C.
-For more information, see Chapter 6.
 
 
 ### Which of the following is an advantage of the Java Platform Module System?
@@ -270,17 +256,14 @@ be easily integrated once both teams are done. For these reasons,
 option B is correct. Interfaces expose methods using the public keyword,
 making option E the other answer.
 
-##### Which types of modules are allowed to contain a module-info file?
-* A. Automatic only
-* B. Named only
-* C. Unnamed only
-* D. Automatic and named
-* E. Automatic and unnamed
-* F. Named and unnamed
+#### What is the name of a file that declares a module?
+* A. mod.java
+* B. mod-data.java
+* C. mod-info.java
+* D. module.java
+* E. module-data.java
+* F. module-info.java
 
-An unnamed module is permitted to have a module-info file, but the file is ignored if present.
-An automatic module does not have a module-info file.
-A named module is required to have a module-info file.
-Therefore, option F is correct.
 
+The module-info.java file is used to declare a module. You must memorize the name of this file.
 

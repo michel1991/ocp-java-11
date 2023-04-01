@@ -130,3 +130,16 @@ when the switch statement takes an enum value, making option B correct and optio
 Finally, not every value in enum must be present in the case statement,
 regardless of whether a default branch is present, making options D and F incorrect.
 
+##### Which are true statements comparing for-each and traditional for loops? (Choose two.)
+* A. Both can iterate through an array starting with the first element.
+* B. Only the for-each loop can iterate through an array starting with the first element.
+* C. Only the traditional for loop can iterate through an array starting with the first element.
+* D. Both can iterate through an array starting from the end.
+* E. Only the for-each loop can iterate through an array starting from the end.
+* F. Only the traditional for loop can iterate through an array starting from the end.
+
+A traditional for loop gives you full control over the order of iteration.
+This means you can iterate through the array backward or forward.
+By contrast, with a for-each loop, the iteration order is determined for you.
+With an array, this means starting with index 0. Options A and F match this scenario.
+

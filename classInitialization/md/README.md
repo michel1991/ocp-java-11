@@ -22,3 +22,19 @@ or this() can be used from the same constructor. Finally, option F is correct as
 
 The instance variables, constructor, instance and static initializers,
 and method declarations can appear in any order within a class declaration.
+
+##### Which statement about a no-argument constructor is true?
+* A. The Java compiler will always insert a default no-argument constructor if you do not define a no-argument constructor in your class.
+* B. For a class to call super() in one of its constructors, its parent class must explicitly implement a no-argument constructor.
+* C. If a class extends another class that has only one constructor that takes a value, then the child class must explicitly declare at least one constructor.
+* D. A class may contain more than one no-argument constructor.
+
+Option A is incorrect because Java inserts a no-argument constructor
+only if there are no other constructors in the class.
+Option B is incorrect because the parent can have a default no-argument constructor,
+which is inserted by the compiler and accessible in the child class. Option D is incorrect.
+A class that contains two no-argument constructors will not compile because they would have the same signature.
+Finally, option C is correct. If a class extends a parent class that does not include a no-argument constructor,
+the default no-argument constructor cannot be automatically inserted into the child class by the compiler.
+Instead, the developer must explicitly declare at least
+one constructor and explicitly define how the call to the parent constructor is made.

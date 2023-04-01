@@ -117,4 +117,22 @@ The findFirst() method always returns the first element on an ordered stream,
 regardless if it is serial or parallel, making options A and E correct.
 Option D is also correct, as it is free to return any element if the stream is unordered.
 Option C is actually invalid, as an unordered stream does not have a first element.
-See https://stackoverflow.com/questions/21350195/stream-ordered-unordered-problems 
+See https://stackoverflow.com/questions/21350195/stream-ordered-unordered-problems
+
+##### What is the minimum number of intermediate operations
+##### that can fill in each box [M, N, O, P] to
+#### have the pipeline complete given any intermediate operation?
+* A. [0, 0, 0, 1]
+* B. [0, 0, 1, 0]
+* C. [0, 0, 1, 1]
+* D. [1, 1, 0, 1]
+* E. [1, 1 ,1, 0]
+* F. [1, 1, 1, 1]
+
+[image](images/source_intermediate_terminal_operation.png)
+Since the first two rows are already finite streams,
+boxes M and N do not require an intermediate operation to complete,
+so options D, E, and F are incorrect. Box P does not need an intermediate operation either,
+since findFirst() will cause the stream to terminate, making options A and C incorrect.
+Box O does need to be filled in with code such as limit(1). This allows the code to terminate, and option B is the answer.
+

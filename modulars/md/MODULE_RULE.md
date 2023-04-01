@@ -117,7 +117,36 @@ Using the transitive keyword does not change this requirement, making option D t
 * E. Three module-info.java files are required, in positions W, Y, and Z.
 * F. None of the above.
 
-Each module is required to have its own module-info.java file in the root directory of the module.
-For module com.ny, that is location W, and for module com.sf, that is location Y. Therefore, option B is correct.
+Each module is required to have its own module-info.java
+file in the root directory of the module.
+For module com.ny, that is location W,
+and for module com.sf, that is location Y. Therefore, option B is correct.
+
+##### How many of these module declarations are valid?
+```java
+module com.apple { exports com.apple; }
+module com.4apple { requires com.apple;}
+module com.apple4 { declares com.apple; }
+module com.apple-four { }
+module com.apple$ {}
+```
+
+* A. None.
+* B. One.
+* C. Two.
+* D. Three.
+* E. Four.
+* F. Five.
+
+This question is tricky because it mixes testing
+valid identifier names with module concepts.
+The com.apple module is valid and demonstrates a simple module.
+Additionally, the com.apple$ module is valid since
+$ characters are permitted in identifier names. The com.4apple
+and com.apple-four modules are invalid because identifier or
+identifier segments may not start with a digit nor contain a dash.
+The com.apple4 module is invalid because declares is not a valid module directive.
+Since only two are valid, option C is the answer.
+
 
 
