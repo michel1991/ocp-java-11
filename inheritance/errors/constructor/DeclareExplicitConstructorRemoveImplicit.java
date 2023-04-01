@@ -1,4 +1,4 @@
-package inheritance.errors;
+package inheritance.errors.constructor;
 /**
     How many lines of the following program contain a compilation error?
     A. None
