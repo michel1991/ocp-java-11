@@ -25,3 +25,14 @@ the file is ignored if present. An automatic module
 is on the module path and does not have a module-info file.
 A named module is required to have a module-info file,
 making option B the correct answer.
+
+##### Given the following diagram, how many of the following are named modules?
+* A. 0
+* B. 1
+* C. 2
+* D. 3
+* E. 4
+
+[image](images/how_many_modules.jpg)
+A named module must be on the module path and contain a module-info file.
+Only dog.bark meets this criterion, making option B the answer.
