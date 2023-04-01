@@ -22,4 +22,8 @@ public class ArraysOperations {
               { "Book" }, { "Game", "29.99" } };
       System.out.println(listing.length + " " + listing[0].length);
   }
+
+   public static void main(String... args){
+            checkSize();
+    }
 }
