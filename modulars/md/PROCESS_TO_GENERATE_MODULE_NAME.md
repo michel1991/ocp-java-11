@@ -1,4 +1,6 @@
-# An automatic module name is generated if one is not supplied. Which of the following JAR filename and generated automatic module name pairs are correct? (Choose all that apply.)
+##### An automatic module name is generated if one is not supplied.
+##### Which of the following JAR filename and generated
+##### automatic module name pairs are correct? (Choose all that apply.)
 * A. emily-1.0.0.jar and emily
 * B. emily-1.0.0-SNAPSHOT.jar and emily
 * C. emily_the_cat-1.0.0.jar and emily_the_cat
@@ -27,7 +29,9 @@ Dashes (-) are not allowed either, ruling out options B and D.
 That leaves options A and C as the correct answers.
 
 
-### Suppose we have an automatic module on the module path named dog-arthur2.jar and no Automatic-Module-Name specified? What module name should named modules use to reference it?
+#### Suppose we have an automatic module on the module path named dog-arthur2.jar
+#### and no Automatic-Module-Name specified?
+#### What module name should named modules use to reference it?
 * A. dog-arthur
 * B. dog-arthur2
 * C. dog.arthur
@@ -38,7 +42,25 @@ The rules for determining the name include removing the extension,
 removing numbers, and changing special characters to periods (.).
 This leaves us with dog.arthur, which is option C.
 
-### Suppose we have a JAR file named cat-1.2.3-RC1.jar and that Automatic-Module-Name in the MANIFEST.MF is set to dog. What should a named module referencing this automatic module include in the module-info.java?
+###### Suppose we have an automatic module on the module path named lizard-^-cricket-^-1.0.0-SNAPSHOT.jar
+###### and no Automatic-Module-Name specified. What module name should named modules use to reference it?
+* A. lizard-cricket
+* B. lizard.cricket
+* C. lizard-cricket-SNAPSHOT
+* D. lizard-cricket.SNAPSHOT
+* E. None of the above
+
+The rules for determining the name include removing the extension,
+removing numbers and changing special characters to periods (.).
+Additionally, we remove the version information
+from the end, which is 1.0.0-SNAPSHOT.
+Finally, we normalize the duplicate dots,
+which gives us option B: lizard.cricket.
+
+
+#### Suppose we have a JAR file named cat-1.2.3-RC1.jar and
+#### that Automatic-Module-Name in the MANIFEST.MF is set to dog.
+#### What should a named module referencing this automatic module include in the module-info.java?
 *  A. requires cat;
 *  B. requires cat.RC;
 *  C. requires cat-RC;

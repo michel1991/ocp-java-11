@@ -141,6 +141,20 @@ and both Exception and Error extend Throwable. Finally, like all Java classes,
 they all inherit from Object. Notice that Error does not extend Exception,
 even though we often refer to these generally as exceptions
 
+##### Which of the following types are not recommended to catch in your application? (Choose two.)
+* A. Exception
+* B. CheckedException
+* C. Throwable
+* D. RuntimeException
+* E. UncheckedException
+* F. Error
+
+While Exception and RuntimeException are commonly caught in Java applications,
+it is not recommended that Error and Throwable (which includes Error) be caught.
+An Error often indicates a failure of the JVM, which cannot be recovered from.
+For these reasons, options C and F are correct, and options A and D are incorrect.
+Options B and E are class names that are not part of the standard Java API
+
 
 
 

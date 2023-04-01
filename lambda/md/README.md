@@ -8,10 +8,26 @@
 * F. Static variables can be effectively final.
 
 Effectively final refers to local variables whose value is not changed after it is set.
-For this reason, option A is correct, and options E and F are incorrect. Options B and C are correct, as lambda expressions can access final and effectively final variables.
+For this reason, option A is correct, and options E and F are incorrect.
+Options B and C are correct,
+as lambda expressions can access final and effectively final variables.
 Option D is also correct and is a common test for effectively final variables.
 
-### Which of the following are valid lambdas that can be assigned to a variable of type Consumer<String>? (Choose all that apply.)
+##### Which are true statements about referencing variables from a lambda? (Choose two.)
+* A. Instance and static variables can be used regardless of whether effectively final.
+* B. Instance and local variables can be used regardless of whether effectively final.
+* C. Instance variables and method parameters must be effectively final to be used.
+* D. Local variables and method parameters must be effectively final to be used.
+* E. Local and static variables can be used regardless of whether effectively final.
+* F. Method parameters and static variables can be used regardless of whether effectively final.
+
+A lambda can reference any instance variable, static variable,
+or lambda parameter that is in scope, making option A correct.
+Lambdas require local variables and method parameters
+to be effectively final in order to use them, making option D the other correct answer.
+
+#### Which of the following are valid lambdasthat can be assigned
+#### to a variable of type Consumer<String>? (Choose all that apply.)
 * A. s -> System.out.println(s)
 * B. final s -> System.out.println(s)
 * C. var s -> System.out.println(s)
@@ -23,7 +39,8 @@ Option D is also correct and is a common test for effectively final variables.
 
 Option A is correct because it is the simplest lambda syntax.
 Options B and D are incorrect because the final modifier must precede a type.
-While var can replace the type, option C is invalid because the parentheses around the type and variable are missing.
+While var can replace the type, option C is invalid
+because the parentheses around the type and variable are missing.
 Options E, F, and G are valid because they specify a type and an optional final modifier.
 
 ### Which statements about effectively final variables are true? (Choose all that apply.)
@@ -39,7 +56,8 @@ For this reason, option A is correct, and options E and F are incorrect.
 Options B and C are correct, as lambda expressions can access final and effectively final variables.
 Option D is also correct and is a common test for effectively final variables.
 
-### Which of the following lambda expressions can be passed to a function of Predicate<String> type? (Choose all that apply.)
+###### Which of the following lambda expressions can be passed
+###### to a function of Predicate<String> type? (Choose all that apply.)
 * A. () -> s.isEmpty()
 * B. s -> s.isEmpty()
 * C. String s -> s.isEmpty()
@@ -52,7 +70,8 @@ Options A and F are incorrect because they specify the wrong number of parameter
 Option C is incorrect because parentheses are required around the parameter list when the type is specified.
 Option E is incorrect because the name used in the parameter list does not match the name used in the body.
 
-### Which of the following are valid lambdas that can be assigned to a variable of type Consumer<String>? (Choose all that apply.)
+##### Which of the following are valid lambdas that can be
+##### assigned to a variable of type Consumer<String>? (Choose all that apply.)
 * A. s -> System.out.println(s)
 * B. final s -> System.out.println(s)
 * C. var s -> System.out.println(s)
@@ -61,8 +80,10 @@ Option E is incorrect because the name used in the parameter list does not match
 * F. (final var s) -> System.out.println(s)
 * G. (var s) -> System.out.println(s)
 
-Option A is correct because it is the simplest lambda syntax. Options B and D are incorrect because the final modifier must precede a type.
-While var can replace the type, option C is invalid because the parentheses around the type and variable are missing.
+Option A is correct because it is the simplest lambda syntax.
+Options B and D are incorrect because the final modifier must precede a type.
+While var can replace the type, option C is
+invalid because the parentheses around the type and variable are missing.
 Options E, F, and G are valid because they specify a type and an optional final modifier.
 
 ### Which statement is true?
@@ -71,7 +92,8 @@ Options E, F, and G are valid because they specify a type and an optional final 
 * C. All method references can be converted to lambdas, but not vice versa.
 * D. None of the above.
 
-Method references are a shorter way of writing lambdas, and all method references can be expanded to lambdas.
+Method references are a shorter way of writing lambdas,
+and all method references can be expanded to lambdas.
 However, this does not apply in reverse. Consider the lambda: () -˃ s.charAt(n).
 The n variable can only be an effectively final variable in lambdas, but not in method references.
 Since only method references can always be converted, option C is correct.
@@ -129,7 +151,8 @@ allowing a lambda expression to be returned. Option D is the correct answer.
 Deferred execution means the lambda expression is not evaluated until runtime,
 but it is compiled. Compiler errors in the lambda expression will still prevent the code from compiling.
 
-### Fill in the blanks: The ______________ functional interface does not take any inputs, while the ______________ functional interface does not return any data.
+###### Fill in the blanks: The ______________ functional interface
+###### does not take any inputs, while the ______________ functional interface does not return any data.
 * A. IntConsumer, LongSupplier
 * B. IntSupplier, Function
 * C. Supplier, DoubleConsumer
@@ -150,9 +173,12 @@ Options B and D are incorrect because Function and UnaryOperator both take an in
 *  E. One way to avoid modifying a List with a stateful lambda expression is to use a collector that outputs a List.
 *  F. One way to avoid modifying a List with a stateful lambda expression is to use a synchronized list.
 
-Stateful lambda expressions should be avoided with both serial and parallel streams because they can lead to unintended side effects,
+Stateful lambda expressions should be avoided with both serial
+and parallel streams because they can lead to unintended side effects,
 making option A correct.
-A common way to remove a stateful lambda expression that modifies a List is to have the stream operation output a new List.
+A common way to remove a stateful lambda expression
+that modifies a List is to have the stream operation output a new List.
 For this reason, option E is correct.
-Options D and F are incorrect because while a concurrent or synchronized list may make the stream operation thread-safe,
+Options D and F are incorrect because while
+a concurrent or synchronized list may make the stream operation thread-safe,
 they are still stateful lambda expressions.
