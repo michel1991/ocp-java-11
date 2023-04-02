@@ -109,9 +109,12 @@ making options E and F correct.
 *  D. No defined types
 *  E. Platform independence
 
-Option B is correct since modules allow you to specify which packages can be called by external code.
-Options C and E are incorrect because they are provided by Java without the module system.
-Option A is incorrect because there is not a central repository of modules. Option D is incorrect because Java defines types.
+Option B is correct since modules allow you to specify
+which packages can be called by external code.
+Options C and E are incorrect because they are provided
+by Java without the module system.
+Option A is incorrect because there is not a central repository of modules.
+Option D is incorrect because Java defines types.
 
 
 ##### Which option best fills in the blanks in the following statements:
@@ -264,6 +267,20 @@ making option E the other answer.
 * E. module-data.java
 * F. module-info.java
 
-
 The module-info.java file is used to declare a module. You must memorize the name of this file.
 
+##### Given the diagram in the previous question, what could we add to module-info.java
+##### in com.duck to allow the com.park package to reference the Duckling class,
+##### but not allow the Egg class to reference the Duckling class?
+* A. exports com.duckling;
+* B. exports com.duckling from com.park;
+* C. exports com.duckling to com.park;
+* D. exports com.park from com.duckling;
+* E. exports com.park to com.duckling;
+* F. None of the above
+
+It is not possible to provide access outside the module while also limiting access within the com.duck module.
+Options A and C are tempting because they do provide access in com.park.
+However, they do not prevent the Egg class in the com.egg package from accessing
+the com.duckling package. Remember that the com.egg package is in the com.duck module,
+so the access cannot be restricted. Therefore, option F is correct.
