@@ -1,4 +1,4 @@
-package stream.errors;
+package stream.mapping.errors;
 import java.util.*;
 import java.util.stream.*;
 

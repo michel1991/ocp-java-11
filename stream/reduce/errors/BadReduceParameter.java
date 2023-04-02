@@ -1,4 +1,4 @@
-package stream.errors;
+package stream.reduce.errors;
 import java.util.*;
 import java.util.function.*;
 

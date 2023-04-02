@@ -1,4 +1,4 @@
-package stream.errors;
+package stream.folderContents.errors;
 import java.util.stream.*;
 import java.nio.file.*;
 
@@ -16,9 +16,12 @@ public class LinesMethodThrowsException {
         F. None of the above, as the code does not compile.
 
 
-      The code does not compile because Files.lines() declares IOException, which is not handled or declared by the wakeUp() method.
-      For this reason, option F is correct. If the method was corrected to declare IOException, then the method would print 111 at runtime.
-      The method reads the lines of the file, splits the values by commas, and then converts the stream of resulting string values to a stream of numbers using the length() method.
+      The code does not compile because Files.lines() declares IOException,
+      which is not handled or declared by the wakeUp() method.
+      For this reason, option F is correct. If the method was corrected
+      to declare IOException, then the method would print 111 at runtime.
+      The method reads the lines of the file, splits the values by commas,
+      and then converts the stream of resulting string values to a stream of numbers using the length() method.
       Finally, it combines the results into a List and prints each one.
      */
     static void wakeUp(Path path) {
