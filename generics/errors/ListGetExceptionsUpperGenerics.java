@@ -14,7 +14,7 @@ public class ListGetExceptionsUpperGenerics {
         Option A is incorrect because coll could be any type,
         which doesn’t necessarily allow exceptions to be added.
         Option B is incorrect because neither add() method compiles.
-        We could have Collection˂IllegalStateException˃ as a parameter.
+        We could have Collection<IllegalStateException> as a parameter.
         That would not allow either type to be added.
         Finally, option C is incorrect as the second add() method does not compile because broader
         types than the generic allows are a problem when adding to coll.
