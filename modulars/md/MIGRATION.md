@@ -6,10 +6,13 @@
 * E. Top-down migration involves unnamed modules.
 * F. Top-down migration involves both the classpath and module path.
 
-Top-down migration starts with putting all JARs on the module path as automatic modules, making option D correct.
-Bottom-up migration starts with leaving all JARs on the classpath as unnamed modules, making options B and C correct.
+Top-down migration starts with putting all JARs
+on the module path as automatic modules, making option D correct.
+Bottom-up migration starts with leaving all JARs on
+the classpath as unnamed modules, making options B and C correct.
 
-### For a bottom-up migration, all modules other than named modules are ________________ modules and on the __________________.
+##### For a bottom-up migration, all modules other
+##### than named modules are ________________ modules and on the __________________.
 * A. automatic, classpath
 * B. automatic, module path
 * C. unnamed, classpath
@@ -17,10 +20,12 @@ Bottom-up migration starts with leaving all JARs on the classpath as unnamed mod
 * E. None of the above
 
 A bottom-up migration strategy leaves all JARs on the classpath until they are migrated.
-Then it migrates the lowest-level module to be a named module, leaving the other modules as unnamed modules.
+Then it migrates the lowest-level module to be a named module,
+leaving the other modules as unnamed modules.
 Option C is correct as it matches both of those characteristics.
 
-### For a top-down migration, all modules other than named modules are ________________ modules and on the __________________.
+#### For a top-down migration, all modules other
+#### than named modules are ________________ modules and on the __________________.
 * A. automatic, classpath
 *  B. automatic, module path
 *  C. unnamed, classpath
@@ -28,7 +33,8 @@ Option C is correct as it matches both of those characteristics.
 *  E. None of the above
 
 A top-down migration strategy first places all JARs on the module path.
-Then it migrates the top-level module to be a named module, leaving the other modules as automatic modules.
+Then it migrates the top-level module to be a named module,
+leaving the other modules as automatic modules.
 Option B is correct as it matches both of those characteristics.
 
 #### Which best describes a top-down migration? (Choose two.)
@@ -39,10 +45,13 @@ Option B is correct as it matches both of those characteristics.
 * E. Most steps consist of changing an unnamed module to an automatic module.
 * F. Most steps consist of changing an unnamed module to a named module
 
-Option A is correct because a top-down migration starts by moving all the modules to the module path as automatic modules.
-Then, the migration changes each module from an automatic module to a named module, making option C the other correct answer
+Option A is correct because a top-down migration starts
+by moving all the modules to the module path as automatic modules.
+Then, the migration changes each module from an automatic
+module to a named module, making option C the other correct answer
 
-#### Which are true statements about the diagram and scenario in the previous question? (Choose two.)
+##### Which are true statements about the diagram
+##### and scenario in the previous question? (Choose two.)
 * A. butterfly is an automatic module.
 * B. butterfly is a named module.
 * C. butterfly is an unnamed module.
