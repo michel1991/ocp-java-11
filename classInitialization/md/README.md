@@ -11,7 +11,8 @@ calls another constructor in the same class.
 Option C is correct because this() without parameters is the default constructor
 and is not inserted automatically by the compiler if another constructor is present.
 Options D and E are both incorrect because only one of super()
-or this() can be used from the same constructor. Finally, option F is correct as super() or this() must come first.
+or this() can be used from the same constructor.
+Finally, option F is correct as super() or this() must come first.
 
 ##### Which of the following is not a valid order for elements within a class?
 * A. Constructor, instance variables, method declarations
@@ -38,3 +39,19 @@ Finally, option C is correct. If a class extends a parent class that does not in
 the default no-argument constructor cannot be automatically inserted into the child class by the compiler.
 Instead, the developer must explicitly declare at least
 one constructor and explicitly define how the call to the parent constructor is made.
+
+##### Which of the following is not a true statement?
+* A. The first line of every constructor is a call to the parent constructor via the super() command.
+* B. A class is not required to have a constructor explicitly defined.
+* C. A constructor may pass arguments to the parent constructor.
+* D. A final instance variable whose value is not set when it is declared or in an initialization block should be set by the constructor.
+* E. None of the above.
+
+Option A is the correct answer because the first line
+of a constructor could be this() or super(), making it an untrue statement.
+Option B is a true statement because the compiler
+will insert the default no-argument constructor if one is not defined.
+Option C is also a true statement, since zero or more arguments may be passed to the parent constructor,
+if the parent class defines such constructors. Option D is also true.
+The value of a final instance variable must be set when it is declared,
+in an initialization block, or in a constructor.

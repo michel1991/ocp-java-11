@@ -47,3 +47,20 @@ A private method may also be marked static, making option B correct.
 Options C, D, and E are incorrect because methods marked static, private,
 or final cannot be overridden; therefore, they cannot be marked abstract.
 
+##### Which of the following modifiers can both be applied to a method? (Choose three.)
+* A. private and final
+* B. abstract and final
+* C. static and private
+* D. private and abstract
+* E. abstract and static
+* F. static and protected
+
+An abstract method is one that will be implemented by a subclass.
+For this reason, it cannot be combined with final or private,
+as both prevent a method from being overridden, making options B and D incorrect.
+An abstract method can also not be marked static,
+since static members belong to the class level, not an instance, making option E incorrect.
+Options A, C, and F are the correct answers.
+Note that marking a private method final has no practical implication, although it is allowed.
+
+

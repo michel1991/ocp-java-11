@@ -7,9 +7,13 @@
 * E. km_NO
 * F. None of the above
 
-A locale consists of a required lowercase language code, followed by an optional uppercase country code.
-Option A is incorrect because the country code is lowercase. Options B and D are incorrect because the language code should not contain uppercase characters.
-Option C correctly defines a language code with no country, while option E defines both in the correct format.
+A locale consists of a required lowercase language code,
+followed by an optional uppercase country code.
+Option A is incorrect because the country code is lowercase.
+Options B and D are incorrect because
+the language code should not contain uppercase characters.
+Option C correctly defines a language code with no country,
+while option E defines both in the correct format.
 
 ### Which of the following are valid locale formats? (Choose two.)
 * A. hi
@@ -27,7 +31,8 @@ Option F is incorrect because the language is missing.
 Remember, the exam won’t expect you to know which language and country codes exist,
 but it will expect you to know how to use them.
 
-## Fill in the blank so the code correctly compiles and creates a Locale reference. Locale loc = Locale.____________________;
+###### Fill in the blank so the code correctly compiles
+###### and creates a Locale reference. Locale loc = Locale.____________________;
 
 *  A. get("Italian")
 *  B. of(Locale.ITALIAN)
@@ -37,8 +42,10 @@ but it will expect you to know how to use them.
 *  F. None of the above
 
 There are no get()or of()methodsin Locale.
-You need to use a constructor or a predefined Locale constant to obtain a Localereference.
-Therefore, option F is the correct answer. Options B and C are close in that Locale.ITALIAN does reference a Locale object.
+You need to use a constructor or a predefined
+Locale constant to obtain a Localereference.
+Therefore, option F is the correct answer.
+Options B and C are close in that Locale.ITALIAN does reference a Locale object.
 However, it should not be passed to the nonexistent get() method.
 
 ### Which of the following are not valid Locale formats? (Choose two.)
@@ -81,3 +88,16 @@ default locale rather than the one you changed it to.
 The Locale object provides getDefault() and setDefault()
 methods for working with the default locale, so option E is correct.
 The rest of the methods do not exist in the Locale class.
+
+#### Which of the following are considered locales? (Choose three.)
+* A. Cultural region
+* B. Local address
+* C. City
+* D. Time zone region
+* E. Political region
+* F. Geographical region
+
+Oracle defines a locale as a geographical, political,
+or cultural region, making options A, E, and F correct.
+A local address and city too granular for a locale.
+Also, time zones often span multiple locales.

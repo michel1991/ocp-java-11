@@ -176,3 +176,21 @@ ShortSupplier and ToStringOperator are not built-in functional interfaces.
 Recall that Java only includes primitive functional interfaces
 that operate on double, int, or long. For this reason, Options C and E are correct.
 
+##### Which functional interface does not have the correct number of generic arguments? (Choose two.)
+* A. BiFunction<T,U,R>
+* B. BinaryOperator<T, U>
+* C. DoubleFunction<T,R>
+* D. ToDoubleFunction<T>
+* E. ToIntBiFunction<T,U>
+
+The BiFunction interface takes two different generic values and returns a generic value,
+taking a total of three generic arguments.
+Next, ToDoubleFunction takes exactly one generic value and returns a double value,
+requiring one generic argument. The ToIntBiFunction interface
+takes two generic values and returns an int value, for a total of two generic arguments.
+For these reasons, Options A, D, and E have the correct number of generics.
+BinaryOperator<T> takes two parameters of a generic type and returns the same type.
+Therefore, only one generic is needed when declaring the type. DoubleFunction<R>
+takes a double value and returns a generic result, taking exactly one generic argument, not two.
+This makes the answer options B and C.
+

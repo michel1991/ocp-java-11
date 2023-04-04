@@ -124,3 +124,27 @@ The -p or -module-path option is used to specify the location of the modules.
 Option D would be correct if the rest of the command were correct.
 However, running a program requires specifying the package name with periods (.) instead of slashes.
 Since the command is incorrect, option G is correct.
+
+#### What command could you run to print output like the following?
+
+``` txt
+    java.base@11.0.2
+    java.compiler@11.0.2
+    java.datatransfer@11.0.2
+    java.desktop@11.0.2
+    ...
+```
+* A. java --all-modules
+* B. java --describe-modules
+* C. java --list-modules
+* D. java --output-modules
+* E. java --show-modules
+* F. None of the above
+
+The java command has an option to list all the modules that come with the JDK.
+Option C is correct since that option is called --list-modules.
+The other options are not supported by the java command.
+Options B and E are similar to options that exist:
+--describe-module and --show-module-resolution.
+But neither gives a list of all the modules that come with the JDK.
+
