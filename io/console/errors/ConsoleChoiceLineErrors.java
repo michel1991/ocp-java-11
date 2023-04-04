@@ -1,4 +1,4 @@
-package io.errors;
+package io.console.errors;
 import java.io.*;
 
 public class ConsoleChoiceLineErrors {

@@ -1,4 +1,4 @@
-package io;
+package io.serialization;
 import java.io.*;
 
 /**
@@ -11,7 +11,8 @@ import java.io.*;
     F. None of the above
 
    The GetFieldclass is used with the readObject() method, making option E correct.
-   There is also a PutField class used with the writeObject() method that you should be familiar with for the exam.
+   There is also a PutField class used with the writeObject()
+   method that you should be familiar with for the exam.
  */
 public class PonyGetField   implements Serializable {
     private static final ObjectStreamField[] serialPersistentFields = { new ObjectStreamField("name",String.class) };

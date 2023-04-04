@@ -1,4 +1,4 @@
-package io;
+package io.serialization;
 import java.io.*;
 
 /**
@@ -13,8 +13,10 @@ import java.io.*;
 
    When implementing serialization, there are two main ways for omitting an instance variable.
    Option E is tricky because transient is one of those ways.
-   However, it is incorrect because it must be used on the instance variable to be omitted.
-   Option D is correct because it is the other way. The serialPersistentFields array lists the fields available to writeObject() and readObject().
+   However, it is incorrect because it must be used on
+   the instance variable to be omitted.
+   Option D is correct because it is the other way.
+   * The serialPersistentFields array lists the fields available to writeObject() and readObject().
  */
 public class AnimalCheckupSerialPersistenFields {
     private String name;

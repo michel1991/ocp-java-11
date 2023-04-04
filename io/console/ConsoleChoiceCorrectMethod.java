@@ -1,4 +1,4 @@
-package io;
+package io.console;
 import java.io.*;
 
 public class ConsoleChoiceCorrectMethod {
@@ -11,7 +11,8 @@ public class ConsoleChoiceCorrectMethod {
         E. writer().println
         F. None of the above
 
-    Console includes a format() method that takes a String along with a list of arguments and writes it directly to the output stream, making option C correct.
+    Console includes a format() method that takes a String along
+    with a list of arguments and writes it directly to the output stream, making option C correct.
     Options A and B are incorrect, as reader() returns a Reader, which does not define any print methods.
     Options D and E would be correct if the line was just a String.
     Since neither of those methods take additional arguments, they are incorrect.
