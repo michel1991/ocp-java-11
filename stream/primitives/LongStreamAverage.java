@@ -88,4 +88,39 @@ public class LongStreamAverage {
 
   }
 
+   /**
+     * Fill in the blanks so this code prints *8.0-8.0*? (Choose two.)
+        A. averageAsDouble() in the first blank
+        B. average().getAsDouble() in the first blank
+        C. getAverage().get() in the first blank
+        D. stats.average() in the second blank
+        E. stats.average().get() in the second blank
+        F. stats.getAverage() in the second blank
+
+        Primitive streams, like LongStream, declare an average()
+        method that returns an OptionalDouble object.
+        This object declares a getAsDouble() method rather than a get() method.
+        Therefore, option A is incorrect, and option B is correct.
+        By contrast, the summary statistics classes provide getters in order to access the data.
+        The getAverage() method returns a double and not an OptionalDouble,
+        which makes option F correct. The other options do not compile.
+
+     */
+   static void choiceValidAnswer(){
+       var ints = IntStream.of(6, 10);
+       var longs = ints.mapToLong(i -> i);
+       //var first = longs.________________;
+      var first = longs.average().getAsDouble();
+
+      var moreLongs = LongStream.of(6, 10);
+      var stats = moreLongs.summaryStatistics();
+      //var second = _________________________;
+      var second = stats.getAverage();
+      System.out.println("*" + first + "-" + second + "*");
+    }
+
+   public static void main(String... args){
+       choiceValidAnswer();
+    }
+
 }
