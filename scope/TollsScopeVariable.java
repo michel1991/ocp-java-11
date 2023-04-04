@@ -1,4 +1,4 @@
-package advancedDesign;
+package scope;
 
 /**
  What is the result of compiling and executing the following class?
