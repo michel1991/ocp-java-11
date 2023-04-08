@@ -6,11 +6,12 @@ public class PathUtility {
        String resourceFolder = "resource";
        StringBuilder pathToResourceFile = new StringBuilder(rootPath);
        pathToResourceFile
-       .append(fileSeparator)
-       .append("io")
-       .append(fileSeparator)
-       .append(resourceFolder)
+                         .append(fileSeparator)
+                         .append("io")
+                         .append(fileSeparator)
+                         .append(resourceFolder)
        ;
+       
        return  pathToResourceFile;
    }
 
