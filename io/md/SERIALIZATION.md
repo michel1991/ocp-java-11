@@ -6,7 +6,8 @@
 * C. Both
 * D. Neither
 
-When deserializing an object, Java does not call the constructor. Therefore, option D is correct.
+When deserializing an object, Java does not call the constructor.
+Therefore, option D is correct.
 
 ### Which of the following are true statements about serialization in Java? (Choose all that apply.)
 * A. Deserialization involves converting data into Java objects.
