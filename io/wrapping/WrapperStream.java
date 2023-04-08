@@ -1,5 +1,6 @@
-package io;
+package io.wrapping;
 import java.io.*;
+import static io.PathUtility.*;
 
 public class WrapperStream {
     /**
@@ -25,13 +26,15 @@ public class WrapperStream {
 
      */
   static void firstExample() throws IOException{
-      var is = new BufferedInputStream(new FileInputStream("z.txt"));
+        String file = getResourcePath().append(getFileSeparator()).append("z.txt").toString();
+        System.out.println(file);
+        var is = new BufferedInputStream(new FileInputStream(file)); // FileInputStream throw checked exception if file not exist FileNotFoundException
       //InputStream wrapper = new BufferedInputStream(is);
       InputStream wrapper = new ObjectInputStream(is); // ______________
       try (wrapper) {}
   }
 
-    public static void main(String... args){
-
+    public static void main(String... args) throws IOException{
+        firstExample();
     }
 }
