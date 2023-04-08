@@ -263,6 +263,20 @@ A class can trivially be assigned to a superclass reference
 variable but requires an explicit cast to be assigned
 to a subclass reference variable. For these reasons, option B is correct.
 
+#### What is required to define a valid Java class file?
+* A. A class declaration
+* B. A package statement
+* C. An import statement
+* D. A class declaration and package statement
+* E. A class declaration and at least one import statement
+* F. The public modifier
+
+Option A is the only correct answer as a class declaration
+is the only required component in a Java class file.
+Note that we said a Java class file here; Java also allows interfaces,
+annotations, modules, and enums to be defined in a file.
+A class file may have a single package statement or any number of import statements. Neither is required.
+
 
 
 

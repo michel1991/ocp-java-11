@@ -35,3 +35,17 @@ which is not considered part of the service.
 A service is comprised of the interface, any classes the interface references,
 and a way to look up implementations of the interface.
 It does not include the implementation. This makes option A the correct answer.
+
+#### Which two would be best to combine into a single module?
+* A. Consumer and service locator
+* B. Consumer and service provider
+* C. Consumer and service provider interface
+* D. Service locator and service provider interface
+* E. Service locator and service provider
+* F. Service provider and service provider interface
+
+The consumer is generally separate ruling out options A, B, and C.
+The service provider is decoupled from the service provider interface ruling out option F.
+It is most logical to combine the service locator
+and service provider interface because neither
+has a direct reference to the service provider. Therefore, option D is correct.

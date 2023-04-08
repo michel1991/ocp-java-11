@@ -325,6 +325,20 @@ The correct way to specify this is requires com.duck; requires com.bread;.
 There is no way to combine two module requires statements into one.
 Additionally, note that the requires statement works with a module name, not a package name.
 
+#### Given the diagram, what statements need to be in module-info.java for the mammal module? (Choose three.)
+* A. exports mammal;
+* B. exports mammal.eat;
+* C. requires animal;
+* D. requires animal.util;
+* E. requires milk;
+* F. requires milk.store;
+
+[image](images/animal_mammal_milk.jpg)
+The mammal module depends on two other modules.
+Since requires references module names, options C and E are correct.
+The module also has one package, which is referenced in the exports directive.
+This makes option B correct as well.
+
 
 
 

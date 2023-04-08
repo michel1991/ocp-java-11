@@ -295,3 +295,13 @@ so the access cannot be restricted. Therefore, option F is correct.
 [image](./images/doubleConsumerIntFunctionLongSupplierObjDoubleConsumer.png)
 The jar file format is most common. The JMOD jmod format is used as well.
 Therefore, option D is correct.
+
+#### Which is both part of the service and has a provides directive?
+* A. Consumer
+* B. Service locator
+* C. Service provider
+* D. Service provider interface
+* E. None of the above
+
+Only the service provider has a provides directive.
+Since it is not part of the service, option E is the correct answer.

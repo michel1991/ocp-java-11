@@ -131,3 +131,18 @@ making options C and E correct.
 Interfaces use the interface type,
 while annotations use the @interface type, making option F incorrect.
 
+#### What does the following print? Fill in the blanks: ______________ allow Java to support
+#### multiple inheritance, and anonymous classes can ______________ of them.
+
+* A. Abstract classes, extend at most one
+* B. Abstract classes, extend any number
+* C. Interfaces, implement at most one
+* D. Interfaces, implement any number
+* E. Concrete classes, extend at most one
+* F. None of the above
+
+Interfaces allow Java to support multiple inheritance because a class may implement
+any number of interfaces. On the other hand, an anonymous class may implement
+or extend at most one interface or class, respectively,
+since it does not have a class definition. For these reasons, option C is the correct answer.
+
