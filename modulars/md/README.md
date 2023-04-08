@@ -284,3 +284,14 @@ Options A and C are tempting because they do provide access in com.park.
 However, they do not prevent the Egg class in the com.egg package from accessing
 the com.duckling package. Remember that the com.egg package is in the com.duck module,
 so the access cannot be restricted. Therefore, option F is correct.
+
+##### What file formats are legal for a module to be distributed?
+* A. jar
+* B. jmod
+* C. zip
+* D. jar and jmod
+* E. jar and zip
+* F. jmod and zip
+[image](./images/doubleConsumerIntFunctionLongSupplierObjDoubleConsumer.png)
+The jar file format is most common. The JMOD jmod format is used as well.
+Therefore, option D is correct.

@@ -194,3 +194,20 @@ Therefore, only one generic is needed when declaring the type. DoubleFunction<R>
 takes a double value and returns a generic result, taking exactly one generic argument, not two.
 This makes the answer options B and C.
 
+
+#### Starting with DoubleConsumer and going downward,
+#### fill in the values for the table.
+#### For the following choices, assume R is a generic type.
+* A. double, int, long, R
+* B. double, R, long, R
+* C. R, int, long, R
+* D. R, int, long, void
+* E. void, int, R, void
+* F. void, R, long, void
+
+[image](./images/doubleConsumerIntFunctionLongSupplierObjDoubleConsumer.png)
+All Consumer functional interfaces have a void return type.
+For this reason, the first and last values in the table are both void,
+making options A, B and C incorrect. IntFunction takes an int and returns a generic value,
+ruling out option D. Finally, LongSupplier does not take any values and returns a long value.
+For this reason, option E is incorrect, and option F is correct.

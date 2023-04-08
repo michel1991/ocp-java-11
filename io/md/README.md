@@ -183,3 +183,25 @@ making option B incorrect, and options C and G correct.
 The mkdirs() differs from mkdir() by creating any missing directories along the path.
 Finally, option F is incorrect as there is no command to copy a file in the File class.
 You would need to use an I/O stream to copy the file along with its contents.
+
+
+#### Given the following class inheritance diagram, which two classes can be placed in the blank boxes?
+* A. BufferedOutputStream and PrintStream
+* B. BufferedOutputStream and PrintOutputStream
+* C. ByteArrayOutputStream and Stream
+* D. FileOutputStream and OutputStream
+* E. ObjectOutputStream and PrintOutputStream
+* F. None of the above
+
+[image](./images/doubleConsumerIntFunctionLongSupplierObjDoubleConsumer.png)
+While you might not be familiar with FilterOutputStream,
+the diagram shows that the two classes must inherit from OutputStream.
+Options B, C, and E can be eliminated as choices since PrintOutputStream
+and Stream are not the name of any java.io classes.
+Option D can also be eliminated because OutputStream is already in the diagram,
+and you cannot have a circular class dependency.
+That leaves us with the correct answer, option A, with BufferedOutputStream
+and PrintStream both extend FilterOutputStream.
+Note that ByteArrayOutputStream and FileOutputStream referenced in Options C and D,
+respectively, do not extend FilterOutputStream,
+although knowing this fact was not required to solve the problem.

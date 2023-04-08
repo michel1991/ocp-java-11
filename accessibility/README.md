@@ -134,3 +134,28 @@ regardless of whether one extends the other.
 
 The protected modifier allows access by any subclass or class that is in the same package;
 therefore, option A is the correct answer.
+
+##### What access modifier is used to mark class members package-private?
+* A. default
+* B. friend
+* C. protected
+* D. private
+* E. None of the above
+
+In Java, the lack of an access modifier indicates that the member is package-private;
+therefore, option E is correct.
+Note that the default keyword is used for interfaces, annotations,
+and switch statements, and is not an access modifier.
+
+##### Given the diagram, how many classes can write code that references the light variable?
+* A. None
+* B. One
+* C. Two
+* D. Three
+* E. Four
+
+[image](./images/color_light_blue.jpg)
+This variable has protected access, which means code in the same package
+can access it in addition to subclasses.
+There are two classes in the com.color package
+and one class that subclasses it, making option D the answer.
