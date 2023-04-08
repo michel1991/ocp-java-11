@@ -1,5 +1,6 @@
-package io;
+package io.closeStream;
 import java.io.*;
+import io.PathUtility;
 
 /**
     Assume in is a valid stream whose next bytes are LYNX. What is the result of calling the following method on the stream?
@@ -11,8 +12,11 @@ import java.io.*;
     F. The answer cannot be determined until runtime.
     G. None of the above, as the method does not compile.
 
-    The variable w refers to System.out, which is closed at the end of the try-with-resources statement, but before println() is called.
-    Since PrintStream instances do not throw exceptions when closed, nothing is printed at runtime, and option D is correct.
+    The variable w refers to System.out,
+    which is closed at the end of the try-with-resources statement,
+    but before println() is called.
+    Since PrintStream instances do not throw exceptions when closed,
+    nothing is printed at runtime, and option D is correct.
     If the stream were open, then it would print LX.
  */
 public class ClosingDefaultOutputStreamWithWrapping {
@@ -30,11 +34,11 @@ public class ClosingDefaultOutputStreamWithWrapping {
     }
 
     public static void main(String... arg) throws IOException{
-       String rootPath = System.getProperty("user.dir");
-       File file = new File(rootPath, "io/lynx.txt");
+       String rootPath =  PathUtility.getResourcePath().toString();
+       File file = new File(rootPath, "lynx.txt");
        System.out.println(file.exists());
        FileInputStream fi = new FileInputStream(file);
        printData(fi);
-       System.out.println("end load data");
+       System.out.println("end load data"); // the stream already close in previous methods
     }
 }
