@@ -5,8 +5,10 @@ import java.io.*;
 
 
 /**
-* Given the following Dolphin class, which of the following fields will always be null after the class is serialized and then deserialized? (Choose all that apply.)
-*   A. name
+  Given the following Dolphin class, which of the following fields will always be null
+  after the class is serialized and then deserialized? (Choose all that apply.)
+  
+    A. name
     B. age
     C. birthPlace
     D. friends
@@ -15,7 +17,8 @@ import java.io.*;
 
    The code appears to be about the deserialization process, but the class itself does not implement Serializable,
    so it will throw a NotSerializableException at runtime when it is serialized, and option F is correct.
-   If the class was corrected to implement the Serializable interface, then name would be null after the class is deserialized, since it is marked transient.
+   If the class was corrected to implement the Serializable interface,
+   then name would be null after the class is deserialized, since it is marked transient.
    On the other hand, birthPlace would not be null since it is static and set on the class level.
    The instance member age is an int, so while it is marked transient, it would default to 0, not null.
    Finally, friends would be serialized and deserialized with whatever value it was stored with.
