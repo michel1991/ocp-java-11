@@ -9,7 +9,8 @@ public class AppendAndFlushMethodThrowsCheckException {
         D. A NullPointerException is thrown.
         E. None of the above, as the code does not compile
 
-        The code does not compile, as the Writer methods append() and flush() both throw an IOException that must be handled or declared.
+        The code does not compile, as the Writer methods append() and flush()
+        both throw an IOException that must be handled or declared.
         Even without those lines of code, the try-with-resources statement itself must be handled or declared,
         since the close() method throws a checked IOException exception. For this reason, option E is correct.
         If the main() method was corrected to declare IOException, then the code would compile.
