@@ -1,4 +1,4 @@
-package io.runtime;
+package io.closeStream.runtime;
 import java.io.*;
 
 /**
@@ -10,8 +10,10 @@ import java.io.*;
     E. Zero, but produces an exception at runtime after the user enters their email
     F. Zero, and completes without producing an exception after the user enters their email
 
-   The code compiles without issue. Since Java 9, it is possible to use resources that are created before the try-with-resources declaration.
-   The try-with-resources statement closes the Reader created on line 4, along with the underling stream, in this case System.in.
+   The code compiles without issue. Since Java 9,
+   it is possible to use resources that are created before the try-with-resources declaration.
+   The try-with-resources statement closes the Reader created on line 4,
+   along with the underling stream, in this case System.in.
    Once System.in has been closed, it cannot be read again.
    Therefore, the program throws an IOException: Stream closed on line 12, making option E the correct answer.
  */
