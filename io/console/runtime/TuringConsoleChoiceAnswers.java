@@ -1,4 +1,4 @@
-package io.runtime;
+package io.console.runtime;
 import java.io.*;
 
 /**
@@ -10,11 +10,14 @@ import java.io.*;
     E. The class does not compile.
 
     The statements in options A, B, and C are each correct, making option D correct.
-    If System.console() is available, then the program will ask the user a question and then print the response to the error stream.
-    On the other hand, if System.console() is not available, then the program will exit with a NullPointerException.
+    If System.console() is available, then the program will ask
+    the user a question and then print the response to the error stream.
+    On the other hand, if System.console() is not available,
+    then the program will exit with a NullPointerException.
     It is strongly recommended to always check whether System.
     console() is null after requesting it.
-    Finally, the user may choose not to respond to the program’s request for input, resulting in the program hanging indefinitely.
+    Finally, the user may choose not to respond to the program’s request for input,
+    resulting in the program hanging indefinitely.
 
  */
 public class TuringConsoleChoiceAnswers {
