@@ -1,6 +1,7 @@
-package io;
+package io.printStream;
 import java.io.*;
 import java.nio.file.*;
+import io.PathUtility;
 
 public class CallReadLineTwice {
 
@@ -17,13 +18,15 @@ public class CallReadLineTwice {
 
         The code compiles and correctly closes resources with a try-with-resources statement, so option D is incorrect.
         At first glance, the code appears to print every line of the file, but it contains a bug.
-        The readLine() method is called twice on every iteration of the loop, so the code actually skips the first line and outputs every other line after that,
-        so options A and B are incorrect. On files with an odd number of lines, this will cause the last statement printed to be null, making option C correct.
+        The readLine() method is called twice on every iteration of the loop,
+        so the code actually skips the first line and outputs every other line after that,
+        so options A and B are incorrect. On files with an odd number of lines,
+        this will cause the last statement printed to be null, making option C correct.
         Option E is incorrect, as System.out.print() is capable of printing null values.
      */
    static void readLine() throws IOException{
-       String rootPath = System.getProperty("user.dir");
-       Path path = Path.of(rootPath, "io", "callReadLineTwice.txt");
+        String rootPath =   PathUtility.getResourcePath().toString();
+       Path path = Path.of(rootPath, "callReadLineTwice.txt");
        PrintStream defaultOutPut = System.out;
        try( var fileReader = new FileReader(path.toFile());
             var bufferedReader = new BufferedReader(fileReader) ){
