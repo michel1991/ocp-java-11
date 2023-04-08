@@ -165,3 +165,18 @@ incorrect as an overridden method is not required
 to throw a checked exception declared in the parent version of the method.
 If it does declare a checked exception,
 it cannot be new or broader than the ones declared in the superclass, making option E correct.
+
+#### Which statements about instance keywords are correct? (Choose two.)
+* A. The that keyword can be used to read public members in the direct parent class.
+* B. The this keyword can be used to read all members declared within the class.
+* C. The super keyword can be used to read all members declared in a parent class.
+* D. The that keyword can be used to read members of another class.
+* E. The this keyword can be used to read public members in the direct parent class.
+* F. The super keyword can be used in static methods.
+
+There is no that keyword, so options A and D are incorrect.
+Option B is correct, as this can access all members declared within the class.
+Option C is incorrect, as only inherited members can be accessed.
+For example, private members declared in a parent class cannot be accessed using super.
+Option E is correct, as this allows access to members declared in the class and those inherited from a parent.
+Finally, option F is incorrect, as static methods do not have access to this or super references.

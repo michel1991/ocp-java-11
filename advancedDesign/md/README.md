@@ -277,6 +277,22 @@ Note that we said a Java class file here; Java also allows interfaces,
 annotations, modules, and enums to be defined in a file.
 A class file may have a single package statement or any number of import statements. Neither is required.
 
+##### Suppose foo is a reference to an instance of a class Foo.
+##### Which of the following is not possible about the variable reference foo.bar?
+* A. bar is an instance variable.
+* B. bar is a static variable.
+* C. bar is a local variable.
+* D. It can be used to read from bar.
+* E. It can be used to write to bar.
+* F. All of the above are possible.
+
+Dot notation is used for both reading and writing instance variables,
+assuming they are in scope. It cannot be used for referencing local variables,
+making option C the correct answer.
+It is possible that bar is a static variable,
+although accessing it in this manner is not recommended.
+
+
 
 
 
