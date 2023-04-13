@@ -11,30 +11,26 @@ public class AttemptingToAcquireALockTryLockWithTimeUnit{
       }
 
    }
-  
-  public void tryLockExample() throws InterruptedException{
-     Lock lock = new ReentrantLock();
-     new Thread( () -> printMessage(lock)).start();
-     if(lock.tryLock(10, TimeUnit.SECONDS)){
-
-         try{
-              System.out.println("Lock obtained entering protected code");
-          } finally{
-            lock.unlock();
-           }
-          
-        } else{
-                System.out.println("Unable to acquire lock, doing something else");
-             
-          }
- 
-     }
 
 
      public static void main(String[] args) throws InterruptedException{
-         var attenpting = new AttemptingToAcquireALockTryLockWithTimeUnit();
-         System.out.println("Try using tryLock ");
-         attenpting.tryLockExample();
+         System.out.println("Try using tryLock Main Thread");
+         Lock lock = new ReentrantLock();
+         new Thread( () -> {
+            printMessage(lock);
+            System.out.println("Thread get the lock and release");
+         }).start();
+         if(lock.tryLock(10, TimeUnit.SECONDS)){
+
+            try{
+               System.out.println("Lock obtained entering protected code");
+            } finally{
+               lock.unlock();
+            }
+
+         } else{
+            System.out.println("Unable to acquire lock, doing something else");
+         }
       }
 
 
