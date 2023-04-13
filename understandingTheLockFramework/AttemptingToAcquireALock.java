@@ -11,30 +11,29 @@ public class AttemptingToAcquireALock{
       }
 
    }
-  
-  public void tryLockExample(){
-     Lock lock = new ReentrantLock();
-     new Thread( () -> printMessage(lock)).start();
-     if(lock.tryLock()){
-
-         try{
-              System.out.println("Lock obtained");
-          } finally{
-            lock.unlock();
-           }
-          
-        } else{
-                System.out.println("Unable to acquire lock, doing something else");
-             
-          }
- 
-     }
-
 
      public static void main(String[] args){
          var attenpting = new AttemptingToAcquireALock();
          System.out.println("Try using tryLock ");
-         attenpting.tryLockExample();
+         Lock lock = new ReentrantLock();
+         new Thread( () ->{
+            System.out.println("Thread get the lock ");
+            printMessage(lock);
+         }).start();
+
+         if(lock.tryLock()){
+
+            try{
+               System.out.println("Lock obtained");
+            } finally{
+               lock.unlock();
+            }
+
+         } else{
+            System.out.println("Unable to acquire lock, doing something else");
+
+         }
+        System.out.println("End Main thread ");
       }
 
 
