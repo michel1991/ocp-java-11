@@ -1,6 +1,10 @@
 package creatingThreadsWithConcurrencyApi.introducingTheSingleThreadExecutor;
 import java.util.concurrent.*;
 
+/**
+ * Order in the same thread is always follow.
+ * In this example with have two threads (main thread, executors thread with threads task)
+ */
 class ZooInfo{
     public static void main(String[] args){
       ExecutorService  service = null;
