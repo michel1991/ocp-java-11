@@ -1,4 +1,4 @@
-package inheritance.errors;
+package inheritance.errors.blockInitializer;
 /**
 * What is the output of the following program?
     A. x pav
@@ -8,11 +8,15 @@ package inheritance.errors;
     E. The code does not compile.
     F. The code compiles but produces an exception at runtime.
 
-   The Automobile class contains a static variable engine that is used before it is declared, which is not allowed.
+   The Automobile class contains a static variable engine
+   that is used before it is declared, which is not allowed.
    For this reason, the code does not compile, and option E is the correct answer.
-   If the variable was declared before the static initializer, then the code would compile and print xrt avpav at runtime, making option C correct.
-   Remember that each class is initialized only once, with superclasses initialized before subclasses.
-   Likewise, instances are initialized from the top down, with constructors guiding the order of initialization.
+   If the variable was declared before the static initializer,
+   then the code would compile and print xrt avpav at runtime, making option C correct.
+   Remember that each class is initialized only once,
+   with superclasses initialized before subclasses.
+   Likewise, instances are initialized from the top down,
+   with constructors guiding the order of initialization.
 
  */
 class Automobile {
