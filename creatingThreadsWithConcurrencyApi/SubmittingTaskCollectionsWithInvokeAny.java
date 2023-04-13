@@ -8,12 +8,23 @@ public class SubmittingTaskCollectionsWithInvokeAny{
      System.out.println("begin");
      try{
 	   service = Executors.newSingleThreadExecutor();  
-         Callable<String> task = () -> "result";
+         Callable<String> task = () -> {
+           System.out.println("I am first task result ");
+           return "result";
+         };
+         Callable<String> taskTwo = () -> {
+            System.out.println("I am the second task");
+           return "I am the second task";
+         };
+         Callable<String> taskThree = () -> {
+           System.out.println("I am the Thirst task");
+           return "I am the Thirst task";
+         };
          String data = service.invokeAny(
-              List.of(task, task, task)
+                 List.of(task, taskTwo, taskThree)
           );
       
-      System.out.println(data);
+      System.out.println("result any is " + data);
      }finally{
        if( service != null){
             service.shutdown();
