@@ -1,4 +1,4 @@
-package usingConcurrentCollections;
+package usingConcurrentCollections.obtainingSynchronizedCollections;
 import java.util.*;
 
 public class ObtainingSynchronizedCollections{
