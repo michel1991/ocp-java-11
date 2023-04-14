@@ -7,10 +7,9 @@ class ExampleCopyOnWriteArraySet{
      Set<Character> favLetters = new CopyOnWriteArraySet<> (List.of('a', 't'));
      for (char c : favLetters){
          System.out.print(c + " ");
-         favLetters.add('c');
+         favLetters.add('s');
       }
      System.out.println();
      System.out.println("Size: " + favLetters.size());
-      
   }
 }
