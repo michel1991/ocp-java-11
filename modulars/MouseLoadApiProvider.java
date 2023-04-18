@@ -18,7 +18,8 @@ import java.util.ServiceLoader.Provider;
         D. Provider::get
         E. None of the above
 
-       The ServiceLoader class has a load() method that returns a Collection of Provider. Option D is correct because we need to convert the Provider into a Mouse.
+       The ServiceLoader class has a load() method that returns a Collection of Provider.
+       Option D is correct because we need to convert the Provider into a Mouse.
  */
 class Mouse{
     String favoriteFood(){
@@ -45,8 +46,10 @@ public class MouseLoadApiProvider {
             E. Mouse loader = ServiceLoader.load();
             F. Mouse loader = ServiceLoader.load(Mouse .class)
 
-           The service locator contains a ServiceLoader call to look up the service loader.
-           It takes the type of class it looked up as a parameter and returns a generic, making option D the correct answer.
+           The service locator contains a ServiceLoader
+           call to look up the service loader.
+           It takes the type of class it looked up
+           as a parameter and returns a generic, making option D the correct answer.
      */
     static void loadWithOutStream(){
       ServiceLoader<Mouse> loader = ServiceLoader.load(Mouse.class);
