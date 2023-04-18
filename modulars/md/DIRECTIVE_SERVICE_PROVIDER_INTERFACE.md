@@ -32,7 +32,7 @@ module nature.tree{
 
 * 
 ```
-A. Consumer
+* A. Consumer
 * B. Service locator
 * C. Service provider
 * D. Service provider interface
