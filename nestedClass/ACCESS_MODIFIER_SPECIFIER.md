@@ -20,4 +20,5 @@ Options A and D are incorrect as static and final are not access modifiers.
 
 While an anonymous class can extend another class or implement an interface,
 it cannot be declared final or abstract since it has no class definition.
-For this reason, option C is correct. The other classes may be declared final or abstract since they have a class definition.
+For this reason, option C is correct.
+The other classes may be declared final or abstract since they have a class definition.
