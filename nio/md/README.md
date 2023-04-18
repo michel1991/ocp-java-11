@@ -7,13 +7,17 @@
 * F. size(Path)
 * G. readAttributes(Path,Class)
 
-The isSameFile() method will throw an IOException if one of the Path values does not exist and the Path values are not equivalent in terms of equals().
-The size() and readAttrributes() methods will also throw an IOException if they reference paths that do not exist.
-The rest of the methods return false without throwing an exception if the path does not exist.
+The isSameFile() method will throw an IOException if one
+of the Path values does not exist and the Path values are not equivalent in terms of equals().
+The size() and readAttrributes() methods will also throw
+an IOException if they reference paths that do not exist.
+The rest of the methods return false without
+throwing an exception if the path does not exist.
 
 
 
-### What are some advantages of using NIO.2’s Files.readAttributes() method rather than reading attributes individually from a file? (Choose all that apply.)
+#### What are some advantages of using NIO.2’s Files.readAttributes()
+#### method rather than reading attributes individually from a file? (Choose all that apply.)
 * A. It can be used on both files and directories.
 * B. For reading a single attribute, it is often more performant.
 * C. It allows you to read symbolic links.
@@ -21,10 +25,14 @@ The rest of the methods return false without throwing an exception if the path d
 * E. It can be used to access file system–dependent attributes.
 * F. For reading multiple attributes, it is often more performant.
 
-Whether a path is a symbolic link, file, or directory is not relevant, so options A and C are incorrect.
-Using a view to read multiple attributes leads to fewer round-trips between the process and the file system and better performance, so options D and F are correct.
-For reading single attributes, there is little or no expected gain, so option B is incorrect.
-Finally, views can be used to access file system–specific attributes that are not available in Files methods; therefore, option E is correct.
+Whether a path is a symbolic link, file, or directory is not relevant,
+so options A and C are incorrect.
+Using a view to read multiple attributes leads to fewer round-trips
+between the process and the file system and better performance, so options D and F are correct.
+For reading single attributes,
+there is little or no expected gain, so option B is incorrect.
+Finally, views can be used to access
+file system–specific attributes that are not available in Files methods; therefore, option E is correct.
 
 ### What are some advantages of NIO.2 over the legacy java.io.File class for working with files? (Choose three.)
 * A. NIO.2 supports file system–dependent attributes.
@@ -49,10 +57,12 @@ Finally, option F is incorrect, as sending email messages is not a feature of ei
 * F. Paths.getPath("ocelot.txt")
 * G. Path.of(Path.of(".").toUri())
 
-Options A and E are incorrect because Path and FileSystem, respectively, are abstract types that should be instantiated using a factory method.
+Options A and E are incorrect because Path and FileSystem, respectively,
+are abstract types that should be instantiated using a factory method.
 Option C is incorrect because the static method in the Path interface is of(), not get().
 Option F is incorrect because the static method in the Paths class is get(), not getPath().
-Options B and D are correct ways to obtain a Path instance. Option G is also correct, as there is an overloaded static method in Path that takes a URI instead of a String.
+Options B and D are correct ways to obtain a Path instance.
+Option G is also correct, as there is an overloaded static method in Path that takes a URI instead of a String.
 
 ### Which of the following throw an exception when an Optional is empty? (Choose all that apply.)
 * A. opt.orElse("");
@@ -63,10 +73,14 @@ Options B and D are correct ways to obtain a Path instance. Option G is also cor
 * F. opt.get();
 * G. opt.get("");
 
-Options A and B compile and return an empty string without throwing an exception, using a String and Supplier parameter, respectively.
-Option G does not compile as the get() method does not take a parameter. Options C and F throw a NoSuchElementException.
-Option E throws a RuntimeException. Option D looks correct but will compile only if the throw is removed.
-Remember, the orElseThrow() should get a lambda expression or method reference that returns an exception, not one that throws an exception.
+Options A and B compile and return an empty string without throwing an exception,
+using a String and Supplier parameter, respectively.
+Option G does not compile as the get() method does not take a parameter.
+Options C and F throw a NoSuchElementException.
+Option E throws a RuntimeException.
+Option D looks correct but will compile only if the throw is removed.
+Remember, the orElseThrow() should get a
+lambda expression or method reference that returns an exception, not one that throws an exception.
 
 ### Which of the following correctly create NIO.2 Path instances? (Choose all that apply.)
 * A. Paths.get("rainforest").resolve(Paths.get("trees"))
@@ -76,13 +90,17 @@ Remember, the orElseThrow() should get a lambda expression or method reference t
 * E. Path.get("birdhouse")
 * F. FileSystems.getDefault().getPath("ocean")
 
-Options A and C are both correct, as there are two resolve() methods: one that takes a Path and one that takes a String.
+Options A and C are both correct, as there are two resolve() methods:
+one that takes a Path and one that takes a String.
 Option B is incorrect, as Path is an abstract type and cannot be instantiated directly.
-Option D is also incorrect. While java.io.File() does have a toUri() method, toPath() is not defined in the URI class.
-Instead, Path.of(URI) should be used. Option E is incorrect, as the correct static method in the Path interface is of(), not get().
+Option D is also incorrect. While java.io.File()
+does have a toUri() method, toPath() is not defined in the URI class.
+Instead, Path.of(URI) should be used. Option E is incorrect,
+as the correct static method in the Path interface is of(), not get().
 Finally, option F is correct and is the “long way” of creating a Path using the default file system.
 
-### Assuming / is the root directory within the file system, which of the following are true statements? (Choose all that apply.)
+#### Assuming / is the root directory within the file system,
+#### which of the following are true statements? (Choose all that apply.)
 * A. /home/parrot is an absolute path.
 * B. /home/parrot is a directory.
 *  C. /home/parrot is a relative path.
@@ -121,11 +139,16 @@ then an exception will be thrown, as Files.walk() maintains a list of all of the
 *  F. size(Path)
 *  G. readAttributes(Path,Class)
 
-The isSameFile() method will throw an IOException if one of the Path values does not exist and the Path values are not equivalent in terms of equals().
-The size() and readAttrributes() methods will also throw an IOException if they reference paths that do not exist.
-The rest of the methods return false without throwing an exception if the path does not exist
+The isSameFile() method will throw an IOException if one of
+the Path values does not exist and the Path values are not equivalent in terms of equals().
+The size() and readAttrributes() methods will also throw
+an IOException if they reference paths that do not exist.
+The rest of the methods return false without throwing
+an exception if the path does not exist
 
-### When reading file information, what is an advantage of using an NIO.2 attribute interface rather than reading the values individually using Files methods? (Choose two.)
+#### When reading file information, what is an advantage of using an
+#### NIO.2 attribute interface rather than reading
+#### the values individually using Files methods? (Choose two.)
 * A. Costs fewer round-trips to the file system
 * B. Guarantees performance improvement
 * C. Has support for symbolic links
@@ -140,6 +163,24 @@ especially if the Files method is only being used to read a single attribute.
 Option C is also incorrect because both sets of methods have built-in support for symbolic links.
 Options D and F are incorrect because memory and resource leaks are not related to reading file attribute views.
 Finally, option E is correct, as NIO.2 supports file-system dependent attribute view classes.
+
+##### Which are true about closing resources
+##### to guard against a denial of service attack? (Choose two.)
+* A. The NIO.2 Files.lines() method does not require closing a resource when it is used in a stream pipeline.
+* B. The NIO.2 Files.lines() method requires closing a resource when it is used in a stream pipeline.
+* C. When locking a resource using an instance of the concurrent Lock interface, the unlock() statement should be immediately before the finally block.
+* D. When locking a resource using an instance of the concurrent Lock interface, the unlock() statement should be in a finally block.
+* E. When locking a resource using an instance of the concurrent Lock interface, the unlock() statement should be immediately after the finally block.
+
+Ensuring resources are released helps prevent a denial of service attack.
+Stream methods, such as Files.lines(), do not automatically close the file.
+Option B is correct since the programmer needs to do it.
+Without this, the system could run out of file resource handles as part of a denial of service attack.
+When a resource is locked using an instance of the concurrent Lock interface,
+it should be unlocked in a finally block to ensure this step is not missed.
+Therefore, option D is the other correct answer.
+Without this, it’s possible an acquired lock is kept indefinitely,
+and a deadlock ensues as part of a denial of service attack.
 
 
 

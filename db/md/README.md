@@ -256,5 +256,20 @@ Further, when used properly, a PreparedStatement prevents SQL injection.
 CallableStatement and PreparedStatement are interfaces
 that extend the Statement interface. You don’t need to know that for the exam.
 You do need to know that a database driver is required
-to provide the concrete implementation class of Statement rather than the JDK. This makes option E correct.
+to provide the concrete implementation class of Statement
+rather than the JDK. This makes option E correct.
+
+##### Given the table booksin the figure and a ResultSet
+##### created by running this SQL statement, which option prints Advanced Java?
+##### SELECT title FROMbooksWHERE num_pages > 500
+[image](./images/book_tables.jpg)
+* A. System.out.println(rs.getString());
+* B. System.out.println(rs.getString("0"));
+* C. System.out.println(rs.getString("1"));
+* D. System.out.println(rs.getString("title"));
+
+Option A does not compile because you have to pass a column index or column name to the method.
+Options B and C compile. However, there are not columns named 0 or 1.
+Since these column names don’t exist, the code would throw a SQLException at runtime.
+Option D is correct as it uses the proper column name.
 

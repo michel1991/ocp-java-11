@@ -211,3 +211,18 @@ For this reason, the first and last values in the table are both void,
 making options A, B and C incorrect. IntFunction takes an int and returns a generic value,
 ruling out option D. Finally, LongSupplier does not take any values and returns a long value.
 For this reason, option E is incorrect, and option F is correct.
+
+#### Which functional interface takes a long value
+#### as an input argument and has an accept() method?
+* A. LongConsumer
+* B. LongFunction
+* C. LongPredicate
+* D. LongSupplier
+* E. None of the above
+
+The LongSupplier interface does not take any input, making option D incorrect.
+It also uses the method name getAsLong().
+The rest of the functional interfaces all take a long value but vary on the name of the abstract method they use.
+LongFunction contains apply() and LongPredicate contains test(),
+making options B and C, respectively, incorrect.
+That leaves us with LongConsumer, which contains accept(), making option A the correct answer.

@@ -90,3 +90,20 @@ to store over a long period of time. Options A and C, though,
 define classes that manage transient or short-lived data.
 Application processes change quite frequently,
 and trying to reconstruct a process is often considered a bad idea.
+
+
+##### During deserialization from an I/O stream, which element
+##### of the class can be used to assign a value to the deserialized object?
+* A. Variable initializer
+* B. Instance initializer
+* C. Static initializer
+* D. Constructor
+* E. The restoreObject() method
+* F. None of the above
+
+When data is deserialized, none of variable initializers,
+instance initializers, or constructors is called. The class can have static initializers,
+but they are not called as part of deserialization.
+Finally, there is no restoreObject() method that is used in standard deserialization.
+For these reasons, option F is correct.
+

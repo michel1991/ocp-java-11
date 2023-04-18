@@ -305,3 +305,14 @@ Therefore, option D is correct.
 
 Only the service provider has a provides directive.
 Since it is not part of the service, option E is the correct answer.
+
+#### Given the diagram, which is a default module?
+* A. dog.bark
+* B. dog.fluffy
+* C. dog.hair
+* D. dog.husky
+* E. None of the above
+
+[image](./images/dog.hair_automatic_module.jpg)
+You need to know about three types of modules for the exam: automatic, named, and unnamed.
+There is no such thing as a default module. The question was trying to trick you, and option E is correct.
