@@ -14,7 +14,8 @@ package nestedClass.errors;
    Diet is an inner class, which requires an instance of Deer to instantiate.
    Since the main() method is static, there is no such instance.
    Therefore, the main() method does not compile, and option E is correct.
-   If a reference to Deer were used, such as calling new Deer().new Diet(), then the code would compile and print bc at runtime.
+   If a reference to Deer were used, such as calling new Deer().new Diet(),
+   then the code would compile and print bc at runtime.
  */
 class Deer {
     enum Food {APPLES, BERRIES, GRASS}

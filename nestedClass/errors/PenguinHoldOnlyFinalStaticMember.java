@@ -10,9 +10,12 @@ package nestedClass.errors;
 
     The Penguin class includes a member inner class Chick.
     Member inner classes can only include static variables if they are marked final.
-    Since the variable volume is not marked final, the Chick does not compile, making option C correct.
-     Note that the variable volume referenced in the chick() method is one defined in the Penguin outer class.
-     If the final modifier was added to the volume variable in the Chick class, then the rest of the code would compile, printing Honk(1)! at runtime.
+    Since the variable volume is not marked final,
+    the Chick does not compile, making option C correct.
+     Note that the variable volume referenced in the chick()
+     method is one defined in the Penguin outer class.
+     If the final modifier was added to the volume variable in the Chick class,
+     then the rest of the code would compile, printing Honk(1)! at runtime.
  */
 class Penguin {
     private int volume = 1;

@@ -11,8 +11,12 @@ package nestedClass.errors;
    The code OstrichWrangler class is a static nested class;
    therefore, it cannot access the instance member count.
    For this reason, line 6 does not compile, and option E is correct.
-   If the static modifier on line 4 was removed, then the class would compile and produce two files:Ostrich.class and Ostrich$OstrichWrangler.class.
-   You don’t need to know that $ is the syntax, but you do need to know the number of classes and that OstrichWrangler is not a top-level class.
+   If the static modifier on line 4 was removed,
+   then the class would compile and produce
+   two files:Ostrich.class and Ostrich$OstrichWrangler.class.
+   You don’t need to know that $ is the syntax,
+   but you do need to know the number of classes
+   and that OstrichWrangler is not a top-level class.
  */
 class Ostrich { // 1:
     private int count; //  2:

@@ -13,7 +13,8 @@ package nestedClass.errors;
     therefore, the static nested class GetSet cannot access it without a reference to the class.
     For this reason, the declaration of the static nested class GetSet does not compile,
     and option D is the correct answer. The rest of the code compiles without issue.
-    If the DEFAULT_VALUE variable was modified to be static, then the code would compile and print 5, 10 at runtime.
+    If the DEFAULT_VALUE variable was modified to be static,
+    then the code would compile and print 5, 10 at runtime.
 
  */
 class Ready {

@@ -11,10 +11,14 @@ package nestedClass.errors;
     E. Line 13 generates a compiler error.
     F. The code compiles but produces an exception at runtime.
 
-    Popcorn is an inner class. Inner classes are only allowed to contain static variables that are marked final.
-    Since there are no other compilation errors, option C is the only correct answer.
-    If the final modifier was added on line 6, then the code would print 10 at runtime.
-    Note that private constructors can be used by any methods within the same class.
+    Popcorn is an inner class. Inner classes are only allowed
+    to contain static variables that are marked final.
+    Since there are no other compilation errors,
+    option C is the only correct answer.
+    If the final modifier was added on line 6,
+    then the code would print 10 at runtime.
+    Note that private constructors can be
+    used by any methods within the same class.
 */
 class Movie { // 1:
     private int butter = 5; //   2:

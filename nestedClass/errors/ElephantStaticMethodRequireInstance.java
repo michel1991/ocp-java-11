@@ -12,9 +12,12 @@ package nestedClass.errors;
     The question may appear to be about method overriding,
     but it is in fact about member inner classes. In fact,
     all of the method overrides are valid in this class.
-    The code does not compile because the charge() method is static (even though it is called on an instance),
-    which means it requires an instance to instantiate a member of the member inner class MyTrunk.
-    For this reason, the call to new MyTrunk() does not compile, and option F is correct.
+    The code does not compile because
+    the charge() method is static (even though it is called on an instance),
+    which means it requires an instance to instantiate
+    a member of the member inner class MyTrunk.
+    For this reason,
+    the call to new MyTrunk() does not compile, and option F is correct.
  */
 interface Long {
     Number length();

@@ -9,8 +9,10 @@ package nestedClass.errors;
     E. A runtime exception is thrown because an inner class is declared in a loop.
 
     A local class is not allowed to have static methods, meaning line 5 does not compile.
-    It also goes out of scope like a regular local variable. Cub is scoped to be inside the for loop.
-    It is legal to declare an inner class inside a loop as long as it is referenced only inside that loop.
+    It also goes out of scope like a regular local variable.
+    Cub is scoped to be inside the for loop.
+    It is legal to declare an inner class inside a loop
+    as long as it is referenced only inside that loop.
     For this reason, line 10 also does not compile.
 
  */

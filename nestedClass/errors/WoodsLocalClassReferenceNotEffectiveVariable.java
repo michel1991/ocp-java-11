@@ -11,7 +11,8 @@ package nestedClass.errors;
     The main() method defines a local class Oak that correctly extends Tree, a static nested class.
     The method getWater() is not permitted to read the local variable water,
     though, since it is not final or effectively final, making option C correct.
-    If the last line of the method was removed, though, then the program would compile and print 8.
+    If the last line of the method was removed, though,
+    then the program would compile and print 8.
  */
 class Woods {
     static class Tree {}
