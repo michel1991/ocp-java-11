@@ -39,4 +39,5 @@ Option C is incorrect because you don’t need to call the get() method when usi
 * E. ServiceLocator˂Mouse˃ sl = ServiceLoader.loader(Mouse.class);
 * F. ServiceLocator˂Mouse˃ sl = ServiceLoader.lookup(Mouse.class);
 
-The service locator contains a ServiceLoader call to the load() method to look up the service loader, which is option A.
+The service locator contains a ServiceLoader call to the load()
+method to look up the service loader, which is option A.
