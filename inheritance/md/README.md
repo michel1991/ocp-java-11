@@ -180,3 +180,16 @@ Option C is incorrect, as only inherited members can be accessed.
 For example, private members declared in a parent class cannot be accessed using super.
 Option E is correct, as this allows access to members declared in the class and those inherited from a parent.
 Finally, option F is incorrect, as static methods do not have access to this or super references.
+
+#### Which of the following interface methods are inherited by classes that implement the interface? (Choose two.)
+* A. private methods
+* B. private static methods
+* C. default methods
+* D. static methods
+* E. abstract methods
+* F. final methods
+
+Methods marked private or static are never inherited, so options A, B, and D are incorrect.
+Interface methods cannot be final, so option F is incorrect.
+That leaves default and abstract methods,
+which are both inherited by classes implementing the interface.

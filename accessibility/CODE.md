@@ -349,6 +349,25 @@ The hop() method has protected access, which allows subclasses to call it.
 Both the move() method and main() method are allowed to call hop() since Grasshopper is a subclass.
 The code runs without error and prints hop twice, making option B the answer.
 
+#### What can fill in the blank so the play() method can be called
+#### from all classes in the com.mammal package, but not the com.mammal.gopher package?
+
+``` java
+    package com.mammal;
+
+    public class Enrichment {
+        _____  void play() {}
+    }
+
+```
+* A. Leave it blank.
+* B. private
+* C. protected
+* D. public
+* E. None of the above.
+
+Since only one package needs access and it is the same package the class is in, option A is correct.
+
 
 
 

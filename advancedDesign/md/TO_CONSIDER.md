@@ -27,3 +27,23 @@ Therefore, option F is incorrect.
 The rest of the options are valid class names, making the answer options B, D, and E correct.
 Note that class names begin with an uppercase letter by convention,
 but this is not a requirement.
+
+#### How many of the following lines contain a compiler error?
+
+```java
+    double num1 = 2.718;
+    double num2 = 2._718;
+    double num3 = 2.7_1_8;
+    double num4 = _2.718;
+```
+
+
+* A. 0
+* B. 1
+* C. 2
+* D. 3
+* E. 4
+
+Underscores are allowed between any two digits in a numeric literal,
+causing num4 to fail to compile. Additionally, underscores are not allowed adjacent to a decimal point,
+causing a compiler error in num2. Since two lines have errors, option C is the correct answer.
