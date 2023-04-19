@@ -166,6 +166,19 @@ While it is legal to use the --add-exports option, it is not recommended, making
 You do not need to know how to use it for the exam, just that it is not a good idea.
 There is no equivalent option for requires, making option F correct.
 
+#####  Assuming all referenced files and directories exist and are correct, what does this code do?
+```txt
+  javac -m mods -d mouse mouse/com/mouse/*.java mouse/module-info.java
+  jar -cvf mods/com.mouse.jar -C mouse/ .
+```
+* A. Creates a JAR file representing the com.mouse module
+* B. Creates a JAR file that is not a module
+* C. Fails on the javac command
+* D. Fails on the jar command
+
+The javac command takes -p for the module path rather than -m.
+Since there is no –m on the javac command, option C is the correct answer.
+
 
 
 

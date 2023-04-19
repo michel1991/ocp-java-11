@@ -143,3 +143,29 @@ This means you can iterate through the array backward or forward.
 By contrast, with a for-each loop, the iteration order is determined for you.
 With an array, this means starting with index 0. Options A and F match this scenario.
 
+
+##### Fill in the blanks: The operators !=, _______, _______, _______,
+##### and ++ are listed in the same or increasing level of operator precedence. (Choose two.)
+* A. ==, *, !
+* B. /, %, *
+* C. *, --, /
+* D. !, *, %
+* E. +=, &&, *
+* F. *, ˂, /
+
+Option A is correct and lists the operators in the same
+or increasing level of operator precedence. In option B,
+the three operators actually have the same operator precedence,
+so it is correct. Option C is incorrect, as division (/)
+has a lower precedence than the decrement operator (--).
+Option D is incorrect because the logical complement operator (!) has
+a higher order of precedence than the other two operators.
+Option E lists the operators in the correct order,
+but they don’t fit within not equals (!=) and the increment operator (++) as listed in the question.
+In particular, compound addition operator (+=) and short-circuit logical operator (&&)
+have a lower precedence than the not equals operator (!=).
+Finally, option F is incorrect because the relational operator
+(<) does not fit between multiplication operator (*)
+and the division operator (/) in order of precedence.
+
+

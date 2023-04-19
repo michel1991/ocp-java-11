@@ -104,3 +104,23 @@ The correct method to obtain a parallel stream of an arbitrary stream is paralle
 while the correct method to obtain a parallel stream that operates on a Collection is parallelStream().
 For this reason, options C, E, and F are correct.
 Note that option E retrieves a parallel stream of an already parallel stream, which is allowed.
+
+
+#### Which statements about parallel streams are correct? (Choose two.)
+* A. A parallel stream is always faster than a serial stream.
+* B. The JVM will automatically apply a parallel stream operation to an arbitrary stream in order to boost performance.
+* C. A parallel stream synchronizes its operations so that they are atomic.
+* D. All streams can be converted to a parallel stream.
+* E. If a stream uses a reduction method, the result will be the same regardless of whether the stream is parallel or serial.
+* F. Sometimes, a parallel stream will still operate in a single-threaded manner.
+
+Certain stream operations, such as limit() or skip(), force a parallel
+stream to behave in a serial manner, so option A is incorrect, and option F is correct.
+Option B is also incorrect. The stream must be explicitly set to be parallel in order
+for the JVM to apply a parallel operation. Option C is incorrect because parallel
+stream operations are not synchronized. It is up to the developer
+to provide synchronization or use a concurrent collection if required.
+Option D is also correct. The BaseStream interface, which all streams inherit,
+includes a parallel() method. Of course, the results of an operation may change
+in the presence of a parallel stream, such as using a problematic (non-associative) accumulator.
+For this reason, option E is incorrect.

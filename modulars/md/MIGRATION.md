@@ -77,3 +77,31 @@ In a top-down migration, all modules are moved to the module path first,
 making option C incorrect. In a bottom-up migration,
 modules are moved, starting with those without dependencies.
 Therefore, option A is correct.
+
+##### Which are true statements about types of migration? (Choose three.)
+* A. All modules are immediately moved to the module path in a bottom-up migration.
+* B. All modules are immediately moved to the module path in a top-down migration.
+* C. Modules migrate before the modules that depend on them in a bottom-up migration.
+* D. Modules migrate before the modules that depend on them in a top-down migration.
+* E. Modules that are not yet named modules are automatic modules in a bottom-up migration.
+* F. Modules that are not yet named modules are automatic modules in a top-down migration
+
+A top-down migration starts by moving all the modules to the module path as automatic modules,
+making options B and F correct.
+A bottom-up migration moves each module after all modules
+it depends on have been migrated, making option C correct.
+
+##### Which statements are true? (Choose two.)
+* A. A bottom-up migration has more steps involving the classpath than a top-down migration.
+* B. A top-down migration has more steps involving the classpath than a bottom-up migration.
+* C. Both types of migration have the same number of steps involving the classpath.
+* D. A bottom-up migration has unnamed modules on the module path
+* E. A top-down migration has unnamed modules on the module path.
+* F. Neither migration type has unnamed modules on the module path.
+
+A bottom-up migration leaves unnamed modules on the classpath
+until they are migrated to the module path, making option A correct and option D incorrect.
+A top-down migration immediately moves all modules to the module path as automatic
+modules making options B and E incorrect. Therefore, option F is the other correct answer.
+
+
