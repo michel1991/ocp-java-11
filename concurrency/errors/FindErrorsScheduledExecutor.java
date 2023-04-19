@@ -32,4 +32,26 @@ public class FindErrorsScheduledExecutor {
         System.out.println("Wake Staff"));
                System.out.println(result.get());   // w4
    }
+
+    /**
+     *  How many lines of the following code snippet contain compilation errors?
+        A. None
+        B. One
+        C. Two
+        D. Three
+        E. None of the above
+
+        Line 13 does not compile because the execute() method has a return type of void, not Future.
+        Line 15 does not compile because scheduleAtFixedRate()
+        requires four arguments that include an initial delay and period value.
+         For these two reasons, option C is the correct answer
+
+     */
+    static void anotherExample(){
+        ScheduledExecutorService t = Executors // 11:
+         .newSingleThreadScheduledExecutor(); // 12:
+        Future result = t.execute(System.out::println); //   13:
+        t.invokeAll(null); //    14:
+        t.scheduleAtFixedRate(() -> {return;},5,TimeUnit.MINUTES); // 15:
+    }
 }
