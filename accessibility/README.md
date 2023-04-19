@@ -159,3 +159,20 @@ This variable has protected access, which means code in the same package
 can access it in addition to subclasses.
 There are two classes in the com.color package
 and one class that subclasses it, making option D the answer.
+
+#### Which statements can accurately fill in the blanks in this table? (Choose two.)
+Variable Type	Can Be Called Within the Class from What Type of Method? [image](./images/variable-type-can-be-called.png)
+Instance	      Blank 1: _____________
+static	       Blank 2: _____________
+
+* A. Blank 1: an instance method only
+* B. Blank 1: a static method only
+* C. Blank 1: an instance or static method
+* D. Blank 2: an instance method only
+* E. Blank 2: a static method only
+* F. Blank 2: an instance or static method
+
+
+An instance variable can be referenced only from instance methods in the class,
+making option A correct. A static variable can be referenced from any method.
+Therefore, option F is correct.

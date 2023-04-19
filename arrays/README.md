@@ -29,3 +29,15 @@ Option B is the answer because nums2b points to a 3D array.
 It has only three pairs of brackets before the variable and none after.
 By comparison, nums2a has three pairs
 of brackets before the variable and the fourth pair of brackets after.
+
+##### Which statement is true?
+* A. You can always change a method signature from call(String[] arg) to call(String... arg) without causing a compiler error in the calling code.
+* B. You can always change a method signature from call(String... arg) to call(String[] arg) without causing a compiler error in the existing code.
+* C. Both of the above.
+* D. Neither of the above.
+
+From within a method, an array parameter and a varargs parameter are treated the same.
+From the caller, an array parameter is more restrictive.
+Both types can receive an array.
+However, only a varargs parameter is allowed to automatically turn individual parameters into an array.
+Therefore, the answer is option A.
