@@ -1,4 +1,5 @@
-### What is true of a module containing a file named module-info.java with the following contents? (Choose all that apply.)
+#### What is true of a module containing a file named module-info.java
+#### with the following contents? (Choose all that apply.)
 ```java
 module com.food.supplier {}
 ```
@@ -9,10 +10,34 @@ module com.food.supplier {}
 *  E. The module-info.java file contains a compiler error.
 *  F. The module-info.java filename is incorrect.
 
-Packages inside a module are not exported by default, making option B correct and option A incorrect.
+Packages inside a module are not exported by default,
+making option B correct and option A incorrect.
 Exporting is necessary for other code to uses the packages;
-it is not necessary to call the main method at the command line, making option C correct and option D incorrect.
-The module-info.java file has the correct name and compiles, making options E and F incorrect.
+it is not necessary to call the main method at the command line,
+making option C correct and option D incorrect.
+The module-info.java file has the correct name and compiles,
+making options E and F incorrect.
+
+###### Suppose you have a module named com.vet.
+###### Where could you place the following module-info.java
+###### file to create a valid module?
+
+```java
+    public module com.vet {
+        exports com.vet;
+    }
+```
+* A. At the same level as the com folder
+* B. At the same level as the vet folder
+* C. Inside the vet folder
+
+If this were a valid module-info.java file,
+it would need to be placed at the root directory of the module, which is option A.
+However, a module is not allowed to use the public access modifier.
+Option D is correct because the provided
+file does not compile regardless of placement in the project.
+For more information, see Chapter 11.
+
 
 ### Which two are required in any module? (Choose two.)
 *  A. A file named module.java
@@ -29,8 +54,8 @@ There must be at least one package. making option F the second correct answer.
 
 ### What is true about the following module-info.java file?
 ``` java
-module Book {
-}
+    module Book {
+    }
 ```
 * A. It does not compile because it is empty.
 * B. It does not compile because the module name is uppercase.
@@ -124,11 +149,11 @@ and for module com.sf, that is location Y. Therefore, option B is correct.
 
 ##### How many of these module declarations are valid?
 ```java
-module com.apple { exports com.apple; }
-module com.4apple { requires com.apple;}
-module com.apple4 { declares com.apple; }
-module com.apple-four { }
-module com.apple$ {}
+    module com.apple { exports com.apple; }
+    module com.4apple { requires com.apple;}
+    module com.apple4 { declares com.apple; }
+    module com.apple-four { }
+    module com.apple$ {}
 ```
 
 * A. None.
@@ -147,6 +172,27 @@ and com.apple-four modules are invalid because identifier or
 identifier segments may not start with a digit nor contain a dash.
 The com.apple4 module is invalid because declares is not a valid module directive.
 Since only two are valid, option C is the answer.
+
+### Which is the first line to contain a compiler error?
+```java
+module snake { //  1:
+    exports com.snake.tail; // 2:
+    exports com.snake.fangs to bird; //   3:
+    requires skin; //    4:
+    requires transitive skin; // 5:
+} //  6:
+```
+* A. Line 1.
+* B. Line 2.
+* C. Line 3.
+* D. Line 4.
+* E. Line 5.
+* F. The code does not contain any compiler errors.
+
+The module name is valid as are the exports statements.
+Lines 4 and 5 are tricky because each is valid independently.
+However, the same module name is not allowed to be used in two requires statements.
+The second one fails to compile on line 5, making option E the answer.
 
 
 

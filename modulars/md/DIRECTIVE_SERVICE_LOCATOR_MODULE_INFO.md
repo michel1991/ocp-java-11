@@ -1,4 +1,5 @@
-### Suppose you have the following class in a module named animal.insect.impl. Which two most likely go in the module-info of the service locator? (Choose two.)
+#### Suppose you have the following class in a module named animal.insect.impl.
+#### Which two most likely go in the module-info of the service locator? (Choose two.)
 
 ```java
     package animal.insect.impl;
@@ -30,22 +31,34 @@ Option C is incorrect because we need the service provider interface module,
 and it refers to the service provider module.
 Option E is easier, since the uses directive works with an interface name.
 
-#### Suppose the consumer, service locator, service provider,
-#### and service provider interface are each in separate modules.
-#### Which of the following best describes the following module-info file?
 
-```java
-    module nature.tree {
-        requires nature.sapling;
-        requires nature.bush;
+###### Suppose you are writing a class that calls ServiceLoader and is trying
+###### to look up the Dragon implementation.
+###### Which line of code needs to be in your module-info.java?
+
+``` java
+    package magic;
+    public interface Magic {
+        String getPower();
     }
+
+    package dragon;
+    import magic.*;
+
+    public class Dragon implements Magic {
+        public String getPower() {
+            return "breathe fire";
+        }
+    }
+
 ```
+* A. uses dragon;
+* B. uses dragon.Dragon;
+* C. uses magic.Magic;
+* D. uses dragon.Dragon as magic.Magic;
+* E. uses dragon.Dragon with magic.Magic;
+* F. None of the above
 
-* A. Consumer
-* B. Service locator
-* C. Service provider
-* D. Service provider interface
-* E. None of the above
-
-Option A is correct because a consumer has two dependencies.
-It requires both the service provider interface and the service locator.
+A service locator specifies the interface name, making option C correct.
+Note that options D and E are trying to trick you by mixing
+up the provides directive syntax with the uses directive syntax.
