@@ -1,4 +1,4 @@
-package operations;
+package operations.unary;
 
 public class UnaryOperation {
     /**

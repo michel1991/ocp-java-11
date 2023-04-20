@@ -1,4 +1,4 @@
-package operations;
+package operations.loops;
 public class ChoiceCorrectLoop {
     /**
     *  Given the following array, which code snippets print the elements in reverse order from how they are declared? (Choose all that apply.)

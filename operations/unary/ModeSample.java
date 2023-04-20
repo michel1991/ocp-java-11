@@ -1,4 +1,4 @@
-package operations;
+package operations.unary;
 
 /**
 * What is the result of the following code?

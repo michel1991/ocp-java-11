@@ -1,4 +1,4 @@
-package operations;
+package operations.switchs;
 
  /**
     What is the output of the following application?

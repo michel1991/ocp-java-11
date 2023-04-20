@@ -1,4 +1,4 @@
-package operations;
+package operations.loops;
 public class Loop {
     /**
     * What is the result of the following code snippet?

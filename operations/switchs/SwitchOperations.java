@@ -1,4 +1,4 @@
-package operations;
+package operations.switchs;
 
 public class SwitchOperations {
     /**

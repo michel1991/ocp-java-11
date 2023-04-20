@@ -1,4 +1,4 @@
-package operations;
+package operations.switchs;
 /**
    Which of these code snippets behaves differently from the others?
    D. All three code snippets do the same thing.

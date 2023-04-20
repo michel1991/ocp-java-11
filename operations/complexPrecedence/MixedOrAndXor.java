@@ -1,4 +1,4 @@
-package operations;
+package operations.complexPrecedence;
 public class MixedOrAndXor {
     /**
     *  What are the outputs of the following code snippet? (Choose all that apply.)

@@ -1,4 +1,4 @@
-package operations;
+package operations.loops;
 public class InfiniteLoop {
     /**
     * What is the result of the following code snippet?
