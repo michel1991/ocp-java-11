@@ -26,7 +26,7 @@ Option C is correct as it matches both of those characteristics.
 
 #### For a top-down migration, all modules other
 #### than named modules are ________________ modules and on the __________________.
-* A. automatic, classpath
+*  A. automatic, classpath
 *  B. automatic, module path
 *  C. unnamed, classpath
 *  D. unnamed, module path

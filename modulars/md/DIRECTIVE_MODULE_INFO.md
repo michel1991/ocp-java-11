@@ -251,25 +251,6 @@ There is a trick here. A module definition uses the keyword module rather than c
 Since the code does not compile, option E is correct. If the code did compile,
 options A and D would be correct.
 
-###### Suppose the consumer, service locator, service provider,
-###### and service provider interface are each in separate modules.
-###### Which of the following best describes the following module-info file?
-
-```java
-module nature.tree{
-    requires nature.sapling;
-    provides nature.sapling.Tree with nature.tree.Maple
-}
-```
-
-* A. Consumer
-* B. Service locator
-* C. Service provider
-* D. Service provider interface
-* E. None of the above
-
-Option C is correct because a service provider requires the interface. It also provides the implementation.
-
 
 
 ### Which of the following statements are true in a module-info.java file? (Choose all that apply.)

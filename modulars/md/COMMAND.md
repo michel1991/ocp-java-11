@@ -9,6 +9,16 @@
 Option B is correct because the only command that has a --module option is java.
 Option E is correct because -m is equivalent.
 
+### Which commands take a --describe-module parameter? (Choose all that apply.)
+* A. javac
+* B. java
+* C. jar
+* D. jdeps
+* E. jmod
+* F. None of the above
+
+Options B and C are correct because the -d (--describe-module)
+option can be passed when to the java and jar commands.
 
 ### Which commands take a --module-path parameter? (Choose all that apply.)
 *  A. javac

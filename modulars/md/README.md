@@ -1,20 +1,3 @@
-### What is true about a service provider module? (Choose all that apply.)
-* A. It contains the interface that implementations must provide
-* B. It contains exactly one implementation of the interface.
-* C. It contains one or more implementations of the interface.
-* D. It can be changed without recompiling any other modules.
-* E. It must have a provides directive.
-* F. It must have a uses directive.
-
-A service provider interface declares the interface rather than a service provider,
-making option A incorrect.
-Each service provider is allowed to provide only one service provider implementation,
-making option B correct and option C incorrect.
-One of the benefits of services is being able to change
-the service provider dynamically, making option D correct.
-Finally, a service provider interface uses while a service provider provides,
-making option E correct and option F incorrect.
-
 ### Which are true statements? (Choose all that apply.)
 *  A. An automatic module exports all packages to named modules.
 *  B. An automatic module exports only the specified packages to named modules.
@@ -55,31 +38,8 @@ be referenced from an automatic module.
 
 Java puts source code in .java files and bytecode in .class files.
 It does not use a .bytecode file.
-When running a Java program, you pass just the name of the class without the .class extension.
-
-
-##### Suppose you have the commands javac, java, and jar.
-##### How many of them support a --show-module-resolution option?
-* A. 0
-* B. 1
-* C. 2
-* D. 3
-
-The java command uses this option to print information when the program loads.
-You might think jar does the same thing since it runs a program too.
-Alas, this parameter does not exist on jar.
-
-
-### Which commands take a --describe-module parameter? (Choose all that apply.)
-* A. javac
-* B. java
-* C. jar
-* D. jdeps
-* E. jmod
-* F. None of the above
-
-Options B and C are correct because the -d (--describe-module)
-option can be passed when to the java and jar commands.
+When running a Java program,
+you pass just the name of the class without the .class extension.
 
 
 #### Suppose you have a project with one package named magic.wand and another project with one package named magic.potion.
@@ -165,7 +125,8 @@ Option F is incorrect because identifiers are not allowed to have a dash.
 When running java with the -d option, all the required modules are listed.
 Additionally, the java.base module is listed since it is included automatically.
 The line ends with mandated, making option A correct.
-The java.lang is a trick since that is a package that is imported by default in a class rather than a module.
+The java.lang is a trick since that is a package
+that is imported by default in a class rather than a module.
 
 
 ### Using the diagram, which boxes represent the consumer and service locator, respectively?
@@ -267,7 +228,8 @@ making option E the other answer.
 * E. module-data.java
 * F. module-info.java
 
-The module-info.java file is used to declare a module. You must memorize the name of this file.
+The module-info.java file is used to declare a module.
+You must memorize the name of this file.
 
 ##### Given the diagram in the previous question, what could we add to module-info.java
 ##### in com.duck to allow the com.park package to reference the Duckling class,
@@ -279,7 +241,8 @@ The module-info.java file is used to declare a module. You must memorize the nam
 * E. exports com.park to com.duckling;
 * F. None of the above
 
-It is not possible to provide access outside the module while also limiting access within the com.duck module.
+It is not possible to provide access outside
+the module while also limiting access within the com.duck module.
 Options A and C are tempting because they do provide access in com.park.
 However, they do not prevent the Egg class in the com.egg package from accessing
 the com.duckling package. Remember that the com.egg package is in the com.duck module,
@@ -292,7 +255,6 @@ so the access cannot be restricted. Therefore, option F is correct.
 * D. jar and jmod
 * E. jar and zip
 * F. jmod and zip
-[image](./images/doubleConsumerIntFunctionLongSupplierObjDoubleConsumer.png)
 The jar file format is most common. The JMOD jmod format is used as well.
 Therefore, option D is correct.
 
@@ -315,4 +277,5 @@ Since it is not part of the service, option E is the correct answer.
 
 [image](./images/dog.hair_automatic_module.jpg)
 You need to know about three types of modules for the exam: automatic, named, and unnamed.
-There is no such thing as a default module. The question was trying to trick you, and option E is correct.
+There is no such thing as a default module.
+The question was trying to trick you, and option E is correct.

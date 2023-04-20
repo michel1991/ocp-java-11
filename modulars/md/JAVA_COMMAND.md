@@ -148,3 +148,15 @@ Options B and E are similar to options that exist:
 --describe-module and --show-module-resolution.
 But neither gives a list of all the modules that come with the JDK.
 
+
+##### Suppose you have the commands javac, java, and jar.
+##### How many of them support a --show-module-resolution option?
+* A. 0
+* B. 1
+* C. 2
+* D. 3
+
+The java command uses this option to print information when the program loads.
+You might think jar does the same thing since it runs a program too.
+Alas, this parameter does not exist on jar.
+

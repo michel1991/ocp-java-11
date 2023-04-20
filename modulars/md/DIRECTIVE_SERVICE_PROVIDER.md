@@ -16,4 +16,5 @@
 * D. Service provider interface
 * E. None of the above
 
-Option C is correct because a service provider requires the interface. It also provides the implementation.
+Option C is correct because a service provider requires the interface.
+It also provides the implementation.
