@@ -28,7 +28,7 @@ public class CreateListFromArrays {
     }
 
     public static void main(String... args){
-
+        firstExample();
     }
 
 }
