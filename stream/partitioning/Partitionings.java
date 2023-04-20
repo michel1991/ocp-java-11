@@ -1,6 +1,7 @@
-package stream;
+package stream.partitioning;
 import java.util.stream.*;
 import java.util.*;
+import static java.util.stream.Collectors.*;
 import java.util.Map.*;
 import java.util.function.*;
 
@@ -41,6 +42,33 @@ public class Partitionings {
             .collect(Collectors.partitioningBy(notEmpty)); // 31:
             System.out.println(result);  //  32:
   }
+
+    /**
+     *  What is true of this code? (Choose two.)
+        A. It outputs {true=[true]}.
+        B. It outputs {false=null, true=[true]}.
+        C. It outputs {false=[], true=[true]}.
+        D. It outputs {false=[null], true=[true]}.
+        E. The output is the same if line k is removed.
+        F. The output is different after line k is removed.
+
+       The first intermediate operation, limit(1), gets rid of the null.
+       The partitioningBy() method returns a map with two keys, true and false,
+       regardless of whether any elements actually match.
+       If there are no matches, the value is an empty list,
+       making option C correct. If line k is removed,
+       the code throws a NullPointerException,
+       since null is nether true nor false. Therefore, option F is the other answer.
+
+     */
+    static void withBool(){
+        var bools = Stream.of(Boolean.TRUE, null);
+        var map = bools
+                   .limit(1)    // line k
+                   .collect(partitioningBy(b -> b));
+                        System.out.println(map);
+
+    }
 
     public static void main(String... args){
         makeWithGenerate();
