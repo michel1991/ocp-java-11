@@ -51,6 +51,36 @@ public class CallStreamTwice {
         System.out.println(p + " " + g);
     }
 
+    /**
+     * What is true of the following code?
+        A. The code runs without error and prints 0.
+        B. The code runs without error and prints 1.
+        C. The code throws an exception on line 23.
+        D. The code throws an exception on line 24.
+        E. The code throws an exception on line 25.
+        F. The code throws an exception on line 26.
+
+       A stream cannot be used again once it is executed.
+       Line 21 creates a stream. Line 22 creates a second stream;
+       however, the reference is lost on line 23.
+       Lines 23 and 24 add intermediate operations to the stream
+       that was created on line 21. Due to lazy evaluation,
+       they do not run it. Line 25 does execute the stream pipeline and prints 0.
+       However, line 26 attempts to execute the same stream
+        and throws an IllegalStateException. This matches option F.
+
+
+     */
+    static void callByChangingReference(){
+        Stream<Integer> s1 = Stream.of(8, 2); //  21:
+        Stream<Integer> s2 = Stream.of(10, 20); //   22:
+        s2 = s1.filter(n -> n > 4); //   23:
+        s1 = s2.filter(n -> n < 1); //  24:
+        System.out.println(s1.count()); // 25:
+        System.out.println(s2.count()); //  26:
+
+    }
+
 
 
     public static void main(String... args){
@@ -66,6 +96,5 @@ public class CallStreamTwice {
         }catch(Exception ex){
             ex.printStackTrace();
         }
-
     }
 }
