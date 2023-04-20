@@ -10,8 +10,9 @@ public class ArrayCreationWithoutSize {
 
         When creating an array object, a set of elements or size is required.
         Therefore, lion and bear are incorrect.
-        Thebrackets containing the size are required to be after the type,
-        making ohMy incorrect. The only one that is correct is tiger, making the correct answer option B.
+        The brackets containing the size are required to be after the type,
+        making ohMy incorrect. The only one that is correct is tiger,
+        making the correct answer option B.
 
      */
   static void creation(){
