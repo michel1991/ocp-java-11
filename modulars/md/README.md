@@ -279,3 +279,17 @@ Since it is not part of the service, option E is the correct answer.
 You need to know about three types of modules for the exam: automatic, named, and unnamed.
 There is no such thing as a default module.
 The question was trying to trick you, and option E is correct.
+
+#### What is a benefit of using modules? (Choose three.)
+* A. Ability to reuse code
+* B. Clearer dependency management
+* C. Improved performance
+* D. Multithreading support
+* E. Platform independence
+* F. Unique package enforcement
+
+Options A, D, and E are incorrect because they are benefits of Java even without modules.
+Option B is correct because the module-info file clarifies dependencies.
+Option C is correct because a smaller deployment package can be faster.
+Finally, option F is correct because the module
+system prevents the same package from being used from multiple JAR files.

@@ -107,3 +107,20 @@ but they are not called as part of deserialization.
 Finally, there is no restoreObject() method that is used in standard deserialization.
 For these reasons, option F is correct.
 
+##### Fill in the blanks: The ___________ class variable defines a whitelist of fields that should be serialized,
+##### while the ___________ modifier is used to construct a blacklist
+##### of fields that should not be serialized. (Choose two.)
+* A. serialVersionUID in the first blank
+* B. serialFields in the first blank
+* C. serialPersistentFields in the first blank
+* D. ignore in the second blank
+* E. transient in the second blank
+* F. skip in the second blank
+
+Options B, D, and F are not supported options in Java.
+The serialVersionUID class variable can beused in serialization,
+but it relates to the version of the class stored, not the choice in fields serialized,
+making option A incorrect. That leaves options C and E as the correct answers.
+TheserialPersistentFields class variable defines a whitelist of fields to serialize,
+while thetransientmodifier constructs a blacklist of fields to skip.
+

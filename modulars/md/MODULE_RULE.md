@@ -85,35 +85,10 @@ None of these problems prevents the file from compiling, though.
 * E. The directory structure would be a valid module if module-info.java were added directly underneath zoo.
 * F. None of these changes would make this directory structure a valid module.
 
-Modules are required to have a module-info.java file at the root directory of the module. Option D matches this requirement.
+Modules are required to have a module-info.java
+file at the root directory of the module.
+Option D matches this requirement.
 
-### How many of the following are legal module-info.java files?
-``` java
-    module com.koala {
-        exports cute;
-    }
-    module com-koala {
-        exports cute;
-    }
-    public module com.koala {
-        exports cute;
-    }
-    public module com-koala {
-        exports cute;
-    }
-```
-
-*  A. None
-*  B. One
-*  C. Two
-*  D. Three
-*  E. Four
-
-Since Java does not allow dashes in identifier names,
-the second and fourth declarations are invalid. Additionally,
-access modifiers are not permitted in module declarations,
-making the third and fourth declarations invalid.
-The only one that is legal is the first declaration, so option B is correct.
 
 ###### Given the diagram in question 78 and the following module-info.java for the panda module,
 ###### what is the result of including line m1?
@@ -147,6 +122,34 @@ file in the root directory of the module.
 For module com.ny, that is location W,
 and for module com.sf, that is location Y. Therefore, option B is correct.
 
+### How many of the following are legal module-info.java files?
+``` java
+    module com.koala {
+        exports cute;
+    }
+    module com-koala {
+        exports cute;
+    }
+    public module com.koala {
+        exports cute;
+    }
+    public module com-koala {
+        exports cute;
+    }
+```
+*  A. None
+*  B. One
+*  C. Two
+*  D. Three
+*  E. Four
+
+Since Java does not allow dashes in identifier names,
+the second and fourth declarations are invalid. Additionally,
+access modifiers are not permitted in module declarations,
+making the third and fourth declarations invalid.
+The only one that is legal is the first declaration,
+so option B is correct.
+
 ##### How many of these module declarations are valid?
 ```java
     module com.apple { exports com.apple; }
@@ -172,6 +175,46 @@ and com.apple-four modules are invalid because identifier or
 identifier segments may not start with a digit nor contain a dash.
 The com.apple4 module is invalid because declares is not a valid module directive.
 Since only two are valid, option C is the answer.
+
+#### How many of these module declarations are valid?
+
+```java
+    module com.leaf {}
+    module com.leaf2 {}
+    module com-leaf { }
+    module LEAF {}
+    module leaf2 {}
+```
+* A. Zero
+* B. One
+* C. Two
+* D. Three
+* E. Four
+* F. Five
+
+Module names are permitted to be any valid variable name with the addition of dot separators (.).
+The only one that is problematic is com-leaf because dashes are not allowed, making option E correct.
+As a reminder, numbers are permitted as long as they are not the first character in a segment.
+Capital letters are discouraged but allowed.
+
+#### Which of the following is true of the following module declaration?
+``` java
+    1: class com.mammal {
+        2:    exports com.mammal.cat;
+        3:    exports cat.mammal.mouse to com.mice;
+        4:    uses com.animal;
+        5: }
+
+```
+
+* A. The first line that fails to compile is line 1.
+* B. The first line that fails to compile is line 2.
+* C. The first line that fails to compile is line 3.
+* D. The first line that fails to compile is line 4.
+* E. The code compiles.
+
+A module-info file is required to start with module rather than class.
+Therefore, the first line doesn’t compile, and option A is correct.
 
 ### Which is the first line to contain a compiler error?
 ```java

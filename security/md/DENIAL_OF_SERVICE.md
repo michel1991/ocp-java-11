@@ -27,3 +27,16 @@ Even a regular denial of service attack often requires multiple requests.
 For example, if you forget to close resources,
 it will take a number of tries for your application to run out resources.
 Therefore, option D is correct.
+
+#### Which type of attack requires more than one source to initiate?
+* A. Billion laughs attack
+* B. Million frowns attack
+* C. Distributed denial of service attack
+* D. SQL injection
+* E. Inclusion attack
+* F. Denial of service attack
+
+A distributed denial of serviceattack is a denial of service attack
+that comes from multiple sources, making option C correct.
+There is no such thing as a million frowns attack.
+The rest of the answers are real attacks but can be executed from a single source.

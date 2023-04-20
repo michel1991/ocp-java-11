@@ -28,3 +28,26 @@ on the same action could be executing at the same time,
 making option B the correct answer. On the other hand,
 scheduleWithFixedDelay() waits until each task is completed before scheduling the next task,
 guaranteeing at most one thread working on the action is active in the thread pool.
+
+#### Fill in the blanks: ______________ is a special case of ______________,
+#### in which two or more active threads try
+#### to acquire the same set of locks and are repeatedly unsuccessful.
+* A. Deadlock, livelock
+* B. Deadlock, resource starvation
+* C. Livelock, resource starvation
+* D. Resource starvation, race conditions
+* E. Resource starvation, livelock
+* F. None of the above
+
+Resource starvation is when a single active thread is perpetually unable
+to gain access to a shared resource. Livelock is a special
+case of resource starvation, in which two or more active
+threads are unable to gain access to shared resources,
+repeating the process over and over again.
+For these reasons, option C is the correct answer.
+Deadlock and livelock are similar,
+although in a deadlock situation the threads are stuck waiting,
+rather than being active or performing any work.
+Finally, a race condition is an undesirable
+result when two tasks that should be completed sequentially are completed at the same time.
+

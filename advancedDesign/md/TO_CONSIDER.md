@@ -45,5 +45,26 @@ but this is not a requirement.
 * E. 4
 
 Underscores are allowed between any two digits in a numeric literal,
-causing num4 to fail to compile. Additionally, underscores are not allowed adjacent to a decimal point,
-causing a compiler error in num2. Since two lines have errors, option C is the correct answer.
+causing num4 to fail to compile. Additionally,
+underscores are not allowed adjacent to a decimal point,
+causing a compiler error in num2.
+Since two lines have errors, option C is the correct answer.
+
+#### Which of the following is a valid method name in Java? (Choose two.)
+* A. Go_$Outside$2()
+* B. have-Fun()
+* C. new()
+* D. 9enjoyTheWeather()
+* E. $sprint()
+* F. walk#()
+
+Options A and E are correct since method names may include
+the underscore (_) character as well as the dollar ($) symbol.
+Note that there is no rule that requires
+a method start with a lowercase character;
+it is just a practice adopted by the community.
+Options B and F are incorrect because the hyphen (-) and pound (#) characters
+may not be part of a method name. Option C is incorrect
+since new is a reserved word in Java.
+Finally, option D is incorrect.
+A method name must start with a letter, the dollar ($) symbol, or an underscore (_) character.

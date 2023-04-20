@@ -205,3 +205,18 @@ and PrintStream both extend FilterOutputStream.
 Note that ByteArrayOutputStream and FileOutputStream referenced in Options C and D,
 respectively, do not extend FilterOutputStream,
 although knowing this fact was not required to solve the problem.
+
+##### Which method defined in Reader can be used in place of calling skip(1)?
+* A. jump()
+* B. mark()
+* C. markSupported()
+* D. read()
+* E. reset()
+* F. None of the above
+
+The skip(1) method just reads a single byte and discards the value.
+The read() method can be used for a similar purpose,
+making option D the correct answer.
+Option A is incorrect because there is no jump() method defined in Reader.
+Options B, C, and E are incorrect because they cannot be used to skip data,
+only to mark a location and return to it later.

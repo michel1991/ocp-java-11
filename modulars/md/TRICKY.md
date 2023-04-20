@@ -25,3 +25,26 @@ This question is tricky. The service provider must have a uses directive,
 but that is on the service provider interface.
 No modules need to specify requires on the service provider since that is the implementation.
 
+#### Suppose the consumer, service locator, service provider,
+#### and service provider interface are each in separate modules.
+#### Which of the following best describes the following module-info file?
+
+```java
+    module nature.tree{
+        requires nature.sapling;
+    }
+
+```
+
+* A. Consumer
+* B. Service locator
+* C. Service provider
+* D. Service provider interface
+* E. None of the above
+
+A consumer requires both the service locator and service provider interface.
+A service locator and service provider interface need to have an exports statement.
+A service provider needs a provides directive.
+Since none of them matches, option E is the correct answer.
+
+

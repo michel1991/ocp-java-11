@@ -226,3 +226,22 @@ The rest of the functional interfaces all take a long value but vary on the name
 LongFunction contains apply() and LongPredicate contains test(),
 making options B and C, respectively, incorrect.
 That leaves us with LongConsumer, which contains accept(), making option A the correct answer.
+
+#### Which of the following is not a functional interface in the java.util.function package? (Choose two.)
+* A. BiPredicate
+* B. DoubleUnaryOperator
+* C. IntUnaryOperator
+* D. ObjectDoubleConsumer
+* E. ObjectIntConsumer
+* F. ToLongFunction
+
+The BiPredicate interface takes two generic arguments
+and returns a boolean value.
+Next, DoubleUnaryOperator and IntUnaryOperator exist and
+transform values of type double and int, respectively.
+Last, ToLongFunction takes a generic argument and returns a long value.
+That leaves options D and E, which is the answer.
+While there are ObjDoubleConsumer and ObjIntConsumer functional interfaces,
+there is no such thing as ObjectDoubleConsumer or ObjectIntConsumer.
+Remember that Object is abbreviated
+to Obj in all functional interfaces in java.util.function.

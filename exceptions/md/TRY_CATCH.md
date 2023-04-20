@@ -87,3 +87,17 @@ For this reason, option C is correct.
 
 ClassCastException is a subclass of RuntimeException,
 so it must appear first in any related catch blocks. For this reason, option C is correct.
+
+#### Given the following keywords, in which order could they be used? (Choose two.)
+* A. try, finally
+* B. catch, try, finally
+* C. try, catch, catch, finally
+* D. finally, catch, try
+* E. try, finally, catch
+* F. try, catch, finally, finally
+
+The correct order of blocks is try, catch, and finally.
+For a traditional try/catch block at least one catch or finally must be used.
+In addition, multiple catch blocks are allowed,
+although at most one finally block is allowed.
+For these reasons, options A and C are correct, and the rest are incorrect.
