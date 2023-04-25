@@ -3,7 +3,9 @@ import java.nio.file.*;
 import java.io.*;
 
 /**
- * What is the expected result of calling deleteTree() on a directory? Assume the directory exists and is able to be modified.
+  What is the expected result of calling deleteTree() on a directory? Assume the directory
+   exists and is able to be modified.
+   
     A. It will delete the directory itself only.
     B. It will delete the directory and its file contents only.
     C. It will delete the entire directory tree.

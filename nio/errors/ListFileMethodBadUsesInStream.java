@@ -1,4 +1,4 @@
-package nio.errors;
+package stream.filters.errors;
 import java.io.*;
 import java.util.stream.*;
 import java.util.*;
@@ -16,9 +16,10 @@ public class ListFileMethodBadUsesInStream {
         F. None of the above.
 
         Line 35 does not compile as listFiles() returns an instance of File[], not String[].
-        For this reason, option F is correct. If the type of variable s on line 35 were changed to File,
-        then the code would compile and print the files and directories, not the entire directory tree,
-        and option B would be correct.
+        For this reason, option F is correct.
+        If the type of variable s on line 35 were changed to File,
+        then the code would compile and print the files and directories,
+        not the entire directory tree, and option B would be correct.
 
      */
     static void printDirectory(String name) { // 31:
