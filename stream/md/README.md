@@ -116,5 +116,18 @@ The partitioningBy() method automatically groups using a Boolean key.
 However, we can also have a Boolean key with groupingBy().
 For example, we could write s -˃ s.length() ˃ 3. Therefore, option F is correct.
 
+#### The following figure represents a stream pipeline.
+#### Given this, would the boxes X, Y, Z best represent?
+[image](images/source_intermediate_terminal.jpg)
+* A. Origin, intermediate operation, and final operation
+* B. Origin, intermediate operation, and sink
+* C. Origin, intermediate operation, and terminal operation
+* D. Source, intermediate operation, and final operation
+* E. Source, intermediate operation, and sink
+* F. Source, intermediate operation, and terminal operation
+
+The source is the first operation, and the terminal operation comes last,
+making option F the answer. You need to know this terminology.
+
 
 
