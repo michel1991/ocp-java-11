@@ -134,5 +134,26 @@ Since the first two rows are already finite streams,
 boxes M and N do not require an intermediate operation to complete,
 so options D, E, and F are incorrect. Box P does not need an intermediate operation either,
 since findFirst() will cause the stream to terminate, making options A and C incorrect.
-Box O does need to be filled in with code such as limit(1). This allows the code to terminate, and option B is the answer.
+Box O does need to be filled in with code such as limit(1).
+This allows the code to terminate, and option B is the answer.
+
+#### Suppose you have a stream with one element and the
+#### code stream.xxxx.forEach(System.out::println).
+#### Filling in xxxx from top to bottom in the table,
+#### how many elements can be printed out?
+#### Assume a valid lambda expression is passed to each method in the table.
+[image](images/filter_flatmap_map.png)
+* A. Zero or one, zero or more, exactly one
+* B. Zero or one, exactly one, zero or more
+* C. Zero or one, zero or more, zero or more
+* D. Exactly one, zero or more, exactly one
+* E. Exactly one, exactly one, zero or more
+* F. Exactly one, zero or more, zero or more
+
+The filter() method either passes along a given element or doesn’t, making options D, E, and F incorrect.
+The flatMap() method doesn’t pass along any elements for empty streams.
+For nonempty streams, it flattens the elements, allowing it to return zero or more elements.
+This makes option B incorrect. Finally, the map() method applies
+a one-to-one function for each element.
+It has to return exactly one element, so option A is the correct answer.
 
