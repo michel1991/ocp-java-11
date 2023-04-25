@@ -155,6 +155,26 @@ An Error often indicates a failure of the JVM, which cannot be recovered from.
 For these reasons, options C and F are correct, and options A and D are incorrect.
 Options B and E are class names that are not part of the standard Java API
 
+#### Given the following class diagram, which two classes
+#### are missing in the hierarchy at positions 1 and 2?
+[image](images/complete_exceptions.jpg)
+* A. IOException at position 1, Exceptionat position 2
+* B. Exception at position 1, RuntimeExceptionat position 2
+* C. IllegalArgumentException at position 1, RuntimeExceptionat position 2
+* D. IllegalStateException at position 1, RuntimeExceptionat position 2
+* E. Exception at position 1, FileNotFoundExceptionat position 2
+* F. None of the above
+
+The UnsupportedOperationException class is
+an unchecked exception that is a direct child of RuntimeException.
+For this reason, we can eliminate any answer that does not inherit
+from RuntimeException including options A and E. Options C and D are close,
+but UnsupportedOperationException is a direct subclass of RuntimeException.
+Option B is incorrect because RuntimeException is a subclass, not a superclass,
+of Exception. The correct diagram would be to reverse option
+B and put RuntimeException at position 1, and Exception at position 2.
+Since this is not available, option F is correct.
+
 
 
 
