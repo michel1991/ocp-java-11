@@ -1,4 +1,4 @@
-package concurrency.indefinitely;
+package concurrency.locks.indefinitely;
 import java.util.concurrent.*;
 import java.util.concurrent.locks.*;
 

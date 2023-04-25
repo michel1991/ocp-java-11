@@ -1,4 +1,4 @@
-package concurrency.indefinitely;
+package concurrency.barrier.indefinitely;
 import java.util.concurrent.*;
 import java.util.stream.*;
 
