@@ -182,3 +182,19 @@ For this reason, option E is correct.
 Options D and F are incorrect because while
 a concurrent or synchronized list may make the stream operation thread-safe,
 they are still stateful lambda expressions.
+
+#### What is a difference between lambdas and method references?
+* A. Only one can take a method parameter.
+* B. Only one can reference an effectively final local variable.
+* C. Only one can make a method call where the method parameter is the hard-coded number 3.
+* D. Only one can use deferred execution.
+* E. None of the above.
+
+Both lambda and method references can be passed to another method
+as a parameter and executed later ruling out options A and D.
+One big difference is with a lambda like: () -> s.charAt(3).
+The s variable must be final or effectively final variable
+in both lambdas and method references, making option
+B incorrect. However, there isn’t a way to use
+the hard-coded number in a method reference.
+Therefore, option C is a difference and the answer.

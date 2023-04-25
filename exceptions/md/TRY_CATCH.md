@@ -101,3 +101,22 @@ For a traditional try/catch block at least one catch or finally must be used.
 In addition, multiple catch blocks are allowed,
 although at most one finally block is allowed.
 For these reasons, options A and C are correct, and the rest are incorrect.
+
+#### Which statements about the following line of code are correct? (Choose three.)
+``` java
+  throw new IllegalArgumentException ();
+```
+* A. The method where this is called must declare a compatible exception.
+* B. The code where this is called can include a try-with-resources block that handles this exception.
+* C. This exception should not be handled or declared.
+* D. The code where this is called can include a try/catch block that handles this exception.
+* E. This exception should be thrown only at the start of a method.
+* F. This exception does not need to be handled by the method in which it is called.
+
+An IllegalArgumentException is an unchecked exception.
+It can be handled or declared in the method in which it is defined,
+although it is optional and not required. For this reason,
+options B, D, and F are correct,
+and options A and C are incorrect.
+Option E is incorrect,
+as there is no requirement where in a method this exception can be thrown.

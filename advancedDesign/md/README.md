@@ -292,6 +292,18 @@ making option C the correct answer.
 It is possible that bar is a static variable,
 although accessing it in this manner is not recommended.
 
+#### Which is equivalent to var q = 4.0f;?
+* A. float q = 4.0f;
+* B. Float q = 4.0f;
+* C. double q = 4.0f;
+* D. Double q = 4.0f;
+* E. Object q = 4.0f;
+
+The f in 4.0f means the type is a float, making option A correct.
+Local variable type inference chooses an exact match rather
+than using autoboxing to choose Float.
+
+
 
 
 
