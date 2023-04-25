@@ -12,8 +12,10 @@ import java.io.*;
     D. The code does not compile due to line y.
     E. The code compiles but throws an exception at runtime.
 
-   The filter() method takes a Predicate, which requires a boolean return type from the lambda or method reference.
-   The getColor() method returns a String and is not compatible. This causes the code to not compile and option C to be the answer.
+   The filter() method takes a Predicate, which requires a boolean
+   return type from the lambda or method reference.
+   The getColor() method returns a String and is not compatible.
+   This causes the code to not compile and option C to be the answer.
 
  */
 class Blankie {
