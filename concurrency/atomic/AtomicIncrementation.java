@@ -1,5 +1,5 @@
 
-package concurrency;
+package concurrency.atomic;
 import java.util.*;
 import java.util.concurrent.atomic.*;
 

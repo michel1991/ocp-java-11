@@ -1,4 +1,4 @@
-package concurrency;
+package concurrency.synchronizeds;
 
 /**
     What statements about the following class definition are true? (Choose all that apply.)
