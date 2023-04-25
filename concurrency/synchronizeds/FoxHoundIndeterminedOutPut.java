@@ -1,4 +1,4 @@
-package concurrency;
+package concurrency.synchronizeds;
 import  java.util.concurrent.*;
 
 public class FoxHoundIndeterminedOutPut {
