@@ -6,9 +6,12 @@
 * E. Runtime exceptions are intended to be thrown by the JVM (and not the programmer).
 * F. Runtime exceptions are required to be handled or declared.
 
-Only checked exceptions are required to be handled or declared, making option B correct and option F incorrect.
-An Error is intended to be thrown by the JVM and never caught by the programmer, making option C correct and options A, D, and E incorrect.
-While a programmer could throw or catch an Error, this would be a horrible practice. For more information, see Chapter 10.
+Only checked exceptions are required to be handled or declared,
+making option B correct and option F incorrect.
+An Error is intended to be thrown by the JVM and never caught by the programmer,
+making option C correct and options A, D, and E incorrect.
+While a programmer could throw or catch an Error,
+this would be a horrible practice. For more information, see Chapter 10.
 
 ### Which of the following is true when creating your own exception class?
 *  A. One or more constructors must be coded.
@@ -19,9 +22,11 @@ While a programmer could throw or catch an Error, this would be a horrible pract
 *  F. None of the above
 
 You can create custom checked, unchecked exceptions, and even errors.
-The default constructor is used if one is not supplied. There is no requirement to implement any specific methods.
+The default constructor is used if one is not supplied.
+There is no requirement to implement any specific methods.
 
-# Which of the following exceptions need to be handled or declared in the method in which they are thrown? (Choose all that apply.)
+#### Which of the following exceptions need to be handled
+#### or declared in the method in which they are thrown? (Choose all that apply.)
 * A. FileNotFoundException
 * B. MissingResourceException
 * C. NumberFormatException
@@ -30,9 +35,11 @@ The default constructor is used if one is not supplied. There is no requirement 
 * F. SQLException
 * G. None of the above
 
-Checked exceptions include any class that inherits Exception, but not RuntimeException, while unchecked exceptions include any class
+Checked exceptions include any class that inherits Exception,
+but not RuntimeException, while unchecked exceptions include any class
 that inherits RuntimeException or (less commonly) Error.
-Both ParseException and SQLException extend Exception, while FileNotFoundException extends IOException, which in turn extends Exception.
+Both ParseException and SQLException extend Exception,
+while FileNotFoundException extends IOException, which in turn extends Exception.
 
 ### Which scenario is the best use of an exception?
 *  A. An element is not found when searching a list.
@@ -45,7 +52,8 @@ An IllegalArgumentException is used when an unexpected parameter is passed into 
 Option A is incorrect because returning null or -1 is a common return value for searching for data.
 Option D is incorrect because a for loop is typically used for this scenario.
 Option E is incorrect because you should find out how to code the method and not leave
-it for the unsuspecting programmer who calls your method. Option C is incorrect because you should run!
+it for the unsuspecting programmer who calls your method.
+Option C is incorrect because you should run!
 
 ### Which of the following statements are true? (Choose all that apply.)
 * A. You can declare a method with Exception as the return type.
@@ -55,14 +63,18 @@ it for the unsuspecting programmer who calls your method. Option C is incorrect 
 * E. You can declare any subclass of Object in the throws part of a method declaration.
 * F. You can declare any subclass of RuntimeException in the throws part of a method declaration.
 
-Any Java type, including Exception and RuntimeException, can be declared as the return type.
+Any Java type, including Exception and RuntimeException,
+can be declared as the return type.
 However, this will simply return the object rather than throw an exception.
 For this reason, options A and B are correct.
 Classes listed in the throws part of a method declaration must extend java.lang.Throwable.
-This includes Error, Exception, and RuntimeException, making options C, D, and F correct.
-Arbitrary classes such as String can’t be declared in a throws clause, making option E incorrect.
+This includes Error, Exception,
+and RuntimeException, making options C, D, and F correct.
+Arbitrary classes such as String can’t be declared
+in a throws clause, making option E incorrect.
 
-### Which of the following are correct statements about exception handling in Java? (Choose all that apply.)
+### Which of the following are correct statements
+### about exception handling in Java? (Choose all that apply.)
 * A. Unchecked exceptions are allowed, but not required, to be handled or declared.
 * B. Error exceptions are required to be handled or declared.
 * C. It is appropriate to catch Throwable in your program.
@@ -70,9 +82,12 @@ Arbitrary classes such as String can’t be declared in a throws clause, making 
 * E. RuntimeException is the only unchecked exception in Java.
 * F. RuntimeException inherits Exception and Throwable.
 
-Option A is correct, as unchecked exceptions can be handled or declared, but are not required to be.
-Options B and E are incorrect because Error is an unchecked exception, which is not required to be handled or declared.
-Option C is incorrect, as catching Throwable includes catching instances of Error, which should not be caught in most cases.
+Option A is correct, as unchecked exceptions can be handled or declared,
+but are not required to be.
+Options B and E are incorrect because Error is an unchecked exception,
+which is not required to be handled or declared.
+Option C is incorrect, as catching Throwable includes catching instances of Error,
+which should not be caught in most cases.
 Option D is incorrect, as exceptions can also be declared and thrown to the caller.
 Finally, option F is correct, as it describes the inheritance of RuntimeException.
 
@@ -85,11 +100,16 @@ Finally, option F is correct, as it describes the inheritance of RuntimeExceptio
 * F. All exceptions are subclasses of Throwable.
 
 Runtime exceptions are unchecked, making option A correct and option B incorrect.
-Both runtime and checked exceptions can be declared, although only checked exceptions must be handled or declared, making options C and D correct.
-Legally, you can handle java.lang.Error subclasses, which are not subclasses of Exception, but it’s not a good idea, so option E is incorrect.
-Finally, it is true that all exceptions are subclasses of Throwable, making option F correct.
+Both runtime and checked exceptions can be declared,
+although only checked exceptions must be handled or declared,
+making options C and D correct.
+Legally, you can handle java.lang.Error subclasses, which are not subclasses of Exception,
+but it’s not a good idea, so option E is incorrect.
+Finally, it is true that all exceptions are subclasses of Throwable,
+making option F correct.
 
-### What constructors are capable of being called on a custom exception class that directly extends theException class?
+### What constructors are capable of being called on
+### a custom exception class that directly extends the Exception class?
 * A. One that takes a single Exception
 * B. One that takes a single String
 * C. Both of these
@@ -115,7 +135,7 @@ making options B and D correct. Finally, options C and F
 are incorrect because Error extends from Throwable,
 not Exception or RuntimeException, although it is an unchecked exception.
 
-#### Select a goodstrategy for handling input validation failures?
+#### Select a good strategy for handling input validation failures?
 * A. Use the assert statement.
 * B. Throw an Error.
 * C. Log an error but allow the user to continue.
@@ -133,7 +153,8 @@ Option C is incorrectas the user should not be allowed to
 continue if they have provided invalid input.
 Finally, option E is incorrect for obvious reasons.
 
-##### Which of the following diagrams of java.lang classes shows the inheritance model properly?
+##### Which of the following diagrams of java.lang classes
+##### shows the inheritance model properly?
 [image](images/inheritance_exceptions.jpg)
 
 Option D is the correct model. The class RuntimeException extends Exception,

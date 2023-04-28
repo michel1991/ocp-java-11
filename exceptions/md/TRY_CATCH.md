@@ -36,8 +36,10 @@ line of the finally block will be executed.
 For this reason, option E is correct, and options A and D are incorrect.
 Option B is incorrect because a finally block is called regardless
 of whether the related catch block is executed.
-A finally block can throw both checked and unchecked exceptions, making option F incorrect.
-If the exception is checked, then it must be handled or declared in the method in which the finally block is used.
+A finally block can throw both checked and unchecked exceptions,
+making option F incorrect.
+If the exception is checked, then it must be handled
+or declared in the method in which the finally block is used.
 
 ##### Which of the following are true statements
 ##### about exception handling in Java? (Choose all that apply.)
@@ -86,7 +88,8 @@ For this reason, option C is correct.
 *  E. None of the above.
 
 ClassCastException is a subclass of RuntimeException,
-so it must appear first in any related catch blocks. For this reason, option C is correct.
+so it must appear first in any related catch blocks.
+For this reason, option C is correct.
 
 #### Given the following keywords, in which order could they be used? (Choose two.)
 * A. try, finally
