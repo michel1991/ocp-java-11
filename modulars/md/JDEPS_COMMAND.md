@@ -1,4 +1,5 @@
-### What command is the simplest way to list what modules a JAR depends on without listing package names?
+#### What command is the simplest way to list what modules
+#### a JAR depends on without listing package names?
 *  A. jdeps cookie.jar
 *  B. jdeps –s cookie.jar
 *  C. jdeps –jdkinternals cookie.jar
@@ -39,7 +40,8 @@ For options A,B, and C, the options are reversed and should be “jdk-internals�
 *  G. jdeps –unsupported-api
 *  H. None of the above
 
-Option D is correct because it prints jdk.unsupported but does not print a table with a suggested alternative.
+Option D is correct because it prints jdk.unsupported
+but does not print a table with a suggested alternative.
 Option C is incorrect because it does print a suggested alternative.
 Options A, B, E, F, and G are incorrect because those options do not exist.
 
@@ -90,4 +92,21 @@ Remember that -summary uses a single dash (-).
 Option B is tempting because the java.lang package is available to all classes.
 However, the question asks about modules.
 Option A is the correct answer because the java.base module
-is available to all modules. The other options are incorrect because those modules do not exist.
+is available to all modules.
+The other options are incorrect because those modules do not exist.
+
+#### Which command produces output such as the following?
+```ssh
+ animal.puppy -˃ animal.dog
+```
+
+* A. jdeps –d zoo.animal.puppy.jar
+* B. jdeps –s zoo.animal.puppy.jar
+* C. jmod –d zoo.animal.puppy.jar
+* D. jmod –s zoo.animal.puppy.jar
+* E. None of the above
+
+The jdeps command lists information about dependencies within a module.
+The –s option provides a summary of output rather than verbose output,
+making option B the correct answer.
+There is no –d option. The jmod command is for working with JMOD files.

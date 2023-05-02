@@ -51,3 +51,26 @@ rather than being active or performing any work.
 Finally, a race condition is an undesirable
 result when two tasks that should be completed sequentially are completed at the same time.
 
+#### The following diagrams represent the order of read/write
+#### operations of two threads sharing a common variable.
+#### Each thread first reads the value of the variable from memory
+#### and then writes a new value of the variable back to memory.
+#### Which diagram demonstrates proper synchronization?
+
+[image](images/thread_synchronized.jpg)
+
+Part of synchronizing access to a variable is ensuring that read/write operations
+are atomic or happen without interruption. For example,
+an increment operation requires reading a value and then immediately writing it.
+If any thread interrupts this process, then data could be lost.
+In this regard, option C shows proper synchronized access.
+Thread 2 reads a value and then writes it without interruption.
+Thread 1 then reads the new value and writes it.
+The rest of the answers are incorrect because
+one thread writes data to the variable in-between another
+thread reading and writing to the same variable.
+Because a thread is writing data to a variable
+that has already been written to by another thread, it may set invalid data.
+For example, two increment operations running
+at the same time could result in one of the increment operations being lost.
+
