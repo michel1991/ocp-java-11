@@ -99,8 +99,8 @@ The n variable can only be an effectively final variable in lambdas, but not in 
 Since only method references can always be converted, option C is correct.
 
 ### Starting with DoubleConsumer and going downward, fill in the missing values for the table.
-
-Functional            Interface	# Parameters in Method Signature
+[image](images/fi_parameters_in_method.png)
+Functional Interface	# Parameters in Method Signature
 DoubleConsumer
 IntFunction
 LongSupplier
