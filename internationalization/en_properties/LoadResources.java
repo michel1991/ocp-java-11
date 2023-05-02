@@ -135,7 +135,7 @@ public class LoadResources {
         Java starts out by looking for a properties file with the requested locale,
          which in this case is the fr language.
          It doesn’t find it, so it moves onto the default localeen_US,
-         * which it does find, making option E correct.
+         which it does find, making option E correct.
      */
     static void loadGrrenKey(){
         Locale.setDefault(new Locale("en", "US"));
