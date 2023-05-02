@@ -47,4 +47,25 @@ A service locator and service provider interface need to have an exports stateme
 A service provider needs a provides directive.
 Since none of them matches, option E is the correct answer.
 
+#### Suppose the consumer, service locator, service provider,
+#### and service provider interface are each in separate modules.
+##### Which of the following best describes the following module-info file?
+
+``` java
+    module nature.tree {
+        provides nature.sapling.Tree with nature.tree.Maple
+    }
+```
+
+* A. Consumer
+* B. Service locator
+* C. Service provider
+* D. Service provider interface
+* E. None of the above
+
+
+The Maple class is intended to be an implementation of the Tree interface.
+However, this interface needs to be accessible.
+This module is missing a requires nature.sapling;
+statement, making option E the correct answer.
 

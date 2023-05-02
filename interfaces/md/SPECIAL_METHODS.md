@@ -28,7 +28,7 @@ Option E is incorrect, as a method can’t be marked both protected and private.
 Finally, interfaces can include both private and private static methods, making option F correct.
 
 ### What does the following print? How many rows of the following table contain an error?
-
+[image](./images/interface_member_optional_modifiers.png)
 Interface member	Optional modifier(s)	   Required modifier(s)
 Private method	     private	              -
 Default method	     public	                 default
