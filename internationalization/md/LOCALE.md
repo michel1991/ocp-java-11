@@ -101,3 +101,22 @@ Oracle defines a locale as a geographical, political,
 or cultural region, making options A, E, and F correct.
 A local address and city too granular for a locale.
 Also, time zones often span multiple locales.
+
+#### Which of the following shows a valid Locale format? (Choose two.)
+*  A. iw
+*  B. UA
+*  C. it_ch
+*  D. JA_JP
+*  E. th_TH
+*  F. ES_HN
+
+In Java, a locale can be represented by a language code in lowercase,
+or a language and country code, with language
+in lowercase and country in uppercase. For these reasons,
+options A and E are correct. Options C, D, and F
+are incorrect because the lowercase
+language must be before the uppercase country.
+Option B is incorrect because the language is missing.
+Remember, the exam won’t expect you to know which language
+and country codes exist, but it will expect you to know how to use them.
+
