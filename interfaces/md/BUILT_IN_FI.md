@@ -245,3 +245,21 @@ While there are ObjDoubleConsumer and ObjIntConsumer functional interfaces,
 there is no such thing as ObjectDoubleConsumer or ObjectIntConsumer.
 Remember that Object is abbreviated
 to Obj in all functional interfaces in java.util.function.
+
+### Starting with DoubleBinaryOperator and going downward, fill in the values for the table.
+[image](./images/fi_parameters_in_methods_signature.png)
+* A. 1, 0, 0, 0, 2
+* B. 1, 2, 1, 0, 1
+* C. 2, 1, 0, 1, 2
+* D. 2, 1, 1, 0, 1
+* E. 2, 1, 2, 0, 2
+* F. 3, 0, 2, 1, 1
+
+DoubleBinaryOperator takes two double values and returns a double value.
+LongToIntFunction takes one long value and returns an int value.
+ToLongBiFunction takes two generic arguments and returns a long value.
+IntSupplier does not take any values and returns an int value.
+ObjLongConsumer takes one generic and
+one long value and does not return a value.
+For these reasons, option E is the correct answer
+
