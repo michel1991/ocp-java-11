@@ -40,6 +40,6 @@ class Wardrobe {
 }
 
 
-public class WardrobeOverrideFinalClass {
+public class WardrobeExtendFinalClass {
     
 }
