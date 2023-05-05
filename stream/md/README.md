@@ -15,27 +15,7 @@ Option E is incorrect because partitioning only gives a Boolean key.
 Options B and D are correct because they return a Map with
 a Boolean key and a value type that can be customized to any Collection.
 
-##### Given the following code snippet, what can be inserted
-##### into the blank to ensure the stream operation is a concurrent reduction?
-```java
-    var zooFriends = Stream.of("lemur","ferret","monkey");
-    var byNameLength = zooFriends.collect(
-    Collectors.__________________(String::length));
 
-```
-*  A. combine
-*  B. combineConcurrent
-*  C. groupingByConcurrent
-*  D. groupingBy
-*  E. parallel
-*  F. The code does not compile, regardless of what is placed in the blank.
-*  G. None of the above.
-
-Options A, B, and E are not valid methods and will not compile.
-On the other hand, the code will compile if option C or D is placed in the blank,
-making option F incorrect, but it will not be a concurrent reduction.
-To be a concurrent reduction, the stream itself must be parallel.
-For this reason, option G is correct.
 
 ###### Which are true statements about terminal operations
 ###### in a stream that runs successfully? (Choose all that apply.)

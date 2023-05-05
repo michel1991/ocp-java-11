@@ -71,26 +71,6 @@ The JDK contains a Java Virtual Machine (JVM) making option F correct and option
 The compiler creates bytecode making option C correct and option D incorrect. For more information, see Chapter 1.
 
 
-### Which of the following data types cannot be used in a switch statement? (Choose all that apply.)
-* A. float
-* B. Character
-* C. var
-* D. byte
-* E. Double
-* F. Object
-* G. Integer
-* H. char[]
-
-A switch statement supports the primitives int, byte, short, and char, along with their
-associated wrapper classes Integer, Byte, Short, and Character, respectively.
-A switch statement also supports var if the type can be resolved to a supported switch data types.
-For these reasons, options B, C, D, and G are permitted in switch statements and, therefore, incorrect.
-Options A and E are correct as long, float, double, and their associated wrapped
-classes Long, Float, and Double, respectively, are not supported in switch statements.
-Option F is correct, as Object is not a supported data type in a switch statement.
-Finally, option H is incorrect.
-While switch statements support String, a char[] is not the same as a String.
-
 ### What statements about executing the following code snippet are correct? System.console().readPassword()
 * A. It returns a String value.
 * B. A NullPointException will never be thrown at runtime.

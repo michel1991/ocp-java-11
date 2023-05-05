@@ -123,3 +123,17 @@ options B, D, and F are correct,
 and options A and C are incorrect.
 Option E is incorrect,
 as there is no requirement where in a method this exception can be thrown.
+
+#### Which of the following statements about try/catch blocks are correct? (Choose two.)
+* A. A catch block can never appear after a finally block.
+* B. A try block must be followed by a catch block.
+* C. A finally block can never appear after a catch block.
+* D. A try block must be followed by a finally block.
+* E. A try block can have zero or more catch blocks.
+* F. A try block can have zero or more finally blocks.
+
+A try block can have zero or more catch blocks, and zero or one finally blocks,
+but must be accompanied by at least one of these blocks. For these reasons, options B, D,
+and F are incorrect, and option E is correct.
+A finally block must appear after the last catch block,
+if there are any, making option C incorrect, and option A correct.

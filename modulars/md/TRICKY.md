@@ -69,3 +69,43 @@ However, this interface needs to be accessible.
 This module is missing a requires nature.sapling;
 statement, making option E the correct answer.
 
+
+
+#### Which of the following is true of the following module declaration?
+``` java
+1: module com.mammal {
+    2:    exports com.mammal.cat;
+    3:    exports com.mammal.mouse to com.mice;
+    4:    uses com.animal;
+    5: }
+
+``` 
+* A. The first line that fails to compile is line 1.
+* B. The first line that fails to compile is line 2.
+* C. The first line that fails to compile is line 3.
+* D. The first line that fails to compile is line 4.
+* E. The code compiles.
+
+This is a correct module-info file.
+It exports the com.mammal.cat package to any modules that want to use it.
+By contrast, it exports the com.mammal.mouse package to only one other module.
+Finally, it demonstrates the uses directive.
+Since the code is correct, option E is the answer.
+    
+##### Fill in the blank with code that belongs in a service provider.
+```java
+    String cheese = ServiceLoader.load(Mouse.class)
+        .stream ()
+        .map(______________)
+        .map(Mouse::favoriteFood)
+        .findFirst()
+        .orElse("");
+```
+* A. Mouse.get()
+* B. Mouse::get
+* C. Provider.get()
+* D. Provider::get
+* E. None of the above
+
+The service provider does not have code to look up the service, making option E correct.
+

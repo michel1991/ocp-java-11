@@ -49,3 +49,16 @@ The service provider is decoupled from the service provider interface ruling out
 It is most logical to combine the service locator
 and service provider interface because neither
 has a direct reference to the service provider. Therefore, option D is correct.
+
+#### Which is part of the module service and has a requires directive?
+* A. Consumer
+* B. Service locator
+* C. Service provider
+* D. Service provider interface
+* E. None of the above
+
+Only the service locator and service provider interface are part of the service.
+The service locator has a requires directive,
+and the service provider interface has an exports directive,
+which matches option B.
+
