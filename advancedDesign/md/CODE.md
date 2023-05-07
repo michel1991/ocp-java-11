@@ -1,4 +1,5 @@
-### Given the following two classes, which of the following statements will compile when inserted independently on line 2? (Choose all that apply.)
+### Given the following two classes, which of the following statements
+### will compile when inserted independently on line 2? (Choose all that apply.)
 
 ```java
 package lilypad; // 1:
@@ -21,10 +22,15 @@ public class Frog {  } // 2:
 Since both Frog and Tadpole are in the same package, no import is needed, making option F correct.
 Option B is also correct because importing redundant classes is allowed.
 Option A is not correct because imports must include the full package name.
-Option C is correct because it is a valid import statement—albeit one that is ignored since we are already in the Tadpole class.
-Options D and E are incorrect because static imports must import members and not the class name.
+Option C is correct because it is a valid import statement—albeit one
+that is ignored since we are already in the Tadpole class.
+Options D and E are incorrect because
+static imports must import members and not the class name.
+(static import also require to import static interface, class)
 
-### Given the following classes, which of the following snippets can independently be inserted in place of INSERT IMPORTS HERE and have the code compile? (Choose all that apply.)
+### Given the following classes, which of the following snippets can independently
+### be inserted in place of INSERT IMPORTS HERE
+### and have the code compile? (Choose all that apply.)
 
 ```java
     package aquarium;
@@ -47,13 +53,9 @@ Options D and E are incorrect because static imports must import members and not
 ``` txt
     A. import aquarium.*;
     B. import aquarium.Water; import aquarium.jellies.*;
-
     C. import aquarium.*; import aquarium.jellies.Water;
-
     D. import aquarium.*; import aquarium.jellies.*;
-
     E. import aquarium.Water; import aquarium.jellies.Water;
-
     F. None of these imports can make the code compile.
 
 ```
@@ -81,24 +83,13 @@ Option E is incorrect because you cannot specify the same class name in two impo
 * E. The code will not compile if line 5 is removed.
 * F. The code does not compile as currently written.
 
-The code compiles as is, making option F incorrect. The package statement is optional in a class, making option A incorrect.
+The code compiles as is, making option F incorrect.
+The package statement is optional in a class, making option A incorrect.
 Since the import is unused, option B is also incorrect.
 A class will compile without any fields or methods, making options D and E incorrect.
 The only thing required is the actual class declaration on line 3. Therefore, option C is the answer.
 
-### Which of the following are true statements? (Choose all that apply.)
-*  A. Java allows operator overloading.
-*  B. Java code compiled on Windows can run on Linux.
-*  C. Java has pointers to specific locations in memory.
-*  D. Java is a procedural language.
-*  E. Java is an object-oriented language.
-*  F. Java is a functional programming language
 
-C++ has operator overloading and pointers. Java made a point of not having either.
-Java does have references to objects, but these are pointing to an object that can move around in memory.
-Option B is correct because Java is platform independent.
-Option E is correct because Java is object oriented.
-While it does support some parts of functional programming, these occur within a class.
 
 ### Which of the following can fill in the blank? (Choose all that apply.)
 ```sh

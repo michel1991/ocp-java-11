@@ -1,5 +1,6 @@
 ### My  Rule Protected in Different package
-* While Reference type is current Reference type of current child it is ok for method that hold accessibility protected
+* prior static analysis at the left side(1)
+* While Reference type(at left) is current Reference type of current child it is ok for method that hold accessibility protected
 
 
 ##### Suppose we have the following class in the file /my/directory/named/A/Bird.java.

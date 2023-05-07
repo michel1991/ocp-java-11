@@ -1,3 +1,18 @@
+### Which of the following are true statements? (Choose all that apply.)
+*  A. Java allows operator overloading.
+*  B. Java code compiled on Windows can run on Linux.
+*  C. Java has pointers to specific locations in memory.
+*  D. Java is a procedural language.
+*  E. Java is an object-oriented language.
+*  F. Java is a functional programming language
+
+C++ has operator overloading and pointers.
+Java made a point of not having either.
+Java does have references to objects, but these are pointing to an object that can move around in memory.
+Option B is correct because Java is platform independent.
+Option E is correct because Java is object oriented.
+While it does support some parts of functional programming, these occur within a class.
+
 ##### Which of the following are true statements about a class Camel
 ##### with a single instance variable List<String> species? (Choose all that apply.)
 *    A. If Camel is well encapsulated, then it must have restricted extensibility.
@@ -70,23 +85,6 @@ It contains a compiler since it is a development tool making option A correct an
 The JDK contains a Java Virtual Machine (JVM) making option F correct and option E incorrect.
 The compiler creates bytecode making option C correct and option D incorrect. For more information, see Chapter 1.
 
-
-### What statements about executing the following code snippet are correct? System.console().readPassword()
-* A. It returns a String value.
-* B. A NullPointException will never be thrown at runtime.
-* C. It echoes each character to the screen as it is typed.
-* D. It is not any safer than using readLine().
-* E. It encrypts the bytes as they are entered.
-* F. None of the above.
-
-The readPassword() method retrieves a text value from the user without echoing the values
-to screen and returns a char[] instance, making options A and C incorrect.
-A NullPointerException may be thrown if the Console is not available, making option B incorrect.
-The readPassword() method is considered safer than using readLine() for protected data,
-in part because it prevents passwords from entering the string pool, making option D incorrect.
-Option E is also incorrect, as the method does not perform any kind of encryption.
-For these reasons, option F is correct
-
 ##### Which of the following statements about primitive
 ##### and reference types are correct? (Choose all that apply.)
 * A. char and byte are the same size.
@@ -128,7 +126,7 @@ For these reasons, options B and F are correct, and option E is incorrect.
 Option D is incorrect, as var is not permitted in multiple-variable declarations.
 Finally, option G is incorrect, as var is not a reserved word in Java.
 
-## Which of the following statements about the Callable call() and Runnable run() methods are correct? (Choose all that apply.)
+### Which of the following statements about the Callable call() and Runnable run() methods are correct? (Choose all that apply.)
 *  A. Both can throw unchecked exceptions.
 *  B. Callable takes a generic method argument.
 *  C. Callable can throw a checked exception.

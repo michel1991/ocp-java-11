@@ -14,14 +14,14 @@
     package wake;
     public class Coffee {
         private boolean bringCoffee() {
-            return new Alarm().clock˂10;
+            return new Alarm().clock < 10;
         }
     }
-    
+
     // Snooze.java
     package sleep;
     public class Snooze extends wake.Alarm {
-        private boolean checkTime() { return getTime()˃10;}
+        private boolean checkTime() { return getTime() > 10;}
     }
 ```
 

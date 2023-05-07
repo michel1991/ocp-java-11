@@ -1,3 +1,6 @@
+### Top level type (class, interface, enum, annotation) cannot be (static)
+### mean not creation, not implementation
+
 ### Which of the following is true about a concrete class? (Choose all that apply.)
 * A. A concrete class can be declared as abstract.
 * B. A concrete class must implement all inherited abstract methods.

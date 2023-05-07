@@ -39,5 +39,7 @@
 * E. The code does not compile due to a different line.
 * F. The code throws an exception.
 
-The init() method is accessible from any code. However, the race() method is available only within the Hare class.
-Since Tortoise is a different class, the method is not available, and option D is correct.
+The init() method is accessible from any code.
+However, the race() method is available only within the Hare class.
+Since Tortoise is a different class,
+the method is not available, and option D is correct.

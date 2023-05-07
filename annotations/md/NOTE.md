@@ -9,5 +9,6 @@
  * default array is create by {}, use array like declaration into annotation
  * verify target of annotation(meta data)
  * verify require element of meta data of annotation
+ * verify separator when many element exist
  
  

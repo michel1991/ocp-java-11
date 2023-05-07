@@ -30,4 +30,5 @@
 * D. Neither class compiles.
 
 The speak() method has private access,
-which does not allow code outside the class to call it. Therefore, option C is the answer.
+which does not allow code outside the class to call it.
+Therefore, option C is the answer.

@@ -1,3 +1,19 @@
+### What statements about executing the following code snippet are correct? System.console().readPassword()
+* A. It returns a String value.
+* B. A NullPointException will never be thrown at runtime.
+* C. It echoes each character to the screen as it is typed.
+* D. It is not any safer than using readLine().
+* E. It encrypts the bytes as they are entered.
+* F. None of the above.
+
+The readPassword() method retrieves a text value from the user without echoing the values
+to screen and returns a char[] instance, making options A and C incorrect.
+A NullPointerException may be thrown if the Console is not available, making option B incorrect.
+The readPassword() method is considered safer than using readLine() for protected data,
+in part because it prevents passwords from entering the string pool, making option D incorrect.
+Option E is also incorrect, as the method does not perform any kind of encryption.
+For these reasons, option F is correct
+
 # Which of the following are not java.io classes? (Choose all that apply.)
 * A. BufferedReader
 * B. BufferedWriter
