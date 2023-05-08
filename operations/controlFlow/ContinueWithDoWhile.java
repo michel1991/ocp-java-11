@@ -32,6 +32,40 @@ public class ContinueWithDoWhile {
         System.out.println(result); // 18: 
     }
     
+    /**
+     * Which sets of lines can be removed without stopping the code from compiling and while printing the same output? (Choose three.)
+        A. Lines 15 and 17
+        B. Lines 16 and 23
+        C. Lines 17, 18, and 22
+        D. Line 17
+        E. Line 22
+        F. Line 23
+        
+        The unmodified code prints xxxxx, so you’re looking
+        for options that also print this value.
+        Option A is correct because the labels are not referenced.
+        Option B is correct because the outer while is broader than the inner while.
+        If race.length() ˂= 4 is true, then race.length() ˂ 4 must be true.
+        The inner loop prints xxxxx, and the outer loop is not needed.
+        Option C is incorrect because the outer loop only prints xxxx without the inner loop.
+        Option D is also correct because a label is not used.
+        Option E and F are incorrect because you cannot remove the while portion of a do/while loop
+     */
+    static void secondExample(){
+        String race = ""; //  14:
+        outer: // 15: 
+      do { //   16: 
+          inner: // 17:
+          do //  18: 
+             { //   19: 
+                 race += "x"; //  20: 
+             } //  21: 
+             while (race.length() <= 4); //   22: 
+      } while (race.length() < 4); //  23:
+        System.out.println(race); //  24: 
+        
+    }
+    
     public static void main(String... args){
         firstExample();
     }
