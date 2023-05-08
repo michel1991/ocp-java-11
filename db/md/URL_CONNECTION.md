@@ -70,3 +70,21 @@ Depending on the driver, this might include an IP address and port.
 Regardless, it needs to include the database name or alias.
 The first and secondURLs could both be valid formats because they mention the database box.
 However, thirdis incorrect because it has jdbc@ instead of jdbc:. Therefore, option D correct.
+
+#### How many of the following could be valid JDBC URL formats for an imaginary driver named magic and a database named box?
+
+```java
+    String first = "jdbc;box;magic";
+    String second = "jdbc;magic;@127.0.0.1:1234";
+    String third = "jdbc;magic;127.0.0.1:1234/box";
+```
+
+* A. Only first
+* B. Only second
+* C. Only third
+* D. first and second
+* E. first and third
+* F. None of these
+
+A JDBC URL has three components separated by colons.
+None of these options uses the correct colon delimiter, making option F the correct answer.

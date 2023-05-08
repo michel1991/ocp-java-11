@@ -168,4 +168,23 @@ Finally, option F is incorrect because the relational operator
 (<) does not fit between multiplication operator (*)
 and the division operator (/) in order of precedence.
 
+### Fill in the blanks: The operators +=, ______, ______, _______, _______, and --
+#### are listed in increasing or the same level of operator precedence. (Choose two.)
+* A. ^, *, =, ++
+* B. %, *, /, &&
+* C. =, +, /, *
+* D. ^, *, ==, ++
+* E. *, /, %, ++
+* F. ˂=, ˃=, !=, !
+
+In option A, the assignment operator (=) incorrectly
+comes after the multiplication (*) operator.
+In option B, the short-circuit logical operator (&&) incorrectly comes after the division (/) operator.
+In option D, the equality operator (==) incorrectly comes after the multiplication (*)
+operator. In option F, the not equals operator (!=) incorrectly comes
+after the relational operators, (˂= and ˃=).
+This leaves options C and E as the correct answers.
+For these answers, it may help to remember that the modulus operator (%),
+multiplication operator (*), and division operator (/) have the same operator precedence.
+
 

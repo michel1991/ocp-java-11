@@ -280,3 +280,16 @@ Option B is correct because the module-info file clarifies dependencies.
 Option C is correct because a smaller deployment package can be faster.
 Finally, option F is correct because the module
 system prevents the same package from being used from multiple JAR files.
+
+#### Which statements are true about the requires directive? (Choose two.)
+* A. Changing it to a requires direct directive is always allowed.
+* B. Changing it to a requires direct directive is never allowed.
+* C. Changing it to a requires direct directive is sometimes allowed.
+* D. Including requires java.base is allowed, but redundant.
+* E. Including requires java.base is never allowed.
+* F. Including requires java.base is sometimes needed to change the meaning of a file.
+
+There is not a requires direct directive, making option B correct.
+If the requires transitive directive where used in the answer options instead,
+option A would be the answer, since it represents a superset of the functionality.
+Additionally, option D is correct because java.base is implied whether you specify it or not.

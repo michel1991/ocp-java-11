@@ -63,4 +63,26 @@ since static members belong to the class level, not an instance, making option E
 Options A, C, and F are the correct answers.
 Note that marking a private method final has no practical implication, although it is allowed.
 
+#### Fill in the blanks: Using the ________ and ________ modifiers together
+#### allows a variable to be accessed from any class, without requiring an instance variable.
+* A. class, static
+* B. default, public
+* C. final, package-private
+* D. protected, instance
+* E. public, static
+* F. None of the above
+
+The public modifier allows access from the same class, package, subclass,
+or even classes in other packages, while the static modifier
+allows access without an instance of the class.
+For these reasons, option E is the correct answer.
+Option A is incorrect because class is not a modifier; it is a keyword.
+Option B is incorrect because the default keyword
+is for interface methods and switch statements, not class variables.
+Option C is incorrect because final is not related to access,
+and package-private prevents access from classes outside the package.
+Finally, option D is incorrect because instance is not a Java keyword or modifier.
+Further, protected prevents all classes outside the package
+other than subclasses from accessing the variable.
+
 

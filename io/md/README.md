@@ -236,3 +236,23 @@ making option D the correct answer.
 Option A is incorrect because there is no jump() method defined in Reader.
 Options B, C, and E are incorrect because they cannot be used to skip data,
 only to mark a location and return to it later.
+
+### Which of the following statements about InputStream and Reader are correct? (Choose two.)
+* A. They are both abstract classes.
+* B. They can both be used to read character data.
+* C. One contains a read() method that returns a byte value, while the other contains a read() method that returns a char value.
+* D. They are both interfaces.
+* E. Only one of them contains a flush() method.
+* F. Only one of them contains a skip() method.
+
+First, they are both classes, not interfaces, making option
+A correct and option D incorrect. Next,
+while it is more common to use Reader for character data,
+InputStream and Reader are both capable of reading character data,
+making option B correct. Option C is incorrect,
+as both classes contain a read() method that returns an int value.
+As you may recall from your studies, neither use byte or char so that -1
+can be returned when the end of the stream is reached
+without using an existing byte or char value.
+Option E is incorrect because neither contains a flush() method,
+while option F is incorrect because they both contain a skip() method.

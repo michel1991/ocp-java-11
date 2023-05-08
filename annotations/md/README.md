@@ -147,3 +147,22 @@ variables and other annotations. Finally, option F is correct.
 Annotations are optional metadata, and removing all of
 them from a class does not cause a compiler error.
 
+#### Which annotations will trigger a compiler error if incorrectly applied to a method with no other annotations? (Choose three.)
+* A. @Documented
+* B. @Deprecated
+* C. @SuppressWarnings("unchecked")
+* D. @Override
+* E. @SuppressWarnings("magic")
+* F. @SafeVarargs
+
+@Documented can be applied only to annotations, not methods,
+making option A correct. If @Override is applied to a method that is not actually overridden,
+a compiler error will ensue, making option D correct.
+The @SafeVarargs annotation will trigger
+a compiler error if applied to a method without
+a vararg parameter or without a final, private,
+or static modifier, making option F correct.
+The rest of the annotations can be applied
+to methods without triggering a compiler error. For option E,
+the compiler might not recognize the cause (such as magic), but it will still compile.
+

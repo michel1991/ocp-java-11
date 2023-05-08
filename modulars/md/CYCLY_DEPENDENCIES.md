@@ -88,3 +88,39 @@ We also need to be on the lookout for cyclic dependencies.
 While option D would work, it is better to be more granular
 and create a third module as in option C.
 Option E is incorrect because dots are used as separators in names.
+
+#### What is the minimum number of requires directives that need to be removed to break the cyclic dependency?
+```java
+    module com.animal {
+        exports com.animal;
+        requires com.plant;
+    }
+    module com.plant {
+        exports com.plant;
+        requires com.animal;
+    }
+    module com.worm {
+        exports com.worm;
+        requires com.animal;
+        requires com.plant;
+    }
+    module com.hedgehog {
+        exports com.hedgehog;
+        requires com.animal;
+        requires com.plant;
+    }
+
+``` 
+* A. None, there is no cyclic dependency
+* B. 1
+* C. 2
+* D. 3
+* E. 4
+
+Modules have a cyclic dependency when they depend on each other.
+In this example, com.animal and com.plant depend on each other.
+The other two modules depend on com.animal and com.plant
+but do not participate in the cycle.
+If the requires directive in either com.animal or com.plant were removed,
+we would no longer have a cyclic dependency.
+Since only one directive needs to be removed, option B is correct.

@@ -68,3 +68,33 @@ may not be part of a method name. Option C is incorrect
 since new is a reserved word in Java.
 Finally, option D is incorrect.
 A method name must start with a letter, the dollar ($) symbol, or an underscore (_) character.
+
+### Which of the following is a valid code comment in Java? (Choose three.)
+* A. /** Insert */ in next method **/
+* B. /****** Find the kitty cat */
+* C. // Is this a bug?
+* D. $ Begin method - performStart() $
+* E. /*** TODO: Call grandma ***/
+* F. # Updated code by Patti
+
+Java supports three types of comments: single-line (//), multi-line (/* */),
+and Javadoc (/** **/), making options B, C, and E correct.
+Option A contains a */ in the middle of the expected comment,
+making the part after the comment Insert */ invalid.
+Option D is incorrect because a dollar sign ($) is not a valid comment in Java.
+Finally, the hash (#) is not a comment character in Java, so option F is incorrect.
+
+#### Which of the following is a valid method name in Java? (Choose two.)
+* A. _____
+* B. %run
+* C. check-Activity
+* D. $Hum2
+* E. sing\\3
+* F. po#ut
+
+Java methods must start with a letter, the dollar $ symbol,
+or the underscore _ character. For this reason,
+option B is incorrect, and options A and D are correct.
+Despite how option A looks, it is a valid method name in Java.
+Options C, E, and F do not compile because the symbols -, \,
+and # are not allowed in method names, respectively.
