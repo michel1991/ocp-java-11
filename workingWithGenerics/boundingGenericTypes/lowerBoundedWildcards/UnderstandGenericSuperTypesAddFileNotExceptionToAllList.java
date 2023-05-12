@@ -8,6 +8,9 @@ public class UnderstandGenericSuperTypesAddFileNotExceptionToAllList {
     /**
      * La liste qui pourrait être List<IOException> ou List<Exception> ou List<Object>
      * FileNotFoundException peut également être ajouté à l'un de ces trois types (demontrer plus bas )
+     * FileNotFoundException peut également être ajouté à l'un de ces trois types.
+     *  C'est délicat car FileNotFoundException est une sous-classe de IOException, et le mot clé dit super.
+     *  Ce qui se passe, c'est que Java dit : «  Eh bien, FileNotFoundException est aussi une IOException, donc tout va bien. »
      */
     public static void adding(List<? super IOException> list){
         list.add(new FileNotFoundException());
