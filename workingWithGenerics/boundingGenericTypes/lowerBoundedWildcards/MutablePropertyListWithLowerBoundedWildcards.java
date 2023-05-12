@@ -3,7 +3,7 @@ import java.util.*;
 
 class MutablePropertyListWithLowerBoundedWildcards{
   
-    static void addSound(List<? super CharSequence> list){
+    static void addSound(List<? super String> list){
        list.add("quack");
     }	
 
@@ -13,7 +13,6 @@ class MutablePropertyListWithLowerBoundedWildcards{
     List<Object> objects = new  ArrayList<Object>(strings);
     addSound(strings);
     addSound(objects);
-    addSound(new StringBuilder());
     System.out.println(" list of object " + objects);
     System.out.println(" list of string " + strings);
  }	
