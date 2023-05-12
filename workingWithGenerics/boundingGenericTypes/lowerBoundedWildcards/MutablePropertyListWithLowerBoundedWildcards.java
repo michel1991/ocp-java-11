@@ -4,7 +4,7 @@ import java.util.*;
 class MutablePropertyListWithLowerBoundedWildcards{
   
     static void addSound(List<? super CharSequence> list){
-       //list.add("quack");
+       list.add("quack");
     }	
 
  public static void main(String... args){
