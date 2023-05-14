@@ -1,4 +1,4 @@
-package list.comparison;
+package collections.sets;
 import java.util.*;
 
 /**
