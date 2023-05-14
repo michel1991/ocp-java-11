@@ -1,4 +1,4 @@
-package list.runtime;
+package collections.sets.runtime;
 import java.util.*;
 
 /**
@@ -11,9 +11,11 @@ import java.util.*;
     E. The code runs successfully, and tree has a single element.
     F. The code runs successfully, and tree has two elements.
 
-    First, all of these lines compile. ArrayList, HashSet, and LinkedList are all allowed to contain null.
+    First, all of these lines compile. ArrayList, HashSet,
+    and LinkedList are all allowed to contain null.
     However, a TreeSet is not, and line 28 throws a NullPointerException at runtime.
     Therefore, option D is correct.
+    (Me: All class that use sort automatically[TreeMap, TreeSet] does not contains null value)
     *
  */
 public class TreeSetNotAllowNullValue {

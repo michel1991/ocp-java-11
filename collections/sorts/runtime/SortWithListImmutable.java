@@ -1,17 +1,17 @@
-package list.runtime;
+package collections.sorts.runtime;
 import java.util.*;
 
 public class SortWithListImmutable {
     /**
-     *  Fill in the blank so the code prints beta.
-     *  A. (s, t) -> s.compareTo(t)
+       Fill in the blank so the code prints beta.
+        A. (s, t) -> s.compareTo(t)
         B. (s, t) -> t.compareTo(s)
         C. Comparator.comparing(String::length)
         D. Comparator.comparing(String::length).reversed()
         E. None of the above
 
         List.of() makes an immutable list. Attempting to sort throws an exception so option E is the answer.
-        * If we were calling, Arrays.asList() instead,
+        If we were calling, Arrays.asList() instead,
         option C would be the answer because it is the only option to sort ascendingly by length.
      */
   static void sort(){
