@@ -1,7 +1,7 @@
-package list;
+package collections.sets;
 import java.util.*;
 
-public class ListCommonOperation {
+public class SetCommonOperation {
     /**
      * What is the result of the following statements?
      *  A. 1 false
@@ -28,4 +28,8 @@ public class ListCommonOperation {
         set.removeIf(x -> x == 100); //  9:
         System.out.println(set.size() + " " + set.contains(16)); //   10:
   }
+ 
+   public static void main(String... args){
+     addUsingHashSet();
+    }
 }

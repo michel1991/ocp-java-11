@@ -1,4 +1,4 @@
-package list;
+package collections.lists;
 import java.util.*;
 
 public class MuseumsListWithInitialCapacity {

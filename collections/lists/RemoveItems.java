@@ -1,4 +1,4 @@
-package list;
+package collections.lists;
 import java.util.*;
 import java.util.function.*;
 
@@ -12,15 +12,21 @@ public class RemoveItems {
         E. The code does not compile due to the removeIf() line.
         F. The code does not compile for another reason.
 
-     The Predicate correctly takes a Double value and returns a boolean. It is a complicated Predicate, but it does compile, ruling out option D.
-     First the Predicate rounds the number to the nearest int. On the right side of the ==, the Predicate converts the Double object to a double primitive.
+     The Predicate correctly takes a Double value and returns a boolean.
+     It is a complicated Predicate, but it does compile, ruling out option D.
+     First the Predicate rounds the number to the nearest int.
+     On the right side of the ==, the Predicate converts the Double object to a double primitive.
      Then it casts to an int, dropping any numbers after the decimal point.
      Don’t worry if you haven’t seen doubleValue() before.
-     Remember that the exam may use APIs you haven’t learned as long as the APIs do what they sound like.
-      The removeIf() method removes all values that round down since the Predicate returns true for any values that have a rounded number equivalent to the number without the decimal value.
+     Remember that the exam may use APIs you haven’t learned
+     as long as the APIs do what they sound like.
+      The removeIf() method removes all values that round down
+      since the Predicate returns true for any values that have
+      a rounded number equivalent to the number without the decimal value.
       Therefore, option A is correct.
      */
    static void removeUsingComparisonWithDoubleValueMethod(){
+        System.out.println(" begin  removeUsingComparisonWithDoubleValueMethod");
        List<Double> numbers = new ArrayList<>();
        numbers.add(12.0);
        numbers.add(3.14);
@@ -31,6 +37,7 @@ public class RemoveItems {
        Predicate<Double> pred = n -> Math.round(n) == (int) n.doubleValue();
        numbers.removeIf(pred);
        System.out.println(numbers);
+       System.out.println(" end  removeUsingComparisonWithDoubleValueMethod");
    }
 
     /**
@@ -57,7 +64,8 @@ public class RemoveItems {
         This brings us to option C as the answer.
 
      */
-    static void removeWithOverloadMethod(){
+    static void removeWithAutoBoxingBeforeAutoBoxingJavaCheckMuchBetterSignature(){
+        System.out.println(" begin  removeWithAutoBoxingBeforeAutoBoxingJavaCheckMuchBetterSignature");
         var pennies = new ArrayList<>(); // 11:
          pennies.add(1); //   12:
         pennies.add(2); //   13:
@@ -66,6 +74,7 @@ public class RemoveItems {
         pennies.remove(2); //  16:
         pennies.remove(Integer.valueOf(1)); //  17:
         System.out.println(pennies); //  18:
+        System.out.println(" end removeWithAutoBoxingBeforeAutoBoxingJavaCheckMuchBetterSignature");
 
     }
 
@@ -81,6 +90,7 @@ public class RemoveItems {
         the elements that do not match. In this case, that is Austin and Boston, so option B is correct.
      */
     static void removeItemStringThatLengthIsLessThanTen(){
+        System.out.println("begin  removeItemStringThatLengthIsLessThanTen");
         var list = new ArrayList<String>();
         list.add("Austin");
         list.add("Boston");
@@ -88,10 +98,15 @@ public class RemoveItems {
 
         list.removeIf(a -> a.length() > 10);
         System.out.println(list.size());
+        System.out.println("end  removeItemStringThatLengthIsLessThanTen");
 
     }
 
     public static void main(String... args){
-
+        removeUsingComparisonWithDoubleValueMethod();
+        System.out.println();
+        removeWithAutoBoxingBeforeAutoBoxingJavaCheckMuchBetterSignature();
+        System.out.println();
+        removeItemStringThatLengthIsLessThanTen();
     }
 }

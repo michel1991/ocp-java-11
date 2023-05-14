@@ -1,4 +1,4 @@
-package list;
+package collections.protectContent;
 import java.util.*;
 public class DetermineListContent {
 
@@ -13,13 +13,21 @@ public class DetermineListContent {
         G. None of the above, as the code does not compile
 
     he code does compile, making option G incorrect.
-    In the first for-each loop, gorillas has a type of ArrayList<String>, so each element koko has a type of String, making option A correct.
-    In the second for-each loop, you might think that the diamond operator <> cannot be used with var without a compilation error, but it absolutely can.
-    This result is monkeys having a type of ArrayList<Object> with albert having a data type of Object, making option C correct.
-    While var might indicate an ambiguous data type, there is no such thing as an undefined data type in Java, so option D is incorrect.
+    In the first for-each loop, gorillas has a type of ArrayList<String>,
+    so each element koko has a type of String, making option A correct.
+    In the second for-each loop, you might think that the diamond operator <>
+    cannot be used with var without a compilation error, but it absolutely can.
+    This result is monkeys having a type of ArrayList<Object> w
+    ith albert having a data type of Object, making option C correct.
+    While var might indicate an ambiguous data type,
+    there is no such thing as an undefined data type in Java, so option D is incorrect.
     In the last for-each loop, chimpanzee has a data type of List.
-    Since the left side does not define a generic type, the compiler will treat this as List<Object>, and ham will have a data type of Object, making option F correct.
-    Even though the elements of chimpanzees might be Integer as defined, ham would require an explicit cast to call an Integer method, such as ham.intValue().
+    Since the left side does not define a generic type,
+    the compiler will treat this as List<Object>,
+    and ham will have a data type of Object, making option F correct.
+    Even though the elements of chimpanzees might be Integer as defined,
+    ham would require an explicit cast to call an Integer method,
+    such as ham.intValue().
 
      */
   static void firstExample(){
@@ -37,6 +45,6 @@ public class DetermineListContent {
   }
 
     public static void main(String... args){
-        
+        firstExample();
     }
 }

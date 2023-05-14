@@ -1,4 +1,4 @@
-package list;
+package collections.lists;
 import java.util.*;
 
 public class ListDeclaration {
@@ -24,4 +24,8 @@ public class ListDeclaration {
        List<Integer> x2 = new ArrayList<>();
        List<Integer> x3 = new ArrayList<Integer>();
    }
+    
+    public static void main(String... args){
+        firstExample();
+    }
 }
