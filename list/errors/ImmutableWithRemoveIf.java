@@ -31,4 +31,8 @@ public class ImmutableWithRemoveIf {
        v.removeIf(String::isEmpty); //  17:
        v.removeIf(s -> s.length() == 4); //  18:
    }
+    
+    public static void main(String... args){
+        remove();
+    }
 }
