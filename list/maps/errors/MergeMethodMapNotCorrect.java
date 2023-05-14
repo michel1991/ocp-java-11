@@ -1,4 +1,4 @@
-package list.errors;
+package list.maps.errors;
 import java.util.*;
 
 
@@ -14,7 +14,8 @@ public class MergeMethodMapNotCorrect {
         G. The code does not compile.
         H. An exception is thrown
 
-        The merge() function requires a BiFunction as the mapping function. This code uses a Function instead, which does not compile
+        The merge() function requires a BiFunction as the mapping function.
+        This code uses a Function instead, which does not compile
      */
    public static void mergeInvalid(){
        var map = new HashMap<Integer, Integer>();
