@@ -1,4 +1,4 @@
-package list.errors;
+package list.sets.errors;
 import java.util.*;
 public class SetNotUseComparator {
     /**

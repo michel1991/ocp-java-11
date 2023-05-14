@@ -1,4 +1,4 @@
-package list.errors;
+package list.sets.errors;
 import java.util.*;
 
 public class SetDoesNotHaveGetKeyMethod {
@@ -12,7 +12,8 @@ public class SetDoesNotHaveGetKeyMethod {
         F. Throws an exception at runtime
 
         Line x1 returns a Set of map entries.
-        Set does not have a getKey() method, so line x2 does not compile, and option D is the answer.
+        Set does not have a getKey() method,
+        so line x2 does not compile, and option D is the answer.
      */
    static void add(){
        var names = new HashMap<String, String>();

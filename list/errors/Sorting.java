@@ -10,7 +10,8 @@ import java.util.*;
     E. A runtime exception is thrown.
     F. None of the above.
 
-    Lizard implements Comparator, not Comparable. To sort a List without specifying a Comparator, it needs to be Comparable.
+    Lizard implements Comparator, not Comparable.
+    To sort a List without specifying a Comparator, it needs to be Comparable.
     This causes a compiler error when calling the sort() method. The compare() method does compile.
     Creating a custom Comparator and calling it is overkill to compare numbers, but it does work.
 
@@ -20,6 +21,15 @@ public class Sorting {
         private int weight; //  5:
         //6:
        // Assume getters/setters/constructors provided  7:
+    
+    public Lizard(int weight){
+        this.weight = weight;
+    }
+    
+    public int getWeight(){
+        return weight;
+    }
+    
      // 8:
         public int compare(Lizard x, Lizard y) { // 9:
             return Comparator.comparing(Lizard::getWeight) //  10:
