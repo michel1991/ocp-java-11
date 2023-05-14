@@ -1,11 +1,14 @@
-package list.runtime;
+package collections.runtime;
 import java.util.*;
 import java.util.concurrent.*;
 
 /**
-* The code compiles without issue, so option D is incorrect.
-* The code throws a ConcurrentModificationException at runtime on line f1, since list1 is a regular collection and not a concurrent one.
-* Therefore, option E is the correct answer. Note that if line f1 were removed, the rest of the code would run without throwing an exception, outputting 3 6 0.
+  The code compiles without issue, so option D is incorrect.
+  The code throws a ConcurrentModificationException
+  at runtime on line f1, since list1 is a regular collection and not a concurrent one.
+  Therefore, option E is the correct answer.
+  Note that if line f1 were removed,
+  the rest of the code would run without throwing an exception, outputting 3 6 0.
  */
 public class ConcurrentExceptionWhenAddToListDuringLoop {
    public static void main(String... args){

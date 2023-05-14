@@ -1,4 +1,4 @@
-package list.runtime;
+package collections.runtime;
 import java.util.*;
 
 public class LinkedBlokingQueueIsSpecial {

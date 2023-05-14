@@ -1,4 +1,4 @@
-package list.maps;
+package collections.maps;
 import java.util.*;
 
 public class TreeMapSortKeys {
@@ -13,10 +13,13 @@ public class TreeMapSortKeys {
         G. None of the above
 
        When the same key is put into a Map, it overrides the original value.
-       This means that line 23 could be omitted and the code would be the same, and there are only three key/value pairs in the map.
+       This means that line 23 could be omitted and the code would be the same,
+       and there are only three key/value pairs in the map.
        TreeMap sorts its keys making the order M followed by k followed by m.
        Remember that natural sort ordering has uppercase before lowercase.
-       The replaceAll() method runs against each element in the map, doubling the value. Finally, we iterate through each key, printing 846 and making option E correct.
+       The replaceAll() method runs against each element in the map,
+       doubling the value. Finally, we iterate through each key,
+       printing 846 and making option E correct.
 
      */
    static void sortTheKeys(){

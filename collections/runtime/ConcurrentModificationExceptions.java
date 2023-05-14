@@ -1,4 +1,4 @@
-package list.runtime;
+package collections.runtime;
 
 import java.util.*;
 import java.util.concurrent.*;
@@ -77,7 +77,19 @@ public class ConcurrentModificationExceptions {
     }
 
     public static void main(String... args){
-      remove();
+        try{
+            remove();
+        }catch(RuntimeException ex){
+            ex.printStackTrace();
+        }
+        
+        try{
+            anotherExample();
+        }catch(RuntimeException ex){
+            ex.printStackTrace();
+        }
+        
+     
   }
     
 }

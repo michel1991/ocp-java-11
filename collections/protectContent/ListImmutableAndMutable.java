@@ -1,4 +1,4 @@
-package list.protectContent;
+package collections.protectContent;
 import java.util.*;
 
 
@@ -34,7 +34,8 @@ public class ListImmutableAndMutable {
         F. counts.put("rain", 1) and counts.values()
         G. None of the above
 
-       Option A and B are incorrect because List.of() is immutable. Trying to add a value causes an exception.
+       Option A and B are incorrect because List.of() is immutable.
+       Trying to add a value causes an exception.
        Option C is incorrect because sets contain only unique values.
        The code will run without error, but the set will contain only one element.
        Options D and E are correct because the type is a String and is legal to cast to a String in the loop.
@@ -58,6 +59,6 @@ public class ListImmutableAndMutable {
     }
 
     public static void main(String... args){
-
+        choiceCorrectMethodAccordingToList();
     }
 }

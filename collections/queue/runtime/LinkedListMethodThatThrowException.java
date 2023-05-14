@@ -1,4 +1,4 @@
-package list.queue.runtime;
+package collections.queue.runtime;
 import java.util.*;
 
 

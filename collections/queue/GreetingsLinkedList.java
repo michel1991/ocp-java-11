@@ -1,4 +1,4 @@
-package list.queue;
+package collections.queue;
 import java.util.*;
 
 public class GreetingsLinkedList {
@@ -12,10 +12,12 @@ public class GreetingsLinkedList {
         F. The code does not compile.
         G. An exception is thrown.
 
-      This is a FIFO (first-in, first-out) queue. On line 7, we remove the first element added, which is "hello".
+      This is a FIFO (first-in, first-out) queue.
+      On line 7, we remove the first element added, which is "hello".
       On line 8, we look at the new first element ("hi") but don’t remove it.
       On lines 9 and 10, we remove each element in turn until no elements are left, printing hi and ola together.
-      Note that we don’t use an Iterator to loop through the LinkedList to avoid concurrent modification issues.
+      Note that we don’t use an Iterator to loop through
+      the LinkedList to avoid concurrent modification issues.
       The order in which the elements are stored internally is not part of the API contract.
      */
   static  void removeAndAdd(){

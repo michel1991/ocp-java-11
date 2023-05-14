@@ -1,4 +1,4 @@
-package list.queue;
+package collections.queue;
 import java.util.*;
 
 public class LinkedListOperations {
@@ -14,9 +14,10 @@ public class LinkedListOperations {
         Note that LinkedList is a Deque, or double-ended queue.
         This lets us add elements at both ends. The offer() method
         adds an element to the back of the queue. After line 7 completes,
-        the queue contains 18 and 5 in that order. The push() method adds an element to the front of the queue.
-        How rude! The element 13 pushes past everyone on the line. After line 8 completes,
-        the queue now contains 13, 18, and 5, in that order.
+        the queue contains 18 and 5 in that order.
+        The push() method adds an element to the front of the queue.
+        How rude! The element 13 pushes past everyone on the line.
+        After line 8 completes, the queue now contains 13, 18, and 5, in that order.
         Then we get the first two elements
         from the front, which are 13 and 18, making option B correct.
 

@@ -1,4 +1,4 @@
-package list.protectContent;
+package collections.protectContent;
 import java.util.*;
 
 /**
@@ -10,8 +10,11 @@ import java.util.*;
     E. None of the above.
 
   The code compiles.
-  Line 4 uses an unbounded wildcard, which means that we cannot add any objects to the list, making option D incorrect.
-  Line 6 infers the type to be Object based on the diamond operator. Any subclass of Object can be added to exceptions, making option C correct.
+  Line 4 uses an unbounded wildcard,
+  which means that we cannot add any objects to the list,
+  making option D incorrect.
+  Line 6 infers the type to be Object based on the diamond operator.
+  Any subclass of Object can be added to exceptions, making option C correct.
  */
 class School { // 2:
     private List<Object> exceptions; //  3:
@@ -22,5 +25,7 @@ class School { // 2:
 } //  8:
 
 public class SchoolListImutableAndMutable {
-
+  public static void main(String... args){
+      
+  }
 }

@@ -1,4 +1,4 @@
-package list.queue.errors;
+package collections.queue.errors;
 import java.util.*;
 
 

@@ -1,11 +1,12 @@
-package list.protectContent;
+package collections.protectContent;
 import java.util.*;
 import java.io.*;
 import java.sql.*;
 import java.time.*;
 
 /**
-*  Which of these statements can fill in the blank so that the Wildcard class compiles successfully? (Choose all that apply.)
+  Which of these statements can fill in the blank
+  so that the Wildcard class compiles successfully? (Choose all that apply.)
     A. List<?> list = new HashSet <String>()
     B. ArrayList<? super Date> list = new ArrayList<Date>()
     C. List<?> list = new ArrayList<?>()
@@ -52,7 +53,8 @@ public class LimitContentWithGenerics {
       }
 
     /**
-        Which of the following statements can fill in the blank to make the code compile successfully? (Choose all that apply.)
+        Which of the following statements can fill in the blank
+        to make the code compile successfully? (Choose all that apply.)
          Set<? extends RuntimeException> mySet = new _________();
 
             A. HashSet<? extends RuntimeException>
@@ -62,10 +64,14 @@ public class LimitContentWithGenerics {
             E. None of the above
 
           The mySet declaration defines an upper bound of type RuntimeException.
-          This means that classes may specify RuntimeException or any subclass of RuntimeException as the type parameter.
-          Option B is incorrect because Exception is a superclass, not a subclass, of RuntimeException.
-          Option A is incorrect because the wildcard cannot occur on the right side of the assignment.
-          Options C and D compile and are the answers. For more information, see Chapter 3.
+          This means that classes may specify RuntimeException or any subclass
+          of RuntimeException as the type parameter.
+          Option B is incorrect because Exception
+          is a superclass, not a subclass, of RuntimeException.
+          Option A is incorrect because the wildcard
+          cannot occur on the right side of the assignment.
+          Options C and D compile and are the answers.
+          For more information, see Chapter 3.
 
      */
     static void maxRuntimeException(){
@@ -75,7 +81,8 @@ public class LimitContentWithGenerics {
     }
 
     /**
-     * Which of the following statements compile about the java.util and java.sql packages? (Choose all that apply.)
+      Which of the following statements compile about the java.util
+      and java.sql packages? (Choose all that apply.)
 
         A. List<? extends Statement> list1 = new ArrayList<>();
         B. List<? implements Statement> list2 = new ArrayList<>();
@@ -87,9 +94,11 @@ public class LimitContentWithGenerics {
         Option A creates a List that can contain any implementation of the Statement interface.
         Option E does the same without specifying the generic type.
         Option B is incorrect because generic declarations use extends rather than implements regardless
-        of whether classes or interfaces are specified. Option C is incorrect because the
-        diamond operator must come before the parentheses. Option D is incorrect for both of these reasons.
-         Option F is incorrect because List is an interface and cannot be instantiated.
+        of whether classes or interfaces are specified.
+        Option C is incorrect because the
+        diamond operator must come before the parentheses.
+        Option D is incorrect for both of these reasons.
+        Option F is incorrect because List is an interface and cannot be instantiated.
      */
     public static void limitWithStatement(){
         List<? extends Statement> list1 = new ArrayList<>();
@@ -99,8 +108,8 @@ public class LimitContentWithGenerics {
 
 
    /**
-    * Which of following can fill in the blank to make the method successfully compile? (Choose all that apply.)
-    *   A. List list
+      Which of following can fill in the blank to make the method successfully compile? (Choose all that apply.)
+        A. List list
         B. List<?> list
         C. List<Number> list
         D. List<? extends Object> list
@@ -108,11 +117,13 @@ public class LimitContentWithGenerics {
         F. List<? implements Number> list
 
         Option A doesn’t use generics, so adding anything is fine.
-        Option C uses generics and specifies the type. The value 123 autoboxes to Integer,
-        which is a Number. Option E allows Number and a superclass of Number.
+        Option C uses generics and specifies the type.
+        The value 123 autoboxes to Integer,which is a Number.
+        Option E allows Number and a superclass of Number.
         The tricky part is that Integer is a subclass of Number so it matches on the Number class.
         Option B is an unbounded wildcard and option D is an upper-bounded wildcard,
-        neither of which allows adding to the list. Option F doesn’t compile because implements
+        neither of which allows adding to the list.
+        Option F doesn’t compile because implements
         is not a valid keyword in describing generic bounds.
     */
     public static void add(List<? super Number> list) { // _________
@@ -120,8 +131,19 @@ public class LimitContentWithGenerics {
     }
 
     public static void main(String... args){
+        // begin choiceCorrectFirst
         HashSet<? super ClassCastException> set = new HashSet<Exception>();
         Map<String, ? extends Number> hm = new HashMap<String, Integer>();
         choiceCorrectFirst(set, hm);
+        // end choiceCorrectFirst
+        
+        //begin number
+        List listAddOne = new ArrayList();
+        List<Number> listAddTwo = new ArrayList();
+        List<? super Number>  listAddThree = new ArrayList();
+        add(listAddOne);
+        add(listAddTwo);
+        add(listAddThree);
+        //end  number
     }
 }

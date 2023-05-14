@@ -1,11 +1,11 @@
-package list.runtime;
+package collections.sorts.runtime;
 import java.util.*;
 
 public class ImmutableListComparator {
   /**
    *   Fill in the blank so the code prints beta.
-        A. (s, t) -˃ s.compareTo(t)
-        B. (s, t) -˃ t.compareTo(s)
+        A. (s, t) -> s.compareTo(t)
+        B. (s, t) -> t.compareTo(s)
         C. Comparator.comparing(String::length)
         D. Comparator.comparing(String::length).reversed()
         E. None of the above
