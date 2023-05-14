@@ -1,4 +1,4 @@
-package list.sets;
+package collections.sets;
 import java.util.*;
 import java.util.function.*;
 

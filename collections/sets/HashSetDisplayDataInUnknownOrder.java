@@ -1,4 +1,4 @@
-package list.sets;
+package collections.errors;
 import java.util.*;
 
 /**

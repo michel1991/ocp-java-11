@@ -1,4 +1,4 @@
-package list.sets;
+package collections.sets;
 import java.util.*;
 
 public class HashSetDoesHoldMethodToSetValueByIndex {

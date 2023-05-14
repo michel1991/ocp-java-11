@@ -1,19 +1,22 @@
-package list.sets;
+package collections.sorts;
 import java.util.*;
 
 /**
-* What is the result of the following program?
-*   A. [55, 88] [55, 88]
+  What is the result of the following program?
+    A. [55, 88] [55, 88]
     B. [55, 88] [88, 55]
     C. [88, 55] [55, 88]
     D. [88, 55] [88, 55]
     E. The code does not compile.
     F. A runtime exception is thrown.
 
-   This question is difficult because it defines both Comparable and Comparator on the same object.
-   The t1 object doesn’t specify a Comparator, so it uses the Comparable object’s compareTo() method.
+   This question is difficult because it defines
+   both Comparable and Comparator on the same object.
+   The t1 object doesn’t specify a Comparator,
+   so it uses the Comparable object’s compareTo() method.
    This sorts by the text instance variable.
-   The t2 object did specify a Comparator when calling the constructor, so it uses the compare() method, which sorts by the int.
+   The t2 object did specify a Comparator when calling the constructor,
+   so it uses the compare() method, which sorts by the int.
  */
 class Sorted // 3:
 implements Comparable<Sorted>, Comparator<Sorted> { // 4:
