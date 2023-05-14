@@ -1,4 +1,4 @@
-package list.errors;
+package collections.sorts.errors;
 import java.util.*;
 
 /**
