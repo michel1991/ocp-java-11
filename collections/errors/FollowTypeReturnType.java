@@ -1,4 +1,4 @@
-package list.errors;
+package collections.errors;
 import java.util.*;
 
 

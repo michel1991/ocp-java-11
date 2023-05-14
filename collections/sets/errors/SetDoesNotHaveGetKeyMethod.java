@@ -1,4 +1,4 @@
-package list.sets.errors;
+package collections.sets.errors;
 import java.util.*;
 
 public class SetDoesNotHaveGetKeyMethod {

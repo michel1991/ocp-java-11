@@ -1,4 +1,4 @@
-package list.maps.errors;
+package collections.maps.errors;
 import java.util.*;
 
 public class HashMapGetWithDefaultValue {
