@@ -1,4 +1,4 @@
-package collections.errors;
+package collections.lists.errors;
 import java.util.*;
 
 public class ImmutableWithRemoveIf {
