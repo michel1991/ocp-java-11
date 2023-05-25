@@ -13,6 +13,7 @@ package generics;
     Now, we just have to decide whether a lower or upper bound is correct for the T formal type parameter in Wash.
     The clue is that the method calls size(). This method is available on Collection,
     and all classes that extend/implement it. Therefore, option B is correct.
+    (Me: Type of generic of the fleft must match to type of genric at the right without unbound, upper, lower)
  */
 import java.util.*;
 class Wash<T extends Collection> { // <T ________ Collection˃ 

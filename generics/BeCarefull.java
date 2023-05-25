@@ -1,8 +1,9 @@
 package generics;
 
 /**
-* Which of the following lines can be inserted to make the code compile? (Choose all that apply.)
-*
+  Which of the following lines can be
+  inserted to make the code compile? (Choose all that apply.)
+
   A. W w1 = new W();
   B. W w2 = new X();
   C. W w3 = new Y();
@@ -10,7 +11,8 @@ package generics;
   E. Y y2 = new X();
   F. Y y1 = new Y();
 
-  Y is both a class and a type parameter. This means that within the class Z, when we refer to Y, it uses the type parameter.
+  Y is both a class and a type parameter.
+  This means that within the class Z, when we refer to Y, it uses the type parameter.
   All of the choices that mention class Y are incorrect because it no longer means the class Y.
  */
 class W {}

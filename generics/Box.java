@@ -1,6 +1,6 @@
 package generics;
 /**
-* What is the result of the following class?
+ What is the result of the following class?
     A. Compiler error on line 1
     B. Compiler error on line 2
     C. Compiler error on line 11
@@ -11,7 +11,8 @@ package generics;
   This class is a proper use of generics. Box uses a generic type named T.
   On line 11, the generic type is String.
   On line 12, the generic type is Integer.
-  Both lines 11 and 12 use var for local variables to represent the types, so you have to keep track of them yourself.
+  Both lines 11 and 12 use var for local variables to represent the types,
+  so you have to keep track of them yourself.
   For more information, see Chapter 3.
  */
 public class Box<T> { // 1:

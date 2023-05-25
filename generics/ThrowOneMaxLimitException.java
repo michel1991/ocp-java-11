@@ -20,4 +20,8 @@ public class ThrowOneMaxLimitException {
         if (iter.hasNext())
             throw iter.next();
     }
+    
+    public static void main(String... args){
+        throwOne(new ArrayList<RuntimeException>(List.of(new RuntimeException())));
+    }
 }

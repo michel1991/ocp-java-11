@@ -16,7 +16,8 @@ import java.io.*;
     Since it needs an actual name, options A and B are incorrect.
     We need to specify a type constraint so we can call the add() method.
     Regardless of whether the type is a class or interface,
-    Java uses the extends keyword for generics. Therefore, option D is incorrect, and option C is the answer.
+    Java uses the extends keyword for generics.
+    Therefore, option D is incorrect, and option C is the answer.
  */
 public class ExtendingGenerics {
     private static <T extends Collection, U> U add(T list, U element) { // <____________ , U>
@@ -24,6 +25,7 @@ public class ExtendingGenerics {
         return element;
     }
     
+
     public static void main(String[] args) {
         var values = new ArrayList<String>();
         add(values, "duck");

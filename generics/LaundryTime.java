@@ -13,7 +13,8 @@ package generics;
         Options A and E show the best ways to call it.
         These option declare a generic reference type that specifies the type is String.
         Option A uses local variable type inference,
-        whereas option E uses the diamond syntax to avoid redundantly specifying the type of the assignment.
+        whereas option E uses the diamond syntax
+        to avoid redundantly specifying the type of the assignment.
 
          Options B, C, and D show that you can omit the generic
          type in the reference and still have the code compile.

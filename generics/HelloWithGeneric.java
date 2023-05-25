@@ -3,13 +3,13 @@ import java.lang.annotation.*;
 
 /**
     What is the result of the following code?
-    A. hi followed by a runtime exception
-    B. hi-1hola-true
-    C. The first compiler error is on line 1.
-    D. The first compiler error is on line 4.
-    E. The first compiler error is on line 5.
-    F. The first compiler error is on line 9.
-    G. The first compiler error is on line 10.
+        A. hi followed by a runtime exception
+        B. hi-1hola-true
+        C. The first compiler error is on line 1.
+        D. The first compiler error is on line 4.
+        E. The first compiler error is on line 5.
+        F. The first compiler error is on line 9.
+        G. The first compiler error is on line 10.
 
     The class compiles and runs without issue. Line 10 gives a compiler warning for not using generics but not a compiler error.
     Line 4 compiles fine because toString() is defined on the Object class and is therefore always available to call.

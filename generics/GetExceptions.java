@@ -14,8 +14,15 @@ public class GetExceptions {
         being added are of type Exception or direct subclasses.
 
      */
-    public static void getExceptions(Collection<? super Exception> coll) { // getExceptions(Collection˂__________˃ coll)
+    public static void getExceptions(Collection<? super Exception> coll) { // getExceptions(Collection<__________> coll)
         coll.add(new RuntimeException());
         coll.add(new Exception());
+    }
+    
+    public static void main(String... args){
+        List<Exception> withException = new ArrayList<>();
+        getExceptions(withException);
+        List<Object> withObjects = new ArrayList<>();
+        getExceptions(withObjects);
     }
 }

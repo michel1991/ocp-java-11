@@ -8,15 +8,13 @@ import java.io.*;
     A. printException(new FileNotFoundException("A"))
     B. printException(new Exception("B"))
     C. <Throwable>printException(new Exception("C"))
-    D. <NullPointerException>printException(
-
-     new NullPointerException ("D"))
-
+    D. <NullPointerException>printException(new NullPointerException ("D"))
     E. printException(new Throwable("E"))
 
     The generic type must be Exception or a subclass of Exception since this is an upper bound.
     Options C and E are wrong because Throwable is a superclass of Exception.
-    Option D uses an odd syntax by explicitly listing the type, but you should be able to recognize it as acceptable.
+    Option D uses an odd syntax by explicitly listing the type,
+    but you should be able to recognize it as acceptable.
  *
  */
 public class Helper { // 2:
