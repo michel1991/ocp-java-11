@@ -8,3 +8,4 @@
 * checking autoboxing/unboxing
 * Checking order of comparing of letters (number, upper case, lower case)
 * don't forget sort with TreeSet, TreeMap(key are sort, values sort according to the key sort)
+* without unbound, upper, lower bound  the same type is used on both sides of the declaration.
