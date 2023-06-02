@@ -17,7 +17,8 @@ package nestedClass.errors;
     which means it requires an instance to instantiate
     a member of the member inner class MyTrunk.
     For this reason,
-    the call to new MyTrunk() does not compile, and option F is correct.
+    the call to new MyTrunk() does not compile,
+    and option F is correct.
  */
 interface Long {
     Number length();

@@ -13,7 +13,13 @@ package nestedClass.errors;
     Line w2 uses an instance of Bottle to instantiate the Ship.
     Therefore, line w2 does not compile, and option C is the correct answer.
      Note that if Ship were changed to be a member inner class,
-     the code would still not compile since a member inner class cannot include static members and enums are inherently static.
+     (the code would still not compile since a member
+     inner class cannot include static members
+     and enums are inherently static [
+       be caefully of this sentences the code compile,
+       it is true that the enums have implicit static add by compile
+      ]
+     ).
  */
 class Bottle {
     public static class Ship {
