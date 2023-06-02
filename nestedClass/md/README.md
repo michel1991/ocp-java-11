@@ -1,4 +1,4 @@
-#### ill in the blanks with the only option that makes
+#### Fill in the blanks with the only option that makes
 #### this statement false: A(n) ______________ can access ______________
 #### of the enclosing class in which it is defined.
 * A. static nested class, static members

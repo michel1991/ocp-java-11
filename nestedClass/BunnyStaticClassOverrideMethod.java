@@ -8,8 +8,10 @@ package nestedClass;
     D. HOPHOP
     E. The code does not compile.
     
-    This example deals with polymorphism since the methods are being called on the object instance.
-    Since both objects are of type FlemishRabbit, HOP is printed twice, and option D is the correct answer.
+    This example deals with polymorphism since the methods
+    are being called on the object instance.
+    Since both objects are of type FlemishRabbit,
+    HOP is printed twice, and option D is the correct answer.
  */
  class Bunny {
     static class Rabbit {

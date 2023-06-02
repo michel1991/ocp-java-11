@@ -1,7 +1,10 @@
 package nestedClass;
 /**
- * Given the following class declaration, which options correctly declare a local variable containing an instance of the class?
-   A. new Sunset() extends Sky {};
+   Given the following class declaration,
+   which options correctly declare a local variable containing
+   an instance of the class?
+   
+    A. new Sunset() extends Sky {};
     B. new Sky();
     C. new Sky() {}
     D. new Sky() { final static int blue = 1; };
@@ -14,8 +17,10 @@ package nestedClass;
     the declaration of an anonymous class can only extend or implement one type directly.
     Since it would already extend Sunset, it cannot specify Sky at the same time.
     Option B is incorrect because Sky is abstract and cannot be instantiated directly.
-     Option C is incorrect because it is missing a semicolon (;) at the end.
-     Option D is the correct answer. Remember that all nested classes can have static variables if they are marked final.
+    Option C is incorrect because it is missing a semicolon (;) at the end.
+    Option D is the correct answer.
+    Remember that all nested classes
+    can have static variables if they are marked final.
  */
 class Earth {
     private abstract class Sky {
