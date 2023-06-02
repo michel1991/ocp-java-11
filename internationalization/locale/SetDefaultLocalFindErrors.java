@@ -1,4 +1,4 @@
-package internationalization;
+package internationalization.locale;
 import java.util.*;
 
 public class SetDefaultLocalFindErrors {

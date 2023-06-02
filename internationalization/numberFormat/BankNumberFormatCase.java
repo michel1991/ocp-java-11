@@ -1,5 +1,5 @@
 
-package internationalization;
+package internationalization.numberFormat;
 import java.text.*;
 import java.util.Locale;
 

@@ -1,8 +1,9 @@
-package internationalization;
+package internationalization.locale;
 import java.util.Locale;
 
 /**
-* Which of the following, when inserted independently in the blank, use locale parameters that are properly formatted? (Choose all that apply.)
+* Which of the following, when inserted independently in the blank,
+ use locale parameters that are properly formatted? (Choose all that apply.)
     A. new Locale("xM");
     B. new Locale("MQ", "ks");
     C. new Locale("qw");
@@ -13,8 +14,10 @@ import java.util.Locale;
 
    The code compiles with the appropriate input, so option G is incorrect.
   A locale consists of a required lowercase language code and optional uppercase country code.
-  In the Locale() constructor, the language code is provided first. For these reasons, options C and D are correct.
-  Options E and F are incorrect because a Locale is created using a constructor or Locale.Builder class.
+  In the Locale() constructor, the language code is provided first.
+  For these reasons, options C and D are correct.
+  Options E and F are incorrect because a Locale
+  is created using a constructor or Locale.Builder class.
 
  */
 class ReadMap implements AutoCloseable {

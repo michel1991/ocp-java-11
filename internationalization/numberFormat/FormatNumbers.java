@@ -1,4 +1,4 @@
-package internationalization;
+package internationalization.numberFormat;
 import java.util.stream.*;
 import java.text.*;
 import java.util.*;
@@ -18,8 +18,10 @@ public class FormatNumbers {
             F. The output cannot be determined without knowing the locale of the system where it will be run.
 
             The code compiles, so option D is incorrect.
-            In this sample, the default locale is set to US, while the default locale format is set to GERMANY.
-            Neither is used for formatting the value, as getCurrencyInstance() is called with UK as the locale.
+            In this sample, the default locale is set to US,
+            while the default locale format is set to GERMANY.
+            Neither is used for formatting the value,
+            as getCurrencyInstance() is called with UK as the locale.
             For this reason, the £ symbol is used, making option C correct.
      */
     static void formatToUK(){

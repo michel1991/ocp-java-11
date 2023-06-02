@@ -1,4 +1,4 @@
-package internationalization;
+package internationalization.numberFormat;
 import java.util.stream.*;
 import java.text.*;
 import java.util.*;
