@@ -10,3 +10,4 @@
 *  member inner class is linked to instance  of outer class for this reason it can only hold static member porperty with final specifier (method static not allow)
 * Remember that all nested classes can have static variables if they are marked final
 * respect all rule of interface/abstract class when using it with anonyms class
+* Be carefully to create anonym class on final class
