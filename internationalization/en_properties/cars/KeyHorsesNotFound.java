@@ -1,4 +1,4 @@
-package internationalization.en_properties.cars.keyHorsesNotFound;
+package internationalization.en_properties.cars;
 import java.util.*;
 public class KeyHorsesNotFound {
     /**
@@ -21,7 +21,7 @@ public class KeyHorsesNotFound {
      */
     public static void main(String... args){
         Locale.setDefault(new Locale("en", "US"));
-        var rb = ResourceBundle.getBundle("internationalization.en_properties.cars.keyHorsesNotFound.Cars",
+        var rb = ResourceBundle.getBundle("internationalization.en_properties.cars.Cars",
                                           new Locale("fr", "FR"));
         var s1 = rb.getString("country");
         var s2 = rb.getString("horses");
