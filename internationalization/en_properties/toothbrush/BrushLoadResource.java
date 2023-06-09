@@ -1,4 +1,4 @@
-package internationalization.en_properties;
+package internationalization.en_properties.toothbrush;
 import java.util.*;
 
 public class BrushLoadResource {
@@ -25,7 +25,7 @@ public class BrushLoadResource {
         Locale.setDefault(new Locale.Builder()
       .setLanguage("es")
       .setRegion("MX").build());
-        var rb = ResourceBundle.getBundle("internationalization.en_properties.files.toothbrush",
+        var rb = ResourceBundle.getBundle("internationalization.en_properties.toothbrush.toothbrush",
                                           new Locale("fr"));
         var a = rb.getString("color");
         var b = rb.getString("type");
