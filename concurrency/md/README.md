@@ -74,3 +74,21 @@ that has already been written to by another thread, it may set invalid data.
 For example, two increment operations running
 at the same time could result in one of the increment operations being lost.
 
+#### Let’s say you needed a thread executor to create tasks
+#### for a CyclicBarrier that has a barrier limit of five threads.
+#### Which static method in ExecutorService should you use to obtain it?
+* A. newSingleThreadExecutor()
+* B. newSingleThreadScheduledExecutor()
+* C. newCachedThreadPool()
+* D. newFixedThreadPool(2)
+* E. None of the above
+
+Trick question! ExecutorService does not contain any of these methods.
+To obtain an instance of a thread executor, you need to use the Executors factory class.
+For this reason, option E is the correct answer.
+If the question had instead asked which Executors method to use,
+then the correct answer would be option C.
+Options A, B, and D do not create enough threads
+for a CyclicBarrier expecting to reach a limit of five concurrent threads.
+Option C, on the other hand,
+will create threads as needed and is appropriate for use with a CyclicBarrier.
