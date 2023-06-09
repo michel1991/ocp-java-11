@@ -1,4 +1,4 @@
-package internationalization.en_properties;
+package internationalization.en_properties.container;
 import java.util.*;
 
 /**
@@ -27,7 +27,7 @@ public class LoadPod {
         new Locale.Builder()
                 .setLanguage("en")
                 .setRegion("US").build();
-        var rb = ResourceBundle.getBundle("internationalization.en_properties.container");
+        var rb = ResourceBundle.getBundle("internationalization.en_properties.container.container");
         String name = rb.getString("name");
         String type = rb.getString("type");
         System.out.print(name + " " + type);
