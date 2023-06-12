@@ -1,4 +1,4 @@
-package list.comparison;
+package collections.maps;
 import java.util.*;
 import static java.util.Map.Entry; // require to import static file
 
