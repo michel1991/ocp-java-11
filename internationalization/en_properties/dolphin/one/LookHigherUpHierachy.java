@@ -1,4 +1,4 @@
-package internationalization.en_properties.dolphin;
+package internationalization.en_properties.dolphin.one;
 import java.util.*;
 public class LookHigherUpHierachy {
     /**
@@ -30,7 +30,7 @@ public class LookHigherUpHierachy {
     static void load(){
         Locale fr = new Locale("fr"); //   5:
         Locale.setDefault(new Locale("en", "US")); //   6:
-        var b = ResourceBundle.getBundle("internationalization.en_properties.dolphin.Dolphins", fr); //  7:
+        var b = ResourceBundle.getBundle("internationalization.en_properties.dolphin.one.Dolphins", fr); //  7:
         b.getString("name"); //  8:
         b.getString("age"); //  9:
 
