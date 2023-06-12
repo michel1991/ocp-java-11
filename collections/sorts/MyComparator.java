@@ -1,4 +1,4 @@
-package collections.comparison;
+package collections.sorts;
 import java.util.*;
 
 public class MyComparator implements Comparator<String> {
