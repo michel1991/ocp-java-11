@@ -2,12 +2,13 @@ package internationalization;
 import java.util.*;
 
 
-public class LoadCorrectDolphins {
+public class SelectResourceBundleValues {
     
  
 
     /**
-     * Assume that all of the files mentioned in the answer choices exist and define the same keys. Which one will be used to find the key in line 8?
+     * Assume that all of the files mentioned in the answer choices exist and define the same keys.
+        Which one will be used to find the key in line 8?
         A. Dolphins.properties
         B. Dolphins_US.properties
         C. Dolphins_en.properties
@@ -15,8 +16,10 @@ public class LoadCorrectDolphins {
         E. Whales_en_US.properties
         F. The code does not compile.
 
-      Java will first look for the most specific matches it can find, starting with Dolphins_en_ US.properties.
-      Since that is not an answer choice, it drops the country and looks for Dolphins_en.properties, making option C correct.
+      Java will first look for the most specific matches it can find,
+      starting with Dolphins_en_ US.properties.
+      Since that is not an answer choice,
+      it drops the country and looks for Dolphins_en.properties, making option C correct.
       Option B is incorrect because a country without a language is not a valid locale.
 
      */
@@ -31,14 +34,15 @@ public class LoadCorrectDolphins {
        Assume that all of the files mentioned in the answer choices exist and define the same keys.
        Which one will be used to find the key in line 8?
 
-       A. Dolphins.properties
+        A. Dolphins.properties
         B. Dolphins_US.properties
         C. Dolphins_fr.properties
         D. Whales.properties
         E. Whales_en_US.properties
         F. The code does not compile.
 
-        Java will first look for the most specific match it can find, starting with Dolphins_en_US.properties.
+        Java will first look for the most specific match it can find,
+        starting with Dolphins_en_US.properties.
         Since it is not found, it drops the country and looks for Dolphins_en.properties.
         Since no match is found, Java drops the language and goes on to Dolphin.properties.
         For these reasons, option A is the correct answer.
