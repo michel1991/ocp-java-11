@@ -1,4 +1,4 @@
-package list.comparison;
+package collections.comparison;
 import java.util.*;
 
 /**
@@ -11,8 +11,10 @@ import java.util.*;
 
   This method sorts in reverse order in the compareTo() method.
   It returns 0 when the objects are equal, making option A correct.
-  It returns a negative number when the object is larger than the argument since we are sorting descending, making option C correct.
-  However, this object does not implement the Comparable interface. Collections.sort() will not compile if called on this list.
+  It returns a negative number when the object
+  is larger than the argument since we are sorting descending, making option C correct.
+  However, this object does not implement the Comparable interface.
+  Collections.sort() will not compile if called on this list.
  */
 public class NumbersCompare {
     private int num; //  4:
