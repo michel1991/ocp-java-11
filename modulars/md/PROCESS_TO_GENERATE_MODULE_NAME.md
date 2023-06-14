@@ -28,6 +28,30 @@ Since identifiers are not allowed to begin with numbers, options E and F are inc
 Dashes (-) are not allowed either, ruling out options B and D.
 That leaves options A and C as the correct answers.
 
+#### How many of these module declarations are valid?
+``` java
+    module com.apple { exports com.apple; }
+    module com.4apple { requires com.apple;}
+    module com.apple4 { declares com.apple; }
+    module com.apple-four { }
+    module com.apple$ {}
+```
+* A. None.
+* B. One.
+* C. Two.
+* D. Three.
+* E. Four.
+* F. Five.
+
+This question is tricky because it mixes testing valid identifier names with module concepts.
+The com.apple module is valid and demonstrates a simple module.
+Additionally, the com.apple$ module is valid since $ characters are permitted in identifier names.
+The com.4apple and com.apple-four modules are invalid because identifier or identifier
+segments may not start with a digit nor contain a dash.
+The com.apple4 module is invalid because declares is not a valid module directive.
+Since only two are valid, option C is the answer.
+
+
 
 #### Suppose we have an automatic module on the module path named dog-arthur2.jar
 #### and no Automatic-Module-Name specified?

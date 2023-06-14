@@ -105,6 +105,19 @@ while the correct method to obtain a parallel stream that operates on a Collecti
 For this reason, options C, E, and F are correct.
 Note that option E retrieves a parallel stream of an already parallel stream, which is allowed.
 
+#### Given an IntStream, which method would you use to obtain an equivalent parallel Stream˂T˃?
+* A. parallel()
+* B. parallelStream()
+* C. parallels()
+* D. getParallel()
+* E. getParallelStream()
+* F. None of the above
+
+Trick question! The correct method to obtain an equivalent parallel
+stream of an existing IntStream is parallel(),
+but for an IntStream this returns another IntStream,
+not a generic Stream˂T˃. For this reason, option F is correct.
+
 
 #### Which statements about parallel streams are correct? (Choose two.)
 * A. A parallel stream is always faster than a serial stream.

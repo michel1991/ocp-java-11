@@ -1,3 +1,5 @@
+## Nb: command to display info is (java -X, java --help-extra)
+
 ##### Suppose you have a module that contains a class with a call to exports(ChocolateLab.class).
 ##### Which part of the module service contains this class?
 * A. Consumer

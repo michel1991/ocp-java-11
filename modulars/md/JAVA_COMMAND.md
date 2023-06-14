@@ -15,6 +15,20 @@
 The first clue is that the -m and -p options are on the java command.
 Beyond that, you need to memorize the name of the --show-module-resolution option.
 
+### Which of the following statements are true? (Choose two.)
+*  A. It is a good practice to add the --add-exports option to your java command.
+*  B. It is a permitted, but not recommended, to add the --add-exports option to your java command.
+*  C. There is no --add-exports option on the java command.
+*  D. It is a good practice to add the --add-requires option to your java command.
+*  E. It is permitted, but not recommended, to add the --add-requires option to your java command.
+*  F. There is no --add-requires option on the java command.
+
+Nb: command to display info is (java -X, java --help-extra)
+It is recommended to specify all exports directives in the module-info file.
+While it is legal to use the --add-exports option, it is not recommended, making option B correct.
+You do not need to know how to use it for the exam, just that it is not a good idea.
+There is no equivalent option for requires, making option F correct.
+
 ### Which of the following are legal commands to run a modular program? (Choose all that apply.)
 *  A. java -p x -m x/x
 *  B. java -p x-x -m x/x
@@ -159,4 +173,5 @@ But neither gives a list of all the modules that come with the JDK.
 The java command uses this option to print information when the program loads.
 You might think jar does the same thing since it runs a program too.
 Alas, this parameter does not exist on jar.
+
 

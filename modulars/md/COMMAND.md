@@ -162,19 +162,7 @@ The jdeps command outputs requires mandated java.base except
 when run in summary mode, making option C correct.
 Since this module is an implicit dependency in all modules, option E is also correct.
 
-### Which of the following statements are true? (Choose two.)
-*  A. It is a good practice to add the --add-exports option to your java command.
-*  B. It is a permitted, but not recommended, to add the --add-exports option to your java command.
-*  C. There is no --add-exports option on the java command.
-*  D. It is a good practice to add the --add-requires option to your java command.
-*  E. It is permitted, but not recommended, to add the --add-requires option to your java command.
-*  F. There is no --add-requires option on the java command.
 
-Nb: command to display info is (java -X, java --help-extra)
-It is recommended to specify all exports directives in the module-info file.
-While it is legal to use the --add-exports option, it is not recommended, making option B correct.
-You do not need to know how to use it for the exam, just that it is not a good idea.
-There is no equivalent option for requires, making option F correct.
 
 #####  Assuming all referenced files and directories exist and are correct, what does this code do?
 ```txt
