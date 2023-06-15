@@ -1,7 +1,8 @@
 package io.marks;
 import java.io.*;
+import io.PathUtility;
 
-public class MarkMethod {
+public class MagicMonkeys {
     /**
      Assume in and out are valid streams and the next characters of in are MONKEYS.
       What are possible results of executing the following method? (Choose all that apply.)
@@ -20,10 +21,11 @@ public class MarkMethod {
       Line 13 prints M to the stream.
       Line 15 then resets it, so it looks like line 16 should print MON to the stream, but it does not.
       The return value of in.read(buffer) is the number of characters read, resulting in the value of 3 written to the stream.
-      For this reason, option C is correct. Option D is incorrect as buffer sizes are recommended, but not required, to be powers of 2.
+      For this reason, option C is correct.
+      Option D is incorrect as buffer sizes are recommended, but not required, to be powers of 2.
       * 
      */
-    void magic(Reader in, Writer out) throws IOException { // 10:
+    static void magic(Reader in, Writer out) throws IOException { // 10:
         final char[] buffer = new char[3]; //  11:
         in.mark(100); //  12:
         out.write(in.read()); //  13:
@@ -34,7 +36,18 @@ public class MarkMethod {
     } //  18:
 
 
-    public static void main(String... args){
+    public static void main(String... args) throws Exception{
+        String path = PathUtility.getResourcePath()
+                                .append(PathUtility.getFileSeparator())
+                                .append("magic_monkeys.txt")
+                                .toString()
+        ;
+        var out = new OutputStreamWriter(System.out);
+        try(var in = new FileReader(path);){
+            magic(in, out);
+        }catch(Exception ex){
+            ex.printStackTrace();
+        }
 
     }
 }
