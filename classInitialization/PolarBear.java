@@ -22,7 +22,7 @@ package classInitialization;
     Note that if the constructor declared on line 8 did not exist, then the constructor on 12 would match.
     Finally, the bear reference is properly cast to PolarBear on 18, making the value parameter accessible.
  */
-class PolarBear { // 1:
+public class PolarBear { // 1:
     StringBuilder value = new StringBuilder("t"); //  2:
     { value.append("a"); } // 3:
     { value.append("c"); } //  4:
@@ -40,10 +40,12 @@ class PolarBear { // 1:
         Object bear = new PolarBear(); //   16:
         bear = new PolarBear("f"); //  17:
         System.out.println(((PolarBear)bear).value); //    18:
-    } } //   19:
-
-public class PolarBearClassInitialization {
-    public static void main(String[] args) {
-        PolarBear.main();
     }
-}
+    // just for test
+    public static void main(String... args){
+       main();
+    }
+    
+
+} //   19:
+
