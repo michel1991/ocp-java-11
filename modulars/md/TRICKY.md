@@ -75,7 +75,7 @@ statement, making option E the correct answer.
 
 #### Which of the following is true of the following module declaration?
 ``` java
-1: module com.mammal {
+    1: module com.mammal {
     2:    exports com.mammal.cat;
     3:    exports com.mammal.mouse to com.mice;
     4:    uses com.animal;
