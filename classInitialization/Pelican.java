@@ -25,7 +25,7 @@ abstract class Bird { // 1:
     private final void fly() { System.out.println("Bird"); } //   2:
     protected Bird() { System.out.print("Wow-"); } //  3:
 } //   4:
- class Pelican extends Bird { // 5:
+ public class Pelican extends Bird { // 5:
     public Pelican() { System.out.print("Oh-"); } //   6:
     protected void fly() { System.out.println("Pelican"); } //7:
     public static void main(String[] args) { //  8:
@@ -33,9 +33,3 @@ abstract class Bird { // 1:
         chirp.fly(); //    10:
     } } //   11:
 
-
-public class PelicanClassInitialization {
-    public static void main(String[] args) {
-        Pelican.main(args);
-    }
-}
