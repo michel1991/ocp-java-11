@@ -81,3 +81,47 @@ The hop() method has protected access, which allows subclasses to call it,
 making line p1 correct. The HopCounter class is allowed to call the move() method because it is public.
 However, it is not allowed to call the hop() method since it is referencing
 a subclass, but not in one. Therefore, option E is the answer.
+
+### What is the result of the following code?
+```java
+    // Hopper.java
+    package com.animals;
+    
+    public class Hopper {
+        protected void hop() {
+            System.out.println("hop");
+        }
+    }
+    
+    // Grasshopper.java
+    package com.insect;
+    import com.animals.Hopper;
+    
+    public class Grasshopper extends Hopper {
+        public void move() {
+            hop();  // p1
+        }
+    }
+    
+// HopCounter.java
+package com.animals;
+
+public class HopCounter {
+
+    public static void main(String[] args) {
+        var hopper = new Grasshopper();
+        hopper.move();  // p2
+        hopper.hop();   // p3
+    }
+}
+```
+
+* A. The code prints hop once.
+* B. The code prints hop twice.
+* C. The first compiler error is on line p1.
+* D. The first compiler error is on line p2.
+* E. The first compiler error is on line p3.
+
+The hop() method has protected access, which allows subclasses to call it, making line p1 compile.
+Additionally, code in the same package is allowed to access it,
+making lines p2 and p3 compile. The code compiles and runs without error, making option B the answer.
