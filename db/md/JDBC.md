@@ -25,3 +25,15 @@ However, you are still required to know it is a JDBC interface.
 DriverManager is used in JDBC code to get a Connection.
 However, it is a concrete class rather than an interface.
 Since only four out of the five are JDBC interfaces, option E is correct.
+
+#### Which of the following are JDBC interfaces in the java.sql package?
+* A. Driver, Query
+* B. Driver, ResultSet
+* C. DriverManager, Query
+* D. DriverManager, ResultSet
+* E. Driver, DriverManager, Query
+* F. Driver, DriverManager, ResultSet
+
+Driver, Connection, PreparedStatement, and ResultSet are the four key interfaces you need to know for JDBC.
+DriverManager is a class rather than an interface. Query is not used in JDBC.
+Since only Driver and ResultSet are interfaces in the list, option B is the answer.
