@@ -4,3 +4,4 @@
 * verify scope properties (also inside method, becarefully to local variable with same name as member variable)
 * verify correct ovverride/overload method
 * verify method content type according to return method
+* becarefully to final variable
