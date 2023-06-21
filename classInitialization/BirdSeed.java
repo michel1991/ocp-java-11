@@ -22,7 +22,7 @@ package classInitialization;
     Finally, option G is incorrect because the program prints 0 without any changes, not 2.
 
  */
-class BirdSeed {
+public class BirdSeed {
     private int numberBags;
     boolean call;
 
@@ -41,6 +41,3 @@ class BirdSeed {
         BirdSeed seed = new BirdSeed();
         System.out.print(seed.numberBags);
     } }
-public class BirdSeedConstructor {
-
-}
