@@ -26,7 +26,7 @@ class Honey{
     Encapsulation is usually implemented with private instance variables and public methods.
     Calls are allowed to make changes to the instance variables as long as they do so through methods.
  */
-class HoneyPot { // 1:
+public class HoneyPot { // 1:
     private Honey honey;  //  2: Honey honey
     public Honey getHoney() { return honey; } // 3:
     public void setHoney(Honey h) { honey = h; } //  4:
@@ -34,7 +34,3 @@ class HoneyPot { // 1:
         honey.add(bee.getHoney()); //  6:
     } //   7:
 } //  8:
-
-public class HoneyPotEncapsulation {
-
-}
