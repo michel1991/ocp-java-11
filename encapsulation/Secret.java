@@ -12,7 +12,8 @@ import java.util.*;
     E. Remove the guess method.
     F. None. It is already well encapsulated.
 
-    This class is a good example of encapsulation. It has a private instance variable and is accessed by a public method.
+    This class is a good example of encapsulation.
+    It has a private instance variable and is accessed by a public method.
     No changes are needed to encapsulate it, and option F is correct.
  */
 class Secret {
@@ -21,8 +22,4 @@ class Secret {
     public boolean guess(int candidate) {
         return number == candidate;
     }
-}
-
-public class SecretWellEncapsulated {
-
 }
