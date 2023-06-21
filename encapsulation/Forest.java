@@ -16,7 +16,7 @@ import java.util.*;
      the contentsfauna can be modified, so it is not immutable. For these reasons, option B is correct.
 
  */
-final class Forest {
+public final class Forest {
     private final int flora;
     private final List<String> fauna;
 
@@ -31,7 +31,4 @@ final class Forest {
     public List<String>getFauna() {
         return fauna;
     }
-}
-public class ForestWellEncapsulated {
-
 }
