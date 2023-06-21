@@ -14,18 +14,22 @@ import java.util.*;
     This code is well encapsulated because the instance variablesareprivate.
     The algae and wave variables are immutable because they are marked final,
     and there are no methods that can change them.
-    The getAlgae()method creates a defensive copy, preventing direct access to the algae object.
-    Finally, the sun variable is initialized to 0 and is not able to be changed afterits creation.
-    The setSun() method is missing a this reference, so the assignment sun = sun assigns the method parametersun to itself.
-    For these reasons, the class is immutable, and option D is correct.
+    The getAlgae()method creates a defensive copy,
+    preventing direct access to the algae object.
+    Finally, the sun variable is initialized
+    to 0 and is not able to be changed afterits creation.
+    The setSun() method is missing a this reference,
+    so the assignment sun = sun assigns the method parametersun to itself.
+    For these reasons, the class is immutable,
+    and option D is correct.
 
  */
-public final class OceanEncapsulation {
+public final class Ocean{
     private final List<String> algae;
     private final double wave;
     private int sun;
 
-    public OceanEncapsulation(double wave) {
+    public Ocean(double wave) {
         this.wave = wave;
         this.algae = new ArrayList<>();
     }
