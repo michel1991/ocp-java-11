@@ -18,7 +18,7 @@ package classInitialization;
     Finally, the no-argument constructor completes and adds y to seq.
  */
 
-class C { // 1:
+public class C { // 1:
     String seq = "c"; //  2:
     { seq += "g"; } //   3:
     public C() { // 4:
