@@ -29,10 +29,9 @@ class C { // 1:
         seq += "e" ; //  9:
     } // 10:
     { seq += "z"; } //    11:
- } //   15:
-public class ClassInitializationC {
+    
     public static void main(String[] args) { //   12:
         C c = new C(); //  13:
         System.out.println(c.seq); //  14:
     } // 15
-}
+ } //   15:
