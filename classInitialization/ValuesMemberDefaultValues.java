@@ -25,7 +25,7 @@ class Values {
 }
 
 
-public class ValuesMmeberDefaultValues {
+public class ValuesMemberDefaultValues {
 
     public static void main(String[] args) {
         Values.main(args);
