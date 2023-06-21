@@ -18,7 +18,7 @@ package classInitialization;
 
 
  */
-class Cars {
+public class Cars {
     static {
         System.out.println("static");
     }
@@ -30,8 +30,4 @@ class Cars {
         drive();
         drive();
     }
-}
-
-public class CarsCountNumberOfOutPut {
-
 }
