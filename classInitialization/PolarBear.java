@@ -15,12 +15,19 @@ package classInitialization;
     The variable declaration and instance initializers are run first, setting value to tac.
     The constructor declared on line 5 is called, resulting in value being set to tacb.
     Remember, a static main() method can access private constructors declared in the same class.
-    Line 17 creates another PolarBear instance, replacing the bear reference declared on line 16.
-    First, value is initialized to tac as before. Line 17 calls the constructor declared on line 8, since String is the narrowest match of a String literal.
-    This constructor then calls the overloaded constructor declared on line 5, resulting in value being updated to tacb.
-    Control returns to the previous constructor, with line 10 updating value to tacbf, and making option C the correct answer.
-    Note that if the constructor declared on line 8 did not exist, then the constructor on 12 would match.
-    Finally, the bear reference is properly cast to PolarBear on 18, making the value parameter accessible.
+    Line 17 creates another PolarBear instance,
+    replacing the bear reference declared on line 16.
+    First, value is initialized to tac as before.
+    Line 17 calls the constructor declared on line 8,
+    since String is the narrowest match of a String literal.
+    This constructor then calls the overloaded constructor declared on line 5,
+    resulting in value being updated to tacb.
+    Control returns to the previous constructor,
+    with line 10 updating value to tacbf, and making option C the correct answer.
+    Note that if the constructor declared on line 8 did not exist,
+    then the constructor on 12 would match.
+    Finally, the bear reference is properly cast to PolarBear on 18,
+    making the value parameter accessible.
  */
 public class PolarBear { // 1:
     StringBuilder value = new StringBuilder("t"); //  2:
