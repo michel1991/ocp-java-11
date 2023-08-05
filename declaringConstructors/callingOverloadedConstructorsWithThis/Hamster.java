@@ -1,3 +1,4 @@
+package declaringConstructors.callingOverloadedConstructorsWithThis;
 public class Hamster{
   private String color;
   private int weight;
