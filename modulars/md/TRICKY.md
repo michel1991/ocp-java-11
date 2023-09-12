@@ -111,3 +111,12 @@ Since the code is correct, option E is the answer.
 
 The service provider does not have code to look up the service, making option E correct.
 
+##### What does ServiceLocator.load(ChocolateLab.class) return?
+* A. Collection
+* B. List
+* C. Stream
+* D. None of the above
+
+The load() method is on ServiceLoader, not ServiceLocator.
+Therefore, option D is the answer.
+
