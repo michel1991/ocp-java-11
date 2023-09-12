@@ -42,3 +42,32 @@ It also provides the implementation.
 Option B is correct because a service provider
 should not contain an exports directive.
 The service locator is used to reference any implementation exposed by provides.
+
+#### Suppose you have the following class in a module named animal.insect.impl
+#### and the service provider interface module from question 56.
+#### What needs to be included in the module-info for it to be a service provider? (Choose two.)
+
+```java
+package animal.insect.impl;
+
+import animal.insect.api.bugs.Bug;
+
+public class Worm implements Bug {
+    @Override
+    public int crawl() {
+        return 1;
+    }
+}
+```
+
+* A. requires animal.insect.api.bugs;
+* B. requires animal.insect.lookup;
+* C. requires animal.printer;
+* D. provides animal.insect.impl.Worm;
+* E. provides animal.insect.api.bugs.Bug with animal.insect.impl.Worm;
+* F. provides animal.insect.impl.Worm with animal.insect.api.bugs.Bug;
+
+This module is a service provider. It needs a requires directive for
+the service provider interface, which is option A. It also needs a provides directive,
+which specifies both the interface and implementation.
+Option E has both in the correct order.
