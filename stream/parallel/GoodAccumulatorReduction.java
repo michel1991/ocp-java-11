@@ -7,12 +7,12 @@ import java.util.function.*;
    Given the following code snippet, which lambda expressions
    are the best choices for an accumulator? (Choose two.)
 
-    A. (a,b) -˃ (a-b)
-    B. (a,b) -˃ 5
-    C. (a,b) -˃ i++
-    D. (a,b) -˃ {words.add("awesome"); return 0;}
-    E. (a,b) -˃ {return 0;}
-    F. (a,b) -˃ words.add("awesome")
+    A. (a,b) -> (a-b)
+    B. (a,b) -> 5
+    C. (a,b) -> i++
+    D. (a,b) -> {words.add("awesome"); return 0;}
+    E. (a,b) -> {return 0;}
+    F. (a,b) -> words.add("awesome")
 
     An accumulator in a serial or parallel reduction should be associative and stateless.
     In a parallel reduction, problematic accumulators tend to produce more visible errors.
