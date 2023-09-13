@@ -1,4 +1,4 @@
-package inheritance.errors;
+package inheritance.errors.breakMultipleRule;
 
 /**
  * How many compiler errors does the following code contain?

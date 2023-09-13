@@ -10,11 +10,13 @@ package inheritance.errors;
     F. None of the above
 
    The Hammer class is a subclass of the Tool class.
-   The repair() method can be declared in the Hammer subclass with a different return type because the parent method is not inherited.
+   The repair() method can be declared in the Hammer subclass with a different return
+   type because the parent method is not inherited.
    For these reasons, options A and C are incorrect.
    On the other hand, the use() method is package-private in Tool,
    with the overridden version in Hammer reducing the visibility to private.
-   This is an invalid override, making option D correct. The rest of the lines compile without issue.
+   This is an invalid override, making option D correct.
+   The rest of the lines compile without issue.
 
  */
 class Tool {
