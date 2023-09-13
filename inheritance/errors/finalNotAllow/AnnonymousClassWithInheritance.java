@@ -1,4 +1,4 @@
-package inheritance.errors;
+package inheritance.errors.finalNotAllow;
 
 /**
 * Trick question—the code does not compile! The Spirit class is marked final,
