@@ -1,10 +1,12 @@
-package inheritance.errors;
+package inheritance.errors.callInterfaceDefaultMethod;
 
 
 /**
 * A default interface method may be overridden by a class implementing the interface.
-* To call the default interface method when it is overridden, though, you have to use the interface name, such as Tool.super.use().
-* Therefore, the line super.use() in the Screwdriver class does not compile, making option F the correct answer.
+* To call the default interface method when it is overridden, though,
+* you have to use the interface name, such as Tool.super.use().
+* Therefore, the line super.use() in the Screwdriver class does not compile,
+* making option F the correct answer.
  */
 interface Tool {
     default void use() {
