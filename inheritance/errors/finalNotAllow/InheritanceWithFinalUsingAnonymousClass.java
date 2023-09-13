@@ -1,4 +1,4 @@
-package inheritance.errors;
+package inheritance.errors.finalNotAllow;
 
 final class Cook {
     static class Vegetable {
