@@ -1,4 +1,4 @@
-package inheritance.errors;
+package inheritance.errors.polymorphism;
 
 /**
    What is the output of the following code?
@@ -15,11 +15,16 @@ package inheritance.errors;
     method contains a compiler error.
     The Orca object is implicitly cast to a Whale reference on line 7.
     This is permitted because Orca is a subclass of Whale.
-    By performing the cast, the whale reference on line 8 does not have access to the dive(int... depth) method.
-    For this reason, line 8 does not compile. Since this is the only compilation error,
-    option G is the correct answer. If the reference type of whale was changed to Orca,
-    then the main() would compile and print Orca diving deeper 3 at runtime, making option B the correct answer.
-    Note that line 16 compiles because the interface variable MAX is inherited as part of the class structure.
+    By performing the cast, the whale reference on line 8
+    does not have access to the dive(int... depth) method.
+    For this reason, line 8 does not compile.
+    Since this is the only compilation error,
+    option G is the correct answer.
+    If the reference type of whale was changed to Orca,
+    then the main() would compile and print Orca diving deeper 3 at runtime,
+    making option B the correct answer.
+    Note that line 16 compiles because the interface variable
+    MAX is inherited as part of the class structure.
  */
 interface Jump { // 1:
     static public int MAX = 3; //   2:
