@@ -1,4 +1,4 @@
-package inheritance.errors;
+package inheritance.errors.override;
 
 /**
     Given that Short and Integer extend Number directly,
