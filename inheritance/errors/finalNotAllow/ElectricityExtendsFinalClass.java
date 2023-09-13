@@ -1,4 +1,4 @@
-package inheritance.errors;
+package inheritance.errors.finalNotAllow;
 
 /**
  Given the following program, what is the first line to fail to compile?
