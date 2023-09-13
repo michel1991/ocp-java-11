@@ -1,4 +1,4 @@
-package inheritance.errors;
+package inheritance.errors.findErrors;
 
 /**
 * What does the following program print?
