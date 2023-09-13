@@ -47,8 +47,10 @@ even ones defined after their declaration, making option D incorrect and options
 * F. while loops contain an increment clause.
 
 Options B and F are incorrect because only traditional for loops have an increment clause.
-Other loops can increment a variable inside the loop, but this is not a clause that is part of the loop construct.
-Option A is incorrect because do while loops check the condition after the first loop execution.
+Other loops can increment a variable inside the loop,
+but this is not a clause that is part of the loop construct.
+Option A is incorrect because do while loops check
+the condition after the first loop execution.
 
 ## Which of the following statements compile and create infinite loops at runtime? (Choose three.)
 *  A. while (!false) {}
@@ -151,7 +153,7 @@ With an array, this means starting with index 0. Options A and F match this scen
 * C. *, --, /
 * D. !, *, %
 * E. +=, &&, *
-* F. *, ˂, /
+* F. *, <, /
 
 Option A is correct and lists the operators in the same
 or increasing level of operator precedence. In option B,
@@ -175,14 +177,14 @@ and the division operator (/) in order of precedence.
 * C. =, +, /, *
 * D. ^, *, ==, ++
 * E. *, /, %, ++
-* F. ˂=, ˃=, !=, !
+* F. <=, >=, !=, !
 
 In option A, the assignment operator (=) incorrectly
 comes after the multiplication (*) operator.
 In option B, the short-circuit logical operator (&&) incorrectly comes after the division (/) operator.
 In option D, the equality operator (==) incorrectly comes after the multiplication (*)
 operator. In option F, the not equals operator (!=) incorrectly comes
-after the relational operators, (˂= and ˃=).
+after the relational operators, (<= and >=).
 This leaves options C and E as the correct answers.
 For these answers, it may help to remember that the modulus operator (%),
 multiplication operator (*), and division operator (/) have the same operator precedence.
