@@ -1,4 +1,4 @@
-package inheritance.errors;
+package inheritance.errors.override;
 
 /**
 * Which statements about the following classes are correct? (Choose all that apply.)
@@ -12,12 +12,17 @@ package inheritance.errors;
     H. The eat() method in Primate is correctly overloaded on line 12.
 
   The eat() method is private in the Mammal class.
-  Since it is not inherited in the Primate class, it is neither overridden nor overloaded, making options A and B incorrect.
-  The drink() method in Mammal is correctly hidden in the Monkey class, as the signature is the same, making option C correct and option D incorrect.
-  The version in the Monkey class throws a new exception, but it is unchecked; therefore, it is allowed.
-  The dance() method in Mammal is correctly overridden in the Monkey class because the signatures are not the same, making option E incorrect and option F correct.
+  Since it is not inherited in the Primate class, it is neither overridden nor overloaded,
+  making options A and B incorrect.
+  The drink() method in Mammal is correctly hidden in the Monkey class,
+  as the signature is the same, making option C correct and option D incorrect.
+  The version in the Monkey class throws a new exception, but it is unchecked;
+  therefore, it is allowed.
+  The dance() method in Mammal is correctly overridden in the Monkey class because the signatures are not the same,
+  making option E incorrect and option F correct.
   For methods to be overridden, the signatures must match exactly.
-  Finally, line 12 is an invalid override and does not compile, as int is not covariant with void, making options G and H both incorrect.
+  Finally, line 12 is an invalid override and does not compile,
+  as int is not covariant with void, making options G and H both incorrect.
 
  */
 class Mammal { // 1:
