@@ -1,4 +1,4 @@
-package inheritance.errors;
+package inheritance.errors.override;
 // package ballroom;
 
 /**
