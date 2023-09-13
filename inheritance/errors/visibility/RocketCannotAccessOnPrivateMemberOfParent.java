@@ -1,4 +1,4 @@
-package inheritance.errors;
+package inheritance.errors.visibility;
 
 /**
    What is the output of the Rocket program?
@@ -9,8 +9,10 @@ package inheritance.errors;
     E. The code does not compile.
     F. None of the above.
 
-    The code does not compile because super.height is not visible in the Rocket class, making option E the correct answer.
-    Even though the Rocket class defines a height value, the super keyword looks for an inherited version.
+    The code does not compile because super.height
+    is not visible in the Rocket class, making option E the correct answer.
+    Even though the Rocket class defines a height value,
+    the super keyword looks for an inherited version.
     Since there are none, the code does not compile.
      Note that super.getWeight() returns 3 from the variable in the parent class,
      as polymorphism and overriding do not apply to instance variables.
