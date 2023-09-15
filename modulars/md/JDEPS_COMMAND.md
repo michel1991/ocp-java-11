@@ -110,3 +110,16 @@ The jdeps command lists information about dependencies within a module.
 The –s option provides a summary of output rather than verbose output,
 making option B the correct answer.
 There is no –d option. The jmod command is for working with JMOD files.
+
+#### What command is the simplest way to list what modules a JAR depends on including package names?
+*  A. jdeps cookie.jar
+*  B. jdeps –s cookie.jar
+*  C. jdeps –jdkinternals cookie.jar
+*  D. jdeps --jdkinternals cookie.jar
+*  E. jdeps -jdk-unsupported cookie.jar
+*  F. jdeps --jdk-unsupported cookie.jar
+
+Without any command line flags, jdeps lists packages and module dependencies,
+making option A correct. Option D will also list the packages; however,
+it is longer than option A.
+

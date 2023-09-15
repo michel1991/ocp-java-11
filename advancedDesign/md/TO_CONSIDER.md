@@ -98,3 +98,17 @@ option B is incorrect, and options A and D are correct.
 Despite how option A looks, it is a valid method name in Java.
 Options C, E, and F do not compile because the symbols -, \,
 and # are not allowed in method names, respectively.
+
+#### Which of the following lines of code are not permitted as the first line of a Java class file? (Choose two.)
+* A. import widget.*;
+* B. // Widget Manager
+* C. int facilityNumber;
+* D. package sprockets;
+* E. /** Author: Cid **/
+* F. void produce() {}
+
+A class can start with a comment, an optional package statement,
+or an import statement if there is no package statement.
+It cannot start with a variable definition or method declaration,
+since those cannot be declared outside a type.
+Therefore, options C and F are correct.

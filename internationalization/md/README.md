@@ -16,7 +16,8 @@ Option E is incorrect, as the resource bundle for the
 default locale may be used if there is no resource bundle
 for the specified locale (or its locale without a country code).
 Finally, option F is correct. The JVM will set a default
-locale automatically, making it possible to use a resource bundle for a locale, even if a locale was not explicitly set.
+locale automatically, making it possible to use a resource bundle
+for a locale, even if a locale was not explicitly set.
 
 ##### Assume that all of the files mentioned
 ###### in the answer choices exist and define the same keys.
@@ -87,6 +88,18 @@ Localization refers to user-facing elements. Dates, currency, and numbers are co
 used in different formats for different countries. Class and variable names,
 along with lambda expressions, are internal to the application,
 so there is no need to translate them for users.
+
+#### When localizing an application, which type of data varies in presentation depending on locale?
+* A. Currencies
+* B. Dates
+* C. Both
+* D. Neither
+
+Currencies vary in presentation by locale. For example, 9,000 and 9.000 both represent nine thousand,
+depending on the locale. Similarly, for dates,
+01-02-2022and 02-01-2022 represent January 2, 2022, or February 1, 2020,
+depending on the locale. This makes option C the answer.
+
 
 
 

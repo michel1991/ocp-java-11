@@ -92,3 +92,19 @@ Options A, B, and D do not create enough threads
 for a CyclicBarrier expecting to reach a limit of five concurrent threads.
 Option C, on the other hand,
 will create threads as needed and is appropriate for use with a CyclicBarrier.
+
+#### Which of the following concurrent collections is sorted? (Choose two.)
+* A. ConcurrentSkipList
+* B. ConcurrentSkipListSet
+* C. CopyOnWriteArrayList
+* D. ConcurrentSkipListMap
+* E. ConcurrentLinkedQueue
+* F. LinkedBlockingQueue
+
+ConcurrentSkipList does not exist as a concurrent collection, making option A incorrect.
+ConcurrentSkipListSet implements the SortedSet interface,
+in which the elements are kept sorted, making option B correct.
+ConcurrentSkipListMap implements the SortedMap interface,
+in which the keys are kept sorted, making option D correct.
+The other options define structures that are ordered, but not sorted.
+Remember, if you see SkipList as part of a concurrent class name, it means it is sorted in some way.
