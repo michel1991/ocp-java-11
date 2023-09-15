@@ -1,4 +1,4 @@
-package inheritance.errors;
+package inheritance.errors.broaderException;
 
 /**
  * What is the output of the HighSchool application?
