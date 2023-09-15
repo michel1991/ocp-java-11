@@ -1,4 +1,4 @@
-package inheritance.errors;
+package inheritance.errors.finalNotAllow;
 
 /**
  * What is the output of the following application?
@@ -11,7 +11,8 @@ package inheritance.errors;
     
     The program does not compile because Story is marked final,
     which means it cannot be extended by Adventure.
-    If the final modifier were removed, the rest of the code would compile and print 93 at runtime.
+    If the final modifier were removed,
+    the rest of the code would compile and print 93 at runtime.
  */
 final class Story {
     void recite(int chapter) throws Exception {}
