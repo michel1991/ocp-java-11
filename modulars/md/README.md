@@ -129,42 +129,6 @@ The java.lang is a trick since that is a package
 that is imported by default in a class rather than a module.
 
 
-### Using the diagram, which boxes represent the consumer and service locator, respectively?
-[image](images/find_consumer_service_locator.jpg)
-* A. W and X
-* B. W and Z
-* C. X and Y
-* D. X and Z
-* E. Y and Z
-* F. None of the above
-
-The consumer depends on the service provider interface and service locator,
-but not the service provider.
-Only W has two arrows starting from it so it must be the consumer.
-This rules out options C, D, and E.
-The service locator references the service provider interface directly
-and the service provider indirectly,
-making the service locator Z and option B the answer.
-
-
-##### Suppose we have the packages in the diagram.
-##### What could we add to the module-info.java in com.duck
-##### to allow the com.park module to reference the Duckling
-##### class but not allow the com.bread module to do the same?
-
-[image](images/com.duck_com.park.jpg)
-*  A. exports com.duckling;
-*  B. exports com.duckling from com.park;
-*  C. exports com.duckling to com.park;
-*  D. exports com.park from com.duckling;
-*  E. exports com.park to com.duckling;
-*  F. None of the above
-
-Option A is incorrect because it exports the package to all modules.
-Option C is correct because it limits package sharing to the com.park module.
-Option E is incorrect because a package must be exported from the module that contains it.
-Options B and D are incorrect because from is not valid syntax.
-
 #### What is a benefit of using modules? (Choose two.)
 *  A. Better access control
 *  B. Custom Java builds
@@ -255,17 +219,6 @@ Therefore, option D is correct.
 Only the service provider has a provides directive.
 Since it is not part of the service, option E is the correct answer.
 
-#### Given the diagram, which is a default module?
-* A. dog.bark
-* B. dog.fluffy
-* C. dog.hair
-* D. dog.husky
-* E. None of the above
-
-[image](./images/dog.hair_automatic_module.jpg)
-You need to know about three types of modules for the exam: automatic, named, and unnamed.
-There is no such thing as a default module.
-The question was trying to trick you, and option E is correct.
 
 #### What is a benefit of using modules? (Choose three.)
 * A. Ability to reuse code

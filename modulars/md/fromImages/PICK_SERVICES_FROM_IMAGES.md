@@ -44,3 +44,20 @@ and option F is the correct answer.
 The consumer needs to depend on the shared module, making it X.
 The shared module then has to be Z, and the service provider has to be Y.
 This makes option A correct.
+
+### Using the diagram, which boxes represent the consumer and service locator, respectively?
+[image](images/find_consumer_service_locator.jpg)
+* A. W and X
+* B. W and Z
+* C. X and Y
+* D. X and Z
+* E. Y and Z
+* F. None of the above
+
+The consumer depends on the service provider interface and service locator,
+but not the service provider.
+Only W has two arrows starting from it so it must be the consumer.
+This rules out options C, D, and E.
+The service locator references the service provider interface directly
+and the service provider indirectly,
+making the service locator Z and option B the answer.

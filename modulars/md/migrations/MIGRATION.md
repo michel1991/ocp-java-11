@@ -11,44 +11,6 @@ on the module path as automatic modules, making option D correct.
 Bottom-up migration starts with leaving all JARs on
 the classpath as unnamed modules, making options B and C correct.
 
-##### For a bottom-up migration, all modules other
-##### than named modules are ________________ modules and on the __________________.
-* A. automatic, classpath
-* B. automatic, module path
-* C. unnamed, classpath
-* D. unnamed, module path
-* E. None of the above
-
-A bottom-up migration strategy leaves all JARs on the classpath until they are migrated.
-Then it migrates the lowest-level module to be a named module,
-leaving the other modules as unnamed modules.
-Option C is correct as it matches both of those characteristics.
-
-#### For a top-down migration, all modules other
-#### than named modules are ________________ modules and on the __________________.
-*  A. automatic, classpath
-*  B. automatic, module path
-*  C. unnamed, classpath
-*  D. unnamed, module path
-*  E. None of the above
-
-A top-down migration strategy first places all JARs on the module path.
-Then it migrates the top-level module to be a named module,
-leaving the other modules as automatic modules.
-Option B is correct as it matches both of those characteristics.
-
-#### Which best describes a top-down migration? (Choose two.)
-* A. The first step is to move all the modules to the module path.
-* B. The first step is to move a single module to the module path.
-* C. Most steps consist of changing an automatic module to a named module.
-* D. Most steps consist of changing an automatic module to a unnamed module.
-* E. Most steps consist of changing an unnamed module to an automatic module.
-* F. Most steps consist of changing an unnamed module to a named module
-
-Option A is correct because a top-down migration starts
-by moving all the modules to the module path as automatic modules.
-Then, the migration changes each module from an automatic
-module to a named module, making option C the other correct answer
 
 ##### Which are true statements about the diagram
 ##### and scenario in the previous question? (Choose two.)
@@ -103,5 +65,17 @@ A bottom-up migration leaves unnamed modules on the classpath
 until they are migrated to the module path, making option A correct and option D incorrect.
 A top-down migration immediately moves all modules to the module path as automatic
 modules making options B and E incorrect. Therefore, option F is the other correct answer.
+
+### Which are true statements about the majority of steps in migrating to a modular application? (Choose two.)
+* A. In a bottom-up migration, automatic modules turn into named modules.
+* B. In a bottom-up migration, named modules turn into automatic modules.
+* C. In a bottom-up migration, unnamed modules turn into named modules.
+* D. In a top-down migration, automatic modules turn into named modules.
+* E. In a top-down migration, named modules turn into automatic modules.
+* F. In a top-down migration, unnamed modules turn into named modules.
+
+A fully modular application has all named modules, making options B and E incorrect.
+A bottom-up migration starts out with unnamed modules, making option C correct.
+By contrast, a top-down migration starts by making all modules automatic modules, making option D correct.
 
 
