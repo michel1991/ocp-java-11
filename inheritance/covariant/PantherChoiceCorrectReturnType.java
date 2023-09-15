@@ -1,4 +1,4 @@
-package inheritance;
+package inheritance.covariant;
 import java.util.*;
 
 /**
@@ -18,7 +18,8 @@ import java.util.*;
     so the return type of move() can be any valid reference type that is compatible with the body returning null.
     Because the Panther class inherits both interfaces,
     it must override a version of move() that is covariant with both interfaces.
-    Option C is incorrect, as List is not a subtype of ArrayList, and using it here conflicts with the Run interface declaration.
+    Option C is incorrect, as List is not a subtype of ArrayList,
+    and using it here conflicts with the Run interface declaration.
     Option D is correct, as ArrayList is compatible with both List and ArrayList return types.
     Since the code is capable of compiling, options E and F are incorrect.
 
