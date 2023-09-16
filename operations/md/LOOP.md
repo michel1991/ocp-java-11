@@ -71,3 +71,24 @@ A traditional for loop gives you full control over the order of iteration.
 This means you can iterate through the array backward or forward.
 By contrast, with a for-each loop, the iteration order is determined for you.
 With an array, this means starting with index 0. Options A and F match this scenario.
+
+##### Which of the following data types are permitted on the
+##### right side of a for-each expression? (Choose all that apply.)
+* A. Double[][]
+* B. Object
+* C. Map
+* D. List
+* E. String
+* F. char[]
+* G. Exception
+* H. Set
+
+A for-each loop supports arrays, making options A and F correct. For Double[][],
+each element of the for-each loop would be a Double[].
+A for-each also supports classes that implement java.lang.Iterable.
+Although this includes many of the Collection Framework classes,
+not all of them implement java.lang.Iterable.
+For this reason, option C is incorrect, and options D and H are correct.
+Options B, E, and G are incorrect, as they do not implement java.lang.Iterable.
+Although a String is a list of ordered characters,
+the class does not implement the required interface for a for-each loop.

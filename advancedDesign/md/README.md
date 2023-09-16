@@ -1,18 +1,3 @@
-### Which of the following are true statements? (Choose all that apply.)
-*  A. Java allows operator overloading.
-*  B. Java code compiled on Windows can run on Linux.
-*  C. Java has pointers to specific locations in memory.
-*  D. Java is a procedural language.
-*  E. Java is an object-oriented language.
-*  F. Java is a functional programming language
-
-C++ has operator overloading and pointers.
-Java made a point of not having either.
-Java does have references to objects, but these are pointing to an object that can move around in memory.
-Option B is correct because Java is platform independent.
-Option E is correct because Java is object oriented.
-While it does support some parts of functional programming, these occur within a class.
-
 ##### Which of the following are true statements about a class Camel
 ##### with a single instance variable List<String> species? (Choose all that apply.)
 *    A. If Camel is well encapsulated, then it must have restricted extensibility.
@@ -72,18 +57,6 @@ Finally, the pre-increment/pre-decrement operators return the new value
 of the variable, while the post-increment/post-decrement operators return the original variable.
 For these reasons, option C is incorrect, and option D is correct.
 
-### Which of the following are true statements? (Choose all that apply.)
-* A. The JDK contains a compiler.
-* B. The JVM contains a compiler.
-* C. The javac command creates a file containing bytecode.
-* D. The java command creates a file containing bytecode.
-* E. The JDK is contained in the JVM.
-* F. The JVM is contained in the JDK.
-
-The Java Development Kit (JDK) is used when creating Java programs.
-It contains a compiler since it is a development tool making option A correct and option B incorrect.
-The JDK contains a Java Virtual Machine (JVM) making option F correct and option E incorrect.
-The compiler creates bytecode making option C correct and option D incorrect. For more information, see Chapter 1.
 
 ##### Which of the following statements about primitive
 ##### and reference types are correct? (Choose all that apply.)
@@ -109,63 +82,6 @@ They can even be created without an explicit reference variable,
 such as calling new Object(); on a line by itself.
 
 
-### Which of the following statements about var are true? (Choose all that apply.)
-*  A. A var can be used as a constructor parameter.
-*  B. The type of var is known at compile time.
-*  C. A var cannot be used as an instance variable.
-*  D. A var can be used in a multiple variable assignment statement.
-*  E. The value of var cannot change at runtime.
-*  F. The type of var cannot change at runtime.
-*  G. The word var is a reserved word in Java.
-
-A var cannot be used for a constructor or method parameter or for an instance or class variable,
-making option A incorrect and option C correct.
-The type of var is known at compile time and the type cannot be changed at runtime,
-although its value can change at runtime.
-For these reasons, options B and F are correct, and option E is incorrect.
-Option D is incorrect, as var is not permitted in multiple-variable declarations.
-Finally, option G is incorrect, as var is not a reserved word in Java.
-
-### Which of the following statements about the Callable call() and Runnable run() methods are correct? (Choose all that apply.)
-*  A. Both can throw unchecked exceptions.
-*  B. Callable takes a generic method argument.
-*  C. Callable can throw a checked exception.
-*  D. Both can be implemented with lambda expressions.
-*  E. Runnable returns a generic type.
-*  F. Callable returns a generic type.
-*  G. Both methods return void.
-
-All methods are capable of throwing unchecked exceptions, so option A is correct.
-Runnable and Callable statements both do not take any arguments, so option B is incorrect.
-Only Callable is capable of throwing checked exceptions, so option C is also correct.
-Both Runnable and Callable are functional interfaces
-that can be implemented with a lambda expression, so option D is also correct.
-Finally, Runnable returns void and Callable returns a generic type,
-making option F correct and making options E and G incorrect.
-
-
-
-##### Which of the following data types are permitted on the
-##### right side of a for-each expression? (Choose all that apply.)
-* A. Double[][]
-* B. Object
-* C. Map
-* D. List
-* E. String
-* F. char[]
-* G. Exception
-* H. Set
-
-A for-each loop supports arrays, making options A and F correct. For Double[][],
-each element of the for-each loop would be a Double[].
-A for-each also supports classes that implement java.lang.Iterable.
-Although this includes many of the Collection Framework classes,
-not all of them implement java.lang.Iterable.
-For this reason, option C is incorrect, and options D and H are correct.
-Options B, E, and G are incorrect, as they do not implement java.lang.Iterable.
-Although a String is a list of ordered characters,
-the class does not implement the required interface for a for-each loop.
-
 ### java ______ library.jar MainClass.class
 *  A. -cp
 *  B. -classpath
@@ -177,18 +93,6 @@ the class does not implement the required interface for a for-each loop.
 When running the java command, you pass the name of the class rather than the name of the class file.
 If you are using the single-file source-code feature, you use the name of the Java file.
 Since none of the options accepts the class filename, option F is correct.
-
-### Which of the following are true? (Choose all that apply.)
-*  A. A class variable of type boolean defaults to 0.
-*  B. A class variable of type boolean defaults to false.
-*  C. A class variable of type boolean defaults to null.
-*  D. A class variable of type long defaults to null.
-*  E. A class variable of type long defaults to 0L.
-*  F. A class variable of type long defaults to 0.
-*  G. None of the above
-
-Option B is correct because boolean primitives default to false.
-Option E is correct because long values default to 0L.
 
 
 ### Which is a true statement?
@@ -213,18 +117,6 @@ A primitive cannot be created using the new keyword, so option B is incorrect.
 Dealing with references happens after the object created by new is returned.
 The other options are invalid.
 
-##### Which statements about a variable with a type of var are true? (Choose two.)
-* A. The variable can be assigned null at any point in the program.
-* B. The variable can be assigned null only after initial initialization.
-* C. The variable can never be assigned null.
-* D. Only primitives can be used with the variable.
-* E. Only objects can be used with the variable.
-* F. Either a primitive or an object can be used with the variable.
-
-The type is determined based on the value at initialization.
-It cannot be null at that point, but the variable can be assigned as null later,
-making option B correct. Both primitives and objects can be used with var,
-making option F correct.
 
 ##### Fill in the blanks: A class may be assigned to a(n)
 ##### ___________________ reference variable automatically
