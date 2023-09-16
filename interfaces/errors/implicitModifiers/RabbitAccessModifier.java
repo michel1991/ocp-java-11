@@ -1,4 +1,4 @@
-package interfaces.errors;
+package interfaces.errors.implicitModifiers;
 
 /**
 * What is the output of the following code?
@@ -10,7 +10,8 @@ package interfaces.errors;
     F. The code compiles but throws an exception at runtime.
 
   Recall that interfaces can extend other interfaces.
-  In this example, Rabbit, as the first concrete subclass, inherits two abstract methods: getLegLength() and hop().
+  In this example, Rabbit, as the first concrete subclass,
+  inherits two abstract methods: getLegLength() and hop().
   Although the implementation of hop() is correct, the implementation of getLegLength() is incorrect.
   The access modifier for all abstract interface methods is assumed to be public,
   whereas the Rabbit subclass uses the default access modifier,

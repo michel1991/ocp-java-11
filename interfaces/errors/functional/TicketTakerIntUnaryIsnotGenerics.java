@@ -1,3 +1,4 @@
+package interfaces.errors.functional;
 import java.util.function.*;
 
 /**
@@ -10,10 +11,10 @@ import java.util.function.*;
 
     The code does not compile, so options A, B, and E are incorrect.
     The IntUnaryOperator functional interface is not generic,
-    so the argument IntUnaryOperator˂Integer˃ in the takeTicket() does not compile,
+    so the argument IntUnaryOperator<Integer> in the takeTicket() does not compile,
     making option D the correct answer.
     The lambda expression compiles without issue, making option C incorrect.
-    If the generic argument ˂Integer˃ was dropped from the argument declaration,
+    If the generic argument <Integer> was dropped from the argument declaration,
     the class would compile without issue and output 51 at runtime, making option B the correct answer.
  */
 class TicketTaker {

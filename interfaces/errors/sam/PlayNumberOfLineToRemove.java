@@ -1,4 +1,4 @@
-package interfaces.errors;
+package interfaces.errors.sam;
 import java.lang.annotation.*;
 /**
    What does the following print? What is the minimum number of lines that need to be removed to make this code compile?

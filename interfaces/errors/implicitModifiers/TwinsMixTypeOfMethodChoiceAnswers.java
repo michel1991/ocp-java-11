@@ -1,4 +1,4 @@
-package interfaces.errors;
+package interfaces.errors.implicitModifiers;
 
 /**
    Which statements about the following Twins class are true? (Choose three.)
@@ -11,10 +11,11 @@ package interfaces.errors;
 
     All of the interface methods without a private modifier are implicitly public.
     In a class, though, a method without a modifier is package-private by default.
-    For this reason, the write() and think() methods do not compile because they are missing the public modifier,
-    making options A and C correct.
+    For this reason, the write() and think() methods do not compile
+    because they are missing the public modifier, making options A and C correct.
     These are the only compiler errors, making option B incorrect.
-    Option D is incorrect because the process() method is not accessible with Twins because it is private.
+    Option D is incorrect because the process() method
+    is not accessible with Twins because it is private.
     Option E is correct, as all methods are accessible.
     Even the overridden default method can be accessed in the Twins class by calling Michael.super.write().
     Finally, option F is incorrect as the class still compiles if it is marked abstract.

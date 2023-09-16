@@ -1,4 +1,4 @@
-
+package interfaces.errors.methodReference;
 import java.util.function.*;
 
 /**

@@ -1,4 +1,4 @@
-package interfaces.errors;
+package interfaces.errors.manySameMethod;
 
 /**
    Which is the first line to not compile?
