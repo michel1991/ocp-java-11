@@ -21,3 +21,19 @@ ThePreparedStatement interface extends the Statement interface,which matches opt
 One of the benefits of a PreparedStatement is performance.
 While a PreparedStatement may not be faster if run only once,
 it will quickly become so. Therefore, option A is the other correct answer.
+
+### Which is a benefit of PreparedStatement over Statement? (Choose two.)
+* A. Language independence
+* B. NoSQL support
+* C. Readability
+* D. Security
+* E. Supports stored procedures
+
+JDBC uses Java and SQL, so it is not language independent, making option A incorrect.
+It is used with relational databases, ruling out option B.
+A CallableStatement supports stored procedures, not a PreparedStatement,
+making option E incorrect.
+Options C and D are correct.
+Using bind variables with a PreparedStatement produces
+code that is easier to read than one with a lot of String concatenation.
+Further, when used properly, a PreparedStatement prevents SQL injection.

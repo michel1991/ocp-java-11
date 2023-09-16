@@ -23,3 +23,16 @@ Option B is the only correct answer as class variables are in scope within the p
 
 The protected modifier allows access to the same package and subclasses,
 which are options B, C, and D. Therefore, the correct answer is option A.
+
+#### Fill in the blanks: The ___________________ access modifier allows access to everything
+#### the ___________________ access modifier does and more. (Choose three.)
+* A. package-private, protected
+* B. package-private, public
+* C. protected, package-private
+* D. protected, public
+* E. public, package-private
+* F. public, protected
+
+The public access modifier is the broadest, making options E and F correct.
+Package-private access limits references to those in the same package.
+The protected access modifier adds on subclass access, making option C correct.

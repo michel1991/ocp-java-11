@@ -1,18 +1,3 @@
-### Which interface is used to run stored procedures?
-* A. Callable
-* B. CallableStatement
-* C. PreparedStatement
-* D. ProceduralStatement
-* E. Statement
-* F. StoredStatement
-
-Option A is incorrect because Callable is used for concurrency rather than JDBC code.
-Option B is the correct answer as CallableStatement is used to run a stored procedure.
-Option C is incorrect because PreparedStatement is used for SQL specified in your application.
-Option E is incorrect because Statement is the generic interface
-and does not have functionality specific to stored procedures.
-Options D and F are incorrect because they are not interfaces in the JDK.
-For more information, see Chapter 10.
 
 #### Which operations in the CRUD acronym are not
 #### allowed in an executeUpdate() call? (Choose all that apply.)
@@ -61,29 +46,6 @@ Options A and B are incorrect because they are not related to the example.
 Since none of these attacks applies here, option F is correct.
 
 
-### Which is the first line containing a compiler error?
-```java
-     String url = "jdbc:derby:zoo"; //   25:
-     try (var conn = DriverManager.getConnection(url); //  26:
-     var ps = conn.prepareStatement(); //  27:
-     var rs = ps.executeQuery("SELECT * FROM swings")) { // 28:
-         while (rs.next()) { //  29:
-             System.out.println(rs.getInteger(1)); //   30:
-             } //   31:
-     } //   32:
-```
-* A. Line 26
-* B. Line 27
-* C. Line 28
-* D. Line 29
-* E. Line 30
-* F. None of the above
-
-The prepareStatement() method requires SQL be passed in.
-Since this parameter is omitted, line 27 does not compile, and option B is correct.
-Line 30 also does not compile as the method should be getInt().
-However, the question asked about the first compiler error.
-
 #### Which types of resources do you need to close
 #### to help avoid a denial of service? (Choose all that apply.)
 * A. Annotations
@@ -110,52 +72,8 @@ Options B and F are correct since the implementation of these interfaces
 is part of the database-specific driver JAR file.
 
 
-##### Suppose we have a JDBC program that calls a stored procedure,
-##### which returns a set of results.
-##### Which is the correct order in which to close database resources for this call?
-* A. Connection, ResultSet, CallableStatement
-* B. Connection, CallableStatement, ResultSet
-* C. ResultSet, Connection, CallableStatement
-* D. ResultSet, CallableStatement, Connection
-* E. CallableStatement, Connection, ResultSet
-* F. CallableStatement, ResultSet, Connection
-
-JDBC resources should be closed in the reverse order from that in which they were opened.
-The order for opening is Connection, CallableStatement, and ResultSet.
-The order for closing is ResultSet, CallableStatement, and Connection.
 
 
-
-### How do you obtain a connection through JDBC?
-* A. new Connection(url)
-* B. new ConnectionImpl(url)
-* C. Driver.getConnection(url)
-* D. new Driver().getConnection(url)
-* E. DriverManager.getConnection(url)
-* F. new DriverManager().getConnection(url)
-
-On the exam, a Connection is always obtained from a DriverManager
-using a static method. Therefore, option E is correct.
-
-# Which of the following can fill in the blank correctly? (Choose all that apply.)
-```java
-    var rs = ps.executeQuery();
-    if (rs.next()) {
-        _____________________________;
-        }
-```
-* A. String s = rs.getString(0)
-* B. String s = rs.getString(1)
-* C. String s = rs.getObject(0)
-* D. String s = rs.getObject(1)
-* E. Object s = rs.getObject(0)
-* F. Object s = rs.getObject(1)
-
-In a ResultSet, columns are indexed starting with 1, not 0.
-Therefore, options A, C, and E are incorrect.
-There are methods to get the column as a String or Object.
-However, option D is incorrect because
-an Object cannot be assigned to a String without a cast.
 
 ##### Which of the following can fill in the blank correctly
 ##### assuming the first column is name? (Choose all that apply.)
@@ -209,55 +127,6 @@ Line 20 does not compile because execute() returns a boolean rather than a Resul
 Finally, line 22 does not compile because the ResultSet method should be next(), not hasNext().
 Since there are four errors, option E is correct
 
-### Suppose that you have a table named animal with two rows. What is the result of the following code?
-```java
-    var conn = new Connection(url, userName, password); // 6:
-    var ps = conn.prepareStatement(  //  7:
-    "SELECT count(*) FROM animal"); //  8:
-    var rs = ps.executeQuery(); //  9:
-    if (rs.next()) System.out.println(rs.getInt(1)); // 10:
-```
-
-* A. 0
-* B. 2
-* C. There is a compiler error on line 6.
-* D. There is a compiler error on line 10.
-* E. There is a compiler error on another line.
-* F. A runtime exception is thrown.
-
-A Connection is created using a static method on DriverManager.
-It does not use a constructor. Therefore, option C is correct.
-If the Connection was created properly, the answer would be option B.
-
-### Which is a benefit of PreparedStatement over Statement? (Choose two.)
-* A. Language independence
-* B. NoSQL support
-* C. Readability
-* D. Security
-* E. Supports stored procedures
-
-JDBC uses Java and SQL, so it is not language independent, making option A incorrect.
-It is used with relational databases, ruling out option B.
-A CallableStatement supports stored procedures, not a PreparedStatement,
-making option E incorrect.
-Options C and D are correct.
-Using bind variables with a PreparedStatement produces
-code that is easier to read than one with a lot of String concatenation.
-Further, when used properly, a PreparedStatement prevents SQL injection.
-
-##### What is the name of a concrete class
-##### that implements Statement and is included in the core JDK?
-* A. CallableStatement
-* B. PreparedStatement
-* C. StatementImpl
-* D. Both A and B
-* E. None of the above
-
-CallableStatement and PreparedStatement are interfaces
-that extend the Statement interface. You don’t need to know that for the exam.
-You do need to know that a database driver is required
-to provide the concrete implementation class of Statement
-rather than the JDK. This makes option E correct.
 
 ##### Given the table booksin the figure and a ResultSet
 ##### created by running this SQL statement, which option prints Advanced Java?
