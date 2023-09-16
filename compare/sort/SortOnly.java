@@ -1,4 +1,4 @@
-package compare;
+package compare.sort;
 import java.util.*;
 
 public class SortOnly {
