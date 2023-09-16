@@ -13,7 +13,8 @@ The com.magic module exports only one package.
 This makes the com.magic.unicorn package accessible, but not the com.magic.dragon package.
 Both packages in com.science are accessible because it is an automatic module.
 When a module on the module path does not contain a module-info file,
-all packages are exported. This gives us three packages that are accessible and a correct answer of option D.
+all packages are exported.
+This gives us three packages that are accessible and a correct answer of option D.
 
 ### Given the diagram, which is an automatic module?
 [image](images/dog.hair_automatic_module.jpg)

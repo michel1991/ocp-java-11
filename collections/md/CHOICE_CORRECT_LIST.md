@@ -37,7 +37,8 @@ Therefore, the answer is option D.
 We are running a library. Patrons select books by name. They get at the back of the checkout line.
 When they get to the front, they scan the book’s ISBN, a unique identification number.
 The checkout system finds the book based on this number and marks the book as checked out.
-Of these choices, which data structures best represent the line to check out the book and the book lookup to mark it as checked out,
+Of these choices, which data structures best represent the line to check out the
+book and the book lookup to mark it as checked out,
 respectively?
 
 *  A. ArrayList, HashSet
