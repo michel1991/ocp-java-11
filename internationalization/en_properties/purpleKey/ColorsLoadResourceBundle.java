@@ -1,4 +1,4 @@
-package internationalization.en_properties;
+package internationalization.en_properties.purpleKey;
 import java.util.*;
 
 public class ColorsLoadResourceBundle {
@@ -17,7 +17,7 @@ public class ColorsLoadResourceBundle {
      */
   static void loadBundle(){
       Locale.setDefault(new Locale("en", "US"));
-      var rb = ResourceBundle.getBundle("Colors", new Locale("en"));
+      var rb = ResourceBundle.getBundle("internationalization.en_properties.purpleKey.Colors", new Locale("en"));
       System.out.print(rb.getString("purple"));
 
   }
