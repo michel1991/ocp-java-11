@@ -1,4 +1,4 @@
-package interfaces.errors;
+package interfaces.errors.manySameMethod;
 
 /**
  *  What is the output of the following application?

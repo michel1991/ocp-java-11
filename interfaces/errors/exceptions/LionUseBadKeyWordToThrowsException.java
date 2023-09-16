@@ -1,4 +1,4 @@
-package interfaces.errors;
+package interfaces.errors.exceptions;
 
 /**
   What is the output of the following application?
@@ -9,8 +9,10 @@ package interfaces.errors;
     E. A stack trace is printed at runtime.
     F. None of the above.
 
-    The application does not compile because the roar() method in the BigCat class uses throw instead of throws,
-    making option F correct. Note that if the correct keyword was used, then the code would compile and print Meow at runtime.
+    The application does not compile because
+    the roar() method in the BigCat class uses throw instead of throws,
+    making option F correct.
+    Note that if the correct keyword was used, then the code would compile and print Meow at runtime.
  */
 class BigCat {
     void roar(int level) throw RuntimeException {

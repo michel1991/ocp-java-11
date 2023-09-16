@@ -1,4 +1,4 @@
-package interfaces.errors;
+package interfaces.errors.manySameMethod;
 
 /**
 * What is the result of the following code?
@@ -10,9 +10,12 @@ package interfaces.errors;
     F. None of the above
 
    In this example, CanWalk and CanRun both implement a default walk() method.
-   The definition of CanSprint extends these two interfaces and therefore won’t compile unless the interface overrides both inherited methods.
+   The definition of CanSprint extends these two interfaces
+   and therefore won’t compile unless the interface overrides both inherited methods.
    The version of walk() on line 12 is an overload, not an override, since it takes an int value.
-   Since the interface doesn’t override the methods, the compiler can’t decide which default method to use, leading to a compiler error and making option D the correct answer.
+   Since the interface doesn’t override the methods,
+   the compiler can’t decide which default method to use,
+   leading to a compiler error and making option D the correct answer.
  */
  interface CanWalk { //1:
     default void walk() { System.out.print("Walking"); } //   2:

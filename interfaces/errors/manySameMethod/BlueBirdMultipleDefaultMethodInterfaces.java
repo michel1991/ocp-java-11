@@ -1,4 +1,4 @@
-package interfaces.errors;
+package interfaces.errors.manySameMethod;
 /**
 * Given the following program, what can be inserted into the blank line that would allow it to print Sing! at runtime?
 *   A. super.chirp();
@@ -8,10 +8,15 @@ package interfaces.errors;
     E. The code does not compile regardless of what is inserted into the blank.
     F. The code compiles, but due to polymorphism, it is not possible to produce the requested output without creating a new object.
 
-    If a class or interface inherits two interfaces containing default methods with the same signature, then it must override the method with its own implementation.
-    The chirp() method in BlueBird is an overload, not an override, since it contains an extra parameter.
-    Since the BlueBird class fails to override the method, the code does not compile regardless of what is entered in the blank.
-    If the extra parameter was removed from the version of chirp() in BlueBird, then the code would compile and Sing.super.chirp() would be the proper way to print Sing! at runtime.
+    If a class or interface inherits two interfaces containing
+    default methods with the same signature,
+    then it must override the method with its own implementation.
+    The chirp() method in BlueBird is an overload, not an override,
+    since it contains an extra parameter.
+    Since the BlueBird class fails to override the method,
+    the code does not compile regardless of what is entered in the blank.
+    If the extra parameter was removed from the version of chirp() in BlueBird,
+   then the code would compile and Sing.super.chirp() would be the proper way to print Sing! at runtime.
  */
 
 interface Play {

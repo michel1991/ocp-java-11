@@ -1,4 +1,4 @@
-package interfaces.errors;
+package interfaces.errors.finalConstant;
 
 /**
 *  What is the result of compiling the following code?
@@ -11,7 +11,8 @@ package interfaces.errors;
     G. The code compiles but throws an exception at runtime.
 
    The code does not compile properly, so options A and G are incorrect.
-   The compilation error is in line 2; SPEED is an interface variable, and all interface variables are implicitly assumed public static final.
+   The compilation error is in line 2; SPEED is an interface variable,
+   and all interface variables are implicitly assumed public static final.
    Since SPEED is assumed final, it must declare a value when it is initialized.
    Because there is no such default value, the code will not compile, and option B is the correct answer.
  */

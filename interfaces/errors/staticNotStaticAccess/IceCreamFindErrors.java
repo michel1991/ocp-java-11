@@ -1,4 +1,4 @@
-package interfaces.errors;
+package interfaces.errors.staticNotStaticAccess;
 
 
 /**

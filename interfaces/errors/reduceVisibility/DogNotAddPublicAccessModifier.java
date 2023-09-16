@@ -1,4 +1,4 @@
-package interfaces.errors;
+package interfaces.errors.reduceVisibility;
 
 /**
  *  Given the application shown here, which lines do not compile? (Choose three.)

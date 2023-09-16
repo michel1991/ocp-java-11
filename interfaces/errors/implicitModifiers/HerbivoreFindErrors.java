@@ -1,4 +1,4 @@
-package interfaces.errors;
+package interfaces.errors.implicitModifiers;
 
 /**
  * Which lines of the following interface declaration do not compile? (Choose all that apply.)

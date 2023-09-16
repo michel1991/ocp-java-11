@@ -1,4 +1,4 @@
-package interfaces.errors;
+package interfaces.errors.reduceVisibility;
 
 /**
 * Which of the following statements about this program is correct?
@@ -11,8 +11,10 @@ package interfaces.errors;
 
   The inherited interface method getNumOfGills(int) is implicitly public;
   therefore, it must be declared public in any concrete class that implements the interface.
-  Since the method uses the default (package-private) modifier in the ClownFish class, line 6 does not compile, making option E the correct answer.
-  If the method declaration was corrected to include public on line 6, then the program would compile and print 15 at runtime, and option B would be the correct answer.
+  Since the method uses the default (package-private) modifier in the ClownFish class,
+  line 6 does not compile, making option E the correct answer.
+  If the method declaration was corrected to include public on line 6,
+  then the program would compile and print 15 at runtime, and option B would be the correct answer.
 
  */
 interface Aquatic { // 1:

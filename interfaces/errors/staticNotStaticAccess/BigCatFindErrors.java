@@ -1,4 +1,4 @@
-package interfaces.errors;
+package interfaces.errors.staticNotStaticAccess;
 
 /**
  * Which lines of the following interface do not compile? (Choose all that apply.)
