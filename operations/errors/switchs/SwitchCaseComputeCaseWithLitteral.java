@@ -1,4 +1,4 @@
-package operation.errors;
+package operation.errors.switchs;
 public class SwitchCaseComputeCaseWithLitteral {
 
     /**
