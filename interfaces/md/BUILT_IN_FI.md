@@ -141,7 +141,7 @@ interfaces for other numeric data types, making options B and D incorrect.
 Option F is incorrect because String is not a primitive,
 but an object. Only primitives have custom suppliers.
 
-#### Which of the following statements about DoubleSupplier and Supplier˂Double˃ is not true?
+#### Which of the following statements about DoubleSupplier and Supplier<Double> is not true?
 * A. Both are functional interfaces.
 * B. Both take zero parameters.
 * C. Lambdas for both can return a double value.
@@ -151,7 +151,7 @@ but an object. Only primitives have custom suppliers.
 
 Both are functional interfaces in the java.util.function package,
 making option A true. Additionally, both lack parameters, making option B true.
-The major difference between the two is that Supplier˂Double˃ takes
+The major difference between the two is that Supplier<Double> takes
 the generic type Double, while the other does not take any generic
 type and instead uses the primitive double.
 For this reason, options C and E are true statements.

@@ -1,10 +1,11 @@
-### Suppose that you have a table named animal with two rows. What is the result of the following code?
+### Suppose that you have a table named animal with two rows.
+### What is the result of the following code?
 ```java
-var conn = new Connection(url, userName, password); // 6:
-var ps = conn.prepareStatement(  //  7:
-"SELECT count(*) FROM animal"); //  8:
-var rs = ps.executeQuery(); //  9:
-if (rs.next()) System.out.println(rs.getInt(1)); // 10:
+    var conn = new Connection(url, userName, password); // 6:
+    var ps = conn.prepareStatement(  //  7:
+    "SELECT count(*) FROM animal"); //  8:
+    var rs = ps.executeQuery(); //  9:
+    if (rs.next()) System.out.println(rs.getInt(1)); // 10:
 ```
 
 * A. 0

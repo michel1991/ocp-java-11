@@ -1,5 +1,5 @@
 ### Which is responsible for getting a connection to the database?
-* A. Driver
+*  A. Driver
 *  B. Connection
 *  C. PreparedStatement
 *  D. Statement

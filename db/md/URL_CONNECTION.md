@@ -8,7 +8,8 @@
 
 A JDBC URL has three parts.
 The first part is the string jdbc, making option C correct.
-The second part is the subprotocol. This is the vendor/product name, which isn’t an answer choice.
+The second part is the subprotocol.
+This is the vendor/product name, which isn’t an answer choice.
 The subname is vendor-specific, making option F correct as well.
 
 
@@ -21,7 +22,8 @@ The subname is vendor-specific, making option F correct as well.
 * F. oracle:jdbc:thin:123.123.123.123//fun
 
 A JDBC URL must begin with JDBC, making options D, E, and F incorrect.
-The database name is required, making options A and B incorrect. Therefore, the answer is option C.
+The database name is required, making options A and B incorrect.
+Therefore, the answer is option C.
 
 ### Which of the following is a valid JDBC URL?
 * A. jdbc:sybase:localhost:1234/db
@@ -31,9 +33,12 @@ The database name is required, making options A and B incorrect. Therefore, the 
 * E. sybase::localhost::/db
 * F. sybase::localhost::1234/db
 
-A JDBC URL has three main parts separated by single colons, making options B, C, E, and F incorrect.
-The first part is always jdbc, making option D incorrect. Therefore, the correct answer is option A.
-Notice that you can get this right even if you’ve never heard of the Sybase database before.
+A JDBC URL has three main parts separated by single colons,
+making options B, C, E, and F incorrect.
+The first part is always jdbc, making option D incorrect.
+Therefore, the correct answer is option A.
+Notice that you can get this right even if you’ve never
+heard of the Sybase database before.
 
 ### Which of the following is a valid JDBC URL?
 * A. jdbc-mysql-1234/db
@@ -68,10 +73,13 @@ All three of these URLs meet those criteria.
 For the data after the component, the database driver specifies the format.
 Depending on the driver, this might include an IP address and port.
 Regardless, it needs to include the database name or alias.
-The first and secondURLs could both be valid formats because they mention the database box.
-However, thirdis incorrect because it has jdbc@ instead of jdbc:. Therefore, option D correct.
+The first and secondURLs could both be valid
+formats because they mention the database box.
+However, thirdis incorrect because it has jdbc@ instead of jdbc:.
+Therefore, option D correct.
 
-#### How many of the following could be valid JDBC URL formats for an imaginary driver named magic and a database named box?
+#### How many of the following could be valid JDBC URL formats
+#### for an imaginary driver named magic and a database named box?
 
 ```java
     String first = "jdbc;box;magic";
@@ -87,4 +95,5 @@ However, thirdis incorrect because it has jdbc@ instead of jdbc:. Therefore, opt
 * F. None of these
 
 A JDBC URL has three components separated by colons.
-None of these options uses the correct colon delimiter, making option F the correct answer.
+None of these options uses the correct colon delimiter,
+making option F the correct answer.

@@ -4,9 +4,11 @@
 *  C. A PreparedStatement uses bind variables.
 *  D. None of the above.
 
-Option A is incorrect because Driver is an interface, while DriverManager is a concrete class.
+Option A is incorrect because Driver is an interface,
+while DriverManager is a concrete class.
 The inverse isn’t true either; DriverManager doesn’t implement Driver.
-Option B is incorrect because the Connection implementation comes from a specific database driver JAR.
+Option B is incorrect because the Connection implementation
+comes from a specific database driver JAR.
 Option C is correct as bind variables (?) are used.
 
 ##### How many of Connection, Driver, DriverManager, PreparedStatement,
@@ -18,11 +20,11 @@ Option C is correct as bind variables (?) are used.
 * E. Four
 * F. Five
 
-Connection is a JDK interface for communicating with the database. PreparedStatement
-and ResultSet are typically used to write queries and are also in the JDK. Driver
-is tricky because you don’t write code that references it directly.
-However, you are still required to know it is a JDBC interface.
-DriverManager is used in JDBC code to get a Connection.
+Connection is a JDK interface for communicating with the database.
+PreparedStatement and ResultSet are typically used to write queries
+and are also in the JDK. Driver is tricky because you don’t write code
+that references it directly. However, you are still required to know
+it is a JDBC interface. DriverManager is used in JDBC code to get a Connection.
 However, it is a concrete class rather than an interface.
 Since only four out of the five are JDBC interfaces, option E is correct.
 
@@ -34,6 +36,7 @@ Since only four out of the five are JDBC interfaces, option E is correct.
 * E. Driver, DriverManager, Query
 * F. Driver, DriverManager, ResultSet
 
-Driver, Connection, PreparedStatement, and ResultSet are the four key interfaces you need to know for JDBC.
+Driver, Connection, PreparedStatement, and ResultSet
+are the four key interfaces you need to know for JDBC.
 DriverManager is a class rather than an interface. Query is not used in JDBC.
 Since only Driver and ResultSet are interfaces in the list, option B is the answer.
