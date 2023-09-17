@@ -1,8 +1,9 @@
-package db;
+package db.reads;
 import java.sql.*;
 /**
-*  Suppose that the table counts has five rows with the numbers 1 to 5. How many lines does this code print?
-*  A. 0
+  Suppose that the table counts has five rows with the numbers 1 to 5.
+  How many lines does this code print?
+   A. 0
    B. 1
    C. 2
    D. 4

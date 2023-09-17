@@ -1,4 +1,4 @@
-package db;
+package db.reads;
 import java.sql.*;
 
 public class ChoicesToReadData {
@@ -13,9 +13,11 @@ public class ChoicesToReadData {
         E. All three methods
         F. None of the above
 
-        The most common approach is stillMoreChoices(), which works for any SELECT statement that has an int in the first column. I
-        f the SELECT statement has a function like count(*) or sum(*) in the first column,
-        there will always be a row in the ResultSet, so moreChoices() works as well. Therefore, option D is the answer.
+        The most common approach is stillMoreChoices(),
+        which works for any SELECT statement that has an int in the first column.
+        If the SELECT statement has a function like count(*) or sum(*) in the first column,
+        there will always be a row in the ResultSet,
+        so moreChoices() works as well. Therefore, option D is the answer.
     */
     private static void choices(PreparedStatement ps,
                                 String sql) throws SQLException {

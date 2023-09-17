@@ -1,10 +1,11 @@
-package db;
+package db.update;
 import java.sql.*;
 
 public class CallExecuteUpdateTwice {
 
     /**
-     *  Suppose we have an emptybunny table with two columns: name and color. What is the state of the table after running this code
+       Suppose we have an empty bunny table with two columns: name and color.
+       What is the state of the table after running this code
 
         A. It has one row.
         B. It has two rows, and the color is Brown in both.
@@ -34,7 +35,9 @@ public class CallExecuteUpdateTwice {
 
          stmt.executeUpdate();
      }
-
-
  }
+    
+    public static void main(String... args){
+
+    }
 }

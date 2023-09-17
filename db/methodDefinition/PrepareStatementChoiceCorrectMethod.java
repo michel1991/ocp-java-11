@@ -1,4 +1,4 @@
-package db;
+package db.methodDefinition;
 import java.sql.*;
 public class PrepareStatementChoiceCorrectMethod {
     /**
