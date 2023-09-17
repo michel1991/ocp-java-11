@@ -1,4 +1,4 @@
-package exceptions;
+package exceptions.orders;
 
 /**
  * What is the output of the following application?

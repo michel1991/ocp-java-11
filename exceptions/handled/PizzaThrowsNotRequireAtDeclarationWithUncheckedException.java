@@ -1,4 +1,4 @@
-package exceptions;
+package exceptions.handled;
 /**
  *  What is the result of compiling and running the following application?
     A. java.lang.IllegalArgumentException is printed.

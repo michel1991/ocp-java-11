@@ -1,4 +1,4 @@
-package exceptions;
+package exceptions.multipleRules;
 
 /**
    How many lines of text does the following program print?

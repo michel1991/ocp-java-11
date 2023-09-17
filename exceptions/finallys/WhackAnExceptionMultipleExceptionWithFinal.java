@@ -1,4 +1,4 @@
-package exceptions;
+package exceptions.finallys;
 
 /**
    Given the following application, which specific
@@ -11,7 +11,7 @@ package exceptions;
     E. The code does not compile.
     F. None of the above.
     
-    * For this question, notice that all the exceptions thrown or caught are unchecked exceptions.
+    For this question, notice that all the exceptions thrown or caught are unchecked exceptions.
     First, the ClassCastException is thrown in the try block
     and caught by the second catch block,
     since it inherits from RuntimeException, not IllegalArgumentException.

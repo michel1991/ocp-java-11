@@ -1,9 +1,10 @@
-package exceptions;
+package exceptions.orders;
 
 import java.sql.*;
 
 /**
-    Which expression, when inserted into the blank in the following class, allows the code to compile?
+    Which expression, when inserted into the blank in the following class,
+    allows the code to compile?
         A. Error r
         B. IllegalStateException b
         C. RingException q
@@ -13,7 +14,8 @@ import java.sql.*;
 
       The try-catch block already catches Exception,
       so the correct answer would be the one that is not a subtype of Exception.
-      In this case, Error extends Throwable and is the only choice that allows the code to compile, making option A correct.
+      In this case, Error extends Throwable and
+     is the only choice that allows the code to compile, making option A correct.
  */
 class Bells {
     class Player implements AutoCloseable {

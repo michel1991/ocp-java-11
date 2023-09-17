@@ -1,8 +1,9 @@
-package exceptions;
+package exceptions.multipleRules;
+
 /**
 * Which of the following can fill in the blank to make the code compile? (Choose all that apply.)
-*
-*   A. Exception
+
+    A. Exception
     B. HurtException
     C. IOException
     D. LimpException

@@ -1,4 +1,4 @@
-package exceptions;
+package exceptions.constructors;
 
 /**
    How many constructors in WhaleSharkException compile in the following class?
@@ -32,5 +32,7 @@ package exceptions;
 
 
 public class WhaleSharkExceptionCheckConstructors {
-
+  public static void main(String... args){
+      
+  }
 }

@@ -1,4 +1,4 @@
-package exceptions;
+package exceptions.override;
 import java.io.*;
 
 /**
@@ -15,7 +15,8 @@ import java.io.*;
    Options B, D, and F are permitted because new unchecked exceptions are allowed.
    Note that IOException is not required to be declared at all in the overriding method.
    Options C and E are incorrect because they are broader checked exceptions than IOException.
-   Even if you didn’t know Throwable was checked, you should have been able to solve this by process of elimination.
+   Even if you didn’t know Throwable was checked,
+  you should have been able to solve this by process of elimination.
  */
 class Music {
     void make() throws IOException {

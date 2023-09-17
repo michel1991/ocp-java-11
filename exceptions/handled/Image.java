@@ -1,4 +1,4 @@
-package exceptions;
+package exceptions.handled;
 /**
 * What is the output of the following program?
     A. 124

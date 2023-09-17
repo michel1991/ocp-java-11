@@ -1,4 +1,4 @@
-package exceptions;
+package exceptions.handled;
 
 /**
 * What is the output of the following program?
@@ -10,9 +10,12 @@ package exceptions;
     F. An uncaught exception is thrown.
     G. None of the above
 
-  The runAway() method is invoked within main() on a new Dog object. Line 4 prints 1.
-  The try block executes, and 2 is printed. Line 7 throws a NumberFormatException, so line 8 doesn’t execute.
-  The exception is caught on line 9, and line 10 prints 4. Because the exception is handled, execution resumes normally.
+  The runAway() method is invoked within main()
+  on a new Dog object. Line 4 prints 1.
+  The try block executes, and 2 is printed.
+  Line 7 throws a NumberFormatException, so line 8 doesn’t execute.
+  The exception is caught on line 9, and line 10 prints 4.
+  Because the exception is handled, execution resumes normally.
   The runAway() method runs to completion, and line 17 executes, printing 5.
   That’s the end of the program, so the output is 1245, and option D is correct.
  */
@@ -38,5 +41,6 @@ class Dog { // 1:
 
 public class DogNumberFormatException {
     public static void main(String... args) { //  13:
+        Dog.main();
     }
 }

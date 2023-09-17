@@ -1,8 +1,10 @@
-package exceptions;
+package exceptions.multicatch;
 import java.io.*;
 
 /**
- * Which expressions, when inserted into the blank in the following class, allow the code to compile? (Choose two.)
+   Which expressions, when inserted into the blank in the following class,
+   allow the code to compile? (Choose two.)
+   
     A. Exception a | RuntimeException f
     B. IllegalStateException | TideException t
     C. TideException | IOException i

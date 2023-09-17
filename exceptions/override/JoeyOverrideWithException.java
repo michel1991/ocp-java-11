@@ -1,4 +1,4 @@
-package exceptions;
+package exceptions.override;
 
 /**
  * Which methods will compile if inserted into Joey? (Choose all that apply.)
@@ -20,6 +20,9 @@ class Kangaroo {
 
 class Joey extends Kangaroo {
     // INSERT CODE HERE
+    public void hop() {
+
+    }
 }
 public class JoeyOverrideWithException {
 
