@@ -21,17 +21,20 @@ public class LoadResourceBundle {
         but there is still no match. It drops the country code and checks it for Colors_it.properties,
         but still doesn’t find a match. Lastly, it checks for a Colors.properties
         file but since that’s not an option, it fails.
-        *  The result is a MissingResourceException is thrown at runtime, making option F correct.
+        The result is a MissingResourceException is thrown at runtime, making option F correct.
      */
     static void loadWithIndigoKey(){
         Locale loc = new Locale("fr", "CH");
         Locale.setDefault(new Locale("it", "CH"));
-        ResourceBundle rb = ResourceBundle.getBundle("internationalization.en_properties.indigoKey.Colors", loc);
+        ResourceBundle rb = ResourceBundle.getBundle(
+          "internationalization.en_properties.indigoKey.Colors",
+         loc
+        );
         rb.getString("Indigo");
 
     }
     
     public static void main(String... argd){
-        
+        loadWithIndigoKey();
     }
 }

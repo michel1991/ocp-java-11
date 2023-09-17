@@ -3,7 +3,9 @@ import java.util.*;
 
 public class ColorsLoadResourceBundle {
     /**
-     * Assuming the key purple is in all five of the files referenced in the options, which file will the following code use for the resource bundle?
+      Assuming the key purple is in all five of the files referenced in the options,
+       which file will the following code use for the resource bundle?
+
         A. Colors_en_US.properties
         B. Colors_en.properties
         C. Colors_US.properties
@@ -17,8 +19,14 @@ public class ColorsLoadResourceBundle {
      */
   static void loadBundle(){
       Locale.setDefault(new Locale("en", "US"));
-      var rb = ResourceBundle.getBundle("internationalization.en_properties.purpleKey.Colors", new Locale("en"));
+      var rb = ResourceBundle.getBundle(
+        "internationalization.en_properties.purpleKey.Colors",
+        new Locale("en")
+      );
       System.out.print(rb.getString("purple"));
-
   }
+
+    public static void main(String... args){
+      loadBundle();
+    }
 }

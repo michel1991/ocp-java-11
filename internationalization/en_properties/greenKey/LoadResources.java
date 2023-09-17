@@ -21,8 +21,15 @@ public class LoadResources {
      */
     static void loadGrrenKey(){
         Locale.setDefault(new Locale("en", "US"));
-        var rb = ResourceBundle.getBundle("internationalization.en_properties.greenKey.Colors", new Locale("fr"));
+        var rb = ResourceBundle.getBundle(
+          "internationalization.en_properties.greenKey.Colors",
+          new Locale("fr")
+        );
         System.out.print(rb.getString("green"));
+    }
+
+    public static void main(String... args){
+        loadGrrenKey();
     }
 
    
