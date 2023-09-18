@@ -38,4 +38,5 @@
 
 The init() method is accessible from the same package.
 The race() method is available from the same package or subclasses.
-Since Tortoise is in the same package, both methods are available and option A is correct.
+Since Tortoise is in the same package,
+both methods are available and option A is correct.

@@ -36,7 +36,7 @@ Therefore, option C is the answer.
 #### What is the result of executing the Sounds program?
 
 ```java
-/package com.mammal;
+package com.mammal;
 
 public class Sheep {
     private void baa() {
@@ -65,8 +65,10 @@ public class Sounds {
 * D. Neither class compiles.
 
 
-The Sheep class does not compile since a static method cannot call an instance method.
-The Sounds class does not compile because it does not have access to the speak() method.
+The Sheep class does not compile since
+a static method cannot call an instance method.
+The Sounds class does not compile because
+it does not have access to the speak() method.
 Since neither class compiles, option D is correct.
 
 
