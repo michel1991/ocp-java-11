@@ -1,4 +1,4 @@
-package advancedDesign.errors;
+package scope.errors;
 
 /**
  * What is the output of the following code?
