@@ -1,4 +1,4 @@
-package enums.errors;
+package enums.errors.firstRules;
 
 /**
     The declaration of Fruit does not compile
