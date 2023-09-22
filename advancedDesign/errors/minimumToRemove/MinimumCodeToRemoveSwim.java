@@ -1,4 +1,4 @@
-package advancedDesign.errors;
+package advancedDesign.errors.minimumToRemove;
 import java.util.*;
 /**
       What is the fewest number of lines that you need

@@ -1,4 +1,4 @@
-package advancedDesign.errors;
+package classInitialization.errors;
 
 /**
   What is the result of this code? (Choose all that apply.)

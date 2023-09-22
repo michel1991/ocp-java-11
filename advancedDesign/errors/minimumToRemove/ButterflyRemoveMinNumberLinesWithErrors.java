@@ -1,4 +1,4 @@
-package advancedDesign.errors;
+package advancedDesign.errors.minimumToRemove;
 
 /**
  * What is the minimum number of lines you need to remove in order to make this file compile?
