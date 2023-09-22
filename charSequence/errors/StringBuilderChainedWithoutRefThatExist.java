@@ -1,4 +1,4 @@
-package advancedDesign.errors;
+package charSequence.errors;
 
 /**
   What is the result of the following code?
