@@ -1,4 +1,4 @@
-package garbage;
+package garbage.complex;
 
 /**
    Which statements about the following program are correct? (Choose all that apply.)
@@ -14,18 +14,28 @@ package garbage;
 
     The class compiles and runs without issue, so option H is incorrect.
     The program creates two Bear objects, one on line 9 and one on line 10.
-    The first Bear object is accessible until line 13 via the brownBear reference variable.
+    The first Bear object is accessible until
+    line 13 via the brownBear reference variable.
+
     The second Bear object is passed to the first object’s roar() method on line 11,
-    meaning it is accessible via both the polarBear reference and the brownBear.pandaBear reference.
+    meaning it is accessible via both the polarBear reference
+    and the brownBear.pandaBear reference.
     After line 12, the object is still accessible via brownBear.pandaBear.
-    After line 13, though, it is no longer accessible since brownBear is no longer accessible.
-    In other words, both objects become eligible for garbage collection after line 13, making options A and D correct.
+
+    After line 13, though, it is no longer accessible
+    since brownBear is no longer accessible.
+    In other words, both objects become eligible for garbage collection
+    after line 13, making options A and D correct.
+
     Finally, garbage collection is never guaranteed to run or not run,
     since the JVM decides this for you. For this reason,
     option F is correct, and options E and G are incorrect.
-    The class contains a finalize() method, although this does not contribute to the answer.
+
+    The class contains a finalize() method,
+    although this does not contribute to the answer.
     For the exam, you may see finalize() in a question,
-    but since it’s deprecated as of Java 9, you will not be tested on it.
+    but since it’s deprecated as of Java 9,
+    you will not be tested on it.
  */
 public class Bear { // 1:
     private Bear pandaBear; //    2:
