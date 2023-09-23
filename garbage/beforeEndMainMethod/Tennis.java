@@ -1,6 +1,7 @@
-package garbage;
+package garbage.beforeEndMainMethod;
 /**
-    How many objects are eligible for garbage collection immediately before the end of the main() method?
+    How many objects are eligible for garbage
+    collection immediately before the end of the main() method?
     
     A. None.
     B. One.
@@ -11,8 +12,10 @@ package garbage;
     
     All arrays are objects regardless of whether they point to primitives or classes.
     That means both balls and scores are objects.
+    
     Both are set to null so they are eligible for garbage collection.
     The balls array is initialized to contain all null references.
+    
     There are no objects inside. The scores array is initialized to all 0 values.
     Therefore, only two objects exist to be eligible for garbage collection,
      and option C is correct.
