@@ -3,8 +3,8 @@ import java.util.*;
 
 public class ForEachReturnVoid {
     /**
-     *  What is the result of the following?
-     *  A. It prints just one line.
+      What is the result of the following?
+        A. It prints just one line.
         B. It prints one line and then the number 3.
         C. There is no output.
         D. The code does not compile.

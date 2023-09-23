@@ -11,11 +11,18 @@ package stream.errors;
      E. Four
      F. Five
 
-   Since there are two stream() calls in this code, it is attempting to create two stream pipelines.
-   One spans lines 9–12, and the other spans lines 16–19. Lines 14 and 15 need to be removed because you cannot call stream methods outside of a pipeline.
-   Line 17 needs to be removed because it is a terminal operation and the following line is an intermediate operation.
+   Since there are two stream() calls in this code,
+   it is attempting to create two stream pipelines.
+   One spans lines 9–12, and the other spans lines 16–19.
+   Lines 14 and 15 need to be removed because
+   you cannot call stream methods outside of a pipeline.
+   
+   Line 17 needs to be removed because it is a terminal operation
+   and the following line is an intermediate operation.
+   
    This makes three lines to remove, making option D correct.
-   Removing lines 18–19 instead of 17 would work, but that would be more lines to remove and the question asks about the minimum.
+   Removing lines 18–19 instead of 17 would work,
+   but that would be more lines to remove and the question asks about the minimum.
   */
  class ManyStreamInOneDeclaration{
     static void makePartition(){
