@@ -19,7 +19,10 @@ public class HideAndSeek {
     public static void main(String[] args) {
         var hide = Stream.of(true, false, true);
         Predicate<Boolean> pred = b -> b;
-        var found = hide.filter(pred).allMatch(pred); // here ________(
+        var found = hide
+                     .filter(pred)
+                     .peek((v) -> System.out.println("\t " +v)) // i add peek
+                     .allMatch(pred); // here ________(
         System.out.println(found);
     }
 }

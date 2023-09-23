@@ -1,11 +1,11 @@
-package stream.matchMethods;
+package stream.matchMethods.someTimeTerminateInfiniteStream;
 import java.util.*;
 import java.util.stream.*;
 
 public class AllMatch {
     /**
     * Which of the following can fill in the blank so that the code prints out false?
-    *   A. allMatch
+        A. allMatch
         B. anyMatch
         C. findAny
         D. findFirst
@@ -16,8 +16,10 @@ public class AllMatch {
     take a Predicate parameter and do not return a boolean.
     When working with streams, it is important to remember
     the behavior of the underlying functional interfaces.
+    
     Options B and E are incorrect. While the code compiles, it runs infinitely.
     The stream has no way to know that a match won’t show up later.
+    
     Option A is correct because it is safe to return
     false as soon as one element passes through the stream that doesn’t match.
 
