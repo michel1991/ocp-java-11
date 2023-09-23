@@ -11,19 +11,22 @@
    Immediately after line 8, only Grasshopper g1, created on line 6,
    is eligible for garbage collection since both one and two point to Grasshopper g2,
    making option C correct and option A incorrect.
+
    Immediately after line 9, we still only have Grasshopper g1 eligible for garbage collection,
    since one points to it. For this reason, option B is incorrect and option D is correct.
    Reference two now points to null.
+
    Immediately after line 10, both Grasshopper objects are eligible for garbage collection
     since both one and two point to null,making option E incorrect.
    The code does compile, so option F is incorrect.
+
    Although it is traditional to declare instance variables early in the class, you don’t have to.
    For more information, see Chapter 2.
 
    Response are. C. D
    *
  */
-package garbage;
+package garbage.withoutScope;
 
 class Grasshopper { // 1:
     public Grasshopper(String n) { //   2:
@@ -38,11 +41,3 @@ class Grasshopper { // 1:
     } //    11:
     private String name; //  12:
 } //   13:
-
-public class GrasshopperGarbageCollector {
-
-    public static void main(String[] args) {
-        Grasshopper.main(args);
-    }
-
-}
