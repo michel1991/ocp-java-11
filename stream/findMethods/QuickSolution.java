@@ -13,13 +13,17 @@ import java.util.stream.*;
 
     The class compiles and runs without issue, so options D and E are incorrect.
     The result of findSlow() is deterministic and always 1.
+    
     The findFirst() method returns the first element in an ordered stream,
     whether it be serial or parallel.
+    
     This makes it a costly operation for a parallel stream,
     since the stream has to be accessed in a serial manner.
+    
     On the other hand, the result of findFast() is unknown until runtime.
     The findAny() method may return the first element
     or any element in the stream, even on serial streams.
+    
     Since both 1 1 and 3 1 are possible outputs of this program,
     the answer cannot be determined until runtime, and option C is the correct answer.
  */
