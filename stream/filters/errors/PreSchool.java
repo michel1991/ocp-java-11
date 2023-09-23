@@ -1,4 +1,4 @@
-package nio.errors;
+package stream.filters.errors;
 import java.nio.file.*;
 import java.util.function.*;
 import java.util.*;
@@ -35,8 +35,4 @@ class PreSchool {
          .filter(Blankie::getColor)       // line x
          .forEach(System.out::println);   // line y
     }
-}
-
-public class PreSchoolFilterRequiredPredicate {
-
 }
