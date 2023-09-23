@@ -1,4 +1,4 @@
-package stream.errors;
+package stream.groups.errors;
 import java.util.*;
 import java.util.stream.*;
 import java.util.function.*;
@@ -12,10 +12,12 @@ public class BadDeclarationOfTypeOnGroupingByAndPartitioningBy {
         E. The code does not compile.
         F. An exception is thrown.
 
-       This question is really tricky. Did we catch you? The code b -> b.startsWith("c") can be passed directly to partitioningBy() or groupingBy().
+       This question is really tricky. Did we catch you?
+       The code b -> b.startsWith("c") can be passed directly to partitioningBy() or groupingBy().
        Java will infer the right type and pass a Predicate to the former and a Function to the latter.
        However, that’s not what happens in this example.
-       By actually creating a Predicate variable, the type has to match, and the call to groupingBy() does not compile.
+       By actually creating a Predicate variable, the type has to match,
+       and the call to groupingBy() does not compile.
      */
   static void badDeclaration(){
       Stream<String> s = Stream.empty();
