@@ -1,4 +1,4 @@
-package exceptions.errors;
+package exceptions.errors.manyRule;
 /**
  * Given the following class, how many lines contain compilation errors?
     A. One
