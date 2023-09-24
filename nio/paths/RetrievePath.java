@@ -13,9 +13,16 @@ public class RetrievePath {
         G. The code compiles but throws an exception at runtime.
 
        First, the code compiles and runs without issue, so options F and G are incorrect.
-       Let’s take this one step at a time. First, the subpath() method is applied to the absolute path, which returns the relative path animals/bear.
-        Next, the getName() method is applied to the relative path, and since this is indexed from zero, it returns the relative path bear.
-        Finally, the toAbsolutePath() method is applied to the relative path bear, resulting in the current directory /user/home being incorporated into the path.
+       Let’s take this one step at a time.
+
+       First, the subpath() method is applied to the absolute path,
+       which returns the relative path animals/bear.
+
+        Next, the getName() method is applied to the relative path,
+        and since this is indexed from zero, it returns the relative path bear.
+
+        Finally, the toAbsolutePath() method is applied to the relative path bear,
+        resulting in the current directory /user/home being incorporated into the path.
         The final output is the absolute path /user/home/bear, making option C correct.
 
      */
