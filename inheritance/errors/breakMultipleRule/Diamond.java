@@ -1,4 +1,4 @@
-package advancedDesign.errors;
+package inheritance.errors.breakMultipleRule;
 import java.io.*;
 
 /**
@@ -30,7 +30,7 @@ class CarbonStructure {
     public abstract Number getCount() throws IOException; // q1
     public CarbonStructure(int count) { this.count = count; }
 }
- class Diamond extends CarbonStructure {
+ public class Diamond extends CarbonStructure {
     public Diamond() { super(15); }
     public Long getCount() throws FileNotFoundException { // q2
         return count;
@@ -43,8 +43,4 @@ class CarbonStructure {
             e.printStackTrace();
         }
     }
-}
-
-public class DiamondMissingAbstractKeywords {
-    
 }
