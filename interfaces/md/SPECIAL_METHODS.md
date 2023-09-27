@@ -76,19 +76,6 @@ reasons to create a static interface method.
 Options C and E are incorrect and describe attributes of a default method.
 Option F applies only to private static interface methods, not public ones.
 
-##### Which set of modifiers, when added to a default method within an interface,
-##### prevents it from being overridden by a class implementing the interface?
-
-* A. const
-* B. final
-* C. static
-* D. private
-* E. private static
-* F. None of the above
-
-There is no modifier that can prevent a default method
-from being overridden in a class implementing an interface, making option F correct.
-
 ##### Which statements about static interface methods are correct? (Choose three.)
 * A. A static interface method can be final.
 * B. A static interface method can be declared private.
@@ -103,5 +90,20 @@ making options B and D correct and option E incorrect.
 Option F is correct and lack of access modifier
 makes the method implicitly public,
 not package-private, making option C incorrect.
+
+#### Which of the following statements about interface methods are correct? (Choose three.)
+* A. A private static interface method can call default methods.
+* B. A public static interface method can call abstract methods.
+* C. A private static interface method can call static methods.
+* D. A default interface method can call private static methods.
+* E. A default interface method can call abstract methods.
+* F. A public static interface method can call default methods.
+
+A static interface method can only call other static interface methods,
+private or public, making option C correct.
+They cannot call default or abstract methods, making options A, B, and F incorrect.
+On the other hand, a default interface method
+can call all instance-based methods (abstract, default)
+and all static methods, making option D and E correct.
 
 

@@ -53,3 +53,16 @@ the visibility of the method. Options E and F are flat out wrong.
 You Answered Incorrectly.
 There is no modifier that can prevent a default method from
 being overridden in a class implementing an interface, making option F correct.
+
+##### Which set of modifiers, when added to a default method within an interface,
+##### prevents it from being overridden by a class implementing the interface?
+
+* A. const
+* B. final
+* C. static
+* D. private
+* E. private static
+* F. None of the above
+
+There is no modifier that can prevent a default method
+from being overridden in a class implementing an interface, making option F correct.

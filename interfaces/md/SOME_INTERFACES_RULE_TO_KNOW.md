@@ -1,4 +1,5 @@
-### Which of the following statements about the Callable call() and Runnable run() methods are correct? (Choose all that apply.)
+### Which of the following statements about the Callable call()
+### and Runnable run() methods are correct? (Choose all that apply.)
 *  A. Both can throw unchecked exceptions.
 *  B. Callable takes a generic method argument.
 *  C. Callable can throw a checked exception.
