@@ -1,4 +1,4 @@
-### Given an automobile sales system, which of the following information is best stored using an annotation?
+## Given an automobile sales system, which of the following information is best stored using an annotation?
 * A. The price of the vehicle
 * B. A list of people who purchased the vehicle
 * C. The sales tax of the vehicle
@@ -13,7 +13,7 @@ On the other hand, the number of passengers a vehicle is rated for is extra info
 about the vehicle and unlikely to change once established.
 Therefore, it is appropriate metadata and best served using an annotation.
 
-### Given a zoo management system, which of the following is best stored using an annotation?
+## Given a zoo management system, which of the following is best stored using an annotation?
 * A. The number of animals currently in the zoo
 * B. The names of each animal
 * C. The number of visitors to the zoo each year
@@ -28,7 +28,7 @@ The number of animals that can fit in an enclosure defines a rule about the encl
 It does not include how many animals are actually in each enclosure;
 therefore, it is appropriate metadata and best served using an annotation.
 
-##### Given a Broadway show, which information is best stored using annotations? (Choose two.)
+### Given a Broadway show, which information is best stored using annotations? (Choose two.)
 * A. The number of people attending each day
 * B. The maximum number of tickets a person can purchase
 * C. The total number of people the theater can hold
@@ -43,3 +43,18 @@ so they are best stored with annotations. The number of people attending,
 price, and time the ticket is sold are likely to change frequently
 and should be part of the transactional information for the ticket.
 The seat assignment also changes for every ticket sold.
+
+## Let’s say you are managing animals at a veterinary hospital using a new software application.
+## Which metadata attributes would be best managed with an annotation? (Choose two.)
+* A. The number of animals that are checked at any given time
+* B. The maximum number of the animals the hospital can hold
+* C. The feeding schedule for each animal checked in
+* D. The name of every veterinarian in the building
+* E. Whether or not the hospital is capable of handling emergencies
+* F. The location of each animal within the hospital
+
+Annotations define metadata that generally do not change.
+Options B and E define metadata that would not likely change without major changes to the hospital.
+Options A, C, D, and F define attributes that would likely
+change numerous times throughout the day and would
+be better stored in a database or some other data structure.
