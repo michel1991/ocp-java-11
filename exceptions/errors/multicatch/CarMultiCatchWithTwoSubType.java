@@ -1,4 +1,4 @@
-package exceptions.errors;
+package exceptions.errors.multicatch;
 
 import java.io.*;
 

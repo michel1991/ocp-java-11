@@ -1,4 +1,4 @@
-package exceptions.errors;
+package exceptions.errors.orders;
 
 /**
     What is the output of the following snippet, assuming a and b are both 0?
@@ -9,6 +9,7 @@ package exceptions.errors;
     E. The code does not compile.
     F. An uncaught exception is thrown.
     G. None of the above
+    
     The order of catch blocks is important because they’re checked in the order they appear after the try block.
     Because ArithmeticException is a child class of RuntimeException, the catch block on line 7
     is unreachable (if an ArithmeticException is thrown in try block, it will be caught on line 5).

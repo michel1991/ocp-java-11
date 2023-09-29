@@ -1,8 +1,10 @@
-package exceptions.errors;
+package exceptions.errors.notHandle;
 import java.util.Scanner;
 
 /**
- * Assuming Scanner is a valid class that implements AutoCloseable, what is the expected output of the following application?
+  Assuming Scanner is a valid class that implements AutoCloseable,
+  what is the expected output of the following application?
+
     A. Opening!Walls
     B. The code does not compile because of line p1.
     C. The code does not compile because of line p2.
@@ -17,7 +19,7 @@ import java.util.Scanner;
     If the main() method were changed to declare Exception,
     then the class would compile and print Opening!Walls at runtime.
  */
-class Fortress {
+public class Fortress {
     public void openDrawbridge() throws Exception {  // p1
         try {
             throw new Exception("Circle");             // p2
@@ -32,8 +34,4 @@ class Fortress {
             new Fortress().openDrawbridge();           // p3
         }
     }
-}
-
-public class FortressNotThrowsInMain {
-
 }

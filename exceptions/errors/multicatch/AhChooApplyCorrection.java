@@ -1,7 +1,7 @@
-package exceptions.errors;
+package exceptions.errors.multicatch;
 
 /**
-*  Which changes, when made independently, allow the following program to compile? (Choose all that apply.)
+ Which changes, when made independently, allow the following program to compile? (Choose all that apply.)
     A. Add throws SneezeException to the declaration on line 4.
     B. Add throws Throwable to the declaration on line 4.
     C. Change line 7 to } catch (SneezeException e) {.

@@ -1,4 +1,4 @@
-package exceptions.errors;
+package exceptions.errors.scope;
 
 import java.io.IOException;
 
@@ -17,7 +17,7 @@ import java.io.IOException;
     making option A the correct answer.
     Note that while an exception is created inside the turnOn() method, it is not thrown.
  */
-class Light {
+public class Light {
     public static void main(String[] v) throws Exception {
         try {
             new Light().turnOn();
@@ -31,9 +31,4 @@ class Light {
     public void turnOn() throws IOException {
         new IOException("Not ready");   // y3
     }
-}
-
-
-public class LightVariableAlreadyDefined {
-  
 }

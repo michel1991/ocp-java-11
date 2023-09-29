@@ -1,4 +1,4 @@
-package exceptions.errors;
+package exceptions.errors.manyRule;
  import java.io.*; // 2:
 
 /**
@@ -20,7 +20,7 @@ package exceptions.errors;
     but it is not handled in the main() method on line 23.
     Since lines 9, 12, and 23 do not compile, option D is correct.
  */
- class Palace { // 3: 
+ public class Palace { // 3: 
      public void openDrawbridge() throws Exception { //    4: 
          try { //  5:
              throw new Exception("Problem"); //  6:    
@@ -43,7 +43,3 @@ package exceptions.errors;
          new Palace().openDrawbridge(); // 23: 
      } //  24: 
  } //   25: 
-
-public class PalaceFindErrors {
-    
-}

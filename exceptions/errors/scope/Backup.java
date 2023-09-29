@@ -17,7 +17,7 @@ import java.io.*;
    If a different variable name was used for either catch block,
    then the code would compile without issue, printing Failed at runtime.
  */
-class Backup {
+public class Backup {
     public void performBackup() {
         try {
             throw new IOException("Disk not found");  // z1
@@ -32,8 +32,4 @@ class Backup {
     public static void main(String... files) {
         new Backup().performBackup();                // z2
     }
-}
-
-public class BackupVariableAlreadyDefined {
-  
 }

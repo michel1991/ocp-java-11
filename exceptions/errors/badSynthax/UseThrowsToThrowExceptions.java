@@ -9,10 +9,11 @@ package exceptions.errors;
     E. The code does not compile.
     F. An exception is thrown.
 
-    Method e() is incorrect. It should say throw new IllegalArgumentException() to compile.
+    Method e() is incorrect.
+    It should say throw new IllegalArgumentException() to compile.
     If this change were made, option C would be correct.
  */
-public class UseThrowsToStartExceptions {
+public class UseThrowsToThrowExceptions {
     public static void main(String[] args) {
         int i = 0;
         try {

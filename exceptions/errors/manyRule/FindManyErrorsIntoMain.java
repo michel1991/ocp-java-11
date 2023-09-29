@@ -1,4 +1,4 @@
-package exceptions.errors;
+package exceptions.errors.manyRule;
 import java.io.*;
 
 /**
@@ -11,10 +11,14 @@ import java.io.*;
     F. Three lines contain a compiler error.
     G. It compiles but prints an exception at runtime.
 
-    Line 5 does not compile as the FileNotFoundException thrown on line 12 is not handled or declared by the method.
-    Line 7 does not compile because StringBuilder does not implement AutoCloseable and is therefore not compatible with a try-with-resource statement.
-    Finally, line 10 does not compile as RuntimeException is a subclass of Exception in the multi-catch block, making it redundant.
-    Since this method contains three compiler errors, option F is the correct answer. For more information, see Chapter 10.
+    Line 5 does not compile as the FileNotFoundException thrown on line 12
+    is not handled or declared by the method.
+    Line 7 does not compile because StringBuilder does not implement
+    AutoCloseable and is therefore not compatible with a try-with-resource statement.
+    Finally, line 10 does not compile as RuntimeException
+    is a subclass of Exception in the multi-catch block, making it redundant.
+    Since this method contains three compiler errors,
+    option F is the correct answer. For more information, see Chapter 10.
 
  */
 public class FindManyErrorsIntoMain {

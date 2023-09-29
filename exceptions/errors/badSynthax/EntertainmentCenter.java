@@ -1,4 +1,4 @@
-package exceptions.errors;
+package exceptions.errors.badSynthax;
 import java.io.*;
 
 /**

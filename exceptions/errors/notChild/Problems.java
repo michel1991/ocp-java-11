@@ -1,4 +1,4 @@
-package exceptions.errors;
+package exceptions.errors.notChild;
 
 
 /**
@@ -17,7 +17,7 @@ package exceptions.errors;
  */
 class MissingMoneyException {}
 class MissingFoodException {}
-class Problems {
+public class Problems {
     public void doIHaveAProblem() 
          throws MissingMoneyException, MissingFoodException {
         System.out.println("No problems");
@@ -30,6 +30,3 @@ class Problems {
             throw e;
         } } }
 
-public class ProblemsChoiceExceptionsToThrows {
-    
-}

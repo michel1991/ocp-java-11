@@ -1,4 +1,4 @@
-package exceptions.errors;
+package exceptions.errors.manyRule;
 
 /**
  *  How many of the following are valid exception declarations?

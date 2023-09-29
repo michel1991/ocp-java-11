@@ -1,7 +1,4 @@
-package exceptions.errors;
-
-
-
+package exceptions.errors.badSynthax;
 /**
  * What is printed by the following? (Choose all that apply.)
     A. 1
