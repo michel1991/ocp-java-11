@@ -36,3 +36,15 @@ which are options B, C, and D. Therefore, the correct answer is option A.
 The public access modifier is the broadest, making options E and F correct.
 Package-private access limits references to those in the same package.
 The protected access modifier adds on subclass access, making option C correct.
+
+### How many of the classes in the figure can write code that references the sky() method?
+[image](images/sky-method.png)
+* A. None
+* B. One
+* C. Two
+* D. Three
+* E. Four
+
+This method has package-private access,
+which means only classes in the same package can access it.
+In our case, this is the Red and Blue classes, making option C correct.
