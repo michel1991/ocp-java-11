@@ -1,4 +1,4 @@
-package enums.errors;
+package enums.errors.manyRules;
 
 /**
    What is printed by the following program? (Choose all that apply.)
@@ -12,6 +12,7 @@ package enums.errors;
     The declaration of Fruit does not compile because enums are required to list their values first.
     Even if the code was corrected to put the list of values first,
     the main() method in FruitShopper does not compile.
+
     The fully qualified name of the enum should be used.
     In other words, the right side of line 10 needs to be FruitStore.Fruit.PLUM.
     If all of these issues were fixed, then the code would print PLUM is purple.
@@ -30,6 +31,3 @@ public class FruitShopper { // 8:
         System.out.println(one + " is " + one.color); //   11:
     } } //    12:
 
-public class FruitStoreValueMustBeFirst {
-
-}

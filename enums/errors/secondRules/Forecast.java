@@ -1,5 +1,5 @@
 
-package enums.errors;
+package enums.errors.secondRules;
 
 
 /**
@@ -14,12 +14,13 @@ package enums.errors;
     If an enum contains anything other than a list of values, then a semicolon (;)
      must follow the list of values. The Snow enum includes a method,
      so there must be a semicolon after the last value, FLURRY.
+
      For this reason, the code does not compile, and option E is correct.
      If the semicolon was added,
      then the code would compile and print 0 Sunny at runtime,
      with the overridden toString() replacing the default value of FLURRY.
  */
-class Forecast {
+public class Forecast {
     public enum Snow {
         BLIZZARD, SQUALL, FLURRY
     @Override public String toString() { return "Sunny"; }
@@ -29,8 +30,4 @@ class Forecast {
         System.out.print(Snow.BLIZZARD.ordinal() + " ");
         System.out.print(Snow.valueOf("flurry".toUpperCase()));
     }
-}
-
-public class ForecastMissingSemiColon {
-
 }

@@ -1,4 +1,4 @@
-package enums.errors;
+package enums.errors.manyRules;
 
 /**
    What is the output of the following application?
@@ -29,7 +29,7 @@ interface HasHue {String getHue();} // 1:
 class Book { // 12: 
     static void main(String[] pencils) {} //  13:  
 } // 14:
- final class ColoringBook extends Book { // 15: with public modifier(final public )
+ public final class ColoringBook extends Book { // 15: with public modifier(final public )
     final void paint(COLORS c) { //   16: 
         System.out.print("Painting: "+c.getHue()); //    17:  
     } //   18: 
@@ -37,7 +37,3 @@ class Book { // 12:
         new ColoringBook().paint(green); //   20:   
     } // 21: 
 } //  22:
-
-class ColoringBookEnumsImplementInterfaceFindErrors {
-  
-}

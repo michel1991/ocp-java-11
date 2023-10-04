@@ -12,16 +12,19 @@ package enums.errors;
 
    When using an enum in a switch statement,
    the case statement must be made up of the enum values only.
+   
    If the enum name is used in the case statement value,
    then the code does not compile.
+   
    For example, VANILLA is acceptable but Flavors.VANILLA is not.
    For this reason, the three case statements do not compile,
    making option F the correct answer.
+   
    If these three lines were corrected,
    then the code would compile and produce a NullPointerException at runtime.
 
  */
-class IceCream {
+public class IceCream {
     enum Flavors {
         CHOCOLATE, STRAWBERRY, VANILLA
     }
@@ -35,8 +38,4 @@ class IceCream {
             break;
             default: System.out.println("missing flavor"); }
     }
-}
-
-public class IceCreamAllPathToValueOfEnumInCase {
-
 }

@@ -1,4 +1,4 @@
-package enums.errors;
+package enums.errors.manyRules;
 
 /**
   Which statements about the following enum are true? (Choose all that apply.)
@@ -12,15 +12,18 @@ package enums.errors;
 
   Enums are required to have a semicolon (;)
   after the list of values if there is anything else in the enum.
+
   Don’t worry, you won’t be expected
   to track down missing semicolons on the whole exam—only on enum questions.
+
   For this reason, line 5 shouldhave a semicolon
   after it since it is the end of the list of enums, making option F correct.
+
   Enum constructors are implicitly private,
   making option C correct as well. The rest of the enum compiles without issue.
 
  */
-enum AnimalClasses { // 1:
+public enum AnimalClasses { // 1:
     MAMMAL(true), INVERTIBRATE(Boolean.FALSE), BIRD(false), //   2:
     REPTILE(false), AMPHIBIAN(false), FISH(false) { //    3:
         public int swim() { return 4; } //   4:
@@ -32,8 +35,3 @@ enum AnimalClasses { // 1:
     public boolean hasHair() { return hasHair; } //    10:
     public int swim() { return 0; } //   11:
 } //   12:
-
-
-public class AnimalClassesFindErrors {
-
-}

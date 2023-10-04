@@ -1,4 +1,4 @@
-package enums.errors;
+package enums.errors.secondRules;
 
 /**
   What is the result of the following program?
@@ -11,11 +11,12 @@ package enums.errors;
 
     When an enum contains only a list of values, the semicolon (;) after the list is optional.
     When an enum contains any other members, such as a constructor or variable, then it is required.
+
     Since the code is missing the semicolon, it does not compile, making option C the correct answer.
     There are no other compilation errors in this code.
     If the missing semicolon was added, then the program would print 0 1 2 at runtime.
  */
- class FlavorsEnum {
+ public class FlavorsEnum {
     enum Flavors {
         VANILLA, CHOCOLATE, STRAWBERRY
     static final Flavors DEFAULT = STRAWBERRY;
@@ -24,8 +25,4 @@ package enums.errors;
         for(final var e : Flavors.values())
             System.out.print(e.ordinal()+" ");
     }
-}
-
-public class FlavorsEnumFindErrors {
-
 }
