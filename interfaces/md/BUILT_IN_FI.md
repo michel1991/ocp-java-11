@@ -263,3 +263,15 @@ ObjLongConsumer takes one generic and
 one long value and does not return a value.
 For these reasons, option E is the correct answer
 
+### Which of the following three functional interfaces is not equivalent to the other two?
+* A. BiFunction<Double,Double,Double>
+* B. BinaryOperator<Double>
+* C. DoubleFunction<Double>
+* D. None of the above. All three are equivalent.
+
+BiFunction<Double,Double,Double> and BinaryOperator<Double> both take two
+Double input arguments and return a Double value, making them equivalent to one another.
+On the other hand, DoubleFunction˂Double˃ takes a single double value and returns a Double value.
+For this reason, it is different from the other two, making option C correct and option D incorrect.
+
+

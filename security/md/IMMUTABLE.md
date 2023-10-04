@@ -6,7 +6,7 @@
 * E. There are no setter methods.
 * F. Any instance variables are marked final.
 
-An immutable class can have publicconstructors, so option A is incorrect.
+An immutable class can have public constructors, so option A is incorrect.
 Options B, D, and E make up the requirements for an immutable class.
 Option D can be fulfilled by making the class final or marking the methods final.
 Option C is incorrect because instance variables can still be declared with a value or set by an instance initializer.

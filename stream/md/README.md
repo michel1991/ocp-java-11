@@ -109,5 +109,27 @@ For example, we could write s -˃ s.length() ˃ 3. Therefore, option F is correc
 The source is the first operation, and the terminal operation comes last,
 making option F the answer. You need to know this terminology.
 
+#### Suppose you have a stream with one element and the code stream.xxxx.forEach(System.out::println).
+### Filling in xxxx from top to bottom in the table, how many elements can be printed out?
+### Assume a valid lambda expression is passed to each method in the table.
+[image](images/ilter_flatmap_map.png)
+
+* A. Zero or one, zero or more, exactly one
+* B. Zero or one, exactly one, zero or more
+* C. Zero or one, zero or more, zero or more
+* D. Exactly one, zero or more, exactly one
+* E. Exactly one, exactly one, zero or more
+* F. Exactly one, zero or more, zero or more
+
+The filter() method either passes along a given element or doesn’t,
+making options D, E, and F incorrect. The flatMap() method doesn’t pass along any elements
+for empty streams. For nonempty streams, it flattens the elements, allowing it to return zero or more elements.
+This makes option B incorrect. Finally, the map() method
+applies a one-to-one function for each element. It has to return exactly one element,
+so option A is the correct answer.
+
+
+
+
 
 
