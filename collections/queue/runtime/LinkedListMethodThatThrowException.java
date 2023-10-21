@@ -11,15 +11,19 @@ public class LinkedListMethodThatThrowException {
         C. x.pop(); x.pop();
         D. x.remove(); x.remove();
         
-        * Option A is incorrect because the peek() method returns the next
+         Option A is incorrect because the peek() method returns the next
         value or null if there isn’t one without changing the state of the queue.
         In this example, both peek() calls return 18.
+        
         Option B is incorrect because the poll() method removes and returns the next value,
         returning null if there isn’t one.
+        
         In this case, 18 and null are returned, respectively.
-        Options C and D are correct because both the pop() and remove() methods throw a NoSuchElementException
-        when the queue is empty. This means both return 18
-        * for the first call and throw an exception for the second.
+        Options C and D are correct because both the pop()
+        and remove() methods throw a NoSuchElementException
+        when the queue is empty.
+        
+        This means both return 18 for the first call and throw an exception for the second.
      */
     static void popThrowExecptionIfEmptyList(){
         var x = new LinkedList<>();
