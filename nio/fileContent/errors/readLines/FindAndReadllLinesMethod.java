@@ -1,4 +1,4 @@
-package nio.errors;
+package nio.fileContent.errors.readLines;
 import java.nio.file.*;
 import java.io.*;
 import java.util.stream.*;

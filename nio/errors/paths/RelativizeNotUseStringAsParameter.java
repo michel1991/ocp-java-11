@@ -1,4 +1,4 @@
-package nio.errors;
+package nio.errors.paths;
 import java.nio.file.*;
 
 /**
