@@ -23,8 +23,4 @@ interface Office {
     public default String getHeight() { return null; } // m2
 }
 abstract class Tower implements Building, Office {}   // m3
-class Restaurant extends Tower {}              // m4
-
-public class RestaurantMultipleDefaultMethodInterface {
-
-}
+public class Restaurant extends Tower {}              // m4

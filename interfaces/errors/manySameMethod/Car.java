@@ -25,14 +25,10 @@ interface Hover {
     int MAX_SPEED = 10;
     default int getSpeed() { return MAX_SPEED; }
 }
- class Car implements Drive, Hover {
+ public class Car implements Drive, Hover {
     public static void main(String[] gears) {
         class RaceCar extends Car {
             @Override public int getSpeed() { return 15; }
         };
         System.out.print(new RaceCar().getSpeed());
     } }
-
-public class CarDriveHoverTwoDefaultMethod {
-  
-}

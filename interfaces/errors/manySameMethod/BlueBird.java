@@ -27,7 +27,7 @@ interface Sing {
     default void chirp() { System.out.print("Sing!"); }
 }
 
-class BlueBird implements Play, Sing {
+public class BlueBird implements Play, Sing {
     public void chirp(int p) { System.out.print("Party!"); }
     private void relax() {
        // ____________________
@@ -37,6 +37,3 @@ class BlueBird implements Play, Sing {
     }
 }
 
-public class BlueBirdMultipleDefaultMethodInterfaces {
-
-}

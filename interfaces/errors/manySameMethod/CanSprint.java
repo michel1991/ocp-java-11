@@ -26,7 +26,7 @@ package interfaces.errors.manySameMethod;
     private void testWalk() {} //  7:
     default void walk() { System.out.print("Running"); } //  8:
  } //  9:
-interface CanSprint extends CanWalk, CanRun { // 10:
+public interface CanSprint extends CanWalk, CanRun { // 10:
      void sprint(); // 11:
     default void walk(int speed) { //  12:
         System.out.print("Sprinting"); //  13:

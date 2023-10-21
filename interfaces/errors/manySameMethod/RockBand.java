@@ -1,5 +1,6 @@
 package interfaces.errors.manySameMethod;
 
+
 /**
  * What is the output of the following application?
     A. X
@@ -32,14 +33,10 @@ abstract class ElectricBass implements DoubleBass, BassGuitar {
     @Override public void strum() {System.out.print("X");}
 }
 
-class RockBand {
+public class RockBand {
     public static void main(String[] strings) {
         final class MyElectricBass extends ElectricBass {
             public int getVolume() {return 30;}
             public void strum() {System.out.print("Y");}
         }
     } }
-
-public class RockBandTwoDefaultMethodInAbstractClass {
-
-}
