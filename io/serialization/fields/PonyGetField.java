@@ -1,4 +1,4 @@
-package io.serialization;
+package io.serialization.fields;
 import java.io.*;
 
 /**

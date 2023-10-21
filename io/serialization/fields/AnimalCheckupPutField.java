@@ -1,4 +1,4 @@
-package io.serialization;
+package io.serialization.fields;
 import java.io.*;
 
 /**
@@ -10,7 +10,8 @@ import java.io.*;
     E. UpdateItem
     F. UpdateObject
 
-    The PutField class is used with the writeObject() method, making option A correct. There is also a GetField class used with the readObject() method.
+    The PutField class is used with the writeObject() method, making option A correct.
+    There is also a GetField class used with the readObject() method.
  */
 class AnimalCheckup {
     private String name;

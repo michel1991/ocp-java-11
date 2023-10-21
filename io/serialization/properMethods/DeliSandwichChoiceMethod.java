@@ -1,4 +1,4 @@
-package io.serialization;
+package io.serialization.properMethods;
 import java.io.*;
 
 /**
