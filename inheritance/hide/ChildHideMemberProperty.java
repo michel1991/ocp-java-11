@@ -1,4 +1,4 @@
-package inheritance;
+package inheritance.hide;
 
 /**
 *   What does the following program print?

@@ -1,4 +1,4 @@
-package classInitialization;
+package classInitialization.inheritance;
 
 /**
 * What is the result of the following?

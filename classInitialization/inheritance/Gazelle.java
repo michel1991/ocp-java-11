@@ -1,4 +1,4 @@
-package inheritance;
+package classInitialization.inheritance;
 
 /**
    What is printed by the following program?
@@ -25,7 +25,7 @@ class Antelope { // 1:
     { System.out.print("2"); } //   5:
     static { System.out.print("1"); } //  6:
 } //   7:
-class Gazelle extends Antelope { // 8:
+public class Gazelle extends Antelope { // 8:
     public Gazelle(int p) { //  9:
         super(6); //   10:
         System.out.print("3"); //   11:
@@ -36,10 +36,3 @@ class Gazelle extends Antelope { // 8:
     static { System.out.print("8"); } //   16:
     { System.out.print("9"); } //    17:
 } //     18:
-
-
-public class GazelleClassInitialization {
-    public static void main(String hopping[]) { //     13:
-        Gazelle.main(hopping); //    14:
-    }
-}

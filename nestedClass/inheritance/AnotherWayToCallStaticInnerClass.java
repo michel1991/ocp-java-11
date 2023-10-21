@@ -1,4 +1,4 @@
-package inheritance;
+package nestedClass.inheritance;
 
  final class Cook {
     static class Vegetable {

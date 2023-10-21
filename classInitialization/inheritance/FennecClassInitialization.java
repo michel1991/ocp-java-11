@@ -1,4 +1,4 @@
-package inheritance;
+package classInitialization.inheritance;
 /**
 * What is the output of the following program?
 * A. qpz

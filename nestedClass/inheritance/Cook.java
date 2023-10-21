@@ -1,4 +1,4 @@
-package inheritance;
+package nestedClass.inheritance;
 public  final class Cook {
     static class Vegetable {
         float vitamins() { return 8f; }
