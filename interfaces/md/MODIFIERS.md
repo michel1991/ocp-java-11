@@ -66,3 +66,16 @@ being overridden in a class implementing an interface, making option F correct.
 
 There is no modifier that can prevent a default method
 from being overridden in a class implementing an interface, making option F correct.
+
+#### Which of the following interface methods are inherited by classes that implement the interface? (Choose two.)
+* A. private methods
+* B. private static methods
+* C. default methods
+* D. static methods
+* E. abstract methods
+* F. final methods
+
+Methods marked private or static are never inherited, so options A, B, and D are incorrect.
+Interface methods cannot be final, so option F is incorrect.
+That leaves default and abstract methods,
+which are both inherited by classes implementing the interface.

@@ -123,3 +123,22 @@ Without any command line flags, jdeps lists packages and module dependencies,
 making option A correct. Option D will also list the packages; however,
 it is longer than option A.
 
+#### Which commands can include the following output? (Choose two.)
+```txt
+ JDK Internal API   Suggested Replacement
+ sun.misc.Unsafe    See http://openjdk.java.net/jeps/260
+```
+
+* A. jdeps sneaky.jar
+* B. jdeps -j sneaky.jar
+* C. jdeps -s sneaky.jar
+* D. jdeps --internals sneaky.jar
+* E. jdeps -jdkinternals sneaky.jar
+* F. jdeps --jdk-internals sneaky.jar
+
+Options B and D are incorrect because those flags do not exist on the jdeps command.
+Options A and C do exist, but do not include suggested replacements.
+Options E and F are correct as they will include a table of suggestions
+if any internal APIs are used in the JAR.
+
+
