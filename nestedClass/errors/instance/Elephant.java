@@ -1,4 +1,4 @@
-package nestedClass.errors;
+package nestedClass.errors.instance;
 
 /**
  * Which statement about the Elephant program is correct?
@@ -25,7 +25,7 @@ interface Long {
 }
 
 
-class Elephant {
+public class Elephant {
     public class Trunk implements Long {
         public Number length() { return 6; }   // k1
     }
@@ -38,8 +38,4 @@ class Elephant {
     public static void main(String[] cute) {
         new Elephant().charge();               // k4
     }
-}
-
-public class  ElephantStaticMethodRequireInstance {
-  
 }

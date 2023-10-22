@@ -1,4 +1,4 @@
-package nestedClass;
+package nestedClass.inheritance;
 
 /**
  * What is the output of the following code?
@@ -13,7 +13,7 @@ package nestedClass;
     Since both objects are of type FlemishRabbit,
     HOP is printed twice, and option D is the correct answer.
  */
- class Bunny {
+ public class Bunny {
     static class Rabbit {
         void hop() {
             System.out.print("hop");
@@ -30,9 +30,4 @@ package nestedClass;
         r1.hop();
         r2.hop();
     }
-}
-
-
-public class BunnyStaticClassOverrideMethod {
-  
 }

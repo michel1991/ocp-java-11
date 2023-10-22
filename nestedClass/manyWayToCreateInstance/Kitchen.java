@@ -1,4 +1,4 @@
-package nestedClass;
+package nestedClass.manyWayToCreateInstance;
 
 /**
   Given the following class structure,
@@ -33,10 +33,8 @@ class Kitchen {
         var d = new Mixer().new Spinner();
         Kitchen.Mixer.Spinner e = new Kitchen().new Mixer().new Spinner();
     }
-}
-
-public class KitchenCreateInstance {
-   public static void main(String... args){
-
-   }
+    
+    public static void main(String... args){
+        new  Kitchen().bake();
+    }
 }

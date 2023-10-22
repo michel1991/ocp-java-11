@@ -1,4 +1,4 @@
-package nestedClass;
+package nestedClass.manyWayToCreateInstance;
 /**
    Given the following class declaration,
    which options correctly declare a local variable containing
@@ -22,14 +22,10 @@ package nestedClass;
     Remember that all nested classes
     can have static variables if they are marked final.
  */
-class Earth {
+public class Earth {
     private abstract class Sky {
         void fall() {
             var e = new Sky() { final static int blue = 1; };  // _______________
         }
     }
-}
-
-public class EarthCreateLocalVariable {
-
 }

@@ -1,4 +1,4 @@
-package nestedClass.errors;
+package nestedClass.errors.manyRules;
 
 /**
 * Which of the following are true statements about the following program? (Choose all that apply.)
@@ -16,7 +16,7 @@ package nestedClass.errors;
     For this reason, line 10 also does not compile.
 
  */
-public class LionLocalClassWithStaticMethod {
+public class Lion {
     public static void main(String[] args) { //  2:
 ;        for (var i = 0; i < 3; i++) {  // 3:
             class Cub {  //  4:

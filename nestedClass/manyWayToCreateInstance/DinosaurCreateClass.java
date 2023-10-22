@@ -1,4 +1,4 @@
-package nestedClass;
+package nestedClass.manyWayToCreateInstance;
 
 /**
    Given the following class structures,

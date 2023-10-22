@@ -1,4 +1,4 @@
-package nestedClass.errors;
+package nestedClass.errors.manyRules;
 
 /**
  *  What is the output of the following application?
@@ -22,7 +22,7 @@ package nestedClass.errors;
     default void eat() { //   2:
         System.out.print("Spoiled!"); //   3:
     } } //  4:
-class ApplePicking { // 5:
+public class ApplePicking { // 5:
     public static void main(String[] food) { // 6:
         var apple = new Tasty() { //  7:
             @Override //     8:
@@ -31,7 +31,3 @@ class ApplePicking { // 5:
             } //  11:
         } //  12:
     } } //  13:
-
-public class ApplePickingMissingModifierAndSemiColon {
-
-}

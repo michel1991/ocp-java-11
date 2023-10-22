@@ -1,7 +1,9 @@
-package nestedClass.errors;
+package nestedClass.errors.staticAccess;
 
 /**
-* The following code appears in a file named Ostrich.java. What is the result of compiling the source file?
+  The following code appears in a file named Ostrich.java.
+  What is the result of compiling the source file?
+
     A. The code compiles successfully, and one bytecode file is generated: Ostrich.class.
     B. The code compiles successfully, and two bytecode files are generated: Ostrich.class and OstrichWrangler.class.
     C. The code compiles successfully, and two bytecode files are generated: Ostrich.class and Ostrich$OstrichWrangler.class.
@@ -18,14 +20,10 @@ package nestedClass.errors;
    but you do need to know the number of classes
    and that OstrichWrangler is not a top-level class.
  */
-class Ostrich { // 1:
+public class Ostrich { // 1:
     private int count; //  2:
     private interface Wild {} //  3:
     static class OstrichWrangler implements Wild { //   4:
         public int stampede() { //    5:
             return count; //  6:
         } } } //   7:
-
-public class OstrichInnerStaticNotAccessToInstanceMember {
-
-}

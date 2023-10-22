@@ -1,4 +1,4 @@
-package nestedClass.errors;
+package nestedClass.errors.requireFinal;
 
 /*
 
@@ -20,7 +20,7 @@ package nestedClass.errors;
     Note that private constructors can be
     used by any methods within the same class.
 */
-class Movie { // 1:
+public class Movie { // 1:
     private int butter = 5; //   2:
     private Movie() {} // 3:
     protected class Popcorn { //     4:
@@ -35,7 +35,3 @@ class Movie { // 1:
         Movie.Popcorn in = new Movie().new Popcorn(); //  13:
         in.startMovie(); //     14:
     } } //  15:
-
-public class MovieInnerMemberClassRequiredFinalOnStaticField {
-
-}

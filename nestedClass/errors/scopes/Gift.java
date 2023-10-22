@@ -1,6 +1,6 @@
-package nestedClass.errors;
+package nestedClass.errors.scopes;
 /**
- * What is the output of the following application?
+   What is the output of the following application?
     A. GiantRobot GiantRobot
     B. GiantRobot DinosaurRobot
     C. DinosaurRobot DinosaurRobot
@@ -18,7 +18,7 @@ package nestedClass.errors;
     if the code compiled, would print GiantRobot.
  */
 interface Toy { String play(); }
-class Gift {
+public class Gift {
     public static void main(String[] matrix) {
         abstract class Robot {}
         class Transformer extends Robot implements Toy {
@@ -30,9 +30,4 @@ class Gift {
         };
         System.out.print(prime.play()+" "+name);
     }
-}
-
-
-public class GiftAccesVariableOutsideScope {
-
 }

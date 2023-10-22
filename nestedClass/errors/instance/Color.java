@@ -1,4 +1,4 @@
-package nestedClass.errors;
+package nestedClass.errors.instance;
 /**
     What is the output of the following program?
         A. 0
@@ -14,11 +14,11 @@ package nestedClass.errors;
    The rest of the lines do not contain any compiler errors.
    If the code was corrected to use an instance of Color, then it would print 10 at runtime.
  */
-public class ColorBadCallMemberClass {
+public class Color {
     private int hue = 10;  // 2
     private enum Range { HIGH, LOW; } //  3:
     public class Shade { // 4:
-        public int hue = ColorBadCallMemberClass.this.hue;  //  5:
+        public int hue = Color.this.hue;  //  5:
     }  // 6:
     public static void main(String[] args) { //  7:
         System.out.println(new Shade().hue); //  8:

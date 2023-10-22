@@ -1,4 +1,4 @@
-package nestedClass.errors;
+package nestedClass.errors.tricky;
 
 /**
   What is the output of the following application?
@@ -12,6 +12,7 @@ package nestedClass.errors;
     The Bottle class includes a static nested class Ship that must be instantiated in a static manner.
     Line w2 uses an instance of Bottle to instantiate the Ship.
     Therefore, line w2 does not compile, and option C is the correct answer.
+
      Note that if Ship were changed to be a member inner class,
      (the code would still not compile since a member
      inner class cannot include static members
@@ -21,7 +22,7 @@ package nestedClass.errors;
       ]
      ).
  */
-class Bottle {
+public class Bottle {
     public static class Ship {
         private enum Sail {          // w1
             TALL {protected int getHeight() {return 100;}},
@@ -37,8 +38,4 @@ class Bottle {
         Ship q = bottle.new Ship();  // w2
         System.out.print(q.getSail());
     }
-}
-
-public class BottleBadCreationOfStaticClass {
-  
 }

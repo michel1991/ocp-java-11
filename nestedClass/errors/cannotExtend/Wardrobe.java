@@ -1,4 +1,4 @@
-package nestedClass.errors;
+package nestedClass.errors.cannotExtend;
 
 /**
  *  What is the output of the following application?
@@ -20,7 +20,7 @@ abstract class TShirt {
         System.out.print("Starting...");
     }
 }
-class Wardrobe {
+public class Wardrobe {
     abstract class Sweater extends TShirt {
         int insulate() {return 5;}
     }
@@ -37,9 +37,4 @@ class Wardrobe {
     public static void main(String... snow) {
         new Wardrobe().dress();
     }
-}
-
-
-public class WardrobeExtendFinalClass {
-    
 }

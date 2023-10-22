@@ -1,4 +1,4 @@
-package nestedClass.errors;
+package nestedClass.errors.instance;
 
 
 /**
@@ -17,7 +17,7 @@ package nestedClass.errors;
    If a reference to Deer were used, such as calling new Deer().new Diet(),
    then the code would compile and print bc at runtime.
  */
-class Deer {
+public class Deer {
     enum Food {APPLES, BERRIES, GRASS}
     protected class Diet {
         private Food getFavorite() {
@@ -30,12 +30,5 @@ class Deer {
             case BERRIES: System.out.print("b");
             default: System.out.print("c");
         }
-    }
-}
-
-
-public class DeerInnerClassRequireReferenceOnStaticMethod {
-    public static void main(String[] seasons) {
-
     }
 }

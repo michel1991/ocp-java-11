@@ -1,4 +1,4 @@
-package nestedClass.errors;
+package nestedClass.errors.shouldStartWithNew;
 
 /**
    What is the output of the following application?
@@ -20,7 +20,7 @@ package nestedClass.errors;
 abstract interface CanSwim {
     public void swim(final int distance);
 }
-class Turtle {
+public class Turtle {
     final int distance = 2;
     public static void main(String[] seaweed) {
         final int distance = 3;
@@ -33,8 +33,4 @@ class Turtle {
         };
         seaTurtle.swim(7);
     }
-}
-
-public class TurtleBadDeclarationOfLocalClass {
-
 }

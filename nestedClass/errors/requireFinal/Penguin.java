@@ -1,4 +1,4 @@
-package nestedClass.errors;
+package nestedClass.errors.requireFinal;
 
 /**
  * What is the output of the following application?
@@ -17,7 +17,7 @@ package nestedClass.errors;
      If the final modifier was added to the volume variable in the Chick class,
      then the rest of the code would compile, printing Honk(1)! at runtime.
  */
-class Penguin {
+public class Penguin {
     private int volume = 1;
     private class Chick {
         private static int volume = 3;
@@ -30,8 +30,4 @@ class Penguin {
         final Penguin.Chick littleOne = pen.new Chick();
         littleOne.chick();
     }
-}
-
-public class PenguinHoldOnlyFinalStaticMember {
-
 }

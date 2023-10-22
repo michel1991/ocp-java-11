@@ -1,4 +1,4 @@
-package nestedClass.errors;
+package nestedClass.errors.staticAccess;
 
 /**
  What is the output of the following application?
@@ -17,7 +17,7 @@ package nestedClass.errors;
     then the code would compile and print 5, 10 at runtime.
 
  */
-class Ready {
+public class Ready {
     protected static int first = 2;
     private final short DEFAULT_VALUE = 10;
     private static class GetSet {
@@ -30,9 +30,4 @@ class Ready {
         System.out.print(r.go.first);
         System.out.print(", "+r.go.second);
     }
-}
-
-
-public class ReadyStaticClassAccessToMembers {
-  
 }

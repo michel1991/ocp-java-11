@@ -14,7 +14,7 @@ package nestedClass.errors;
     If the last line of the method was removed, though,
     then the program would compile and print 8.
  */
-class Woods {
+public class Woods {
     static class Tree {}
     public static void main(String[] leaves) {
         int heat = 2;
@@ -27,9 +27,4 @@ class Woods {
         System.out.print(new Oak().getWater());
         water = 0;
     }
-}
-
-
-public class WoodsLocalClassReferenceNotEffectiveVariable{
-
 }

@@ -19,7 +19,7 @@ import java.util.*;
     Some future program could create a subclass of Bus that does implement Collection,
     so this line compiles. Therefore, only line 20 fails to compile, and option B is correct.
  */
-class Transport { // 10:
+public class Transport { // 10:
   static interface Vehicle {} //   11: 
   static class Bus implements Vehicle {} //  12:  
   // 13:
@@ -32,7 +32,3 @@ class Transport { // 10:
     System.out.println(bus instanceof ArrayList); //  20:   
     System.out.println(bus instanceof Collection); //     21: 
   } } //   22:
-
-class TransportNestedClassWithStatic {
-  
-}
