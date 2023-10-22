@@ -15,3 +15,16 @@ then Java will perform a shallow copy by default, making option D incorrect.
 Finally, if the class implements Cloneable and overrides clone(),
 then the behavior of the clone() method is entirely dependent on the implementation.
 For this reason, option F is correct, and option E is incorrect.
+
+### Which statements are true about the clone() method? (Choose all that apply.)
+* A. Calling clone() on any object will compile.
+* B. Calling clone() will compile only if the class implements Cloneable.
+* C. If clone() runs without exception, it will always create a deep copy.
+* D. If clone() runs without exception, it will always create a shallow copy.
+* E. If clone() is not overridden and runs without exception, it will create a deep copy.
+* F. If clone()is not overridden and runs without exception, it will create a shallow copy.
+
+The clone() method is declared on the Object class. Option A is correct because it will always compile.
+However, the call will throw an exception if the class that is being cloned does not implement Cloneable.
+Assuming this interface is implemented, the default implementation creates a shallow copy, making option F correct.
+If the class wants to implement a deep copy, it must override the clone() method with a custom implementation.

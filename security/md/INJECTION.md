@@ -35,3 +35,13 @@ to a denial of service attack in which resources are exploited,
 rather than SQL injection in which data is manipulated. Finally,
 option F is incorrect, as avoiding using a relational database is not a
 commonly accepted practice for avoiding SQL injection.
+
+### Which of these attacks is blocked by a program that validates a filename?
+* A. Denial of service
+* B. Inclusion
+* C. Injection
+* D.None of the above
+
+The main purpose of validating a filename is to ensure
+it has only valid characters and is not a command injection attack.
+Therefore, option C is correct.

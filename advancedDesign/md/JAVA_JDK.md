@@ -25,3 +25,17 @@ The Java Development Kit (JDK) is used when creating Java programs.
 It contains a compiler since it is a development tool making option A correct and option B incorrect.
 The JDK contains a Java Virtual Machine (JVM) making option F correct and option E incorrect.
 The compiler creates bytecode making option C correct and option D incorrect. For more information, see Chapter 1.
+
+### java ______ library.jar MainClass.class
+*  A. -cp
+*  B. -classpath
+*  C. -class-path
+*  D. --classpath
+*  E. --class-path
+*  F. None of the above
+
+When running the java command,
+you pass the name of the class rather than the name of the class file.
+If you are using the single-file source-code feature,
+you use the name of the Java file.
+Since none of the options accepts the class filename, option F is correct.

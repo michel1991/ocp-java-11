@@ -82,18 +82,6 @@ They can even be created without an explicit reference variable,
 such as calling new Object(); on a line by itself.
 
 
-### java ______ library.jar MainClass.class
-*  A. -cp
-*  B. -classpath
-*  C. -class-path
-*  D. --classpath
-*  E. --class-path
-*  F. None of the above
-
-When running the java command, you pass the name of the class rather than the name of the class file.
-If you are using the single-file source-code feature, you use the name of the Java file.
-Since none of the options accepts the class filename, option F is correct.
-
 
 ### Which is a true statement?
 * A. If s.contains("abc") is true, then s.equals("abc") is also true.
@@ -117,21 +105,6 @@ A primitive cannot be created using the new keyword, so option B is incorrect.
 Dealing with references happens after the object created by new is returned.
 The other options are invalid.
 
-
-##### Fill in the blanks: A class may be assigned to a(n)
-##### ___________________ reference variable automatically
-##### but requires an explicit cast when assigned
-##### to a(n) ___________________ reference variable.
-
-* A. subclass, outer class
-* B. superclass, subclass
-* C. concrete class, subclass
-* D. subclass, superclass
-* E. abstract class, concrete class
-
-A class can trivially be assigned to a superclass reference
-variable but requires an explicit cast to be assigned
-to a subclass reference variable. For these reasons, option B is correct.
 
 #### What is required to define a valid Java class file?
 * A. A class declaration

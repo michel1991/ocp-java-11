@@ -1,29 +1,3 @@
-### Which of these attacks is blocked by a program that validates a filename?
-* A. Denial of service
-* B. Inclusion
-* C.Injection
-* D.None of the above
-
-The main purpose of validating a filename is to ensure
-it has only valid characters and is not a command injection attack.
-Therefore, option C is correct.
-
-#### Which of the following are not typically considered denial of service attacks? (Choose two.)
-*  A. Downloading confidential information from a log file
-*  B. Uploading a very large file
-*  C. Performing SQL injection
-*  D. Passing invalid numbers to trigger overflow or underflow
-*  E. Exploiting a database resource leak
-*  F. Uploading a zip bomb
-
-A denial of service attack is one in which one or more requests attempt
-to overwhelm the system and disrupt legitimate requests.
-Option A is an access or confidentiality problem.
-Option C is about gaining access or changing data that the user should not be permitted to.
-Options B, D, E, and F are all denial of service attacks because
-they increase load in an attempt to bring a system down.
-Remember, a zip bomb is when a small file is expanded to become a much larger file.
-
 ### Which statements are correct? (Choose all that apply.)
 * A. A blacklist lists what is allowed.
 * B. A whitelist lists what is allowed.
@@ -125,19 +99,6 @@ Exposing the information unintentionally is not OK, making option B incorrect.
 Sharing confidential information with others is definitely not OK, making option D incorrect.
 
 
-### Which statements are true about the clone() method? (Choose all that apply.)
-* A. Calling clone() on any object will compile.
-* B. Calling clone() will compile only if the class implements Cloneable.
-* C. If clone() runs without exception, it will always create a deep copy.
-* D. If clone() runs without exception, it will always create a shallow copy.
-* E. If clone() is not overridden and runs without exception, it will create a deep copy.
-* F. If clone()is not overridden and runs without exception, it will create a shallow copy.
-
-The clone() method is declared on the Object class. Option A is correct because it will always compile.
-However, the call will throw an exception if the class that is being cloned does not implement Cloneable.
-Assuming this interface is implemented, the default implementation creates a shallow copy, making option F correct.
-If the class wants to implement a deep copy, it must override the clone() method with a custom implementation.
-
 ### Which statements about securing confidential information are correct? (Choose three.)
 * A. When writing to System.out, you should not include sensitive information.
 * B. When reading sensitive data from a Console, you should use readLine().
@@ -154,22 +115,5 @@ For this reason, option D is correct, and option B is incorrect.
 Note that Console does have a readPassword() method that returns char[].
 Finally, the correct Java policy permission to prevent write access is to only grant read access,
 making option F correct and option E incorrect.
-
-### What are two motivations for marking a class final? (Choose two.)
-*  A. Guarantee behavior of a class
-*  B. Allow the class to be extended
-*  C. Improve security
-*  D. Support polymorphism
-*  E. Improve performance
-*  F. Ensure the contents of the class are immutable
-
-Marking a class final tends to improve security by guaranteeing
-the behavior of a class is not replaced by overridden methods at runtime.
-For this reason, options A and C are correct.
-Option B is incorrect and is the opposite of what marking a class final does.
-Options D and E are incorrect and have nothing to do with marking a class final.
-Option F is incorrect as the contents of the class can still be changed,
-even if the class is marked final.
-
 
 
