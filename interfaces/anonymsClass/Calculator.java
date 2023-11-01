@@ -1,4 +1,4 @@
-package interfaces;
+package interfaces.anonymsClass;
 
 /**
    What does the following print?

@@ -1,8 +1,8 @@
-package interfaces;
+package interfaces.privateMethods;
 
 /**
  * Fill in the blank with the line of code that allows the program to compile and print 15 at runtime.
-   A. Sport.play()
+    A. Sport.play()
     B. Sport.super.play()
     C. Sport.Tennis.play()
     D. Tennis.Sport.super.play()
@@ -26,6 +26,3 @@ interface Tennis extends Sport {
             System.out.println(new Game().play());
         } }
 
-public class GamePrivateMethod {
-
-}

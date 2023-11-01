@@ -1,4 +1,4 @@
-package interfaces;
+package interfaces.function;
 import java.util.function.*;
 
 /**

@@ -1,4 +1,4 @@
-package interfaces;
+package interfaces.sam;
 
 /**
  * What is the minimum number of lines that need to be removed to make this code compile?
@@ -13,13 +13,9 @@ package interfaces;
     The other methods have a method body, which shows they are not abstract.
  */
 @FunctionalInterface
-interface Play {
+public interface Play {
     public static void baseball() {}
     private static void soccer() {}
     default void play() {}
     void fun();
-}
-
-public interface PlayAllTypeOfMethods {
-
 }

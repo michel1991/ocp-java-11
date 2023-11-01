@@ -1,4 +1,4 @@
-package interfaces;
+package interfaces.callParentMethod;
 
 /**
  * Fill in the blank with the line of code that allows the program to compile and print 10 at runtime.
@@ -20,16 +20,11 @@ interface Speak {
 interface Whisper {
     public default int getVolume() { return 10; }
 }
-class Debate implements Speak, Whisper {
+public class Debate implements Speak, Whisper {
     public int getVolume() { return 30; }
 
     public static void main(String[] a) {
         var d = new Debate();
         System.out.println(); // ______________
     }
-}
-
-
-public class DebateCallParentDefaultMethod {
-
 }

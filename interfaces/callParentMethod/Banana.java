@@ -1,4 +1,4 @@
-package interfaces;
+package interfaces.callParentMethod;
 
 
 
@@ -24,16 +24,11 @@ interface Fruit {
 interface Edible  {
     public default char getColor() { return 'E'; }
 }
- class Banana implements Fruit, Edible {
+ 
+public class Banana implements Fruit, Edible {
     public char getColor() { return  Edible.super.getColor() ; } // _______________
     public static void main(String[] a) {
         var d = new Banana();
         System.out.println(d.getColor());
-    }
-}
-
-public class BananaCallDefaultParentMethod {
-    public static void main(String[] a) {
-        Banana.main(a);
     }
 }

@@ -1,4 +1,4 @@
-package interfaces;
+package interfaces.callParentMethod;
 
 /**
   Given the following program, what can be inserted into the blank line that would allow it to print Swim! at runtime?
@@ -26,16 +26,14 @@ interface Dance {
     default void perform() { System.out.print("Dance!"); }
 }
 
-class Penguin implements Swim, Dance {
+public class Penguin implements Swim, Dance {
     public void perform() { System.out.print("Smile!"); }
     public void doShow() { // access modifier from private to public
         Swim.super.perform();  //____________________
     }
-
-}
-
-public class PenguinCallMethodnterfaceAccordingToMan {
+    
     public static void main(String[] eggs) {
         new Penguin().doShow();
     }
+
 }

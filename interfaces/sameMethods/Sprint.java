@@ -1,4 +1,4 @@
-package interfaces;
+package interfaces.sameMethods;
 
 /**
  * What is the output of the following application?
@@ -26,7 +26,8 @@ interface Jog {
         return "Walking and jogging!";
     }
 }
-class Sprint implements Run, Jog {
+
+public class Sprint implements Run, Jog {
     public String walk() {
         return "Sprinting!";
     }
@@ -37,6 +38,3 @@ class Sprint implements Run, Jog {
 }
 
 
-public class SprintSameMethodInDifferentsInterfaces {
-
-}

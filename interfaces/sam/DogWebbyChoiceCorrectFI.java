@@ -1,7 +1,9 @@
-package interfaces;
+package interfaces.sam;
 
 /**
- * Which of the following interface declarations will still compile if @FunctionalInterface is applied to each? (Choose two.)
+   Which of the following interface declarations will still compile
+   if @FunctionalInterface is applied to each? (Choose two.)
+   
     A. Dog
     B. KC
     C. Georgette
