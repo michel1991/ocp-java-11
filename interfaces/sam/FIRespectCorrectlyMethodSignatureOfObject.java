@@ -1,4 +1,4 @@
-package lambda;
+package interfaces.sam;
 /*
  Which of the following are valid functional interfaces? (Choose all that apply.)
     A. Whistle

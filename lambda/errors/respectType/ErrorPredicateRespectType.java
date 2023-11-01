@@ -1,4 +1,4 @@
-package lambda;
+package lambda.errors.respectType;
 import java.util.function;
 public class ErrorPredicateRespectType {
     private static boolean test(Predicate<Integer> p) {
@@ -6,7 +6,7 @@ public class ErrorPredicateRespectType {
     }
 
     public static void main(String[] args) {
-        System.out.println(____________________________);
+        System.out.println("____________________________");
         test((int i ) -> i ==5);
         test((int i ) -> {
             return i == 5;

@@ -1,4 +1,4 @@
-package lambda;
+package lambda.accessVariable;
 import java.util.function.*;
 public class LoopCaseToUseEffectiveVariable {
 
@@ -11,9 +11,11 @@ public class LoopCaseToUseEffectiveVariable {
         E. The code compiles successfully.
 
        Lambdas are only allowed to reference effectively final variables.
-       You can tell the variable j is effectively final because adding a final keyword before it wouldn’t introduce a compile error.
+       You can tell the variable j is effectively final because adding
+       a final keyword before it wouldn’t introduce a compile error.
         Each time the else statement is executed, the variable is redeclared and goes out of scope.
-        Therefore, it is not re-assigned. Similarly, length is effectively final. There are no compile errors, and option E is the correct.
+        Therefore, it is not re-assigned. Similarly, length is effectively final.
+        There are no compile errors, and option E is the correct.
      */
   static void loop(){
       int length = 3;

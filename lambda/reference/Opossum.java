@@ -1,4 +1,4 @@
-package lambda;
+package lambda.reference;
 import java.util.function.*;
 
 /**
@@ -19,15 +19,10 @@ import java.util.function.*;
 interface Marsupial {
     void carryInPouch(int size);
 }
- class Opossum {
+ public class Opossum {
     public static void main(String[] args) {
         Marsupial mar = x -> System.out.println("Carrying " + x);
 
         mar.carryInPouch(1);
-    }
-}
-public class OpossumChoiceRefMethodButVerifyWellLambda {
-    public static void main(String[] args) {
-        Opossum.main(args);
     }
 }

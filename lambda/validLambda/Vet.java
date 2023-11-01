@@ -1,8 +1,10 @@
-package lambda;
+package lambda.validLambda;
 import java.util.List;
 
 /**
-* Which lambdas can replace the new Sloth() call in the main() method and produce the same output at runtime? (Choose all that apply.)
+* Which lambdas can replace the new Sloth() call in the main()
+  method and produce the same output at runtime? (Choose all that apply.)
+
     A. (z,f) -> { String x = ""; return "Sleep: " + x }
     B. (t,s) -> { String t = ""; return "Sleep: " + t; }
     C. (w,q) -> {"Sleep: " + w}
@@ -11,10 +13,17 @@ import java.util.List;
     F. (r,k) -> { String g = ""; return "Sleep:"; }
     G. None of the above, as the program does not compile.
 
-   Option A does not compile because the second statement within the block is missing a semicolon (;) at the end.
-   Option B is an invalid lambda expression because t is defined twice: in the parameter list and within the lambda expression.
+   Option A does not compile because the second statement
+   within the block is missing a semicolon (;) at the end.
+
+   Option B is an invalid lambda expression because t is defined twice:
+   in the parameter list and within the lambda expression.
+
    Options C and D are both missing a return statement and semicolon.
-   Options E and F are both valid lambda expressions, although only option E matches the behavior of the Sloth class.
+
+   Options E and F are both valid lambda expressions, although
+   only option E matches the behavior of the Sloth class.
+
    In particular, option F only prints Sleep:, not Sleep: 10.0.
  */
 interface Yawn {
@@ -25,15 +34,11 @@ class Sloth implements Yawn {
         return "Sleep: " + zzz;
     }
 }
-class Vet {
+public class Vet {
     public static String takeNap(Yawn y) {
         return y.yawn(10, null);
     }
     public static void main() {
         System.out.print(takeNap(new Sloth()));
     }
-}
-
-public class VetChoiceCorrectMethod {
-  
 }

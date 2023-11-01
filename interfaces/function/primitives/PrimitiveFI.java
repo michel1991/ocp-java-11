@@ -1,4 +1,4 @@
-package lambda;
+package interfaces.function.primitives;
 import java.util.function.*;
 public class PrimitiveFI {
     /**

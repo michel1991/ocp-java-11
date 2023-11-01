@@ -1,4 +1,4 @@
-package lambda;
+package lambda.reference;
 import java.util.*;
 import java.util.function.*;
 
@@ -14,8 +14,11 @@ public class StringContainsChoiceCorrectMethodRef{
       F. None of the above.
 
     Since the lambda references an effectively final variable,
-    the method reference needs to as well. Option B is a correct method reference
-    that meets this criteria. Options A and C use syntax that is not supported with method references.
+    the method reference needs to as well.
+    
+    Option B is a correct method reference that meets this criteria.
+    
+    Options A and C use syntax that is not supported with method references.
     Option D is incorrect because the Predicate passes only one value at runtime,
     so one of the instance variable or method parameter would need to be supplied.
 
