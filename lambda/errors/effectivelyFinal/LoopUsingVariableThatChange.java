@@ -1,4 +1,4 @@
-package lambda.errors;
+package lambda.errors.effectivelyFinal;
 import java.util.function.*;
 
 public class LoopUsingVariableThatChange {

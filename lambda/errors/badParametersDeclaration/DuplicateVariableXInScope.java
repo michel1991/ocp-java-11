@@ -1,4 +1,4 @@
-package lambda.errors;
+package lambda.errors.badParametersDeclaration;
 import java.util.function.*;
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package lambda.errors;
+package lambda.errors.missingParts;
 import java.util.function.*; // 1
 
 /**
