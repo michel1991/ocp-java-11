@@ -1,4 +1,4 @@
-package arrays;
+package sorts;
 import java.util.*;
 public class SortStringArrays {
   static void sorts(){

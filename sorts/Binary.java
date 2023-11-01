@@ -1,4 +1,4 @@
-package compare.sort;
+package sorts;
 import java.util.*;
 
 /**

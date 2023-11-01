@@ -1,4 +1,4 @@
-package compare;
+package arrays;
 import java.util.*;
 
 /**

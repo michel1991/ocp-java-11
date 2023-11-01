@@ -2,7 +2,7 @@ package compare;
 import java.util.*;
 
 /**
-   Suppose we want to implement a Comparator˂String˃ so that it sorts the longest strings first.
+   Suppose we want to implement a Comparator<String> so that it sorts the longest strings first.
    You may assume there are no null values. Which method could implement such a comparator?
 
 
@@ -41,7 +41,7 @@ import java.util.*;
      The negative value says that s1 should sort first,
      which is correct, because we want the longest String first.
  */
-public class SortLongestString {
+public class LongestString {
     public int compare(String s1, String s2) {
         return s2.length() - s1.length();
     }
