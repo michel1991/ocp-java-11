@@ -1,4 +1,4 @@
-package generics.errors;
+package interfaces.errors.methodReference;
 
 
 import java.util.*; 
@@ -14,12 +14,16 @@ import java.util.*;
     F. The code compiles as is.
     
     Like a lambda, method references use type inference.
+
     When assigned to a local variable,
     var cannot be used because there is not enough information to infer the type.
     Due to this, lines 17, 18, and 19 do not compile.
-    Consumer˂Object˃ takes a single Object argument and does not return any data.
+
+    Consumer<Object> takes a single Object argument and does not return any data.
     The classes ArrayList and String do not contain constructors that take an Object,
-    so lines 14 and 15 do not compile either. Line 16 does support an Object variable,
+    so lines 14 and 15 do not compile either.
+
+    Line 16 does support an Object variable,
     since the System.out.println(Object) method exists.
     For these reasons, option E is the correct answer.
 

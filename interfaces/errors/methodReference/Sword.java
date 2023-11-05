@@ -23,7 +23,7 @@ class Dragon {
     }
 }
 
- class Sword {
+ public class Sword {
     public static void main(String[] knight) {
         var dragon = new Dragon();
         Function<Shield, Sword> func = Shield::protect; // line x
@@ -31,6 +31,3 @@ class Dragon {
     }
 }
 
-public class SwordBadDefinitionOfFunction {
-    
-}

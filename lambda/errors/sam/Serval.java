@@ -1,4 +1,4 @@
-package lambda.errors;
+package lambda.errors.sam;
 
 /**
  * Which lambda can implement this functional interface?
@@ -23,6 +23,3 @@ public interface Serval {
 }
 
 
-public class ServalConcreateMethodOnInterface {
-  
-}

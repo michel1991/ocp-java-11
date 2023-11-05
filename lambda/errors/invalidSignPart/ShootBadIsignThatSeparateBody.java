@@ -1,4 +1,4 @@
-package generics.errors;
+package lambda.errors.invalidSignPart;
 import java.util.*; // 2:
  import java.util.function.*; //: 3:
 

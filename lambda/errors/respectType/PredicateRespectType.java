@@ -1,6 +1,6 @@
 package lambda.errors.respectType;
 import java.util.function;
-public class ErrorPredicateRespectType {
+public class PredicateRespectType {
     private static boolean test(Predicate<Integer> p) {
         return p.test(5);
     }

@@ -1,4 +1,4 @@
-package lambda.errors;
+package lambda.errors.manyRules;
 import java.util.function.*;
 import java.util.*;
 
@@ -13,11 +13,17 @@ import java.util.*;
 
     While it is common for a Predicate to have a generic type, it is not required.
     However, it is treated like a Predicate of type Object if the generic type is missing.
+
     Since startsWith() does not exist on Object, line 28 does not compile.
+
     Line 34 would be a correct lambda declaration in isolation.
+
     However, it uses the variable s, which is already taken from the main() method parameter.
-    This causes a compiler error on line 34. These are the only two compiler errors, making option C correct.
-     If Predicate were changed to Predicate˂String˃ and lambda variable were changed to x,
+    This causes a compiler error on line 34.
+
+    These are the only two compiler errors, making option C correct.
+    If Predicate were changed to Predicate<String> and lambda variable were changed to x,
+
      the Consumer would in fact print pink, making option E the other answer.
 
  */
