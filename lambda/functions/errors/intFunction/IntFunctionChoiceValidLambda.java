@@ -1,4 +1,4 @@
-package generics.errors;
+package lambda.functions.errors.intFunction;
 import java.util.function.*;
 
 public class IntFunctionChoiceValidLambda {
@@ -10,10 +10,12 @@ public class IntFunctionChoiceValidLambda {
         D. Three
         E. Four
         F. Five
-      To start with, IntFunction˂Integer˃ takes an int value and returns an Integer.
+      To start with, IntFunction<Integer> takes an int value and returns an Integer.
       Line 8 takes an Integer instead of int as the input argument, and is therefore not compatible.
+
       Line 9 is compatible, since the return type null can be used as an Integer return type.
       Line 10 is also valid. An int can be autoboxed to Integer.
+      
        Lines 11 and 12 do not compile because they do not take a parameter.
        Since only two statements compile, option C is the correct answer.
      */
