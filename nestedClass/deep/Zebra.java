@@ -1,4 +1,4 @@
-package nestedClass;
+package nestedClass.anonymous;
 
 /**
    What does the following program print?
@@ -15,7 +15,7 @@ package nestedClass;
     The code compiles without issue and prints x is 24 at runtime,
     making option B the correct answer.
  */
-class Zebra { // 1:
+public class Zebra { // 1:
     private int x = 24; //  2:
     public int hunt() { //   3:
         String message = "x is "; // 4:
@@ -32,8 +32,3 @@ class Zebra { // 1:
     public static void main(String[] args) { //  15:
         new Zebra().hunt(); //  16:
     } } //  17:
-public class ZebraWithInnerAbstractClass {
-    public static void main(String[] args) {
-        Zebra.main(args);
-    }
-}

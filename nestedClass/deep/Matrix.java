@@ -1,4 +1,4 @@
-package nestedClass;
+package nestedClass.deep;
 
 /**
  * What is the output of the following application?
@@ -19,7 +19,7 @@ package nestedClass;
     For these reasons, option B is the correct answer.
 
  */
-class Matrix {
+public class Matrix {
     private int level = 1;
     class Deep {
         private int level = 2;
@@ -40,8 +40,3 @@ class Matrix {
     }
 }
 
-public class MatrixDuplicateClassName {
-    public static void main(String[] bots) {
-        Matrix.main(bots);
-    }
-}

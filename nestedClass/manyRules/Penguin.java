@@ -1,4 +1,4 @@
-package nestedClass;
+package nestedClass.manyRules;
 
 /**
  * What is true of the following code? (Choose three.)
@@ -12,6 +12,7 @@ package nestedClass;
     The code does compile as is, making option A correct.
     Removing line 2 would cause a compiler error in the main()
     method since the enum inside Chick is not referenced.
+
     This makes option C the next answer.
     Finally, option E is the final answer because an enum cannot
     be defined in a non-static inner class.
@@ -32,9 +33,3 @@ package nestedClass;
     } //  12:
   } // 13:
 } // 14:
-
-public class PenguinStaticClassAccessToMembers {
-  public static void main(String[] args) {
-    Penguin.main(args);
-  }
-}
