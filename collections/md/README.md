@@ -55,22 +55,4 @@ Options B and D take a varargs rather than a List.
 Option A returns a List, not a Set. Option C meets both our requirements.
 
 
-##### Suppose we want to store JellyBean objects. Which of the following
-##### require JellyBean to implement the Comparable interface
-##### or create a Comparator to add them to the collection? (Choose two.)
-* A. ArrayList
-* B. HashMap
-* C. HashSet
-* D. SortedArray
-* E. TreeMap
-* F. TreeSet
-
-TreeMap and TreeSet keep track of sort order when you insert elements.
-TreeMap sorts the keys and TreeSet sorts the objects in the set.
-This makes options E and F correct. Note that you have
-the option of having JellyBean implement Comparable,
-or you can pass a Comparator to the constructor of TreeMap or TreeSet.
-Option D is trying to trick you as SortedArray
-is not a class or interface in the collections framework.
-
 
