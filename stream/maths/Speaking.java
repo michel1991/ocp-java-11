@@ -42,7 +42,7 @@ class Ballot {
     }
 }
 
-class Speaking {
+public class Speaking {
     public static void main(String[] args) {
         Stream<Ballot> ballots = Stream.of(
                 new Ballot("Mario", 1, 10),
@@ -56,10 +56,5 @@ class Speaking {
                            summingInt(Ballot::getScore)));
         System.out.println(scores.get("Mario"));
     }
-}
-
-public class SpeakingMComplexCollect {
-    public static void main(String[] args) {
-        Speaking.main(args);
-    }
+   
 }
