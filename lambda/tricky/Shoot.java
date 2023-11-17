@@ -1,4 +1,4 @@
-package lambda;
+package lambda.tricky;
 
 /**
  * What does the following do? (Choose two.)
