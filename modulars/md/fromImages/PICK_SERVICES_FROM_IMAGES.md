@@ -10,7 +10,7 @@
 
 All parts of a modules service must point to the service provider interface.
 This tells us the service provider interface must be X, ruling out options A, B, and E.
-Now we have to decide if Y or Z are the service provider interface.
+Now we have to decide if Y or Z are the service provider interface(to remove).
 We can tell because nothing has a direct dependency on the service provider.
 Since this makes the service provider Y, the answer is option C.
 
