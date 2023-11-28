@@ -137,3 +137,39 @@ but must be accompanied by at least one of these blocks. For these reasons, opti
 and F are incorrect, and option E is correct.
 A finally block must appear after the last catch block,
 if there are any, making option C incorrect, and option A correct.
+
+#### Which of the following are true about a try/catch statement?
+
+* A. If it has multiple catch blocks, then they must be ordered from most specific exception to most generic exception.
+
+  You can visualize multiple catch blocks like a series of baskets put one below the other.
+  If you put a bigger basket on the top, the smaller basket below will not be able to catch anything.
+  Similarly, if you put a catch block with a generic exception (i.e. a super class exception)
+  above a specific exception (a sub class exception), then the lower catch block will never catch any exception.
+  That is why, a catch block with more specific exception can only be put before
+  a catch block with less specific exception. Here is an example. Assume that E1 extends Exception and E2 extends E1.
+  This means, E2 is more specific than E1 and E1 is more specific than Exception.
+The catch blocks must then be placed like this:
+```java
+  try{
+    //some code that might throw any of the three exceptions
+  }
+  catch(E2 e2){ }
+  catch(E1 e1){ }
+  catch(Exception e){ }
+```
+If the exception classes are unrelated, then the order is not important.
+Now, can you tell if you wanted to add catch(Throwable t){ }
+and catch(RuntimeException re){ } blocks in the above code, where would they go?
+
+* B. A try block must have at least a catch or a finally block.
+  In Java 7, "try with resources" statement was introduced, which does not require catch or finally blocks.
+  
+* C. In a try-with-resources statement, the finally block is invoked before the resources are closed.
+  catch and finally blocks are executed after the resources are closed.
+  (Although try-with-resources is not explicitly mentioned in the exam objectives,
+  some candidates have reported getting questions that require a basic idea about it.)
+  
+* D. A try can have multiple finally blocks.
+It can have at most one finally block.
+

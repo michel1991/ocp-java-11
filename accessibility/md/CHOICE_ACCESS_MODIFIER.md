@@ -158,6 +158,26 @@ therefore, option E is correct.
 Note that the default keyword is used for interfaces, annotations,
 and switch statements, and is not an access modifier.
 
+### Compared to public, protected, and private accessibilities, default accessibility is....
+
+* A. Less restrictive than public.
+ public is least restrictive.
+* B. More restrictive than public, but less restrictive than protected.
+* C. More restrictive than protected, but less restrictive than private.
+    This is correct because members with default accessibility are only accessible within the class itself
+    and from other classes in the same package. While protected members are, in addition, accessible
+    from subclasses in any other package as well. Members with private accessibility
+    are only accessible within the class itself.
+* D. More restrictive than private.
+private is most restrictive.
+E. Less restrictive than protected from within a package, and more restrictive than protected from outside a package.
+
+The correct order :
+public < protected < package (or default) < private
+(here, public is least restrictive and private is most restrictive)
+(Correct C)
+
+
 
 
 

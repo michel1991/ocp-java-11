@@ -123,4 +123,23 @@ making options C and E correct.
 Interfaces use the interface type,
 while annotations use the @interface type, making option F incorrect.
 
+### Which of these statements concerning interfaces are true?
+
+* A.  An interface may extend an interface.
+    Unlike a class, an interface can extend from multiple interfaces.
+* B. An interface may extend a class and may implement an interface.
+    An interface cannot implement another interface. It can extend another interface but not a class.
+* C. A class can implement an interface and extend a class.
+* D. A class can extend an interface and can implement a class.
+* E. An interface can only be implemented and cannot be extended.
+    It can be extended by another interface.
+* F. All methods of an interface are public and abstract.
+Java 8 onwards, an interface is allowed to have default and static methods, which are non-abstract methods.
+Java 9 onwards, an interface is also allowed to have private methods
+
+The keyword implements is used when a class inherits method prototypes from an interface.
+The keyword extends is used when an interface inherits from another interface,
+or a class inherits from another class.
+(correct A, C)
+
 

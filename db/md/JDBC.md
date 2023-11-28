@@ -40,3 +40,43 @@ Driver, Connection, PreparedStatement, and ResultSet
 are the four key interfaces you need to know for JDBC.
 DriverManager is a class rather than an interface. Query is not used in JDBC.
 Since only Driver and ResultSet are interfaces in the list, option B is the answer.
+
+#### Given that a code fragment has just created a JDBC Connection and has executed
+#### an update statement, which of the following statements is correct?
+* A. Changes to the database are pending a commit call on the connection.
+* B. Changes to the database will be rolled back if another update is executed without commiting the previous update.
+* C. Changes to the database will be committed right after the update statement has completed execution.
+    A Connection is always in auto-commit mode when it is created.
+    As per the problem statement, an update was fired without explicitly disabling the auto-commit mode,
+    the changes will be committed right after the update statement has finished execution.
+
+* D. Changes to the database will be committed when another query (update or select) is fired using the connection
+
+When a connection is created, it is in auto-commit mode. i.e. auto-commit is enabled.
+This means that each individual SQL statement is treated as a transaction and is automatically
+committed right after it is completed. (A statement is completed when all of its result sets
+and update counts have been retrieved. In almost all cases, however, a statement is completed,
+and therefore committed, right after it is executed.)
+The way to allow two or more statements to be grouped into a transaction is to disable the auto-commit mode.
+Since it is enabled by default, you have to explicitly disable
+it after creating a connection by calling con.setAutoCommit(false);
+(correct C)
+
+#### Identify the correct statement regarding a JDBC Connection:
+
+* A. When a JDBC Connection is created, it is in auto-commit mode.
+* B. When a JDBC Connection is created, its commit mode depends on the parameters used while creating the connection.
+* C. When a JDBC Connection is created, its auto-commit feature is disabled.
+* D. When a JDBC Connection is created, its commit mode is undetermined.
+
+When a connection is created, it is in auto-commit mode. i.e. auto-commit is enabled.
+This means that each individual SQL statement is treated as a transaction and is automatically
+committed right after it is completed. (A statement is completed when all
+of its result sets and update counts have been retrieved. In almost all cases, however,
+a statement is completed, and therefore committed, right after it is executed.)
+The way to allow two or more statements to be grouped into a transaction is to disable the auto-commit mode.
+Since it is enabled by default, you have to explicitly disable
+it after creating a connection by calling con.setAutoCommit(false);
+
+correct(A)
+

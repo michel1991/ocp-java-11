@@ -145,12 +145,3 @@ although accessing it in this manner is not recommended.
 The f in 4.0f means the type is a float, making option A correct.
 Local variable type inference chooses an exact match rather
 than using autoboxing to choose Float.
-
-
-
-
-
-
-
-
-

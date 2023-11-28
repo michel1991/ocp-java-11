@@ -38,3 +38,28 @@ the application will exit the switch statement without executing any branches.
 Finally, each if statement has at most one matching else statement, making option F incorrect.
 You can chain multiple if and else statements together, but each else
 statement requires a new if statement.
+
+#### Which of the following statements are true?
+
+* A. The modulus operator % can only be used with integer operands.
+    It can be used on floating points operands also. For example,
+    5.5 % 3 = 2.5
+    5.5 % 3.5 = 2.0
+    5 % 3.5 = 1.5
+* B. & can have integral as well as boolean operands.
+    Unlike &&, & will not "short circuit" the expression if used on boolean parameters.
+* C. The arithmetic operators *, / and % have the same level of precedence.
+* D. && can have integer as well as boolean operands.
+    !, && and || operate only on booleans.
+* E. ~ can have integer as well as boolean operands.
+    ~ Operates only on integral types
+
+Note : 
+integral types means byte, short, int, long, and char
+As per Section 4.1 of JLS -
+
+The integral types are byte, short, int, and long, whose values are 8-bit,
+16-bit, 32-bit and 64-bit signed two's-complement integers,
+respectively, and char, whose values are 16-bit unsigned integers representing UTF-16 code units.
+
+(Correct B, C)

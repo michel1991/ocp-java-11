@@ -62,3 +62,47 @@ Option E is easier, since the uses directive works with an interface name.
 A service locator specifies the interface name, making option C correct.
 Note that options D and E are trying to trick you by mixing
 up the provides directive syntax with the uses directive syntax.
+
+#### Which clause(s) are used by a module definition that uses a service?
+
+* A. exports
+* B. provides
+    This is used by the provider module to specify the service interface and
+    the implementing class that implements the service interface. For example,
+    provides org.printservice.api.Print with com.myprinter.PrintImpl
+* C. uses
+    A uses clause is used by the module that uses a service. For example,
+    uses org.printservice.api.Print;
+* D. implements
+    This is not a valid clause in module-info.
+* E. requires
+    The module that uses a service must require the module that defines the service interface.
+```java
+/*  For example, if an abc.print module implements an org.printing.Print
+     service interface defined in PrintServiceAPI module using com.abc.PrintImpl class,
+     then this is how its module-info should look:
+*/
+
+module abc.print{
+    requires PrintServiceAPI; //required
+    //because this module defines the service interface org.printing.Print
+
+    provides org.printing.Print with com.abc.PrintImpl;
+}
+
+//A module named customer that uses Print service may look like this:
+
+module customer{
+    requires PrintServiceAPI; //required
+    //because this module defines the service interface org.printing.Print
+
+    uses org.printing.Print; //specifies that this module uses this service
+
+    //observe that abc.print module is not required.
+}
+
+
+```
+
+Correct(C, E)
+
