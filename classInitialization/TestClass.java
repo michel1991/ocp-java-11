@@ -29,6 +29,8 @@ package classInitialization;
    For example, to print the value of a float variable f, it internally calls Float.toString(f).
    Now, this method doesn't append an "f" at the end of a float value.
    That is why a float value of 0.0 is printed as 0.0 and not 0.0f.
+   
+   (correct A)
 
  */
 public class TestClass {
