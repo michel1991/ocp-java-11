@@ -9,7 +9,7 @@
 * E. There should be a module-info.java file in the bar directory for it to be a valid source module definition.
 * F. There should be a module.java file in the foo.bar directory for it to be a valid module definition.
 
-As per JEP 261:
+As per JEP 261: (https://openjdk.org/jeps/261)
 Each module definition is either:
     1.  A module artifact, i.e., a modular JAR file or a JMOD file containing a compiled module definition, or else
     or
@@ -19,4 +19,4 @@ Each module definition is either:
 In the latter case the directory tree can be a compiled module definition,
 populated with individual class and resource files and a module-info.class file at the root or,
 at compile time, a source module definition, populated with individual source files
-and a module-info.java file at the root.
+and a module-info.java file at the root. (I think that the correct response is C)
