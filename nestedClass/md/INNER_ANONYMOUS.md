@@ -108,3 +108,77 @@ public class TestClass
 ``` 
 Note that the anonymous class created inside the getSomeClass() method above extends the abstract class SomeClass.
 (correct A, E)
+
+### Which of these statements are true?
+
+* A. Non-static inner class cannot have static members.
+    They can have final fields but the static fields have to be final constants.
+* B. Objects of static nested classes can be created without creating instances of their Outer classes.
+* C. Member variables in any nested class cannot be declared final.
+    Nested classes can have final members (i.e. methods and fields)
+* D. Anonymous classes cannot define constructors explicitly in Java code.
+* E Anonymous classes cannot be static.
+
+Non-static nested classes (aka inner classes) can contain final static fields (but not static methods).
+Anonymous classes cannot have explicitly defined constructors, since they have no explicitly defined names.
+
+Remember: A nested class is any class whose declaration
+occurs within the body of another class or interface.
+A top level class is a class that is not a nested class.
+An inner class is a nested class that is not explicitly or implicitly declared static.
+A class defined inside an interface is implicitly static.
+
+Consider the following nested class B which is static:
+```java
+public class A  //This is a standard Top Level class.
+{
+    class X
+    {
+        static final int j = 10;  //compiles fine!
+    }
+    public static class B //This is a static nested class
+    {
+    }
+}
+```
+
+
+You can create objects of B without having objects of A. For example: A.B b = new A.B();
+Members in outer instances are directly accessible using simple names.
+There is no restriction that member variables in inner classes must be final.
+Nested classes define distinct types from the enclosing class,
+and the instanceof operator does not take of the outer instance into consideration.
+
+(Correct is B, D, E)
+
+### Anonymous inner classes always extend directly from the Object class.
+
+* A. True
+* B. False
+
+When you create an anonymous class for an interface, it extends from Object. For example,
+
+```txt
+button.addActionListener( new ActionListener() {
+    public void actionPerformed(ActionEvent ae) { } }  );
+
+But if you make an anonymous class from another class then it extends from that class. For example, consider the following class:
+class MyListener implements ActionListener
+{
+    public void actionPerformed(ActionEvent ae) {
+        System.out.println("MyListener class"); }
+}
+
+button.addActionListener( new MyListener() {
+    public void actionPerformed(ActionEvent ae) {
+        System.out.println("Anonymous Listener class"); }
+    } );
+            
+```
+
+
+Here the anonymous class actually extends from MyListener
+class and successfully overrides the actionPerformed() method.
+Correct(B)
+
+

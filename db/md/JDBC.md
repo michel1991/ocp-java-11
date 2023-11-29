@@ -80,3 +80,33 @@ it after creating a connection by calling con.setAutoCommit(false);
 
 correct(A)
 
+### Identify the correct statements regarding JDBC.
+
+* A. The JDBC Driver must be loaded explicitly in the code before attempting to create a connection to the database.
+* B. Starting JDBC 4.0, the JDBC Driver class is not required any more.
+* C. Starting JDBC 4.0, the JDBC Driver class is not required to be loaded explicitly in the code any more.
+    To load a JDBC driver in JDBC 1.3, the application code would have to load the
+    Driver class explicitly using Class.forName method, for example - Class.forName("com.xyz.jdbc.Driver").
+    However, with JDBC 4.0, applications no longer need to do this.
+* D. JDBC 4.0 allows loading multiple JDBC Drivers while previous versions did not.
+There has never been any restriction on how many JDBC Drivers are allowed to be loaded by an application.
+If your application connects to say 3 different databases, you can load three different Drivers.
+Of course, starting JDBC 4.0, you don't need to load the Driver classes explicitly in the code, while earlier,
+you had to explicitly load them using Class.forName.
+
+Applications no longer need to explicitly load JDBC drivers using Class.forName().
+
+The DriverManager methods getConnection and getDrivers have been enhanced to support
+the Java Standard Edition Service Provider mechanism. JDBC 4.0 Drivers must include
+the file META-INF/services/java.sql.Driver. This file contains the name
+of the JDBC drivers implementation of java.sql.Driver. For example, to load the my.sql.Driver class,
+the META-INF/services/java.sql.Driver file would contain the entry:
+
+my.sql.Driver
+
+When the method getConnection is called, the DriverManager will attempt
+to locate a suitable driver from amongst those loaded at initialization
+and those loaded explicitly using the same classloader as the current applet or application.
+(Correct C)
+
+

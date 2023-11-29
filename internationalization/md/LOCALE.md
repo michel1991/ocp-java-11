@@ -120,3 +120,30 @@ Option B is incorrect because the language is missing.
 Remember, the exam won’t expect you to know which language
 and country codes exist, but it will expect you to know how to use them.
 
+### Which of the following are required to construct a Locale?
+
+* A. language
+* B. region
+* C. country
+    country is the second parameter that may be passed while creating a Locale. It is not required though.
+* D. time zone
+* E. state
+* F culture
+
+Locale needs at least a language to be constructed. It has three constructors -
+
+Locale(String language)
+Construct a locale from a language code.
+Locale(String language, String country)
+Construct a locale from language, country.
+Locale(String language, String country, String variant)
+Construct a locale from language, country, variant.
+
+For example:
+new Locale("fr", "FR"); //language is French, Country is France.
+new Locale("fr", "CA"); //language is French, Country is Canada, so this means, you are trying to use Canadian dialect of French.
+new Locale("en", "IN"); //language is English, Country is India, so this means, you are trying to use Indian dialect of English.
+
+(Correct is A)
+
+
