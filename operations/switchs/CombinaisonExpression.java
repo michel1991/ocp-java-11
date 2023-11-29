@@ -1,13 +1,13 @@
 package operations.switchs;
 
 /**
- * Which of these combinations of switch expression types and case label value types
- * are legal within a switch statement?
+   Which of these combinations of switch expression types and case label value types
+   are legal within a switch statement?
  */
 public class CombinaisonExpression {
 
     /**
-     *  A. switch expression of type int and case label value of type char.
+        A. switch expression of type int and case label value of type char.
      */
     
     public static void additionalInfoAnswerA(){
@@ -33,7 +33,7 @@ public class CombinaisonExpression {
             }
 
         /**
-         *  Note that the following is invalid because a char cannot be assigned to an Integer:
+             Note that the following is invalid because a char cannot be assigned to an Integer:
                Integer x = 1;  // int x = 1; is valid.
                 switch(x){
                     case 'a' : System.out.println("a");
@@ -62,8 +62,6 @@ public class CombinaisonExpression {
     
     
     /**
-     * Rules for a switch statement
-
         Rules for a switch statement
 
         1. Only String, byte, char, short, int, (and their wrapper classes Byte, Character, Short, and Integer),
@@ -84,13 +82,16 @@ public class CombinaisonExpression {
         4. All case labels should be COMPILE TIME CONSTANTS. This means, you can have literals such as 'a', 5, 10,
             or a final variable, the value of which is computed at compile time such as int I = 2*3;
             For example, the following is valid:
-            
+         */
+         static void holdExampleRuleFour(){
             int x = 10;
             final int I = 2*3;
             switch(x){ 
-               case I : System.out.println(x); //this is valid because I is a compile time constant
+                case I : System.out.println(x); //this is valid because I is a compile time constant
             }
-        5. No two of the case constant expressions associated with a switch statement may have the same value.
-        6. The default label is optional and at most one default label may be associated with the same switch statement.
+          }
+
+      /*  5. No two of the case constant expressions associated with a switch statement may have the same value.
+          6. The default label is optional and at most one default label may be associated with the same switch statement.
      */
 }
