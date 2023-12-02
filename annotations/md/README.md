@@ -147,7 +147,8 @@ variables and other annotations. Finally, option F is correct.
 Annotations are optional metadata, and removing all of
 them from a class does not cause a compiler error.
 
-#### Which annotations will trigger a compiler error if incorrectly applied to a method with no other annotations? (Choose three.)
+#### Which annotations will trigger a compiler error if incorrectly
+#### applied to a method with no other annotations? (Choose three.)
 * A. @Documented
 * B. @Deprecated
 * C. @SuppressWarnings("unchecked")
@@ -165,4 +166,25 @@ or static modifier, making option F correct.
 The rest of the annotations can be applied
 to methods without triggering a compiler error. For option E,
 the compiler might not recognize the cause (such as magic), but it will still compile.
+
+### Identify correct statements about annotations.
+
+* A. @SuppressWarnings can be used only on a class, constructor, or a method.
+    Actually, it can be used on several things. Its target can be a TYPE,
+    FIELD, METHOD, PARAMETER, CONSTRUCTOR, LOCAL_VARIABLE, and MODULE.
+* B. @Override can only be used on instance methods.
+* C. @SafeVarargs can only be used on methods.
+    It can be used on constructors and methods.
+* D. @Deprecated can be used only on a class, constructor, or a method.
+    Actually, it can be used on several things. Its target
+    can be a CONSTRUCTOR, FIELD, LOCAL_VARIABLE, METHOD, PACKAGE, MODULE, PARAMETER,TYPE.
+* E. @SuppressWarnings("all") can be used to suppress all warnings from a method or a class.
+    Although you can pass any string value to the SuppressWarnings annotation
+    (unrecognized values are ignored), the Java specification mandates only
+    three values - unchecked, deprecation, and removal.
+    Different compilers and IDEs may support other values in addition to these three.
+
+   There is no rule that says the value "all" has to supress all warnings
+   (although a compiler or an IDE may do that upon seeing this value.)
+(Correct B)
 

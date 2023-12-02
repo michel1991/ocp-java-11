@@ -71,3 +71,20 @@ Declaring a nested class static only means that instances of the class are creat
 It does not put any limits on whether the members of the class can be static or not.
 
 (correct E)
+
+
+### What classes can a non-static nested class extend ?
+### (Provided that the class to be extended is visible and is not final.)
+
+* A. Only the encapsulating class.
+* B. Any top level class.
+* C. Any class.
+* D. It depends on whether the inner class is defined in a method or not.
+* E. None of the above.
+
+In general, there is no restriction on what a nested class may or may not extend.
+FYI, a nested class is any class whose declaration occurs within the body of another class or interface.
+A top level class is a class that is not a nested class.
+An inner class is a nested class that is not explicitly or implicitly declared static.
+(Correct C)
+

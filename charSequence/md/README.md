@@ -57,3 +57,17 @@ as long as it is an IndexOutOfBoundsException. There are questions in the exam o
     yields exactly the same result as the expression Pattern.matches(regex, str)
     
 (Correct is A)
+
+### Which of the following operators can be used in conjunction with a String object?
+* A. +
+* B. ++
+* C. +=
+* D. .
+* E. *
+
+Only + is overloaded for String. a+=x is actually converted to a = a + x.
+so it is valid for Strings. dot (.) operator accesses members of the String object.
+There is only one member variable though:
+CASE_INSENSITIVE_ORDER. It is of type Comparator (which is an interface).
+(Correct A, C, D)
+

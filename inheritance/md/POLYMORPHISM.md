@@ -55,3 +55,18 @@ For this reason, option A is correct, and option E incorrect.
 With hidden static methods, Java relies on the location and reference type to determine which method is called,
 making option B incorrect and F correct. Finally, making a method final, not static,
 prevents it from being overridden, making option D correct and option C incorrect.
+
+### Which of the following are benefits of polymorphism?
+* A. It makes the code more reusable.
+* B. It makes the code more efficient.
+    This option is a bit ambiguous because it is not clear
+    which efficiency is it talking about - execution, memory, or maintenance.
+    Our guess is that it is referring to execution efficiency.
+    It is not true because polymorphism causes a very slight degradation due to dynamic binding at run time.
+* C. It protects the code by preventing extension.
+    Just the reverse is true. Extension is how polymorphism is achieved.
+* D. It makes the code more dynamic.
+    Polymophism allows the actual decision of which method
+    is to be invoked to be taken at runtime based on the actual class of object.
+   This is dynamic binding and makes the code more dynamic.
+(Correct A,D)

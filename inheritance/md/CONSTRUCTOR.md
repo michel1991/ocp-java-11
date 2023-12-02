@@ -19,3 +19,19 @@ Without a constructor call, inserting the default no-argument
 constructor into the child class would lead to a compiler error on the implicit super() call.
 Finally, options E and F are incorrect, as a child
 class of a parent with a no-argument constructor is free to declare or not declare any constructors.
+
+### Which of the following statements is/are true?
+* A. Subclasses must define all the abstract methods that the superclass defines.
+    Not if the subclass is also defined abstract!
+* B. A class implementing an interface must define all the methods of that interface.
+    Not if the class is defined abstract. Further, Version 8 onwards,
+    Java allows an interface to have default and static methods,
+    which need not be implemented by a non-abstract class that says it implements that interface.
+* C. A class cannot override the super class's constructor.
+    Because constructors are not inherited.
+* D. It is possible for two classes to be the superclass of each other.
+* E. An interface can implement multiple interfaces.
+    Interface cannot "implement" another interfaces.
+    It can extend multiple interfaces. The following is a valid declaration :
+    interface I1 extends I2, I3, I4 { }
+(Correct C)

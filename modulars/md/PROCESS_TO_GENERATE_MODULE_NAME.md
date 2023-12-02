@@ -94,3 +94,19 @@ which gives us option B: lizard.cricket.
 Option D is correct because the Automatic-Module-Name is used when supplied.
 If it were not supplied, option A would be the answer because version information
 is excluded when determining the module name.
+
+#### Identify legal module names.
+* A. com.amazing.movie-rentals
+* B. com.amazing.movierentals
+* C. amazing-movierentals
+    - is invalid but _ is valid. So, amazing_movierentals, com._amazing, and _amazing are valid module names.
+* D. com.amazing.$movierentals
+* E. no1movierentals
+* F. com.amazing.1movierentals
+
+A module name consists of one or more Java identifiers separated by " . " tokens.
+Since, you cannot use dash (-) in a java identifier,
+any module name that uses a dash is invalid (btw, underscore _ is valid).
+Further, an identifier cannot start with a number, therefore,
+any module name that has a token starting with a number is invalid.
+(Correct B, D, E)
