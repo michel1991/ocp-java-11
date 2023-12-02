@@ -29,3 +29,16 @@
     The length of a bit set relates to logical length
     of a bit set and is defined independently of implementation.
 (Correct A, D, E, F)
+
+### Which is/are the root interface(s) for all collection related interfaces?
+
+* A. BaseCollection
+* B. Collection
+* C. List
+* D. Set
+* E. Map
+
+All name-value maps such as java.util.HashMap and java.util.TreeMap
+implement java.util.Map and all collections such as java.util.ArrayList,
+and java.util.LinkedList implement java.util.Collection.
+(Correct B, E)

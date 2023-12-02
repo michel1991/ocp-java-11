@@ -28,3 +28,31 @@ On the right side of the expression, this is a handy shortcut.
 Java still needs the type on the left side, so there is something to infer.
 Positions Q and S are on the right side, making option B correct.
 In this question, the generic type is never specified, so it is Object. Since it is not String, option F is correct.
+
+
+#### Code that uses generic collection classes can interoperate with code that uses raw collections classes because of?
+* A. type erasure
+    Type erasure means that a compiled java class does not contain any of the generic information that is present in the java file.
+    In other words, the compiler removes the generic information from a java class when it compile it into byte code. For example,
+    List<String> list; and List list; are compiled to the same byte code. Therefore, at run time,
+    it does not matter whether you've used generic classes or not and this allows both kinds of classes
+    to interoperate because they are essentially the same class to the JVM.
+    Type erasure ensures that no new classes are created for parameterized types; consequently, generics incur no runtime overhead.
+
+* B. reification
+    This is just the opposite of type erasure. Here, all the type information is preserved in the byte code.
+    In Java, arrays are reified. For example,
+```java
+ArrayList[] alArray = new ArrayList[1];
+Collection[] cArray = alArray;
+cArray[0] = new HashSet();
+```
+
+    The above code will compile fine. But it will throw an java.lang.ArrayStoreException
+    at run time because the byte code contains the information that cArray actually
+    points to an array of ArrayLists and not of HashSets.
+
+* C. just in time compilation
+* D. byte code instrumentation
+
+(correct A)
