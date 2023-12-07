@@ -34,8 +34,8 @@
     the classpath option can be used to enable automatic modules to access third party non-modular jars.
     
 Bottom Up Approach for modularizing an application
-    While modularizing an app using the bottom-up approach, y
-    ou basically need to convert lower level libraries into modular jars before
+    While modularizing an app using the bottom-up approach, you basically
+    need to convert lower level libraries into modular jars before
     you can convert the higher level libraries. For example,
     if a class in A.jar directly uses a class from B.jar, and a class in B.jar
     directly uses a class from C.jar, you need to first modularize C.jar and then B.jar
@@ -43,7 +43,6 @@ Bottom Up Approach for modularizing an application
     Thus, bottom up approach is possible only when the dependent libraries are modularized already.
 
 Top Down Approach for modularzing an application
-
     While modularizing an app in a top-down approach, you need to remember the following points -
 
     1. Any jar file can be converted into an automatic module by simply putting

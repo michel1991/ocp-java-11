@@ -30,25 +30,25 @@ is not a class or interface in the collections framework.
 
 ### Which of the following statements are correct?
 * A. A List stores elements in a sorted order.
-List just keeps elements in the order in which they are added. For sorting, you'll need some other interface such as a SortedSet.
+    List just keeps elements in the order in which they are added.
+    For sorting, you'll need some other interface such as a SortedSet.
 
 * B. A Set keeps the elements sorted and a List keeps the elements in the order they were added.
-A Set keeps unique objects without any order or sorting.
-A List keeps the elements in the order they were added. A List may have non-unique elements.
+    A Set keeps unique objects without any order or sorting.
+    A List keeps the elements in the order they were added. A List may have non-unique elements.
 
 * C. A SortedSet keeps the elements in the order they were added.
-A SortedSet keeps unique elements in their natural order.
+    A SortedSet keeps unique elements in their natural order.
 
 * D. An OrderedSet keeps the elements sorted.
-There is no interface like OrderedSet.
+    There is no interface like OrderedSet.
 
 * E. An OrderedList keeps the elements ordered.
-There is no such interface. The List interface itself is meant for keeping the elements in the order they were added.
+    There is no such interface. The List interface itself is meant for keeping the elements in the order they were added.
 
 * F. A NavigableSet keeps the elements sorted.
-A NavigableSet is a SortedSet extended with navigation methods reporting closest matches
-for given search targets. Methods lower, floor, ceiling, and higher return elements respectively less than,
-less than or equal, greater than or equal, and greater than a given element, returning null if there is no such element.
-Since NavigableSet is a SortedSet, it keeps the elements sorted.
-
+    A NavigableSet is a SortedSet extended with navigation methods reporting closest matches
+    for given search targets. Methods lower, floor, ceiling, and higher return elements respectively less than,
+    less than or equal, greater than or equal, and greater than a given element, returning null if there is no such element.
+    Since NavigableSet is a SortedSet, it keeps the elements sorted.
 (correct F)
