@@ -1,4 +1,4 @@
-package modulars;
+package modulars.codeOfLoad;
 import java.util.function.*;
 import java.util.stream.*;
 import java.util.*;

@@ -1,4 +1,4 @@
-package modulars;
+package modulars.codeOfLoad;
 // package animal.insect.lookup; (initial in test)
 //import animal.insect.api.bugs.Bug; (initial in test)
 import java.util.function.*;
