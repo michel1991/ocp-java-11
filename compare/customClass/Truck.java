@@ -1,4 +1,4 @@
-package compare;
+package compare.customClass;
 
 /**
  * Fill in the blank to make this code compile:
