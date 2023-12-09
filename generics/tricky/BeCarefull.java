@@ -1,4 +1,4 @@
-package generics;
+package generics.tricky;
 
 /**
   Which of the following lines can be

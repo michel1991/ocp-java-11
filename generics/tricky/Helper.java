@@ -1,4 +1,4 @@
-package generics;
+package generics.tricky;
 import java.io.*;
 
 /**

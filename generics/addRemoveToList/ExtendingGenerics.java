@@ -1,4 +1,4 @@
-package generics;
+package generics.addRemoveToList;
 import java.util.*;
 import java.io.*;
 
