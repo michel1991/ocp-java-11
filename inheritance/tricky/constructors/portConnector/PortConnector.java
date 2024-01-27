@@ -1,4 +1,4 @@
-package inheritance;
+package inheritance.tricky.constructors.portConnector;
 import java.io.*;
 
 //Consider the following class:
