@@ -2,12 +2,16 @@
 
 * A. A module can access all public classes of another module.
     public classes of only the packages that are exported by a module become accessible.
+
 * B. A module can access all public classes of another module if it declares that it requires the other module.
     The other module has to export its packages first. Merely stating that a module requires another module is not sufficient.
+
 * C. A module can access all public classes of another module if those classes are exported by the other module.
     A module can export only packages (not individual classes).
     Public classes of the packages that are exported can then be accessed by other modules.
+
 * D. A module can access public classes of only those packages of another module that the other module exports.
+
 * E. A module can access another module if both are in the same folder.
     This option doesn't make any sense because every module resides in its own independent folder.
     Two modules cannot reside in the same folder.

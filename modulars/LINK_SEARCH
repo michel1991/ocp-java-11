@@ -3,4 +3,7 @@ https://docs.oracle.com/en/java/javase/13/docs/specs/man/java.html
 https://docs.oracle.com/en/java/javase/16/migrate/migrating-jdk-8-later-jdk-releases.html#GUID-2F61F3A9-0979-46A4-8B49-325BA0EE8B66
 
 how to list all jvm command options (good)
+ - exemple :
+      java -X
+      java Xnoclassgc
  https://www.jrebel.com/blog/jvm-options-cheat-sheet#:~:text=Like%20the%20standard%20options%2C%20you,X%20at%20the%20command%20line.

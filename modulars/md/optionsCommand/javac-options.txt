@@ -1,0 +1,27 @@
+javac --help
+Usage: javac <options> <source files>
+where possible options include:
+  --add-modules <module>(,<module>)*
+        Root modules to resolve in addition to the initial modules, or all modules
+        on the module path if <module> is ALL-MODULE-PATH.
+  --class-path <path>, -classpath <path>, -cp <path>
+        Specify where to find user class files and annotation processors
+  -d <directory>               Specify where to place generated class files
+  
+  --limit-modules <module>(,<module>)*
+        Limit the universe of observable modules
+        
+  --module <module-name>, -m <module-name>
+        Compile only the specified module, check timestamps
+        
+  --module-path <path>, -p <path>
+        Specify where to find application modules
+  --module-source-path <module-source-path>
+        Specify where to find input source files for multiple modules
+  --module-version <version>
+        Specify version of modules that are being compiled
+  -s <directory>               Specify where to place generated source files
+  --source-path <path>, -sourcepath <path>
+      Specify where to find input source files
+  --upgrade-module-path <path>
+        Override location of upgradeable modules

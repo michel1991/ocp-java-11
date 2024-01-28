@@ -4,9 +4,11 @@
 #### (Assume that all directory paths are relative to the current directory.)
 
 * A. javac --module-source-path src src/*/*.java
+
 * B. javac --module-source-path src -d out src/foo.bar/*/*.java
     You can use *.java for compiling all the files in a directory.
     However, writing * for a directory is incorrect. For example, the following is correct:
+
 ```
 javac --module-source-path src -d out src/foo.bar/f/b/*.java src/foo.bar/f/c/*.java/
 ``` 
@@ -17,12 +19,12 @@ javac --module-source-path src -d out src/foo.bar/f/b/*.java src/foo.bar/f/c/*.j
     and for compiling a module (i.e. all the files of a module), you have to use the --module (or -m) option.
 
     For example,
+```txt
+javac --module-source-path src -d out src/foo.bar/f/b/Baz1.java src/foo.bar/f/c/Caz1.java
 ```
-javac --module-source-path src
--d out src/foo.bar/f/b/Baz1.java src/foo.bar/f/c/Caz1.java
-``` 
-    or
-```
+
+or
+```txt
 javac --module-source-path src -d out --module foo.bar
 ```
 
@@ -30,6 +32,7 @@ javac --module-source-path src -d out --module foo.bar
     By using --module option, you are telling the compiler that you want
     to compile foo.bar module. It will, therefore, look for foo.bar directory
     under src and compile all the java files stored anywhere under src/foo.bar directory.
+
 * E. javac --module-source-path src -module foo.bar
     javac requires you to specify the output directory using the -d option
     when you use module specific options such as --module-source-path or --module for compilation.

@@ -1,0 +1,82 @@
+-------------------------------------------------------------------------------------------------------------------------------  
+  java  -Xprof
+  OpenJDK 64-Bit Server VM warning: Ignoring option -Xprof; support was removed in 10.0
+Syntaxe : java [options] <mainclass> [args...]
+           (pour exécuter une classe)
+   ou  java [options] -jar <jarfile> [args...]
+           (pour exécuter un fichier JAR)
+   ou  java [options] -m <module>[/<mainclass>] [args...]
+       java [options] --module <module>[/<mainclass>] [args...]
+           (pour exécuter la classe principale dans un module)
+
+ Les arguments suivant la classe principale -jar <jarfile>, -m ou --module
+ <module>/<mainclass> sont transmis en tant qu'arguments à la classe principale.
+ ---------------------------------------------------------------------------------------------------------------------
+  
+  -cp <chemin de recherche de classe de répertoires et de fichiers ZIP/JAR>
+    -classpath <chemin de recherche de classe de répertoires et de fichiers ZIP/JAR>
+    --class-path <chemin de recherche de classe de répertoires et de fichiers ZIP/JAR>
+                  Liste, avec séparateur :, de répertoires, d'archives JAR
+                  et darchives ZIP pour rechercher des fichiers de classe.
+                  
+    -p <chemin de modules>
+    --module-path <chemin de modules>...
+                  Liste, avec séparateur {0}, de répertoires, chaque répertoire
+                  est un répertoire de modules.
+   --list-modules
+                  répertorier les modules observables et quitter
+    -d <nom de module>
+    --describe-module <nom de module>
+                  décrire un module et quitter
+    --dry-run     créer une machine virtuelle et charger la classe principale mais ne pas exécuter la méthode principale.
+                  Loption--dry-run peut être utile pour la validation des
+                  options de ligne de commande telles que la configuration du système de modules.
+  --validate-modules
+                  valider tous les modules et quitter
+                  Loption --validate-modules peut être utile pour la recherche de
+                  conflits et dautres erreurs avec des modules dans le chemin de modules.
+                  
+    -ea[:<packagename>...|:<classname>]
+    -enableassertions[:<packagename>...|:<classname>]
+                  activer des assertions avec la granularité spécifiée
+    -da[:<packagename>...|:<classname>]
+    -disableassertions[:<packagename>...|:<classname>]
+                  désactiver des assertions avec la granularité spécifiée
+    -esa | -enablesystemassertions
+                  activer des assertions système
+    -dsa | -disablesystemassertions
+                  désactiver des assertions système
+                  
+                  
+  --add-reads <module>=<target-module>(,<target-module>)*
+                      met à jour <module> pour lire <target-module>, sans tenir compte
+                      de la déclaration de module. 
+                      <target-module> peut être ALL-UNNAMED pour lire tous les
+                      modules sans nom.
+  
+    
+                      
+ --add-modules <nom de module>[,<nom de module>...]
+                  modules racine à résoudre en plus du module initial.
+                  <nom de module> peut également être ALL-DEFAULT, ALL-SYSTEM,
+                  ALL-MODULE-PATH.
+                  
+    --add-exports <module>/<package>=<target-module>(,<target-module>)*
+                      met à jour <module> pour exporter <package> vers <target-module>,
+                      sans tenir compte de la déclaration de module.
+                      <target-module> peut être ALL-UNNAMED pour effectuer un export vers tous
+                      les modules sans nom.
+                      
+    --add-opens <module>/<package>=<target-module>(,<target-module>)*
+                      met à jour <module> pour ouvrir <package> vers
+                      <target-module>, sans tenir compte de la déclaration de module.
+    --illegal-access=<value>
+                      autorise ou refuse l'accès à des membres de types dans des modules nommés
+                      par code dans des modules sans nom.
+                      <value> est l'une des valeurs suivantes : "deny", "permit", "warn" ou "debug"
+                      Cette option sera enlevée dans une version ultérieure.
+    --limit-modules <module name>[,<module name>...]
+                      limite l'univers des modules observables
+    --patch-module <module>=<file>(:<file>)*
+                      remplace ou augmente un module avec des classes et des ressources
+                      dans des fichiers JAR ou des répertoires.

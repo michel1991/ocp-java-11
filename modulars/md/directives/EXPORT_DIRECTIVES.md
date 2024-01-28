@@ -12,7 +12,7 @@
   A module can export only packages (not individual classes).
   Public classes of the packages that are exported can then be accessed by other modules.
 
-* D.  DA module can access public classes of only those packages of another module that the other module exports.
+* D.  A module can access public classes of only those packages of another module that the other module exports.
 
 * E. A module can access another module if both are in the same folder.
   This option doesn't make any sense because every module resides in its own independent folder.
