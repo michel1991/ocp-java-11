@@ -38,3 +38,15 @@ making option E incorrect. Options C and D are correct.
 Using bind variables with a PreparedStatement produces
 code that is easier to read than one with a lot of String concatenation.
 Further, when used properly, a PreparedStatement prevents SQL injection.
+
+#### Identify correct statement(s) regarding the benefit of using PreparedStatement over Statement.
+* A. PreparedStatement offers better performance.
+If you are going to run a query only once, it may not offer better performance because
+it requires multiple trips to the database (one to get it pre compiled, and one to execute with the parameters)
+and also requires multiple method calls to set the parameters.
+* B. PreparedStatement offers better performance when the same query is to be run multiple times with different parameter values.
+* C. PreparedStatement supports multiple transactions.
+This option makes no sense.
+* D. PreparedStatement allows several additional SQL types such as BLOB and CLOB.
+PreparedStatement has specific methods for additional SQL column type such as setBlob(int parameterIndex, Blob x) and setClob(int parameterIndex, Clob x).
+Correct(B, D)
