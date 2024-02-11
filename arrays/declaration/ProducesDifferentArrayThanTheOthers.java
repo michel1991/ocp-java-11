@@ -1,4 +1,4 @@
-package arrays;
+package arrays.declaration;
 import java.util.*;
 
 public class ProducesDifferentArrayThanTheOthers {

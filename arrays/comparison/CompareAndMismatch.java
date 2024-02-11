@@ -1,8 +1,7 @@
-package arrays;
+package arrays.comparison;
 import java.util.*;
 
-public class ArrayComparison {
-
+public class CompareAndMismatch {
     /**
        What is printed by the following code? (Choose all that apply.)
         A. [8]
@@ -27,19 +26,19 @@ public class ArrayComparison {
         Option F is correct because the mismatch() method returns a -1
         when the arrays are equivalent. For more information, see Chapter 5.
      */
-   static void withMismatch(){
-       int[] array = {6,9,8};
-       List<Integer> list = new ArrayList<>();
-       list.add(array[0]);
-       list.add(array[2]);
-       list.set(1, array[1]);
-       list.remove(0);
-       System.out.println(list);
-       System.out.println("C" + Arrays.compare(array,new int[] {6, 9, 8}));
-       System.out.println("M" + Arrays.mismatch(array,new int[] {6, 9, 8}));
-   }
+    static void withMismatch(){
+        int[] array = {6,9,8};
+        List<Integer> list = new ArrayList<>();
+        list.add(array[0]);
+        list.add(array[2]);
+        list.set(1, array[1]);
+        list.remove(0);
+        System.out.println(list);
+        System.out.println("C" + Arrays.compare(array,new int[] {6, 9, 8}));
+        System.out.println("M" + Arrays.mismatch(array,new int[] {6, 9, 8}));
+    }
 
     public static void main(String... args){
-       withMismatch();
+        withMismatch();
     }
 }
