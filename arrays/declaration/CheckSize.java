@@ -1,7 +1,7 @@
-package arrays;
+package arrays.declaration;
 import java.util.*;
 
-public class ArraysOperations {
+public class CheckSize {
     /**
       What is the output of the following?
 
