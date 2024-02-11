@@ -45,3 +45,5 @@ in initialization and incrementation part. The condition part must contain a sin
 All a for loop needs is two semi colons :-
 for( ; ; ) {} This is a valid for loop that never ends. A more concise form for the same is : for( ; ; );
 
+Correct(4, 5)
+

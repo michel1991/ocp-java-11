@@ -20,7 +20,9 @@ Note: break with a label is possible in an if/else statement without a loop:
 You can use a constant for a switch statement's expression.
 * E. for ( ; true ; ) break ;
 
-It is not possible to break out of an if statement. But if the if statement is placed within a switch statement or a loop construct,
+It is not possible to break out of an if statement.
+But if the if statement is placed within a switch statement or a loop construct,
 the usage of break in option 3 would be valid.
-You may want to check out the free video by Dr. Sean Kennedy explaining this question: https://youtu.be/YsM-ApNLWm4
+You may want to check out the free video by Dr.
+Sean Kennedy explaining this question: https://youtu.be/YsM-ApNLWm4
 (Correct B, D, E)
