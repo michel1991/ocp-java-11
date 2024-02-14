@@ -1,4 +1,4 @@
-package collections.lists;
+package collections.lists.remove;
 import java.util.*;
 
 

@@ -1,4 +1,4 @@
-package collections.lists;
+package collections.lists.tricky;
 import java.util.*;
 
 public class MuseumsListWithInitialCapacity {
