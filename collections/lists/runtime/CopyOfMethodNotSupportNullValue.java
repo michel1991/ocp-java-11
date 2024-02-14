@@ -2,7 +2,7 @@ package collections.lists.runtime;
 
 import java.util.*;
 
-public class UnmodifiableList {
+public class CopyOfMethodNotSupportNullValue {
     /**
       What will the following code print when compiled and run?
        A. It will not compile.
@@ -27,9 +27,11 @@ passed Collection and adds all the elements of that Collection in the returned l
 Here are a few important points about these methods:
 1. They return unmodifiable copies of the original List/Set.
 Thus, any operation that tries to modify the returned list throws an java.lang.UnsupportedOperationException.
+
 2. The list/set returned by the of/copyOf methods is completely independent
 of the original collection. Thus, if you modify the original collection after passing
 it to of/copyOf methods, those changes will not be reflected in the list returned by the of/copyOf methods.
+
 3. They do not support null elements. Thus, if your array contains a null and if you
 try to create a List using List.of, it will throw a NullPointerException.
 
