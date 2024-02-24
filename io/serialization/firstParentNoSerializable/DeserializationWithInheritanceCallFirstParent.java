@@ -1,6 +1,7 @@
-package io.serialization;
+package io.serialization.firstParentNoSerializable;
 import java.io.*;
 import java.nio.file.*;
+import static io.PathUtility.*;
 
 /**
    What is the value of name after the instance of Eagle created in the main() method is serialized and then deserialized?
@@ -45,7 +46,10 @@ public class DeserializationWithInheritanceCallFirstParent {
 
     static Path getFullPathName(){
         String rootPath = System.getProperty("user.dir");
-        Path path = Path.of(rootPath, "io", FILE_NAME);
+        String fullPath = getResourcePath()
+              .append(getFileSeparator())
+               .append(FILE_NAME).toString();
+        Path path = Path.of(fullPath);
         return path;
     }
 

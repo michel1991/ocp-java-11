@@ -1,5 +1,6 @@
 package io.serialization;
 import java.io.*;
+import static io.PathUtility.*;
 
 
 /**
@@ -25,15 +26,19 @@ class Vegetable implements Serializable {
     { size = 3; name = "Purple"; }
     public Vegetable() { this.size = 2; name = "Green"; }
     public static void main(String[] love) throws Throwable {
+        String fullPath = getResourcePath()
+              .append(getFileSeparator())
+               .append("healthy.txt").toString();
+
         try (var o = new ObjectOutputStream(
-                new FileOutputStream("healthy.txt"))) {
+                new FileOutputStream(fullPath))) {
             final var v = new Vegetable();
             v.size = 4;
             o.writeObject(v);
         }
 
         try (var o = new ObjectInputStream(
-                new FileInputStream("healthy.txt"))) {
+                new FileInputStream(fullPath))) {
             var v = (Vegetable) o.readObject();
             System.out.print(v.size + "," + v.name);
         } } }

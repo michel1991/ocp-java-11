@@ -30,8 +30,12 @@ class Student implements Serializable {
 }
 class StudentManager {
     public static void main(String[] grades) {
+        String fullPath = getResourcePath()
+              .append(getFileSeparator())
+               .append("s.data").toString();
+
         try(var ios = new ObjectInputStream(
-                new FileInputStream(new File("s.data")))) {
+                new FileInputStream(new File(fullPath)))) {
             Student record;
             while((record = (Student)ios.readObject()) != null)
                 System.out.print(record);

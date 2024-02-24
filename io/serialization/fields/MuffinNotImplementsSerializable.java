@@ -1,4 +1,4 @@
-package io.serialization;
+package io.serialization.fields;
 import java.io.*;
 /**
    Let’s say you want to serialize the following class,
