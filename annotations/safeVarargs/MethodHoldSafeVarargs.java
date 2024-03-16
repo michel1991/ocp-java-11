@@ -1,5 +1,5 @@
 
-package annotations;
+package annotations.safeVarargs;
 // import java.lang.annotation.*;
 
 /**

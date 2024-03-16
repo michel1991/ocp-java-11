@@ -1,4 +1,4 @@
-package annotations;
+package annotations.suppressWarnings;
 import java.lang.annotation.*;
 import java.util.*;
 

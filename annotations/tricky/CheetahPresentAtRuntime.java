@@ -1,4 +1,4 @@
-package annotations;
+package annotations.tricky;
 import java.lang.annotation.*;
 
 /**

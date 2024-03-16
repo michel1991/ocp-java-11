@@ -1,4 +1,4 @@
-package annotations;
+package annotations.meta.typeUse;
 
 import java.lang.annotation.*;
 

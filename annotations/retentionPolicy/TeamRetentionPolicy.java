@@ -1,11 +1,11 @@
-package annotations;
+package annotations.retentionPolicy;
 
 import java.lang.annotation.*;
 import java.lang.reflect.Field;
 
 /**
-* The main() method in the following program reads the annotation value() of Plumber at runtime on each member of Team.
-* It compiles and runs without any errors. Based on this, how many times is Mario printed at runtime?
+ The main() method in the following program reads the annotation value() of Plumber at runtime on each member of Team.
+It compiles and runs without any errors. Based on this, how many times is Mario printed at runtime?
     A. Zero
     B. One
     C. Two
