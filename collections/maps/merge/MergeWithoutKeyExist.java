@@ -1,4 +1,4 @@
-package collections.lists.maps;
+package collections.lists.maps.merge;
 import java.util.*;
 
 /**
