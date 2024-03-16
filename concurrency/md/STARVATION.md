@@ -58,3 +58,47 @@ The following are brief descriptions taken from Oracle Java Tutorial:
     So neither of the threads is blocked but neither
     of the threads is able to do any real work. All they are doing is notifying each other.
 (correct D)
+
+#### Which of the following statements about starvation is correct?
+* A. Starvation occurs when threads become so busy in responding to each other that they are unable to perform any real work.
+This is called a live lock.
+
+* B. Starvation occurs when a thread is frequently unable to get access to a resource because the resource is hogged by other threads most of the time.
+    For example, multiple threads need access to a File.
+    Now, one thread acquires the lock for the file and doesn't release is for a long time.
+    It then releases the lock for a brief moment and reacquires the lock.
+    While another thread is kept waiting for the lock for a very long time.
+    In some cases, it is possible that another thread may never get a chance to acquire the lock
+    for the same file due to bad scheduling in the OS.
+    Thus, the thread that is frequently not able to get the lock is starved.
+
+* C. Starvation is a symptom of live lock in the threads.
+* D. Starvation is a symptom of deadlock in the threads.
+
+(Correct B)
+
+The exam needs you to understand and differentiate among Deadlock, Starvation, and Livelock.
+The following are brief descriptions taken from Oracle Java Tutorial:
+
+1. Deadlock describes a situation where two or more threads are blocked forever, waiting for each other.
+For example, two threads T1 and T2 need a File and a Printer.
+T1 acquires the lock for the file and is about to acquire the lock for the Printer but before it could acquire the lock,
+T2 acquires the lock for the Printer and tries to acquire the lock for the file (which is already held by T1).
+So now, both the threads keep waiting for ever for each other to release their locks and neither will be able to proceed.
+
+2. Starvation describes a situation where a thread is unable to gain regular access to shared resources and is unable to make progress.
+This happens when shared resources are made unavailable for long periods by "greedy" threads.
+For example, suppose an object provides a synchronized method that often takes a long time to return.
+If one thread invokes this method frequently, other threads that also need frequent synchronized access to the same object will often be blocked.
+
+3. Livelock: A thread often acts in response to the action of another thread.
+If the other thread's action is also a response to the action of another thread, then livelock may result.
+As with deadlock, livelocked threads are unable to make further progress.
+However, the threads are not blocked — they are simply too busy responding to each other to resume work.
+For example, after acquiring the File lock, T1 tries to acquire the Printer lock. Finding the Printer lock to be already taken,
+it releases the lock for the File and notifies T2.
+At the same time, T2 tries to acquire the File lock and seeing that it is already taken it releases Printer lock and notifies T1.
+This process can go on and on, both the threads releasing and acquiring
+the locks in tandem but none of them getting both the locks at the same time.
+So neither of the threads is blocked but neither of the threads is able to do any real work.
+All they are doing is notifying each other.

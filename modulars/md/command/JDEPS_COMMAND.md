@@ -141,4 +141,43 @@ Options A and C do exist, but do not include suggested replacements.
 Options E and F are correct as they will include a table of suggestions
 if any internal APIs are used in the JAR.
 
+### Which of the following statements are correct about --jdk-internals option
+### of jdeps tool when run on a jar file or a class file?
+
+* A. It analyzes all classes of the given jar file for class level dependence on Java API.
+* B. It analyzes all classes of the given jar file for class level dependence on jdk's deprecated API. If any such dependence is found, it is printed with a suggestion for replacement.
+* C. It analyzes all classes of the given jar file for class level dependence on jdk's internal API. If any such dependence is found, it is printed with a suggestion for replacement.
+* D. It analyzes all input modules and list all jdk internal modules on which the input modules depend. If any such dependence is found, it is printed with a suggestion for replacement.
+* E. It can only be used with -summary or -verbose options.
+* F. It performs static analysis.
+Jdeps does not execute any classes/modules. It only inspects the code.
+Thus, it cannot find out dependencies that are created due classes loaded at run time using reflection API.
+
+(Correct C, F)
+
+-jdkinternals or --jdk-internals
+Finds class-level dependencies in the JDK internal APIs. By default, this option analyzes
+all classes specified in the --classpath option and input files unless you specified the -include option.
+You can’t use this option with the -p, -e, and -s options.
+
+For example, if you have the following class (you need to compile it with JDK 8 or less because sun.misc.BASE64Encoder was removed in Java 9):
+
+```java
+   public class TestClass{
+   public static void main(String[] args) throws Exception {
+     sun.misc.BASE64Encoder encoder = new sun.misc.BASE64Encoder();
+     String s = encoder.encode("hello".getBytes());
+   }
+ }
+```
+
+and if you run jdeps -jdkinternals TestClass.class, you will see the following output:
+TestClass.class -> JDK removed internal API TestClass -> sun.misc.BASE64Encoder
+JDK internal API (JDK removed internal API) Warning: JDK internal APIs are unsupported
+and private to JDK implementation that are subject to be removed or changed incompatibly
+and could break your application. Please modify your code to eliminate dependence on any JDK internal APIs.
+For the most recent update on JDK internal API replacements,
+please check: https://wiki.openjdk.java.net/display/JDK8/Java+Dependency+Analysis+Tool JDK Internal
+API Suggested Replacement ---------------- --------------------- sun.misc.BASE64Encoder Use java.util.Base64 @since 1.8
+
 

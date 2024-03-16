@@ -21,3 +21,34 @@ populated with individual class and resource files and a module-info.class file 
 at compile time, a source module definition, populated with individual source files
 and a module-info.java file at the root.
 correct response is C
+
+### Given the following contents of module-info.java,
+
+```
+module enthu.finance{
+  exports com.enthu.Reports;
+  requires enthu.utils;
+}
+
+```
+
+
+Select correct statements.
+
+* A. Module name is finance.
+      Module name is enthu.finance.
+
+* B. com.enthu.Reports is the name of the class that this module exports.
+    Remember that only packages can be exported, not individual classes. Therefore, com.enthu.Reports
+    is would be the name of the package that this module exports.
+
+* C.  This module depends on enthu.utils package.
+ Remember that dependency is always on modules, not on individual classes or packages. Therefore, enthu.utils must be a module name
+
+* D. This file must be present in enthu.finance directory if the source code is to be compiled using the --module-source-path option.
+
+* F. Other modules that depend on this module will be able to access com.enthu.Reports package as well as enthu.utils package.
+  Only the packages mentioned in exports clauses of the module-info are made accessible to other modules.
+
+Correct(D)
+
