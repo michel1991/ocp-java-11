@@ -56,6 +56,8 @@ import java.io.*;
     It is meant to check if the two path objects resolve to the same file or not.
     Therefore, in this case, if you try to do Files.isSameFile(p1, p2), it will return false.
 
+    Correct(D)
+
  */
 public class FileCopier {
     public static void copy1(Path p1, Path p2) throws Exception {
