@@ -1,4 +1,4 @@
-package annotations;
+package annotations.choiceUsage;
 import java.lang.annotation.*;
 
 /**

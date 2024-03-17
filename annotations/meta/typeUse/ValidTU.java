@@ -30,7 +30,7 @@ class Tester {
 
 
 
-public class AnnotationTypeUse {
+public class ValidTU {
    public static void main(String... args){
        new Tester().test();
    }

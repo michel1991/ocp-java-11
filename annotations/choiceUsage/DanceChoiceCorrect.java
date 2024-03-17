@@ -1,4 +1,4 @@
-package annotations;
+package annotations.choiceUsage;
 /**
    Which annotations, when applied independently, allow the following program to compile? (Choose all that apply.)
     A. @Dance(77)

@@ -10,5 +10,7 @@
  * verify target of annotation(meta data)
  * verify require element of meta data of annotation
  * verify separator when many element exist
+ * array of char is used but not allow empty char like string but allow empty array (like {})
+ * check that when use annotation with array element and we have many elements we have curly bracket
  
  

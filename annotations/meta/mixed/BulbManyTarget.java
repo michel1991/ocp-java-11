@@ -1,4 +1,4 @@
-package annotations;
+package annotations.meta.mixed;
 import java.lang.annotation.*;
 
 /**

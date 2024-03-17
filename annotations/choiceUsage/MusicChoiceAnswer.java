@@ -1,4 +1,4 @@
-package annotations;
+package annotations.choiceUsage;
 import java.lang.annotation.*;
 
 /**
@@ -11,7 +11,7 @@ import java.lang.annotation.*;
     E. @Music(default="flute")
     F. @Music(value="cello")
 
-   Option B is correct and relies on the fact that the singleelementvalue()
+   Option B is correct and relies on the fact that the single element value()
    can be used without an element name. Option D is correct
    because the annotation has a default value; therefore,value is optional.
    Option F is correct and uses the correct name for value.

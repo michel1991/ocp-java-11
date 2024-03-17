@@ -1,4 +1,4 @@
-package annotations;
+package annotations.meta.mixed;
 import java.lang.annotation.*;
 
 /**
@@ -9,7 +9,7 @@ import java.lang.annotation.*;
             @EatsGrain private String calf;
         }
 
-   A. @Target(ElementType.TYPE) @interface EatsGrain {}
+    A. @Target(ElementType.TYPE) @interface EatsGrain {}
     B. @interface EatsGrain {}
     C. @interface EatsGrain { String value(); }
     D. @interface EatsGrain { int grain() = 0; }
