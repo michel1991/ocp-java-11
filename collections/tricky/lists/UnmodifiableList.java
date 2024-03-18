@@ -1,4 +1,4 @@
-package collections.lists.tricky;
+package collections.tricky.lists;
 import java.util.*;
 import java.io.*;
 
