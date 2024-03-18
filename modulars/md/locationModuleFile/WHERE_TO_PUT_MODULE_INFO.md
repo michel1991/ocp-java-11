@@ -20,7 +20,7 @@ In the latter case the directory tree can be a compiled module definition,
 populated with individual class and resource files and a module-info.class file at the root or,
 at compile time, a source module definition, populated with individual source files
 and a module-info.java file at the root.
-correct response is C
+correct response is A (before it was C)
 
 ### Given the following contents of module-info.java,
 
