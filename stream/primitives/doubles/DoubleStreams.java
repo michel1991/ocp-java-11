@@ -1,4 +1,4 @@
-package stream.primitives;
+package stream.primitives.doubles;
 import java.util.stream.*;
 
 public class DoubleStreams {
