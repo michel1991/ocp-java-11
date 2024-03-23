@@ -1,4 +1,4 @@
-package concurrency;
+package concurrency.barrier;
 import java.util.concurrent.*;
 
 class CyclicBarrierSample{
