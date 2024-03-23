@@ -1,4 +1,4 @@
-package compare;
+package compare.tricky;
 import java.util.*;
 
 /**

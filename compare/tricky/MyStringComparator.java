@@ -1,5 +1,5 @@
 
-package compare.binarySearch.tricky;
+package compare.tricky;
 import java.util.*;
 
 /**
