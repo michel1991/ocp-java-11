@@ -50,3 +50,23 @@ This option makes no sense.
 * D. PreparedStatement allows several additional SQL types such as BLOB and CLOB.
 PreparedStatement has specific methods for additional SQL column type such as setBlob(int parameterIndex, Blob x) and setClob(int parameterIndex, Clob x).
 Correct(B, D)
+
+### Identify correct statement(s) regarding the benefit of using PreparedStatement over Statement.
+* A. PreparedStatement offers protection against SQL injection attacks.
+Since parameters values of the query are set using setter methods, it is not possible to manipulate
+the resulting query by specifying ill formatted values.
+
+Note: you are not required to learn how SQL injection works for the purpose of the exam. But it is good to know nevertheless. The following link contains a good description: https://dzone.com/articles/owasp-top-10-number-2
+
+* B. PreparedStatement allows transactions to span across multiple databases.
+While it is true, it is not an advantage of PreparedStatement because it is actually a feature of the database driver.
+
+* C. PreparedStatement allows easier customization of joins at run time.
+This is not correct because a PreparedStatement only allows you to modify the parameters of the query.
+Since it is compiled as soon as it is built, you cannot change the structure of the query after it is built.
+
+* D. PreparedStatement allows BLOB and CLOB on all databases.
+The support for these datatypes depends on whether the underlying database support them or not.
+
+(Correct A)
+

@@ -5,3 +5,4 @@
 * verify method does not throw checked exception
 * verify name of methods
 * verify import of package
+* verify return type of method 
