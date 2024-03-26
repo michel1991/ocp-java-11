@@ -35,7 +35,7 @@ import java.nio.file.Paths;
     p1.getName(1)  is java
     p1.getName(2)  is PathTest.java
     
-    Correct(B)
+    Correct(C)
  */
 class PathTest {
     static Path p1 = Paths.get("c:\\main\\project\\Starter.java");
@@ -51,5 +51,7 @@ class PathTest {
 }
 
 public class GetRootWithWindowsPath {
-    
+    public static void main(String[] args) {
+        PathTest.main(args);
+    }
 }
