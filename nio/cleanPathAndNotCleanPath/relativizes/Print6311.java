@@ -25,32 +25,46 @@ import java.nio.file.*;
 
     Please go through the following description of relativize() method, which explains how it works in more detail.
     
-    public Path relativize(Path other)
-    Constructs a relative path between this path and a given path.
-    Relativization is the inverse of resolution.
-    This method attempts to construct a relative path that when resolved against this path,
-    yields a path that locates the same file as the given path.
-    For example, on UNIX, if this path is "/a/b" and the given path is "/a/b/c/d"
-    then the resulting relative path would be "c/d".
-    Where this path and the given path do not have a root component, then a relative path can be constructed.
-    A relative path cannot be constructed if only one of the paths have a root component.
-    Where both paths have a root component then it is implementation dependent if a relative path can be constructed.
-    If this path and the given path are equal then an empty path is returned.
+    Doc:
+        public Path relativize(Path other)
+        Constructs a relative path between this path and a given path.
+        Relativization is the inverse of resolution.
+        This method attempts to construct a relative path that when resolved against this path,
+        yields a path that locates the same file as the given path.
+        For example, on UNIX, if this path is "/a/b" and the given path is "/a/b/c/d"
+        then the resulting relative path would be "c/d".
+        Where this path and the given path do not have a root component, then a relative path can be constructed.
+        A relative path cannot be constructed if only one of the paths have a root component.
+        Where both paths have a root component then it is implementation dependent if a relative path can be constructed.
+        If this path and the given path are equal then an empty path is returned.
+
+        For any two normalized paths p and q, where q does not have a root component,
+
+        p.relativize(p .resolve(q)).equals(q)
+        When symbolic links are supported, then whether the resulting path, when resolved against this path,
+        yields a path that can be used to locate the same file as other is implementation dependent.
+        For example, if this path is "/a/b" and the given path is "/a/x" then the resulting relative path may be "../x".
+        If "b" is a symbolic link then is implementation dependent if "a/b/../x" would locate the same file as "/a/x".
+
+        Parameters:
+        other - the path to relativize against this path
+        Returns:
+        the resulting relative path, or an empty path if both paths are equal
     
-    For any two normalized paths p and q, where q does not have a root component,
-    
-    p.relativize(p .resolve(q)).equals(q)
-    When symbolic links are supported, then whether the resulting path, when resolved against this path,
-    yields a path that can be used to locate the same file as other is implementation dependent.
-    For example, if this path is "/a/b" and the given path is "/a/x" then the resulting relative path may be "../x".
-    If "b" is a symbolic link then is implementation dependent if "a/b/../x" would locate the same file as "/a/x".
-    
-    Parameters:
-    other - the path to relativize against this path
-    Returns:
-    the resulting relative path, or an empty path if both paths are equal
-    
-    Correct(D)
+       Correct(D)
+
+        Construit un chemin relatif entre ce chemin et un chemin donné.
+        La relativisation est l'inverse de la résolution. Cette méthode tente de construire un chemin relatif qui,
+        lorsqu'il est résolu par rapport à ce chemin, produit un chemin qui localise le même fichier que le chemin donné.
+        Par exemple, sous UNIX, si ce chemin est "/a/b" et que le chemin donné est "/a/b/c/d",
+        le chemin relatif résultant sera "c/d". Lorsque ce chemin et le chemin donné n'ont pas de racine,
+        un chemin relatif peut être construit. Un chemin relatif ne peut pas être construit si un seul des chemins a une racine.
+        Lorsque les deux chemins ont un composant racine, la construction d'un chemin relatif dépend de l'implémentation.
+        Si ce chemin et le chemin donné sont égaux, un chemin vide est renvoyé.
+        Pour deux chemins normalisés p et q, où q n'a pas de composante racine
+           p.relativize(p .resolve(q)).equals(q)
+
+Traduit avec DeepL.com (version gratuite)
  */
 public class Print6311 {
     public static void main(String... arg){
