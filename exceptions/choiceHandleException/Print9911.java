@@ -1,4 +1,4 @@
-package exceptions.catchException;
+package exceptions.choiceHandleException;
 
 /**
  * What will the following class print ?
