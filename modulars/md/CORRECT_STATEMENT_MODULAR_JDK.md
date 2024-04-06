@@ -30,7 +30,27 @@ module A exports the internal.utils package only to module B:
     
     Note that "fundamental APIs" and "core packages" mean the same thing. You may see either of the phrases in the exam.
 
-
-
-
 Correct(A, C, D)
+
+#### dentify correct statements about the modular JDK.
+* A. The base module does not depend on any module while every other module depends on the base module.
+* B The set of modules of the modular JDK can be combined to create configurations corresponding to the full Java SE Platform, the full JRE, and the full JDK.
+* C The standard modules of the modular JDK are governed by the Java Community Process while non-standard ones are not.
+* D. A standard module may contain a standard or non-standard API package but must not export any non-standard package.
+A standard module may export a non-standard package but that export must be qualified.
+
+Remember that the modular structure of the JDK implements the following principles:
+
+. Standard modules, whose specifications are governed by the JCP, have names starting with the string "java.".
+
+. All other modules are merely part of the JDK, and have names starting with the string "jdk.".
+
+. A standard module may contain both standard and non-standard API packages.
+If a standard module exports a standard API package then the export may be qualified;
+if a standard module exports a non-standard API package then the export must be qualified.
+
+. A standard module may depend upon one or more non-standard modules. It must not grant implied readability to any non-standard module.
+If it is a Java SE module then it must not grant implied readability to any non-SE module.
+
+. A non-standard module must not export any standard API packages. A non-standard module may grant implied readability to a standard module.
+Correct(A, B, C)

@@ -107,3 +107,41 @@ Option C is also incorrect.
 Since the travel() method does not declare a body, it must be marked abstract in an abstract class.
 Finally, option E is incorrect, as interface methods are implicitly public.
 Marking them protected results in a compiler error.
+
+#### Consider the contents of following two files:
+
+```java
+//In file A.java
+package a;
+public class A{
+   A(){ }
+   public void  print(){ System.out.println("A"); }
+}
+
+//In file B.java
+package b;
+import a.*;
+public class B extends A{
+   B(){ }
+   public void  print(){ System.out.println("B"); }
+   public static void main(String[] args){
+      new B();
+   }
+}
+
+// What will be printed when you try to compile and run class B?
+```
+* A. It will print A.
+* B. It will print B.
+* C. It will not compile.
+Because A() is not accessible in B.
+* D. It will compile but will not run.
+* E. None of the above.
+
+Note that there is no modifier for A's constructor. So it has default access.
+This means only classes in package a can use it. Also note that class B is in a different package and is extending from A.
+In B's constructor the compiler will automatically add super() as the first line.
+But since A() is not accessible in B, this code will not compile.
+
+Correct(C)
+

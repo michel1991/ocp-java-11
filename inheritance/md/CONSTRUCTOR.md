@@ -35,3 +35,4 @@ class of a parent with a no-argument constructor is free to declare or not decla
     It can extend multiple interfaces. The following is a valid declaration :
     interface I1 extends I2, I3, I4 { }
 (Correct C)
+
