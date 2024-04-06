@@ -1,4 +1,4 @@
-package io.tricky;
+package io.randomAccessFile;
 import java.io.*;
 import io.PathUtility;
 
