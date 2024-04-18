@@ -1,4 +1,4 @@
-package tricky;
+package inheritance.tricky.overload;
 import java.util.*;
 
 /**
