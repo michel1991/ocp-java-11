@@ -1,4 +1,4 @@
-package inheritance;
+package nestedClass.modifiers;
 abstract class Elephant {
     abstract static private class SleepsAlot {
         abstract int sleep();
