@@ -3,11 +3,12 @@ import java.util.*;
 import java.util.function.*;
 
 /**
- dentify the correct statements about the following code:
+ Identify the correct statements about the following code:
    A. It will not compile due to code at //1.
    B.  It will not compile due to code at //2.
    C. It will print 200.0
    D. It will print 300.0
+
     Since myAccts map does contain a key "222", computeIfPresent method will execute the function
     and replace the existing value associated with the given key in the map with the new value returned by the function.
     
