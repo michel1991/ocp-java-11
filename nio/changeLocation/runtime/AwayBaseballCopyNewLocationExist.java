@@ -1,6 +1,7 @@
 package nio.changeLocation.runtime;
 import java.nio.file.*;
 import java.io.*;
+import nio.NioUtilities;
 
 public class AwayBaseballCopyNewLocationExist {
     /**
@@ -20,11 +21,21 @@ public class AwayBaseballCopyNewLocationExist {
      Since there is already a directory at that location, a FileAlreadyExistsException is thrown at runtime, making option D correct.
      */
   static void makeCopy() throws IOException{
+        Path resourcePath = Path.of(NioUtilities.getResourcePath().toString());
       var p1 = Path.of("baseball.txt");
-      var p2 = Path.of("/home");
-      var p3 = Path.of("/away");
-      Files.createDirectories(p2);
-      Files.copy(p3.resolve(p1),p2);
+      // var p2 = Path.of("/home"); // real from test
+        String root = resourcePath.resolve("homeAway").toString();
+        var p2 = Path.of(root, "/home");
+
+        // var p3 = Path.of("/away"); // real from test
+        var p3 = Path.of(root, "/away");
+        System.out.println(p2);
+        Files.createDirectories(p2);
+        Files.copy(p3.resolve(p1),p2);
       
   }
+
+    public static void main(String...args) throws IOException{
+        makeCopy();
+    }
 }
