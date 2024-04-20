@@ -32,6 +32,8 @@ import java.io.*;
     Therefore, overriding method must not throw an exception that cannot be assigned
     to a variable whose class is the class of the overridden method's exception.
 
+    Correct(A, D)
+
  */
 class Great {
         public void doStuff() throws FileNotFoundException{
