@@ -19,51 +19,8 @@ public class ArithmeticOperation {
            }
     }
 
-    /**
-    * What is the output of the following code snippet?
-        A. true-false-false
-        B. false-true-false
-        C. true-true-true
-        D. false-true-true
-        E. false-false-false
-        F. true-true-false
-        G. None of the above
-        
-      The first expression is evaluated from left to right since the operator precedence of & and ^ is the same,
-      letting us reduce it to false ^ sunday, which is true, because sunday is true. In the second expression,
-      we apply the negation operator, !, first, reducing the expression to sunday && true, which evaluates to true.
-      The last expression returns true if both of the previous values are false. Since neither is false,
-      the output is false. For these reasons, option F is the correct answer.
-     */
-    static void complexBoolean(){
-        System.out.println("begin complexBoolean");
-        boolean sunny = true, raining = false, sunday = true;
-        boolean goingToTheStore = sunny & raining ^ sunday;
-        boolean goingToTheZoo = sunday && !raining;
-        boolean stayingHome = !(goingToTheStore && goingToTheZoo);
-        System.out.println("\t" + goingToTheStore + "-" + goingToTheZoo + "-" +stayingHome);
-        System.out.println("end complexBoolean");
-    }
 
-    /**
-    * The starting values of ticketsTaken and ticketsSold are 1 and 3, respectively.
-    * After the first compound assignment, ticketsTaken is incremented to 2.
-    * The ticketsSold value is increased from 3 to 5 since the post-increment operator was used the value of ticketsTaken++ returns 1.
-    * On the next line, ticketsTaken is doubled to 4. On the final line, ticketsSold is increased by 1 to 6.
-    * The final values of the variables are 4 and 6, for ticketsTaken and ticketsSold, respectively, making options C and F the correct answers.
-    * Note the last line does not trigger a compilation error as the compound operator automatically casts the right-hand operand.
-    */
-    public static void sumAndCompound(){
-        System.out.println("begin sumAndCompound");
-        int ticketsTaken = 1;
-        int ticketsSold = 3;
-        ticketsSold += 1 + ticketsTaken++;
-        System.out.println();
-        ticketsTaken *= 2;
-        ticketsSold += (long)1;
-        System.out.println("\t ticketsTaken: " + ticketsTaken + " ticketsSold: " + ticketsSold);
-        System.out.println("end sumAndCompound");
-    }
+    
 
     /**
     * What are the unique outputs of the following code snippet? (Choose all that apply.)
@@ -127,15 +84,11 @@ public class ArithmeticOperation {
         new ArithmeticSample().compute();
         new ArithmeticOperation.ArithmeticSample().compute();
         System.out.println();
-        complexBoolean();
-        System.out.println();
         sumAndCompound();
         System.out.println();
         complexTernary();
         System.out.println();
         addOperator();
-        System.out.println();
-        complexBoolean();
     }
 
 }
