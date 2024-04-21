@@ -1,4 +1,4 @@
-package collections.sorts;
+package sorts;
 import java.util.*;
 
 public class ChoiceCorrectComparators {
