@@ -49,3 +49,17 @@ The specific goals of the module system are to provide:
 2. Strong encapsulation, to allow a component
     to declare which of its public types are accessible to other components, and which are not.
 (B, E, F)
+
+#### Identify correct statements about the modular system of Java.
+* A. A module can allow other modules to access all its types and members of its type through reflection.
+This can be done using the open, opens, and opens...to clauses.
+
+* B. By default, a module exhibits strong encapsulation by preventing reflective access to it types.
+Before Java 9, reflection could be used to learn about all types in a package and all members of a type—even
+its private members—whether you wanted to allow this capability or not. Thus, nothing was truly encapsulated.
+This is not so with modules. By default, no such access is allowed.
+
+* C. A module can be used by non-modular code by putting that module on the classpath.
+* D. An application can either use module-path or classpath but not both
+
+Correct(A, B, C)
