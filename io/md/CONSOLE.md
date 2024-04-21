@@ -33,3 +33,25 @@ of this class which can be obtained by invoking the System.console() method.
 If no console device is available then an invocation of that method will return null.
 
 (Correct is B)
+
+### A developer has written the following code snippet:
+```java
+    Console c = System.console(); //1
+    String line = c.readLine("Please enter your name:"); //2
+    System.out.println("Hello, "+line); //3
+```
+### Which of the following checked exceptions may be thrown by this code?
+* A. java.io.IOException
+* B. java.lang.Exception
+* C. java.io.EOFException
+* D. None
+None of the calls to Console throw any checked exception.
+Call to System.console() doesn't throw any exception either. It just returns null if Console is not available.
+
+Observe that //2 will throw a NullPointerException (which is not a checked exception) if System.console() returns null.
+System.console() returns null when the program is run in an environment where there is no console, for example, as a service using javaw.
+
+Remember that the readLine and readPassword methods of Console do not declare any checked exceptions.
+Therefore, calls to these methods need not be wrapped in a try block or declared in the throws clause of the calling method.
+Correct(D)
+

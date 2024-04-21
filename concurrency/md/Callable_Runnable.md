@@ -37,7 +37,31 @@
 ```
 (correct is B)
 
+#### Which of the following correctly identify the differences between a Callable and a Runnable?
+* A. A Callable cannot be passed as an argument while creating a Thread but a Runnable can be.
+new Thread( aRunnable ); is valid. But new Thread( aCallable ); is not.
+* B. A Callable needs to implement call() method while a Runnable needs to implement run() method.
+* C. A Callable can return a value but a Runnable cannot.
+* D. A Callable can be used with ExecutorService but a Runnable cannot be.
+```txt
+    Both can be used with an ExecutorService because ExecutorService has overloaded submit methods:
+    <T> Future<T> submit(Callable<T> task)
+    and
+    Future<?> submit(Runnable task) Observe that even though a Runnable's run() method cannot return a value,
+    the ExecutorService.submit(Runnable) returns a Future. The Future's get method will return null upon successful completion
+```
 
+
+```txt
+Explanation below: 
+public interface Callable<V>
+    A task that returns a result and may throw an exception. Implementers define a single method with no arguments called call -
+    V call() throws Exception
+
+The Callable interface is similar to Runnable, in that both are designed for classes whose instances are potentially executed by another thread.
+A Runnable, however, does not return a result and cannot throw a checked exception.
+```
+Correct(A, B, C)
 
 
 
