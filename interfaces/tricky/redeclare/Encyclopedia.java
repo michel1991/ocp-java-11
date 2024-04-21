@@ -66,3 +66,9 @@ public interface Encyclopedia extends Book {
     };
     
 }
+
+interface MakeGetIdAsAbstract extends Book {
+    //ME to understand that we can make redeclare default method and make it abstract
+    String getId();
+}
+
