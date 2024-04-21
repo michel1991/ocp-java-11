@@ -1,6 +1,7 @@
 package nio.changeLocation;
 import java.nio.file.*;
 import java.io.*;
+import nio.NioUtilities;
 
 /**
   Given that test1.txt exists but test2.txt doesn't exist, consider the following code?
