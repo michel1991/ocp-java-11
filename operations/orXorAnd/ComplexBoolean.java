@@ -1,4 +1,4 @@
-package operations.complexBooleans;
+package operations.orXorAnd;
 public class ComplexBoolean {
     /**
         * What is the output of the following code snippet?
