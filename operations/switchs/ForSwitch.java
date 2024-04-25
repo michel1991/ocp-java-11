@@ -19,6 +19,7 @@ package operations.switchs;
     is now false, the for loop ends.
     
     Correct(C, F)
+    https://stackoverflow.com/questions/17984975/convert-int-to-char-in-java
  */
 public class ForSwitch{
     public static void main(String args[]){
