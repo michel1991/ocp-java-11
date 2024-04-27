@@ -1,6 +1,8 @@
 package io.tricky;
 import java.io.*;
 import io.PathUtility;
+import static io.PathUtility.*;
+import java.nio.file.*;
 
 /**
    Consider the following code:
@@ -13,6 +15,7 @@ import io.PathUtility;
     D. An exception will be thrown at run time if the size of test1.txt is not a multiple of 1024.
      The read method reads the bytes that are available even if the number of available bytes is less than the buffer size.
      The method returns the actual number of bytes read. It does not read more bytes than the size of the buffer. Hence, the need for a loop
+     Correct after test i think is B
  */
 public class FileCopier {
 
@@ -32,6 +35,10 @@ public class FileCopier {
     }
 
     public static void main(String[] args) throws Exception {
-        copy("c:\\temp\\test1.txt", "c:\\temp\\test2.txt");
+
+        Path test1 = Path.of(getResourcePath().toString(), "test1.txt");
+        Path test2 = Path.of(getResourcePath().toString(), "test2.txt");
+        //copy("c:\\temp\\test1.txt", "c:\\temp\\test2.txt"); // original correct
+        copy(test1.toString(), test2.toString());
     }
 }
