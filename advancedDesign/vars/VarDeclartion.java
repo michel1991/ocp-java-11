@@ -1,4 +1,4 @@
-package advancedDesign;
+package advancedDesign.vars;
 public class VarDeclartion {
     /**
        Which of the following code snippets about var compile without issue when used in a method? (Choose all that apply.)
