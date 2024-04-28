@@ -16,7 +16,7 @@ package exceptions.errors.orders;
     Line 7 generates a compiler error because it is unreachable code, making option E correct.
  */
 public class MixedRuntimeAndArithmeticException {
-   static void mixed(){
+   static void mixed(int a, int b){
        try { // 3:
            System.out.print(a / b); //  4:
        } catch (RuntimeException e) { //  5:
@@ -27,4 +27,8 @@ public class MixedRuntimeAndArithmeticException {
            System.out.print("done"); //  10:
        } //  11:
    }
+
+    public static void main(String... args){
+        mixed(0, 0);
+    }
 }
