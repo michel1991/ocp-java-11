@@ -97,3 +97,36 @@ Therefore, option D correct.
 A JDBC URL has three components separated by colons.
 None of these options uses the correct colon delimiter,
 making option F the correct answer.
+
+#### You are using a RDBMS database from a company named Fandu Tech. It provides a JDBC 4.0 compliant driver implementation
+### in class com.fandu.sql.Driver.
+### Which of the following lines of code is/are required to get the driver loaded?
+
+* A. Connection c = DriverManager.getConnection("jdbc:fandu://localhost:1234/myDB",
+    "user", "pwd");
+(Assume that the parameters are valid.)
+This code is used to get a connection from the driver. It doesn't load the driver class itself.
+
+* B. Class.forName("com.fandu.sql.Driver");
+This is required for JDBC 1.3 and older versions. Not for JDBC 4.0.
+
+* C. com.fandu.sql.Driver d = com.fandu.sql.Driver.class.newInstance()
+* D. DriverManager.loadDriver("com.fandu.sql.Driver");
+* E. None of the above.
+In JDBC 4.0, the drivers are loaded automatically based on the information provided by the driver's META-INF/services/java.sql.Driver file.
+Therefore, no java code in necessary to load the driver classes.
+
+Prior to JDBC 4.0, the application code would have to load the Driver class explicitly using Class.forName method,
+for example - Class.forName("com.xyz.jdbc.Driver"). However, with JDBC 4.0, applications no longer need to do this.
+
+The DriverManager methods getConnection and getDrivers have been enhanced to support the Java Standard Edition Service Provider mechanism.
+JDBC 4.0 Drivers must include the file META-INF/services/java.sql.Driver.
+This file contains the name of the JDBC drivers implementation of java.sql.Driver.
+For example, to load the my.sql.Driver class, the META-INF/services/java.sql.Driver file would contain the entry:
+
+my.sql.Driver
+
+When the method getConnection is called, the DriverManager will attempt to locate a suitable driver
+from amongst those loaded at initialization and those loaded explicitly using the same classloader as the current applet or application.
+
+Correct(E)
