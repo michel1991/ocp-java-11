@@ -1,4 +1,4 @@
-package charSequence;
+package charSequence.delete;
 
 public class DeleteWithStringBuilder {
     /**
