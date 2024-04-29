@@ -1,4 +1,5 @@
-package arrays.declaration;
+package arrays.declaration.findBad;
+import static java.util.Arrays.*;
 
 public class FindNotLegalDeclaration {
     /**
