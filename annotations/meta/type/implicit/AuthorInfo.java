@@ -1,3 +1,5 @@
+package annotations.meta.type.implicit;
+import java.lang.annotation.*;
 
 /**
  * Identify correct usages of the following annotation:
