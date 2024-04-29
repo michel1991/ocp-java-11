@@ -1,4 +1,4 @@
-package collections.sets;
+package collections.unmodifiableXXX.sets;
 import java.util.*;
 
 public class DisplayThreeAsSize {

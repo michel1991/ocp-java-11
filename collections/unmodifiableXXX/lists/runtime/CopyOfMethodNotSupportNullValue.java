@@ -1,4 +1,4 @@
-package collections.tricky.lists.runtime;
+package collections.unmodifiableXXX.lists.runtime;
 
 import java.util.*;
 

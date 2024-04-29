@@ -1,4 +1,4 @@
-package collections.lazyCopy;
+package collections.unmodifiableXXX.lazyCopy;
 import java.util.*;
 
 /**
