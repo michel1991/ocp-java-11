@@ -16,7 +16,9 @@ package charSequence;
         2. It doesn't take an int as its first argument.
        
    F.  new StringBuilder("world").append("hello ", 0 , 6).toString();
-     There is an append method that takes two ints as shown here but the int parameters are to determine the portion of the String that is to be appended to the target. That portion will still be appended to the end of the target.
+     There is an append method that takes two ints as shown here but the int parameters are to determine
+     the portion of the String that is to be appended to the target.
+     That portion will still be appended to the end of the target.
     
    G. new StringBuilder("world").add(0, "hello ").toString();
     There is no add method in StringBuilder.
