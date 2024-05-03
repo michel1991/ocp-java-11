@@ -1,6 +1,6 @@
 package exceptions.finallys;
 
-public class FinalAlwaysCall {
+public class AlwaysCall {
     /**
      What does the following code snippet return, assuming a and b are both 1?
      
@@ -24,7 +24,7 @@ public class FinalAlwaysCall {
     even if no exception is thrown or a return statement is used.
     
      */
-   static void divide(){
+   static int divide(int a, int b){
        try { // 13:
            return a / b; // 14:
        } catch (ClassCastException e) { // 15:
@@ -36,4 +36,9 @@ public class FinalAlwaysCall {
        } //    21:
 
    }
+    
+    public static void main(String... args){
+       var result =  divide(1, 1);
+        System.out.println(result);
+    }
 }

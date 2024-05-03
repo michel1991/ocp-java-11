@@ -28,7 +28,7 @@ class FinallyTest{ // public
     }
     public static void m1() throws Exception { throw new Exception(); }
 }
-public class FinallyTestPrintB {
+public class TestPrintB {
     public static void main(String args[]) throws Exception{
         FinallyTest.main(args);
     }
