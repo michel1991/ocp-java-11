@@ -1,4 +1,4 @@
-package operations.loops;
+package operations.loops.does;
 public class LoopDoWhile {
     /**
       What is the output of the following code snippet?
