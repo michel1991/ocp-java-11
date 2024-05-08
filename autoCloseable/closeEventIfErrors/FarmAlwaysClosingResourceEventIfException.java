@@ -1,4 +1,4 @@
-package autoCloseable;
+package autoCloseable.closeEventIfErrors;
  import java.time.LocalDate;
 
  /**

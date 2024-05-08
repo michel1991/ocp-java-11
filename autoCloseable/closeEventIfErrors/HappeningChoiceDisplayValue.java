@@ -1,4 +1,4 @@
-package autoCloseable;
+package autoCloseable.closeEventIfErrors;
 
 /**
  * What is the output of the following application?

@@ -1,4 +1,4 @@
-package autoCloseable;
+package autoCloseable.tricky;
 /**
  *
    What is the result of compiling and executing the following class?

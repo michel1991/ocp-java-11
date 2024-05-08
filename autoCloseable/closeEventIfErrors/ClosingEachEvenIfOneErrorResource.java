@@ -1,4 +1,4 @@
-package autoCloseable;
+package autoCloseable.closeEventIfErrors;
 import java.io.*;
 /**
 *  What is the output of the following code?

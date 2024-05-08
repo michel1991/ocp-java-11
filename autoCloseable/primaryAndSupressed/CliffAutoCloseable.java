@@ -1,4 +1,4 @@
-package autoCloseable;
+package autoCloseable.primaryAndSupressed;
 import java.io.*;
 
 /**
