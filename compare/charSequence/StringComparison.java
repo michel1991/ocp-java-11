@@ -1,4 +1,4 @@
-package compare;
+package compare.charSequence;
 
 public class StringComparison {
     /**
