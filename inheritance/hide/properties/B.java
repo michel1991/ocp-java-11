@@ -9,7 +9,8 @@ package inheritance.hide.properties;
     E. It will print 20 and then 10
     
    Correct(E)
-    Note that a final variable can be hidden. Here, although fi in A is final, it is hidden by fi of B. So b.fi = 20; is valid since B's fi is not final.
+    Note that a final variable can be hidden. Here, although fi in A is final, it is hidden by fi of B. So b.fi = 20;
+    is valid since B's fi is not final.
  */
 class A{
     final int fi = 10;
