@@ -1,4 +1,4 @@
-package stream.primitives.longs;
+package stream.primitives.ints;
 import java.util.*;
 import java.util.stream.*;
 
