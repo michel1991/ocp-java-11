@@ -146,4 +146,17 @@ new Locale("en", "IN"); //language is English, Country is India, so this means, 
 
 (Correct is A)
 
+### java.util.Locale allows you to do which of the following?
+* A. Provide country specific formatting for fonts.
+* B. Provide country and language specific formatting for HTML pages.
+* C. Provide country and language specific formatting for Dates.
+* D. Provide country specific formatting for Currencies.
+* E. Provide country and language specific formatting for properties files.
+
+The objective of Localization is not to format properties files but to format the data that is displayed to the user in country/language specific manner.
+Resource Bundles, which are nothing but appropriately named properties files, are used along with the Locale
+(i.e. country and language) information to format Date, Currencies, and text messages in Locale specific manner.
+
+Correct(C, D)
+
 
