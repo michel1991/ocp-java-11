@@ -40,7 +40,7 @@ import java.util.function.*;
       
     E. <A, B, C> BiFunction<A, B, C> predicate(Function<A, B> f){ ... }
     
-    --------------
+    ----------------------------------------------------------------------------------------------------------------------
     A BiFunction is similar to a Function. A Function takes an argument of one type and returns the result of another type.
     A BiFunction takes two arguments of two types and returns the result of a third type.
     
