@@ -1,5 +1,4 @@
 package annotations.suppressWarnings;
-import java.lang.annotation.*;
 import java.util.*;
 
 /**
@@ -66,12 +65,14 @@ import java.util.*;
 //1
 public class TestClass {
 //2
+  @SuppressWarnings("unchecked")
     public static void main(String[] args) throws Exception{
         var al = new ArrayList<Integer>();
         printElements(al);
     }
 
 //3
+ @SuppressWarnings("unchecked")
     static void printElements(List<Integer>... la) {
         for(List<Integer> l : la){
             System.out.println(l);
