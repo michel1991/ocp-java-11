@@ -1,0 +1,2 @@
+Another way where to use annotation
+https://docs.oracle.com/javase/tutorial/java/annotations/basics.html
