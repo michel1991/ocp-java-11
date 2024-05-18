@@ -36,6 +36,8 @@ import java.util.*;
     D. Exception at run time because of //2.
     E. Elements in books List will be sorted by title and then by isbn.
 
+    Correct(B)
+
  */
 public class Book{
     String isbn;
