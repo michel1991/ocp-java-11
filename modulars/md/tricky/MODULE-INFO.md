@@ -21,7 +21,7 @@ If you are creating a module, then module-info.java must be present.
 There is a way to create an automatic module but is is created using the name of the jar file in which the classes reside.
 
 * D. module-info.java is compiled into module-info.class by the compiler.
-* 
+ 
 * E. module-info.java always belongs to the default package.
 module-info defines a module. A module does not depend or belong to any package. Packages belong to a module.
 
