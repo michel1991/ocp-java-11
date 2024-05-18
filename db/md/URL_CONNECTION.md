@@ -130,3 +130,39 @@ When the method getConnection is called, the DriverManager will attempt to locat
 from amongst those loaded at initialization and those loaded explicitly using the same classloader as the current applet or application.
 
 Correct(E)
+
+#### Which of the following are valid JDBC URLs?
+* A. jdbc.derby.localhost/sample
+* B. jdbc://mysql.com/sample
+* C. http://jdbc.mysql/sample
+* D. jdbc:oracle:thin:@localhost:1521:mydb
+* E. jdbc:mysql://192.168.1.10:3306/sample
+* F. jdbc:xderby:1106:sample
+    Although this url is legally correct, a derby database connection url follows this pattern:
+    jdbc:derby:[subsubprotocol:][databaseName][;attribute=value]*
+
+------------------------------------------------------------------------------------------------------------------
+The format of a JDBC URL is : jdbc:<subprotocol>:<subname>
+where subprotocol defines the kind of database connectivity mechanism that may be supported by one or more drivers.
+The contents and syntax of the subname will depend on the subprotocol.
+
+Here are a few examples of commonly used urls for connecting to derby db (the Java database that comes bundled with various
+IDEs such as Netbeans) and Mysql:
+
+jdbc:derby:sample
+jdbc:derby://localhost:1527/sample
+jdbc:mysql://localhost:1527/sample
+jdbc:mysql://192.168.0.100:3306/testdb
+
+Observe that a JDBC url always starts with jdbc: and has at least three components separated by a two colons.
+
+It also usually includes the hostname or address and the port number on which the database is listening for the requests but that is not necessary.
+
+Most drivers allow adding more options to the URL in the subname part,
+for example the following JDBC url for Oracle DB specifies the type of the jdbc driver :
+jdbc:oracle:thin:@localhost:1521:testdb
+
+Userid and password are usually supplied separately from the URL but some drivers allow them to be specified in the URL itself. For example:
+jdbc:oracle:thin:scott/mypassword@//myhost:1521/orcl
+
+Correct(D,E, F)
