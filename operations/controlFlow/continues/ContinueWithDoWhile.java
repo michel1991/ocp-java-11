@@ -1,5 +1,5 @@
 
-package operations.controlFlow;
+package operations.controlFlow.continues;
 
 public class ContinueWithDoWhile {
     
