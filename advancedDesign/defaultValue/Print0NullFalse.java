@@ -15,6 +15,7 @@ package advancedDesign.defaultValue;
     E. The program will print null and false but will print junk value for ia[0].
     All the elements of the arrays of primitives are initialized to default values.
     
+    --------------------------------------------------------------------------------------------------------
     Following are the default values that instance variables are initialized with if not initialized explicitly:
         types (byte, short, char, int, long, float, double) to 0 ( or 0.0 ).
     All Object types to null.

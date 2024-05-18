@@ -33,7 +33,7 @@ import java.util.*;
         This will not compile because MyProcessor is not a functional interface and so you cannot "implement" it using a method or constructor reference.
         Further, the syntax for constructor reference is invalid.
         
-    -----------------
+    -------------------------------------------------------------------------------------------------------------------------------------
       An important point to understand with method or constructor references is that you can never pass arguments while referring
       to a constructor or a method. Remember that such references are mere references. They are not actual invocations.
        Basically, when you do Supplier<MyProcessor> s = MyProcessor:new; you are telling the compiler to get you

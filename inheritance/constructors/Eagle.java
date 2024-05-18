@@ -42,7 +42,7 @@ package inheritance.constructors;
       If a subclass class constructor doesn't explicitly call the super class constructor, the compiler automatically inserts super();
       as the first statement of the subclass constructor. So this option is not needed.
       
-      -----------------
+      ------------------------------------------------------------------------------------------------
         Since the constructor of Bird is private, the subclass cannot access it and therefore,
         it needs to be made public. protected or default access is also valid.
    Correct(D)
