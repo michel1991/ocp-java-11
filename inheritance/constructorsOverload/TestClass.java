@@ -1,4 +1,4 @@
-package inheritance.constructors;
+package inheritance.constructorsOverload;
 
 /**
  * What can be inserted at //1 and //2 in the code below so that it can compile without errors:
