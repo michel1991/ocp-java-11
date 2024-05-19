@@ -1,4 +1,4 @@
-package collections.tricky.lists;
+package collections.sublist;
 import java.util.function.*;
 import java.util.*;
 
