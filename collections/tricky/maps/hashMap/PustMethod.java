@@ -24,4 +24,14 @@ import java.util.*;
 
  */
 public class PustMethod {
+
+    public static void main(String... args){
+        Map<String, String> map = new HashMap<>();
+        var theValueOfName = "kent";
+        var nameKent = map.put("name", theValueOfName);
+        assert(nameKent == null);
+        var nameAnotherKent = map.put("name", theValueOfName);
+        assert(nameAnotherKent == theValueOfName);
+
+    }
 }
