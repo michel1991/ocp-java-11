@@ -1,5 +1,5 @@
 
-package inheritance.tricky.override;
+package inheritance.withGenerics.override;
 import java.util.*;
 /**
  * What can be inserted in the above code?
