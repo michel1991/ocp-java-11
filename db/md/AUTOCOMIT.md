@@ -39,3 +39,28 @@ mode of the connection from false to true and therefore this call commits the ch
 
 (Correct A)
 
+### Given:
+```
+  Connection con = DriverManager.getConnection(dbURL);
+    con.setAutoCommit(false);
+    String updateString =
+    "update SALES " +
+    "set T_AMOUNT = 100 where T_NAME = 'BOB'";
+    Statement stmt = con.createStatement();
+    stmt.executeUpdate(updateString);
+    //INSERT CODE HERE
+```
+
+
+What statement should be added to the above code so that the update is committed to the database?
+
+* A. stmt.commit();
+* B. con.commit();
+    Since auto-commit has been disabled in the given code (by calling con.setAutoCommit(false)),
+    you have to call commit() on Connection object explicitly to commit the changes to the database.
+* C. stmt.commit(true);
+* D. con.commit(true);
+* E. No code is necessary.
+
+Correct(B)
+

@@ -60,3 +60,21 @@ Sorry. You just need to memorize this.
 The java.sql package is in the java.sql module,
 making option D correct. It just so happens to have the same name.
 
+#### Which of the following statements would you need to have in the module-info of a Java Swing based desktop application?
+* A. requires java.swing;
+* B. requires javax.swing;
+* C. requires java.desktop;
+* D. requires javax.desktop;
+* E. No special requires clause is necessary because Swing classes are part of the standard JDK.
+   ----------- For E ---------
+    It is true that Swing classes are a part of Java SE but they are not part of the java.base module.
+   Only the classes that belong to java.base are accessible to other classes without an explicit requires clause.
+    Swing classes (as well as AWT classes) belong to the javax.swing package, which belongs to the java.desktop module.
+    Therefore, a modular application that uses Swing classes must have requires java.desktop; clause in its module-info
+
+
+Correct(C)
+Although the exam objectives do not explicitly mention Swing/AWT classes,
+some candidates have reported getting a question that requires you to know the module required for using Swing classes in an application.
+
+
