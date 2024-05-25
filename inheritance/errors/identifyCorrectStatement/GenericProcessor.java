@@ -4,13 +4,13 @@ import java.util.*;
 /**
  * Identify correct statements about the following code:
    A. ItemProcessor fails compilation because it does not override the process method correctly.
-   -------------------
+   ----------------------------------------------------------------------------------------------
     Since Collection interface extends Iterable interface, it is valid for ItemProcessor to override process method with a return type of Collection.
     This satisfies the rule of "covariant returns", which states that an overriding method
     is allowed to return a sub type of the return type defined in the overridden method.
     
    B. WordProcessor fails compilation because it does not override the process method correctly.
-   ------------------------
+   ---------------------------------------------------------------------------------------------
     String is not a sub type of Iterable, and thus, is not covariant with Iterable.
     
    C. GenericProcessor fails compilation because it inherits two process methods with incompatible return types.
@@ -18,7 +18,7 @@ import java.util.*;
          An interface can extend from any number of interfaces.
    E. WordProcessor will compile without errors if @Override annotation is applied on its process method.
    
-   -----------------------------------------------------------------------
+   -----------------------------------------------------------------------------------------------------
        The @Override annotation is an optional annotation that can be applied to an overriding method.
        This annotation ensures that the method really does override a super class's (or interface's) method.
     

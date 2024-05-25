@@ -1,5 +1,6 @@
 package interfaces.sam;
 /**
+ Which of the following interface definitions can use Lambda expressions?
    A.
      interface A{
         }
@@ -28,7 +29,7 @@ package interfaces.sam;
         void m2();
     }
     
-    -------------------------
+    ----------------------------------------------------------------------------------------
     Correct(D)
    To take advantage of lambda expressions, an interface must be a "functional" interface,
    which basically means that the interface must have exactly one abstract method.

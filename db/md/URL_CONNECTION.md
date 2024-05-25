@@ -165,4 +165,4 @@ jdbc:oracle:thin:@localhost:1521:testdb
 Userid and password are usually supplied separately from the URL but some drivers allow them to be specified in the URL itself. For example:
 jdbc:oracle:thin:scott/mypassword@//myhost:1521/orcl
 
-Correct(D,E, F)
+Correct(D,E, F). (recherche google: oracle thin)

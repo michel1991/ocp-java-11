@@ -18,12 +18,12 @@ package inheritance.hide.staticMethod;
     
     A.
       class B will not compile if line 1 is uncommented.
-        ------
+        ---------------------------------------------------------------------------
         static method sM1() can be shadowed by a static method sM1() in the subclass.
         
     B.
        class B will not compile if line 2 is uncommented.
-        ----
+        ----------------------------------------------------------------------------
         static method cannot be overridden by a non-static method and vice versa
         
     C. class B will not compile if line 1 and 2 are both uncommented.
@@ -32,7 +32,7 @@ package inheritance.hide.staticMethod;
 
     E. Only the third option is correct.
     
-    ---------------------------------
+    --------------------------------------------------------------------------------------------------
       
       Another concept (although not related to this question but about static methods) is that static methods are never overridden.
       They are hidden just like static or non-static fields. For example,
