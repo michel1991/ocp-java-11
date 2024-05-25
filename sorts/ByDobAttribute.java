@@ -69,6 +69,8 @@ import java.util.*;
     
     Comparator has several static and instance methods that return various kinds of Comparators.
     Please see the JavaDoc to know more. The important ones for the exam are: reversed, comparing, and thenComparing.
+
+    Correct(B)
      
  * */
 
