@@ -1,4 +1,4 @@
-package nio.cleanPathAndNotCleanPath.relativizes;
+package nio.relativizes;
 import java.nio.file.*;
 
 /**

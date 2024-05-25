@@ -1,4 +1,4 @@
-package nio.cleanPathAndNotCleanPath.relativizes.errors;
+package nio.relativizes.errors;
 import java.nio.file.*;
 
 /**
