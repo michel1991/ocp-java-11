@@ -24,4 +24,8 @@ public class LoopDoWhile {
        System.out.println("done");
        
    }
+
+    public static void main(String...args){
+        ballonInflated();
+    }
 }
