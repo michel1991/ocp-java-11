@@ -16,8 +16,8 @@ What statement can be added to the above code so that the update is committed to
 * A. con.setAutoCommit(true);
 
 * B. con.commit(true);
-commit() does not take any parameter.
-FYI, there are two flavors of rollback() - one does not take any argument and another one takes a java.sql.Savepoint as an argument.
+    commit() does not take any parameter.
+    FYI, there are two flavors of rollback() - one does not take any argument and another one takes a java.sql.Savepoint as an argument.
 
 * C. stmt.commit();
 
