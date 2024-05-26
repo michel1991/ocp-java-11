@@ -22,16 +22,20 @@ package inheritance.casting;
         Object o = a; Runnable r = (Runnable) o;
     B.
       Object o = a; Runnable r = (Runnable) o;
+      -------------------------------
         Here you are explicitly telling the compiler that o refers to an object that is Runnable.
         
     C.
       Object o = a; Observer ob = (Observer) o ;
+      ---------------------------
         It will compile but will fail at run time as at runtime 'a' does not refer to an object that is an Observer.
 
     D. Object o = b; Observer o2 = o;
+      ------------------------
         This has the same problem as option 1.
 
     E.  Object o = b; Runnable r = (Runnable) b;
+        --------------------------
         Since b is declared of a type that indirectly implements Runnable,
         the compiler can figure out that b will always point to an object that is assignable to a Runnable.
         Therefore, explicit cast is not required here. It will still work fine with the explicit cast though.
