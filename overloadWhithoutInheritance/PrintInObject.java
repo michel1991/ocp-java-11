@@ -21,7 +21,7 @@ package overloadWhithoutInheritance;
     C. In Long
     D. It will not compile
     
-    ---------------
+    ---------------------------------------------------------------------------------------------------
     Here, we have three overloaded probe methods but there is no probe method that takes a String parameter.
     The only one that is able to accept a String is the one that takes Object as a parameter. So that method will be called.
 

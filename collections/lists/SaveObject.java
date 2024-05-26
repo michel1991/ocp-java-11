@@ -14,7 +14,7 @@ import java.util.*;
     Which of the following calls will work without throwing an exception?
     
     A. saveObject( new ArrayList() );
-      Because an ArrayList is a List.
+         Because an ArrayList is a List.
       
     B. Collection c = new ArrayList(); saveObject( c );
         saveObject() cannot accept c because c is declared of type Collection, which is a super interface of List,

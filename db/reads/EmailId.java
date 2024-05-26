@@ -11,7 +11,7 @@ import java.sql.*;
         stmt.setObject(1, "bob@gmail.com"); //LINE 10
         ResultSet rs = stmt.executeQuery();
         while(rs.next()){
-        System.out.println(rs.getString("EMAILID")); //LINE 12
+            System.out.println(rs.getString("EMAILID")); //LINE 12
         }
         connection.close();
     
@@ -23,8 +23,7 @@ import java.sql.*;
     C. It will print bob@gmail.com
     D. It will print bob@gmail.com and then throw an exception.
     
-    ---------------------------------------------
-     Correct(C)
+    ----------------------------------------------------------
     1. "select *" implies you are selecting all the columns.
     2. You can retrieve the values from a ResultSet using either the columns indices, which starts with 1 or using the actual
     column names of the database tables.
@@ -47,6 +46,8 @@ import java.sql.*;
     DataSource also improves application performance as connections are not created/closed within a class.
     They are managed by the application server and can be fetched at runtime.
     It provides a facility creating a pool of connections and is therefore very helpful for enterprise applications.
+
+    Correct(C)
 
  */
 class DataSource{

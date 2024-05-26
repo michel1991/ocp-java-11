@@ -14,17 +14,21 @@
         }
     }
     
+    Which of the following statements are valid at line 1 (Select the best answer).
+
     A. System.out.println(this.i);
+       ---------------------------
         This will not compile because there is no 'i' in 'this'. There is an 'i' in Outer.this.
         
     B. System.out.println(i);
+     ----------------------------------
         As there is no conflict, the compiler figures out that 'i' is actually Outer.this.i.
         
     C. System.out.println(Outer.this.i);
     D. 'i' cannot be accessed inside the inner class method.
     E. The code cannot be compiled.
     
-   ---------------------------
+   ------------------------------------------------------------------
     Correct(B, C)
 
 

@@ -16,13 +16,13 @@ package overloadWhithoutInheritance;
 
    What will be printed?
    
-    A.  In float 3
+    A. In float 3
     B. In float 3.0
     C. In double 3.0
     D. In double 3
     E. It will not compile.
     
-    -----------------------------------------
+    ---------------------------------------------------------------------------------------------------------
     The call to printSum(1.0, 2.0) will be bound to printSum(double, double ) because 1.0 and 2.0 are double, which are exact match to double, double.
 
     Note that if you call printSum(1, 2) , printSum(float, float) would have been invoked instead of printSum(double, double)

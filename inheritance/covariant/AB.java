@@ -2,40 +2,29 @@ package inheritance.covariant;
 import java.util.*;
 
 /**
+   Given:
    class A{
-    public List<Number> getList(){
-            //valid code
-    };
+        public List<Number> getList(){
+                //valid code
+        };
    }
-     class B extends A{
+   class B extends A{
         @Override
         *INSERT CODE HERE*
                 //valid code
         };
-    }   
- */
-class A{
-    public List<Number> getList(){
-            //valid code
-        return null;
-    };
-}
-class B extends A{
-    @Override
-    public ArrayList<Number> getList(){
-        return null;
-    };
-}
+    }
 
-/**
-   A.  public List<? extends Integer> getList(){
-   B. public List<? super Integer> getList(){
-   C.  public ArrayList<? extends Number> getList(){
-   D.  public ArrayList<? super Number> getList(){
-   E. public ArrayList<Number> getList(){
-   
-   -------------------
-   Rule of Covariant Returns
+    What can be inserted in the above code?
+
+    A.  public List<? extends Integer> getList(){
+    B. public List<? super Integer> getList(){
+    C.  public ArrayList<? extends Number> getList(){
+    D.  public ArrayList<? super Number> getList(){
+    E. public ArrayList<Number> getList(){
+
+-------------------
+    Rule of Covariant Returns
     An overriding method (i.e. a sub class's method) is allowed to return a sub-type of the type returned
     by the overridden method (i.e. super class's method).
     
@@ -60,7 +49,24 @@ class B extends A{
     
     
     It is important to understand that List<Integer> is not a subtype of List<Number> even though Integer is a subtype of Number.
-   Correct(E)
+    
+    Correct(E)
+ */
+class A{
+    public List<Number> getList(){
+            //valid code
+        return null;
+    };
+}
+class B extends A{
+    @Override
+    public ArrayList<Number> getList(){
+        return null;
+    };
+}
+
+/**
+
 
  */
 public class AB {

@@ -31,7 +31,8 @@ public class RootInotIncludeInPath {
 
      */
     public static void main(String... args){
-        Path p1 = Paths.get("c:\\a\\b\\c.java");
+        //Path p1 = Paths.get("c:\\a\\b\\c.java"); // originla
+        Path p1 = Paths.get("/a/b/c.java");
         var result = p1.getName(2).toString();
         System.out.println(result);
     }

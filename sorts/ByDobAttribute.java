@@ -57,7 +57,7 @@ import java.util.*;
     });
     
    
-   ------------------------
+   -----------------------------------------------------------------------------------------------------------
    When the class of the objects that you want to compare does not implement java.lang.Comparable interface
    (which has one method named int compareTo(T t)), or when you want to compare the objects using some other
    comparison criteria than the one implemented by its compareTo method, you can use Collections.sort(List, java.util.Comparator) method.

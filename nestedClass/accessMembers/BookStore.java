@@ -2,20 +2,28 @@ package nestedClass.accessMembers;
 
 /**
    Consider the following code in which searchBook() method has an inner class.
+
+   Which variables are accessible at line 1?
     A. taxId
     B. name
     C. criteria
+      -------------------------------------------
         Even though this variable is local to the method,
         it is accessible in the inner class defined inside the method because it is declared as final.
+
     D. count
+        ---------------------------
         Although count is a local variable but its value does not change anywhere in the code.
         Hence, it is effectively final and is therefore accessible from the inner class.
+
     E. k
+
     F. sum
+        -------------------------------
         sum is a local variable and its value changes in the code (due to sum++).
         Hence, it is NOT effectively final and is therefore NOT accessible from the inner class.
         
-  ------------------------------------------------------
+  ---------------------------------------------------------------------------------------------------------
       If the inner class is non static, all the static and non-static members of the outer class are accessible
       (otherwise only static are accessible) So option 1, 2 are valid.
     Prior to java 8, only final local variables were accessible to the inner class but in Java 8,

@@ -16,16 +16,21 @@ package overloadWhithoutInheritance.tricky;
     void Perform_work(int time){ }
     
     A. The first pair of methods will compile correctly and overload the method 'perform_work'.
+
     B. The second pair of methods will compile correctly and overload the method 'perform_work'.
+         -----------------------------
          You cannot have two methods with the same signature (i.e. same name and same parameter list) in the same class.
         Note that return type and names of the parameters don't matter while determining the signature.
         
     C. The third pair of methods will compile correctly and overload the method 'perform_work'.
+
     D. The second pair of methods will not compile correctly.
+
     E. The third pair of methods will not compile correctly.
+       ----------------
         Both have different names (note the capital 'P' ) and so are different methods.
         
-    ------------------------------------------------------------
+    ----------------------------------------------------------------------------
      Overloading of a method occurs when the name of more than one methods is exactly same but the parameter lists are different.
 
     The first and the third pairs of methods will compile correctly as they follow the above stated rule.

@@ -9,7 +9,9 @@ package inheritance.errors.findErrors.multipleRules;
    E.  //1 and //3
    F.  //1 //3 and //4
    
-   ----------------
+   Which lines will cause compilation to fail?
+
+   ------------------------------------------------------------------------------------------
     
      //1 is ok. Remember that variables are not overridden. They are hidden or shadowed and it is ok
      for a subclass to hide a variable defined in the base class.

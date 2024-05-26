@@ -13,15 +13,18 @@ import java.util.*;
     }
     
     Which of the given options (independent of each other or together) must be inserted at //1 so that it will print 2?
+
     A. System.out.println(Arrays.search(sa, "andy"));
         No such method.
+
     B. System.out.println(Arrays.linearSearch(sa, "andy"));
         No such method.
+
     C. Arrays.sort(sa);
     D. System.out.println(Arrays.binarySearch(sa, "charlie"));
     E. Only option 2 is enough.
     
-    --------------------
+    ---------------------------------------------------------------------------------------------------------------
     Both- java.util.Collections and java.util.Arrays - have sort and binarySearch methods that work exactly in the same way.
     Methods in Collections class work on Collection objects and methods in Arrays work on array objects.
 

@@ -11,7 +11,7 @@ import java.util.*;
         int y = Arrays.mismatch(a, b);
         System.out.println(x+" "+y);
         
-    A. 1 3
+    A.  1 3
     B. -1 3
     
     C. -2 3
@@ -19,14 +19,14 @@ import java.util.*;
         (i.e. first array is smaller than second array), therefore, compare will return a negative number.
         Further, since the first array has two less elements than the second array, compare will return -2.
     
-    Since the two arrays are differ at index 3, mismatch will return 3.
+        Since the two arrays are differ at index 3, mismatch will return 3.
     
    D. -2 -3
    
    E. The code will not compile.
          Remember that a char is an integral type. So, it is ok to have characters in an int array.
   
-  ---------------------------------------------------------
+  -----------------------------------------------------------------------------------------------------------------------------------
       Java 9 has added a several new methods to java.lang.Arrays class, of which, compare and mismatch methods are covered by the OCP Java 11 exam.
     
     These static methods are meant to compare two arrays of the same types.
@@ -68,7 +68,8 @@ import java.util.*;
     A null array reference is considered lexicographically less than a non-null array reference. Two null array references are considered equal.
     
     It returns 0 if the first and second array are equal and contain the same elements in the same order;
-    a value less than 0 if the first array is lexicographically less than the second array; and a value greater than 0 if the first array is lexicographically greater than the second array.
+    a value less than 0 if the first array is lexicographically less than the second array;
+    and a value greater than 0 if the first array is lexicographically greater than the second array.
     
     For example, the following code will print -1 because the first array has smaller integer at index 2. 
     

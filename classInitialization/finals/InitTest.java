@@ -27,14 +27,14 @@ package classInitialization.finals;
         bool is not initialized. Therefore, it cannot be used !
         
     D.
-       i = 1000; }
+      {  i = 1000; }
        ---------
         bool remains uninitialized.
 
     E.
       { bool = (si > 5); i = 1000; }
 
-  --------------------------------------------------------------
+  -------------------------------------------------------------------------------------------------------
    A final variable must be initialized when an instance is constructed, or else the code will not compile.
    This can be done either in an instance initializer or in EVERY constructor.
     The keyword static is used to signify that a block is static initializer.
