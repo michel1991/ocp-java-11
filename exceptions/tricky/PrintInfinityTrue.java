@@ -23,7 +23,7 @@ package exceptions.tricky;
     Exception
     <stack trace for a NullPointerException>
    
-   ---------------------------
+   -----------------------------------------------------------------------------------------------------------------------
    Integral division i.e. dividing an integer value with 0 will cause an java.lang.ArithmeticException: / by zero to be thrown.
     But a floating point division with 0 (i.e. dividing a float or double value with 0 or 0.0) will
     result in Float.POSITIVE_INFINITY or Float.NEGATIVE_INFINITY (or Double.POSITIVE_INFINITY or Double.NEGATIVE_INFINITY,
