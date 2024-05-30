@@ -6,10 +6,11 @@ package advancedDesign.errors.vars;
     A. 3000
     B. 3000.0
     C. compilation error at //3
-         There are two problems here - 1. 'var' is not allowed in a compound declaration.
-         In other words, you can define only one variable using var.
+         There are two problems here -
+         1. 'var' is not allowed in a compound declaration.
+           In other words, you can define only one variable using var.
          2. Variables declared with var must be assigned a value in the declaration itself because without the value,
-         the compiler will not be able to infer the type of the variable.
+            the compiler will not be able to infer the type of the variable.
     D. compilation error at //4
     E. compilation error at //5
     F. Exception at run time.
