@@ -70,12 +70,16 @@ Correct(B, E)
 
 * A. If a RuntimeException is not caught, the method will terminate and normal execution of the thread will resume.
     Any remaining code of the method will not be executed. Further, any uncaught exception will cause the JVM to kill the thread.
+
 * B. An overriding method must declare that it throws the same exception classes as the method it overrides.
     It can throw any subset of the exceptions thrown by overridden class.
+
 * C. The main method of a program can declare that it throws checked exceptions.
     Any method can do that !
+
 * D. A method declaring that it throws a certain exception class may throw instances of any subclass of that exception class.
     Note that it cannot throw the instances of any superclasses of the exception.
+
 * E. finally blocks are executed if and only if an exception gets thrown while inside the corresponding try block.
     Finally is ALWAYS executed. (Except when System.exit method is invoked from try or catch block.)
 
