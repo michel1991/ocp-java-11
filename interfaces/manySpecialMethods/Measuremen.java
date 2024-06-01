@@ -67,7 +67,8 @@ package interfaces.manySpecialMethods;
         }
         Private or protected fields are still not allowed in an interface.
         Fields of an interface are still always implicitly public, static, and final.
-  * 
+
+     Correct (C)
   
  */
 interface Measurement{
