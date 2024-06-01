@@ -1,4 +1,4 @@
-package advancedDesign.tricky;
+package toStringNotDefined;
 
 /**
  * What will the following code print when compiled and run?
