@@ -166,3 +166,36 @@ Userid and password are usually supplied separately from the URL but some driver
 jdbc:oracle:thin:scott/mypassword@//myhost:1521/orcl
 
 Correct(D,E, F). (recherche google: oracle thin)
+
+### Which of the following are valid JDBC URLs?
+
+
+* A. jdbc:derby://localhost:1527/sample
+* B. //jdbc://derby://localhost:1527/sample
+* C. http://jdbc:mysql:localhost/sample
+* D. https://mysql.com:3306/sample
+
+    The format of a JDBC URL is : jdbc:<subprotocol>:<subname>
+    where subprotocol defines the kind of database connectivity mechanism that may be supported by one or more drivers.
+    The contents and syntax of the subname will depend on the subprotocol.
+
+    Here are a few examples of commonly used urls for connecting to derby db
+    (the Java database that comes bundled with various IDEs such as Netbeans) and Mysql:
+
+    jdbc:derby:sample
+    jdbc:derby://localhost:1527/sample
+    jdbc:mysql://localhost:1527/sample
+    jdbc:mysql://192.168.0.100:3306/testdb
+
+    Observe that a JDBC url always starts with jdbc: and has at least three components separated by a two colons.
+
+    It also usually includes the hostname or address and the port number on which the database is listening for the requests but that is not necessary.
+
+    Most drivers allow adding more options to the URL in the subname part, for example the following
+    JDBC url for Oracle DB specifies the type of the jdbc driver :
+    jdbc:oracle:thin:@localhost:1521:testdb
+
+    Userid and password are usually supplied separately from the URL but some drivers allow them to be specified in the URL itself. For example:
+    jdbc:oracle:thin:scott/mypassword@//myhost:1521/orcl
+
+Correct(A)
