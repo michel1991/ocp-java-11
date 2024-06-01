@@ -1,4 +1,4 @@
-package internationalization.en_properties.redKey;
+package internationalization.resourceBundle.redKey;
 import java.util.*;
 
 public class KeyRedLoadResource {
@@ -21,7 +21,7 @@ public class KeyRedLoadResource {
   static void load(){
       Locale.setDefault(new Locale("en", "US"));
       var rb = ResourceBundle.getBundle(
-              "internationalization.en_properties.redKey.Colors",
+              "internationalization.resourceBundle.redKey.Colors",
              new Locale("ca","ES")
       );
       System.out.print(rb.getString("red"));

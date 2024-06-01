@@ -1,4 +1,4 @@
-package internationalization.en_properties.dolphin.two;
+package internationalization.resourceBundle.dolphin.two;
 import java.util.*;
 
 public class ChoiceBundleUsing {
@@ -36,7 +36,7 @@ public class ChoiceBundleUsing {
         System.out.println("begin first example");
         var fr = new Locale("fr"); // 5
         Locale.setDefault(new Locale("en", "US")); // 6
-        var b = ResourceBundle.getBundle("internationalization.en_properties.dolphin.two.Dolphins", fr);  // 7
+        var b = ResourceBundle.getBundle("internationalization.resourceBundle.dolphin.two.Dolphins", fr);  // 7
         b.getString("name");  // 8
         b.getString("age");   // 9
         System.out.println(" name : " +   b.getString("name") + " age : " +  b.getString("age"));

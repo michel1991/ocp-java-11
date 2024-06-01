@@ -1,4 +1,4 @@
-package internationalization.en_properties.turquoiseKey;
+package internationalization.resourceBundle.turquoiseKey;
 import java.util.*;
 
 public class LoadResourceKeyTurquoise {
@@ -21,7 +21,7 @@ public class LoadResourceKeyTurquoise {
     static void loadWithTurquoiseKey(){
         Locale loc = new Locale("zh", "CN");
         Locale.setDefault(new Locale("en", "US"));
-        ResourceBundle rb = ResourceBundle.getBundle("internationalization.en_properties.turquoiseKey.Colors", loc);
+        ResourceBundle rb = ResourceBundle.getBundle("internationalization.resourceBundle.turquoiseKey.Colors", loc);
         rb.getString("turquoise");
     }
  

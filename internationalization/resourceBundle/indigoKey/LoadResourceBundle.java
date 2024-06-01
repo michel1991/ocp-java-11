@@ -1,4 +1,4 @@
-package internationalization.en_properties.indigoKey;
+package internationalization.resourceBundle.indigoKey;
 import java.util.*;
 public class LoadResourceBundle {
     /**
@@ -27,7 +27,7 @@ public class LoadResourceBundle {
         Locale loc = new Locale("fr", "CH");
         Locale.setDefault(new Locale("it", "CH"));
         ResourceBundle rb = ResourceBundle.getBundle(
-          "internationalization.en_properties.indigoKey.Colors",
+          "internationalization.resourceBundle.indigoKey.Colors",
          loc
         );
         rb.getString("Indigo");

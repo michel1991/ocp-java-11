@@ -1,4 +1,4 @@
-package internationalization.en_properties.appmessages;
+package internationalization.resourceBundle.appmessages;
 import java.util.*;
 
 /**
@@ -52,7 +52,7 @@ public class AppMessages {
      public static void main(String... args){
          Locale.setDefault(new Locale("fr", "CA")); //Set default to French Canada
         Locale l = Locale.getDefault();
-        ResourceBundle rb = ResourceBundle.getBundle("internationalization.en_properties.appmessages.appmessages", l);
+        ResourceBundle rb = ResourceBundle.getBundle("internationalization.resourceBundle.appmessages.appmessages", l);
         String msg = rb.getString("greetings");
         System.out.println(msg);
      }

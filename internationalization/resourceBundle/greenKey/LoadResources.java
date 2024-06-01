@@ -1,4 +1,4 @@
-package internationalization.en_properties.greenKey;
+package internationalization.resourceBundle.greenKey;
 import java.util.*;
 public class LoadResources {
 
@@ -22,7 +22,7 @@ public class LoadResources {
     static void loadGrrenKey(){
         Locale.setDefault(new Locale("en", "US"));
         var rb = ResourceBundle.getBundle(
-          "internationalization.en_properties.greenKey.Colors",
+          "internationalization.resourceBundle.greenKey.Colors",
           new Locale("fr")
         );
         System.out.print(rb.getString("green"));

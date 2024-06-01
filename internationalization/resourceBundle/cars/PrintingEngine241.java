@@ -1,4 +1,4 @@
-package internationalization.en_properties.cars;
+package internationalization.resourceBundle.cars;
 import java.util.*;
 public class PrintingEngine241 {
     
@@ -24,7 +24,7 @@ public class PrintingEngine241 {
      */
     static void loadCars(){
         Locale.setDefault(new Locale("en"));
-        var rb = ResourceBundle.getBundle("internationalization.en_properties.cars.Cars",
+        var rb = ResourceBundle.getBundle("internationalization.resourceBundle.cars.Cars",
                                           new Locale("de", "DE"));
         var r1 = rb.getString("engine");
         var r2 = rb.getString("horses");
