@@ -54,3 +54,59 @@ If it is a Java SE module then it must not grant implied readability to any non-
 
 . A non-standard module must not export any standard API packages. A non-standard module may grant implied readability to a standard module.
 Correct(A, B, C)
+
+
+#### Identify correct statements about the modular JDK.
+* A. The foundational APIs of the Java SE platform are found in java.base module.
+
+    As per https://docs.oracle.com/en/java/javase/11/docs/api/java.base/module-summary.html
+    java.base module defines the "foundational APIs" of the Java SE Platform. The exam also uses the term "core packages" for the same.
+
+* B. The modular JDK is composed of two modules - the java module and the jdk module.
+
+    There are several modules in the Java SE platform. These modules are categorized into two categories - java se and jdk.
+    These two are not really modules but just names of two categories.
+
+    Java SE
+    The Java Platform, Standard Edition (Java SE) APIs define the core Java platform for general-purpose computing.
+    These APIs are in modules whose names start with java. It contains modules such as: java.base, java.logging, java.sql, java.desktop,
+    java.xml, and java.se.
+
+    JDK
+    The Java Development Kit (JDK) APIs are specific to the JDK and will not necessarily be available
+    in all implementations of the Java SE Platform. These APIs are in modules whose names start with jdk.
+    It contains modules such as: jdk.accessibility, jdk.javadoc, jdk.jartool, jdk.jlink, and jdk.net.
+
+* C. JDK is divided into a set of modules that can be combined at compile time, build time, and run time into a variety of configurations.
+
+* D. The modular JDK is divided of two kinds of modules - the standard modules and the non-standard modules.
+    The modular structure of the JDK implements the following principles:
+    1. Standard modules, whose specifications are governed by the JCP, have names starting with the string "java.".
+
+    2. All other modules are merely part of the JDK, and have names starting with the string "jdk.".
+
+
+
+The base module, which is named as java.base, defines and exports all of the platform’s core packages, including the module system itself:
+
+``` txt
+    module java.base {
+        exports java.io;
+        exports java.lang;
+        exports java.lang.annotation;
+        exports java.lang.invoke;
+        exports java.lang.module;
+        exports java.lang.ref;
+        exports java.lang.reflect;
+        exports java.math;
+        exports java.net;
+        ...
+    }
+```
+
+The base module is always present. Every other module depends implicitly upon the base module, while the base module depends upon no other modules.
+
+The remaining platform modules share the “java.” name prefix and are likely to include, e.g., java.sql for database connectivity,
+java.xml for XML processing, and java.logging for logging. Modules that are not defined
+in the Java SE 9 Platform Specification but instead specific to the JDK will, by convention, share the “jdk.”
+Correct(A, C, D)
