@@ -65,17 +65,17 @@ import java.util.*;
    
 
      ---------
-       Correct(D, E)
+       Correct(C, D)
       Java 9 has added List.of/Set.of methods that return an unmodifiable list/set containing an arbitrary number of elements.
 
 
  */
 
 interface Reader{
-    void read(Book b);
-    default void unread(Book b){     }
-    
+    default void read(Book b){ }
+    void unread(Book b);
 }
+
 public class Book {
     private String title;
     private String genre;

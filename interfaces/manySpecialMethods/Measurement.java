@@ -77,5 +77,5 @@ interface Measurement{
     private void helper(){ }
 }
 interface Size extends Measurement{
-private void helper(){ }
+    private void helper(){ }
 }
