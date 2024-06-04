@@ -63,8 +63,8 @@ for example,
 
 would be the two-character key ":=". Line terminator characters can be included using \r and \n escape sequences.
 Any white space after the key is skipped; if the first non-white space character after the key is '=' or ':',
-then it is ignored and any white space characters after it are also skipped. All remaining characters on the l
-ine become part of the associated element string; if there are no remaining characters, the element is the empty string "".
+then it is ignored and any white space characters after it are also skipped. All remaining characters on the line
+become part of the associated element string; if there are no remaining characters, the element is the empty string "".
 Once the raw character sequences constituting the key and element are identified, escape processing is performed as described above.
 
 As an example, each of the following three lines specifies the key "Truth" and the associated element value "Beauty":
