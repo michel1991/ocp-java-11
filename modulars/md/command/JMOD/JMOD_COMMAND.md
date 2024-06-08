@@ -35,3 +35,21 @@ Option D is incorrect because bytecode runs on the JVM and is not operating syst
 While it is possible to run the tar command, this has nothing to do with Java, making option E incorrect.
 Option B is one of the correct answers as the jmod command creates a JMOD file.
 Option C is the other correct answer because specifying dependencies is one of the benefits of the JPMS.
+
+#### Which of the following commands can be used to identify class and module dependencies?
+* A. jar -describe
+* B. java --describe
+* C. jmod describe
+* D. jmod --describe
+* E. jmod --show-module-resolution
+    The --show-module-resolution option is available in the java command.
+    It prints out the complete module dependency tree for a given module
+
+jmod is used for mod files, which are not on the exam. However, you might be asked about
+the describe option which prints module details for a jmod file. For example:
+
+jmod describe jmods/ma.jmod
+Observe that there are no hypens (or dashes or minus sign) before describe.
+
+It prints the modules required by the ma.jmod file. However, it does not show complete module resolution.
+Correct(C)
