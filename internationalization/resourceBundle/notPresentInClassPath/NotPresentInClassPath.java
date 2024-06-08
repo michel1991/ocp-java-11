@@ -9,7 +9,8 @@ import java.util.*;
         String msg = rb.getString("greetings");
         System.out.println(msg);
     
-    You have created a valid resource bundle file named appmessages_es_ES.properties that contains 'greetings' property. However, when you run the above code, you get an exception saying,
+    You have created a valid resource bundle file named appmessages_es_ES.properties that contains 'greetings' property.
+    However, when you run the above code, you get an exception saying,
     "java.util.MissingResourceException:
         Can't find bundle for base name appmessages, locale es_ES".
     

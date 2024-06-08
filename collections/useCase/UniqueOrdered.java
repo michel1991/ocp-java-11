@@ -3,7 +3,8 @@ import java.util.*;
 import java.io.*;
 
 /**
-   Following is a program to capture words from command line and create two collections. One that keeps only unique words and one that keeps all the words in the order they were entered. What should replace AAA and BBB?
+   Following is a program to capture words from command line and create two collections.
+   One that keeps only unique words and one that keeps all the words in the order they were entered. What should replace AAA and BBB?
 
    static Collection unique = new AAA();
     static Collection ordered = new BBB();

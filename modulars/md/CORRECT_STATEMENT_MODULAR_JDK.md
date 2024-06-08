@@ -32,7 +32,7 @@ module A exports the internal.utils package only to module B:
 
 Correct(A, C, D)
 
-#### dentify correct statements about the modular JDK.
+#### Identify correct statements about the modular JDK.
 * A. The base module does not depend on any module while every other module depends on the base module.
 * B The set of modules of the modular JDK can be combined to create configurations corresponding to the full Java SE Platform, the full JRE, and the full JDK.
 * C The standard modules of the modular JDK are governed by the Java Community Process while non-standard ones are not.
