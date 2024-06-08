@@ -44,7 +44,8 @@ import java.nio.file.*;
  */
 public class PrintPersonalReadme {
      public static void main(String... args){
-         Path p1 = Paths.get("c:\\personal\\.\\photos\\..\\readme.txt");
+         // Path p1 = Paths.get("c:\\personal\\.\\photos\\..\\readme.txt"); original for windows
+         Path p1 = Paths.get("c","personal", ".", "..", "readme.txt");
          Path p2 = p1.normalize();
         System.out.println(p2);
      }
