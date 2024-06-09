@@ -58,3 +58,35 @@ as well as on -classpath without having any "requires" clause (remember that the
 Thus, if your modular jar A depends on a non-modular jar B, you have to put that non-modular jar B on --module-path.
 You must also add appropriate requires clause in your module A's module-info, otherwise compilation of your module will not succeed.
 Further, if the non-modular jar B depends on another non-modular jar C, then the non-modular jar C may be put on the classpath or module-path.
+
+####
+``` txt 
+    Given that a class named com.xyz.fx.Main is part of a module named xyz.fx packaged in fx.jar,
+    which of the following commands can be used to execute this class?
+    
+    (Assume that the jar file is located in the current directory.)
+``` 
+Given that a class named com.xyz.fx.Main is part of a module named xyz.fx packaged in fx.jar,
+which of the following commands can be used to execute this class?
+
+(Assume that the jar file is located in the current directory.)
+
+* A. java -classpath fx.jar --m xyz.fx/com.xyz.fx.Main
+    1. Instead of -classpath, --module-path should be used.
+    2. There should be a single dash for the m switch i.e. -m instead of --m. There is a double dash for module switch i.e. --module.
+* B. java --p fx.jar --m xyz.fx/com.xyz.fx.Main
+* C. java -p fx.jar --module xyz.fx/com.xyz.fx.Main
+   
+    -p is the short form for --module-path
+    -m is the short form for --module
+
+* D. java --module-path fx.jar --module com.xyz.fx.Main
+    You must specify the module name in which the class exists also in --module option along with the class name.
+   Module name and class name are separated by /.
+
+* E.  java -classpath fx.jar com.xyz.fx.Main
+    Structure of a module jar file is same as the regular jar file.
+   That is why it is possible to treat the jar file of a module as a regular jar file containing
+   classes and run a class that is present in the jar
+
+Correct(C, E)

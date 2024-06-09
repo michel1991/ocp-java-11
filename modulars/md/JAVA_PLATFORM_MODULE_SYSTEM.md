@@ -63,3 +63,13 @@ This is not so with modules. By default, no such access is allowed.
 * D. An application can either use module-path or classpath but not both
 
 Correct(A, B, C)
+
+### Identify correct statements about the module system of Java.
+* A. Only an application structured as modular can be run on a modular JDK.
+* B. Main goals of the module system are to improve security with strong encapsulation and stability with reliable dependencies.
+* C. Code in modules and traditional JARs on the classpath cannot coexist in an application.
+* D. Modules have concealed packages for internal use and exported packages for shared code with other modules.
+
+--
+Please go through Oracle's blog on Modules to get a general idea about modules: https://blogs.oracle.com/java/modular-development
+Correct(B, D)
