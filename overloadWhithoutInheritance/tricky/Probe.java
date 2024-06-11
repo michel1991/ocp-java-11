@@ -18,7 +18,7 @@ package overloadWhithoutInheritance.tricky;
     
     2. Java designers have decided that old code should work exactly as it used to work before boxing-unboxing functionality became available.
     
-    3. Widening is preferred to boxing/unboxing (because of rule 2), which in turn, is preferred over var-args.
+    3. Widening is preferred to boxing/unboxing (because of rule 2), which in turn, is preferred over varargs.
     
     
     Thus,
