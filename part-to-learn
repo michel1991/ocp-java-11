@@ -1,0 +1,739 @@
+https://stackoverflow.com/questions/30590083/git-how-to-rename-a-branch-both-local-and-remote
+-- annotations (done)
+-- module (transivitive, jdeps, modularize, fileLocation)
+-- operations (switch, truncate)
+-- list sublist (done)
+-- collection (protect content, maps/merge, queue) ==> done
+-- Exception
+-- autcoclose(runtime, surpress)
+--- nio (copie, delete)
+-- SAM
+-- inheritence (hidden)
+--- lambda ()
+___ stream(joining, max, reduce) ==> done
+--- security guidelines (clones)
+--- io (tricky Attemp)
+-- autocomit
+
+----------------------------
+  - nio (relativize)
+  - operation (parseInt, bitwise in char)
+  - annotation ==> done
+  - interface default method
+  - DirectoryStream (stream)
+  - overload (done)
+  - path with windows (root)
+  - comparator  --> MyStringComparator
+  - sort list
+  - thread safe
+  - stream count
+  -  secure (
+  - date tricky https://youtu.be/-_ouj8NRWu8
+  - prepared statement
+  - concurrency ( thread saefe, dead block, creation)
+  - interface static access
+  - complex stream (print Ac)
+  -- lambda change (effective final) ==> done
+  
+  ----------------------------
+  - array declaration - ok
+  - tricky stream mapping
+  - autcoloseable eerrors - ok
+  - module
+     - modularize (use case),
+     - correct statement modular
+     
+  - collection deeque (print1) 
+  - loop tricky
+      - cannotUse --> ok
+  - io
+     RandomAccessFile
+     tricky
+ - Exception
+    catch/choiceHandle
+    
+ - collection
+    map computeIfPresent --> ok
+    sorts (tricky Book) -->
+    deeque (print1)  --> ok (about it is add/remove element)
+
+    
+ _ internationalisation
+    - tricky
+  
+- inheritance
+  - md->code constructor no public -> ok
+  - tricky - overload EventProcessor (choice correct collection) --> ok
+     
+- stream
+  -flatmap --> ok
+  -noneMatch, anyMatch
+  
+- nio
+     - tricky resolveSibling
+     - tricky CopyWith 
+     - chnageLocation - runtime - AwayBaseballCopyNewLocationExist ==> ok
+     
+- enums
+  - private
+  
+- charSequence
+  - SetLength --> ok
+  
+-----
+  garbage
+    - complex --Buddy
+    TestMyClass
+   
+  enums
+     -- tricky Cofee
+  security
+      md - grant
+      mixed StoreObjectToFile
+      
+  interna
+     en_properties
+       appmessages
+     - md
+        DATEFORMAT_NUMBERFORMAT.md
+     
+        
+    interfaces
+      - tricky
+        - redeclare
+           Encyclopedia --> ok (good tricky)
+           C1C2C3  --> OK (good tricky)
+     - accessStaticMethods- errors HomeOfficeTestClass --> OK (good for tricky)
+     - sameMethod -> PrintHello --> OK
+     
+       
+     stream
+       -mixed
+       
+       operations
+         - complexPrecedence InitTest --> ok
+         - casting MethodX --> ok
+         - switch ForSwitch --> ok
+         - compound - ChoiceValidExpression --> ok
+         tricky
+            - CharAddition --> ok
+         loop
+            - tricky SameResultINT1AndINT2
+       
+     security
+        - guideline saveUserCredentials
+        
+    array
+      tricky
+         TestPrint1
+     stream
+       matchMethod --> PrintLooking
+       optional --> FunWithOptional
+       sorted --> PrintUsaUkNetherlandsEtc
+       
+   inheritance
+    - tricky
+       -Derived
+    - override AmazingTestClass
+    - override A2
+       
+    annotation
+      -meta
+         type --> implicit
+         DBField
+     
+   Collection
+     lazy -->
+     
+     operations
+       --> shortCircuit
+     
+     concurrency
+       threadSafe
+     
+     module
+       --> migration MY_APP
+       ---> usesCase modularize --> ACCOUNTING.md
+       ---> command javac --> GENERATE_A.CLASS.md
+       --> uses case -> services CUSTOMER.md
+       ---> JAVA_PLATFORM_MODULE_SYSTEM.md
+      
+     generic
+       -- BookStore
+       
+    toStringNotDefined
+       Paper
+   
+   numericPromotion
+      Print33And5FloatAnd98 --> ok
+     
+   passingValue;
+     PrintHellowWorld  -->ok
+     
+   autocolseable
+    - AUTOCLOSEABLE_CLOSEABLE.md
+    
+   nio
+    - change file location
+      --> MoveTest1ToTest2
+  ________________
+  garbbage
+    complex
+      GCTest
+  security
+      --- guideline ProcessFinancialStatements
+      --- md encapsulation
+  scopes ATest --> ok
+  
+  advanced
+    - vars DisplayListContent --> ok
+    
+  exception
+    tricky - Account --> ok
+    errors - order - ExceptionTest --> ok
+    finnaly FinallyTestPrintB --> Ok
+    suppressed TestClassPrintAnything --> ok
+    specifyThrows MyMethodNoSuchFieldExceptionIsChecked
+    handle ParseFloat1
+       
+    
+  charSequence
+    AppendWithPositionExist --> ok
+    delete PrintBloerper --> ok
+    
+  lambda
+     -- lambdaAndRefernce DisplayListContent --> ok
+    
+  operation
+    complexPre FindWhoPrint45
+    - unary PrintTwo
+        changeToMake Print54321
+    truncate
+    unreachableCode
+    switch error ErrorLineMarkedTwo
+    
+   
+  arrays
+   tricky
+      Print302030 --> ok
+
+   generic
+     tricky MyGenericClass --> ok
+     
+   inheritance
+     md multiple inheritance
+     inheritance.virtualCalls --> ok
+     hide useCase TestClass --> ok
+     
+   stream
+     tricky
+       GenerateMultiplicationTable
+       average Print2Coma5
+     filter
+         ChangeBookPrice --> ok
+         Print30DaysWired --> ok 
+       count
+          changeToMake CountNumberOfBook --> ok
+       
+       
+    collections
+      unmodifiableXXX
+         sets --> DisplayThreeAsSize --> ok
+     unmodifiableXXX.useCase  ListOfCountry
+      
+     db
+       md -url connection --> ok
+       
+     module
+        md - tricky module-info
+        usescase - modularize CLIENT_SERVICE_DTO_DATABASE.md
+       
+   interface
+    functions predicate Account --> ok
+    md Unary-binary --> ok
+    
+    security
+      attack  denial ProcessUploads
+    
+      
+     nestedclass
+        error - instance OuterWorld
+      
+    Passing value
+       DisplayValueOfVariableSandSB --> ok
+   
+   wrapper
+     errors PrintValueOfVariableK --> ok
+     
+   annotation
+    suppress AccountTestClass
+    meta type implicit AccountJSONField
+    
+   --------------------------------
+    module
+      md - command java usesCase EXECUTE_MODULE_WITH_CLASS_PATH.md les deux
+         - directive
+                   provider
+                          BROKER_MODULE.md
+                          - ABC_PRINT --> ok
+                          - abc-blogger --> ok
+                   locator
+                          book.md 
+                   
+    internationalization 
+       numberFormat
+          errors
+               TestClassParseThrowException --> ok
+     
+    security
+       guideline-
+           serialization UserCredential --> ok
+       clone HowManyTimePrintTrue ko r
+       md attack denial Dezerialization --> ok
+       security.grant
+           
+    operation
+       loop
+         while SimpleLoop, Print1010, HowManyTimeOutputContain2
+       switch
+         Print9
+         perations.switchs Condition -
+         operations.switchs.findErrors SwitchByte
+       complexprecede
+          PrintValueOfI4 
+       tricky errors  BooleanOperatorHaveMorePrecedence;
+     
+    stream
+      primitive ints runtime AverageThrowNotSuchElement ko
+      reduce PrintBillGeorgeObama ko
+      stream.tricky GroupWithCounting
+
+    
+    advanced -md VOLATILE_NATIVE_SPECIFIER.md --> ok
+    
+    autocloseable
+      ClosingTest --> ok
+    
+    notObjectiveExams
+      Print10RandomDoubleValues
+    
+    sorts
+       tricky/SortTest --> ok
+       md 
+      
+    advanced
+      default value Print0NullFalse --> ok
+    
+    interface
+       uses case Measurement --> ok
+       interfaces.tricky.referenceMethods MyProcessor --> ok
+       sam  FindFISample1 --> ok
+       
+     collections
+        set
+          hashSet  CoffeeMug --> ok
+        lists
+            remove PrintTrueFalse --> ok
+          
+        tricky
+           lists ImplicitConsumer --> ok
+        
+      lambda
+        -- canBeInsert
+             Print12
+             Print3
+       
+       garabbage collector
+          complex  TestClassRefInArray
+          
+        nio
+           cleanPath
+            relati PrintUsingZ
+            
+         exceptions
+           specifyThrows B --> ok
+           
+           inheritance
+              - constructors Eagle --> ok;
+              - polymorphism
+                  TestClass.java --> ok ,
+                  Application --> ok
+              - hide.properties Beta  --> ok (println dans un autre println entraine un declage)
+           
+        encapsulation
+           Triangle
+           
+         nested accessMembers Outer --> ok
+         
+         compare.
+             charQequence ReturnTrue --> ok
+             
+         generics
+              whichAreValidWithFI Sample1 ---> ok
+         
+         annotations
+             suppressWarnings TestClass --> ok
+---------------------------------------------------------------------
+          collection
+            tricky maps ConcurrentHashMapNotAllowNullValue  --> ok
+            collections/queue/deque/Print321.java --> ok
+            collections/tricky/maps/hashMap/PustMethod.java --> ok
+            collections/sublist/ListTest.java --> ok
+            
+          operation
+             complexPre Print6 --> ok
+             switch
+                SwitchTest --> ok
+                
+            control flow
+                Print48
+             operations.switchs.errors BooleanExpression
+             operations/md/switch/ON_OFF.md
+             package operations.loops.fors TestClass;
+            
+          classInitialization.finals ValueHolder
+          
+          nio
+             PrintTest --> ok
+            
+          array
+            declaration ArrayOfManyObject --> ok
+          
+           
+                 
+          nested
+             error scope TestFrame --> ok
+             
+         stream
+           counting errors ReturnLong
+           stream/parallel/Print_ABOr_A_B.java
+           stream/md/REDUCTION_ON_STREAM_WRAPPER.md
+           stream/groups/Student.java
+           stream/map/ListContainingGenres.java
+         
+         compare
+           tricky OneTwoPrintFalse --> ok
+           
+          charsequence
+             substring
+                charSequence/substring/PrintMum.java
+                charSequence/substring/Print456.java
+                charSequence/substring/HidePhone.java
+                
+          generics.
+              tricky.errors Counter --> ok
+              generics/choiceAnswers/M1.java -> ok
+          
+          db
+            md
+             urlConnection --> ok
+          
+          interfaces
+               /function/primitives/supplier/Book.java --> ok
+               interfaces/sam/A.java --> ok
+               
+          inheritance
+            - errors.findErrors.identifyCorrectStatement  GenericProcessor --> ok
+            - casting/AA.java --> ok
+            - constructorsOverload/BTestClass.java --> ok
+            - hide.properties print40 -> ok
+            - multipleRules/IHello.java --> ok
+            - hide/staticMethod/B.java --> ok
+                 
+            
+         internationalization
+            /md/usesCase/MY_RESOURCE.md --> ok
+         
+         modulars/md
+             moduleInfoNaming/AUTOS.md --> ok
+             directives/usesCase/enthu.questionbank.md --> ok
+             command/java/ OUT_PUT_DEPENDENCIES_WHILE_EXECUTION.md --> ok
+                
+         
+          sorts
+             tricky/lists/errors/Book.java --> ok
+          
+          annotations/repeatable/Meal.java
+          
+          concurrency/tricky/Student.java
+          
+          exceptions
+                 errors/badSynthax/ExceptionTest.java --> ok
+                 handled/GetDataForUser.java --> ok
+          
+          advancedDesign/integralAssignValue/FloatRepresentation.java
+          
+          io/wrapping/LineByLineProcessor.java
+          
+          io/reader/TestClass.java --> ok
+          
+          
+          trap/LastArgumentGivenOnCommand.java
+          lambda/choiceValid/ProduceNoOuputOrProduce12.java
+          
+   --------------------------------------------------------------------------
+          trap
+             Elliptical
+          
+          inheritance
+                casting RunnableObserver --> ok
+                errors/multipleRules/EncyclopediaTestClass.java --> ok
+               md/INHERITANCE.md --> ok
+               covariant/AB.java --> ok
+               withGenerics/override/DerivedBase.java --(i)
+          
+          io.serialization.firstParentNoSerializable
+            BoobyTestClass
+             tricky/CopyFileName2EndUpWith100Bytes.java
+             errors/WriteUTFMethodNotExist.java --> ok
+           
+          nestedClass.
+              accessMembers.BookStore --> ok
+               accessMembers/OuterInnerI.java --> ok
+            
+          advancedDesign.integralAssignValue
+                ShortLongFloat --> ok
+                advancedDesign/errors/vars/Discounter.java --> ok
+          
+           operations.tricky.
+              GreenLightPedestrianRightTurnOtherLane(important)
+              switchs/Choice124.java --> ok
+              loops.does Print56;
+               shortCircuiting/PrintTrueFalseFalse.java --> ok
+               controlFlow/errors/DayTest.java
+            
+             overloadWhithoutInheritance
+                ParamTest --> ok
+                PrintInObject.java --> ok
+                tricky/PerformWork.java --> ok
+                constructors/Test.java --> ok
+           
+           db
+                reads EmailId --> ok
+                md/AUTOCOMIT.md --> ok
+           
+           modulars/
+                md/modules/MODULE_NAME.md --> ok
+           
+           nio/relativizes/
+               PrintIndexHTML.java
+              paths/RootInotIncludeInPath.java --> ok
+           
+           arrays/comparison/
+                PrintNegative23.java --> ok
+                arrays/PrintSun5c.java
+                arrays/tricky/DAAA.java
+           
+           autoboxingUnboxing/
+                AssignValueBoolean.java --> ok
+           
+           sorts/
+               ByDobAttribute.java --> ok
+               Print2.java --> ok
+           
+           stream/
+               map/PrintLen.java --> ok
+              stream/mapping/PrintPriceOfBookHavingTitleThatStartWithA.java
+           
+           collections/
+                 maps/concurrent/EntryCacheNeverBeOverwritten.java
+                lists/SaveObject.java --> ok
+                maps/navigableMap/PrintCCatAnd3.java
+           
+          security/guidelines/
+             immutable/PersonCloneDobField.java -> ok
+             manyRules/Person.java --> ok
+             
+          exceptions/
+               tricky/PrintInfinityTrue.java --> ok
+               
+          classInitialization
+               /finals/InitTest.java --> ok
+          
+          
+          autoCloseable/
+             Device.java --> ok
+             
+          concurrency/deadblock/Transfer.java
+          security/guidelines/manyRules/GetEligiblePersons.java
+          
+          ----------------------------------------------
+          exceptions/
+               handled/Account.java --> ok
+              specifyThrows/RaisedCheckedException.java --> ok
+               /specifyThrows/A.java
+                exceptions/changeToMake/ParseFloat.java ->(I)
+                exceptions/choiceHandleException/Copy.java
+               
+          nio/
+               changeLocation/runtime/MoveModuleInfoFile.java --> ok
+          
+          nestedClass/
+                ManyWayToCreateInstance/TestClass.java --> ok
+       
+         
+          stream/
+                 implicitFI/PrintHelloWorld.java --> ok
+                 matchMethods/PrintTestingJAvaEE.java -->ok
+                 stream/changeTomake/ConsitentPrint12345.java
+                  stream/joining/PrefixSeparatorSuffix.java --> ok
+                  stream/flatMap/Printac.java --> ok
+                 
+          security/
+                 prevents/denial/TestInputStreamHandler.java
+         
+          nio/
+               cleanPathAndNotCleanPath/PrintPersonalReadme.java --> ok
+               
+          operations/
+              switchs/DayOfWeek.java
+              switchs/BitWiseABCharWithInteger.java --> ok
+              castings/PromotionTest.java
+             complexPrecedence/PrintTrueFalse.java --> ok
+              operations/switchs/PrintDef.java --> (I/important)
+              
+          db/
+              tricky/GetConnection.java --> ok
+      
+        
+          interfaces/
+               manySpecialMethods/FooI.java -->ok
+               sam/Book.java (I/important) --> ok
+                interfaces/manySpecialMethods/Measurement.java --> ok
+          
+          io/
+              choiceExceptionThrows/IOTest.java --> ok
+               io/md/SERIALIZATION.md
+          
+          annotations
+              /errors/DebugInfo.java --> ok
+              
+          collections/
+              useCase/UniqueOrdered.java --> ok
+               queue/deque/Print31.java --> ok
+               subset/ThrowAnExceptionAtRuntime.java --> ok
+               queue/Helper.java -> (I/important)
+              
+          inheritance/
+            withGenerics/override/Bowler.java
+            withGenerics/override/BA.java --> ok
+            polymorphism/PintInB.java --> ok
+            errors/visibility/BA.java --> ok
+              
+               
+          internationalization/
+              md/GREETING_VALID_CONTENT_OF_PROPERTIES.md -->ok
+               dateTimeFormat/PrintInFrenchFormat.java (I me d/important)
+               internationalization.resourceBundle.notPresentInClassPath --> ok
+          
+          charSequence/
+               delete/Logger.java --> ok
+               
+          advancedDesign/tricky/EqualsCompareByReference.java --> ok
+         
+          modulars/
+              md/CORRECT_STATEMENT_MODULAR_JDK.md --> ok
+              modulars/md/CORRECT_STATEMENT_MODULAR_JDK.md --> ok
+              modulars/md/command/JAVA/useCases/ACCOUNTING.md _->(I)
+              md/usesCases/modularize/BONDANALYTICS.md --> ok
+              
+          
+          lambda/
+              tricky/Print15.java --> ok
+     
+        
+          sorts/TestClass.java
+         
+          arrays/
+              declaration/SA.java --> ok
+             
+          
+          wrapper/PrintTrouble12Point3.java --> ok
+        
+          io/console/errors/JackReadPasswordReturnArrayOfChar.java --> ok
+         
+         
+          generics/upperAndLowerBound/InsertToobyInLowerBound.java --> (I/important)
+         
+         -------------------------------------------------------------
+           
+            security/md/INPUT_VALIDATION.md
+            
+            operations/
+               loops/does/DecreaseUntilMinValue.java --> ok
+                md/USE_CASE.md --> ok
+               operations/loops/fors/LoopTest.java
+               
+            concurrency/
+               runnableCallable/MyEs.java --> ok
+               md/RETURN_VALUE.md
+               synchronizeds/Test.java
+               
+            db/insert/Stock.java
+            
+            autoCloseable/
+               tricky/Device.java --> ok (I/important)
+               
+            modulars/
+                md/command/JMOD/JMOD_COMMAND.md (p/important) --> ok
+                md/JAVA_PLATFORM_MODULE_SYSTEM.md
+               
+            classInitialization/
+                Printabc2341InitTest.java --> ok
+                PrintacbInitTest.java --> ok
+               defaultConstructor/C.java
+              
+              trap/Calculator.java --> ok
+             annotations/retentionPolicy/DebugInfo.java --> ok
+              garbage/returnObjectInMethods/GetObject.java --> ok (I/important)
+              generics/upperAndLowerBound/MapWithMultipleValue.java --> (I/important)
+                
+            interfaces/
+                function/function/StringBuilderReplace.java --> ok
+                 implicitModifiers/Telephone.java --> ok
+                 defaultMethods/PremiumAccount.java --> (I/important) --> ok
+                 
+            inheritance/
+                md/overridden/usesCase/CONNECT.md --> (I/important) --> ok
+                casting/runtime/TestClass.java (I/imporant)
+                
+          pb: overloadWhithoutInheritance/tricky/Probe.java --> (I/important) --> ok
+                 
+            io/
+                noCommonMethods/UseWriteUTFWriteByteReadUTFReadByte.java
+                io/printStream/ChoiceValidImplementation.java --> (I/important)
+                 io/tricky/MkDirsAndGetParentFile.java (I/important)
+                
+            
+            nio/relativizes/YellowStone.java
+            
+            internationalization/resourceBundle/greetingsKey/LoadResources.java
+           pb:  internationalization/resourceBundle/okLabelCancelLabel/LoadResource.java
+           
+            
+            
+            collections/unmodifiableXXX/lists/runtime/OfAndCopyOfAB.java
+            collections/lists/lambda/TestData.java
+            sorts/SortTest.java
+          
+          
+         
+         
+               
+ 
+    
+  
+   
+     
+   
+    
+  
+  
+   
+    
+       
+           
+       
+
+  
+  
