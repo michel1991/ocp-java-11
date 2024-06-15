@@ -67,6 +67,8 @@ package security.encapsulation;
     It really depends on the business logic of the class and the whole application whether the accessor methods (and specially the setter)
     should be public or protected or even private. The field should be private.
     Expect such questions in the exam.
+
+    correct(A, E)
  */
 
 class Person { // public 
