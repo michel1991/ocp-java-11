@@ -1,4 +1,4 @@
-package nio.cleanPathAndNotCleanPath;
+package nio.resolve;
 import java.nio.file.*;
 
 
