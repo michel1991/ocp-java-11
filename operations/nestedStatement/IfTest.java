@@ -1,4 +1,4 @@
-package operations.tricky;
+package operations.nestedStatement;
 /**
    Consider the following method...
    
