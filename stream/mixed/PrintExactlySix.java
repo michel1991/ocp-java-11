@@ -1,4 +1,4 @@
-package mixed;
+package stream.mixed;
 import java.util.stream.*;
 import java.util.*;
 
