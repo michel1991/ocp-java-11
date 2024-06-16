@@ -52,6 +52,11 @@ import java.nio.charset.Charset;
      Stream<String> lines = Files.lines(Paths.get("test.txt"), Charset.defaultCharset());
         lines.forEach(s -> System.out.println(s));
 
+  -------------------
+       Options 4 and 5 illustrate the use of two Files.lines methods.
+      One takes just a Path and the second list method allows you the specify the charset of the source file as well.
+    correct (D, E)
+
  
  */
 public class PrintContentOfTestTxtFile {
