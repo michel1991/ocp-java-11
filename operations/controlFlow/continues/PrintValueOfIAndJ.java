@@ -1,0 +1,45 @@
+package operations.controlFlow.continues;
+
+/**
+ Given the following code fragment, which of the following lines would be a part of the output?
+    outer:
+       for ( var i = 0 ; i<3 ; i++ ){
+          for ( var j = 0 ; j<2 ; j++ ){
+             if ( i == j ){
+                continue outer;
+             }
+             System.out.println( "i=" + i + " , j=" + j );
+          }
+       }
+       
+         A. i = 1, j = 0
+         B. i = 0, j = 1
+         C. i = 1, j = 2
+         D. i = 2, j = 1
+         E. i = 2, j = 2
+         
+         --------------
+         
+         The given code prints:
+         i=1, j=0
+         i=2, j=0
+         i=2, j=1
+         The variable i iterates through the values 0, 1 and 2 in the outer loop, while j varies from 0 to 1 in the inner loop.
+         If the values of i and j are equal, the continue statement is executed and printing is skipped and next iteration of outer 'for' loop starts.
+         
+         Correct(A, D)
+
+ */
+public class PrintValueOfIAndJ {
+   public static void main(String... args){
+      outer:
+         for ( var i = 0 ; i<3 ; i++ ){
+            for ( var j = 0 ; j<2 ; j++ ){
+               if ( i == j ){
+                  continue outer;
+               }
+               System.out.println( "i=" + i + " , j=" + j );
+            }
+         }
+    }
+}
