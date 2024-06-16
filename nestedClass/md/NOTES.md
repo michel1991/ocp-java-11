@@ -1,3 +1,6 @@
+# Be Careful
+1. nestedClass/tricky/OuterTestClass.java
+2. 
 ### before answer
 * check enums context (enums has implicit static specifier)
 * check ; after statement in case anonym class
