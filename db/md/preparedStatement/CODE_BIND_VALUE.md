@@ -23,3 +23,53 @@ Since JDBC does not begin indexes with zero, option A is incorrect,
 and option B is correct. Similarly, the second parameter is at index 2,
 so option C is incorrect, and option D is the other answer.
 Note that setObject() can be called instead of a more specific type.
+
+##
+```
+Given:
+
+    String qr = INSERT CODE HERE
+    try(PreparedStatement ps =  connection.prepareStatement(qr);){
+
+    ...
+
+    }
+
+    What can be inserted in the above code?
+```
+
+* A.
+```
+"insert into USERINFO values( ?, ?, ?, ?)";
+(Assuming USERINFO table with four columns exists.)
+```
+
+* B.
+```
+"update USERINFO set NAME=? where ID=?";
+(Assuming USERINFO table with NAME and ID columns exists.)
+```
+
+* C.
+ ```
+"delete from USERINFO where ID=2";
+(Assuming USERINFO table with ID column exists.)
+ ```
+
+* D.
+
+```
+"delete from USERINFO where ID=2";
+(Assuming USERINFO table with ID column exists.)
+```
+
+* E. All of the above.
+ A PreparedStatement can be used to execute any kind of query.
+
+Correct(E)
+
+
+
+
+
+

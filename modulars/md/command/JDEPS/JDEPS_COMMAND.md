@@ -180,4 +180,26 @@ For the most recent update on JDK internal API replacements,
 please check: https://wiki.openjdk.java.net/display/JDK8/Java+Dependency+Analysis+Tool JDK Internal
 API Suggested Replacement ---------------- --------------------- sun.misc.BASE64Encoder Use java.util.Base64 @since 1.8
 
+##
+```
+What will the following command show?
+jdeps --list-deps moduleA.jar
+```
+* A. It will list all the modules on which moduleA depends.
+
+    Lists the module dependencies and also the package names of JDK internal APIs (if referenced).
+* B. It will list all the packages of all the modules on which moduleA depends.
+* C. It will list all the standard JDK modules on which moduleA depends.
+* D. It checks whether moduleA.jar contains all the required modules and prints the ones not present.
+* E. It will show an error if moduleA requires any other application module.
+    Remember that one modular jar contains only one module.
+    So, moduleA.jar will contain only one module.
+    If moduleA depends only on the standard JDK modules, then jdeps will print them.
+    However, if this module depends on any other application module (for example, moduleB), jdeps won't find it and will therefore fail.
+
+     You need to put all the module jars in --module-path.
+
+Correct(A, E)
+
+
 

@@ -1,3 +1,6 @@
+# To take care
+ 1. accessibility/SetMemberPropertiesXYOfDataTestClass.java
+ 2.
 #### before answer
  * checking class scope
  * checking constructor scope

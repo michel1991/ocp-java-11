@@ -53,3 +53,51 @@ Observe that there are no hypens (or dashes or minus sign) before describe.
 
 It prints the modules required by the ma.jmod file. However, it does not show complete module resolution.
 Correct(C)
+
+####
+```
+Note: jmod is not on the part 1 exam.
+However some candidates have seen it mentioned in one of the incorrect options.
+You may read about jmod if you have time.
+
+Which of the following options are supported by jmod?
+```
+* A. create
+* B. add
+* C. delete
+* D. list
+* E. extract
+* F. describe
+```
+    The describe option prints module details for a jmod file. For example:
+
+    jmod describe jmods/ma.jmod
+    (Observe that there are no hypens (or dashes or minus sign) before describe.)
+    Assuming that ma requires mb, it prints:
+
+
+    ma
+      requires mandated java.base
+      requires mb
+
+
+    jmod describe jmods/mb.jmod
+
+
+    mb
+      requires mandated java.base
+      hashes ma SHA-256 07667d5032004b37b42ec2bb81b46df380cf29e66962a16481ace2e71e74073a
+```
+
+Jmod tool has 5 options: create, extract, list, describe, hash.
+
+According to the documentation, JMOD enables aggregating files other
+than class files, metadata, and resources such as native codes
+and other things that cannot be stored in a JAR file.
+Therefore, JMOD files are designed to contain file types
+that cannot be contained by JAR files.
+However, unlike JARs, which are executable, the JMOD files cannot be executed.
+This means this files contained in JMOD can be used only at
+compile-time or link-time, but not at runtime.
+
+Correct(A, D, E,F)

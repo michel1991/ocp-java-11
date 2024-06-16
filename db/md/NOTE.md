@@ -1,3 +1,6 @@
+# Be carefull
+1. db/md/preparedStatement/CODE_BIND_VALUE.md
+2. 
 #### before answer
 * checked handle SQLException
 * checky valid resource in try with resource bock

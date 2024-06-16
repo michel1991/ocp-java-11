@@ -1,3 +1,6 @@
+### to learn more
+  1. stream/groups/whatCanBeInserted/Student.java
+
 ### Before answer
 * Verify source
 * verify terminal operation

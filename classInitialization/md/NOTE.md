@@ -1,3 +1,6 @@
+# Be Careful
+1. classInitialization/inheritance/TestSub.java
+2. 
 ### Before answer
 * check constructors with extends. If many constructors verify that everything is ok
 * Verify recursive constructor call
