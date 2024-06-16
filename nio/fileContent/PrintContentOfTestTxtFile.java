@@ -62,16 +62,16 @@ import java.nio.charset.Charset;
 public class PrintContentOfTestTxtFile {
     
     static void responseD(String ressourcePath) throws Exception{
-        Stream<String> lines = Files.lines(Paths.get(ressourcePath, "fileContent", "printContentOfTestTxtFile",  "test.txt"));
+        Stream<String> lines = Files.lines(Paths.get(ressourcePath,  "test.txt"));
         lines.forEach(System.out::println);
     }
     
     static void responseE(String ressourcePath) throws Exception{
-        Stream<String> lines = Files.lines(Paths.get(ressourcePath, "fileContent", "printContentOfTestTxtFile", "test.txt"), Charset.defaultCharset());
+        Stream<String> lines = Files.lines(Paths.get(ressourcePath, "test.txt"), Charset.defaultCharset());
         lines.forEach(s -> System.out.println(s));
     }
     public static void main(String... args) throws Exception{
-        var resourcePath = Path.of(NioUtilities.getResourcePath().toString()).toString();
+        var resourcePath = Path.of(NioUtilities.getResourcePath().toString(), "fileContent", "printContentOfTestTxtFile").toString();
         responseD(resourcePath);
         responseE(resourcePath);
     }
