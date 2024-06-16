@@ -1,0 +1,1 @@
+Given that the file test.txt is accessible and contains multiple lines, which of the following code fragments will correctly print all the lines from the file?
