@@ -1,6 +1,8 @@
 ##
 ```
-Which of the following commands can be used to identify class and module dependencies of a class named test.A of module named moduleA without executing it?
+Which of the following commands can be used to identify class
+and module dependencies of a class named test.A
+of module named moduleA without executing it?
 
 Assume that all module files are stored in out directory.
 Note: Although identifying module dependency is not explicitly
@@ -16,7 +18,8 @@ to identify module dependencies.
     ```
          
         The jmod tool is used to package module files into jmod archives.
-        You don't need to know about jmod tool for this exam but you may see it as an option. For example,
+        You don't need to know about jmod tool for this exam but you may see it as an option.
+*       For example,
         
         jmod describe modfile.jmod will print out the modules used by modfile.jmod
         (Observe that there is no - sign before describe)

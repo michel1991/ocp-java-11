@@ -186,7 +186,6 @@ What will the following command show?
 jdeps --list-deps moduleA.jar
 ```
 * A. It will list all the modules on which moduleA depends.
-
     Lists the module dependencies and also the package names of JDK internal APIs (if referenced).
 * B. It will list all the packages of all the modules on which moduleA depends.
 * C. It will list all the standard JDK modules on which moduleA depends.

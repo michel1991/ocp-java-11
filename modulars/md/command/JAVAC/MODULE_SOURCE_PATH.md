@@ -2,7 +2,9 @@
 ```
     You are trying to compile your module named mycompany.finance.
     You have put all the source files for your module in src directory.
-    However, your module requires a mycompany.utils module, which is delivered by another team of your company in the form of mycompany.utils.jar file. You have kept this jar in libs directory.
+    However, your module requires a mycompany.utils module,
+    which is delivered by another team of your company in the form of mycompany.utils.jar file.
+     You have kept this jar in libs directory.
     
     Which of the following commands can be used to compile your module?
 ```
