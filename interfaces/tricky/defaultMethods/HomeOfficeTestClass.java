@@ -14,7 +14,8 @@ package interfaces.tricky.defaultMethods;
         To prevent this situation, Java prohibits a class from inheriting multiple implementations of the same method from different unrelated interfaces.
          However, if a class provides its own implementation of the same method,
          the ambiguity is removed because the compiler can unambiguously invoke the implementation provided by the class itself.
-    E.It will compile fine and print R No 1, Home when run.
+
+    E. It will compile fine and print R No 1, Home when run.
 
      ---- correct(E)
 
