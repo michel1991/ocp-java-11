@@ -52,5 +52,9 @@ public class IfTest {
         else        //6
         System.out.println("False False");
      }
+
+    public static void main(String... args){
+        ifTest(false);
+    }
      
 }
