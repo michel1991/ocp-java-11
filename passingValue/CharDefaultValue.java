@@ -1,4 +1,4 @@
-package advancedDesign.defaultValue;
+package passingValue;
 /**
    What will be the output when the following program is run?
    
