@@ -68,6 +68,6 @@ class MyProcessor{
 
 public class MyProcessorTestClass {
     public static void main(String[] args) {
-        
+        TestClass.main(args);
     }
 }
