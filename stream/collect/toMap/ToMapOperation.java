@@ -1,4 +1,4 @@
-package stream.collectToMap;
+package stream.collect.toMap;
 
 import java.util.*;
 import java.util.function.*;
