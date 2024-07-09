@@ -1,4 +1,4 @@
-package annotations.retentionPolicy;
+package annotations.meta.retentionPolicy;
 
 import java.lang.annotation.*;
 import java.lang.reflect.Field;
