@@ -37,3 +37,41 @@ A subclass may have a static method with the same signature
 as a static method in the base class but it is not called overriding.
 It is called hiding because the concept of polymorphism doesn't apply to static members
 (Correct A, E)
+
+## Given the following method code:
+
+public void myMethod() throws MyException {
+
+  //method code
+
+}
+
+* A. If the throws MyException clause is removed from the method and if the method fails to compile, then MyException must be an unchecked exception.
+
+```txt
+In that case, it would be a checked exception because a method is required to declare only checked exceptions in its throws clause.
+```
+
+* B. If the throws MyException clause is removed from the method and if the method fails to compile, then MyException must be extending RuntimeException.
+
+```txt
+Error and RuntimeException are unchecked exception classes. Any subclass of Error or RuntimeException need not be declared in the throws clause.
+```
+
+* C. A method that calls myMethod must wrap the call in a try block.
+
+```
+If MyException is an unchecked exception, then there is no need of a try block. Even if MyException is a checked exception, the method could simply declare it in its throws clause instead of wrapping the call in a try block.
+```
+
+* D. The code in myMethod can throw only MyException.
+```txt
+It can throw MyException or its subclasses. It can also throw any unchecked exception.
+```
+* E. If MyException class is made to extend RuntimeException, there would be no impact on myMethod.
+```
+Extending from RuntimeException would make MyException an unchecked exception. It is not a problem if an unchecked exception is declared in the throws clause of a method.
+```
+
+Correct(E)
+

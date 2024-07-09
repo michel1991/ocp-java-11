@@ -1,3 +1,6 @@
+## Be carefull
+1. exceptions/finallys/PrintTryFinallyOut.java
+
 #### checking before answer
 * resource use in try with resource close at inverse order
 * scope of variable name in catch
