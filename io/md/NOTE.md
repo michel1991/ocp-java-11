@@ -6,3 +6,6 @@
 * checked implements serializable
 * check handle exceptions
 * io/printStream/CreateFile.java
+
+### be carefull
+1. io/noCommonClass/CreateFile.java

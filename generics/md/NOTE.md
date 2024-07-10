@@ -7,3 +7,6 @@
 ```
  <E extends List>(data can be add)  are different to  <? extends List>
 ```
+
+#### to Reread
+1. generics/choiceAnswers/DoIt.java
