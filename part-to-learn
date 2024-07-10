@@ -681,7 +681,7 @@ ___ stream(joining, max, reduce) ==> done
             classInitialization/
                 Printabc2341InitTest.java --> ok
                 PrintacbInitTest.java --> ok
-               defaultConstructor/C.java
+               defaultConstructor/C.java --> (I/important)
               
               trap/Calculator.java --> ok
              annotations/retentionPolicy/DebugInfo.java --> ok
@@ -707,33 +707,154 @@ ___ stream(joining, max, reduce) ==> done
             
             nio/relativizes/YellowStone.java
             
-            internationalization/resourceBundle/greetingsKey/LoadResources.java
-           pb:  internationalization/resourceBundle/okLabelCancelLabel/LoadResource.java
+            internationalization/
+               resourceBundle/greetingsKey/LoadResources.java --> (I/important)  --> ok
+               resourceBundle/okLabelCancelLabel/LoadResource.java --> (I/important)
            
-            
-            
-            collections/unmodifiableXXX/lists/runtime/OfAndCopyOfAB.java
-            collections/lists/lambda/TestData.java
-            sorts/SortTest.java
-          
-          
-         
-         
-               
- 
-    
-  
-   
-     
-   
-    
-  
-  
-   
-    
-       
-           
-       
+            collections/
+                unmodifiableXXX/lists/runtime/OfAndCopyOfAB.java
+                lists/lambda/TestData.java
 
-  
-  
+            sorts/SortTest.java
+
+---------------------------------------------------
+      -
+
+      collections/lists/unknowMethods/UseAddMethodWithIndex.java
+
+       inheritance/
+          /constructorsOverload/A.java --> ok
+          /override/Base.java --> ok
+          /hide/useCase/px/ABTestClass.java (I)
+
+      stream
+          /groups/whatCanBeInserted/Student.java
+         /optionals/NewClass.java
+         /matchMethods/errors/TheWord.java (I)
+
+      operations
+         /unary/Operators.java
+         /switchs/errors/TwoCaseWithSameValue.java --> ok
+         /switchs/tricky/PrintEight.java --> ok
+         /complexPrecedence/PrintSeven.java
+         /nestedStatement/IfTest.java --> ok
+         /controlFlow/continues/PrintValueOfIAndJ.java
+         nestedStatement/PrintNothingAndNoException.java --> ok
+
+      concurrency
+            /unsafeCode/ThreadSafety.java
+           /barrier/changeToMake/ItemProcessor.java
+           /runnableCallable/SomeMethod.java
+           /Cache.java
+
+      internationalization/
+           numberFormat/Amount.java
+
+      modulars/
+           md/command/JDEPS_COMMAND.md --> ok
+           md/command/JDEPS/ON_CLASS.md --> ok
+           /md/command/JAVAC/MODULE_SOURCE_PATH.md --> ok
+
+      annotations/
+            meta/typeUse/Account.java --> ok
+
+      nio/fileContent/PrintContentOfTestTxtFile.java
+
+       interfaces/
+            errors/notChangeWillMakeCodeToCompile/Foo.java --> ok
+             tricky/defaultMethods/HomeOfficeTestClass.java --> ok
+             function/function/HelloWithParameterFunction.java --> ok
+
+       exceptions/
+           choiceHandleException/Scrap.java --> ok
+           finallys/PrintTryFinallyOut.java --> ok
+
+       garbage/
+             complex/NewClass.java --> ok
+             tricky/N.java (I/important) --> ok
+
+
+      classInitialization/inheritance/TestSub.java (I) --> ok
+
+      lambda/
+            lambdaAndReference/MyProcessorTestClass.java (I) --> ok
+
+      db/
+           md/preparedStatement/CODE_BIND_VALUE.md --> ok
+            enquoted/SetSQLMode.java (I) --> ok
+
+
+
+      nestedClass/
+         tricky/OuterTestClass.java (I) --> ok
+
+
+      passingValue/CharDefaultValue.java(I) --> ok
+
+      advancedDesign
+        /localVariableInitialization/SomeClass.java (I)
+
+      enums/tricky/CoffeeTestClass.java --> ok
+
+      numericPromotion/useCase/TaxRate.java
+
+GonzesseMBDS@2015;
+
+----------
+   security/clone/Print4false6false.java (I)
+   concurrency/md/LOCK.md
+   nestedClass/modifiers/Outer.java
+   exceptions/handled/Print120.java (I)
+   stream/joining/Course.java (I)
+   charSequence/md/METHODS_AND_CLASS.md (I)
+   garbage/complex/N.java (I)
+   inheritance/polymorphism/C1.java (I)
+   inheritance/casting/errors/TestClass.java (I)
+   numericPromotion/CompareIntegerWithPrimitive.java (I)
+   nio/fileContent/CountLines.java (I)
+   operations/tricky/errors/IntInIf.java
+   operations/unreachableCode/WhileIfDoFor.java (I)
+   io/printStream/CreateFile.java(I)
+   collections/lists/remove/RemoveValueOfVariableS.java
+   exceptions/errors/notHandle/FileCopier.java (I)
+   stream/groups/Course.java(I)
+   generics/choiceAnswers/DoIt.java (I)
+   annotations/meta/retentionPolicy/DebugInfo2.java (I)
+   db/close/Student.java
+   interfaces/function/consumer/Book.java
+   scope/tricky/ScopeTest.java
+   io/noCommonMethods/ReadyMethod.java (I)
+   nestedClass/errors/badMembersProperties/TestClass.java
+   collections/sets/hashSet/PrintSize33.java
+   io/noCommonClass/CreateFile.java (I)
+   db/insert/UserInfo.java
+   io/serialization/TestClassBoo.java (I)
+   sorts/creation/StringValues.java
+   security/encapsulation/SquareTestClass.java
+   nio/noCommon/WriteData.java
+   modulars/md/directives/provider/ABC_PRINT_2.md
+   inheritance/md/PREVENT_OVERRIDING.md
+   overloadWhithoutInheritance/TestClassProbe.java
+   enums/errors/findErrors/TestClass.java
+   modulars/md/directives/provider/BROKER_MODULE_2.md
+   lambda/choiceValid/TestClassProcess.java
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
