@@ -42,10 +42,9 @@ public class CountLines {
                 
            Correct(A)
      */
-    public void countLines(String filePath) throws Exception{
-        //1
-        
-        var resourcePath = Path.of(
+
+    static String getPathToFileToRead(){
+        return  Path.of(
                 NioUtilities.getResourcePath().toString(),
                 "fileContent",
                 "countLines",
@@ -53,14 +52,20 @@ public class CountLines {
                 "temp",
                 "test.txt"
         ).toString();
+    }
+    public void countLines(String filePath) throws Exception{
+        //1
+
+        var resourcePath = getPathToFileToRead();
         
         // Stream<String> ref = new BufferedReader(new FileReader("c:\\temp\\test.txt")) // orifinal
-        Stream<String> ref = new BufferedReader(new FileReader("c:\\temp\\test.txt"))
+        Stream<String> ref = new BufferedReader(new FileReader(resourcePath))
            .lines();
        System.out.println(ref.count());
     }
     
     public static void main(String... args) throws Exception{
-        
+        var count = new CountLines();
+        count.countLines(getPathToFileToRead());
     }
 }
