@@ -18,7 +18,7 @@ package exceptions.handled;
     and neither is the method test() called (because of the exception in evaluating the params)
     So, in the catch block it prints 1 2 0.
     
-    Correct(C)
+    Correct(B)
  */
 class Test
     {
