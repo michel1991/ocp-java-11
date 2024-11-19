@@ -7,4 +7,4 @@
   6. operations/controlFlow/continues/PrintValueOfIAndJ.java
   7. operations/switchs/errors/variableScope/Switcher.java
   8. operations/tricky/errors/IntInIf.java
-  9. operations/unreachableCode/WhileIfDoFor.java
+  9. operations/unreachableCode/WhileIfDoFor.java (I)
