@@ -22,7 +22,7 @@ package interfaces.errors.breakMultipleRule;
  */
 public interface CanFly { // 5:
     int fly() //  6:
-    String flyx(int distance); //   7:
+    String fly(int distance); //   7:
 } //8:
 
 interface HasWings { // 9:
